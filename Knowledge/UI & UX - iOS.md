@@ -1,4 +1,4 @@
-> *Designers are meant to be loved, not to be understood.*
+> *The public is more familiar with bad design than good design.*
 
 Three primary themes differentiate iOS from other platforms:
 
