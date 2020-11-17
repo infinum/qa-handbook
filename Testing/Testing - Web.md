@@ -11,7 +11,7 @@ This article is a compendium of useful tips & tricks for testing web apps.
 - <a href=#selecting-test-devices>Selecting test devices</a>
 - <a href=#testing-cookies>Testing cookies</a>
 - <a href=#testing-web-apps-on-several-devices-simultaneously>Testing web apps on several devices simultaneously</a>
-- <a href=#testing-web-app-UI-behaviour-with-content-amount-variations>Testing web app UI behaviour with content amount variations</a>
+- <a href=#testing-web-app-ui-behaviour-with-content-amount-variations>Testing web app UI behaviour with content amount variations</a>
 
 ### Chrome hard refresh or deleting cache refresh
 
