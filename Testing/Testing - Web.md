@@ -11,6 +11,7 @@ This article is a compendium of useful tips & tricks for testing web apps.
 - <a href=#selecting-test-devices>Selecting test devices</a>
 - <a href=#testing-cookies>Testing cookies</a>
 - <a href=#testing-web-apps-on-several-devices-simultaneously>Testing web apps on several devices simultaneously</a>
+- <a href=#testing-web-app-UI-behaviour-with-content-amount-variations>Testing web app UI behaviour with content amount variations</a>
 
 ### Chrome hard refresh or deleting cache refresh
 
@@ -143,6 +144,14 @@ These are some of the test cases to be considered while testing website Cookies.
 
 ### Testing web apps on several devices simultaneously
 Check out [Ghostlab](https://www.vanamco.com/ghostlab/).
+
+### Testing web app UI behaviour with content amount variations
+When you want to quickly change the content on a page (i.e. to check what the page would look like if there is more/less text, how buttons would look like with longer/shorter labels etc.), you can use the `document.designMode='on'` command in the browers' console:
+1. open the console
+2. enter `document.designMode='on'`
+3. hit Enter
+
+The `designMode` should be enabled and you can edit the content.
 
 ---
 
