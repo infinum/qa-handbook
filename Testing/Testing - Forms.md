@@ -70,4 +70,4 @@ You'll rarely find capitalization principles and keyboard type suggestions in yo
 
 ---
 
-![testing-prince-of-versions.gif](/img/testing-prince-of-versions.gif) 
+![testing-prince-of-versions.gif](/img/testing-prince-of-versions.gif)
