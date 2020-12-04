@@ -162,7 +162,7 @@ Sprint process:
 **Definition of Done** drives the quality of work and is used to assess when a user story has been completed.
 
 
-##Estimation in points/hours, planning poker
+##Estimations
 
 Traditional software teams give estimates in a time format, e.g. hours, days, weeks, months. Agile teams, however, have transitioned to story points. 
 
