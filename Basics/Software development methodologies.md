@@ -18,6 +18,10 @@ Scrum is an agile framework for developing, delivering and sustaining complex (s
 
 
 ## Scrum roles
+
+### Stakeholders
+Stakeholders are the purpose for which a product or service is created in the first place. They have certain requirements that need to be fulfilled. It is the responsibility of the Scrum team to fulfill the given requirements of the stakeholders and satisfy them. An important point that needs to be noted is that stakeholders are not always Product owners, but Product owners are always stakeholders.
+
 ### Scrum master
 The Scrum master ensures the team lives agile values and principles and follows the processes and practices that the team agreed they would use.
 
@@ -46,8 +50,6 @@ engineers
 
 ![scrum-team.png](/img/scrum-team.png)
 
-### Stakeholders
-Stakeholders are the purpose for which a product or service is created in the first place. They have certain requirements that need to be fulfilled. It is the responsibility of the Scrum team to fulfill the given requirements of the stakeholders and satisfy them. An important point that needs to be noted is that stakeholders are not always Product owners, but Product owners are always stakeholders.
 
 ## Scrum ceremonies
 
@@ -166,7 +168,7 @@ Sprint process:
 
 Traditional software teams give estimates in a time format, e.g. hours, days, weeks, months. Agile teams, however, have transitioned to story points. 
 
-###Story points vs hours
+### Story points vs hours
 Story points rate the relative effort of work in a Fibonacci-like format: 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100. It may sound counter-intuitive, but that abstraction is actually helpful because it pushes the team to make tougher decisions around the difficulty of work. Here are a few reasons to use story points:
 
 - dates don't account for the non-project related work that inevitably creeps into our days: emails, meetings, and interviews that a team member may be involved in.
