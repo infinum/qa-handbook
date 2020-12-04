@@ -1,4 +1,4 @@
-> *Having a testing specialist on the team is a valuable asset, but the role of a specialist isn’t to restrict that responsibility to a single person.*
+> *Excellent customer service is the number one job in any company! It is the personality of the company and the reason customers come back.*
 
 ## Learn, learn, learn
 
