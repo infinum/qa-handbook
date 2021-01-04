@@ -124,7 +124,7 @@ See implemented platforms, check which event is implemented and its requirements
 Facebook analytics dashboard will not show triggered events instantly.
 
 ### Testing valid IBAN numbers
-Check out the list of valid [IBAN numbers](http://criticaltester.com/test-data/iban-values-testing/) if you test your application's IBAN validation and make payments through the app using (foreign) IBAN numbers.
+Check out the list of valid [IBAN numbers](https://ssl.ibanrechner.de/sample_accounts.html) if you test your application's IBAN validation and make payments through the app using (foreign) IBAN numbers.
 
 
 ## Android
