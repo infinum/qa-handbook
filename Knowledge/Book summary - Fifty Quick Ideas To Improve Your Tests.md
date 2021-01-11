@@ -1,5 +1,3 @@
-# "Fifty Quick Ideas To Improve Your Tests" book summary
-
 The book "50 quick ideas to improve your tests" is written by [Gojko Adzic](https://gojko.net/), David Evans, and Tom Roden.
 
 ![alt text](/img/book-intro.png)
