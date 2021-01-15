@@ -157,28 +157,25 @@ Sprint process:
 
 ## Definition of Ready & Done
 
-### Definiton of Ready
 **Definition of Ready** means that user stories must be immediately actionable. The team must be able to determine what needs to be done and the amount of work required.
 
-### Definition of Done
 **Definition of Done** drives the quality of work and is used to assess when a user story has been completed.
 
 
 ## Estimations
 
-Traditional software teams give estimates in a time format, e.g. hours, days, weeks, months. Agile teams, however, have transitioned to story points. 
+Estimations can be done in different ways. The two most common principles used for estimating are:
 
-### Story points vs hours
-Story points rate the relative effort of work in a Fibonacci-like format: 0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100. It may sound counter-intuitive, but that abstraction is actually helpful because it pushes the team to make tougher decisions around the difficulty of work. Here are a few reasons to use story points:
+- **story points** - rate the relative effort of work in a Fibonacci-like format (0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100). They are used to estimate the overall effort required to fully implement a product backlog item and are assigned relative to work complexity, the amount of work and risk or uncertainty.
+- **time estimates** - estimations are given using specific time frames (e.g. hours, days, weeks, months)
 
-- dates don't account for the non-project related work that inevitably creeps into our days: emails, meetings, and interviews that a team member may be involved in.
-- dates have an emotional attachment to them. Relative estimation removes the emotional attachment.
-- each team will estimate work on a slightly different scale, which means their velocity (measured in points) will naturally be different. This, in turn, makes it impossible to play politics using velocity as a weapon.
-- once you agree on the relative effort of each story point value, you can assign points quickly without much debate. 
-- story points reward team members for solving problems based on difficulty, not time spent. This keeps team members focused on shipping value, not spending time. 
+Traditional software teams usually give estimates in a time format, while agile teams tend to use story points instead. 
+
 
 ### Story points and planning poker
-Teams starting with story points use an exercise called **planning poker**. During planning poker, the team takes an item from the backlog, discusses it briefly and each member formulates an estimate. Then everyone holds up a card with the number that reflects their estimate. If everyone agrees, great! If not, they take some time to understand the rationale behind different estimates.
+Teams starting with story points use an exercise called **planning poker**. During planning poker, the team takes an item from the product backlog, discusses it briefly and each team member formulates an estimate. Then everyone holds up a card with the number that reflects their estimate. If everyone agrees, great! If not, they take some time to understand the rationale behind different estimates.
+
+*The information was taken from [Atlassian's blog pages](https://www.atlassian.com/agile/project-management/estimation) where you can read more about estimations and agile project management.*
 
 ## Burndown & velocity charts
 
