@@ -166,8 +166,8 @@ Sprint process:
 
 Estimations can be done in different ways. The two most common principles used for estimating are:
 
-- **story points** - rate the relative effort of work in a Fibonacci-like format (0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100). They are used to estimate the overall effort required to fully implement a product backlog item and are assigned relative to work complexity, the amount of work and risk or uncertainty.
 - **time estimates** - estimations are given using specific time frames (e.g. hours, days, weeks, months)
+- **story points** - rate the relative effort of work in a Fibonacci-like format (0, 0.5, 1, 2, 3, 5, 8, 13, 20, 40, 100). They are used to estimate the overall effort required to fully implement a product backlog item and are assigned relative to work complexity, the amount of work and risk or uncertainty.
 
 Traditional software teams usually give estimates in a time format, while agile teams tend to use story points instead. 
 
