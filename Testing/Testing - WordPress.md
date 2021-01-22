@@ -10,12 +10,12 @@ On this website, you can download and install a script called WordPress. For thi
 
 There are several different roles a user can play. If you get an Administrator approach, you'll have absolute control of everything, the whole CMS system: adjusting settings, adding and changing content, installing plugins, themes, and many more. Of course, that also carries a lot of responsibility. You can seriously screw up something as the Administrator, and it can cost you dearly, so be careful. 
 
-<img src="https://beta-photos.infinum.com/store/ff4ea8ba7a287c7e066e07db25a38e96.png" alt="drawing" style="width:200px;"/>
+![wp_login.png](/img/wp_login.png)
 
 To access the WP admin page, you have to use: *{domain}/wp‐login.php* (e.g., https://infinum.com/wp-admin/post.php). The data entry page will appear, and you need to enter a username and password. 
 After entering the correct data and clicking a Login button, you can access the WordPress system for content management/dashboard.
 
-<img src="https://beta-photos.infinum.com/store/c090c3d3641d24d1f66f2cd0125ddd8d.png" alt="drawing" style="width:600px;"/>
+![wp_dashboard.png](/img/wp_dashboard.png)
 
 ## 3. WordPress dashboard
 
@@ -57,19 +57,19 @@ Settings allow you to change your system settings. Things that can be set in set
 Since the release of the 5.0 version, WordPress has a new default content editor. Named the WordPress Gutenberg editor during development, "Gutenberg" is now called the "WordPress editor" or "block editor". Gutenberg is the name of the project for the WordPress block editor, which replaced the TinyMCE editor. 
 Gutenberg's main role is to manage the WP blocks. What does that mean? In essence, Gutenberg replaced one field for editing that the TinyMCE editor had with many individual blocks. These blocks allow you to create more complex designs than those in the old classic Editor. 
 
-<img src="https://beta-photos.infinum.com/store/14e7009556a546b8993b0c9e6d1d4171.png" alt="drawing" style="width:600px;"/>
+![gutenberg.png](/img/gutenberg.png)
 
 What is a block? A block can be almost anything. For example, you can have blocks for text, images, video, buttons, widgets, tables, etc. And most importantly, developers will be able to create their blocks that you can access via plugins. Now you can create WP content just like you use LEGO cubes.
 
 ### Adding blocks
 
-<img src="https://beta-photos.infinum.com/store/8299e36fd8d345b00498e5b52aa93022.png" alt="drawing" style="width:50px;"/>
+![adding_icon.png](/img/adding_icon.png)
 
 You can add a block by clicking on the icon in the top left corner. You can search for the block you want to add and choose it. 
 When you select a block, you will get the block editor on the right side of the screen to adjust various setups regarding that block. 
 
 
-<img src="https://beta-photos.infinum.com/store/3db95948523961f5312206da8491c14a.png" alt="drawing" style="width:200px;"/>
+![block.png](/img/block.png)
 
 
 ##  5. Add and edit new content
@@ -79,7 +79,7 @@ When you select a block, you will get the block editor on the right side of the 
  - static page(s)
  - article (post)
 
-WordPress posts have a publication date and are displayed by date on the site’s blog page.
+WordPress posts have a publication date and are displayed by date on the site's blog page.
 On the other hand, pages are constant content on your site. These can be pages like "About us" or "Contact".
 Pages are not affected by the time they are posted.
 
@@ -89,12 +89,12 @@ The article or page itself can, of course, have images and videos in various for
 
 To add a new post, select Posts from the menu, then Add new. In front of you, a window as in the picture will open. To save, press the publish button. To add a new page from the menu, select Pages and Add new. 
 
-<img src="https://beta-photos.infinum.com/store/c243cb6a4579f18bac2f41e76fed5416.png" alt="drawing" style="width:600px;"/>
+![adding_new_content.png](/img/adding_new_content.png)
 
 ### Editing content
 To change the content of previously written articles, select Posts, and hoover on the article you want to refine or modify. The Edit option allows you to open the entire article, as when you wrote it. For fast changes, use Quick Edit. Trash deletes your article, while with the View option, you can view the article.
 
-<img src="https://beta-photos.infinum.com/store/e93a31c2d08cd70fc5efe8df1d36c25f.png" alt="drawing" style="width:600px;"/>
+![editing_content.png](/img/editing_content.png)
 
 ## 6. Useful WordPress plugins
 
@@ -119,12 +119,12 @@ When changing something in WordPress, you could assume the process is simple. Yo
 * Is the page working on both Android and iPhone?
 * Is the contact form on the page still working in Safari?
 * Is the mobile menu opening on Android?
-* Did the footer disappeared?
+* Did the footer disappear?
 
 As QA, you will be testing the visual and functional thing regarding WordPress. You will need to make sure that any content added or changed is looking good on the frontend. It's recommended you always do this on staging first and later do a production re-check. For example, if you are testing buttons, you can edit that button in WordPress in various ways such as its width, height, text, or color.
 Whenever you are testing anything on the frontend, you should make sure no content on any screen is overlaying on each other. Sometimes you will have to test forms on WordPress. You can test a form by checking its visual display on the page in various viewports, and you should also check if that form is working. You can test it by checking which plug is in use for forms, and there you can check if the form was successfully sent, e.g., Hubspot.
 
-<img src="https://beta-photos.infinum.com/store/5e8a505c5407e578dd7c0446343c7198.png" alt="drawing" style="width:400px;"/>
+![bug_example.png](/img/bug_example.png)
 
 ## 8. WordPress test cases
 ### WordPress - common bugs
@@ -134,10 +134,11 @@ The most common bugs you will probably encounter while testing WordPress are:
 1. Issues with uploading images in admin - sometimes you will notice that the page's images are missing, or you cannot upload new ones. When you try to upload an image, you get an error. Firstly, check your role and capabilities. If you have a role that can edit images, then Congrats!,  you found a bug. 
 
 2. Images displaying on frontend - very often, you will encounter a problem with images not being displayed properly on the frontend or not displaying at all. You might encounter a lazy loading problem with images as well.  If you notice images are taking a lot of time to load, the issue might also be:
+
     * Larger picture
     * Slow internet speed
     * Server performance issues
- 
+    
 3. User role capabilities - sometimes, you will encounter with an issue regarding capability the user role should have, but it's missing. For example, the admin role does not have all capabilities (e.g., the role has problems with post-editing). The best solution is to have a list of capabilities for every role and test each of them. You will need WP dev, who's probably the admin role, to change your roles while testing. 
 
 4. Content display on different screens - even when our developers use a wrapper that gives them the options to set how the block behaves on your cell phone, tablet, and large displays, it is common that the block doesn't behave as expected, so it's very important to check both small screens and very large screens.
