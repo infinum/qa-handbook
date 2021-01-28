@@ -1,10 +1,6 @@
--> Taking care of yourself
-
-# **Stress and Problems**
-
 As in every job and even though we do our best to minimize and eliminate them, some stressful situations might occur when you work. These situations should not alarm you as they happened to many before you and probably will happen again in the future. What you and we can do is to try to handle occurring problems and stressful situations the best that we can. That is why we have identified some of them and we will suggest a few tips on how to deal with them.
 
-## Losing Focus/ Lack of Concentration
+### Losing Focus/ Lack of Concentration
 
 Lack of concentration reduces the quality of our work but also might make us feel unhappy because we feel unproductive
 
@@ -19,7 +15,7 @@ Proposed remedies:
 
 Remember to time-track even the time you felt unproductive because this happens to everyone!
 
-## Stress around the 360 Meetings
+### Stress around the 360 Meetings
 
 Time around 360/quarterly reviews can be stressful, so what don't you try this:
 
@@ -27,7 +23,7 @@ Time around 360/quarterly reviews can be stressful, so what don't you try this:
 2. Ask that the time for OKR be scheduled
 3. Remember that this is not that scary at all
 
-# A bug in production
+## A bug in production
 
 1. Stay calm
 2. Which browser/ platforms/ devices are affected?
@@ -47,7 +43,7 @@ Remember to analyse the case and make it a learning experience:
 4. If not ours, whose fault is that this happened?
 5. What is our first choice of action? Slack/ Testing/ Meeting with a client?
 
-# Too many projects in parallel
+## Too many projects in parallel
 
 How to manage them all at the same time- right?
 
@@ -68,7 +64,7 @@ Before you start complying with everyone's wishes, think about:
 And remember - it is ok to say no (although we recommend putting it more nicely :). Multitasking does not increase efficiency, take a break and eliminate distractions.
 
 
-# Dealing with edge cases
+## Dealing with edge cases
 
 When dealing with testing, often we might find ourselves asking the question such as "How much testing is enough?" or "When is it enough and we should stop trying to capture that one bug?"
 
@@ -79,12 +75,12 @@ Be sure to ask yourself these questions instead:
 4. Are all bugs tested and fixed?
 5. Is there more budget and/or time?
 
-# Time management with multiple projects
+## Time management with multiple projects
 
 See chapter <a href=#too-many-projects-in-parallel>Too many projects in parallel</a>.
 
 
-# Slack is on fire
+## Slack is on fire
 
 Even though from time to time we set the roof on fire with extraordinary performance and client satisfaction, when your Slack is on fire and constantly playing music- this is a problem.
 
@@ -96,7 +92,7 @@ Even though from time to time we set the roof on fire with extraordinary perform
 6. More often you will find an answer faster by using public channels instead of DMs
 7. Respect the [Slack etiquette](https://slack.com/intl/en-hr/blog/collaboration/etiquette-tips-in-slack)
 
-# Overtime
+## Overtime
 
 Despite our best efforts, sometime overtime will happen. From time to time, overtime is unavoidable, what is worrying is prolonged overtime since it leads to a burnout.
 
@@ -126,7 +122,7 @@ And again, always track all of your work because when you do not:
 5. Staffing deficiencies are not revealed
 6. You stress others around you
 
-# A crazy deadline was assigned
+## A crazy deadline was assigned
 
 Here we are thinking about situations such as "A build gets released in the 9 pm" or "PO/PMs/Devs are pressuring you to close the task right this second" or there is simply "an abundance of tasks arriving in the last moment".
 
@@ -136,7 +132,7 @@ You might try:
 2. Ask your colleagues for help
 3. Remember that it is ok to say no- We pay extra attention that our work is high in quality
 
-# I got a bad build
+## I got a bad build
 
 And probably it won't be the last bad build you got :)
 
@@ -144,21 +140,21 @@ And probably it won't be the last bad build you got :)
 2. Assign the task back to the dev and write in detail all that is wrong and observed
 3. If this kind of problem is persistent, it is necessary to take action- Talk to the colleague, if it doesn't bear fruit, talk to Team Leads
 
-# I don't know how to test something
+## I don't know how to test something
 
-### Solitary approach:
+**Solitary approach:**
 
 1. Take a more close look at the documentation and knowledge repositories (You might find Github, JIRA & Confluence, Slack etc. very helpful)
 2. Use online available resources (Workshops, Handbook, Ministry of Testing, Youtube)
 
-### Team approach:
+**Team approach:**
 
 1. Ask a colleague who might have already work on something similar to lend you a hand
 2. If there isn't one, ask within QA team if someone can help you
 3. If that doesn't work, try talking to your other colleagues within the company
 
 
-# There is no time for improvements
+## There is no time for improvements
 
 How to even think about improving any task if we are already slim on time when doing the task?
 
@@ -166,7 +162,7 @@ How to even think about improving any task if we are already slim on time when d
 2. Breakdown the task to smaller, more manageable units
 3. Create a stand-alone time entry in your calendar dedicated to this improvement
 
-# Backlog refinement
+## Backlog refinement
 
 Some say that backlog refinements are the best part of work, and to enjoy them to their full potential, it is good to:
 
@@ -194,7 +190,7 @@ Constructive questions include, but are not limited to:
 3. If you underestimated the time needed, timely let other team members know about it
 4. Do not be afraid that you will set a wrong estimate
 
-# I am being pressured to "close" a task
+## I am being pressured to "close" a task
 
 When you end up in a situation like this, remember that we prioritize quality over good-looking burndown charts, and the quality gatekeepers are us. Be clear about which bugs/tasks you think are problematic, speak to your colleagues and voice your concerns!
 
@@ -203,25 +199,25 @@ Last resort, if you are still being pushed, remind your colleagues that:
 2. Technical debt
 3. poor app performance due to UI/UX problems
 
-# How to avoid onboarding shortcomings?
+## How to avoid onboarding shortcomings?
 
 1. Define the scope of testing (Make a list of everything that needs to be tested, how deep should we go, what is the deadline etc.)
 2. Have an onboarding with developers
 3. Have an onboarding about tools/management apps used for the project (such as JIRA and others)
 4. Ask questions
 
-# I feel unhappy working on this project
+## I feel unhappy working on this project
 
 We are not happy if our colleagues/employees are not happy- we are in this together. Yes, exactly like the people from the Full House TV show
 
-## The project is not challenging enough for me
+### The project is not challenging enough for me
 
 1. It's ok to say that we have reached the top of some project
 2. Be open and frank with the Team Lead
 3. Maybe some other colleague is dying to get on that project
 4. Maybe it is a perfect project for a newcomer
 
-## The project is too much for me
+### The project is too much for me
 
 1. The projects aren't randomly assigned, so someone had faith in you, maybe you should too!
 2. Have a talk with PM/Team Lead about what exactly is expected from you on the project
@@ -230,7 +226,7 @@ We are not happy if our colleagues/employees are not happy- we are in this toget
 5. Talk with your fellow team members about their experiences
 6. Think about using your educational budget to improve yourself in the field
 
-## Organising the chaos
+### Organising the chaos
 
 1. Define what exactly troubles you
 2. Come up with potential solutions
@@ -239,7 +235,7 @@ We are not happy if our colleagues/employees are not happy- we are in this toget
 5. Remember you can always come and talk to your fellow QA team members
 
 
-## How to deal with stiff people
+### How to deal with stiff people
 
 In our profesional, just as in our personal life, we might come across people who are hard to deal with. Best course of action is to try and communicate with them, but don't give up on your standard of conversation. Be assertive if needed and prepare well for tough conversations.
 
@@ -248,7 +244,7 @@ If that someone is someone from within the company, you can always bring the top
 If this situation has occurred with the client, you can talk with your project manager and don't take it personally, maybe that is just the way things are done in the client's company. Besides, it is a great way to practice your coping skills
 
 
-## Onboarding a new team member 
+### Onboarding a new team member 
 
 Here's what you can do in a situation like this:
 
@@ -263,7 +259,7 @@ Here's what you can do in a situation like this:
 
 Remember that you can't create your clone and you can't transmit all your knowledge in two days :)
 
-# Being onboarded to a new project
+## Being onboarded to a new project
 
 It might be a confusing time; often overlooked, this is a very important time where you can learn much.
 
