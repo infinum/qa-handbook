@@ -117,7 +117,7 @@ And again, always track all of your work because when you do not:
 
 1. You don't get recognized for your work
 2. You get frustrated without anyone knowing it
-3. You get payed less
+3. You get paid less
 4. The company earns less
 5. Staffing deficiencies are not revealed
 6. You stress others around you
@@ -237,7 +237,7 @@ We are not happy if our colleagues/employees are not happy- we are in this toget
 
 ### How to deal with stiff people
 
-In our profesional, just as in our personal life, we might come across people who are hard to deal with. Best course of action is to try and communicate with them, but don't give up on your standard of conversation. Be assertive if needed and prepare well for tough conversations.
+In our professional, just as in our personal life, we might come across people who are hard to deal with. Best course of action is to try and communicate with them, but don't give up on your standard of conversation. Be assertive if needed and prepare well for tough conversations.
 
 If that someone is someone from within the company, you can always bring the topic with your Team Lead. Also, it is quite possible other colleagues have the same experience and will bring it up on the 360 meetings.
 
