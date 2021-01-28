@@ -121,6 +121,29 @@ A main tester can redistribute his/her workload to the support tester when he/sh
 
 In case you're the **main tester** and you're not sure whether your project has a **support tester** assigned or not, you can check with your team and ask someone to take this responsibility.
 
+## Onboarding someone new to a project
+
+### What you can do:
+* Set-up: Invite the new person to all the relevant meetings, Slack channels, Firebase, Zeplin/Figma, Polyglot and all the others (VPN, JIRA, Teams etc.)
+* Start by explaining the big picture- What type of project is this, how it all begin, How long are we working on it
+*  Continue with more detailed specs:
+
+1. Talk about work processes
+2. Introduce the team (clients generally dislike personnel changes, say a few good words about the newcomer) who are the people you are going to be working with, what do they do, what are they like, what type of communication is expected
+3. Always make yourself available for questions and answer them the best way you can 
+4. Share some tips and trick
+5. Overlook (in a helping manner) the work done and help remedy the mistakes
+
+## Being onboarded to a new project
+
+* Ask, ask, ask & - you guessed it- ask! If you feel uncomfortable, make a list of non-urgent questions and send them in bulk once a day
+* It is perfectly normal and desired to have many questions in the beginning 
+* Everyone, especially in Infinum, understands that you are new and it is ok that you don't know all yet
+* Keep an eye on channels
+* Create all necessary accounts as soon as you receive invitations to services in order to be ready when you need them
+* Question status quo- fresh blood is good to have
+* Try mental maps
+
 ## Software development methodologies
 
 There are plenty of ways to organize a software project. Since your job is to take care of testing and other quality processes, it is important that you are familiar with different approaches.
