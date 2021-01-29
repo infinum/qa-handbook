@@ -2,7 +2,7 @@ As in every job and even though we do our best to minimize and eliminate them, s
 
 ### Losing Focus/ Lack of Concentration
 
-Lack of concentration reduces the quality of our work but also might make us feel unhappy because we feel unproductive
+Lack of concentration reduces the quality of our work but also might make us feel unhappy because we feel unproductive.
 
 Proposed remedies:  
 1. Take a break!   
