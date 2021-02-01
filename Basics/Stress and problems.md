@@ -2,15 +2,15 @@ As in every job and even though we do our best to minimize and eliminate them, s
 
 ### Losing Focus/ Lack of Concentration
 
-Lack of concentration reduces the quality of our work but also might make us feel unhappy because we feel unproductive
+Lack of concentration reduces the quality of our work but also might make us feel unhappy because we feel unproductive.
 
 Proposed remedies:  
 1. Take a break!   
 2. Switch to other tasks at hand  
 3. Ask for a "second pair of eyes"  
-4. Change location/ environment.  
-5. Prioritise tasks, do NOT multitask.  
-6. Identify what oftenly breaks your focus and try to mitigate the factor
+4. Change location/ environment  
+5. Prioritise tasks, do NOT multitask  
+6. Identify what often breaks your focus and try to mitigate the factor  
 7. When feeling unproductive, try using Tomato Timer or similar tools
 
 Remember to time-track even the time you felt unproductive because this happens to everyone!
@@ -31,7 +31,7 @@ Time around 360/quarterly reviews can be stressful, so what don't you try this:
 4. When was this bug first discovered
 5. What are our options to fix it?
 6. Alignment meeting with the team/ client on further steps
-7. How did this bug slip to us?
+7. How did this bug get passed us?
 
 ![root-cause.png](/img/root-cause.png)
 
@@ -68,11 +68,11 @@ And remember - it is ok to say no (although we recommend putting it more nicely 
 
 When dealing with testing, often we might find ourselves asking the question such as "How much testing is enough?" or "When is it enough and we should stop trying to capture that one bug?"
 
-Be sure to ask yourself these questions instead:
-1. Did you go through all test cases at least once?
-2. Did you go through all "flows" at least once?
-3. Are all High priority tasks done?
-4. Are all bugs tested and fixed?
+Be sure to ask yourself these questions instead:  
+1. Did you go through all test cases at least once?  
+2. Did you go through all "flows" at least once?  
+3. Are all High priority tasks done?  
+4. Are all bugs tested and fixed?  
 5. Is there more budget and/or time?
 
 ## Time management with multiple projects
@@ -82,7 +82,7 @@ See chapter <a href=#too-many-projects-in-parallel>Too many projects in parallel
 
 ## Slack is on fire
 
-Even though from time to time we set the roof on fire with extraordinary performance and client satisfaction, when your Slack is on fire and constantly playing music- this is a problem.
+Even though from time to time we set the roof on fire with extraordinary performance, your Slack being on fire and "playing music" is a problem.
 
 1. How urgent is something actually?
 2. You can use snooze notification action
@@ -96,7 +96,7 @@ Even though from time to time we set the roof on fire with extraordinary perform
 
 Despite our best efforts, sometime overtime will happen. From time to time, overtime is unavoidable, what is worrying is prolonged overtime since it leads to a burnout.
 
-If you notice the overtime is not going away- Speak up! Bring it on daily meetings, on scheduling weekly, talk to your Team leader, insist that the solution be found.
+If you notice the overtime is not going away- Speak up! Bring it up on daily meetings, on scheduling weekly, talk to your Team leader, insist that the solution be found.
 
 
 Our overtime policy:
@@ -107,7 +107,7 @@ Our overtime policy:
 
 Before you go to overtime try:
 
-1. Find a colleague (fellow traveller from QA) to help out
+1. Find a colleague to help out
 2. Find a colleague from the team to help out
 3. Made inquiries if it is possible to delay the release
 4. Try to delegate time from other projects, if possible
@@ -124,7 +124,7 @@ And again, always track all of your work because when you do not:
 
 ## A crazy deadline was assigned
 
-Here we are thinking about situations such as "A build gets released in the 9 pm" or "PO/PMs/Devs are pressuring you to close the task right this second" or there is simply "an abundance of tasks arriving in the last moment".
+Here we are talking about situations such as "A build gets released at 9 pm" or "PO/PMs are pressuring you to close the task" or there is "tons of tasks arriving in the last moment".
 
 You might try:
 
@@ -144,7 +144,7 @@ And probably it won't be the last bad build you got :)
 
 **Solitary approach:**
 
-1. Take a more close look at the documentation and knowledge repositories (You might find Github, JIRA & Confluence, Slack etc. very helpful)
+1. Take a more close look at the documentation and knowledge repositories (You might find Github, JIRA, Confluence, Slack etc. very helpful)
 2. Use online available resources (Workshops, Handbook, Ministry of Testing, Youtube)
 
 **Team approach:**
@@ -156,7 +156,7 @@ And probably it won't be the last bad build you got :)
 
 ## There is no time for improvements
 
-How to even think about improving any task if we are already slim on time when doing the task?
+How to even think about improving any task if we are already short on time when doing the task?
 
 1. Clearly and loudly communicate which process would you like to improve and explain why, what is its benefit
 2. Breakdown the task to smaller, more manageable units
@@ -192,11 +192,11 @@ Constructive questions include, but are not limited to:
 
 ## I am being pressured to "close" a task
 
-When you end up in a situation like this, remember that we prioritize quality over good-looking burndown charts, and the quality gatekeepers are us. Be clear about which bugs/tasks you think are problematic, speak to your colleagues and voice your concerns!
+When you end up in a situation like this, remember that we prioritize quality over good-looking burn down charts, and we are quality gatekeepers. Be clear about which bugs/tasks you think are problematic, speak to your colleagues and voice your concerns!
 
-Last resort, if you are still being pushed, remind your colleagues that:
-1.  A bug could slip undetected to a production build
-2. Technical debt
+Last resort, if you are still being pushed, remind your colleagues that: 
+1.  A bug could slip undetected to a production build  
+2. Technical debt  could arrise  
 3. poor app performance due to UI/UX problems
 
 ## How to avoid onboarding shortcomings?
@@ -239,25 +239,11 @@ We are not happy if our colleagues/employees are not happy- we are in this toget
 
 In our professional, just as in our personal life, we might come across people who are hard to deal with. Best course of action is to try and communicate with them, but don't give up on your standard of conversation. Be assertive if needed and prepare well for tough conversations.
 
-If that someone is someone from within the company, you can always bring the topic with your Team Lead. Also, it is quite possible other colleagues have the same experience and will bring it up on the 360 meetings.
+If that someone is someone from within the company, you can always bring the topic with your Team Lead. Also, it is possible other colleagues have the same experience and will bring it up on the 360 meetings.
 
-If this situation has occurred with the client, you can talk with your project manager and don't take it personally, maybe that is just the way things are done in the client's company. Besides, it is a great way to practice your coping skills
+If this situation has occurred with the client, you can talk with your project manager. Moreover, don't take it personally, maybe that is just the way things are done in the client's company. Besides, it is a great way to practice your coping skills.
 
 
-### Onboarding a new team member 
-
-Here's what you can do in a situation like this:
-
-1. Give all necessary access to tools and platforms you are using on the project to the new member
-2. Start with a big picture- what is this project about
-3. Continue with more exact work- what are we doing right now
-4. Explain the work processes to the new member
-5. Acquaint the new member with all team members and give them some background on all of them
-6. Always be ready to help out
-7. Give some tips and tricks as you teach
-8. Give persistent support and help with the errors
-
-Remember that you can't create your clone and you can't transmit all your knowledge in two days :)
 
 ## Being onboarded to a new project
 
@@ -269,4 +255,3 @@ It might be a confusing time; often overlooked, this is a very important time wh
 4. Do all administrative work (such as creating accounts) ASAP
 5. Feel free to question the status quo in the project
 6. You might try helping yourself with mental maps
-
