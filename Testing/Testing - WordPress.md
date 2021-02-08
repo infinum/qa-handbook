@@ -32,7 +32,7 @@ The Dashboard is the centerpiece of WordPress. You can add new and edit existing
 * **APPEARANCE** - used to control the layout of the page itself (the theme you are using). You can change themes, add widgets, edit menus, edit the header and background through this part. If you know the rules of writing HTML, CSS, and PHP, you can edit your page by writing the code.
 
 * **PLUGINS** - Plugins allow you to increase the functionality of WordPress itself. Through this menu, you can manage existing add-ons, add new ones, or if you know how to program
-using editors (editors) to change certain properties yourself. There is indeed a multitude plugins that you can download from the Internet; Moreover, you can download them through the WordPress system itself. After installation, they need to be activated, and most of them need to be further edited (adjusted). If you do something you don't like, you can deactivate it but also delete it completely.
+using editors (editors) to change certain properties yourself. There is indeed a multitude of plugins that you can download from the Internet; Moreover, you can download them through the WordPress system itself. After installation, they need to be activated, and most of them need to be further edited (adjusted). If you do something you don't like, you can deactivate it but also delete it completely.
 
 ### USERS
 
@@ -79,7 +79,7 @@ When you select a block, you will get the block editor on the right side of the 
  - static page(s)
  - article (post)
 
-WordPress posts have a publication date and are displayed by date on the site’s blog page.
+WordPress posts have a publication date and are displayed by date on the site's blog page.
 On the other hand, pages are constant content on your site. These can be pages like "About us" or "Contact".
 Pages are not affected by the time they are posted.
 
