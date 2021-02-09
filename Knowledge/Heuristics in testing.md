@@ -5,7 +5,7 @@ However, they can also be costly when they lead individuals to miss critical inf
 There are many software testing heuristics that can help guide you in your testing processes. You probably already know about the Goldilocks heuristic (even though you might not call it that). For example, when testing data input fields, you will probably try out data entries that are too big or too small, as well as the typical entries. This is rather thoroughly covered in [another Handbook chapter](https://infinum.com/handbook/books/qa/testing/testing-forms).
 
 
-### Cheat sheet with different heuristics
+## Cheat sheet with different heuristics
 
 In the image below, you can find an expanded overview of the Goldilocks heuristic along with a cheat sheet containing other interesting test heuristics you should keep in mind when you start testing:
 
@@ -14,12 +14,12 @@ In the image below, you can find an expanded overview of the Goldilocks heuristi
 The full cheat sheet can be found [here](https://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf).
 
 
-### Mnemonics
+## Mnemonics
 
 The easiest way to remember some of the most popular heuristics is through mnemonics. Mnemonics are memory devices that help in the retention and retrieval of larger pieces of information. For example, you can remember the first letter of each word in a list of items.
 
 
-#### RCRCRC
+### RCRCRC
 
 One such mnemonic is [**RCRCRC**](https://searchsoftwarequality.techtarget.com/tip/A-software-experts-heuristic-for-regression-testing), which can give you inspiration for your regression testing. 
 
@@ -31,7 +31,7 @@ One such mnemonic is [**RCRCRC**](https://searchsoftwarequality.techtarget.com/t
 - **Chronic:** which code may seem to be chronically breaking or having issues?
 
 
-#### I SLICED UP FUN
+### I SLICED UP FUN
 
 Another popular mnemonic for testing mobile apps is [**I SLICED UP FUN**](http://www.kohl.ca/articles/ISLICEDUPFUN.pdf).
 
@@ -49,7 +49,7 @@ Another popular mnemonic for testing mobile apps is [**I SLICED UP FUN**](http:/
 - **Network:** explore scenarios related to poor network connection, moving from one network to another, network without data, etc.
 
 
-#### FEW HICCUPS
+### FEW HICCUPS
 
 [**FEW HICCUPS**](https://www.developsense.com/blog/2012/07/few-hiccupps/) is a mnemonic that can help you remember key words for oracles that could support you with identifying problems in your product. These oracles are particularly useful when a specification is missing or contains inadequate information. It’s important to note that all oracles are heuristics; they’re just a specific type of heuristic which could help you recognize problems in your product. 
 
@@ -67,7 +67,7 @@ Another popular mnemonic for testing mobile apps is [**I SLICED UP FUN**](http:/
 
 An important thing to remember when you're applying some of these (or other) heuristics is that not every heuristic is applicable to every app. And this is okay. You are allowed to cherry-pick what you think your testing would benefit the most from. 
 
-#### Personal heuristics
+## Personal heuristics
 
 Now that you understand how other people use them, maybe you can think of some of your own heuristics. You can try the following:
 
