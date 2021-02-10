@@ -21,7 +21,7 @@ The easiest way to remember some of the most popular heuristics is through mnemo
 
 ### RCRCRC
 
-One such mnemonic is [**RCRCRC**](https://searchsoftwarequality.techtarget.com/tip/A-software-experts-heuristic-for-regression-testing), which can give you inspiration for your regression testing. 
+One such mnemonic is [RCRCRC](https://searchsoftwarequality.techtarget.com/tip/A-software-experts-heuristic-for-regression-testing), which can give you inspiration for your regression testing. 
 
 - **Recent:** what new features or new areas of code have been added?
 - **Core:** what essential or critical functions or features must continue to work?
@@ -33,7 +33,7 @@ One such mnemonic is [**RCRCRC**](https://searchsoftwarequality.techtarget.com/t
 
 ### I SLICED UP FUN
 
-Another popular mnemonic for testing mobile apps is [**I SLICED UP FUN**](http://www.kohl.ca/articles/ISLICEDUPFUN.pdf).
+Another popular mnemonic for testing mobile apps is [I SLICED UP FUN](http://www.kohl.ca/articles/ISLICEDUPFUN.pdf).
 
 - **Inputs into the device:** the ways in which you can interact with the device such as built-in keyboard/keypad, touch screen gestures, and typing
 - **Store:** application requirements for store submissions
@@ -51,7 +51,7 @@ Another popular mnemonic for testing mobile apps is [**I SLICED UP FUN**](http:/
 
 ### FEW HICCUPS
 
-[**FEW HICCUPS**](https://www.developsense.com/blog/2012/07/few-hiccupps/) is a mnemonic that can help you remember key words for oracles that could support you with identifying problems in your product. These oracles are particularly useful when a specification is missing or contains inadequate information. It’s important to note that all oracles are heuristics; they’re just a specific type of heuristic which could help you recognize problems in your product. 
+[FEW HICCUPS](https://www.developsense.com/blog/2012/07/few-hiccupps/) is a mnemonic that can help you remember key words for oracles that could support you with identifying problems in your product. These oracles are particularly useful when a specification is missing or contains inadequate information. It’s important to note that all oracles are heuristics; they’re just a specific type of heuristic which could help you recognize problems in your product. 
 
 - **Familiarity:** we expect the system to be inconsistent with patterns of familiar problems. We might start our test sessions in search of familiar issues, which might divert us from other issues
 - **Explainability:** we expect a system to be understandable to the degree that we can articulately explain its behaviour to ourselves and others
