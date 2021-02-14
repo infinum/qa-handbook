@@ -125,7 +125,7 @@ In case you're the **main tester** and you're not sure whether your project has 
 
 ### What you can do:
 * Set-up: invite the new person to all the relevant meetings, Slack channels, Firebase, Zeplin/Figma, Polyglot and all the others (VPN, JIRA, Teams etc.)
-* Start by explaining the big picture - what type of project is this, how it all began, how long are we working on it
+* Start by explaining the big picture: what type of project is this, how it all began, how long are we working on it
 * Continue with more detailed specs:
 
 1. Talk about work processes
