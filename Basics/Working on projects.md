@@ -125,11 +125,11 @@ In case you're the **main tester** and you're not sure whether your project has 
 
 ### What you can do:
 * Set-up: invite the new person to all the relevant meetings, Slack channels, Firebase, Zeplin/Figma, Polyglot and all the others (VPN, JIRA, Teams etc.)
-* Start by explaining the big picture: what type of project is this, how it all began, how long are we working on it
+* Start by explaining the big picture - what type of project is this, how it all began, how long are we working on it
 * Continue with more detailed specs:
 
 1. Talk about work processes
-2. Introduce the team (clients generally dislike personnel changes, say a few good words about the newcomer): who are the people you are going to be working with, what do they do, what are they like, what type of communication is expected
+2. Introduce the team (clients generally dislike personnel changes, say a few good words about the newcomer) - who are the people you are going to be working with, what do they do, what are they like, what type of communication is expected
 3. Always make yourself available for questions and answer them the best way you can 
 4. Share some tips and tricks
 5. Overlook (in a helping manner) the work done and help remedy the mistakes
