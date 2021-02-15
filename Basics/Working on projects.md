@@ -129,7 +129,7 @@ In case you're the **main tester** and you're not sure whether your project has 
 * Continue with more detailed specs:
 
 1. Talk about work processes
-2. Introduce the team (clients generally dislike personnel changes, say a few good words about the newcomer) - who are the people you are going to be working with, what do they do, what are they like, what type of communication is expected
+2. Introduce the team - who are the people you are going to be working with, what do they do, what are they like, what type of communication is expected
 3. Always make yourself available for questions and answer them the best way you can 
 4. Share some tips and tricks
 5. Overlook (in a helping manner) the work done and help remedy the mistakes
@@ -138,11 +138,11 @@ In case you're the **main tester** and you're not sure whether your project has 
 
 * Ask, ask, ask & - you guessed it - ask! If you feel uncomfortable, make a list of non-urgent questions and send them in bulk once a day
 * It is perfectly normal and desired to have many questions at the beginning 
-* Everyone, especially at Infinum, understands that you are new and it is ok that you don't know everything yet
-* Keep an eye on channels
+* Everyone, especially at Infinum, understands that you are new and it is ok that you don't know everything yet and might not have all the answers
+* Keep an eye on Slack channels
 * Create all necessary accounts as soon as you receive invitations to services in order to be ready when you need them
 * Question *status quo* - fresh blood is good to have
-* Try mental maps
+* Try helping yourself with mental maps
 
 ## Software development methodologies
 
