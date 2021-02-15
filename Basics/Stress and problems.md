@@ -1,6 +1,6 @@
 As in every job and even though we do our best to minimize and eliminate them, some stressful situations might occur when you work. These situations should not alarm you as they happened to many before you and probably will happen again in the future. What you and we can do is to try to handle occurring problems and stressful situations the best that we can. That is why we have identified some of them and we will suggest a few tips on how to deal with them.
 
-### Losing Focus / Lack of Concentration
+## Losing Focus / Lack of Concentration
 
 Lack of concentration reduces the quality of our work but also might make us feel unhappy because we feel unproductive.
 
@@ -15,7 +15,7 @@ Proposed remedies:
 
 Remember to track the time for all of your work, even the time you felt unproductive because this happens to everyone!
 
-### Stress around the 360 Meetings
+## Stress around the 360 Meetings
 
 Time around 360/quarterly reviews can be stressful, so why don't you try this:
 
@@ -82,7 +82,7 @@ See chapter <a href=#too-many-projects-in-parallel>Too many projects in parallel
 
 ## Slack is on fire
 
-Even though from time to time we set the roof on fire with extraordinary performance, your Slack being on fire and "playing music" is a problem.
+Even though from time to time we set the roof on fire with extraordinary performance, your Slack being on fire and constantly making notification sounds is a problem.
 
 1. How urgent is something actually?
 2. You can snooze notifications
@@ -209,7 +209,7 @@ Last resort, if you are still being pushed, remind your colleagues that:
 
 ## I feel unhappy working on this project
 
-We are not happy if our colleagues/employees are not happy - we are in this together. Yes, exactly like the people from the Full House TV show.
+We are not happy if our colleagues/employees are not happy - we are in this together.
 
 ### The project is not challenging enough for me
 
@@ -243,16 +243,3 @@ In our professional, just as in our personal life, we might come across people w
 If that someone is someone from within the company, you can always bring the topic with your Team Lead. Also, it is possible that other colleagues have the same experience and will bring it up on 360 meetings.
 
 If this situation has occurred with the client, you can talk with your project manager. Moreover, don't take it personally, maybe that is just the way things are done in the client's company. Besides, it is a great way to practice your coping skills.
-
-
-
-## Being onboarded to a new project
-
-It might be a confusing time; often overlooked, this is a very important time where you can learn much.
-
-1. Ask as many questions as you need, this is perfectly normal and even desirable
-2. Everyone understands that you are new to the project and might not have all the answers
-3. Pay attention to what is happening on project Slack channels
-4. Do all administrative work (such as creating accounts) ASAP
-5. Feel free to question the *status quo* in the project
-6. You might try helping yourself with mental maps
