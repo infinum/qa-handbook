@@ -31,7 +31,7 @@ Time around 360/quarterly reviews can be stressful, so why don't you try this:
 4. When was this bug first discovered?
 5. What are our options to fix it?
 6. Alignment meeting with the team/client on further steps
-7. How did this bug get passed us?
+7. How did this bug get past us?
 
 ![root-cause.png](/img/root-cause.png)
 
