@@ -135,9 +135,9 @@ The most common bugs you will probably encounter while testing WordPress are:
 
 * Images displaying on frontend - very often, you will encounter a problem with images not being displayed properly on the frontend or not displaying at all. You might encounter a lazy loading problem with images as well.  If you notice images are taking a lot of time to load, the issue might also be:
 
-    - Larger picture
-    - Slow internet speed
-    - Server performance issues
+    * Larger picture
+    * Slow internet speed
+    * Server performance issues
     
 * User role capabilities - sometimes, you will encounter an issue regarding the capability the user role should have, but it's missing. For example, the admin role does not have all capabilities (e.g. the role has problems with post-editing). The best solution is to have a list of capabilities for every role and test each of them. You will need WP dev, who's probably the admin role, to change your roles while testing. 
 
