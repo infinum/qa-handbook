@@ -12,7 +12,7 @@ Git is a **Version Control System** (VCS). There are various version control sys
 * simplified collaboration on files and projects with other people
 
 
-Git should already be installed on your Mac. To check the version, run the following command in the terminal:
+You should already have Git installed on your Mac. To check the version, run the following command in the terminal:
 
 `git --version`
 
@@ -35,7 +35,7 @@ GitHub is a cloud-based Git repository hosting service, i.e. a web-based Git rep
 ***Origin*** is the name of the originally cloned remote repository. The name *origin* is used instead of the repository's URL for easier referencing.
  
 ***Main*** is the name of the default branch that git creates when first creating a repository. In most cases, *main* means the *main branch*. 
-Sometimes you might hear or read about the *master branch*, which is the old default branch name and can still be seen in some older projects.
+Sometimes you might hear or read about the *master branch*, which is the old default branch name and you can still see it in some older projects.
  
 The names *main* and *origin* are a standard convention and don't have a special meaning. Although they can be renamed to whatever you want, it’s better to leave them as it is.
 
@@ -59,7 +59,8 @@ The names *main* and *origin* are a standard convention and don't have a special
 
 `git merge` joins two or more branches together
 
-![Basic git workflow](/img/git_workflow.jpg)
+<img src="/img/git_workflow.jpg" alt="basic workflow" width="500"/>
+
 
 ## Basic workflow
 The sections below show the steps for a basic git workflow when starting a project from scratch - from creating a remote repository, cloning it to your machine, and then pushing the changes made locally to the remote repository.
@@ -150,4 +151,5 @@ Later, you can simply use `git pull` and `git push`
 
 This is how a complete workflow would look like:
 
-![Basic git workflow example](/img/git_workflow_example.png)
+<img src="/img/git_workflow_example.png" alt="example flow" width="500"/>
+
