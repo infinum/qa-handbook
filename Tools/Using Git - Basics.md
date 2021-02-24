@@ -59,7 +59,7 @@ The names *main* and *origin* are a standard convention and don't have a special
 
 `git merge` joins two or more branches together
 
-![git_workflow.jpg](/img/git_workflow.jpg)
+<span style="display:block; margin-left:auto; margin-right:auto; width:75%;">![git_workflow.jpg](/img/git_workflow.jpg)</span>
 
 
 
@@ -149,10 +149,4 @@ Later, you can simply use `git pull` and `git push`
 
 This is how a complete workflow would look like:
 
-![git_workflow_example.png](/img/git_workflow_example.png)
-
-Test with blog class
-<span class="blog-image" style="display:block; margin-left:auto; margin-right:auto; width:100%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>
-
-Test without blog class and smaller width
 <span style="display:block; margin-left:auto; margin-right:auto; width:75%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>

@@ -154,8 +154,7 @@ Use the `git remote set-url` command to change your remote’s URL.
 Every project starts with the main branch, i.e. a main line of development. Sometimes you may want to try something out, have another version of your work or start working on a new feature and have it separate from the main. This is where branching comes in handy. By creating a branch you are creating an independent line of development in which you can continue your work without having to fear messing something up in the main branch.
 Branching is a common practice among developers when introducing a new feature.
 
-![git_branches.jpg](/img/git_branches.jpg)
-
+<span style="display:block; margin-left:auto; margin-right:auto; width:75%;">![git_branches.jpg](/img/git_branches.jpg)</span>
 
 
 ### How to switch branches
@@ -203,7 +202,6 @@ There are multiple ways to create a new branch. This example shows how to create
 
 	`git push`
 
-
  
 ### How to merge branches
 To merge branches means to join their development histories together, i.e. to integrate the branch you worked on back into the branch from which it was created. 
@@ -232,7 +230,7 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 2. From the branch dropdown menu in the upper left corner, select the branch that contains your commits
 
-    ![git_pull_request.png](/img/git_pull_request.png)
+<span style="display:block; margin-left:auto; margin-right:auto; width:75%;">![git_pull_request.png](/img/git_pull_request.png)</span>
 
 
 3. Click *Pull request* (on the right-hand side of the greyed-out box)
@@ -241,7 +239,7 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 5. In the *compare: [branch-name]* dropdown menu choose the branch you made your changes in
 
-    ![git_choose_branches_PR.png](/img/git_choose_branches_PR.png)
+<span style="display:block; margin-left:auto; margin-right:auto; width:75%;">![git_choose_branches_PR.png](/img/git_choose_branches_PR.png)</span>
 
 
 6. Type in a title and comment for the pull request
