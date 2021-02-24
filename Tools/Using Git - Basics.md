@@ -154,5 +154,5 @@ This is how a complete workflow would look like:
 Test with blog class
 <span class="blog-image" style="display:block; margin-left:auto; margin-right:auto; width:100%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>
 
-Test without blog class
-<span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>
+Test without blog class and smaller width
+<span style="display:block; margin-left:auto; margin-right:auto; width:75%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>
