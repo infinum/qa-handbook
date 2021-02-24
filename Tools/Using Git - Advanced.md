@@ -137,10 +137,10 @@ Use the `git remote set-url` command to change your remote’s URL.
 4. Change your remote's URL 
  - If updating to HTTPS:
 
-		`git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
+    `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
  - If updating to SSH:
 
-		`git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
+    `git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
 
 5. Verify that the remote URL has changed
 
