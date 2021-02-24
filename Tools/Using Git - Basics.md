@@ -5,11 +5,11 @@
 ### What is Git?
 Git is a **Version Control System** (VCS). There are various version control systems, but Git is by far the most popular one, both for individual and company use. On a very basic level, there are a couple of awesome things a VCS offers:
 
-* tracking changes in your files 
+ - tracking changes in your files 
 
-* the option to revert to a previous version
+ -  the option to revert to a previous version
 
-* simplified collaboration on files and projects with other people
+ - simplified collaboration on files and projects with other people
 
 
 You should already have Git installed on your Mac. To check the version, run the following command in the terminal:
@@ -22,11 +22,11 @@ In case you don’t have Git installed, the command above will also start the in
 ### What is GitHub?
 GitHub is a cloud-based Git repository hosting service, i.e. a web-based Git repository. GitHub provides:
 
-* a free and easy place to use Git
+ - a free and easy place to use Git
 
-* a cloud to store your code in
+ - a cloud to store your code in
 
-* various features for easier collaboration with other people
+ - various features for easier collaboration with other people
 
 
 ## Terminology
