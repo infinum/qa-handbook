@@ -2,7 +2,7 @@
 
 ## How to generate personal access token
 
-To make the git commands *pull* / *push* / *clone* work with two-factor authentication (2FA), you need a personal access token which you will then use for authentication instead of the user password when performing *clone* / *pull* / *push* operations.
+To make the git commands *pull* / *push* / *clone* work with two-factor authentication (2FA), you need a personal access token which you will then use for authentication when performing *clone* / *pull* / *push* operations, instead of the user password.
 
 1. Go to the *GitHub*
 
@@ -16,11 +16,11 @@ To make the git commands *pull* / *push* / *clone* work with two-factor authenti
 
 6. Confirm your GitHub password, if prompted
 
-7. In the Note field type in the token name
+7. In the 'Note' field type in the token name
 
 8. Select the *scopes* (permissions) for the access token
 
-	* Select *repo* to have full control of private repositories
+	- Select *repo* to have full control of private repositories
 
 9. Click the *Generate token* button
 
@@ -105,11 +105,11 @@ To configure your Github account to use your new (or existing) SSH key, you'll a
 
 	`pbcopy < ~/.ssh/id_rsa.pub`
 
-2. Open Settings on your Github page
+2. Open *Settings* on your Github page
 
-3. Select SSH and GPG keys in the menu on the left-hand side
+3. Select *SSH and GPG keys* in the menu on the left-hand side
 
-4. Click the New SSH key button
+4. Click the *New SSH ke*y button
 
 5. In the *Title* field type in a descriptive label for the new key. For example, if you're using your work Mac, you could call it "*work-Mac*"
 
@@ -137,11 +137,11 @@ Use the `git remote set-url` command to change your remote’s URL.
 
 4. Change your remote's URL 
 
-	* If updating to HTTPS:
+	- If updating to HTTPS:
 
 		`git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
 
-	* If updating to SSH:
+	- If updating to SSH:
 
 		`git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
 
@@ -175,7 +175,7 @@ Let’s say a project already exists and you want to pull the updates and contin
 	
 	`git checkout feature-1`
 
-4. Make the changes
+4. Make the changes to files
 
 5. Stage, commit and push :) 
  
