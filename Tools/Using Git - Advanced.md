@@ -19,8 +19,7 @@ To make the git commands *pull* / *push* / *clone* work with two-factor authenti
 7. In the 'Note' field type in the token name
 
 8. Select the *scopes* (permissions) for the access token
-
-     - Select *repo* to have full control of private repositories
+ - Select *repo* to have full control of private repositories
 
 9. Click the *Generate token* button
 
@@ -245,7 +244,6 @@ A pull request is a way of notifying the collaborators on the project about the 
 
     <img src="/img/git_choose_branches_PR.png" alt="branches pull request" width="750"/>
     
-    <img src="/img/git_choose_branches_PR.png" alt="branches pull request" style="width:750px;"/>
 
 6. Type in a title and comment for the pull request
 
