@@ -59,7 +59,8 @@ The names *main* and *origin* are a standard convention and don't have a special
 
 `git merge` joins two or more branches together
 
-<img src="/img/git_workflow.jpg" alt="example flow" width="700"/>
+![git_workflow.jpg](/img/git_workflow.jpg)
+
 
 
 ## Basic workflow
@@ -126,7 +127,6 @@ Once you have a local copy of the remote repository on your machine, it is time 
  - To stage a single file
 
 		`git add file1.md`
-
  - To stage all modified files
 
 		`git add .`
@@ -149,5 +149,10 @@ Later, you can simply use `git pull` and `git push`
 
 This is how a complete workflow would look like:
 
-<img src="/img/git_workflow_example.png" alt="example flow" width="500"/>
+![git_workflow_example.png](/img/git_workflow_example.png)
 
+Test with blog class
+<span class="blog-image" style="display:block; margin-left:auto; margin-right:auto; width:100%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>
+
+Test without blog class
+<span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>

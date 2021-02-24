@@ -135,12 +135,11 @@ Use the `git remote set-url` command to change your remote’s URL.
 	`cd repository`
 
 4. Change your remote's URL 
-
-     - If updating to HTTPS:
+ - If updating to HTTPS:
 
 		`git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
 
-      - If updating to SSH:
+ - If updating to SSH:
 
 		`git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
 
@@ -155,7 +154,7 @@ Use the `git remote set-url` command to change your remote’s URL.
 Every project starts with the main branch, i.e. a main line of development. Sometimes you may want to try something out, have another version of your work or start working on a new feature and have it separate from the main. This is where branching comes in handy. By creating a branch you are creating an independent line of development in which you can continue your work without having to fear messing something up in the main branch.
 Branching is a common practice among developers when introducing a new feature.
 
-<img src="/img/git_branches.jpg" alt="branches" width="700"/>
+![git_branches.jpg](/img/git_branches.jpg)
 
 
 
@@ -233,7 +232,7 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 2. From the branch dropdown menu in the upper left corner, select the branch that contains your commits
 
-     <img src="/img/git_pull_request.png" alt="pull request" width="750"/>
+    ![git_pull_request.png](/img/git_pull_request.png)
 
 
 3. Click *Pull request* (on the right-hand side of the greyed-out box)
@@ -242,8 +241,8 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 5. In the *compare: [branch-name]* dropdown menu choose the branch you made your changes in
 
-    <img src="/img/git_choose_branches_PR.png" alt="branches pull request" width="750"/>
-    
+    ![git_choose_branches_PR.png](/img/git_choose_branches_PR.png)
+
 
 6. Type in a title and comment for the pull request
 
