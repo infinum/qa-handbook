@@ -59,7 +59,7 @@ The names *main* and *origin* are a standard convention and don't have a special
 
 `git merge` joins two or more branches together
 
-<span style="display:block; margin-left:auto; margin-right:auto; width:75%;">![git_workflow.jpg](/img/git_workflow.jpg)</span>
+<span style="display:block; margin-left:auto; margin-right:auto; width:85%;">![git_workflow.jpg](/img/git_workflow.jpg)</span>
 
 
 
