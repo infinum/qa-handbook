@@ -75,9 +75,8 @@ The following steps will help you create an initialized GitHub repository with a
 3. Type in the repository name
 
 4. Choose the **visibility** of the repository by selecting *Public* or *Private*
-	- *Public* repositories are visible to everyone so think twice before pushing anything to it
-	
-	- *Private* repositories are only accessible to you and the people you share them with
+ - *Public* repositories are visible to everyone so think twice before pushing anything to it
+ - *Private* repositories are only accessible to you and the people you share them with
 
 5. In the *Initialize this repository with* section, select the **Add a README file** checkbox
 	- It is a good idea to include a README file containing information about the project
@@ -125,11 +124,11 @@ Once you have a local copy of the remote repository on your machine, it is time 
 
 4. **Stage** the modified files
 
-	- To stage a single file
+ - To stage a single file
 
 		`git add file1.md`
 
-	- To stage all modified files
+ - To stage all modified files
 
 		`git add .`
 

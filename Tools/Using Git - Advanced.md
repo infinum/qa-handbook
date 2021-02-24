@@ -20,7 +20,7 @@ To make the git commands *pull* / *push* / *clone* work with two-factor authenti
 
 8. Select the *scopes* (permissions) for the access token
 
-	- Select *repo* to have full control of private repositories
+ - Select *repo* to have full control of private repositories
 
 9. Click the *Generate token* button
 
@@ -137,11 +137,11 @@ Use the `git remote set-url` command to change your remote’s URL.
 
 4. Change your remote's URL 
 
-	- If updating to HTTPS:
+ - If updating to HTTPS:
 
 		`git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
 
-	- If updating to SSH:
+ - If updating to SSH:
 
 		`git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
 
@@ -234,7 +234,7 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 2. From the branch dropdown menu in the upper left corner, select the branch that contains your commits
 
-	<img src="/img/git_pull_request.png" alt="pull request" width="750"/>
+ <img src="/img/git_pull_request.png" alt="pull request" width="750"/>
 
 
 3. Click *Pull request* (on the right-hand side of the greyed-out box)
@@ -243,7 +243,7 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 5. In the *compare: [branch-name]* dropdown menu choose the branch you made your changes in
 
-	<img src="/img/git_choose_branches_PR.png" alt="branches pull request" width="750"/>
+ <img src="/img/git_choose_branches_PR.png" alt="branches pull request" width="750"/>
 
 6. Type in a title and comment for the pull request
 
