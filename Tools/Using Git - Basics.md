@@ -5,11 +5,11 @@
 ### What is Git?
 Git is a **Version Control System** (VCS). There are various version control systems, but Git is by far the most popular one, both for individual and company use. On a very basic level, there are a couple of awesome things a VCS offers:
 
-* tracking changes in your files 
+ - tracking changes in your files 
 
-* the option to revert to a previous version
+ -  the option to revert to a previous version
 
-* simplified collaboration on files and projects with other people
+ - simplified collaboration on files and projects with other people
 
 
 You should already have Git installed on your Mac. To check the version, run the following command in the terminal:
@@ -22,20 +22,20 @@ In case you don’t have Git installed, the command above will also start the in
 ### What is GitHub?
 GitHub is a cloud-based Git repository hosting service, i.e. a web-based Git repository. GitHub provides:
 
-* a free and easy place to use Git
+ - a free and easy place to use Git
 
-* a cloud to store your code in
+ - a cloud to store your code in
 
-* various features for easier collaboration with other people
+ - various features for easier collaboration with other people
 
 
 ## Terminology
-***Repository*** (often called ‘repo’) is a location where your files and folders are stored.
+**Repository** (often called ‘repo’) is a location where your files and folders are stored.
 
-***Origin*** is the name of the originally cloned remote repository. The name *origin* is used instead of the repository's URL for easier referencing.
+**Origin** is the name of the originally cloned remote repository. The name *origin* is used instead of the repository's URL for easier referencing.
  
-***Main*** is the name of the default branch that git creates when first creating a repository. In most cases, *main* means the *main branch*. 
-Sometimes you might hear or read about the *master branch*, which is the old default branch name and you can still see it in some older projects.
+**Main** is the name of the default branch that git creates when first creating a repository. In most cases, *main* means the *main branch*. 
+Sometimes you might hear or read about the *master branch*, which is the old default branch name that you can still see in some older projects.
  
 The names *main* and *origin* are a standard convention and don't have a special meaning. Although they can be renamed to whatever you want, it’s better to leave them as it is.
 
@@ -45,7 +45,7 @@ The names *main* and *origin* are a standard convention and don't have a special
 
 `git clone` creates a local copy of a remote repository
 
-`git branch` creates, lists or deletes branches (depending on the options it is used with)
+`git branch` creates, lists or deletes branches (depending on the option it is used with)
 
 `git add` prepares changes for commit, i.e. tells git which file(s) you want to include in the following commit
 
@@ -59,7 +59,8 @@ The names *main* and *origin* are a standard convention and don't have a special
 
 `git merge` joins two or more branches together
 
-<img src="/img/git_workflow.jpg" alt="basic workflow" width="500"/>
+<span style="display:block; margin-left:auto; margin-right:auto; width:95%;">![git_workflow.jpg](/img/git_workflow.jpg)</span>
+
 
 
 ## Basic workflow
@@ -75,12 +76,11 @@ The following steps will help you create an initialized GitHub repository with a
 3. Type in the repository name
 
 4. Choose the **visibility** of the repository by selecting *Public* or *Private*
-	* *Public* repositories are visible to everyone so think twice before pushing anything to it
-	
-	* *Private* repositories are only accessible to you and the people you share them with
+ - *Public* repositories are visible to everyone so think twice before pushing anything to it
+ - *Private* repositories are only accessible to you and the people you share them with
 
 5. In the *Initialize this repository with* section, select the **Add a README file** checkbox
-	* It is a good idea to include a README file containing information about the project
+ - It is a good idea to include a README file containing information about the project
 
 6. Click the **Create Repository** button
 
@@ -93,7 +93,7 @@ Cloning a GitHub repository creates a local copy of that remote repository. The 
 2. Click the **Code** button to expand the dropdown menu 
 
 3. Select the desired option, e.g. SSH, and **copy** the **URL**
-	* **NOTE**: If you already have 2FA enabled and try to clone the repository using the HTTPS option, you might run into the '*Authentication failed*' issue 
+	- **NOTE**: If you already have 2FA enabled and try to clone the repository using the HTTPS option, you might run into the '*Authentication failed*' issue 
 
 4. Open the terminal on your machine and position to a folder in which you want to put your new project (e.g. Documents folder)
 
@@ -124,12 +124,10 @@ Once you have a local copy of the remote repository on your machine, it is time 
 3. Make the changes, e.g. edit files file1.md and file2.md
 
 4. **Stage** the modified files
-
-	* To stage a single file
+ - To stage a single file
 
 		`git add file1.md`
-
-	* To stage all modified files
+ - To stage all modified files
 
 		`git add .`
 
@@ -151,5 +149,4 @@ Later, you can simply use `git pull` and `git push`
 
 This is how a complete workflow would look like:
 
-<img src="/img/git_workflow_example.png" alt="example flow" width="500"/>
-
+<span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>

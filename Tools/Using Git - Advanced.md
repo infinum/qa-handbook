@@ -2,7 +2,7 @@
 
 ## How to generate personal access token
 
-To make the git commands *pull* / *push* / *clone* work with two-factor authentication (2FA), you need a personal access token which you will then use for authentication instead of the user password when performing *clone* / *pull* / *push* operations.
+To make the git commands *pull* / *push* / *clone* work with two-factor authentication (2FA), you need a personal access token which you will then use for authentication when performing *clone* / *pull* / *push* operations, instead of the user password.
 
 1. Go to the *GitHub*
 
@@ -16,11 +16,10 @@ To make the git commands *pull* / *push* / *clone* work with two-factor authenti
 
 6. Confirm your GitHub password, if prompted
 
-7. In the Note field type in the token name
+7. In the 'Note' field type in the token name
 
 8. Select the *scopes* (permissions) for the access token
-
-	* Select *repo* to have full control of private repositories
+ - Select *repo* to have full control of private repositories
 
 9. Click the *Generate token* button
 
@@ -105,11 +104,11 @@ To configure your Github account to use your new (or existing) SSH key, you'll a
 
 	`pbcopy < ~/.ssh/id_rsa.pub`
 
-2. Open Settings on your Github page
+2. Open *Settings* on your Github page
 
-3. Select SSH and GPG keys in the menu on the left-hand side
+3. Select *SSH and GPG keys* in the menu on the left-hand side
 
-4. Click the New SSH key button
+4. Click the *New SSH ke*y button
 
 5. In the *Title* field type in a descriptive label for the new key. For example, if you're using your work Mac, you could call it "*work-Mac*"
 
@@ -136,12 +135,10 @@ Use the `git remote set-url` command to change your remote’s URL.
 	`cd repository`
 
 4. Change your remote's URL 
+ - If updating to HTTPS:
 
-	* If updating to HTTPS:
-
-		`git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
-
-	* If updating to SSH:
+	    `git remote set-url origin https://github.com/USERNAME/REPOSITORY.git`
+ - If updating to SSH:
 
 		`git remote set-url origin git@github.com:USERNAME/REPOSITORY.git`
 
@@ -156,8 +153,7 @@ Use the `git remote set-url` command to change your remote’s URL.
 Every project starts with the main branch, i.e. a main line of development. Sometimes you may want to try something out, have another version of your work or start working on a new feature and have it separate from the main. This is where branching comes in handy. By creating a branch you are creating an independent line of development in which you can continue your work without having to fear messing something up in the main branch.
 Branching is a common practice among developers when introducing a new feature.
 
-<img src="/img/git_branches.jpg" alt="branches" width="700"/>
-
+<span style="display:block; margin-left:auto; margin-right:auto; width:90%;">![git_branches.jpg](/img/git_branches.jpg)</span>
 
 
 ### How to switch branches
@@ -175,7 +171,7 @@ Let’s say a project already exists and you want to pull the updates and contin
 	
 	`git checkout feature-1`
 
-4. Make the changes
+4. Make the changes to files
 
 5. Stage, commit and push :) 
  
@@ -205,7 +201,6 @@ There are multiple ways to create a new branch. This example shows how to create
 
 	`git push`
 
-
  
 ### How to merge branches
 To merge branches means to join their development histories together, i.e. to integrate the branch you worked on back into the branch from which it was created. 
@@ -234,15 +229,15 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 2. From the branch dropdown menu in the upper left corner, select the branch that contains your commits
 
-	<img src="/img/git_pull_request.png" alt="pull request" width="750"/>
-	
+	<span style="display:block; margin-left:auto; margin-right:auto; width:85%;">![git_pull_request.png](/img/git_pull_request.png)</span>
+
 3. Click *Pull request* (on the right-hand side of the greyed-out box)
 
 4. In the *base: [branch-name]* dropdown menu select the branch you'd like to merge your changes into 
 
 5. In the *compare: [branch-name]* dropdown menu choose the branch you made your changes in
 
-	<img src="/img/git_choose_branches_PR.png" alt="branches pull request" width="750"/>
+	<span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![git_choose_branches_PR.png](/img/git_choose_branches_PR.png)</span>
 
 6. Type in a title and comment for the pull request
 
