@@ -36,6 +36,7 @@ But, for the purpose of testing the analytics implementation, we can use Debug m
 
 Ask your favorite iOS developer to make you a Debug mode of the build that has analytics implemented (info how to implement the Firebase Debug mode can be found [here](https://firebase.google.com/docs/analytics/debugview) - iOS tab).
  
+
 **Android**
 
 You can ask your favorite Android developer as well, but this one you can make on your own - and it’s fairly simple (so be kind to Andys and do it :). Just follow the steps below:

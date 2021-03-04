@@ -83,7 +83,7 @@ Don't just follow what the task says. Do whatever you think a user might do. Do 
 Whenever a network request is being executed (which is often indicated with a loader), try navigating away from that screen. If the developer has not handled this case, it might result in a crash because the app will try to select or add data to screen elements that are no longer allocated in memory.
 
 ### Heuristics in general
-A heuristic, is any approach to problem solving, learning, or discovery that employs a practical method not guaranteed to be optimal or perfect, but sufficient for the immediate goals. Read more about it [here](https://www.developsense.com/blog/2012/04/heuristics-for-understanding-heuristics/).
+A heuristic is any approach to problem solving, learning, or discovery that employs a practical method not guaranteed to be optimal or perfect, but sufficient for the immediate goals. Read more about it [here](https://infinum.com/handbook/books/qa/knowledge/heuristics-in-testing).
 
 ### Locale
 The German strings never fit. Make sure to do a smoke test in all supported languages.
@@ -97,7 +97,7 @@ The app uses fingerprint login? Remove all stored fingerprints from the device.
 
 ### Monkey testing
 Behave like a monkey, try tapping that submit button two or three times. Try tapping navigation buttons several times.
-The [Monkey testing] (https://handbook.infinum.co/books/qa/Tools/Automated%20monkey%20testing) chapter might also help.
+The [Monkey testing] (https://infinum.com/handbook/books/qa/Tools/Automated%20monkey%20testing) chapter might also help.
 
 ### No internet connection
 Try going through the app without an internet connection.
