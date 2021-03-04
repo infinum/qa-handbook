@@ -1,6 +1,6 @@
 > *Quality is not an act, it is a habit.*
  
-# Why do we use Postman?
+## Why do we use Postman?
 
 * To write API tests
 * It has a nice and intuitive interface
