@@ -24,7 +24,7 @@ This is the easiest way and will provide automatic updates:
 
 **USB connection**
 
-1. Connect the Android device -> USB cable -> USB dongle -> Mac and activate [“Developer mode”](https://infinum.com/handbook/books/qa/Testing/Hacking%20mobile%20devices#enabling-android-dev-settings) on the Android device.
+1. Connect the Android device -> USB cable -> USB dongle -> Mac and activate [“Developer mode”](https://infinum.com/handbook/books/qa/Testing/Testing%20-%20Mobile#enabling-developer-options) on the Android device.
 
 2. Mark the option “Enabling USB Debugging”.
 
