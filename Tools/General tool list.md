@@ -67,7 +67,7 @@ A web interface for browsing designs made in Sketch.
 Just right-click on any editable item on the page and insert lorems, names, numbers, currencies, payment cards, etc. Check boundaries and edge cases for exploratory testing.
 
 ### Chrome Dev Tools
-The best thing since sliced bread. Read a short tutorial [in our own Handbook](https://infinum.com/handbook/books/qa/tools/using-chrome-developer-tools).
+The best thing since sliced bread. Read a short tutorial [in our own Handbook](https://infinum.com/handbook/books/qa/tools/using-chrome-dev-tools).
 
 You can use it to catch errors, measure response times, inspect elements, simulate a mobile device, and much more.
 

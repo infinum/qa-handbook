@@ -94,7 +94,7 @@ Some important parameters that you will need to decide upon are:
 
 #### Installing k6
 
-- `brew install node
+- `brew install node`
 - `brew install k6`
 
 #### Usage
@@ -134,7 +134,7 @@ You can do one of three things:
 
 #### Postman-to-k6
 - You can also use your Postman collection to get to a performance test in a matter of minutes
-- Run `sudo npm install -g postman-to-k6`
+- Run `npm install -g postman-to-k6`
 - You will need to export your Postman collection and environment
 - Run `postman -to-k6 collection.json --environment environment.json -o postman.js` to get a k6 script
 
