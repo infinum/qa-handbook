@@ -1,4 +1,4 @@
-> *Fellow testers, we cannot not to find bugs.*
+> *Fellow testers, we cannot not find bugs.*
 
 ## Git and GitHub
 
