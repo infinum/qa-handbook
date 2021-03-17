@@ -243,9 +243,6 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 7. Click the *Create Pull Request* button
 
+---
 
-
-
-
-
-
+![dilbert-git-advanced.png](/img/dilbert-git-advanced.png)
