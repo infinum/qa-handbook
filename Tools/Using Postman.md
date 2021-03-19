@@ -155,7 +155,7 @@ Using variables you avoid copy-paste of URL and the good thing is that variables
 
 To use a variable you need to enter the name of the variable in between double curly braces. It should look like this: `{{VARIABLE}}`. This way Postman will read and use a value from a variable. Or you can use a combination of variable and URL like this: `{{VARIABLE}}/example_url`.
 
-* Let's now use "BULBASAUR_URL" variable and value stored inside her. 
+Let's now use "BULBASAUR_URL" variable and value stored inside her. 
 
 1. Create a new `GET` request but this time instead of URL enter `{{BULBASAUR_URL}}`in the URL input field  
 2. Execute request. 
@@ -219,7 +219,7 @@ The good thing about tests is that Postman offers "Snippets" or a list of alread
 5. Execute request
 6. In response to a request, switch to the **Test Results** tab 
 
-	Here you should see the test "Status code is 200" marked as PASS.
+Inside Test Results tab you should see the test "Status code is 200" marked as PASS.
  
 ![Postman_status200.png](/img/Postman_status200.png)
 
