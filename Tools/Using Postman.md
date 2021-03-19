@@ -93,8 +93,8 @@ Once the collection is created you need to add a request to it so let's begin.
 2. Click **Add a request** 
 3. Enter the name of the request, let's name this request "GET Pokemons"
 4. Hit enter button 
-5. Set `GET` as your HTTP request method and paste the following URL `https://pokeapi.co/api/v2/pokemon/` to URL input field
-	<span style="display:block; margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:15px; width:100%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
+5. Set `GET` as your HTTP request method and paste the following URL `https://pokeapi.co/api/v2/pokemon/`to URL input field
+	<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
 6. Execute request by clicking the **Send** button
 
 Great, now you executed a request. As a response in a Body, you can see a list of 20 Pokemons in JSON format.
@@ -115,7 +115,7 @@ From the list of Pokemons that you got after executing a request, let's save Bul
 2. Since you do not have environments, tap the **Add** button in the *Environment* card 
 3. Environment card should open as a tab. Enter the name of the environment, let's name it "Pokemons"
 
-	<span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable.png](/img/Postman_variable.png)</span>
+	<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable.png](/img/Postman_variable.png)</span>
 
 4. Tap **Save** button.
 
@@ -138,10 +138,7 @@ There are two ways how you can enter a value into a variable:
  1. Open "GET Pokemons" request.
  2. Switch to **Tests** tab inside this request.
  3. Add following line of code in **Tests** tab:
-            
-        const data = pm.response.json();
-        pm.environment.set("BULBASAUR_URL", data.results[0].url);
-    
+  <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable_code.png](/img/Postman_variable_code.png)</span>
  4. Execute request by clicking **Send** button.
 
  This line of code will save in variable "BULBASAUR_URL" whatever is the value of `data.results[0].url` key, in this case, Bulbasaur's URL. If you now open "Pokemons" environment you will see that variable contains Bulbasaur's URL. 
@@ -209,11 +206,7 @@ The good thing about tests is that Postman offers "Snippets" or a list of alread
 2. Switch to **Tests** tab 
 3. Right from the text field locate "SNIPPETS" list
 4. Find "Status code: Code is 200" snippet and clicking on it. You will see code like this:
-
-		pm.test("Status code is 200", function () {
-		pm.response.to.have.status(200);
-		});
-
+ <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_code.png](/img/Postman_test_code.png)</span> 
 5. Execute request
 6. In response to a request, switch to the **Test Results** tab 
 
