@@ -114,10 +114,9 @@ From the list of Pokemons that you got after executing a request, let's save Bul
 1. In the top right corner tap the *eye* icon
 2. Since you do not have environments, tap the **Add** button in the *Environment* card 
 3. Environment card should open as a tab. Enter the name of the environment, let's name it "Pokemons"
-
-	<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable.png](/img/Postman_variable.png)</span>
-
-4. Tap **Save** button.
+4. Enter "BULBASAUR_URL" as name of variable
+ <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable.png](/img/Postman_variable.png)</span>
+5. Tap **Save** button.
 
  Great, now you have an empty variable in which you can add data. To switch in between environments click on the Environments drop-down and choose desired one.
 
@@ -283,3 +282,4 @@ Also see this interesting article [Testing APIs with Postman: 10 common challeng
 
 ---
 ![using-postman.gif](/img/using-postman.gif)
+
