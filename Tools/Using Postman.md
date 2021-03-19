@@ -95,7 +95,7 @@ Once the collection is created you need to add a request to it so let's begin.
 4. Hit enter button 
 5. Set `GET` as your HTTP request method and paste the following URL `https://pokeapi.co/api/v2/pokemon/`to URL input field
 
-	<span style="display:block; margin-left:auto; margin-right:auto; width:90%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
+	<span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
  
 6. Execute request by clicking the **Send** button
 
@@ -117,7 +117,7 @@ From the list of Pokemons that you got after executing a request, let's save Bul
 2. Since you do not have environments, tap the **Add** button in the *Environment* card 
 3. Environment card should open as a tab. Enter the name of the environment, let's name it "Pokemons"
 
-	<span style="display:block; margin-left:auto; margin-right:auto; width:90%;">![Postman_variable.png](/img/Postman_variable.png)</span>
+	<span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable.png](/img/Postman_variable.png)</span>
 
 4. Tap **Save** button.
 
@@ -140,11 +140,11 @@ There are two ways how you can enter a value into a variable:
 	1. Open "GET Pokemons" request.
 	2. Switch to **Tests** tab inside this request.       
 	3. Add following line of code in **Tests** tab:
-
-	  	```
-	 const data = pm.response.json();
-	 pm.environment.set("BULBASAUR_URL", data.results[0].url);
-	 ```
+	
+	        ```
+	        const data = pm.response.json();
+	        pm.environment.set("BULBASAUR_URL", data.results[0].url);
+	        ```
 
 	4. Execute request by clicking **Send** button.
 
@@ -216,11 +216,11 @@ The good thing about tests is that Postman offers "Snippets" or a list of alread
 
  Now you will see code like this: 
 
-  ```
- pm.test("Status code is 200", function () {
- pm.response.to.have.status(200);
- });
- ```
+        ```
+        pm.test("Status code is 200", function () {
+        pm.response.to.have.status(200);
+        });
+        ```
 
 5. Execute request
 6. In response to a request, switch to the **Test Results** tab 
@@ -237,14 +237,12 @@ Sometimes the status of response can be 200 but the body is empty. In this case,
 
 1. For this test we will need to add the "BASE_EXPERIANCE" variable and set the value to 64
 2. Add the following code under "Status code: Code is 200" 
-
- ```
- pm.test("Base experience", function () {
- var jsonData = pm.response.json();
- pm.expect(jsonData.base_experience.toString()).to.eql(pm.environment.get("BASE_EXPERIANCE"));
- });
- ```
- 
+		```
+		pm.test("Base experience", function () {
+		var jsonData = pm.response.json();
+		pm.expect(jsonData.base_experience.toString()).to.eql(pm.environment.get("BASE_EXPERIANCE"));
+		});
+		```
 3. Execute request
  
  If the status is 200 and base experience is indeed 64, tests will be marked as passed. 
