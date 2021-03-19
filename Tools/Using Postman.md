@@ -136,15 +136,14 @@ There are two ways how you can enter a value into a variable:
 	* The **Current Value** is local to your Postman app, and is never synced to your account or shared with your team—unless you choose to persist it.
 
 * Or you can save a value from response to a variable. 
+
 	1. Open "GET Pokemons" request.
 	2. Switch to **Tests** tab inside this request.       
 	3. Add following line of code in **Tests** tab:
 	        
-	        ```
 	        const data = pm.response.json();
 	        pm.environment.set("BULBASAUR_URL", data.results[0].url);
-	        ```
-
+	        
 	4. Execute request by clicking **Send** button.
 
  This line of code will save in variable "BULBASAUR_URL" whatever is the value of `data.results[0].url` key, in this case, Bulbasaur's URL. If you now open "Pokemons" environment you will see that variable contains Bulbasaur's URL. 
@@ -215,11 +214,9 @@ The good thing about tests is that Postman offers "Snippets" or a list of alread
 
  Now you will see code like this: 
         
-        ```
         pm.test("Status code is 200", function () {
         pm.response.to.have.status(200);
         });
-        ```
         
 5. Execute request
 6. In response to a request, switch to the **Test Results** tab 
@@ -237,12 +234,10 @@ Sometimes the status of response can be 200 but the body is empty. In this case,
 1. For this test we will need to add the "BASE_EXPERIANCE" variable and set the value to 64
 2. Add the following code under "Status code: Code is 200" 
 		
-		```
 		pm.test("Base experience", function () {
 		var jsonData = pm.response.json();
 		pm.expect(jsonData.base_experience.toString()).to.eql(pm.environment.get("BASE_EXPERIANCE"));
 		});
-		```
 		
 3. Execute request
  
