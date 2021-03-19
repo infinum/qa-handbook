@@ -54,7 +54,7 @@ You can find more details on HTTP response status codes [here](https://developer
 Postman has a really simple workflow that is repeated for every request. 
 The pre-request script is executed before request execution and tests are executed after response. Code in both pre-request scripts and tests is written in JavaScript, but do not worry it is really simple and easy to understand. 
 
-Here is a graphical representation of a singe request flow:
+Here is a graphical representation of a single request flow:
 
 ![Postman_flow.png](/img/Postman_flow.png)
 
@@ -93,7 +93,7 @@ Once the collection is created you need to add a request to it so let's begin.
 2. Click **Add a request** 
 3. Enter the name of the request, let's name this request "GET Pokemons"
 4. Hit enter button 
-5. Set `GET` as your HTTP request method and paste the following URL `https://pokeapi.co/api/v2/pokemon/`to URL input field
+5. Set `GET` as your HTTP request method and paste the following URL `https://pokeapi.co/api/v2/pokemon/` to URL input field
 	<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
 6. Execute request by clicking the **Send** button
 
@@ -210,7 +210,7 @@ The good thing about tests is that Postman offers "Snippets" or a list of alread
 5. Execute request
 6. In response to a request, switch to the **Test Results** tab 
 
-Inside Test Results tab you should see the test "Status code is 200" marked as PASS.
+Inside **Test Results** tab you should see the test "Status code is 200" marked as PASS.
  
 ![Postman_status200.png](/img/Postman_status200.png)
 
@@ -258,7 +258,7 @@ If all tests from the list are listed as passed then the request will also be li
  
 ## Collection monitoring
 
-Collection monitor is basically a scheduled collection runner. As mentioned value of collection run is in tests. Setting up monitor you collection runn will be run as frequent as you want and if one of these tests fails, you will  automatically receieve email notification.
+The collection monitor is a scheduled collection runner. As the mentioned value of collection run is in tests. Setting up monitor your collection run will be run as frequently as you want and if one of these tests fails, you will automatically receive an email notification.
 
 ### Setting up collection monitoring 
 
