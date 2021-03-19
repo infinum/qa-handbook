@@ -99,7 +99,7 @@ Once the collection is created you need to add a request to it so let's begin.
 
 Great, now you executed a request. As a response in a Body, you can see a list of 20 Pokemons in JSON format.
 
-<span style="display:block; border: 1px #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_first_20_pokemons.png](/img/Postman_first_20_pokemons.png)</span>
+<span style="display:block; margin-top:15px; border:1px #e0e0e0; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_first_20_pokemons.png](/img/Postman_first_20_pokemons.png)</span>
 
 ## Environments and variables 
 
