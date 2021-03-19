@@ -283,4 +283,3 @@ Also see this interesting article [Testing APIs with Postman: 10 common challeng
 
 ---
 ![using-postman.gif](/img/using-postman.gif)
-
