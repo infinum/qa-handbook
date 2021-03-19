@@ -94,8 +94,7 @@ Once the collection is created you need to add a request to it so let's begin.
 3. Enter the name of the request, let's name this request "GET Pokemons"
 4. Hit enter button 
 5. Set `GET` as your HTTP request method and paste the following URL `https://pokeapi.co/api/v2/pokemon/`to URL input field
-
-   <span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
+ <span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
  
 6. Execute request by clicking the **Send** button
 
