@@ -94,12 +94,12 @@ Once the collection is created you need to add a request to it so let's begin.
 3. Enter the name of the request, let's name this request "GET Pokemons"
 4. Hit enter button 
 5. Set `GET` as your HTTP request method and paste the following URL `https://pokeapi.co/api/v2/pokemon/` to URL input field
-	<span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
+	<span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_request.png](/img/Postman_test_request.png)</span>
 6. Execute request by clicking the **Send** button
 
 Great, now you executed a request. As a response in a Body, you can see a list of 20 Pokemons in JSON format.
 
-<span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_first_20_pokemons.png](/img/Postman_first_20_pokemons.png)</span>
+<span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_first_20_pokemons.png](/img/Postman_first_20_pokemons.png)</span>
 
 ## Environments and variables 
 
@@ -115,7 +115,7 @@ From the list of Pokemons that you got after executing a request, let's save Bul
 2. Since you do not have environments, tap the **Add** button in the *Environment* card 
 3. Environment card should open as a tab. Enter the name of the environment, let's name it "Pokemons"
 4. Enter "BULBASAUR_URL" as name of variable
- <span style="display:block; margin-top:15px; border: 1px solid ##e0e0e0; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable.png](/img/Postman_variable.png)</span>
+ <span style="display:block; margin-top:15px; border: 1px ##e0e0e0; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable.png](/img/Postman_variable.png)</span>
 5. Tap **Save** button.
 
  Great, now you have an empty variable in which you can add data. To switch in between environments click on the Environments drop-down and choose desired one.
@@ -137,7 +137,7 @@ There are two ways how you can enter a value into a variable:
  1. Open "GET Pokemons" request.
  2. Switch to **Tests** tab inside this request.
  3. Add following line of code in **Tests** tab:
-  <span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable_code.png](/img/Postman_variable_code.png)</span>
+  <span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_variable_code.png](/img/Postman_variable_code.png)</span>
  4. Execute request by clicking **Send** button.
 
  This line of code will save in variable "BULBASAUR_URL" whatever is the value of `data.results[0].url` key, in this case, Bulbasaur's URL. If you now open "Pokemons" environment you will see that variable contains Bulbasaur's URL. 
@@ -156,7 +156,7 @@ Let's now use "BULBASAUR_URL" variable and value stored inside her.
 
 As a response, you will get more technical information about Bulbasaur.  
 
-<span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_expected_result.png](/img/Postman_expected_result.png)</span>
+<span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_expected_result.png](/img/Postman_expected_result.png)</span>
 
 * **TIP:** If there is an error, variable `{{BULBASAUR_URL}}` will be red indicating that you either misspelled its name or the variable does not exist - you did not create it and add it to your environment or you are using the wrong environment. 
 
@@ -205,13 +205,13 @@ The good thing about tests is that Postman offers "Snippets" or a list of alread
 2. Switch to **Tests** tab 
 3. Right from the text field locate "SNIPPETS" list
 4. Find "Status code: Code is 200" snippet and clicking on it. You will see code like this:
- <span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_code.png](/img/Postman_test_code.png)</span> 
+ <span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_code.png](/img/Postman_test_code.png)</span> 
 5. Execute request
 6. In response to a request, switch to the **Test Results** tab 
 
 Inside **Test Results** tab you should see the test "Status code is 200" marked as PASS.
  
-<span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_status200.png](/img/Postman_status200.png)</span>
+<span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_status200.png](/img/Postman_status200.png)</span>
 
  **TIP:** Add one or two empty rows so that your tests are separated and in that way easier for reading.
 
@@ -231,7 +231,7 @@ Sometimes the status of response can be 200 but the body is empty. In this case,
  
  If the status is 200 and base experience is indeed 64, tests will be marked as passed. 
 
-<span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_2x_tests.png](/img/Postman_2x_tests.png)</span>
+<span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_2x_tests.png](/img/Postman_2x_tests.png)</span>
 
 ## Collection runner
 
@@ -247,11 +247,11 @@ The Collection Runner allows users to run sets of requests in a specified sequen
 Postman will display request executions and test results in real-time.
 If any test in a request script fails during the collection run, the request will be listed as failed but with proper response status. 
 
-<span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_fail.png](/img/Postman_test_fail.png)</span>
+<span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_test_fail.png](/img/Postman_test_fail.png)</span>
 
 If all tests from the list are listed as passed then the request will also be listed as passed. 
 
-<span style="display:block; border: 1px solid ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_tests_success.png](/img/Postman_tests_success.png)</span>
+<span style="display:block; border: 1px ##e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Postman_tests_success.png](/img/Postman_tests_success.png)</span>
 
 **TIP:** Results can be exported by clicking on the **Export Results** button and attached to the regression test or any other type of test if it is required. 
  
