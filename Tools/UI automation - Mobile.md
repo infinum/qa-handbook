@@ -8,7 +8,6 @@ It also happens to be a [sword](https://en.wikipedia.org/wiki/Qama). :)
 - It is a **template project** that will help you quickly start writing maintainable UI tests for your web projects.
 - See the [qama README](https://github.com/infinum/qama/blob/master/README.md) for details.
 - It is very similar to `qawa` which was described in [the previous chapter](https://infinum.com/handbook/books/qa/tools/ui-automation-web). 
-- Additionally, the setup is somewhat more complex. That is described in [the next chapter](https://infinum.com/handbook/books/qa/tools/ui-automation-mobile-setup).
 
 
 ## Example of a page class

@@ -65,7 +65,7 @@ There you need to set yor proxy host IP address (which is your laptop IP address
 
 ![Set your host](/img/charles-set-up-host.png)
 
-5. On the phone use Chrome to navigate to [This page](chls.pro/ssl) and install the certificate.
+5. On the phone use Chrome to navigate to [this page](https://chls.pro/ssl) and install the certificate.
 
 6. Traffic should now show in Charles. Put a filter to your project to get rid of all the other traffic from your phone. If Charles shows "Unknown" label for all the calls from target api you can right click on it and select "Enable SSL proxying"
 
