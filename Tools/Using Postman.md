@@ -275,7 +275,7 @@ Great, now your collection will be run at the set time and you will be notified 
 
 Check out one of our blog posts: [Writing API Tests? Postman Delivers](https://infinum.com/the-capsized-eight/postman-API-testing)
 
-Also see this interesting article [Testing APIs with Postman: 10 common challenges & solutions](https://medium.com/distant-horizons/testing-apis-with-postman-10-common-challenges-solutions-c4674c78528d).
+Also see this interesting article: [Testing APIs with Postman: 10 common challenges & solutions](https://medium.com/distant-horizons/testing-apis-with-postman-10-common-challenges-solutions-c4674c78528d).
 
 ---
 ![using-postman.gif](/img/using-postman.gif)
