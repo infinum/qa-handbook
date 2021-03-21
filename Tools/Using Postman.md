@@ -9,7 +9,7 @@
 * When you want to set up your test environment quickly
 
 
-## HTTP request Methods:
+## HTTP request methods
 
 HTTP request methods are indicating the desired action that you want to perform for a given URL.
 
@@ -24,9 +24,9 @@ Here are a few most used methods which you will encounter regularly and which yo
 You can find more about the HTTP request methods [here](https://assertible.com/blog/7-http-methods-every-web-developer-should-know-and-how-to-test-them).
 
 
-## HTTP response status codes:
+## HTTP response status codes
 
-HTTP response status code is a response from the server of a request that is displayed in a three-digit number. The first number represents the class to which it belongs, and we distinguish: 
+An HTTP response status code is a response from the server of a request that is displayed in a three-digit number. The first number represents the class to which it belongs, and we distinguish: 
 
 * Informational responses (100-199)
 * Successful responses (200-299)
@@ -165,7 +165,7 @@ As a response, you will get more technical information about Bulbasaur.
 
 Pre-request scripts are snippets of code that can be added to a collection, a folder, or a single request within a collection that is executed before the request is sent. The pre-request script can be super useful and the best example of it is for token creation.
 
-### Adding pre-request script to a single request:
+### Adding a pre-request script to a single request:
 
 1. Open the "GET Pokemons" request 
 2. Switch to the **Pre-request Script** tab
