@@ -256,7 +256,7 @@ If all tests from the list are listed as passed then the request will also be li
  
 ## Collection monitoring
 
-The collection monitor is a scheduled collection runner. As the mentioned value of collection run is in tests. Setting up the monitor, your collection will be run as frequently as you want and if one of the tests fails, you will automatically receive an email notification.
+The collection monitor is a scheduled collection runner. Setting up the monitor, your collection will be run as frequently as you want and if one of the tests fails, you will automatically receive an email notification.
 
 ### Setting up collection monitoring 
 
