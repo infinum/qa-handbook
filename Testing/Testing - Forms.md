@@ -6,6 +6,24 @@ Forms are often the hiding place of complicated business logic so we will start 
 
 Since the set of inputs a non-trivial form can take is often infinite, it is literally impossible to test everything. This is why you need to be smart about it by using some basic testing techniques and shortcuts.
 
+### Why do we test forms
+
+#### 1. Security
+
+Malicious users can exploit text fields to get information they shouldn't have and it can be done by SQL injections or some kind of scripting. 
+
+#### 2. Stability
+
+When a user is able to input data that the application is not equipped to handle, the application can react in unexpected ways, such as crashing or refusing to save.
+
+#### 3. Visual Consistency
+
+When a field has too many characters in it, it can affect the way a page is displayed. Make sure that everything is done by design and consistent. 
+
+#### 4. Health of the Database
+
+When fields are not validated correctly, all kinds of erroneous data can be saved to the database.  This can affect both how the application runs and how it behaves.
+
 ### Equivalence partitioning
 
 Equivalence partitioning is partitioning a set of possible inputs into classes. Each member of the class is deemed identical to all other.
@@ -67,6 +85,11 @@ You'll rarely find capitalization principles and keyboard type suggestions in yo
 | Number           | • Numbers and symbols are allowed.<br>• Try to use the "tel" input type as often as you can, because the "number" type is useful only when symbols are allowed. In all other cases, "tel" type is the superior option. | number     |   |      |
 | Password         | • All characters are allowed<br>• All characters are hidden by default.                                                                                      | password   |   |      |
 | Date             | • The default date picker component should appear.                                                                                                                                                                   | date       |   |      |
+
+
+### BugMagnet 
+
+There is an awesome plugin for Chrome and Firefox that can be used for testing forms. You can pick it up right [here](https://bugmagnet.org/) on this link and after it is installed, just click right-click on any form and input any kind of data that can break the input form. 
 
 ---
 
