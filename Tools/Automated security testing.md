@@ -23,7 +23,7 @@ The OWASP Zed Attack Proxy (ZAP) is another helpfull tool that can help you auto
 
 Here's how to get it up and running:
 
-1. Download installation file from *[*Github repo*](https://github.com/zaproxy/zaproxy/wiki/Downloads)* 
+1. Download the installation file from [OWASP ZAP](https://www.zaproxy.org/download/)
 2. Run the installer 
 3. Finish the installation 
 

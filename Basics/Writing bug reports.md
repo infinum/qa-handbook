@@ -49,7 +49,7 @@ In the "Prerequisties" section, state any info that is needed in order to start 
 This part is optional.
 
 > Prerequisites:  
-> Account used: tester@infinum.hr
+> Account used: tester@infinum​.hr
 
 ### Steps
 
