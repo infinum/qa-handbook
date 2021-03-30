@@ -14,11 +14,11 @@
 ### When Proxyman?
 
 Let's say you have a circle chart that on a scale of 0-100% is displaying occupancy of some building. A chart is not only showing the correct value but it is changing color depending on it. 
-If occupancy is between 0-60%, the value is colored green. If occupancy is between 60-80% value is yellow, and if occupancy is between 80-100% value is red.
+If occupancy is between 0-60%, the value is green. If occupancy is between 60-80% value is yellow, and if occupancy is between 80-100% value is red.
 
 ![Proxyman_charts.png](/img/Proxyman_charts.png)
 
-Since value depends on data received from sensors and you cannot simply change it, here is where Proxyman becomes very handy. Setting a breakpoint and intercepting this call you can manually change and test some specific cases:
+Since value depends on data received from sensors and you cannot simply change it, here is where Proxyman becomes very handy. Setting a breakpoint and intercepting a call you can manually change and test some specific cases such as:
 
 * Custom values on the chart
 * If a chart is showing the correct color for a given value
@@ -34,7 +34,7 @@ After installation, you are required to install a certificate on your Mac:
 
 1. Open Proxyman 
 2. Click on the "Certificate" tab 
-3. Click "Instal Certificate on this Mac"
+3. Click "Install Certificate on this Mac"
 4. Follow instructions and install Certificate
 
 Once it is done, you will see that your certificate is installed & trusted. 
@@ -45,42 +45,42 @@ Once it is done, you will see that your certificate is installed & trusted.
 
 Breakpoint Tool (Breakpoints in Proxyman) is used for stoping a request before it goes to a server or for stoping a response before it goes to the app. To do that Proxyman is using "Breakpoint rules". In rules, you define the API URL that you want to intercept and whether if you want to intercept a request or response. You can also name your rule so it is easier for you to find it later in the list of rules.
 
-To use breakpoints first you need to define the breakpoint rule. 
+To use breakpoints, first you need to define the breakpoint rule. 
 
 1. In toolbar click on **Tools** dropdown menu 
 2. Click **Brakepoint** > **Rules**. Or you can access it by pressing ⌥ +⌘ + B
-
  <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Proxyman_brakepoint.png](/img/Proxyman_brakepoint.png)</span>
- 
-3. Click the "+" button in the bottom left corner of the breakpoint rules screen
+3. Click the "+" button - bottom left corner of the breakpoint rules screen
 4. Add the name of the rule 
 5. Enter the desired URL to the "Matching Rule" input field 
 6. If you click "ANY", you can choose in between HTTP requests. Most of the time "ANY" would be just fine  
-7. Select whether you want to use this rule to intercepting your request, response or it can be used for both 
+7. Select whether you want to use this rule for interception of your request, response or it can be used for both 
 
-Great now you have a rule. If you click "+" you can add a new rule and by adding another rule you will get a list of rules. You can completely edit the existing rule by double-clicking on it or you can quickly enable/disable or change request or response by clicking on checkboxes of desired rule in the list. 
+![Proxyman_rule_draft.png](/img/Proxyman_rule_draft.png)
+
+Great now you have a rule. If you click "+" you can add a new rule and create a list of rules. You can completely edit the existing rule by double-clicking on it or you can quickly enable/disable or change request or response by clicking on checkboxes of desired rule in the list. 
 
 ![Proxyman_brakepoint_rules.png](/img/Proxyman_brakepoint_rules.png)
 
 ### Change of response
 
-After you refresh the page, Proxyman will open a breakpoint window that will show you "Request" and "Response" in JSON format. In **Response**  on the right part of the screen switch to the "Body" tab. We will in this example edit the average utilization value. The initial value is 20, but we now want to see if the value of 89% is displayed correctly. Let's edit **avgUtilization** and set it to 89. 
+After you refresh the page in your app, Proxyman will open a breakpoint window that will show you "Request" and "Response" in JSON format. In **Response**  on the right part of the screen switch to the "Body" tab. We will in this example edit the average utilization value. The initial value is 20, but we now want to see if the value of 89% is displayed correctly. Let's edit **avgUtilization** and set it to 89. 
 
 ![Proxyman_value_89.png](/img/Proxyman_value_89.png)
 
-After editing, clicking on **Execute** button edited response will be displayed on the frontend of the app. 
+After editing, clicking on **Execute** button edited response will be displayed in the app. 
 
 <span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Proxyman_example_chart.png](/img/Proxyman_example_chart.png)</span>
 
 Every time you want to apply a different value, you need to refresh the page, enter desired value and execute a response.
 
-**TIP**: After you finish, make sure that you either unselect breakpoints that you will not use anymore or delete them because as long as Proxyman is turned on and you trigger this API call (Some calls are automatically triggered every 30 sec) breakpoint window will open and ask you what do you want to do with this breakpoint. 
+**TIP**: After you finish, make sure that you either unselect breakpoints that you will not use anymore or delete them because as long as Proxyman is turned on and you are triggering this API call (Some calls are automatically triggered every 30 sec) Porxyman will intercept it and breakpoint window will be opened.
 
-In the same way, you can manipulate with a request. 
+This was an example of manipulation with the response. In the same way, you can manipulate with a request. 
 
 ##Proxyman on iOS and Android devices
 
-Before using Proxyman on your mobile device you need to install certificates and set up a proxy on your mobile device. 
+Before using Proxyman on your mobile device you need to install certificates and set up a proxy. 
 
 ### iOS device
 
