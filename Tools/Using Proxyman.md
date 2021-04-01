@@ -11,7 +11,7 @@
 * It's basically the same tool as [Charles](https://infinum.com/handbook/books/qa/tools/using-charles) but it has a few more features 
 * It can be used to share VPN from Mac to your mobile device 
 
-### When Proxyman?
+### When to use Proxyman?
 
 Let's say you have a circle chart that on a scale of 0-100% is displaying occupancy of some building. A chart is not only showing the correct value but it is changing color depending on it. 
 If occupancy is between 0-60%, the value is green. If occupancy is between 60-80% value is yellow, and if occupancy is between 80-100% value is red.
