@@ -112,7 +112,7 @@ Sometimes you'll be in a situation where you need to use a VPN on your mobile de
 
 1. Connect to a Wi-Fi network
 2. Connect to a proxy
-3. While holding the Option key (⌥ ), click the Wi-Fi icon in your Mac's status bar
+3. While holding the Option key (⌥), click the Wi-Fi icon in your Mac's status bar
 4. Remember the IP address
 
  ![IP address](/img/proxyman1.png)
@@ -132,15 +132,15 @@ Sometimes you'll be in a situation where you need to use a VPN on your mobile de
 
 It differs from device to device but it can go something like this:
 
-1. Go to “Settings”
-2. Go to “Wifi” or "Network"
+1. Go to "Settings"
+2. Go to "Wifi" or "Network"
 3. Connect to the same network as the one you're connected to with your Mac
 4. Long tap on the Wifi network you are connected to
-5. Click the “Modify network” option
-6. Click “Show advanced options”
-7. Under “Proxy”, change the option to “Manual”
-8. Tap on “Proxy hostname” and write down your Mac's IP address (the one you remembered)
-9. Tap on “Proxy port” and write down 9090
+5. Click the "Modify network" option
+6. Click "Show advanced options"
+7. Under "Proxy", change the option to "Manual"
+8. Tap on "Proxy hostname" and write down your Mac's IP address (the one you remembered)
+9. Tap on "Proxy port" and write down 9090
 
  ![Android setup](/img/android_proxy_setup.gif)
  
