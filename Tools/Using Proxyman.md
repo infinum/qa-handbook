@@ -58,7 +58,7 @@ To use breakpoints, first you need to define the breakpoint rule.
 
 ![Proxyman_rule_draft.png](/img/Proxyman_rule_draft.png)
 
-Great now you have a rule. If you click "+" you can add a new rule and create a list of rules. You can completely edit the existing rule by double-clicking on it or you can quickly enable/disable or change the request or response by clicking on the checkboxes of the desired rule in the list. 
+Great, now you have a rule. If you click "+" you can add a new rule and create a list of rules. You can completely edit the existing rule by double-clicking on it or you can quickly enable/disable or change the request or response by clicking on the checkboxes of the desired rule in the list. 
 
 ![Proxyman_brakepoint_rules.png](/img/Proxyman_brakepoint_rules.png)
 
