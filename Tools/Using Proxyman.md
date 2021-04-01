@@ -43,14 +43,14 @@ Once it is done, you will see that your certificate is installed & trusted.
 
 ### Breakpoint Tool 
 
-Breakpoint Tool (Breakpoints in Proxyman) is used for stoping a request before it goes to a server or for stoping a response before it goes to the app. To do that Proxyman is using "Breakpoint rules". In rules, you define the API URL that you want to intercept and whether if you want to intercept a request or response. You can also name your rule so it is easier for you to find it later in the list of rules.
+Breakpoint Tool (Breakpoints in Proxyman) is used for stoping a request before it goes to a server or for stoping a response before it goes to the app. To do that, Proxyman is using "Breakpoint rules". In rules, you define the API URL that you want to intercept and whether if you want to intercept a request or response. You can also name your rule so it is easier for you to find it later in the list of rules.
 
 To use breakpoints, first you need to define the breakpoint rule. 
 
 1. In toolbar click on **Tools** dropdown menu 
 2. Click **Brakepoint** > **Rules**. Or you can access it by pressing ⌥ +⌘ + B
  <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Proxyman_brakepoint.png](/img/Proxyman_brakepoint.png)</span>
-3. Click the "+" button - bottom left corner of the breakpoint rules screen
+3. Click the "+" button (bottom left corner of the breakpoint rules screen)
 4. Add the name of the rule 
 5. Enter the desired URL to the "Matching Rule" input field 
 6. If you click "ANY", you can choose in between HTTP requests. Most of the time "ANY" would be just fine  
@@ -58,27 +58,27 @@ To use breakpoints, first you need to define the breakpoint rule.
 
 ![Proxyman_rule_draft.png](/img/Proxyman_rule_draft.png)
 
-Great now you have a rule. If you click "+" you can add a new rule and create a list of rules. You can completely edit the existing rule by double-clicking on it or you can quickly enable/disable or change request or response by clicking on checkboxes of desired rule in the list. 
+Great now you have a rule. If you click "+" you can add a new rule and create a list of rules. You can completely edit the existing rule by double-clicking on it or you can quickly enable/disable or change the request or response by clicking on the checkboxes of the desired rule in the list. 
 
 ![Proxyman_brakepoint_rules.png](/img/Proxyman_brakepoint_rules.png)
 
 ### Change of response
 
-After you refresh the page in your app, Proxyman will open a breakpoint window that will show you "Request" and "Response" in JSON format. In **Response**  on the right part of the screen switch to the "Body" tab. We will in this example edit the average utilization value. The initial value is 20, but we now want to see if the value of 89% is displayed correctly. Let's edit **avgUtilization** and set it to 89. 
+After you refresh the page in your app, Proxyman will open a breakpoint window that will show you "Request" and "Response" in JSON format. In **Response**  on the right part of the screen, switch to the "Body" tab. In this example, we will edit the average utilization value. The initial value is 20, but we now want to see if the value of 89% is displayed correctly. Let's edit **avgUtilization** and set it to 89. 
 
 ![Proxyman_value_89.png](/img/Proxyman_value_89.png)
 
-After editing, clicking on **Execute** button edited response will be displayed in the app. 
+After editing, by clicking on the **Execute** button the edited response will be displayed in the app. 
 
 <span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Proxyman_example_chart.png](/img/Proxyman_example_chart.png)</span>
 
-Every time you want to apply a different value, you need to refresh the page, enter desired value and execute a response.
+Every time you want to apply a different value, you need to refresh the page, enter the desired value and execute the response.
 
-**TIP**: After you finish, make sure that you either unselect breakpoints that you will not use anymore or delete them because as long as Proxyman is turned on and you are triggering this API call (Some calls are automatically triggered every 30 sec) Porxyman will intercept it and breakpoint window will be opened.
+**TIP**: After you finish, make sure that you either unselect breakpoints that you will not use anymore or delete them because as long as Proxyman is turned on and you are triggering this API call (some calls are automatically triggered every 30 sec) Proxyman will intercept it and the breakpoint window will be opened.
 
-This was an example of manipulation with the response. In the same way, you can manipulate with a request. 
+This was an example of manipulation with a response. In the same way, you can manipulate with a request. 
 
-##Proxyman on iOS and Android devices
+## Proxyman on iOS and Android devices
 
 Before using Proxyman on your mobile device you need to install certificates and set up a proxy. 
 
@@ -86,7 +86,7 @@ Before using Proxyman on your mobile device you need to install certificates and
 
 1. Open Proxyman on your Mac
 2. Click on the "Certificate" tab
-3. Click "Instal Certificate on iOS"
+3. Click "Install Certificate on iOS"
 4. Click "Physical Devices"
 5. Follow instructions and configure Wifi Proxy on iOS device to Proxyman
 6. Follow instructions and install the Certificate on your iPhone 
@@ -97,10 +97,10 @@ It differs from device to device but it can go something like this:
 
 1. Open Proxyman on your Mac
 2. Click on the "Certificate" tab
-3. Click "Instal Certificate on Android"
+3. Click "Install Certificate on Android"
 4. Click "Physical Devices"
 5. Follow instructions and configure Wifi Proxy on Android device to Proxyman
-6. Follow instructions and install the Certificate on your Android device (Be careful trusting Proxyman Certificate is different for Android 7+ and Android 11+ devices)
+6. Follow instructions and install the Certificate on your Android device (be careful, trusting Proxyman Certificate is different for Android 7+ and Android 11+ devices)
 
 Once done, you can now add rules and start using Proxyman on your mobile devices. 
 
@@ -119,28 +119,28 @@ Sometimes you'll be in a situation where you need to use a VPN on your mobile de
  
 ### On your iPhone
 
-1. Open up settings
+1. Open up Settings
 2. Tap on Wi-Fi
 3. Connect to the same network as the one you're connected to with your Mac
 4. Tap on configure proxy
-5. Tap on a server and write down your IP address (the one you remembered)
-6. Tap on port and write down 9090
+5. Tap on "Server" and write down your IP address (the one you remembered)
+6. Tap on "Port" and write down 9090
 
  ![iOS proxy setup](/img/ios_proxy_setup.gif)
  
-###On your Android
+### On your Android
 
 It differs from device to device but it can go something like this:
 
 1. Go to “Settings”
 2. Go to “Wifi” or "Network"
 3. Connect to the same network as the one you're connected to with your Mac
-4. Long tap to a current wifi network
+4. Long tap on the Wifi network you are connected to
 5. Click the “Modify network” option
 6. Click “Show advanced options”
-7. Under “Proxy” change to option to “Manual”
-8. Tap on “Proxy hostname” write down your IP address on your MAC (the one you remembered)
-9. Tap on “Proxy port” write down 9090
+7. Under “Proxy”, change the option to “Manual”
+8. Tap on “Proxy hostname” and write down your Mac's IP address (the one you remembered)
+9. Tap on “Proxy port” and write down 9090
 
  ![Android setup](/img/android_proxy_setup.gif)
  
