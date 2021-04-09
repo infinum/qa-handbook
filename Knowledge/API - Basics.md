@@ -7,18 +7,18 @@ API (*application programming interface*) is a general term used in all sorts of
 However, this article is not about interfaces or APIs in general. It will focus on web APIs.
 
 
-## What is a web API anyway?
+## What is a web API, anyway?
 
 The age-old analogy is that of a waiter and a customer. The customer orders a pizza from the waiter. The waiter disappears into the kitchen and 10 minutes later, he appears and delivers a pizza on a plate.
 
 Now let's just exchange the roles and say:
 
-- Waiter = web API
-- Customer = any client (e.g., a mobile app or web app)
-- Order = making an HTTP request
-- Pizza = data
-- Kitchen = a place where the magic happens (we don't care in this article)
-- 10 minutes = response time
+- Waiter - web API
+- Customer - any client (e.g., a mobile app or web app)
+- Order - making an HTTP request
+- Pizza - data
+- Kitchen - a place where the magic happens (we don't care in this article)
+- 10 minutes - response time
 
 Those are all the ingredients you need to describe a slow, albeit functional web API. :)
 
@@ -30,14 +30,14 @@ The Wiki article on [web APIs](https://en.wikipedia.org/wiki/Web_API) states the
 
 Let's dissect that quickly.
 
-- Server-side = if I am a mobile app, I am a client, so the API is not on my side
-- Web API = we've covered this
-- Endpoints = parts of the API that provide different functions/data
-- Request/response message system = you request something and get a response back
+- Server-side - if I am a mobile app, I am a client, so the API is not on my side
+- Web API - we've covered this
+- Endpoints - parts of the API that provide different functions/data
+- Request/response message system - you request something and get a response back
 - JSON/XML - formats used to structure data in the request or the response
 - HTTP - a popular request/response protocol widely used on the web that describes how requests and responses need to be formatted and executed
 
-Let's expand our thinking a bit. This is how a typical flow would look like if we wanted to fetch all the Pokémon from a certain web API. 
+Let's expand our thinking a bit. This is how a typical flow would look like if we wanted to fetch all the Pokémon from a certain web API: 
 
 - We would execute a GET HTTP request towards a certain endpoint that delivers Pokémon (e.g. `https://pokeapi.co/api/v2/pokemon`)
 - It would do some magic...
@@ -88,13 +88,13 @@ For instance:
 
 #### Query params
 
-Query params are additions to the URI via which you can pass some information so it can prepare the response for you in a specific way. It's like telling the waiter you want extra mozzarella on your pizza. :)
+Query params are additions to the URI via which you can pass some information so the response can be prepared for you in a specific way. It's like telling the waiter you want extra mozzarella on your pizza. :)
 
 For instance:
 
 - URI for fetching the first 100 Pokémon: `https://pokeapi.co/api/v2/pokemon?limit=100`
 
-The query param here is `limit=100`. Consult your API docs to know when you can use which and for what purpose.
+The query param here is `limit=100`. Consult your API docs to know when you can use which parameter and for what purpose.
 
 ### Request headers
 Headers usually contain metadata like authorisation tokens, the content type, etc.
@@ -115,7 +115,7 @@ Content-Length: 63
 Read up on request headers [here](https://developer.mozilla.org/en-US/docs/Glossary/Request_header).
 
 ### Request body
-When creating a resource using POST or other methods that send data, the request body will contain a full or partial representation of the resource to be created. The body will often be specified in JSON or XML.
+When creating a resource using POST or other methods that send data, the request body will contain a full or partial representation of the resource to be created or updated. The body will often be specified in JSON or XML.
 
 If you are not sending any data, the body should remain empty.
 
@@ -164,7 +164,7 @@ Simply put, it consists of:
 You're already familiar with headers and the body, so let's look closely into HTTP status codes.
 
 ### Status codes
-Status codes are found at the very top of the requests and they are issued by the API to signify what exactly happened with the request.
+Status codes are found at the very top of the response and they are issued to briefly signify what exactly happened with the request.
 
 They usually have a three-digit code and a short description. There are five classes of status codes:
 
@@ -173,7 +173,6 @@ They usually have a three-digit code and a short description. There are five cla
 - **3xx** - redirection 
 - **4xx** - client error
 - **5xx** - server error
-
 
 Here are some you might already be familiar with:
 
@@ -214,7 +213,7 @@ etag: W/"a8-VCBC7cGvhjUog0edXFvoOrl6iko"
 You can interact with APIs or even test them with a variety of tools:
 
 - One of the most popular CLI tools is [cURL](https://curl.se/).
-- If you prefer a GUI, we have a nice tutorial on [Postman](https://infinum.com/handbook/books/qa/tools/using-postman).
+- If you prefer a GUI, we have a [nice tutorial on Postman](https://infinum.com/handbook/books/qa/tools/using-postman).
 - Also, most programming languages come with tools that make interacting with APIs a breeze. The [requests](https://docs.python-requests.org/en/master/) lib for Python is one example.
 
 
