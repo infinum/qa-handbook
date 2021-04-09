@@ -8,46 +8,7 @@
 * When something is not testable via the frontend app
 * When you want to set up your test environment quickly
 
-
-## HTTP request methods
-
-HTTP request methods are indicating the desired action that you want to perform for a given URL.
-
-Here are a few most used methods which you will encounter regularly and which you need to know:
-
-* `GET` method requests only retrieve data from a given URL and it does not have any other effect on the data.
-* `POST` method is used for sending data to the server for the specified URL. 
-* `PUT` method replaces all current representations of the target URL with the uploaded content.
-* `DELETE` method deletes all current data of the specified URL.
-* `PATCH` method is used to apply partial modifications to a URL.
-
-You can find more about the HTTP request methods [here](https://assertible.com/blog/7-http-methods-every-web-developer-should-know-and-how-to-test-them).
-
-
-## HTTP response status codes
-
-An HTTP response status code is a response from the server of a request that is displayed in a three-digit number. The first number represents the class to which it belongs, and we distinguish: 
-
-* Informational responses (100-199)
-* Successful responses (200-299)
-* Redirects (300-399)
-* Client errors (400-499)
-* Server errors (500-599)
-
-There are many HTTP response status codes, and here are the most important ones which you will encounter regularly and which you need to know:
-
-* `200` - **OK**
-* `201` - **Created**
-* `202` - **Accepted**
-* `304` - **Not Modified**
-* `400` - **Bad request**
-* `401` - **Unauthorized**
-* `403` - **Forbidden**
-* `404` - **Not Found**
-* `408` - **Request Timeout**
-* `500` - **Internal error**
-
-You can find more details on HTTP response status codes [here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
+Make sure to read up on [API - Basics](https://infinum.com/handbook/books/qa/knowledge/api-basics) before starting with this article.
 
 ## How Postman works
 
