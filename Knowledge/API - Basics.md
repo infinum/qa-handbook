@@ -86,7 +86,7 @@ For instance:
 - URI for fetching all Pokémon: `https://pokeapi.co/api/v2/pokemon`
 - URI for fetching the first Pokémon: `https://pokeapi.co/api/v2/pokemon/1`
 
-##### Query params
+#### Query params
 
 Query params are additions to the URI via which you can pass some information so it can prepare the response for you in a specific way. It's like telling the waiter you want extra mozzarella on your pizza. :)
 
