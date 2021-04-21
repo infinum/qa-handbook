@@ -23,7 +23,7 @@ The main responsibilities of the TAE role are:
 - Working on new and existing libraries and tooling
 - Defining new processes and improving existing processes and technologies
 - Maintaining technical aspects of the QA Handbook
-- Technical management of complex projects
+- Technical management of testing on complex projects
 - Mentoring and education
 
 
