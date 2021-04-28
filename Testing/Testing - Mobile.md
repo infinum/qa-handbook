@@ -366,11 +366,11 @@ You can easily remove jailbreak from your iOS 13.3 if jailbreaking was done with
 2. Tap on Settings gear icon in the top-right corner.
 3. Search for Restore RootFS toggle button and enable it.
 4. Return back from settings and tap on Restore RootFS button on Home screen.
- * Note: Maybe removing jailbreak won't work from first try and you will get some error dialogs. If this happens, follow the steps from the error dialog (e.g. Reboot device and try again).
-5. If you encounter any message dialogs, just follow the steps from the dialog while the removal of jailbreak is in progress. Also, don't allow your device to lock its screen.
-6. Wait for the removal of jailbreak to complete.
-7. Device will restart and Cydia will no longer be installed on the device - jailbreak is now completed.
-8. You can now also uninstall the Uncover app.
+	Note: Maybe removing jailbreak won't work from first try and you will get some error dialogs. If this happens, follow the steps from the error dialog (e.g. Reboot device and try again).
+6. If you encounter any message dialogs, just follow the steps from the dialog while the removal of jailbreak is in progress. Also, don't allow your device to lock its screen.
+7. Wait for the removal of jailbreak to complete.
+8. Device will restart and Cydia will no longer be installed on the device - jailbreak is now completed.
+9. You can now also uninstall the Uncover app.
 
 
 For reference, you can take a look at [this Youtube] (https://youtu.be/bLZ6bTDBGgI) video.
