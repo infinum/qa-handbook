@@ -31,7 +31,7 @@ This article is a compendium of useful tips & tricks for testing mobile apps.
 - <a href=#installing-an-app-from-a-foreign-app-store>Installing an app from a foreign App store</a>
 - <a href=#jailbreaking-ios11-with-uncover>Jailbreaking iOS11 with Uncover</a>
 - <a href=#jailbreaking-ios12-with-uncover>Jailbreaking iOS12 with Uncover</a>
-- <a href=#how-to-remove-jailbreak-on-ioS133>How to remove jailbreak on iOS13.3</a>
+- <a href=#how-to-remove-jailbreak-on-ios-133>How to remove jailbreak on iOS13.3</a>
 - <a href=#testing-production-builds-on-ios>Testing production builds on iOS</a>
 
 
@@ -363,21 +363,13 @@ You can easily remove jailbreak from your iOS 13.3 if jailbreaking was done with
 **Steps:**
 
 1. Open Uncover app on your jailbroken iPhone.
-
 2. Tap on Settings gear icon in the top-right corner.
-
 3. Search for Restore RootFS toggle button and enable it.
-
 4. Return back from settings and tap on Restore RootFS button on Home screen.
-
-* Note: Maybe removing jailbreak won't work from first try and you will get some error dialogs. If this happens, follow the steps from the error dialog (e.g. Reboot device and try again).
-
+ * Note: Maybe removing jailbreak won't work from first try and you will get some error dialogs. If this happens, follow the steps from the error dialog (e.g. Reboot device and try again).
 5. If you encounter any message dialogs, just follow the steps from the dialog while the removal of jailbreak is in progress. Also, don't allow your device to lock its screen.
-
 6. Wait for the removal of jailbreak to complete.
-
 7. Device will restart and Cydia will no longer be installed on the device - jailbreak is now completed.
-
 8. You can now also uninstall the Uncover app.
 
 
