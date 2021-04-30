@@ -31,7 +31,7 @@ This article is a compendium of useful tips & tricks for testing mobile apps.
 - <a href=#installing-an-app-from-a-foreign-app-store>Installing an app from a foreign App store</a>
 - <a href=#jailbreaking-ios11-with-uncover>Jailbreaking iOS11 with Uncover</a>
 - <a href=#jailbreaking-ios12-with-uncover>Jailbreaking iOS12 with Uncover</a>
-- <a href=#how-to-remove-jailbreak-on-ios-133>How to remove jailbreak on iOS13.3</a>
+- <a href=#how-to-remove-jailbreak-on-ios>How to remove jailbreak on iOS</a>
 - <a href=#testing-production-builds-on-ios>Testing production builds on iOS</a>
 
 
@@ -354,11 +354,11 @@ You can download the latest version of Chimera jailbreak from [here] (https://ch
 	
 Check out the whole guide [here] (http://www.iphonehacks.com/jailbreak-ios-12).
 
-### How to remove jailbreak on iOS 13.3
+### How to remove jailbreak on iOS
 
 Sometimes you have done your testing on a jailbroken device and you want to return your device to how it was. In this case, factory reset won't help.
 
-You can easily remove jailbreak from your iOS 13.3 if jailbreaking was done with Cydia and Uncover.
+You can easily remove jailbreak from your iOS device if jailbreaking was done with Cydia and Uncover.
 
 **Steps:**
 
