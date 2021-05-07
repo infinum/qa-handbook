@@ -1,66 +1,59 @@
 > People always say "code and then test," I prefer “test and then code."
 
-## Using Charles
-
 [Charles](https://www.charlesproxy.com/) is an HTTP proxy that helps you to view all HTTP/S traffic between the app you are testing and the internet. 
-To install Charles on macOS, [follow this handy guide](https://www.charlesproxy.com/documentation/installation/).
 
-## Setup Charles on iOS
+## Charles setup
+
+- Install Charles on your laptop and run it.
+- Turn off macOS proxying and Firefox proxying in the Proxy menu because we just want the data stream from the phone/tablet.
+
+## iOS setup
 
 To be able to use Charles on iOS you need to do the following: 
 
 1. Open Settings on your iOS device
 1. Tap on Wi-Fi
-1. Select the network to which your iPhone is currently connected 
+1. Select the network to which your iOS device is currently connected 
 1. Tap on "Configure proxy"
-1. Tap on "Server" and enter your laptop's local IP address from the macOS Network Utility
-2. Tap on "port" and enter 8888
+1. Tap on "Server" and enter your laptop's local IP address (see the macOS Network Utility)
+2. Tap on port and enter "8888"
 
-Once done, return to Charles, click on Record and try to open something in Safari on your iOS device to check if Charles is recording your activity. 
-
-## Setup Charles on Android
+## Android setup
 
 It differs from device to device, but it usually goes something like this: 
 
 1. Go to “Settings”
-1. Go to “WiFi”
-1. Long tap on the WiFi network to which the device is currently connected
+1. Go to “Wi-Fi”
+1. Long tap on the Wi-Fi network to which the device is currently connected
 1. Tap on “Modify network”
 1. Tap on “Show advanced options”
 1. Under “Proxy” change to “Manual”
-1. Under “Proxy hostname” enter your laptop's local IP address from the macOS Network Utility and under “Proxy port” enter 8888
+1. Under “Proxy hostname” enter your laptop's local IP address from the macOS Network Utility and under "Proxy port" enter 8888
 
-## Example of debugging an API call 
+---
 
-Charles is very helpful for debuging api calls. Let's show one use case: 
-
-There is a restriction request which says that users under age of 18 cannot use the app. You have implemented the logic for restricting young user from entering the app and you want to test it out. But there is only one test user available and it has value of age parameter set to 45. 
-
-This is the case where Charles becomes very handy. You can set a breakpoint to intercept this call. After Charles does the interception, you can manually change the value of model's parameter.
+After several seconds, you should get a prompt in Charles asking you to confirm traffic coming from your device. If that does not happen, try restarting Charles. Now you will see all the traffic that your device is sending out and receiving, but it will be encrypted if done via a secure protocol (HTTPS).
 
 ## Setup SSL proxying
 
-1. In Charles go to Proxy > Proxy Settings > Mac OS X and disable it if activated.
+After connecting to your laptop/Charles, use a browser on the mobile device to navigate to [this page](https://chls.pro/ssl) and install the certificate. On iOS you will also have to open Settings and navigate to General > About > Certificate Trust Settings, find the Charles Proxy certificate and enable it.
 
-2. Connect the device to the same network as your laptop is on (not a network which blocks proxies).
+Now you should be able to select "Enable SSL proxying" on an endpoint you are interested in and see unencrypted traffic in both directions.
 
-3. Modify the the WiFi connection on your device to use a proxy. You need to set yor proxy host IP address (which is your laptop IP address, on Charles - Help > Local IP address) and you need to set the port number (for example 8888).
-
-4. On the phone use a browser to navigate to [this page](https://chls.pro/ssl) and install the certificate. On iOS you will also have to open Settings and navigate to General > About > Certificate Trust Settings, find the Charles Proxy certificate and enable it.
-
-5. Traffic should now show in Charles. Put a filter to your project to get rid of all the other traffic from your phone. If Charles shows "Unknown" label for all the calls from target api you can right click on it and select "Enable SSL proxying".
+Note: the above will not work if there is a pinned certificate in the app.
 
 ![Adjust traffic](/img/charles-focus-and-enable-ssl.png)
 
 ## How to use breakpoints
 
-Breakpoints are a very useful feature in Charles. You can use them doing following steps:
+Breakpoints enable you to stop requests/responses "mid-air" (in Charles) and change them before forwarding them back to the API or to the mobile app.
 
-Right click on a wanted call and then select "Breakpoints".
+To set up, a breakpoint, right-click on an endpoint and select "Breakpoints":
 
 ![Select breakpoints](/img/charles-breakpoints-select.png)
 
-After that, execute the call and wait for Charles to intercept it. It will also intercept request (you can adjust this in settings). Just click on execute and continue to response. When response is shown, select JSON Text and simply change wanted value. When finished, click execute. And it is simple as that!
+After that, execute some requests in the mobile app towards that endpoint and wait for Charles to intercept them. 
+Now you can change the request before executing it. And you will also be able to change the response before forwarding it to the phone.
 
 ![Debug breakpoints](/img/charles-breakpoints-debug.png)
 
