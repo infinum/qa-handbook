@@ -54,20 +54,15 @@ This is the case where Charles becomes very handy. You can set a breakpoint to i
 
 ## Setup SSL proxying
 
-1. Build the App in Debug flavor and install it on your device. In Charles go to Proxy > Proxy Settings > Mac OS X and disable it if activated.
+1. In Charles go to Proxy > Proxy Settings > Mac OS X and disable it if activated.
 
 2. Connect the device to the same network as your laptop is on (not a network which blocks proxies).
 
-3. Modify the the WiFi connection on your device to use a proxy. It differs from device to device but it can go something like this: Long press on your wifi connection > Change/Adjust wifi > Show advanced settings > Proxy > Manually
-There you need to set yor proxy host IP address (which is your laptop IP address, on Charles - Help > Local IP address) and you need to set the port number (for example 8888)
+3. Modify the the WiFi connection on your device to use a proxy. You need to set yor proxy host IP address (which is your laptop IP address, on Charles - Help > Local IP address) and you need to set the port number (for example 8888).
 
-4. In Charles go to Proxy > SSL Proxying Settings > Add your host `most-awesome-api-ever.com` and port *.*
+4. On the phone use Chrome to navigate to [this page](https://chls.pro/ssl) and install the certificate. On iOS you will also have to open Settings and navigate to General > About > Certificate Trust Settings, find the Charles Proxy certificate and enable it.
 
-![Set your host](/img/charles-set-up-host.png)
-
-5. On the phone use Chrome to navigate to [this page](https://chls.pro/ssl) and install the certificate.
-
-6. Traffic should now show in Charles. Put a filter to your project to get rid of all the other traffic from your phone. If Charles shows "Unknown" label for all the calls from target api you can right click on it and select "Enable SSL proxying"
+5. Traffic should now show in Charles. Put a filter to your project to get rid of all the other traffic from your phone. If Charles shows "Unknown" label for all the calls from target api you can right click on it and select "Enable SSL proxying".
 
 ![Adjust traffic](/img/charles-focus-and-enable-ssl.png)
 
@@ -79,7 +74,7 @@ Right click on a wanted call and then select "Breakpoints".
 
 ![Select breakpoints](/img/charles-breakpoints-select.png)
 
-After that execute the call and wait for Charles to intercept it. It will also intercept request (You can adjust this in settings). Just click on execute and continue to response. When response is shown, select JSON Text and simply change wanted value. When finished, click execute. And it is simple as that!
+After that, execute the call and wait for Charles to intercept it. It will also intercept request (you can adjust this in settings). Just click on execute and continue to response. When response is shown, select JSON Text and simply change wanted value. When finished, click execute. And it is simple as that!
 
 ![Debug breakpoints](/img/charles-breakpoints-debug.png)
 
