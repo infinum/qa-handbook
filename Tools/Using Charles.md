@@ -15,7 +15,7 @@ To be able to use Charles on iOS you need to do the following:
 1. Tap on Wi-Fi
 1. Select the network to which your iOS device and your laptop are currently connected
 1. Tap on "Configure proxy"
-1. Tap on "Server" and enter your laptop's local IP address (find it in the macOS Network Utility)
+1. Tap on "Server" and enter your laptop's local IP address (find it in macOS' Network Preferences)
 1. Tap on port and enter "8888"
 
 ## Android setup
@@ -28,7 +28,7 @@ It differs from device to device, but it usually goes something like this:
 1. Tap on “Modify network”
 1. Tap on “Show advanced options”
 1. Select "Manual" in the “Proxy” menu
-1. Under “Proxy hostname” enter your laptop's local IP address (find it in the macOS Network Utility) and under "Proxy port" enter 8888
+1. Under “Proxy hostname” enter your laptop's local IP address (find it in macOS' Network Preferences) and under "Proxy port" enter 8888
 
 ---
 
