@@ -40,7 +40,7 @@ If that does not happen, try restarting Charles. Now you will see all the traffi
 
 To see HTTPS traffic in plaintext, you will have to set up SSL proxying:
 
-- After connecting to your laptop/Charles, use a browser on the mobile device to navigate to [this page](https://chls.pro/ssl) and download the Charles certificate.
+- After connecting to your laptop/Charles, use a browser on the mobile device to navigate to https://chls.pro/ssl and download the Charles certificate.
 - Install the certificate. 
 - On iOS you will also have to open Settings and navigate to General > About > Certificate Trust Settings, find the Charles Proxy certificate and enable it.
 
