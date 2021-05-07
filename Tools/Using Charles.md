@@ -53,8 +53,9 @@ Note: the above will not work if there is a pinned certificate in the app.
 ## How to use breakpoints
 
 Breakpoints enable you to stop requests/responses "mid-air" (in Charles) and change them before forwarding them back to the API or to the mobile app.
+By doing so, you effectively take full control of all the networking. :)
 
-To set up, a breakpoint, right-click on an endpoint and select "Breakpoints":
+To set up a breakpoint, right-click on an endpoint and select "Breakpoints":
 
 ![Select breakpoints](/img/charles-breakpoints-select.png)
 
