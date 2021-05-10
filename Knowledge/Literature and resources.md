@@ -20,6 +20,7 @@ Some cool books to jumpstart your QA career:
 - [How Not to Suck at Writing Bug Reports](https://infinum.com/the-capsized-eight/how-not-to-suck-at-writing-bug-reports)
 - [AI Software Testing–Myth or Reality?](https://infinum.com/the-capsized-eight/ai-testing-myth-or-reality)
 - [Want Better Collaboration on Development Projects? Try BDD](https://infinum.com/the-capsized-eight/want-better-collaboration-on-development-projects-try-bdd)
+- [Writing API Tests? Postman Delivers](https://infinum.com/the-capsized-eight/postman-API-testing)
 
 ## Blog posts about writing blog posts 
 
@@ -32,6 +33,7 @@ If  you will be writing a blog post here is a useful list of blog posts which co
 ## Other
 - [9 essential blogs](https://www.rainforestqa.com/blog/2017-12-21-9-essential-blogs-every-qa-team-should-read-in-2018/)
 - [A list of software testing conferences](https://testingconferences.org/)
+- [Developsense blog](https://www.developsense.com/blog/)
 - [Guru99 Software testing](https://www.guru99.com/software-testing.html)
 - [Ministry of Testing newsletter](https://www.ministryoftesting.com/newsletter)
 - [Ministry of Testing - 30 things every new software tester should learn](https://www.ministryoftesting.com/dojo/lessons/30-things-every-new-software-tester-should-learn)
