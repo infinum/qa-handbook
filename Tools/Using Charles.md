@@ -65,6 +65,8 @@ Now you will be able to change the request before executing it if you wish to do
 
 ![Debug breakpoints](/img/charles-breakpoints-debug.png)
 
+If you want to rewrite requests and responses automatically, you can use [Charles' Rewrite tool](https://www.charlesproxy.com/documentation/tools/rewrite/).
+
 ---
 
 ![dil-internet.gif](/img/dil-internet.gif)
