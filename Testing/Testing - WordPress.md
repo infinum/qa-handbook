@@ -151,7 +151,7 @@ The most common bugs you will probably encounter while testing WordPress are:
 
 * Although WP plugins can be useful, they are often avoided because the integration can be quite challenging and can slow down the web. Plugins you can find on almost any Infinum wp projects are  Yoast, WP rocket, and Advanced custom fields Pro. There can be a situation where plugins aren't compatible, but this depends on a case-by-case scenario. You can find the list of [incompatible plugins](https://wordpress.com/support/incompatible-plugins/) here. 
 
-## 9. What do you need to know before WordPress testing
+## 9. What do you need to know before WordPress testing?
 
 * You need to test both WP admin and frontend.
 * Pages are created not by design but by blocks and components.
