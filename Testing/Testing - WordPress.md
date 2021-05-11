@@ -19,7 +19,11 @@ After entering the correct data and clicking a Login button, you can access the 
 
 ## 3. WordPress dashboard
 
-The Dashboard is the centerpiece of WordPress. You can add new and edit existing content, upgrade your site with plugins, tools, create new users, and more. Depending on what you want to add to your website, you will choose a specific menu item.
+The Dashboard is the centerpiece of WordPress. You can add new and edit existing content, upgrade your site with plugins, tools, create new users, and more. Depending on what you want to add to your website, you will choose a specific menu item. 
+
+You can also use one dashboard for multiple WP projects by using multisite. 
+
+![wp_multisite.png](/img/wp_multisite.png)
 
 * **POSTS** - used to create, publish and edit articles (posts), categories and tags. Each new post is automatically published on the front page as well. By setting categories on articles, you can select all articles of a certain category (on the page itself).
 
@@ -146,3 +150,14 @@ The most common bugs you will probably encounter while testing WordPress are:
 * When WordPress gets an update, it's common that some things break during that process. The best way to test an update is to do a smoke test of the entire wp-admin and frontend. Ensure user roles still have the capabilities they should have and that nothing is looking funny on the front. Also, check the forms on your page because some common issues are related to form behavior. Depending on the update, different issues can occur. For example, on our Infinum web, when we updated to 5.5. WP, we lost all of our images because lazy loading was added. On this page (https://wordpress.org/news/category/releases/), you can find the version you update from and the version you update to and fly through the new changes on each version in between.
 
 * Although WP plugins can be useful, they are often avoided because the integration can be quite challenging and can slow down the web. Plugins you can find on almost any Infinum wp projects are  Yoast, WP rocket, and Advanced custom fields Pro. There can be a situation where plugins aren't compatible, but this depends on a case-by-case scenario. You can find the list of [incompatible plugins](https://wordpress.com/support/incompatible-plugins/) here. 
+
+## 9. What do you need to know before WordPress testing
+
+* You need to test both WP admin and frontend.
+* Pages are created not by design but by blocks and components.
+* Every block is adjustable.
+* Some values are hardcoded.
+* Test every block independently.
+* Create new page for QA only.
+
+
