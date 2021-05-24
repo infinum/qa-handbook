@@ -69,7 +69,7 @@ For instance, if you had time to test a Croatian mBanking Android app on a mobil
 - A smaller mid-range device which is two or more years old
 - An old device running the minimum supported OS version
 
-The device usage percentages of our apps can be on G theoogle Dev Console or on iTunes Connect. Contact your team lead to get that info.
+The device usage percentages of our apps can be retrieved from the Google Dev Console or iTunes Connect. Contact your team lead to get that info.
 
 The usage of particular devices in general can be found on web sites such as [StatCounter](http://gs.statcounter.com/vendor-market-share/mobile).
 
