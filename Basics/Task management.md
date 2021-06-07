@@ -52,6 +52,33 @@ In general, there are two types of tasks you will deal with:
 
 Each task should only be opened for one person and one platform. E.g., if both Android and iOS are implementing the same feature, they should have separate tasks.
 
+## Bug tasks - severity and priority
+
+Not all bugs are the same. You can attribute severity and priority to a bug in order to communicate to the team how important it really is and triage it appropriately.
+
+**Severity** is related to how damaging it is to the product.
+
+**Priority** is related to how soon should a fix mitigating it be deployed to production.
+
+Sometimes a bug can have low severity, but high priority. E.g. imagine uploading a wrong logo on the website.
+
+Here's one possible way of classifying them according to severity and priority:
+
+**Severity:**
+
+- Safety: Safety issue. The product creates a dangerous situation.
+- Blocker: Prevents function from being used, no work-around, and blocking progress in multiple screens or components.
+- Critical: Prevents a function from being used, no work-around being available.
+- Major: Prevents a function from being used, but a work-around is possible.
+- Normal: A problem making a function difficult to use and no special work-around is required.
+- Cosmetic: Small issue that does not significanly impact the product.
+
+**Priority:**
+
+- High: It should be fixed immediately.
+- Normal: It should be fixed in the next development iteration (sprint) or in the next version.
+- Low: It should be fixed at a later point.
+
 
 ---
 
