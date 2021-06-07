@@ -115,7 +115,9 @@ The collection of the tasks defined on the sprint planning meeting, along with t
 - ideally, they should follow the INVEST rule: **I**ndependent, **N**egotiable,
 **V**aluable, **E**stimable, **S**mall, **T**estable
 
-Example of a format:
+**Acceptance criteria** can be formally or informally written. 
+
+An example of a formal method is the "given-when-then" (GWT) format: 
 
 - **Given** some context
 - **When** some action is carried out 
@@ -126,6 +128,15 @@ Real-world example:
 - **Given** my bank account contains sufficient funds,
 - **When** I attempt to withdraw an amount less than my card's limit,
 - **Then** the withdrawal should complete without errors or warnings
+
+Some other best practices:
+
+- Write them from the end-user's perspective
+- Break them down into concise chunks so they are easier to understand
+- Make sure that each criterion is precise and testable
+- Make sure to include both functional and non-functional criteria when applicable
+
+If your project doesn't come with any acceptance criteria, try to change that by discussing it with the team. Writing good documentation helps transparency and getting things right on the first attempt.
 
 ### Product increment
 The Product increment is the sum of:
@@ -157,9 +168,29 @@ Sprint process:
 
 ## Definition of Ready & Done
 
+### Definition of Ready
+
 **Definition of Ready** means that user stories must be immediately actionable. The team must be able to determine what needs to be done and the amount of work required.
 
+When should a task be moved from the backlog to the shortlist? There is no one-size-fits-all solution here, but a good rule of thumb is:
+
+- It should contain some acceptance criteria which tell the developer what needs to be done and tell you how a certain feature should behave in order to be deemed acceptable.
+- It should contain links to the design specification (e.g. Figma links) if the task is about implementing new UI.
+- It should contain links to other specification documents, e.g. database models or API.
+
+A task missing some of the components mentioned above will be difficult or impossible to test properly. You should act upon this to get it specified.
+
+### Definition of Done
+
 **Definition of Done** drives the quality of work and is used to assess when a user story has been completed.
+
+When is a task done from the perspective of a software tester?
+
+- A simple way of looking at it: when all of the acceptance criteria are met.
+- A more complex way of looking at it: when all of the acceptance criteria are met, you have defined all of the test cases, and when there are no outstanding functional or non-functional issues pertaining to that task.
+- Sometimes there will be no acceptance criteria and the definition of done will be your gut feeling.
+
+All of the above will vary from project to project and tester to tester.
 
 
 ## Estimations
