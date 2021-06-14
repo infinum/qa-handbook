@@ -47,7 +47,7 @@ You should write both positive and negative test cases.
 
 ## How to quickly write & import test cases
 
-You could find yourself caught in a following scenario:
+You could find yourself caught in one of the following scenarios:
 
 - You start working on a project that has no test documentation at all.
 - You have very limited time to work on test documentation.
@@ -56,11 +56,11 @@ You could find yourself caught in a following scenario:
 If that is the case, there is an easy way to quickly get yourself up and running:
 
 - Sketch out your test cases in XLSX/CSV
-- Navigate to your Testrail project
 
 ![tr1.png](/img/tr1.png)
 
-- Click on "Import Cases"
+- Navigate to your Testrail project
+- Click on "Import Cases" and select your file
 - Map your columns to Testrail fields
 
 ![tr1.png](/img/tr2.png)
