@@ -85,7 +85,9 @@ These are some of your options:
 - You could ask a developer to add them to the database directly, but now you're just delegating work.
 - Finally, you could create one article and use that request to create 99 more of them.
 
-Charles can help you achieve the 3rd option. Just isolate the request you want to repeat, right-click on it, and select "Repeat Advanced":
+Charles can help you achieve the 3rd option. Just isolate the request you want to repeat, right-click on it, and select "Repeat Advanced".
+
+Once you enter the amount of iterations, click on "Ok" and watch Charles do his magic.
 
 ![repeat.png](/img/repeat.png)
 
@@ -102,7 +104,7 @@ curl \
 --compressed
 ```
 
-Now just add `repeat 99` in front of your cURL command, execute it.
+Now just add `repeat 99` in front of your cURL command, execute it in your terminal of choice, and you're off to the races. :)
 
 ---
 
