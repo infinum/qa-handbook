@@ -77,7 +77,7 @@ Why would you that? One possible use case is to convert that HAR file to a k6 sc
 
 ## Repeating requests
 
-Let's say you have to create a 100 articles in the mobile app you are testing to satisfy the preconditions for a certain test case. Let's also assume you don't have access to API docs or a Postman collection that could come in handy.
+Let's say you have to create 100 articles in the mobile app you are testing to satisfy the preconditions for a certain test case. Let's also assume you don't have access to API docs or a Postman collection that could come in handy.
 
 These are some of your options:
 
