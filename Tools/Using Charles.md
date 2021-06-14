@@ -91,7 +91,7 @@ Once you enter the amount of iterations, click on "Ok" and watch Charles do his 
 
 ![repeat.png](/img/repeat.png)
 
-If want even more flexibility, you can right-click on it, select "Copy cURL request" and get a nice cURL command that's good to go:
+If you want even more flexibility, you can right-click on the request, select "Copy cURL request" and get a nice cURL command that's good to go:
 
 ```
 curl \
@@ -105,6 +105,8 @@ curl \
 ```
 
 Now just add `repeat 99` in front of your cURL command, execute it in your terminal of choice, and you're off to the races. :)
+
+The nice thing with cURL commands is that you can easily share them with the rest of the team.
 
 ---
 
