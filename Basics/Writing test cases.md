@@ -45,6 +45,34 @@ You should write both positive and negative test cases.
 - Positive test cases test the happy flow - "test to pass"
 - Negative test cases test error handling - "test to fail"
 
+## How to quickly write & import test cases
+
+You could find yourself caught in a following scenario:
+
+- You start working on a project that has no test documentation at all.
+- You have very limited time to work on test documentation.
+- You already have test documentation in XLSX or CSV and you want to import it into Testrail for easier usage.
+
+If that is the case, there is an easy way to quickly get yourself up and running:
+
+- Sketch out your test cases in XLSX/CSV
+- Navigate to your Testrail project
+
+![tr1.png](/img/tr1.png)
+
+- Click on "Import Cases"
+- Map your columns to Testrail fields
+
+![tr1.png](/img/tr2.png)
+
+- Import them and voilà...
+
+![tr1.png](/img/tr3.png)
+
+You will quickly and easily get a structure you can build on and immediately start executing tests.
+
+N.B., if your file does not contain one test case per row, check out the [official user guide](https://www.gurock.com/testrail/docs/user-guide/howto/import-csv).
+
 ## How to maintain test cases
 
 - Each time you approach a new task, write test cases for it.
