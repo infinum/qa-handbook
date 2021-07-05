@@ -115,7 +115,7 @@ When doing smoke testing, test the major and critical features first because tha
 ### Security smoke test
 Run an automatic security test using MobSF or QARK for mobile or OWASP ZAP for web.
 
-See this [chapter](https://infinum.com/handbook/books/qa/tools/automated-security-testing) for more detail.
+See this [chapter](https://infinum.com/handbook/books/qa/automation/automated-security-testing) for more detail.
 
 ### Sessions
 Log in and put the app into the background. Come back after the token expires.
