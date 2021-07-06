@@ -69,7 +69,7 @@ Not sure that all the UX nitty-gritty has been worked out ok? Try stopping a neu
 [Three to five people are the magic number for usability testing](https://www.invisionapp.com/inside-design/ux-usability-research-testing/) anyway.
 
 ### Custom time and date
-Should the app work without restrictions if a custom time/date is set on the device? For example, in freemium games, there might be countdown timers for users to earn an achievement (e.g. get points). Check what it is not possible to set the time on the device to a point in the future in order to "hack" the game's timer and earn the achievement in advance, without waiting for the countdown to finish. 
+Should the app work without restrictions if a custom time/date is set on the device? For example, in freemium games, there might be countdown timers for users to earn an achievement (e.g. get points). Check that it is not possible to set the time on the device to a point in the future in order to "hack" the game's timer and earn the achievement in advance, without waiting for the countdown to finish. 
 
 ### Empty states
 All screens that display dynamic data (e.g. lists, results, profiles, etc.) should have an "empty state" if there is no data to display. Preferably, the empty state of the screen should also include a call to action along with some persuasive copy.
