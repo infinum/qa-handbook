@@ -28,7 +28,7 @@ This potentially infinite list is just some minor testing tidbits we gathered th
 - <a href=#security-smoke-test>Security smoke test</a>
 - <a href=#several-screen-sizes-aspect-ratios>Several screen sizes / aspect ratios</a>
 - <a href=#submitting-a-form-with-missing-data>Submitting a form with missing data</a>
-- <a href=#switching-between-mobile-data-and-wifi>Switch between mobile data and WiFi</a>
+- <a href=#switching-between-mobile-data-and-wifi>Switching between mobile data and WiFi</a>
 - <a href=#taking-screenshots-and-screen-recordings>Taking screenshots and screen recordings</a>
 - <a href=#testing-on-a-slow-connection>Testing on a slow connection</a>
 - <a href=#testing-purchases>Testing purchases</a>
