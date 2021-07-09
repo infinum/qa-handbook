@@ -14,7 +14,7 @@ Whether it is a release of mobile or web apps, make sure all features are merged
 ### Preparation is the key!
 
 - Have your test cases ready before going into regression testing.
-- Create a tast plan (If it is available in a tool where you keep test cases) and test execution with all test cases related to the current release. 
+- Create a test plan (If it is available in a tool where you keep test cases) and test execution with all test cases related to the current release. 
 - Make sure to discuss the scope and effort needed with your team. If you are doing a regression test for the first (Whether you just started your QA career or you are the first time on a project) make sure to take enough time to complete it.
 - Make sure your test environment is as close as possible to production.
 - If you have automated parts of the app, focus on manually testing those parts that were left unchecked, but don't completely ignore those that were covered.
