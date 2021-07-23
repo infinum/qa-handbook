@@ -72,7 +72,7 @@ Once all blockers are fixed and the app is ready for release, share and discuss 
 Most of the tools (Such as Jira and TestRail) have the option to create test report documents in PDF format. This comes in handy when you need to share a report with a client.
 Here is just an example of how a generated report from TestRail looks like:
 
-![Testing_Prereleases_Report.png](/img/Testing_Prereleases_Report.png)
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Testing_Prereleases_Report.png](/img/Testing_Prereleases_Report.png)</span>
 
 #### 3,2,1 Launch!
 
