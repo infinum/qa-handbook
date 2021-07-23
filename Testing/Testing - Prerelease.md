@@ -19,7 +19,6 @@ Whether it is a release of mobile or web apps, make sure all features are merged
 **TIP:** Name your test execution as specific as possible - it will be easier for you to find it later. :)
 For example, name the platform on which you are performing regression test and release version, you can also add a name (ticket number) of the test plan if it is available. 
 
-
 - Make sure to discuss the scope and effort needed with your team. If you are doing a regression test for the first (Whether you just started your QA career or you are the first time on a project) make sure to take enough time to complete it.
 - Make sure your test environment is as close as possible to production.
 - If you have automated parts of the app, focus on manually testing those parts that were left unchecked, but don't completely ignore those that were covered.
