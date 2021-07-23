@@ -14,7 +14,12 @@ Whether it is a release of mobile or web apps, make sure all features are merged
 ### Preparation is the key!
 
 - Have your test cases ready before going into regression testing.
-- Create a tast plan ((If it is available in a tool where you keep test cases) and test execution with all test cases related to the current release. 
+- Create a test plan (If it is available in a tool where you keep test cases) and test execution (Test run) with all test cases related to the current release. 
+
+**TIP:** Name your test execution as specific as possible - it will be easier for you to find it later. :)
+For example, name the platform on which you are performing regression test and release version, you can also add a name (ticket number) of the test plan if it is available. 
+
+
 - Make sure to discuss the scope and effort needed with your team. If you are doing a regression test for the first (Whether you just started your QA career or you are the first time on a project) make sure to take enough time to complete it.
 - Make sure your test environment is as close as possible to production.
 - If you have automated parts of the app, focus on manually testing those parts that were left unchecked, but don't completely ignore those that were covered.
@@ -34,13 +39,20 @@ If you have some extra time you can do at least a smoke test on some other suppo
 ### Testing, testing, and more testing...
 
 - Run a regression test of the release candidate on a non-production environment by following the test cases from test execution.
+
+Sneak pic how typical test execution looks like in TestRail:
+
+![Testing_Prereleases_TestRail.png](/img/Testing_Prereleases_TestRail.png)
+
+At the top, there is an overview with this fancy pie chart that shows your progress (how many test cases passed, failed, are blocked...) and underneath there are test cases. Pay attention to the naming of the regression test and used devices :) 
+
 - Make sure to check the [Prince of Versions](https://infinum.com/handbook/books/qa/testing/testing-prince-of-versions) scenarios for mandatory and optional updates.
 - Report bugs as soon as possible after uncovering them. Make sure that you discuss them with a team so they can be prioritized, fixed, and a new build can be created for you to continue testing ASAP.
 - Retest the affected area of the app in each test candidate.
 
 #### Pro Tip 1: Communicate all the way
 
-Keep informing the project team of your progress in daily meetings or via Slack. Let them know if you have any problem, help or you need more time to finish your testing.
+Keep informing the project team of your progress in daily meetings or via Slack. Let them know if you have any problems, you need help or you just need more time to finish your testing.
 
 #### Pro Tip 2: Do not complicate things too much
 
@@ -52,16 +64,29 @@ Make exploratory testing part of your regression test. The test cases themselves
 
 #### Pro Tip 4: Finish your testing
 
-The app should not go to production before you went through all test cases in your test execution. After that, you will have a good overview if the app is good enough for release or not. 
+The app should not go to production before you went through all test cases in your test execution. After that, you will have a good app overview and it is good enough for release or not. 
 
 ### What to do after testing?
 
-Once all blockers are fixed and the app is ready for release, share and discusses test results with your team. The app will be submitted to its respective store and once approved it will be released to a limited part of the audience (phased/staged release) or it can be released to all users all at once. 
+Once all blockers are fixed and the app is ready for release, share and discuss test results with your team. Type down a short report and share it in the project group via Slack or use your daily meetings to do so.
+
+Most of the tools (Such as Jira and TestRail) have the option to create test report documents in PDF format. This comes in handy when you need to share a report with a client.
+Here is just an example of how a generated report from TestRail looks like:
+
+![Testing_Prereleases_Report.png](/img/Testing_Prereleases_Report.png)
+
+#### 3,2,1 Launch!
+
+The app will be submitted to its respective store and once approved it will be released to a limited part of the audience (phased/staged release) or it can be released to all users all at once. 
 
 Just because you finished with testing does not mean that your job is done. In that period here is what you need to do:
 
-- Check Crashlytics daily for a week or two for crash issues.
-- Stop the phased/staged release in case of crash spikes, in that case, a team needs to work on hotfix build and the whole prerelease process needs to be repeated.
+- Check Crashlytics daily for a week or two for crash issues. 
+- Take a look at reviews on its respective stores.
+
+#### Huston, we have a... crash
+ 
+Stop the phased/staged release in case of crash spikes, in that case, a team needs to work on a hotfix build and the whole prerelease process needs to be repeated.
 
 ### Google Play Beta/TestFlight - Optional
 
