@@ -1,0 +1,102 @@
+
+
+# GLOSSARY
+
+Welcome to the QA team glossary! The glossary is meant to help you get familiar with words and phrases commonly used in everyday work. If you ever get confused or lost with the word used on your project weekly, the first thing you can do is check out our glossary!
+
+Here you can find terms that you encounter everyday when working with your colleagues, PMs, developers, designers, basically with your new project team.
+
+
+## A
+
+**Acceptance criteria** are conditions that a software product must satisfy to be accepted by a user, customer or other stakeholder. Acceptance criteria are also sometimes called the “definition of done” because they define the scope and requirements of user stories. They give developers the context needed to execute on a user story.
+
+**Agile** refers to a group of software development methodologies based on iterative development, where requirements and solutions evolve through collaboration between self-organizing cross-functional teams. Agile is a time boxed, iterative approach to software delivery that builds software incrementally from the start of the project, instead of trying to deliver it all at once near the end. It works by breaking projects down into little bits of user functionality called user stories, prioritizing them, and then continuously delivering them in short two week cycles called iterations. Usually it’s organized in two-week design sprints followed by development sprint.
+
+## B
+
+**Bug** A software bug is an error, flaw or fault in a computer program or system that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.
+
+**Backlog** a list of tasks/requirements for a software product in development. If something is in the backlog it is usually low on the priority list.
+
+# C
+
+# D
+
+# E
+
+**Edge case** a use case or a situation which can rarely happen, and is often unexpected or overlooked while designing or programming. While designing, you need to make sure you cover all edge cases.
+
+**Exploratory Testing** means testing with existing experience and knowledge of the mobile app or website. This insight gives the QA tester the ability to have a focused engagement without following formal test cases. Or in other words, testing the whole app without any specific plan or without using test cases. 
+
+# F
+
+**Feature** in software development features are the “tools” you use within a system to complete a set of tasks or actions. Functionality is how those features actually work to provide you with a desired outcome.
+
+# G
+
+# H
+
+**Hot Fix** is a critical bug fix that needs to go live before the next scheduled release date.
+
+**Hover** or a hover state in an interactive element communicates when a user has placed a cursor above an interactive element. 
+
+# I
+
+**Input field** text fields which allow user input. Input can be free text, a number stepper, etc.
+
+# J
+
+# K
+
+# L
+
+# M
+
+**Matas** our el hefe.
+
+# N
+
+# O
+
+# P
+
+**Padding** A page element's padding area is the space between its content and its border. 
+
+# Q
+
+# R
+
+**Regression Testing** is much more thorough than smoke testing. Regression testing involves checking every possible aspect of the pre-existing app features after a new feature or bug fix is deployed. This is to make sure that the code updates didn’t break any other area of the software. Or in other words, full test of the app!
+
+**Release candidate** is a version that is ready to release to the public, assuming no major bugs are found during testing.
+
+# S
+
+**Scope** It is a total amount of the web or mobile features included in the project. Each scope has its duration and budget.
+
+**Smoke Testing** is one of the quickest/most basic forms of testing. It involves doing a simple test of major features, often right before a release. The purpose is to see if anything “catches on fire,” so to speak.
+
+# T
+
+**Test Cases** are requirements with steps for testing whether a given part of the app or site is working properly.
+
+**Test Suite** is a set of test cases. For example, you might have test cases for the registration section, the homepage, add to cart flow, etc. A test suite is a spreadsheet consisting of all of these different test cases.
+
+# U
+
+**User Acceptance Testing** means having real users beta test your app or site and provide feedback. In most cases, those real users are our clients who tests out the feature or the whole app once it's been finished. 
+
+**User story** - In software development and product management, a user story is an informal, natural language description of one or more features of a software system. User stories are often written from the perspective of an end user or user of a system. They are often recorded in project management software such as Jira. Depending on the project, user stories may be written by various stakeholders including clients, users, managers, or development team members. 
+
+**User Experience** refers to the quality of the experience and interactions that a user has with an app or site. An application can have bad user experience without being explicitly “buggy.”
+
+# V
+
+# W
+
+# X
+
+# Y
+
+# Z
