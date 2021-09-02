@@ -8,7 +8,6 @@ This article is a compendium of useful tips & tricks for testing mobile apps.
 
 - <a href=#basics>Basics</a>
 - <a href=#installing-a-build-from-tryoutapps>Installing a build from Tryoutapps </a>
-- <a href=#prerelease-checklist-for-mobile-apps>Prerelease checklist for mobile apps</a>
 - <a href=#selecting-test-devices>Selecting test devices</a>
 - <a href=#testing-biometrics>Testing biometrics</a>
 - <a href=#testing-facebook-analytics>Testing Facebook analytics</a>
@@ -32,6 +31,7 @@ This article is a compendium of useful tips & tricks for testing mobile apps.
 - <a href=#installing-an-app-from-a-foreign-app-store>Installing an app from a foreign App store</a>
 - <a href=#jailbreaking-ios11-with-uncover>Jailbreaking iOS11 with Uncover</a>
 - <a href=#jailbreaking-ios12-with-uncover>Jailbreaking iOS12 with Uncover</a>
+- <a href=#how-to-remove-jailbreak-on-ios>How to remove jailbreak on iOS</a>
 - <a href=#testing-production-builds-on-ios>Testing production builds on iOS</a>
 
 
@@ -69,7 +69,7 @@ For instance, if you had time to test a Croatian mBanking Android app on a mobil
 - A smaller mid-range device which is two or more years old
 - An old device running the minimum supported OS version
 
-The device usage percentages of our apps can be on G theoogle Dev Console or on iTunes Connect. Contact your team lead to get that info.
+The device usage percentages of our apps can be retrieved from the Google Dev Console or iTunes Connect. Contact your team lead to get that info.
 
 The usage of particular devices in general can be found on web sites such as [StatCounter](http://gs.statcounter.com/vendor-market-share/mobile).
 
@@ -353,6 +353,27 @@ You can download the latest version of Chimera jailbreak from [here] (https://ch
 	 If the app ends up freezing, wait for a few minutes. In case that does not work, reboot your iPhone/iPad and then repeat the above steps.
 	
 Check out the whole guide [here] (http://www.iphonehacks.com/jailbreak-ios-12).
+
+### How to remove jailbreak on iOS
+
+Sometimes you have done your testing on a jailbroken device and you want to return your device to how it was. In this case, factory reset won't help.
+
+You can easily remove jailbreak from your iOS device if jailbreaking was done with Cydia and Uncover.
+
+**Steps:**
+
+1. Open Uncover app on your jailbroken iPhone.
+2. Tap on Settings gear icon in the top-right corner.
+3. Search for Restore RootFS toggle button and enable it.
+4. Return back from settings and tap on Restore RootFS button on Home screen.
+6. If you encounter any message dialogs, just follow the steps from the dialog while the removal of jailbreak is in progress. Also, don't allow your device to lock its screen.
+7. Wait for the removal of jailbreak to complete.
+8. Device will restart and Cydia will no longer be installed on the device - jailbreak is now completed.
+9. You can now also uninstall the Uncover app.
+
+Note: Maybe removing jailbreak won't work from first try and you will get some error dialogs. If this happens, follow the steps from the error dialog (e.g. Reboot device and try again).
+
+For reference, you can take a look at [this Youtube] (https://youtu.be/bLZ6bTDBGgI) video.
 
 ### Testing production builds on iOS
 

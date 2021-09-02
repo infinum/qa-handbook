@@ -15,7 +15,7 @@ Your role is twofold:
 
 ![st-qc-qa.jpg](/img/st-qc-qa.jpg)
 
-Your ultimate goal is to help the company develop and deploy the best possible products within the usual constraints of time, budget, complexity, and client stubborness.
+Your ultimate goal is to help the company develop and deploy the best possible products within the usual constraints of time, budget, complexity, and client stubbornness.
 
 ## What are the challenges?
 

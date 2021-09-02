@@ -35,7 +35,7 @@ And each project has the following constraints:
 
 While deadlines and money are things that definitely affect the scope of a project, your job is to **always focus on quality above all else**.
 
-This is why companies have quality assurance, because when there is a _separation of concerns_, there's also space for someone who puts overall quality first. Developers primarily care about code quality, designers primarily care about UI and UX, and you can primarily care about how these two gel together to form a perfect little application that will please the client, please the audience, and be the envy of many.
+This is why companies have quality assurance, because when there is a _separation of concerns_, there's also space for someone who puts overall quality first. Developers primarily care about code quality, designers primarily care about UI and UX, and you can primarily care about how these two get together to form a perfect little application that will please the client, please the audience, and be the envy of many.
 
 **While other people's motivation might change, yours never does.** In full recognition that quality is a team effort and everyone should drive towards it, you must always stay aware that it is your first and foremost responsibility.
 

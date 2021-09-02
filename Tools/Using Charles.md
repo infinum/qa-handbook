@@ -1,87 +1,112 @@
 > People always say "code and then test," I prefer “test and then code."
 
-## Using Charles
+[Charles](https://www.charlesproxy.com/) is an HTTP proxy that helps you to inspect HTTP/S traffic. For the purposes of this tutorial, we will focus on Charles as a man-in-the-middle between the app you are testing on a mobile device and the Internet. 
 
-[Charles](https://www.charlesproxy.com/) is an HTTP proxy / HTTP monitor / Reverse Proxy that helps you to view all of the HTTP and HTTPS traffic between the app you are testing and the Internet. 
+## Charles setup
 
-To install Charles on your MAC please [follow this handy guide](https://www.charlesproxy.com/documentation/installation/). You will use Charles with iPhone and Android apps as well, let's set up Charles access on iOS and Android.
+- Install Charles on your laptop and run it.
+- Turn off macOS proxying and Firefox proxying in the Proxy menu because we just want the data stream from the phone/tablet.
 
-## Setup Charles on iOS
+## iOS setup
 
-To be able to use Charles on the iPhone you need to do the following: 
+To be able to use Charles on iOS you need to do the following: 
 
-**On your MAC** 
-
-go to network utility, you will need to copy IP Adress info from your mac to iPhone proxy settings. 
-![](/qa-handbook-private/img/Charles_network_utility_IP.png)
-*please copy your IP Address info 
-
-**On your iPhone** 
-
-1. Open up settings
+1. Open Settings on your iOS device
 1. Tap on Wi-Fi
-1. Select network on which the iPhone is currently connected 
-1. Tap on configure proxy 
-1. Tap on server and write down IP Address from the MAC network utility
-2. Tap on port and write down 8888
+1. Select the network to which your iOS device and your laptop are currently connected
+1. Tap on "Configure proxy"
+1. Tap on "Server" and enter your laptop's local IP address (find it in macOS' Network Preferences)
+1. Tap on port and enter "8888"
 
-Once done return to Charles on your MAC, click on Record from the toolbar menu and try to open some page on Safari (on the iPhone) to check if Charles is recording your activity. 
+## Android setup
 
-## Setup Charles on Android
-
-First part is the same as on the iOS tutorial regarding on how to find out your IP address, once you have obtained it switch to your Android phone and do the following: 
-
-It differs from device to device but it can go something like this: 
+It differs from device to device, but it usually goes something like this: 
 
 1. Go to “Settings”
-1. Go to “Wifi”
-1. Long tap to current wifi network
-1. Click “modify network” option
-1. Click “show advanced options”
-1. Under “Proxy” change to option to “Manual”
-1. Under “Proxy hostname” copy IP address from network utility on your MAC  and under “Proxy port” write down 888
-2. Install SSL certificates on your mobile device
+1. Go to “Wi-Fi”
+1. Long tap on the Wi-Fi network to which the device is currently connected
+1. Tap on “Modify network”
+1. Tap on “Show advanced options”
+1. Select "Manual" in the “Proxy” menu
+1. Under “Proxy hostname” enter your laptop's local IP address (find it in macOS' Network Preferences) and under "Proxy port" enter 8888
 
-To install Charles root certificate on Android device open https://chls.pro/ssl in your mobile browser and download the cert.
+---
 
-## Example of debugging an API call 
+After several seconds, you should get a prompt in Charles asking you to confirm traffic coming from your device. 
 
-Charles is very helpful for debuging api calls. Let's show one use case: 
+If that does not happen, try restarting Charles. Now you will see all the traffic that your device is sending out and receiving, but it will be encrypted if done via a secure protocol (HTTPS).
 
-There is a restriction request which says that users under age of 18 cannot use the app. You have implemented the logic for restricting young user from entering the app and you want to test it out. But there is only one test user available and it has value of age parameter set to 45. 
+## SSL proxying setup
 
-This is the case where Charles becomes very handy. You can set a breakpoint to intercept this call. After Charles does the interception, you can manually change the value of model's parameter.
+To see HTTPS traffic in plaintext, you will have to set up SSL proxying:
 
-## Setup SSL proxying
+- After connecting to your laptop/Charles, use a browser on the mobile device to navigate to https://chls.pro/ssl and download the Charles certificate.
+- Install the certificate. 
+- On iOS you will also have to open Settings and navigate to General > About > Certificate Trust Settings, find the Charles Proxy certificate and enable it.
 
-1. Build the App in Debug flavor and install it on your device. In Charles go to Proxy > Proxy Settings > Mac OS X and disable it if activated.
+Now you should be able to "Enable SSL proxying" on an endpoint you are interested in and see unencrypted traffic in both directions.
 
-2. Connect the device to the same network as your laptop is on (not a network which blocks proxies).
-
-3. Modify the the WiFi connection on your device to use a proxy. It differs from device to device but it can go something like this: Long press on your wifi connection > Change/Adjust wifi > Show advanced settings > Proxy > Manually
-There you need to set yor proxy host IP address (which is your laptop IP address, on Charles - Help > Local IP address) and you need to set the port number (for example 8888)
-
-4. In Charles go to Proxy > SSL Proxying Settings > Add your host `most-awesome-api-ever.com` and port *.*
-
-![Set your host](/img/charles-set-up-host.png)
-
-5. On the phone use Chrome to navigate to [this page](https://chls.pro/ssl) and install the certificate.
-
-6. Traffic should now show in Charles. Put a filter to your project to get rid of all the other traffic from your phone. If Charles shows "Unknown" label for all the calls from target api you can right click on it and select "Enable SSL proxying"
+Note: the above will not work if there is a pinned certificate in the app.
 
 ![Adjust traffic](/img/charles-focus-and-enable-ssl.png)
 
 ## How to use breakpoints
 
-Breakpoints are very useful feature in Charles. You can use them doing following steps:
+Breakpoints enable you to stop requests/responses "mid-air" (in Charles) and change them before forwarding them back to the API or to the mobile app.
+By doing so, you effectively take full control of all the networking. :)
 
-Right click on a wanted call and then select "Breakpoints".
+To set up a breakpoint, right-click on an endpoint and select "Breakpoints":
 
 ![Select breakpoints](/img/charles-breakpoints-select.png)
 
-After that execute the call and wait for Charles to intercept it. It will also intercept request (You can adjust this in settings). Just click on execute and continue to response. When response is shown, select JSON Text and simply change wanted value. When finished, click execute. And it is simple as that!
+After that, execute some requests in the mobile app towards that endpoint and wait for Charles to intercept them. 
+
+Now you will be able to change the request before executing it if you wish to do so. You will also be able to change the response before forwarding it to the phone.
 
 ![Debug breakpoints](/img/charles-breakpoints-debug.png)
+
+If you want to rewrite requests and responses automatically, you can use [Charles' Rewrite tool](https://www.charlesproxy.com/documentation/tools/rewrite/).
+
+## Exporting traffic to a HAR file
+
+You can multi-select several requests and export them as HAR files, just make sure to select the HTTP Archive (.har) format
+
+Now you will have a file that is basically a snapshot of the all the requests you’ve made and all the responses received.
+
+Why would you that? One possible use case is to convert that HAR file to a k6 script and get a load test for free. :) See [Performance - API](https://infinum.com/handbook/books/qa/tools/performance-api) for more details.
+
+## Repeating requests
+
+Let's say you have to create 100 articles in the mobile app you are testing to satisfy the preconditions for a certain test case. Let's also assume you don't have access to API docs or a Postman collection that could come in handy.
+
+These are some of your options:
+
+- You could create them manually in the mobile app, but that's boring and surely not the optimal way to do it.
+- You could ask a developer to add them to the database directly, but now you're just delegating work.
+- Finally, you could create one article and use that request to create 99 more of them.
+
+Charles can help you achieve the 3rd option. Just isolate the request you want to repeat, right-click on it, and select "Repeat Advanced".
+
+Once you enter the amount of iterations, click on "Ok" and watch Charles do his magic.
+
+![repeat.png](/img/repeat.png)
+
+If you want even more flexibility, you can right-click on the request, select "Copy cURL request" and get a nice cURL command that's good to go:
+
+```
+curl \
+'https://api.foo/api/v1/resource' \
+-H 'accept: application/vnd.api+json' \
+-H 'authorization: mytoken' \
+-H 'content-type: application/vnd.api+json' \
+-H 'accept-language: en-GB' \
+--data-raw '{"data": "mydata"}' \
+--compressed
+```
+
+Now just add `repeat 99` in front of your cURL command, execute it in your terminal of choice, and you're off to the races. :)
+
+The nice thing with cURL commands is that you can easily share them with the rest of the team.
 
 ---
 
