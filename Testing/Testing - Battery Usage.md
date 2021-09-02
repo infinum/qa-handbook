@@ -1,4 +1,4 @@
-#Android - Profiler
+# Android - Profiler
 
 This tool helps you find where your app uses more energy than necessary.
 
@@ -11,24 +11,24 @@ Higher/longer the bar is - more energy demanding that part is.
 
 You can place mouse over any part of timeline for more info.
 
-![1_battery.png](/img/1_battery.png)
+ ![1_battery.png](/img/1_battery.png)
 
 
-##Prerequisites:
-1. Debug build of app you plan to monitor (ask your developer kindly to make one for you). In case your device is rooted, you can monitor any build.
-2. Developer options enabled
+## Prerequisites:
+###Developer options
+1.  Go to Software info (Location varies depending on phone brand), 
+2.  Tap multiple 	times on "Build Number" (or "MIUI version") till you see toast 	message: "You are "X" steps away from being a developer."  
+3. Enable "Developer options"  
+Xiaomi/Realme - Settings, Additional settings  
+Huawei/Samsung - Settings  
+LG - System
 
-	Enabling Developer options:  
-	Go to Software info (Location varies depending on phone brand), tap 	multiple times on "Build Number" (or "MIUI version") till you see toast 	message: "You are "X" steps away from being a developer."  
-	Developer options location:  
-	Xiaomi/Realme - Settings, Additional settings  
-	Huawei/Samsung - Settings  
-	LG - System
+###USB Debugging + Debug build
+4. ADB debugging (found under "Developer options") set to "ON".
+5. "Allow USB debugging" prompt set to "OK" + "Always allow from this computer" checked (This prompt shows up when connected to computer for the first time).
+6. Debug build of app you plan to monitor (ask your developer kindly to make one for you). In case your device is rooted, you can monitor any build.	
 
-3. ADB debugging (found under "Developer options") set to "ON".
-	"Allow USB debugging" prompt set to "OK" + "Always allow from this 	computer" checked.
-
-##Steps:
+## Steps:
 
 1. [Download](https://developer.android.com/studio), install and run Android Studio.
 
@@ -42,19 +42,19 @@ You can place mouse over any part of timeline for more info.
 
 6. Click on "Profiler" in bottom bar of Android Studio.
 
-![2_battery.png](/img/2_battery.png)
+ ![2_battery.png](/img/2_battery.png)
 
 
 7. Click on "+".
 
-![3_battery.png](/img/3_battery.png)
+ ![3_battery.png](/img/3_battery.png)
 
 8. Your test device should be present here.
 9. Select it.
 
-![4_battery.png](/img/4_battery.png)
+ ![4_battery.png](/img/4_battery.png)
 
-![5_battery.png](/img/5_battery.png)
+ ![5_battery.png](/img/5_battery.png)
 
 10. Select app you want to monitor.
 In case your app isn't present, try to run it on your device first 
@@ -69,7 +69,7 @@ For more info about “wake locks’, “alarms” and “jobs” check [this](h
 
  
 
-##"It doesn't work" 
+## "It doesn't work" 
 
 1. Check if you have ADB installed on your computer, if not sure or answer is "What?" check [this](https://infinum.com/handbook/books/qa/tools/using-adb).
  
@@ -91,7 +91,7 @@ For more info about “wake locks’, “alarms” and “jobs” check [this](h
 
 6. In case you don't see app you want to monitor in Android Studio - try to run it on device first, that should trigger refresh in Android Studio.
 
-##“I don’t want Android studio option”
+## “I don’t want Android studio option”
 
 There is [option](https://developer.android.com/studio/profile/android-profiler#standalone-profilers) to run Android Profiler without running full Android Studio.
 
