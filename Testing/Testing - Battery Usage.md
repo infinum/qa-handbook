@@ -31,30 +31,23 @@ LG - System
 ## Steps:
 
 1. [Download](https://developer.android.com/studio), install and run Android Studio.
-
 2. Click on "New Project".
-
 3. Select "No Activity" and click Next.
-
 4. Set the "Name" and "Android version that isn't above the one you are running on your test device (otherwise Android Studio will notify you with warning).
-
 5. Your device should be visible in top bar, next to green “Play” button (If it isn’t, check "It doesn't work” section).
-
 6. Click on "Profiler" in bottom bar of Android Studio.
 
- ![2_battery.png](/img/2_battery.png)
-
+ <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![2_battery.png](/img/2_battery.png) 
 
 7. Click on "+".
 
- ![3_battery.png](/img/3_battery.png)
+ <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![3_battery.png](/img/3_battery.png) 
 
 8. Your test device should be present here.
 9. Select it.
+ <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![4_battery.png](/img/4_battery.png)
 
- ![4_battery.png](/img/4_battery.png)
-
- ![5_battery.png](/img/5_battery.png)
+ <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![5_battery.png](/img/5_battery.png) 
 
 10. Select app you want to monitor.
 In case your app isn't present, try to run it on your device first 
