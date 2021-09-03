@@ -55,13 +55,12 @@ For more info about “wake locks’, “alarms” and “jobs” check [this](h
 
 1. Check if you have ADB installed on your computer, if not sure or answer is "What?" check [this](https://infinum.com/handbook/books/qa/tools/using-adb).
 2. Check if you set "USB debugging" to “ON" (Prerequisites section).  
-3. Try "Revoke USB debugging authorisations" option, disconnect phone, connect again, accept prompt that shows up.  
+3. Try "Revoke USB debugging authorisations" option, disconnect phone, connect again, accept prompt that shows up.
 4. Try other USB cables.  
-	It is not so uncommon to connect phone to computer by micro USB cable, only 	to find out that cable you used can only charge the device ([thicker is 	better](https://www.dignited.com/50330/usb-data-cable-vs-usb-charging-	cable/)).  
-	USB-C cables are a bit better in that aspect but even they aren't all same.
-	  
-	![6_battery.png](/img/6_battery.png)  
-5. Make sure that app you plan to monitor is debug build.  
+It is not so uncommon to connect phone to computer by micro USB cable, only to find out that cable you used can only charge the device ([thicker is better](https://www.dignited.com/50330/usb-data-cable-vs-usb-charging-cable/)).  
+USB-C cables are a bit better in that aspect but even they aren't all same.  
+ ![6_battery.png](/img/6_battery.png)  
+5. Make sure that app you plan to monitor is debug build.
 6. In case you don't see app you want to monitor in Android Studio - try to run it on device first, that should trigger refresh in Android Studio. 
 
 ## “I don’t want Android studio option”
