@@ -35,17 +35,16 @@ LG - System
 7. Click on "+".  
  <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![3_battery.png](/img/3_battery.png)</span>  
 8. Your test device should be present here.
-9. Select it.
-
- <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![4_battery.png](/img/4_battery.png)</span>
-
- <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![5_battery.png](/img/5_battery.png)</span> 
-
-10. Select app you want to monitor.
+9. Select it, select app you want to monitor.
 In case your app isn't present, try to run it on your device first 
-to trigger a refresh in Android Studio.  
-11. Session started, only thing left is to click on "Energy" timeline to zoom on battery consumption. 
+to trigger a refresh in Android Studio.
+10. Session started, only thing left is to click on "Energy" timeline to zoom on battery consumption. 
 Monitoring lasts until you press “Stop” button. After stopping, you can inspect recorded session.
+
+ ![4_battery.png](/img/4_battery.png)</span>
+
+ ![5_battery.png](/img/5_battery.png)</span> 
+  
 
 The Energy Profiler provides user with insight about where your app uses each of these events and processes so that you can check if there is any excessive impacts on battery.  
 For more info about “wake locks’, “alarms” and “jobs” check [this](https://infinum.com/handbook/books/qa/tools/using-adb).
