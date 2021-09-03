@@ -62,7 +62,7 @@ For more info about “wake locks’, “alarms” and “jobs” check [this](h
 	USB-C cables are a bit better in that aspect but even they aren't all same.  
 	![6_battery.png](/img/6_battery.png)  
 5. Make sure that app you plan to monitor is debug build.  
-6. In case you don't see app you want to monitor in Android Studio - try to run it on device first, that should trigger refresh in Android Studio.
+6. In case you don't see app you want to monitor in Android Studio - try to run it on device first, that should trigger refresh in Android Studio. 
 
 ## “I don’t want Android studio option”
 
