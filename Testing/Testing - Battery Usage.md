@@ -41,9 +41,9 @@ to trigger a refresh in Android Studio.
 10. Session started, only thing left is to click on "Energy" timeline to zoom on battery consumption. 
 Monitoring lasts until you press “Stop” button. After stopping, you can inspect recorded session.
 
- ![4_battery.png](/img/4_battery.png)</span>
+ ![4_battery.png](/img/4_battery.png)
 
- ![5_battery.png](/img/5_battery.png)</span> 
+ ![5_battery.png](/img/5_battery.png)
   
 
 The Energy Profiler provides user with insight about where your app uses each of these events and processes so that you can check if there is any excessive impacts on battery.  
@@ -59,7 +59,7 @@ For more info about “wake locks’, “alarms” and “jobs” check [this](h
 4. Try other USB cables.  
 It is not so uncommon to connect phone to computer by micro USB cable, only to find out that cable you used can only charge the device ([thicker is better](https://www.dignited.com/50330/usb-data-cable-vs-usb-charging-cable/)).  
 USB-C cables are a bit better in that aspect but even they aren't all same.  
- ![6_battery.png](/img/6_battery.png)  
+ <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![6_battery.png](/img/6_battery.png)  
 5. Make sure that app you plan to monitor is debug build.
 6. In case you don't see app you want to monitor in Android Studio - try to run it on device first, that should trigger refresh in Android Studio. 
 
