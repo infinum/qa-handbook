@@ -9,7 +9,7 @@ You can place a mouse over any part of the timeline for more info.
  ![1_battery.png](/img/1_battery.png)
 
 
-### Prerequisites:
+## Prerequisites:
 ### Developer options
 1.  Go to Software info (Location varies depending on phone brand), 
 2.  Tap multiple 	times on "Build Number" (or "MIUI version") till you see a toast 	message: "You are "X" steps away from being a developer."  
