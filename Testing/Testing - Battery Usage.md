@@ -20,8 +20,8 @@ You can place a mouse over any part of the timeline for more info.
 ### Enabled USB Debugging + Debug build
 
 1. USB debugging (found under "Developer options") set to "ON".
-2. "Allow USB debugging" prompt set to "OK" and "Always allow from this computer" checked (This prompt shows up when the phone is connected to a computer for the first time).
-3. Debug build of the app you plan to monitor (kindly ask your developer to make one for you). In case your device is rooted, you can monitor any build.	
+2. "Allow USB debugging" prompt set to "OK" and "Always allow from this computer" checked (this prompt shows up when the phone is connected to a computer for the first time).
+3. Installed _debug_ build of the app you plan to monitor (kindly ask your developer to make one for you). In case your device is rooted, you can monitor any build.	
 
 ## Steps:
 
@@ -29,14 +29,14 @@ You can place a mouse over any part of the timeline for more info.
 2. Click on "New Project".
 3. Select "No Activity" and click Next.
 4. Set the "Name" and "Android version" that isn't above the one you are running on your test device (otherwise Android Studio will notify you with a warning).
-5. Your device should be visible in the top bar, next to the green “Play” button (if it isn’t, check the troubleshooting section of this article).
+5. Your device should be visible in the top bar, next to the green "Play" button (if it isn’t, check the troubleshooting section of this article).
 6. Click on "Profiler" in the bottom bar of Android Studio.  
  <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![2_battery.png](/img/2_battery.png)</span>  
 7. Click on "+". Your test device should be present here.  
  <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![3_battery.png](/img/3_battery.png)</span>   
 8. Select the device and the app you want to monitor.
 In case your app isn't present, try to run it on your device first to trigger a refresh in Android Studio.
-9. Once the session starts, the only thing left is to click on the "Energy" timeline to zoom on battery consumption. The monitoring lasts until you press the “Stop” button. After stopping, you can inspect the recorded session.
+9. Once the session starts, the only thing left is to click on the "Energy" timeline to zoom on battery consumption. The monitoring lasts until you press the "Stop" button. After stopping, you can inspect the recorded session.
 
  ![4_battery.png](/img/4_battery.png)
 
@@ -50,7 +50,7 @@ For more info about "wake locks", "alarms" and "jobs" check [this](https://infin
 
 ## Troubleshooting - what to do if it doesn't work 
 
-1. Check if you have ADB installed on your computer (if your are not sure or the question is "What is ADB?" check [this](https://infinum.com/handbook/books/qa/tools/using-adb).
+1. Check if you have ADB installed on your computer (if your are not sure or the question is "What is ADB?" check [this])(https://infinum.com/handbook/books/qa/tools/using-adb).
 2. Check if you set "USB debugging" to "ON".  
 3. Try the "Revoke USB debugging authorizations" option, disconnect the phone, connect it again and allow the connection via the prompt that shows up.
 4. Try other USB cables.  
