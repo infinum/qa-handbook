@@ -44,7 +44,7 @@ In case your app isn't present, try to run it on your device first to trigger a 
   
 
 The Energy Profiler provides the user with insight into the usage of these events and processes to check if there are any excessive impacts on the battery.  
-For more info about "wake locks", "alarms" and "jobs" check [this](https://infinum.com/handbook/books/qa/tools/using-adb).
+For more info about "wake locks", "alarms" and "jobs" check [this](https://developer.android.com/studio/profile/energy-profiler#inspect_system_events_wake_locks_jobs_and_alarms).
 
  
 
