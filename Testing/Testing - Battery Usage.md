@@ -50,7 +50,7 @@ For more info about "wake locks", "alarms" and "jobs" check [this](https://infin
 
 ## Troubleshooting - what to do if it doesn't work 
 
-1. Check if you have ADB installed on your computer (if your are not sure or the question is "What is ADB?" check [this])(https://infinum.com/handbook/books/qa/tools/using-adb).
+1. Check if you have ADB installed on your computer (if your are not sure or ask yourself "What is ADB?" check [this])(https://infinum.com/handbook/books/qa/tools/using-adb).
 2. Check if you set "USB debugging" to "ON".  
 3. Try the "Revoke USB debugging authorizations" option, disconnect the phone, connect it again and allow the connection via the prompt that shows up.
 4. Try other USB cables.  
