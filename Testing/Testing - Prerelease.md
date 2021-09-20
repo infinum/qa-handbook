@@ -84,7 +84,7 @@ Just because you finished with testing does not mean that your job is done. In t
 - Check Crashlytics daily for a week or two for crash issues. 
 - Take a look at reviews on its respective stores.
 
-#### Huston, we have a... crash
+#### Houston, we have a... crash
  
 Stop the phased/staged release in case of crash spikes, in that case, a team needs to work on a hotfix build and the whole prerelease process needs to be repeated.
 
