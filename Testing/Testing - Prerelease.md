@@ -107,7 +107,7 @@ Since most of the things that are mentioned in the Mobile Apps part are applicab
 
 - Make sure that you find out which browsers are supported for your app.
 - Choose the two most used browsers. The first should be your main testing browser, and on a second one you should do a limited regression test (with paying attention to browser differences). 
-If there is time, you can do a limited regression test on other supported browsers, too. 
+If there is time, you can do a limited regression test on other supported browsers too. 
 
 ### Not applicable for Web Apps:
 
