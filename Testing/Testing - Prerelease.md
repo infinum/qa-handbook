@@ -46,7 +46,7 @@ Sneak pic how a typical test execution looks like in TestRail:
 
 At the top, there is an overview with this fancy pie chart that shows your progress (how many test cases passed, failed, are blocked...) and underneath are test cases. Pay attention to the naming of the regression test and used devices :) 
 
-- Make sure to check the Prince of Versions scenarios for mandatory and optional updates.
+- Make sure to check the [Prince of Versions](https://github.com/infinum/Android-Prince-of-Versions) scenarios for mandatory and optional updates.
 - Report bugs as soon as possible after uncovering them. Make sure that you discuss them with your team so they can be prioritized, fixed, and a new build can be created for you to continue testing ASAP.
 - Retest the affected area of the app in each release candidate build.
 
@@ -111,7 +111,7 @@ If there is time, you can do a limited regression test on other supported browse
 
 ### Not applicable for Web Apps:
 
-- No need for testing Prince of Versions
+- No need for testing [Prince of Versions](https://github.com/infinum/Android-Prince-of-Versions)
 - No need for testing Google Play Beta/TestFlight 
 
 ---
