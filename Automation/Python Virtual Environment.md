@@ -5,7 +5,7 @@
 
 Python virtual environment is a workspace inside your Python project that helps you isolate the dependencies and settings for that particular project from other Python projects that you might have on your machine.
 
-For example, you could use Python 3.8 for one project, Python 3.9 for another, and again Python 3.9 with additional libraries for a third project. 
+For example, you could use Python 3.8 for one project, Python 3.9 for another, and again Python 3.9 but with additional libraries for a third project. 
 Each of those projects can also have different packages installed, different versions of those packages, and so on.
 
 If you ever decide to change the python version or dependencies in one of your projects, you don’t have to worry about those changes affecting other projects.
@@ -13,7 +13,7 @@ If you ever decide to change the python version or dependencies in one of your p
 
 ### How to install
 
-If you are using Python 3, then you should already have the venv module from the standard library installed. 
+If you are using Python 3, then you should already have the **venv** module from the standard library installed. 
 
 
 ### How to create and activate Virtual Environment
@@ -22,12 +22,12 @@ From Python 3.6 and above, the recommended way to create a virtual environment i
 
 `python3 -m venv`
 
-To the command above, simply add the name you want your virtual environment to have. Let’s say env. 
-Running the following command creates a virtual environment called env:
+To the command above, simply add the name you want your virtual environment to have. Let’s say *env*. 
+Running the following command creates a virtual environment called *env*:
 
 `python3 -m venv env`
 
-When created, a virtual environment shows up as a directory in your project. The directory contains Python executable files and other installed libraries.
+When created, the virtual environment shows up as a directory in your project. The directory contains Python executable files and other installed libraries.
 
 ![virtual_environment_structure.png](/img/virtual_environment_structure.png)
 
@@ -38,7 +38,7 @@ To use the virtual environment, you have to activate it. The virtual environment
 
 `source env/bin/activate`
 
-When you activate it, you’ll notice the (env) prefix in the terminal, indicating that the env is active. Now you can add dependencies that will be used for this project only.
+Once activated, you’ll notice the (env) prefix in the terminal, indicating that the env is active. Now you can add dependencies that will be used for this project only.
 
 ![virtual_environment_active.png](/img/virtual_environment_active.png)
 
@@ -57,7 +57,9 @@ Now the (env) prefix is no longer displayed in the terminal. Any python command 
 The interpreter translates your code into the language the computer hardware understands. To be able to run your scripts, you have to configure at least one interpreter. 
 You can either use a system interpreter that comes with Python installation or you can configure a virtual environment that takes a system interpreter but can be further modified for your project.
 
-NOTE: When configuring a Python interpreter, you have to specify the path to the Python executable in your system. Before configuring an interpreter, make sure you have the desired Python version installed.
+NOTE:
+Make sure you have the desired Python version installed.
+When configuring a Python interpreter, you have to specify the path to the Python executable in your system. 
 
 
 ----
@@ -65,8 +67,7 @@ NOTE: When configuring a Python interpreter, you have to specify the path to the
 
 ## Create a new project
 
-When creating a new project from scratch, the virtual environment named venv
-(specified in step 4 by default) becomes active once the project is created.
+When creating a new project from scratch, the virtual environment named *venv* (specified in step 4 by default) becomes active once the project is created.
 
 1. Open *PyCharm*
 
