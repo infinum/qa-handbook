@@ -8,7 +8,7 @@ Python virtual environment is a workspace inside your Python project that helps 
 For example, you could use Python 3.8 for one project, Python 3.9 for another, and again Python 3.9 but with additional libraries for a third project. 
 Each of those projects can also have different packages installed, different versions of those packages, and so on.
 
-If you ever decide to change the python version or dependencies in one of your projects, you don’t have to worry about those changes affecting other projects.
+If you ever decide to change the Python version or dependencies in one of your projects, you don’t have to worry about those changes affecting other projects.
 
 
 ### How to install
@@ -49,7 +49,7 @@ To deactivate the virtual environment and use the system / global settings, run 
 
 `deactivate`
 
-Now the (env) prefix is no longer displayed in the terminal. Any python command you’d now run would refer to the global Python.
+Now the (env) prefix is no longer displayed in the terminal. Any Python command you’d now run would refer to the global Python.
 
 
 ## What is Python Interpreter?
@@ -80,7 +80,7 @@ When creating a new project from scratch, the virtual environment named *venv* (
 
 4. If not selected by default, select the *New environment using* button. Next to it, the option *Virtualenv* should be selected
 
-5. The Location field in the Python Interpreter section should look like:
+5. The Location field in the Python Interpreter section should look like this:
  - Mac: /Users/username/Documents/Code/myPythonProject/venv
  - Windows: D:\Code\myPythonProject\venv
 
@@ -133,7 +133,7 @@ For Windows, let’s imagine we have cloned a project named *myPythonProject* to
 ### Project dependencies: requirements.txt file
 
 As mentioned in the example above, you can add packages (dependencies) while on the Python Interpreter window. However, a better approach would be to use the **requirements.txt** file. 
-In the requirements.txt file you can specify which python packages are required for the project to run and install all of them using a single command. 
+In the requirements.txt file, you can specify Python packages required for the project to run and install them all using a single command. 
 
 You can also specify a specific version of the package, indicated by an equality sign.
 The double equal (==) indicates the specific version to be installed, while the greater than (>=) specifies the minimum version. 
@@ -152,7 +152,7 @@ Make sure you have the virtual environment active and the requirements.txt file 
 
 `pip install -r requirements.txt`
 
-Now you should have all the dependencies specified in the requirements.txt file installed for the current project.
+You should now have all the dependencies specified in the requirements.txt file installed for the current project.
 
 
 ---
