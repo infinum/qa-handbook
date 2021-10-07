@@ -45,12 +45,15 @@ When you activate it, you’ll notice the (env) prefix in the terminal, indicati
 
 ### How to deactivate Virtual Environment?
 
-To deactivate the virtual environment and use the system / global settings, run the following command: deactivate
+To deactivate the virtual environment and use the system / global settings, run the following command: 
+
+`deactivate`
 
 Now the (env) prefix is no longer displayed in the terminal. Any python command you’d now run would refer to the global Python.
 
 
 ## What is Python Interpreter?
+
 The interpreter translates your code into the language the computer hardware understands. To be able to run your scripts, you have to configure at least one interpreter. 
 You can either use a system interpreter that comes with Python installation or you can configure a virtual environment that takes a system interpreter but can be further modified for your project.
 
@@ -61,6 +64,7 @@ NOTE: When configuring a Python interpreter, you have to specify the path to the
 
 
 ## Create a new project
+
 When creating a new project from scratch, the virtual environment named venv
 (specified in step 4 by default) becomes active once the project is created.
 
@@ -90,6 +94,7 @@ Figure 1. New project window (Mac)
 
 
 ## Create & activate virtual environment for an existing project
+
 When starting your work on an existing project, you have to activate the virtual environment through the terminal. You will also have to select the desired interpreter in the settings.
 For Windows, let’s imagine we have cloned a project named *myPythonProject* to *D:\Code*
 
@@ -108,6 +113,7 @@ For Windows, let’s imagine we have cloned a project named *myPythonProject* to
 
 
 ### Select / Edit an interpreter
+
 1. Open the Settings / Preferences
  - Mac: PyCharm -> Preferences
  - Windows: File -> Settings
@@ -118,6 +124,34 @@ For Windows, let’s imagine we have cloned a project named *myPythonProject* to
  - Additionally, while on this window, you can add / remove packages used in the project
 
 5. Apply the changes
+
+
+---
+
+
+### Project dependencies: requirements.txt file
+
+As mentioned in the example above, you can add packages (dependencies) while on the Python Interpreter window. However, a better approach would be to use the requirements.txt file. 
+In the requirements.txt file you can specify which python packages are required for the project to run and install all of them using a single command. 
+
+You can also specify a specific version of the package, indicated by an equality sign.
+The double equal (==) indicates the specific version to be installed, while the greater than (>=) specifies the minimum version. 
+Or you can omit the sign completely which will install the latest stable version.
+
+![virtual_environment_requirements.png](/img/virtual_environment_requirements.png)
+
+
+#### How to install the required dependencies
+
+Make sure you have the virtual environment active and the requirements.txt file ready.
+
+1. Open the terminal and position to the folder where the *requirements.txt* file is
+
+2. Run the following command:
+
+`pip install -r requirements.txt`
+
+Now you should have all the dependencies specified in the requirements.txt file installed.
 
 
 ---
