@@ -132,7 +132,7 @@ For Windows, let’s imagine we have cloned a project named *myPythonProject* to
 
 ### Project dependencies: requirements.txt file
 
-As mentioned in the example above, you can add packages (dependencies) while on the Python Interpreter window. However, a better approach would be to use the requirements.txt file. 
+As mentioned in the example above, you can add packages (dependencies) while on the Python Interpreter window. However, a better approach would be to use the **requirements.txt** file. 
 In the requirements.txt file you can specify which python packages are required for the project to run and install all of them using a single command. 
 
 You can also specify a specific version of the package, indicated by an equality sign.
@@ -152,7 +152,7 @@ Make sure you have the virtual environment active and the requirements.txt file 
 
 `pip install -r requirements.txt`
 
-Now you should have all the dependencies specified in the requirements.txt file installed.
+Now you should have all the dependencies specified in the requirements.txt file installed for the current project.
 
 
 ---
