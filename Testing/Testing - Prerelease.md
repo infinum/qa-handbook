@@ -40,7 +40,7 @@ If you have some extra time, you can do at least a smoke test on some other supp
 
 - Run a regression test of the release candidate on a non-production environment by following the test cases from the test execution.
 
-Sneak pic how a typical test execution looks like in TestRail:
+Sneak peek how a typical test execution looks like in TestRail:
 
 ![Testing_Prereleases_TestRail.png](/img/Testing_Prereleases_TestRail.png)
 
