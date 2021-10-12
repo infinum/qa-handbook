@@ -1,4 +1,4 @@
-> *Quality is never an accident; it is always the result of an intelligent effort.*
+> *Quality is never an accident; it is always the result of an intelligent effort. - John Ruskin*
 
 
 ## What is a Python Virtual Environment and why should you use it
