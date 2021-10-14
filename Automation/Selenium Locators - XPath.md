@@ -23,14 +23,17 @@ An XML document is treated as a tree of nodes in which the nodes are in a hierar
 
 `<element></element>`
  
+### Types of nodes
+
 There are seven types of nodes:
- - Root
- - Element
- - Text
- - Attribute
- - Comment
- - Processing instruction
- - Namespace
+
+- Root
+- Element
+- Text
+- Attribute
+- Comment
+- Processing instruction
+- Namespace
  
 XML file example:
 
@@ -82,6 +85,7 @@ The *descendants* of `<library>` are `<book>`, `<title>`, `<author>` and `<year>
 ## Types of XPath
 
 There are two types of XPath:
+
  - Absolute XPath
  - Relative Xpath
 
