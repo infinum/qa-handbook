@@ -1,7 +1,7 @@
 > *“Testing is a skill. While this may come as a surprise to some people it is a simple fact.”*
 
 
-# What is XPath?
+## What is XPath?
 XPath stands for XML Path Language. It provides different types of expressions, or queries, that are used to navigate through XML and HTML documents and select a node or a set of nodes.
 
 XPath is written in a path-like syntax that resembles the path in a traditional file system (hierarchical or tree-like structure):
@@ -56,7 +56,7 @@ In the example above:
 `lang=”en”` is an attribute node
 
 
-## Relationships between the nodes
+### Relationships between the nodes
 As mentioned, the nodes are in a hierarchical relationship to each other. The terms used to describe that relationship are **parent**, **child** and **sibling**. Except the root, every node in the hierarchy has exactly one *parent* node. A node can have any number of *child* nodes. The nodes that have the same parent are called *siblings*.
 
 The terms that could also be used are **ancestor** and **descendant**. The parent of a node or a parent of a parent is called an *ancestor*. Similarly, a child of a node, or a child of a child node is a *descendant*.
@@ -94,9 +94,6 @@ Example: `/html/body/div[2]/div[1]/h4[1]/b/html[1]/body[1]/div[2]/div[1]/div[1]/
  - It is less fragile compared to the absolute path
 
 Example: `//img[@id="profile_image"]`
-
-# XPath Cheatsheet
-[XPath cheatsheet](https://devhints.io/xpath)
 
 
 ---
