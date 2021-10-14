@@ -16,24 +16,25 @@ In case the ID is not present, try Name, XPath, or CSS selector. Anyway, make su
 Based on the available locators, the following methods are available:
 
 Methods that return a **single** element, the first one found:
- - find_element_by_id
- - find_element_by_name
- - find_element_by_xpath
- - find_element_by_link_text
- - find_element_by_partial_link_text
- - find_element_by_tag_name
- - find_element_by_class_name
- - find_element_by_css_selector
+
+ - `find_element_by_id`
+ - `find_element_by_name`
+ - `find_element_by_xpath`
+ - `find_element_by_link_text`
+ - `find_element_by_partial_link_text`
+ - `find_element_by_tag_name`
+ - `find_element_by_class_name`
+ - `find_element_by_css_selector`
 
 Methods that return all (a **list** of) elements matching the property:
 
- - find_elements_by_name
- - find_elements_by_xpath
- - find_elements_by_link_text
- - find_elements_by_partial_link_text
- - find_elements_by_tag_name
- - find_elements_by_class_name
- - find_elements_by_css_selector
+ - `find_elements_by_name`
+ - `find_elements_by_xpath`
+ - `find_elements_by_link_text`
+ - `find_elements_by_partial_link_text`
+ - `find_elements_by_tag_name`
+ - `find_elements_by_class_name`
+ - `find_elements_by_css_selector`
  
 
 ### NoSuchElementException

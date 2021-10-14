@@ -9,11 +9,11 @@ XPath is written in a path-like syntax that resembles the path in a traditional 
 `xpath_syntax = //tagname[@attribute=’Value‘]`
 
 When you can’t make use of other locators such as ID, Class, and so on, XPath will come in handy to locate the element because it will always be available.
-Sometimes it might be rather long and not very pretty:
 
-`/html/body/div[2]/div[1]/h4[1]/b/html[1]/body[1]/div[2]/div[1]/div[1]/h4[1]`
+Sometimes it might be rather long and not very pretty. However, you should avoid using this type of XPath, called absolute XPath, since it is quite brittle.
 
-However, you should avoid using this type of XPath, called absolute XPath, since it is quite brittle.
+`/html/body/div[2]/div[1]/h4[1]/html[1]/body[1]/div[2]/div[1]/div[1]/h4[1]`
+
 
 
 ## Briefly about nodes
@@ -33,6 +33,7 @@ There are seven types of nodes:
  - Namespace
  
 XML file example:
+
 ```
 <?xml version="1.0" encoding="UTF-8"?>
  
@@ -81,14 +82,17 @@ The *descendants* of `<library>` are `<book>`, `<title>`, `<author>` and `<year>
 ## Types of XPath
 
 There are two types of XPath:
-**Absolute XPath**
+ - Absolute XPath
+ - Relative Xpath
+
+### Absolute XPath
  - Starts with a single slash (/) which means it starts from the root element
  - It directly locates an element
  - It is fragile
 
 Example: `/html/body/div[2]/div[1]/h4[1]/b/html[1]/body[1]/div[2]/div[1]/div[1]/h4[1]`
 
-**Relative XPath**
+### Relative XPath
  - Starts with a double slash (//) which means it starts from anywhere in the document
  - Shorter and easier to read compared to the absolute path
  - It is less fragile compared to the absolute path
