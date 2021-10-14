@@ -19,7 +19,7 @@ However, you should avoid using this type of XPath, called absolute XPath, since
 ## Briefly about nodes
 When reading about XPath and XML you will often come across the term *node*.
 
-An XML document is treated as a tree of nodes in which the nodes are in a hierarchical relationship to each other. Each node is an XML element enclosed within an opening `(<)` and a closing `(>)` tag, such as:
+An XML document is treated as a tree of nodes in which the nodes are in a hierarchical relationship to each other. Each node is an XML element enclosed within an opening `<` and a closing `>` tag, such as:
 
 `<element></element>`
  
@@ -46,9 +46,13 @@ XML file example:
 ```
 
 In the example above:
+
 `<?xml version="1.0" encoding="UTF-8"?>` is a processing instruction used to instruct the application how to read the document
+
 `<library>` is the root (the topmost) element node
+
 `<author>` is an element node
+
 `lang=”en”` is an attribute node
 
 
@@ -58,13 +62,20 @@ As mentioned, the nodes are in a hierarchical relationship to each other. The te
 The terms that could also be used are **ancestor** and **descendant**. The parent of a node or a parent of a parent is called an *ancestor*. Similarly, a child of a node, or a child of a child node is a *descendant*.
 
 Using the XML example above:
+
 `<book>` is the *parent* of `<title>`, `<author>` and `<year>`
+
 `<title>`, `<author>` and `<year>` are *siblings*
+
 `<title>` is the *first child* of `<book>`
+
 `<year>` is the *last child* of `<book>`
 
+
 The *ancestors* of `<author>` are `<book>` and `<library>`
+
 The *descendants* of `<library>` are `<book>`, `<title>`, `<author>` and `<year>`
+
 
 
 ## Types of XPath
