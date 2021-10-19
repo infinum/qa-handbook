@@ -37,16 +37,14 @@ Here are some use cases where your utilizing Newman over plain Postman makes sen
 - Navigate to Postman
 - Export your collection to a .json file
 - Export your environment to a .json file
-- `newman run collection.json --environment environment.json`
+- Run `newman run collection.json --environment environment.json`
 
 
 ### Running a remote collection
 
-This option is more interesting because it allows you to make changes in Postman collections and environments without having to manually refetch the aforementioned JSON files. 
+This option is more interesting because it allows you to make changes in Postman collections and environments without having to manually fetch the aforementioned JSON files. 
 
 Every time your tests run, they will run the latest and the greatest tests you have in your Postman workspace.
-
-
 
 - Navigate to Postman
 - Find the collection ID in collection details
@@ -69,12 +67,17 @@ Let's say you have a Selenium script that fetches the token. You can save that t
 
 - Run `newman run ${COLLECTION_URL} --environment ${ENVIRONMENT_URL} --env-var ${ACCESS_TOKEN_ENV_VAR}` 
 
-
 ### Sending reports to Slack
 
 You can also easily send test reports with Slack by simply modifying the aforementioned command:
 
 - `newman run ${COLLECTION_URL} --environment ${ENVIRONMENT_URL} -r cli,slack --reporter-slack-channel '#your-channel' --reporter-slack-webhook-url '${SLACK_WEBHOOK_URL}' --reporter-slack-title='Test report title'`
+
+## Usage as a JS lib
+
+You can also use Newman as a fully fledged Node.js lib, but we won't go into detail on that particular topic.
+
+Find more info on the [npmjs page](https://www.npmjs.com/package/newman#using-newman-as-a-library).
 
 ## Docs
 
