@@ -63,6 +63,7 @@ This is how quickly and easily you can do it using Puppeteer:
 		// Close the browser
 		
 		await browser.close();
+		
 	})();
 	
 Just save the above to a .js file and run it with `node script.js`.
