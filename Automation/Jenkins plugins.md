@@ -18,7 +18,7 @@ You might need an admin account to perform some actions.
 4. Search for the desired plugin
 
 
-<h2>HTML Publisher</h2>
+**HTML Publisher**
 
 HTML Publisher is used for publishing generated HTML reports to the Jenkins job page. If you are using *HtmlTestRunner* to generate HTML test reports then this plugin will come in quite handy. 
 With HTML Publisher plugin, you can have the HTML report shown in the left-hand side menu of the executed job after a job has finished.
@@ -26,7 +26,7 @@ With HTML Publisher plugin, you can have the HTML report shown in the left-hand 
 ![jenkins_plugins_html_publisher.png](/img/jenkins_plugins_html_publisher.png)
 
 
-<h3> How to configure HTML Publisher </h3>
+**How to configure HTML Publisher**
 
 You can configure HTML Publisher in two ways:
 
@@ -34,7 +34,7 @@ You can configure HTML Publisher in two ways:
 - as part of Jenkins Pipeline
 
 
-<h4> Configure HTML Publisher with Jenkins Pipeline </h4>
+**Configure HTML Publisher with Jenkins Pipeline**
 
 To configure the plugin with Jenkins Pipeline, simply reference the ```publishHTML``` step in your pipeline. 
 Add the following code snippet to the project's *Jenkinsfile*:
