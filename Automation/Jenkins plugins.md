@@ -10,21 +10,23 @@ Some useful ones are:
 
 ## How to install Jenkins plugins
 
+You might need an admin account to perform some actions.
+
 1. Open *Jenkins Dashboard*
 2. Click *Manage Jenkins* in the left-hand side menu
 3. Select *Manage plugins*
 4. Search for the desired plugin
 
 
-## HTML Publisher
+## H\\TML Publisher
 
-HTML Publisher is used for publishing generated HTML reports to the Jenkins job page. If you are using HTMLTestRunner to generate HTML test reports then this plugin will come in quite handy. 
+HTML Publisher is used for publishing generated HTML reports to the Jenkins job page. If you are using *HtmlTestRunner* to generate HTML test reports then this plugin will come in quite handy. 
 With HTML Publisher plugin, you can have the HTML report shown in the left-hand side menu of the executed job after a job has finished.
 
 ![jenkins_plugins_html_publisher.png](/img/jenkins_plugins_html_publisher.png)
 
 
-### How to configure HTML Publisher 
+### How to configure H\\TML Publisher 
 
 You can configure HTML Publisher in two ways:
 
@@ -32,7 +34,7 @@ You can configure HTML Publisher in two ways:
 - as part of Jenkins Pipeline
 
 
-#### Configure HTML Publisher with Jenkins Pipeline
+#### Configure H\\TML Publisher with Jenkins Pipeline
 
 To configure the plugin with Jenkins Pipeline, simply reference the ```publishHTML``` step in your pipeline. 
 Add the following code snippet to the project's *Jenkinsfile*:
@@ -88,10 +90,10 @@ slackSend channel: '#test-automation-report', message: "SUCCESS: Report: ${BUILD
 This is just a tiny snippet. There are quite a few things you can add to the notification. See the example below.
 
 
-## Jenkinsfile example with htmlPublisher and slackSend
+## Jenkinsfile example
 
 The example below shows the entire *Jenkinsfile* (using declarative pipeline approach). 
-Since we want the HTML report and Slack notification to be generated after the build job is done, we have to include them in the post stage.
+Since we want the HTML report and Slack notification to be generated after the build job is done, we have to include them in the ```post``` stage.
 With the Slack notification, you can also specify when do you want to send the notification. In this case, the notification is sent in case of both success and failure.
 
 ```
