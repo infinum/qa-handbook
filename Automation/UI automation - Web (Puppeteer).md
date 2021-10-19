@@ -2,7 +2,7 @@
 
 ## What is Puppeteer?
 
-Getting down to brass tacks, Puppeteer is probably the easiest way to do some UI automation in Chrome or Chromium. It can run in either full or headless mode.
+Getting down to brass tacks, Puppeteer is probably the easiest way to do some UI automation in Chrome or Chromium. It can run in either full or headless mode (without the full browser UI).
 
 ## Use cases
 
@@ -26,11 +26,14 @@ The potential use cases are neatly summed up on their [GitHub page](https://gith
 
 ### Example
 
-Let's say you want to go through a login flow on a particular web page and fetch a token from a cookie at the very end. This is how quickly and easily you can do it using Puppeteer:
+Let's say you want to go through a login flow on a particular web page and fetch a token from a cookie at the very end. 
+
+This is how quickly and easily you can do it using Puppeteer:
 
 	const puppeteer = require('puppeteer');
 	
-	const loginUrl = "https://www.foo.com/login"
+	// Get data from environment variables
+	const loginUrl = process.env.URL;
 	const email = process.env.EMAIL;
 	const password = process.env.PASSWORD;
 	
@@ -55,6 +58,8 @@ Let's say you want to go through a login flow on a particular web page and fetch
 		// Close the browser
 		await browser.close();
 	})();
+	
+Just save the above to a .js file and run it with `node script.js`.
 
 ## Docs
 
