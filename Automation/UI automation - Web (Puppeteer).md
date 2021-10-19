@@ -26,13 +26,14 @@ The potential use cases are neatly summed up on their [GitHub page](https://gith
 
 ### Example
 
-Let's say you want to go through a login flow on a particular web page and fetch a token from a cookie at the very end. 
+Let's say you want to go through a login flow on a particular web page and fetch a token from the URL at the very end.
 
 This is how quickly and easily you can do it using Puppeteer:
 
 	const puppeteer = require('puppeteer');
 	
 	// Get data from environment variables
+	
 	const loginUrl = process.env.URL;
 	const email = process.env.EMAIL;
 	const password = process.env.PASSWORD;
@@ -40,22 +41,27 @@ This is how quickly and easily you can do it using Puppeteer:
 	(async () => {
 	
 		// Start the browser
+		
 		const browser = await puppeteer.launch({ headless: true });
 		const page = await browser.newPage();
 	
 		// Pass the login flow
-		await page.goto(loginUrl, { waitUntil: 'networkidle0', });
+		
+		await page.goto(loginUrl, { waitUntil: 'networkidle0' });
 		await page.type('#email', email);
 		await page.type('#password', password);
 		await page.click('#next');
-		await page.waitForNavigation({ waitUntil: 'networkidle0', });
+		await page.waitForNavigation({ waitUntil: 'networkidle0' });
+		const url = page.url();
 	
-		// Get cookies
-		const cookies = await page.cookies()
+		// TODO: Parse the URL to retrieve the token
 		
-		// Extract the token
+		// const token = ...
+		
+		console.log(token);
 	  
 		// Close the browser
+		
 		await browser.close();
 	})();
 	
