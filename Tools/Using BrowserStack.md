@@ -11,6 +11,8 @@ BrowserStack consists of four primary products:
 3. Automate
 4. App Automate
 
+BrowserStack can be accessed on its [login page](https://www.browserstack.com/users/sign_in) using credentials found in 1Password. Please, do **NOT** change the login credentials and do **NOT** enable SSO without consulting with QA Team Lead(s).
+
 
 ## What is cross-browser testing?
 
