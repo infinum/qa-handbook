@@ -10,12 +10,13 @@ Some useful ones are:
 
 ## How to install Jenkins plugins
 
-You might need an admin account to perform some actions.
+You might need an admin account to perform these actions.
 
-1. Open *Jenkins Dashboard*
-2. Click *Manage Jenkins* in the left-hand side menu
-3. Select *Manage plugins*
-4. Search for the desired plugin
+1. Log into *Jenkins*
+2. Open *Jenkins Dashboard*
+3. Click *Manage Jenkins* in the left-hand side menu
+4. Select *Manage plugins*
+5. Search for the desired plugin
 
 
 **HTML Publisher**
@@ -128,12 +129,12 @@ pipeline {
             ]
        }
        success {
-           slackSend color: '#5dff54', channel: '#test-automation-report', message: "SUCCESS: build #${BUILD_NUMBER}" +
-           "\nBranch: ${BRANCH_NAME}\nReport: ${BUILD_URL}Test_20Automation_20Report/"
+           slackSend color: '#5dff54', channel: '#test-automation-report', message: "SUCCESS: <${BUILD_URL} | build #${BUILD_NUMBER}>" +
+           "\nBranch: ${BRANCH_NAME}\n<${BUILD_URL}Test_20Automation_20Report/ | HTML report>"
        }
        failure {
-           slackSend color: '#ff0000', channel: '#test-automation-report', message: "FAILURE: build #${BUILD_NUMBER}" +
-           "\nBranch: ${BRANCH_NAME}\nReport: ${BUILD_URL}Test_20Automation_20Report/"
+           slackSend color: '#ff0000', channel: '#test-automation-report', message: "FAILURE: <${BUILD_URL} | build #${BUILD_NUMBER}>" +
+           "\nBranch: ${BRANCH_NAME}\n<${BUILD_URL}Test_20Automation_20Report/ | HTML report>"
        }
     }
 }
