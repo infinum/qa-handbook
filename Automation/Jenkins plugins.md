@@ -1,4 +1,4 @@
-> "Everything is a test." - Terry Pratchett
+> Everything is a test. - Terry Pratchett
 
 If you are using Jenkins for test automation it would also make sense to make the most of it. Jenkins offers a bunch of useful plugins that can you can add to the project.
 
