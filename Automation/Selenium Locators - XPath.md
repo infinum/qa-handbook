@@ -1,4 +1,4 @@
-> *"Testing is a skill. While this may come as a surprise to some people it is a simple fact."*
+> "Testing is a skill. While this may come as a surprise to some people it is a simple fact." - Fewster and Graham
 
 
 ## What is XPath?
