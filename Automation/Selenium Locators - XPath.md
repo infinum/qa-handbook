@@ -1,4 +1,4 @@
-> *“Testing is a skill. While this may come as a surprise to some people it is a simple fact.”*
+> *"Testing is a skill. While this may come as a surprise to some people it is a simple fact."*
 
 
 ## What is XPath?
@@ -6,9 +6,9 @@ XPath stands for XML Path Language. It provides different types of expressions, 
 
 XPath is written in a path-like syntax that resembles the path in a traditional file system (hierarchical or tree-like structure):
 
-`xpath_syntax = //tagname[@attribute=’Value‘]`
+`xpath_syntax = //tagname[@attribute='Value']`
 
-When you can’t make use of other locators such as ID, Class, and so on, XPath will come in handy to locate the element because it will always be available.
+When you can't make use of other locators such as ID, Class, and so on, XPath will come in handy to locate the element because it will always be available.
 
 Sometimes it might be rather long and not very pretty. However, you should avoid using this type of XPath, called absolute XPath, since it is quite brittle.
 
@@ -57,11 +57,11 @@ In the example above:
 
 `<author>` is an element node
 
-`lang=”en”` is an attribute node
+`lang="en"` is an attribute node
 
 
 ### Relationships between the nodes
-As mentioned, the nodes are in a hierarchical relationship to each other. The terms used to describe that relationship are **parent**, **child** and **sibling**. Except the root, every node in the hierarchy has exactly one *parent* node. A node can have any number of *child* nodes. The nodes that have the same parent are called *siblings*.
+As mentioned, the nodes are in a hierarchical relationship to each other. The terms used to describe that relationship are **parent**, **child** and **sibling**. Except for the root, every node in the hierarchy has exactly one *parent* node. A node can have any number of *child* nodes. The nodes that have the same parent are called *siblings*.
 
 The terms that could also be used are **ancestor** and **descendant**. The parent of a node or a parent of a parent is called an *ancestor*. Similarly, a child of a node, or a child of a child node is a *descendant*.
 
