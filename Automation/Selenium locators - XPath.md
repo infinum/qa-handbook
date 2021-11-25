@@ -222,6 +222,17 @@ Select the _second_ todo element:
 ![selenium_locators_xpath_devtools_2.png](/img/selenium_locators_xpath_devtools_2.png)
 
 
+## Additional resources
+
+For more details and examples take a look at the following resources:
+
+[XPath cheatsheet](https://devhints.io/xpath).
+
+[W3Schools](https://www.w3schools.com/xml/xpath_intro.asp)
+
+[MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/XPath)
+
+
 ---
 
 
