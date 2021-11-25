@@ -226,7 +226,7 @@ Select the _second_ todo element:
 
 For more details and examples take a look at the following resources:
 
-[XPath cheatsheet](https://devhints.io/xpath).
+[XPath cheatsheet](https://devhints.io/xpath)
 
 [W3Schools](https://www.w3schools.com/xml/xpath_intro.asp)
 
