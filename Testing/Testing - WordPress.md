@@ -158,6 +158,6 @@ The most common bugs you will probably encounter while testing WordPress are:
 * Every block is adjustable.
 * Some values are hardcoded.
 * Test every block independently.
-* Create new page for QA only.
+* Create a new page for QA only.
 
 
