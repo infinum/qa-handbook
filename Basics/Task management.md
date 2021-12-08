@@ -52,6 +52,20 @@ In general, there are two types of tasks you will deal with:
 
 Each task should only be opened for one person and one platform. E.g., if both Android and iOS are implementing the same feature, they should have separate tasks.
 
+### Closing QA tasks
+
+If the client is not doing testing, and no bugs were found while testing a feature task or the task had only minor issues associated with it, you can close it and open new tasks in the Backlog. The same applies to bugfix tasks. 
+
+When closing a QA task, you should always add the following information:
+
+- all devices/browsers on which you tested it
+- build/platform/environment that you used while testing
+- how and what you tested (you don't need to go into every single detail; a brief description with the most important information will be fine)
+- any other information that might be of importance (e.g. what issues you found).
+
+This way, if you or someone else ever needs to go back to that task, you will have the information about what was done and what the status of the feature/bugfix was when closing the task.
+
+
 ## Bug tasks - severity and priority
 
 Not all bugs are the same. You can attribute severity and priority to a bug in order to communicate to the team how important it really is and triage it appropriately.
