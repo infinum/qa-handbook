@@ -36,6 +36,19 @@ If you have some extra time, you can do at least a smoke test on some other supp
 
 **TIP:** Mix it up - don't use the same devices from regression test to regression test. In that way, you'll be covering more of the spectrum each time you do it. 
 
+### Opening tasks for regression tests
+
+As it mostly takes a few hours, or even a few days to do a regression test, a good practice is to open a dedicated task for it. This way, everybody from the project team knows what you are working on during a sprint. As you have to dedicate some time for the regression test, you can give a time estimate for that task, and include it into the sprint plan.
+
+Along with the time estimate, you can include some basic info in the task:
+
+- devices/browsers you are going to test on
+- release version/platform/environment you are going to test on
+- link to the test execution in TestRail, X-Ray, or any other tool that you use
+
+Besides regression tests, you can open tasks for smoke and other types of tests as well. Especially when they take a considerable amount of time to be finished.
+
+
 ### Testing, testing, and more testing...
 
 - Run a regression test of the release candidate on a non-production environment by following the test cases from the test execution.
