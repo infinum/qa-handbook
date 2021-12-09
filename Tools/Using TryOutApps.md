@@ -1,30 +1,25 @@
 > *He who thinks a tool can solve all problems, has a new problem.*
 
-## Installing a build from Tryoutapps
+## Installing a build from TryOutApps
 
-### Logged in with Infinum ID
+### Logged in to TryOutApps
 
 1. Navigate to [Tryoutapps](https://infinum.tryoutapps.com/) - ***You need to be logged in with your account***
 1. Open up the QR scanner on your phone (on iOS 11 and up, it is built into the Camera app)
 1. Scan the QR code
 1. Install the build
 
-### Public links to Tryoutapps
+### Not logged in to TryOutApps
 
+The project in TryOutApps has to be set to **“Public”**. If it is not, the developers should create a new project that will be made public.
 
-The project in Tryoutapps has to be set to **“Public”**. If it is not, the developers should create a new repository that will be made public.
-
- - This should be checked with the client, in case the client does not wish the project to be made public
-A separate build environment should be created, that will be sent via email or other means. For example, if the dev team works on a Staging build, the client or others should receive a Development, UAT or other environment builds
-How to install an app from Tryoutapps
-
+- This should be checked with the client, in case the client does not wish the project to be made public, a separate build environment should be created that will be sent via email or other means. For example, if the dev team works on a Staging build, the client or others should receive a Development, UAT or other environment builds.
 
 ### Basic steps for iOS and Android
 
 * Click on the link that you received on your laptop or PC
 
-If you see **“You are not allowed to visit this page”** at the top of the screen, the project is set to private, and you should contact the person that sent you the URL
-
+If you see **“You are not allowed to visit this page”** at the top of the screen, the project is set to private, and you should contact the person that sent you the URL.
 
 * Take an Android or iOS device (depending on the version of the app in the link) and scan the QR code that is shown on the page. 
 	
@@ -36,17 +31,17 @@ If you see **“You are not allowed to visit this page”** at the top of the sc
 
 ### Installing on iOS
 
-* Tap the notification bubble, or the URL shown on the QR scanner to open Infinum Tryoutapps in your device browser
+* Tap the notification bubble, or the URL shown on the QR scanner to open Infinum TryOutApps in your device browser
 
 * Tap on the “Install” button **(installation will immediately start on the device)**
 
 ![](/img/Installbutton.jpg)
 
-Starting the app on the device you will be prompted to trust the developer of the app once the app has been downloaded, on your device do the following:
+Starting the app on the device you will be prompted to trust the developer of the app once the app has been downloaded. On your device do the following:
 
-> Open Settings/ General /Profiles & Device Management
+> Open Settings / General / Profiles & Device Management
 
-You should see Infinum D.O.O under the “Enterprise app” section. Tap it and a modal should appear that asks you “Do you trust this developer?”. Tap on OK
+You should see our profile under the “Enterprise app” section. Tap it and a modal should appear that asks you “Do you trust this developer?”. Tap on OK.
 
 ### Installing on Android
 
@@ -56,9 +51,9 @@ You should see Infinum D.O.O under the “Enterprise app” section. Tap it and 
 
 ![](/img/install apk.jpg)
 
-* If the notification is dismissed, open the “Download” folder on the device and tap the .apk found there to start the installation
+* If the notification is dismissed, open the “Download” folder on the device and tap the .apk found there to start the installation.
 
-Sometimes, on Android devices you will need to trust unknown sources before installing apps. 
+On Android devices you will need to "trust unknown sources" before installing apps from TryOutApps. 
 
 > Open Settings - Security and check the “Unknown sources” and tap on OK if prompted.
 
