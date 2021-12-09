@@ -11,7 +11,7 @@ Some will be briefly mentioned below and others will be covered through other ar
 Use them according to the demands of your particular project.
 
 - **Test case management:** Testrail 
-- **Web - Remote crossbrowser testing:** Browserstack 
+- **Web/mobile cloud testing:** Browserstack 
 - **Mobile - UI Automation:** Appium
 - **Web - UI Automation:** Selenium
 - **API - Functional Testing:** Postman
