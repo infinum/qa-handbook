@@ -12,11 +12,8 @@ Use them according to the demands of your particular project.
 
 - **Test case management:** Testrail 
 - **Web - Remote crossbrowser testing:** Browserstack 
-- **Web - Local crossbrowser testing:** Ghostlab 
 - **Mobile - UI Automation:** Appium
 - **Web - UI Automation:** Selenium
-- **Mobile - Security testing:** MobSF
-- **Web - Security testing:** OWASP ZAP
 - **API - Functional Testing:** Postman
 - **API - Load testing:** k6
 - **MITM:** Charles, Proxyman
