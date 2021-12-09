@@ -1,10 +1,10 @@
-> > *He who thinks a tool can solve all problems, has a new problem.*
+> *He who thinks a tool can solve all problems, has a new problem.*
 
 ## Installing a build from Tryoutapps
 
 ### Logged in with Infinum ID
 
-1. Navigate to [Tryoutapps](https://infinum.tryoutapps.com/) - ***You need to be logged in with your [Infinum ID](https://infinum.com/handbook/general/internal-projects/infinum-id)***
+1. Navigate to [Tryoutapps](https://infinum.tryoutapps.com/) - ***You need to be logged in with your account***
 1. Open up the QR scanner on your phone (on iOS 11 and up, it is built into the Camera app)
 1. Scan the QR code
 1. Install the build
@@ -65,3 +65,7 @@ Sometimes, on Android devices you will need to trust unknown sources before inst
 If you are prompted with **“Blocked by Play Protect”** popup tap on “Install anyway” to install the app. 
 
 ---
+
+![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
+
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2007-11-12): 11-12-07 by Scott Adams*
