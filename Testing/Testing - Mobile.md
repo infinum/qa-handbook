@@ -7,7 +7,6 @@ This article is a compendium of useful tips & tricks for testing mobile apps.
 **General**
 
 - <a href=#basics>Basics</a>
-- <a href=#installing-a-build-from-tryoutapps>Installing a build from Tryoutapps </a>
 - <a href=#selecting-test-devices>Selecting test devices</a>
 - <a href=#testing-biometrics>Testing biometrics</a>
 - <a href=#testing-facebook-analytics>Testing Facebook analytics</a>
@@ -39,12 +38,6 @@ This article is a compendium of useful tips & tricks for testing mobile apps.
 
 ### Basics
 Have a look at an one of our blog posts on [testing mobile apps](https://infinum.co/the-capsized-eight/10-app-testing-principles).
-
-### Installing a build from Tryoutapps
-1. Navigate to [Tryoutapps](https://infinum.tryoutapps.com/)
-2. Open up the QR scanner on your phone (on iOS 11 and up, it is built into the Camera app)
-3. Scan the QR code
-4. Install the build
 
 ### Selecting test devices
 
