@@ -63,4 +63,4 @@ If you are prompted with **“Blocked by Play Protect”** popup tap on “Insta
 
 ![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
 
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2007-11-12): 11-12-07 by Scott Adams*
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2021-12-09): 11-12-07 by Scott Adams*
