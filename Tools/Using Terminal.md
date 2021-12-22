@@ -36,7 +36,7 @@ For example, under the _Shell_ tab you can specify the command that is run on st
 2. Select the _Run command_ checkbox 
 3. In the input field type in the command you wish to run, for example:
   - `cd /Users` to open the Terminal positioned to the Users directory
-  - `echo $$` to run the `echo` command as soon the Terminal is open
+  - `echo $$` to run the `echo` command right after the Terminal opens
 	
 
 Another interesting option is to close the Terminal window when the shell exits. This can be useful when you run shell commands from your project and don’t want to leave the Terminal open. 
@@ -89,20 +89,20 @@ For example,
 
 `~ ls ` 
 
-lists all visible files and folders in the current folder, but if we add a flag -a, making it
+lists all visible files and folders in the current folder, but if we add the flag `-a`, making it
 
 `~ ls -a`
 
 it lists all visible and invisible files and folders.
 
-Another example, in the following command: 
+In the following example command, using the `--report` flag we tell the process to include / activate the report option. 
+With the `--report` flag included a report is generated, and without the flat it wouldn't be.
 
 `python test.py --report `
 
-the `--report` is a flag which tells the process to include / activate the report option. 
-With `--report` flag included a report is generated once the test is run, otherwise, if not included, the report is not generated.
 
-Arguments that start with a double dash (--) often take an argument themselves. For example, in a Python script we might have an env flag that uses a different environment depending on the value we specify when including the `--env` argument:
+Arguments that start with a double dash (--) often take an argument themselves. 
+For example, in a Python script we might have the `env` flag that activates a different environment depending on the value we specify when including the `--env` argument:
 
 `python test.py --env=test_environment`
 `python test.py --env=staging_environment`
