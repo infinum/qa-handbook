@@ -96,7 +96,7 @@ lists all visible files and folders in the current folder, but if we add the fla
 it lists all visible and invisible files and folders.
 
 In the following example command, using the `--report` flag we tell the process to include / activate the report option. 
-With the `--report` flag included a report is generated, and without the flat it wouldn't be.
+With the `--report` flag included a report is generated, and without the flag it is not.
 
 `python test.py --report `
 
