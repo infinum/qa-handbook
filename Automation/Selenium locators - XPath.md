@@ -216,7 +216,7 @@ Select the _All_ button:
 
 Select the _second_ todo element:
 
-    //*[@class="todo-list"]//child::li[2]
+`//*[@class="todo-list"]//child::li[2]`
 
 ![selenium_locators_xpath_devtools_1.png](/img/selenium_locators_xpath_devtools_1.png)
 
