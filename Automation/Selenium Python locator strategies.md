@@ -1,13 +1,13 @@
-> *“The bitterness of poor quality remains long after the sweetness of low price is forgotten.”*
+> The bitterness of poor quality remains long after the sweetness of low price is forgotten. - Benjamin Franklin
 
 
-## What are WebElements
+## What are WebElements?
 
 A **WebElement** is an element such as a button, checkbox, input field, or any kind of element present on the webpage.
 
 To interact with a WebElement, you first need to locate that element on the page. Selenium WebDriver API offers, among other functionalities, built-in methods for finding WebElements using various properties/locators: *ID*, *XPath*, *CSS selector*, *Name*, *Class name*, *Tag name*, *Link text*, and *Partial link text*.
 
-## Which locator to use
+## Which locator to use?
 
 You want to use a unique locator for every element. Most of the time that will be the **ID** of an element.
 In case the ID is not present, try Name, XPath, or CSS selector. Anyway, make sure that the locator is unique and that you are getting the correct one.
@@ -38,7 +38,7 @@ Methods that return all (a **list** of) elements matching the property:
  
 
 ### NoSuchElementException
-More often than not you will come across `NoSuchElementException`. 
+More often than not, you will come across `NoSuchElementException`. 
 The exception tells you that you are trying to get an element that does not exist on the page. The element might really be missing, maybe you are using the wrong locator to get it, or maybe you simply have a typo in your code.
 
 Take another look at your code, there could be simply a character missing :)

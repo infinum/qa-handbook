@@ -1,4 +1,4 @@
-> *Everything is a test.*
+> Everything is a test. - Terry Pratchett
 
 If you are using Jenkins for test automation it would also make sense to make the most of it. Jenkins offers a bunch of useful plugins that can you can add to the project.
 
@@ -21,8 +21,8 @@ You might need an admin account to perform these actions.
 
 **HTML Publisher**
 
-HTML Publisher is used for publishing generated HTML reports to the Jenkins job page. If you are using *HtmlTestRunner* to generate HTML test reports then this plugin will come in quite handy. 
-With HTML Publisher plugin, you can have the HTML report shown in the left-hand side menu of the executed job after a job has finished.
+HTML Publisher is used for publishing generated HTML reports to the Jenkins job page. If you are using *HtmlTestRunner* to generate HTML test reports, then this plugin will come in quite handy. 
+With the HTML Publisher plugin, you can have the HTML report shown in the left-hand side menu of the executed job after a job has finished.
 
 ![jenkins_plugins_html_publisher.png](/img/jenkins_plugins_html_publisher.png)
 
@@ -63,8 +63,8 @@ To disable this rule, do the following:
 3. Select *Script console*
 4. Type in the following command: ```System.setProperty("hudson.model.DirectoryBrowserSupport.CSP", "")```
 5. Click *Run*
- - You will see the output *Result* below the “Result" header meaning the protection is disabled
- - This will be reverted to default in case Jenkins server is restarted so a better way would be to include it in the Jenkins configuration file located in the *etc/default* directory
+ - You will see the output *Result* below the "Result" header meaning the protection is disabled
+ - This will be reverted to default in case Jenkins server is restarted. So, a better way would be to include it in the Jenkins configuration file located in the *etc/default* directory
  
 
 ## Slack Notification
@@ -93,9 +93,9 @@ This is just a tiny snippet. There are quite a few things you can add to the not
 
 ## Jenkinsfile example
 
-The example below shows the entire *Jenkinsfile* (using declarative pipeline approach). 
+The example below shows the entire *Jenkinsfile* (using the declarative pipeline approach). 
 Since we want the HTML report and Slack notification to be generated after the build job is done, we have to include them in the ```post``` stage.
-With the Slack notification, you can also specify when do you want to send the notification. In this case, the notification is sent in case of both success and failure.
+With the Slack notification, you can also specify in which cases you want to send the notification. In this case, the notification is sent in case of both success and failure.
 
 ```
 pipeline {

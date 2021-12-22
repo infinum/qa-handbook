@@ -12,7 +12,7 @@ There are several different roles a user can play. If you get an Administrator a
 
 ![wp_login.png](/img/wp_login.png)
 
-To access the WP admin page, you have to use: *{domain}/wp‐login.php* (e.g., https://infinum.com/wp-admin/post.php). The data entry page will appear, and you need to enter a username and password. 
+To access the WP admin page, you have to use: *{domain}/wp‐login.php* (e.g., *https&#65279;://infinum.com/wp-admin/post.php*). The data entry page will appear, and you need to enter a username and password. 
 After entering the correct data and clicking a Login button, you can access the WordPress system for content management/dashboard.
 
 ![wp_dashboard.png](/img/wp_dashboard.png)
@@ -158,6 +158,6 @@ The most common bugs you will probably encounter while testing WordPress are:
 * Every block is adjustable.
 * Some values are hardcoded.
 * Test every block independently.
-* Create new page for QA only.
+* Create a new page for QA only.
 
 

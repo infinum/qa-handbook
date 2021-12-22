@@ -1,4 +1,4 @@
-> *Quality is never an accident; it is always the result of an intelligent effort.*
+> *Quality is never an accident; it is always the result of an intelligent effort. - John Ruskin*
 
 
 ## What is a Python Virtual Environment and why should you use it
@@ -106,7 +106,7 @@ For Windows, let’s imagine we have cloned a project named *myPythonProject* to
  - Windows: `python -m venv D:\Code\myPythonProject\venv`
 
 3. Activate the virtual environment
- - Mac: source `venv/bin/activate`
+ - Mac: `source venv/bin/activate`
  - Windows: `venv\Scripts\activate`
 
 4. To deactivate the active virtual environment, while in the project root, run:

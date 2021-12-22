@@ -151,6 +151,11 @@ This is how a complete workflow would look like:
 
 <span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![git_workflow_example.png](/img/git_workflow_example.png)</span>
 
+In case you need an additional practice:
+
+- [Learn GIT branching](https://learngitbranching.js.org/)
+- [GIT command explorer](https://gitexplorer.com/)
+
 ---
 
 ![dilbert-git-basics.png](/img/dilbert-git-basics.png)

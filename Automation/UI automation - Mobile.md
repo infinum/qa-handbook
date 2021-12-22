@@ -5,7 +5,7 @@
 `qama` stands for `QA Mobile Automation.`
 It also happens to be a [sword](https://en.wikipedia.org/wiki/Qama). :)
 
-- It is a **template project** that will help you quickly start writing maintainable UI tests for your web projects.
+- It is a **template project** that will help you quickly start writing maintainable UI tests for your mobile projects.
 - See the [qama README](https://github.com/infinum/qama/blob/master/README.md) for details.
 - It is very similar to `qawa` which was described in [the previous chapter](https://infinum.com/handbook/books/qa/tools/ui-automation-web). 
 
