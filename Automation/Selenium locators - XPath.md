@@ -135,23 +135,23 @@ There are 13 different axes in the XPath:
 
 Select all children nodes on the current book node: 
 
-    //child::book
+`//child::book`
 
 Select the lang attribute of the current node:
 
-	//attribute::lang
+`//attribute::lang`
 
 Select all children nodes of the current node:
 
-	//child::*
+`//child::*`
 
 Select all text node children of the current node:
 
-	//child::text()
+`//child::text()`
 
 Select the first child node from the list within class todo-list:
 
-    //*[@class='todo-list']//child::li[1]
+`//*[@class='todo-list']//child::li[1]`
 
 ## XPath functions
 
@@ -170,11 +170,11 @@ Some of the more useful ones are:
 
 Select the todomvc.com link in the DOM:
 
-    //*[contains(@href,'todomvc.com')]
+`//*[contains(@href,'todomvc.com')]`
 
 Select the text containing “here” in the DOM:
 
-    //*[contains(text(),'here')]
+`//*[contains(text(),'here')]`
 
 
 **Starts with**
@@ -183,7 +183,7 @@ Select the text containing “here” in the DOM:
 
 Select the image element whose `alt` text starts with "_Profile_":
 
-    //img[starts-with(@alt,'Profile')]
+`//img[starts-with(@alt,'Profile')]`
 
 **Text**
 
@@ -191,7 +191,7 @@ Select the image element whose `alt` text starts with "_Profile_":
 
 Select the element with the text "_About_":
 
-    //span[text()='About']
+`//span[text()='About']`
 
 
 ## How to use Chrome DevTools to find XPath
@@ -212,7 +212,7 @@ Examples from the images below
 
 Select the _All_ button:
 
-    //a[@class="selected"]
+`//a[@class="selected"]`
 
 Select the _second_ todo element:
 
