@@ -44,6 +44,10 @@ The exception tells you that you are trying to get an element that does not exis
 Take another look at your code, there could be simply a character missing :)
 
 
+## Additional resources
+
+For more info read the [locating elements chapter](https://selenium-python.readthedocs.io/locating-elements.html) in the Selenium with Python document.
+
 ---
 
 
