@@ -149,7 +149,7 @@ List all visible files and folders in the current folder with permissions
 
 `➜  ~ ls -l`
 
-### lsof
+### List of open files
 List all open files and processes
 
 `➜  ~ lsof`
@@ -175,7 +175,7 @@ Open zsh resource file
 
 `➜  ~  open ~/.zshrc`
 
-### ps
+### Process status
 Displays your and other users' processes
 
 `➜  ~ ps -ax `
