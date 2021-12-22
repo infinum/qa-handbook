@@ -117,57 +117,19 @@ An axis (*plural* axes) represents a relationship between the nodes, i.e. axes a
 
 There are 13 different axes in the XPath:
 
-**ancestor**
-
-- represents all ancestors of the current node
-
-**ancestor-or-self**
-
-- represents the current node and all its ancestors
-
-**attribute**
-
-- represents the attributes of the current node. It can be abbreviated with the @ sign
-
-**child**
- 
-- represents the children of the current node
-
-**descendant**
-
-- represents all children (and all their children) of the current node, and all of their children
-
-**descendant-or-self**
-
-- represents the current node and all its descendants
-
-**following**
- 
-- represents all the nodes that appear after the current node, except any descendant, attribute, and namespace nodes
-
-**following-sibling**
-
-- represents all the nodes that have the same parent as the current node and appear after the current node in the source document
-
-**namespace**
-
-- represents all namespace nodes of the current node. If the current node is not an element node, the result will be empty
-
-**parent**
-
-- represents the single node that is the parent of the current node. It can be abbreviated as two periods (..)
-
-**preceding**
-
-- represents all the nodes that precede the current node in the document except any ancestor, attribute, and namespace nodes
-
-**preceding-sibling**
-
-- represents all the nodes that have the same parent as the current node and appear before the current node in the source document
-
-**self**
-
-- represents the current node itself. It can be abbreviated as a single period (.)
+- **ancestor** - represents all ancestors of the current node
+- **ancestor-or-self** - represents the current node and all its ancestors
+- **attribute** - represents the attributes of the current node. It can be abbreviated with the @ sign
+- **child** - represents the children of the current node
+- **descendant** - represents all children (and all their children) of the current node, and all of their children
+- **descendant-or-self** - represents the current node and all its descendants
+- **following** - represents all the nodes that appear after the current node, except any descendant, attribute, and namespace nodes
+- **following-sibling** - represents all the nodes that have the same parent as the current node and appear after the current node in the source document
+- **namespace** - represents all namespace nodes of the current node. If the current node is not an element node, the result will be empty
+- **parent** - represents the single node that is the parent of the current node. It can be abbreviated as two periods (..)
+- **preceding** - represents all the nodes that precede the current node in the document except any ancestor, attribute, and namespace nodes
+- **preceding-sibling** - represents all the nodes that have the same parent as the current node and appear before the current node in the source document
+- **self** - represents the current node itself. It can be abbreviated as a single period (.)
 
 **Examples**
 
