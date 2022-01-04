@@ -13,7 +13,7 @@
 
 The project in TryOutApps has to be set to **“Public”**. If it is not, the developers should create a new project that will be made public.
 
-- This should be checked with the client, in case the client does not wish the project to be made public, a separate build environment should be created that will be sent via email or other means. For example, if the dev team works on a Staging build, the client or others should receive a Development, UAT or other environment builds.
+- This should be checked with the client, in case the client does not wish the project to be made public, a separate build environment should be created that will be sent via email or other means. For example, if the dev team works on a Staging build, the client or others should receive a Development, UAT, or other environment builds.
 
 ### Basic steps for iOS and Android
 
@@ -53,7 +53,7 @@ You should see our profile under the “Enterprise app” section. Tap it and a 
 
 * If the notification is dismissed, open the “Download” folder on the device and tap the .apk found there to start the installation.
 
-On Android devices you will need to "trust unknown sources" before installing apps from TryOutApps. 
+On Android devices, you will need to "trust unknown sources" before installing apps from TryOutApps. 
 
 > Open Settings - Security and check the “Unknown sources” and tap on OK if prompted.
 
@@ -63,4 +63,4 @@ If you are prompted with **“Blocked by Play Protect”** popup tap on “Insta
 
 ![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
 
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2007-11-12): 11-12-07 by Scott Adams*
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2021-12-09): 11-12-07 by Scott Adams*
