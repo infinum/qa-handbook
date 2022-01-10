@@ -74,6 +74,7 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 - **Ghostlab** - a tool for parallel cross-browser testing on several physical devices.
 - **Git** - is a Version Control System (VCS).
 - **GitHub** - is a cloud-based Git repository hosting service, i.e. a web-based Git repository.
+- **GMS** - Google Mobile Services
 - **Google Analytics** - a web analytics service offered by Google that tracks and reports website traffic.
 - **Google Authenticator** - for keeping your 2FA credentials.
 - **Google Calendar** - a time-management and scheduling calendar service (your personal diary lives here).
@@ -85,6 +86,7 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 ### H
 
 - **Hit area** - touch target; a touchable area of an interactive element such as a button or an input field. The bigger the hit area, the better for the user.
+- **HMS** - Huawei Mobile Services
 - **Homebrew** - is a free and open-source software package management system that simplifies the installation of software on Apple's operating system (macOS).
 - **Hotfix** - is a critical bug fix that needs to go live before the next scheduled release date.
 - **Hover** - (or hover state) communicates when a user has placed a cursor above an interactive element. 
