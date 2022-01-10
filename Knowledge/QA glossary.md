@@ -172,10 +172,6 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 ### Q
 
 - **QA** - quality assurance :) 
-- **QA lightning talks** - every two weeks we have a lightning talk with a different topic. QA workshops are more "class-like" meetings, whereas lightning talks are meant to spark discussion and participation from everyone in the team.
-- **QA team dinner** - once a month we have a dinner and various activities.
-- **QA weekly** - weekly meeting where we go through all active projects with the Operations team, report progress, and point out any obvious impediments.
-- **QA workshop** - a meeting where a member of the QA team presents a practical/theoretical topic in order to share knowledge.
 - **QAMA** - our in-house QA Mobile Automation framework.
 - **QAWA** - our in-house QA Web Automation framework.
 
