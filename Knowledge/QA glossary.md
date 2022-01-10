@@ -25,7 +25,6 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 
 ### B
 
-- **Backlog** - a list of tasks/requirements for a software product in development. If something is in the backlog it is usually low on the priority list.
 - **Backlog refinement** - the activity of creating and refining product backlog items, estimating and prioritizing them.
 - **Ballpark estimate** - a ballpark estimate or figure is a number that is a guess, but one that you believe is near the correct number.
 - **Bash** - command language and shell.
@@ -42,7 +41,7 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 - **ChroPath** - a Google Chrome extension that will help you locate web elements when doing UI automation.
 - **Chuck(er)** - is used for inspecting network traffic in Android apps. You can access it from the notifications drawer when the app is running.
 - **Clear Session** - a Google Chrome extension that will clear all session/cookie data for a particular web page.
-- **CMS** - Content Management System.
+- **CMS** - a content management system is computer software used to manage the creation and modification of digital content.
 - **Code snippet** - a code snippet is a small block of re-usable code.
 - **Cookies** - are files created by websites you visit. They make your online experience easier by saving browsing information. With cookies, sites can keep you signed in, remember your site preferences, and give you locally relevant content.
 - **CopyClip** - simple and efficient clipboard manager for your Mac.
@@ -67,6 +66,7 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 
 - **FakeGPS** - a tool for mocking your GPS location.
 - **Feature** - in software development, features are the "tools" you use within a system to complete a set of tasks or actions. Functionality is how those features actually work to provide you with the desired outcome.
+- **Figma** - a vector graphics editor and prototyping tool which is primarily web-based, with additional offline features enabled by desktop applications for macOS and Windows.
 - **FT (Full time)** - eight working hours per day.
 
 ### G
@@ -110,6 +110,7 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 ### J
 
 - **Jenkins** - an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.
+- **Jira** -  a management tool for all kinds of use cases, from requirements and test case management to agile software development. 
 - **JSONView** - a Google Chrome extension that will prettify your JSONs when viewing them in Chrome.
 
 ### K
@@ -216,7 +217,6 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 ### T
 
 - **TAE** - Test Automation Engineers.
-- **Team weekly** - an informal meeting we use to summarize the week, hang out, and find out whether someone has either too little or too much work on their hands.
 - **Test cases (TC)** - are requirements with steps for testing whether a given part of the app or site is working properly.
 - **Test environment** - environment for QA testing.
 - **Test suite** - a set of test cases. For example, you might have test cases for the registration section, the homepage, add to cart flow, etc. A test suite is a spreadsheet consisting of all of these different test cases.
