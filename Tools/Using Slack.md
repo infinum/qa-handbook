@@ -32,12 +32,13 @@ Let's try together to find that sweet spot with just enough communication to sta
 
 - There is a 'Do Not Disturb' option and don't feel bad about using it when you need it. Like we already said, Slack is here to improve and not kill your productivity. 
 
+### Organize channels into groups
+
+- It might be useful for you to organize your channels into sections, especially when you have a lot of them. For example, the group "Project A" would contain all channels related to the project A, the group "Project B" all channels related to that one, etc. This makes it easier to track and scan through channels easier and quicker.
+
 ### Mute or leave unnecessary channels
 
 - Over time, you will join quite a lot of public and private channels and at one point, you'll realize that maybe it is just too much for you. Feel free to review them and leave the ones that you don't see to have benefit from.
 
-### Organize channels into groups
-
-- It might be useful for you to organize your channels into sections, especially when you have a lot of them. For example, the group "Project A" would contain all channels related to the project A, the group "Project B" all channels related to that one, etc. This makes it easier to track and scan through channels easier and quicker.
 
 *Read more about it in [this Slack article](https://slack.com/blog/collaboration/etiquette-tips-in-slack) by Matt Haughey*
