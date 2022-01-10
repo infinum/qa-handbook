@@ -171,12 +171,8 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 ### Q
 
 - **QA** - quality assurance :) 
-- **QA buddy session** - a round of testing with someone from your team in which you will gain insight and experience, and help a tester out. 
-- **QA internal show-off** - an "informal" meeting where your teammates can present the projects they are working on while the rest of the team discusses and analyzes them. Comments and jokes are welcome :)
-- **QA N.E.M.R.E.M.** - informal meeting for the whole QA team in which you can hang out, play games, get to know each other, and see the people from the office.
 - **QA team dinner** - once a month we have a dinner and various activities.
 - **QA weekly** - weekly meeting where we go through all active projects with the Operations team, report progress, and point out any obvious impediments.
-- **QA workshop** - a meeting where a member of the QA team presents a practical/theoretical topic in order to share knowledge.
 - **QAMA** - our in-house QA Mobile Automation framework.
 - **QAWA** - our in-house QA Web Automation framework.
 
