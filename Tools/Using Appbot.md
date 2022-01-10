@@ -40,6 +40,6 @@ Here is an example of a review sent to Slack:
 
 ---
 
-![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
+![Dilbert image](/img/dilbert-appbot-article.gif)
 
 *Image downloaded from [dilbert.com](https://dilbert.com/strip/2007-11-12): 11-12-07 by Scott Adams*
