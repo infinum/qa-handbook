@@ -41,7 +41,7 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 - **ChroPath** - a Google Chrome extension that will help you locate web elements when doing UI automation.
 - **Chuck(er)** - is used for inspecting network traffic in Android apps. You can access it from the notifications drawer when the app is running.
 - **Clear Session** - a Google Chrome extension that will clear all session/cookie data for a particular web page.
-- **CMS** - a content management system is computer software used to manage the creation and modification of digital content.
+- **CMS (Content Management System)** - a content management system is computer software used to manage the creation and modification of digital content.
 - **Code snippet** - a code snippet is a small block of re-usable code.
 - **Cookies** - are files created by websites you visit. They make your online experience easier by saving browsing information. With cookies, sites can keep you signed in, remember your site preferences, and give you locally relevant content.
 - **CopyClip** - simple and efficient clipboard manager for your Mac.
@@ -112,7 +112,7 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 ### J
 
 - **Jenkins** - an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.
-- **Jira** -  a management tool for all kinds of use cases, from requirements and test case management to agile software development. 
+- **Jira** - a management tool for all kinds of use cases, from requirements and test case management to agile software development. 
 - **JSONView** - a Google Chrome extension that will prettify your JSONs when viewing them in Chrome.
 
 ### K
@@ -122,7 +122,6 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 ### L
 
 - **Library** - a software library generally consists of pre-written code, classes, procedures, scripts, configuration data, and more. Typically, a developer might manually add a software library to a program to achieve more functionality or to automate a process without writing code for it.
-- **Lightning talks** - every two weeks we have a lightning talk with a different topic. QA workshops are more "class-like" meetings, whereas lightning talks are meant to spark discussion and participation from everyone in the team.
 - **Lockito** - a tool for mocking your GPS location.
 - **Logcat (Android)** - a command-line tool that dumps a log of system messages, including stack traces when the device throws an error and messages that you have written from your app with the Log class.
 - **Loggie** - is an in-house tool used for inspecting network traffic in iOS apps. Once the app is running and in the foreground, you can access it by shaking the phone.
@@ -173,8 +172,10 @@ The glossary is meant to help you get familiar with words and phrases commonly u
 ### Q
 
 - **QA** - quality assurance :) 
+- **QA lightning talks** - every two weeks we have a lightning talk with a different topic. QA workshops are more "class-like" meetings, whereas lightning talks are meant to spark discussion and participation from everyone in the team.
 - **QA team dinner** - once a month we have a dinner and various activities.
 - **QA weekly** - weekly meeting where we go through all active projects with the Operations team, report progress, and point out any obvious impediments.
+- **QA workshop** - a meeting where a member of the QA team presents a practical/theoretical topic in order to share knowledge.
 - **QAMA** - our in-house QA Mobile Automation framework.
 - **QAWA** - our in-house QA Web Automation framework.
 
