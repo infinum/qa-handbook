@@ -12,7 +12,7 @@ Let's try together to find that sweet spot with just enough communication to sta
 ### Prioritize project channels over internal channels and DMs
 
 - DMs are private and when you ask a question in one, others on your team won't be aware of it. Usually, in all project related questions, there is some useful information that someone sooner or later will benefit from, so please default to the public channel if possible. 
-- DMs are great for private questions and chat, or in case of sensitive information that you don't want everybody else to see. But before sending it, please think if this question or information is perhaps more suitable for the public channel. 
+- DMs are great for private questions and chat or in case of sensitive information that you don't want everybody else to see. But before sending it, please think if this question or information is perhaps more suitable for the public channel. 
 
 ### Fewer messages by writing longer messages that scan quickly
 
@@ -34,7 +34,7 @@ Let's try together to find that sweet spot with just enough communication to sta
 
 ### Organize channels into groups
 
-- It might be useful for you to organize your channels into sections, especially when you have a lot of them. For example, the group "Project A" would contain all channels related to the project A, the group "Project B" all channels related to that one, etc. This makes it easier to track and scan through channels easier and quicker.
+- It might be useful for you to organize your channels into sections, especially when you have a lot of them. For example, the group "Project A" would contain all channels related to project A, the group "Project B" all channels related to that one, etc. This makes it easier to track and scan through channels easier and quicker.
 
 ### Mute or leave unnecessary channels
 
