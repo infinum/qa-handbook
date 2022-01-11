@@ -30,15 +30,15 @@ If you are attending a conference as a visitor then it's not tracked as work in 
 
 Conferences usually have several tracks you can apply for.
 
-Keynotes and closing talks are always people magnets and they have the most people in attendance. Applying for a keynote or closing talk usually experience having a lot of experience and/or "street cred" in the industry. :)
+Keynotes and closing talks are always people magnets and they have the most people in attendance. Applying for a keynote or closing talk usually means having a lot of experience and/or "street cred" in the industry. :)
 
 Some conferences have workshops that can be themed around various topics such as test documentation, test automation, etc. 
 
 ## Topics
 
-We have a backlog of topics (LINK), but you can always brainstorm new topics yourself or with your team members
+We have a backlog of topics that can be found in the private QA directory, but you can always brainstorm new topics yourself or with your team members
 
-Anecdotes and personal experiences are more interesting than dull technical exposes 
+Anecdotes and personal experiences are more interesting than dull technical exposes! 
 
 Technical exposes can be interesting but are needed to be told through some personal experience and should be formed in a way that will tell a story on what was the problem and how it was overcome
  
@@ -81,9 +81,9 @@ The calendar = https://testingconferences.org/
 * Don't talk about things you don't know or are planning on learning!
 * You want to make the jurors have "aha!" or "I'd like to listen to this" moment 
 
-https://snyk.io/blog/10-tips-for-getting-that-conference-cfp- accepted/
+https://snyk.io/blog/10-tips-for-getting-that-conference-cfp-accepted/
 
-An example of CFP (should be considered as a benchmark 😉)
+An example of CFP
 https://testconf.ru/2019/en/neven-matas/index.html
 
 ## Making a keynote
@@ -105,14 +105,11 @@ https://testconf.ru/2019/en/neven-matas/index.html
 * Follow the rule 1 slide = 1 minute
 * Make a test run of your presentation a few times alone and with a crowd (you have a lot of colleagues in your team, have them listen to you and give you feedback) 
 * Keep track of time when you start talking, have a timer or a watch on your hand (there won't be time extensions because everything is on a tight schedule)
-* Keep the text on slides at a minimum, don't overdo it Make some notes but don't rely on them explicitly
+* Keep the text on slides at a minimum, don't overdo it make some notes but don't rely on them explicitly
 * Try to motivate the crowd by some questions e.g. "Raise your hand if you have ever..."
 * You can bring some Infinum merch for the people who were engaging with you during the keynote and Q&A
 * Lastly, bring a PDF or have your keynote in Windows PowerPoint format 
 
-**Keynote example**
-
-• Ana's keynote: https://drive.google.com/file/d/18poFaserGWecTjwUZt41aJdLLSkqTnz2/view?usp=sharing
 
 **Leaving for a conference**
 
