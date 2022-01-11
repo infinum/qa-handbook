@@ -83,8 +83,7 @@ The calendar = https://testingconferences.org/
 
 https://snyk.io/blog/10-tips-for-getting-that-conference-cfp-accepted/
 
-An example of CFP
-https://testconf.ru/2019/en/neven-matas/index.html
+An example of CFP:https://testconf.ru/2019/en/neven-matas/index.html
 
 ## Making a keynote
 
@@ -106,7 +105,7 @@ https://testconf.ru/2019/en/neven-matas/index.html
 * Make a test run of your presentation a few times alone and with a crowd (you have a lot of colleagues in your team, have them listen to you and give you feedback) 
 * Keep track of time when you start talking, have a timer or a watch on your hand (there won't be time extensions because everything is on a tight schedule)
 * Keep the text on slides at a minimum, don't overdo it 
-* make some notes but don't rely on them explicitly
+* Make some notes but don't rely on them explicitly
 * Try to motivate the crowd by some questions e.g. "Raise your hand if you have ever..."
 * You can bring some Infinum merch for the people who were engaging with you during the keynote and Q&A
 * Lastly, bring a PDF or have your keynote in Windows PowerPoint format 
