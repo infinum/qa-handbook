@@ -36,7 +36,7 @@ Some conferences have workshops that can be themed around various topics such as
 
 ## Topics
 
-We have a backlog of topics that can be found in the private QA directory, but you can always brainstorm new topics yourself or with your team members
+We have a backlog of topics that can be found in the private QA directory, but you can always brainstorm new topics yourself or with your team members.
 
 Anecdotes and personal experiences are more interesting than dull technical exposes! 
 
