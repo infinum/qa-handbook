@@ -125,6 +125,6 @@ An example of CFP:https://testconf.ru/2019/en/neven-matas/index.html
 
 ---
 
-![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
+![Dilbert at conference](/img/dilbert_conference.gif)
 
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2007-11-12): 11-12-07 by Scott Adams*
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/1998-04-23): 04-23-98 by Scott Adams*
