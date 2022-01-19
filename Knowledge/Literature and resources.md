@@ -26,7 +26,6 @@ Some cool books to jumpstart your QA career:
 
 If  you will be writing a blog post here is a useful list of blog posts which contain good tips and tricks about writing blog posts:
 
-- [How To Write The Ultimate Blog Post](https://medium.com/swlh/how-to-write-the-ultimate-blog-post-4c53115b2477)
 - [How to Write an Awesome Blog Post in 5 Steps](https://www.wordstream.com/blog/ws/2015/02/09/how-to-write-a-blog-post)
 - [8 Writing Tips I Wish I Knew Before I Started Blogging](https://blog.hubspot.com/marketing/8-essential-writing-tips)
 
