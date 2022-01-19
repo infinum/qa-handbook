@@ -4,7 +4,7 @@ The right way for preventing errors in the app and making sure that everything w
 
 This means that we check the design part while it's still in the wireframe stage, where screens have the functional elements and their placement in the app. So basically one step before all the fancy visuals that we see in the final result. 
 
-For that we need an **prototype** (which is usually done in Figma or Invision). It’s a clickable mock prototype of the app made by designers lacking the animations, hover states, moving components... 
+For that we need a **prototype** (which is usually done in Figma or Invision). It’s a clickable mock prototype of the app made by designers lacking the animations, hover states, moving components... 
 
 So you have the prototype and you're ready to test. What next? 
 

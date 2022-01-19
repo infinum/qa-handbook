@@ -17,7 +17,7 @@ Now let's just exchange the roles and say:
 - Customer - any client (e.g., a mobile app or web app)
 - Order - making an HTTP request
 - Pizza - data
-- Kitchen - a place where the magic happens (we don't care in this article)
+- Kitchen - a place where the magic happens (we don't care about it in this article)
 - 10 minutes - response time
 
 Those are all the ingredients you need to describe a slow, albeit functional web API. :)

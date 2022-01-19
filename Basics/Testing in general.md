@@ -152,7 +152,7 @@ Regression testing is used at certain milestone points in the app lifecycle (e.g
 
 **Exploratory testing** is probably the fastest and most efficient way of finding issues in software products, but it's not the only way nor just doing whatever you want.
 
-Exploratory testing is to traditional testing what agile is to waterfall, it cuts the time taken to prepare yourself for testing to almost zero since in exploratory testing you **simulatenously design and execute the tests**.
+Exploratory testing is to traditional testing what agile is to waterfall, it cuts the time taken to prepare yourself for testing to almost zero since in exploratory testing you **simultaneously design and execute the tests**.
 
 When doing exploratory testing you should:
 

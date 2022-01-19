@@ -22,7 +22,7 @@ Floating Action Button (FAB)| ![](/img/Floating_Action_Button.png) A floating ac
 Element name | Definiton / Picture / GIF 
 -----|-----------
 Backdrop| ![](/img/Backdrop.png) A backdrop appears behind all other surfaces in an app, displaying contextual and actionable content.
-Banner| ![](/img/Bottom_Bar.png) A banner displays a prominent message and related optional actions.
+Banner| ![](/img/Banner.png) A banner displays a prominent message and related optional actions.
 Card| ![](/img/Cards.png) Cards contain content and actions about a single subject.
 Chips| ![](/img/Chips.png) Chips are compact elements that represent an input, attribute, or action.
 Dialog| ![](/img/Dialog.png) Dialogs inform users about a task and can contain critical information, require decisions, or involve multiple tasks.

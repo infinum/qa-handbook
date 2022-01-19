@@ -1,4 +1,4 @@
->  Any sufficiently advanced bug is indistinguishable from a feature
+>  Any sufficiently advanced bug is indistinguishable from a feature. - Rich Kulawiec
 
 
 ## Attending conferences and talks
@@ -16,9 +16,9 @@ If you are an attendee then conference tickets, plane tickets, and accommodation
 
 **Some tips:**
 
-Sometimes, you can get a discount if you apply as a group #makeitaroadtrip 
-You don't have to attend all of the conference days
-Early bird tickets are almost always cheaper 
+- Sometimes, you can get a discount if you apply as a group #makeitaroadtrip. 
+- You don't have to attend all of the conference days.
+- Early bird tickets are almost always cheaper.
 
 ## Time tracking
 
@@ -46,21 +46,21 @@ Keep your presentation under 60 minutes and also save some time on Q&A
 
 > **Some places we attended so far**
 > 
-> * Quest for Quality Ljubljana 2016
-> * Quest for Quality Dublin 2017, 2019
-> * TestCon Moscow
-> * Talks: Testival Zagreb, Spletne Urice Maribor, Tech Stories ZG, Infinum Talks ZG, Infinum Talks Ljubljana, ShareIT Ljubljana, Dlabs Ljubljana...
+> - Quest for Quality Ljubljana 2016
+> - Quest for Quality Dublin 2017, 2019
+> - TestCon Moscow
+> - Talks: Testival Zagreb, Spletne Urice Maribor, Tech Stories ZG, Infinum Talks ZG, Infinum Talks Ljubljana, ShareIT Ljubljana, Dlabs Ljubljana...
 
 
 **Places to apply**
 
 The calendar = https://testingconferences.org/
 
-* Any of the events that have "STAR" in their name are a big deal: EuroSTAR, STAR East/West, UKSTAR
+- Any of the events that have "STAR" in their name are a big deal: EuroSTAR, STAR East/West, UKSTAR
 
-* Agile Testing Days, expo: QA, TestBash events, Agile + DevOps, Quest for Quality, Software Quality Days, SeleniumConf, Nordic Testing Days, TestCon...
+- Agile Testing Days, expo: QA, TestBash events, Agile + DevOps, Quest for Quality, Software Quality Days, SeleniumConf, Nordic Testing Days, TestCon...
 
-* TestingCup: https://conference.eurostarsoftwaretesting.com/conference/2021/programme/
+- TestingCup: https://conference.eurostarsoftwaretesting.com/conference/2021/programme/
 
 ## How to apply to a conference?
 
@@ -74,12 +74,12 @@ The calendar = https://testingconferences.org/
 
 **Tips & Tricks for CFP**
 
-* Having a good title is a must!
-* Keep it short, a few paragraphs should suffice
-* Keep it light on buzzwords, you don't want to come off as sleazy...
-* You don't have to cover everything you are going to talk about
-* Don't talk about things you don't know or are planning on learning!
-* You want to make the jurors have "aha!" or "I'd like to listen to this" moment 
+- Having a good title is a must!
+- Keep it short, a few paragraphs should suffice
+- Keep it light on buzzwords, you don't want to come off as sleazy...
+- You don't have to cover everything you are going to talk about
+- Don't talk about things you don't know or are planning on learning!
+- You want to make the jurors have "aha!" or "I'd like to listen to this" moment 
 
 https://snyk.io/blog/10-tips-for-getting-that-conference-cfp-accepted/
 
@@ -100,15 +100,15 @@ An example of CFP:https://testconf.ru/2019/en/neven-matas/index.html
 
 ## Tips & Tricks for presenting
 
-* For the love of the bugs, please do not prepare it 5 minutes in advance...
-* Follow the rule 1 slide = 1 minute
-* Make a test run of your presentation a few times alone and with a crowd (you have a lot of colleagues in your team, have them listen to you and give you feedback) 
-* Keep track of time when you start talking, have a timer or a watch on your hand (there won't be time extensions because everything is on a tight schedule)
-* Keep the text on slides at a minimum, don't overdo it 
-* Make some notes but don't rely on them explicitly
-* Try to motivate the crowd by some questions e.g. "Raise your hand if you have ever..."
-* You can bring some Infinum merch for the people who were engaging with you during the keynote and Q&A
-* Lastly, bring a PDF or have your keynote in Windows PowerPoint format 
+- For the love of the bugs, please do not prepare it 5 minutes in advance...
+- Follow the rule 1 slide = 1 minute
+- Make a test run of your presentation a few times alone and with a crowd (you have a lot of colleagues in your team, have them listen to you and give you feedback) 
+- Keep track of time when you start talking, have a timer or a watch on your hand (there won't be time extensions because everything is on a tight schedule)
+- Keep the text on slides at a minimum, don't overdo it 
+- Make some notes but don't rely on them explicitly
+- Try to motivate the crowd by some questions e.g. "Raise your hand if you have ever..."
+- You can bring some Infinum merch for the people who were engaging with you during the keynote and Q&A
+- Lastly, bring a PDF or have your keynote in Windows PowerPoint format 
 
 
 **Leaving for a conference**

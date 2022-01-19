@@ -55,7 +55,7 @@ For more info about "wake locks", "alarms" and "jobs" check [this](https://devel
 3. Try the "Revoke USB debugging authorizations" option, disconnect the phone, connect it again and allow the connection via the prompt that shows up.
 4. Try other USB cables.  
 It is not so uncommon to connect the phone to a computer by micro USB cable, only to find out that the cable you used can only charge the device ([more info](https://www.dignited.com/50330/usb-data-cable-vs-usb-charging-cable/)).  
-USB-C cables are a bit better in that aspect but even they [aren't all same](https://cdn-learn.adafruit.com/assets/assets/000/085/324/medium800/components_adafruit_USB_C_graphic_outlines.png?1575491911). 
+USB-C cables are a bit better in that aspect but even they [aren't all the same](https://cdn-learn.adafruit.com/assets/assets/000/085/324/medium800/components_adafruit_USB_C_graphic_outlines.png?1575491911). 
 5. Make sure that the app you plan to monitor is a debug build.
 6. In case you don't see the app you want to monitor in Android Studio - try to run it on the device first, that should trigger a refresh in Android Studio. 
 

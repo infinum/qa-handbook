@@ -10,7 +10,7 @@ Read up on it [here](https://www.gurock.com/testrail/docs/user-guide).
 
 - A test suite is a set of test cases.
 - A test suite may be divided into sections.
-- A test cases is one test you can execute manually.
+- A test case is one test you can execute manually.
 
 Each project can have several test suites and the scope of the test suite may vary. You might want to test *everything*, or just assemble a test suite that will be used for sanity checks.
 
