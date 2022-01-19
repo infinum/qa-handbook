@@ -1,4 +1,4 @@
-> Blame doesn’t fix bugs. - Anonymous
+> Blame doesn't fix bugs. - Anonymous
 
 ## Basic info
 Here we will mention basic stuff about Chrome Dev tools, why it is important for QA and what features we use.
