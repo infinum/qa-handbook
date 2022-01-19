@@ -32,4 +32,4 @@ Element name | Definiton / Picture / GIF
 Image Grid| Image grid is	an image gallery that varies between four, two or full-width images with a click of a button
 Image Overlay Title| ![](/img/Image_Overlay_Title.gif)
 Modal Images| ![](/img/Modal_Images.gif) A modal is a dialog box/popup window that is displayed on top of the current page
-Slideshow| ![](/img/Slideshow/Slideshow_Carousel.gif) A slideshow is used to cycle through elements
+Slideshow| ![](/img/Slideshow_Carousel.gif) A slideshow is used to cycle through elements
