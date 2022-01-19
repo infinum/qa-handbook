@@ -158,4 +158,4 @@ The `designMode` should be enabled and you can edit the content.
 
 ---
 
-![](/img/dilbert project.gif)
+![](/img/dilbert_project.gif)
