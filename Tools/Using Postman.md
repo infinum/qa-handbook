@@ -131,7 +131,7 @@ Pre-request scripts are snippets of code that can be added to a collection, a fo
 1. Open the "GET Pokemons" request 
 2. Switch to the **Pre-request Script** tab
 
-Let's take a loot at example of pre-request script for token creation:
+Let's take a look at example of pre-request script for token creation:
 
 ```
  const loginRequest = {

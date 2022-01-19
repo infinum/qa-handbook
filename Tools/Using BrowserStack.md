@@ -44,7 +44,7 @@ Cross-browser tests are functional tests. These tests are performed to check whe
 - **Switch Browser** - if you want to choose a different browser, click on the "Switch Browser" option (this will take you to the Dashboard screen where you can select another browser). 
 - **Resolution** - if you want to test the application on a different resolution, click the "Resolution" icon and a list of available resolutions will appear. 
 - **Local Testing** - to resolve all requests to local URLs via your machine, click on the "Local Testing" icon and check "Resolve all URLs through my network" option. Local Testing gives you the option to test websites hosted on your private network. 
-- **Report a bug** - it gives you the option to highlight a bug, and send the bug report along with a screenshot (via Jira, Trello, GitHub, Slack, or email) or if you can download the screenshot
+- **Report a bug** - it gives you the option to highlight a bug, and send the bug report along with a screenshot (via Jira, Trello, GitHub, Slack, or email) or you can download the screenshot.
 - **Stop Session** - when you finish testing in a specific browser, click "Stop Session" to return to the Dashboard.
 
 
