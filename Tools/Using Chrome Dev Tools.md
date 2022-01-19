@@ -99,7 +99,7 @@ Use the console in following cases:
 
 The Network panel records information about each network operation on your site, including detailed timing data, HTTP request and response headers, cookies, WebSocket data, and more.
 
-In the network panel you can see all the data that is coming from the server. This data is needed for the page to load.
+In other words, in the network panel you can see all the data that is coming from the server. This data is needed for the page to load.
 
 When to use network tab:
 
