@@ -34,15 +34,15 @@ You want to have debug APK because it is much easier and faster solution. If the
 
 2. Select "Start a new Android Studio project".
 	
-	![](/img/Android Studio - start new project.png)
+	![](/img/Android_Studio-start_new_project.png)
 
 3. Select "Add no activity" and click on Next button.
 
-	![](/img/Android Studio - add no activity.png)
+	![](/img/Android_Studio-add_no_activity.png)
 
 4. On "Configure your project" step, you can change project name, where to save the project, etc. You can only change Minimum API level to API level 21. Click on Finish button.
 
-	![](/img/Android Studio - configure your project.png)
+	![](/img/Android_Studio-configure_your_project.png)
 	
 	You just created an empty project.
 	
@@ -50,19 +50,19 @@ You want to have debug APK because it is much easier and faster solution. If the
 
 6. In Android Studio, the connected device will be shown.
 
-	![](/img/Android Studio - connected device.png)
+	![](/img/Android_Studio-connected_device.png)
 
 7. Now you need to set up Profiler by going to **File > Profile or debug APK > Select APK File** (choose debug APK file you want to profile) > click OK.
 
 8. After APK file is loaded, go to **Run > Profile**.
 
-	![](/img/Android Studio - Run and Profile.png)
+	![](/img/Android_Studio-Run_and_Profile.png)
 
 9. The app will open on your device. Profiler will start with collecting profiling data until you disconnect the device or click End Session.
 
 **Android Profiler shared timeline view**
 
-![](/img/Android studio - Profiler.png)
+![](/img/Android_studio-Profiler.png)
 
 1. Android Profiler shows the process and device currently being profiled.
 

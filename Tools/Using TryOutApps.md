@@ -25,7 +25,7 @@ If you see **“You are not allowed to visit this page”** at the top of the sc
 	
 > iOS devices with iOS 11+ and most of the new generation Android devices should have QR scanners built-in with their camera.
 
-![](/img/iOS QR Camera.jpg)
+![](/img/iOS_QR_Camera.jpg)
 
 ***If your device does not have a built-in QR scanner***, download an app from the Playstore/Appstore - we recommend and use the **“Barcode Scanner”** app, but any of the offered options should be OK.
 
@@ -49,7 +49,7 @@ You should see our profile under the “Enterprise app” section. Tap it and a 
 
 > The easiest way to start installation is to tap the notification when the .apk file is downloaded.
 
-![](/img/install apk.jpg)
+![](/img/install_apk.jpg)
 
 * If the notification is dismissed, open the “Download” folder on the device and tap the .apk found there to start the installation.
 

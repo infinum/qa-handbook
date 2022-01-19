@@ -29,7 +29,7 @@ Here's how to get it up and running:
 
 For detailed information on how to set up the app use [this handy guide](https://github.com/zaproxy/zaproxy/releases/download/2.7.0/ZAPGettingStartedGuide-2.7.pdf)  
 
-![](/img/OWASP ZAP 2.7.0.png)
+![](/img/OWASP_ZAP_2-7-0.png)
 OWASP ZAP 2.7.0
 
 ## Objection
@@ -87,11 +87,11 @@ To use QARK with some app you need to download the app package Path to app file 
 
 `qark --apk path`
 
-![](/img/QARK apk path .png)
+![](/img/QARK_apk_path.png)
 
 After the decompiling is finished use the generated path to find the report. To do this just copy the path from terminal and paste it to the finder/go/go to folder
 
-![](/img/report path qark.png)
+![](/img/report_path_qark.png)
 
 You can send report to the developer along with the decompiled build you can find on your machine under:
 
