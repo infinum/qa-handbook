@@ -142,6 +142,16 @@ You can use the `chmod` (short for _change mode_) command to change the access p
 | --- | --- |
 | `echo $$` | Get process ID (PID) of the current terminal / tab |
 
+### Grep
+`grep` is a command used for searching plain text.
+It can be used on its own or in combination with other commands, separated by the vertical pipe symbol (`|`).
+
+| Command | Description |
+| --- | --- |
+| `grep "some text" file-name.txt`  | Searches for "some text" in the specified file |
+| `ps -ax | grep Appium` | Display processes that contain Appium |
+
+[For more on the `grep` command](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
 
 ### List files and folders
 | Command | Description |
@@ -170,10 +180,7 @@ You can use the `chmod` (short for _change mode_) command to change the access p
 ### Process status
 | Command | Description |
 | --- | --- |
-| `ps -ax `                | Displays your and other users' processes|
-| `ps -ax &#124; grep Appium`  | Display processes that contain Appium|
-
-[For more on the `grep` command](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
+| `ps -ax ` | Displays your and other users' processes|
 
 
 ### Print Working Directory
