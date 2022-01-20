@@ -149,7 +149,7 @@ It can be used on its own or in combination with other commands, separated by th
 | Command | Description |
 | --- | --- |
 | `grep "some text" file-name.txt`  | Searches for "some text" in the specified file |
-| `ps -ax | grep Appium` | Display processes that contain Appium |
+| `ps -ax \| grep Appium` | Display processes that contain Appium |
 
 [For more on the `grep` command](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
 
