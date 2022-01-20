@@ -171,7 +171,7 @@ You can use the `chmod` (short for _change mode_) command to change the access p
 | Command | Description |
 | --- | --- |
 | `ps -ax `                | Displays your and other users' processes|
-| `ps -ax \| grep Appium`  | Display processes that contain Appium|
+| `ps -ax &#124; grep Appium`  | Display processes that contain Appium|
 
 [For more on the `grep` command](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
 
