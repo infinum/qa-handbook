@@ -115,10 +115,10 @@ The following list of commands works in the Terminal but might not work in other
 ### Directory / Folder navigation
 
 | Command | Description |
-| --- | --- |
-| `cd Documents/Code` | Position to a directory, e.g. Code folder inside the Documents folder|
-| `cd ..`             | Go back to the directory above the current one|
-| `cd`                | Go back to the root (Home) directory|
+| :--- | :--- |
+| **cd Documents/Code** | Position to a directory, e.g. Code folder inside the Documents folder|
+| **cd ..**             | Go back to the directory above the current one|
+| **cd**                | Go back to the root (Home) directory|
 
 
 ### Permissions
@@ -131,17 +131,17 @@ There are three basic file system permissions (also known as _modes_) on Unix an
 You can use the `chmod` (short for _change mode_) command to change the access permissions for a system file or folder.
 
 | Command | Description |
-| --- | --- |
-| `man chmod`                 | Open chmod manual in the Terminal |
-| `chmod +x /path/to/file`    | Add the executable permission for the file |
-| `chmod +rwx /path/to/file`  | Add the permissions for the file |
-| `chmod -rwx /path/to/file`  | Remove the permissions for the file |
+| :--- | :--- |
+| **man chmod**                 | Open chmod manual in the Terminal |
+| **chmod +x /path/to/file**    | Add the executable permission for the file |
+| **chmod +rwx /path/to/file**  | Add the permissions for the file |
+| **chmod -rwx /path/to/file**  | Remove the permissions for the file |
 
 
 ### Echo
 | Command | Description |
-| --- | --- |
-| `echo $$` | Get process ID (PID) of the current terminal / tab |
+| :--- | :--- |
+| **echo $$** | Get process ID (PID) of the current terminal / tab |
 
 ### Grep
 `grep` is a command used for searching plain text.
@@ -156,60 +156,60 @@ It can be used on its own or in combination with other commands, separated by th
 
 ### List files and folders
 | Command | Description |
-| --- | --- |
-| `ls`    | List all visible  files and folders in the current folder|
-| `ls -a` | List all visible and invisible files and folders in the current folder|
-| `ls -l` | List all visible files and folders in the current folder with permissions|
+| :--- | :--- |
+| **ls**    | List all visible  files and folders in the current folder|
+| **ls -a** | List all visible and invisible files and folders in the current folder|
+| **ls -l** | List all visible files and folders in the current folder with permissions|
 
 
 ### List of open files
 | Command | Description |
-| --- | --- |
-| `lsof`           | List all open files and processes |
-| `lsof -n -i4TCP` | Check which software uses which port|
-| `lsof -p 66460`  | List open files and processes with PID 66460|
+| :--- | :--- |
+| **lsof**           | List all open files and processes |
+| **lsof -n -i4TCP** | Check which software uses which port|
+| **lsof -p 66460**  | List open files and processes with PID 66460|
 
 
 ### Open file / directory
 | Command | Description |
-| --- | --- |
-| `open Documents`               | Open a directory, e.g. Documents|
-| `open Documents/file_name.txt` | Open a file inside Documents directory|
-| `open ~/.zshrc`                | Open zsh resource file|
+| :--- | :--- |
+| **open Documents**               | Open a directory, e.g. Documents|
+| **open Documents/file_name.txt** | Open a file inside Documents directory|
+| **open ~/.zshrc**                | Open zsh resource file|
 
 
 ### Process status
 | Command | Description |
-| --- | --- |
-| `ps -ax ` | Displays your and other users' processes|
+| :--- | :--- |
+| **ps -ax** | Displays your and other users' processes|
 
 
 ### Print Working Directory
 | Command | Description |
-| --- | --- |
-| `pwd` | Display the path to the current / working directory|
+| :--- | :--- |
+| **pwd** | Display the path to the current / working directory|
 
 
 ### Close / Quit terminal
 | Command | Description |
-| --- | --- |
-| `exit`                        | Quit Terminal |
-| `python some_script.py; exit` | Quit Terminal right after running a command |
+| :--- | :--- |
+| **exit**                        | Quit Terminal |
+| **python some_script.py; exit** | Quit Terminal right after running a command |
 
 
 ### System info
 | Command | Description |
-| --- | --- |
-| `id -un`                            | Get system name |
-| `hostname`                          | Get hostname |
-| `system_profiler`                   | Display system information (long version) |
-| `system_profiler -detailLevel mini` | Display system information (short version)|
+| :--- | :--- |
+| **id -un**                            | Get system name |
+| **hostname**                          | Get hostname |
+| **system_profiler**                   | Display system information (long version) |
+| **system_profiler -detailLevel mini** | Display system information (short version)|
 
 
 ###  Networking
 | Command | Description |
-| --- | --- |
-| `arp -a` | View a list of all active devices on a local network|
+| :--- | :--- |
+| **arp -a** | View a list of all active devices on a local network|
 
 
 
