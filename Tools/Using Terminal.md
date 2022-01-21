@@ -131,6 +131,7 @@ There are three basic file system permissions (also known as _modes_) on Unix an
 
 You can use the `chmod` (short for _change mode_) command to change the access permissions for a system file or folder.
 
+<table align="left">
 
 | Command | Description |
 | --- | --- |
@@ -138,6 +139,7 @@ You can use the `chmod` (short for _change mode_) command to change the access p
 | `chmod +x /path/to/file`    | Add the executable permission for the file |
 | `chmod +rwx /path/to/file`  | Add the permissions for the file |
 | `chmod -rwx /path/to/file`  | Remove the permissions for the file |
+</table>
 
 
 ### Echo
