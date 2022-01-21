@@ -113,15 +113,18 @@ For more details on arguments, read this [blog post](https://betterdev.blog/comm
 The following list of commands works in the Terminal but might not work in other similar apps.
 
 ### Directory / Folder navigation
+<table align="left">
+
 | Command | Description |
 | --- | --- |
 | `cd Documents/Code` | Position to a directory, e.g. Code folder inside the Documents folder|
 | `cd ..`             | Go back to the directory above the current one|
 | `cd`                | Go back to the root (Home) directory|
-
+</table>
 
 ### Permissions
 There are three basic file system permissions (also known as _modes_) on Unix and Unix-like systems:
+
  - read (r)
  - write (w)
  - execute (x)
@@ -149,7 +152,7 @@ It can be used on its own or in combination with other commands, separated by th
 | Command | Description |
 | --- | --- |
 | `grep "some text" file-name.txt`  | Searches for "some text" in the specified file |
-| `ps -ax \| grep Appium` | Display processes that contain Appium |
+| `ps -ax &#124; grep Appium` | Display processes that contain Appium |
 
 [For more on the `grep` command](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
 
