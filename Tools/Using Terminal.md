@@ -116,9 +116,9 @@ The following list of commands works in the Terminal but might not work in other
 
 | Command | Description |
 | :--- | :--- |
-| **cd Documents/Code** | Position to a directory, e.g. Code folder inside the Documents folder|
-| **cd ..**             | Go back to the directory above the current one|
-| **cd**                | Go back to the root (Home) directory|
+| **cd path/to/directory** | Position to a directory |
+| **cd ..**             | Go back to the directory above the current one |
+| **cd**                | Go back to the root (Home) directory |
 
 
 ### Permissions
@@ -149,7 +149,7 @@ It can be used on its own or in combination with other commands, separated by th
 
 | Command | Description |
 | :--- | :--- |
-| **grep "some text" file-name.txt**  | Searches for "some text" in the specified file |
+| **grep "some text" file_name.txt**  | Searches for "some text" in the specified file |
 | **ps -ax &#124; grep Appium** | Display processes that contain Appium |
 
 [For more on the `grep` command](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
@@ -166,15 +166,15 @@ It can be used on its own or in combination with other commands, separated by th
 | Command | Description |
 | :--- | :--- |
 | **lsof**           | List all open files and processes |
-| **lsof -n -i4TCP** | Check which software uses which port|
+| **lsof -i 6**      | List open files that use IPv6 protocol|
 | **lsof -p 66460**  | List open files and processes with PID 66460|
 
 
 ### Open file / directory
 | Command | Description |
 | :--- | :--- |
-| **open Documents**               | Open a directory, e.g. Documents|
-| **open Documents/file_name.txt** | Open a file inside Documents directory|
+| **open directory_name**           | Open a directory |
+| **open directory_name/file_name.txt** | Open a file |
 | **open ~/.zshrc**                | Open zsh resource file|
 
 
