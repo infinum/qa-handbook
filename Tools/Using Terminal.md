@@ -113,14 +113,13 @@ For more details on arguments, read this [blog post](https://betterdev.blog/comm
 The following list of commands works in the Terminal but might not work in other similar apps.
 
 ### Directory / Folder navigation
-<table align="left">
 
 | Command | Description |
 | --- | --- |
 | `cd Documents/Code` | Position to a directory, e.g. Code folder inside the Documents folder|
 | `cd ..`             | Go back to the directory above the current one|
 | `cd`                | Go back to the root (Home) directory|
-</table>
+
 
 ### Permissions
 There are three basic file system permissions (also known as _modes_) on Unix and Unix-like systems:
@@ -131,15 +130,12 @@ There are three basic file system permissions (also known as _modes_) on Unix an
 
 You can use the `chmod` (short for _change mode_) command to change the access permissions for a system file or folder.
 
-<table align="left">
-
 | Command | Description |
 | --- | --- |
 | `man chmod`                 | Open chmod manual in the Terminal |
 | `chmod +x /path/to/file`    | Add the executable permission for the file |
 | `chmod +rwx /path/to/file`  | Add the permissions for the file |
 | `chmod -rwx /path/to/file`  | Remove the permissions for the file |
-</table>
 
 
 ### Echo
@@ -151,10 +147,8 @@ You can use the `chmod` (short for _change mode_) command to change the access p
 `grep` is a command used for searching plain text.
 It can be used on its own or in combination with other commands, separated by the vertical pipe symbol (`|`).
 
-| Command | Description |
-| --- | --- |
 | `grep "some text" file-name.txt`  | Searches for "some text" in the specified file |
-| `ps -ax &#124; grep Appium` | Display processes that contain Appium |
+| `ps -ax | grep Appium` | Display processes that contain Appium |
 
 [For more on the `grep` command](https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/)
 
