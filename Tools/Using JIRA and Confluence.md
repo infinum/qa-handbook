@@ -45,7 +45,7 @@ For every issue, there is a priority that can be set
 
 To create a new issue (task) you can do it in two ways clicking on the "create" button in the JIRA topbar or directly in the board view by clicking on the + icon.
 
-> **Examples**:
+#### Examples
   
 ![](/img/Slika_2.png)
 ![](/img/Slika_3.png)
