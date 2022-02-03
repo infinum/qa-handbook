@@ -85,7 +85,7 @@ Here's one possible way of classifying them according to severity and priority:
 - Critical: Prevents a function from being used, no work-around being available.
 - Major: Prevents a function from being used, but a work-around is possible.
 - Normal: A problem making a function difficult to use and no special work-around is required.
-- Cosmetic: Small issue that does not significanly impact the product.
+- Cosmetic: Small issue that does not significantly impact the product.
 
 **Priority:**
 

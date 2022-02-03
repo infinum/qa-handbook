@@ -13,7 +13,7 @@
 
 The project in TryOutApps has to be set to **“Public”**. If it is not, the developers should create a new project that will be made public.
 
-- This should be checked with the client, in case the client does not wish the project to be made public, a separate build environment should be created that will be sent via email or other means. For example, if the dev team works on a Staging build, the client or others should receive a Development, UAT or other environment builds.
+- This should be checked with the client, in case the client does not wish the project to be made public, a separate build environment should be created that will be sent via email or other means. For example, if the dev team works on a Staging build, the client or others should receive a Development, UAT, or other environment builds.
 
 ### Basic steps for iOS and Android
 
@@ -25,7 +25,7 @@ If you see **“You are not allowed to visit this page”** at the top of the sc
 	
 > iOS devices with iOS 11+ and most of the new generation Android devices should have QR scanners built-in with their camera.
 
-![](/img/iOS QR Camera.jpg)
+<span style="display:block; margin-left:auto; margin-right:auto; width:35%;">![](/img/iOS_QR_Camera.jpg)</span>
 
 ***If your device does not have a built-in QR scanner***, download an app from the Playstore/Appstore - we recommend and use the **“Barcode Scanner”** app, but any of the offered options should be OK.
 
@@ -35,7 +35,7 @@ If you see **“You are not allowed to visit this page”** at the top of the sc
 
 * Tap on the “Install” button **(installation will immediately start on the device)**
 
-![](/img/Installbutton.jpg)
+<span style="display:block; margin-left:auto; margin-right:auto; width:35%;">![](/img/Installbutton.jpg)</span>
 
 Starting the app on the device you will be prompted to trust the developer of the app once the app has been downloaded. On your device do the following:
 
@@ -49,11 +49,11 @@ You should see our profile under the “Enterprise app” section. Tap it and a 
 
 > The easiest way to start installation is to tap the notification when the .apk file is downloaded.
 
-![](/img/install apk.jpg)
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:35%;">![](/img/install_apk.jpg)</span>
 
 * If the notification is dismissed, open the “Download” folder on the device and tap the .apk found there to start the installation.
 
-On Android devices you will need to "trust unknown sources" before installing apps from TryOutApps. 
+On Android devices, you will need to "trust unknown sources" before installing apps from TryOutApps. 
 
 > Open Settings - Security and check the “Unknown sources” and tap on OK if prompted.
 
@@ -63,4 +63,4 @@ If you are prompted with **“Blocked by Play Protect”** popup tap on “Insta
 
 ![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
 
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2007-11-12): 11-12-07 by Scott Adams*
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2021-12-09): 11-12-07 by Scott Adams*

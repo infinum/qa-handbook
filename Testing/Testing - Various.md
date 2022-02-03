@@ -30,7 +30,7 @@ This potentially infinite list is just some minor testing tidbits we gathered th
 - <a href=#submitting-a-form-with-missing-data>Submitting a form with missing data</a>
 - <a href=#switching-between-mobile-data-and-wifi>Switching between mobile data and WiFi</a>
 - <a href=#taking-screenshots-and-screen-recordings>Taking screenshots and screen recordings</a>
-- <a href=#testing-on-a-slow-connection>Testing on a slow connection</a>
+- <a href=#testing-on-a-slow-internet-connection>Testing on a slow internet connection</a>
 - <a href=#testing-purchases>Testing purchases</a>
 - <a href=#the-floating-keyboard>The floating keyboard</a>
 - <a href=#try-some-crazy-strings>Try some crazy strings</a>
@@ -136,9 +136,6 @@ Log in and put the app into the background. Come back after the token expires.
 ### Several screen sizes / aspect ratios
 A good habit to get into is testing the app on several screen sizes. Some common aspect ratios and resolutions can be found on [DeviceAtlas](https://deviceatlas.com/blog/most-used-smartphone-screen-resolutions).
 
-### Slow internet connection
-Try accessing screens with a very slow internet connection. See if the calls time out, and if they do not, can the user navigate away from screens.
-
 ### Submitting a form with missing data
 If you have to enter a username and password, enter just a username and submit. Nothing happened? That's bad UX. You should know what's missing.
 
@@ -148,8 +145,10 @@ Try switching between mobile data and WiFi while using an app. If the switches b
 ### Taking screenshots and screen recordings
 Some mobile apps don't allow to take screenshots or screen recordings because they contain sensitive data (e.g. mobile banking apps contain account info and personal data). If taking screenshots and screen recordings is disabled, check that it is not possible to make them using built-in or third-party apps. Additionally, you can check that the app's screen is blurred when viewing the app in the active/recent apps list.
 
-### Testing on a slow connection
-You can use our own slow network in the office:
+### Testing on a slow internet connection
+Try accessing screens with a very slow internet connection. See if the calls time out, and if they do not, can the user navigate away from screens.
+
+You can use our own slow network in the office: QA-Kornjaca
 
 On iOS, you can also enable network throttling in Developer settings on the device itself and skip our Kornjaca.
 

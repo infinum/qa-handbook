@@ -2,7 +2,7 @@
 
 ## General
 
-This section is just a short primer on UI test automation. More will be covered in the following sections on [Web test automation](https://infinum.com/handbook/books/qa/tools/ui-automation-web) and [Mobile test automation](https://infinum.com/handbook/books/qa/tools/ui-automation-mobile).
+This section is just a short primer on UI test automation. More will be covered in the following sections on [Web test automation](https://infinum.com/handbook/qa/automation/ui-automation-web-selenium-and-qawa) and [Mobile test automation](https://infinum.com/handbook/qa/automation/ui-automation-mobile).
 
 Test automation is done on several levels represented by the test pyramid, but for the purposes of this article, we are concerned with UI test automation.
 

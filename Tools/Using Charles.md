@@ -69,7 +69,7 @@ If you want to rewrite requests and responses automatically, you can use [Charle
 
 ## Exporting traffic to a HAR file
 
-You can multi-select several requests and export them as HAR files, just make sure to select the HTTP Archive (.har) format
+You can multi-select several requests and export them as HAR files, just make sure to select the HTTP Archive (.har) format.
 
 Now you will have a file that is basically a snapshot of the all the requests you’ve made and all the responses received.
 

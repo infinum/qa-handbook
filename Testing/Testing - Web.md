@@ -143,10 +143,12 @@ As cookies can play an important part in how smoothly a website functions, it’
 These are some of the test cases to be considered while testing website Cookies.
 
 ### Testing web apps on several devices simultaneously
+
 Check out [Ghostlab](https://www.vanamco.com/ghostlab/).
 
 ### Testing web app UI behaviour with content amount variations
-When you want to quickly change the content on a page (i.e. to check what the page would look like if there is more/less text, how buttons would look like with longer/shorter labels etc.), you can use the `document.designMode='on'` command in the browers' console:
+
+When you want to quickly change the content on a page (i.e. to check what the page would look like if there is more/less text, how buttons would look like with longer/shorter labels etc.), you can use the `document.designMode='on'` command in the browsers' console:
 
 1. open the console
 2. enter `document.designMode='on'`
@@ -156,4 +158,4 @@ The `designMode` should be enabled and you can edit the content.
 
 ---
 
-![](/img/dilbert project.gif)
+![](/img/dilbert_project.gif)
