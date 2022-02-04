@@ -53,11 +53,9 @@ Next, click on **Application** --> **Service Workers** --> select **Offline**
 
 **Mozilla Firefox**
 
-Go to Firefox **Settings** --> **Web Developer** --> **Work Offline** 
+Go to Firefox **File** --> **Work Offline** 
 
-![](/img/firefox_1.png)
-
-![](/img/firefox_2_3_4.png)
+![](/img/firefox_offline.png)
 
 Now, why would you want to simulate offline state in Chrome or any other browser? 
 
