@@ -49,13 +49,13 @@ First thing you have to is open the developer console window. On Windows you can
 
 Next, click on **Application** --> **Service Workers** --> select **Offline**
 
-![](/img/Offline_mode.png)
+<span style="border: 1px solid #e0e0e0">![](/img/Offline_mode.png)</span>
 
 **Mozilla Firefox**
 
 Go to Firefox **File** --> **Work Offline** 
 
-![](/img/firefox_offline.png)
+<span style="border: 1px solid #e0e0e0">![](/img/firefox_offline.png)</span>
 
 Now, why would you want to simulate offline state in Chrome or any other browser? 
 
