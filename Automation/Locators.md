@@ -3,33 +3,34 @@
 ## Which locator to use?
 
 It seems pretty straightforward: "simply copy the locator and put it into your code".
-Just in case you try to find the best locator ever and decide to go online to search for some useful information.
-
-Firstly, you might come across blog posts and articles naming different locators without saying much about them.
-Secondly, you read about people having different opinions. For some, ID is the best approach, others prefer Accessibility ID, and then there are those that only use XPath.
-Thirdly, you hear people arguing about which one is faster, as if difference is measured in days and not milliseconds.
-
-However, there is more to think about when choosing the right locator, and it doesn't matter whether you like the looks of it or whether is it slightly faster the other ones.
+Just in case, you decide to go online to search for some useful information in hope to find the best locator strategy ever.
+First, you come across blog posts and articles naming different locators without saying much about them.
+Then, you read about people having different opinions. For some, ID is the best approach, others prefer Accessibility ID, and then there are those that only use XPath.
+Finally, you hear people arguing about which one is faster, as if difference is measured in days and not milliseconds.
 
 Which one to choose?
 Generally speaking, just go with the most reliable one. 
 If it works 100% of the time (always returns the correct element), is less prone to change (you don't need to update it often or at all), and does not break or slow down your tests drastically, that's the one.
 
+However, there is more to think about when choosing the right locator, and it doesn't matter whether you like the looks of it or whether is it slightly faster the other ones.
+Often you realise the issue when you come across it.
 
 ## A bit more about locators
+
 ### ID
 
-ID will often be unique which makes it a great choice. It is often used by developers and might already be present in many places.
+ID will often be unique which makes it a great choice. It is often used by developers and might already be present on most elements.
 
-However, it might not always be unique. If we are talking about Appium (mobile), ID is `resource-id` (android) / `name` (iOS).
-In a list, all elements might have the same ID. In that case, you will have to iterate over the list to find the correct element. Or try using another locator which won't require additional code.
+But it might not always be unique. 
+In a list of items, all elements might have the same ID (that is, `resource-id` in Android, `name` in iOS). 
+In that case, you will have to iterate over the list to find the correct element. Or try using another locator which won't require additional code, such as Accessibility ID.
 
-TODO ADD EXAMPLE
 
 ### Accessibility ID
-Sometimes you might come across an information how the Accessibility ID is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
-However, what is often not mentioned is that the Accessibility ID is just a string, susceptible to change. 
-This can especially become an issue if you have a lot of hardcoded locators in your code.
+
+You might come across an information how the Accessibility ID is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
+However, what is often not mentioned is that the Accessibility ID is just a string, susceptible to change. If the UI and acompanied string change, you will also have to update your locators.
+This can especially become cumbersome if the changes often happen and if you only rely on that one locator strategy.
 
 Where the Accessibility ID comes in very handy are lists of elements. If you have a list of movies and what to get the specific one, you can locate it through its title, without having to write loops yourself.
 
@@ -44,25 +45,58 @@ Where the Accessibility ID comes in very handy are lists of elements. If you hav
 
 Accessibility ID is very useful, but it is above all used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation.
 
-### XPath and CSS
-- zajedno kako bi ukratko opisao da moraju lijepo izgledati i biti jasni
-- odvoji ako bude potrebno
+
+### XPath
+
+XPath is very useful when you don't have ID nor Accessibility ID in the app. Or when it would take too long for the developers to add them, and you really want to finish your test.
+There is also nothing wrong with using XPath as your first choice.
+
+What you really want to be careful about is making it difficult to understand, unnecessarily long, and simply unmaintainable. 
+Another potential problem with XPath is that it might break for even a minor change in the app.
+
+Bad:
+
+`//table[contains(@class , 'table-striped')]/descendant::td[7]`
+
+Very bad:
+
+`/html/body/div[2]/div[1]/h4[1]/html[1]/body[1]/div[2]/div[1]/div[1]/h4[1]`
 
 
-List of elements
+Don't go blindly copy-pasting the locator from an inspector or DevTools. Learn a thing or two about writing good XPath and write your own.
 
-def get_profile_description_by_description(self, profile_description):
-    list_of_descriptions = self.list_of_profile_description
+Better:
 
-    for description in list_of_descriptions:
-        if description.text == profile_description:
-            index = list_of_descriptions.index(description)
-            return self.list_of_profile_description[index]
+`//input[@id='new-todo']`
 
-    return None
+Read [Selenium locators - XPath](https://infinum.com/handbook/qa/automation/selenium-locators-xpath) for more details.
+
+
+### CSS selector
+
+For CSS selectors the similar points apply as for the XPath.
+You don't want just to copy-paste them from the DevTools and you don't want to be too specific.
+Tweak them a bit to make them more readable and maintainable.
+
+Bad:
+
+`#container .dashboard-advanced-reports .dashboard-advanced-reports-description .dashboard-advanced-reports-title`
+
+Better:
+
+`#login-form .sign-in-button`
 
 
 ## Naming differences
+
+When talking about mobile, there are some differences to take into account.
+
+If we consider Appium:
+- ID in Appium is `resource-id` on Android and `name` on iOS.
+- Accessibility ID in Appium is `content-desc` on Android and `accessibility-id` on iOS.
+
+If you don't see the ID / Accessibility ID for your iOS app in Appium, consider using the XCode Accessibility Inspector.
+There you will see the Accessibility ID under the **Identifier** property.
 
 
 | Appium | Android | iOS |
@@ -70,18 +104,27 @@ def get_profile_description_by_description(self, profile_description):
 | Accessibility ID | content-desc | accessibility-id |
 | ID | resource-id | name |
 
-If you open XCode Accessibility Inspector
- - on the Inspector the a11y ID will be under the **Identifier** property
 
+## Requesting new / additional IDs
 
-### Requesting new / additional locators
-When adding new IDs or requesting the developers to add them, there are a few things to consider.
+When adding new IDs, there are a few things to consider.
+
 On which element do you want to have the ID added?
 Will the developer be able to add the ID to the desired element?
-    - it gets tricky, for example, when adding an ID to a LayoutView which holds multiple text elements
-    - you might not be happy with the result and the ID will have to be updated (moved to another element)
+How should the ID looks like?
+
+It gets tricky, for example, when adding an ID to a LayoutView which holds multiple text elements. The result might not be what you expected.
+To avoid such issues, ask a developer to add a few as an example to see how it looks like.
+
+### Start small / Make a plan
+
+When adding new IDs, don't add all at once. You might realise they were put in the wrong place or end up not using them.
+
+Plan out your work. 
+You could divide the sections of the app you want to cover per sprint. For example, in Sprint 1 you want to cover feature-1. Then in Sprint 2 you want to focus on feature-2.
+
+With that figured out, open a few tasks for developers asking for IDs needed in those features. Creating smaller tasks will make the process of adding and verifying the IDs are in the app much faster.
 
 ---
 
-
-
+![dilbert_automation_locators.png](/img/dilbert_automation_locators.png)
