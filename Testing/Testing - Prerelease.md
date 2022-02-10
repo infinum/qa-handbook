@@ -46,7 +46,23 @@ Along with the time estimate, you can include some basic info in the task:
 - release version/platform/environment you are going to test on
 - link to the test execution in TestRail, X-Ray, or any other tool that you use
 
-Besides regression tests, you can open tasks for smoke and other types of tests as well. Especially when they take a considerable amount of time to be finished.
+Besides regression tests, you can open tasks for smoke and other types of tests as well. Especially when they take a considerable amount of time to be finished. Also, there is one more practice to use before or after the regression run and that is a testing session that you could do with your project teammates.  
+
+### Testing session
+
+The testing session is a process that you can integrate into your process of releasing an app or a web page. The idea is to create the event with your colleagues on the project you are working on. You invite all the team members; developers, designers, and your project manager. Sometimes if the clients are up for it, you can invite them as well.
+
+In the testing session, you all gather to test the application by following the test plan a tester created. 
+
+The software tester should create a test plan for all the participants of the testing session.
+
+The test plan should include:
+
+- General information and preconditions: builds, link to design (Figma, Zeplin…), link to the page, etc.
+- Test plan for each of the participants: what to test, which device to use/browser
+- A place where they can report bugs that they find
+
+You can find the template for the testing session here. Feel free to copy it and use it for your testing session on your project. 
 
 
 ### Testing, testing, and more testing...
