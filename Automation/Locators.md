@@ -92,6 +92,7 @@ Better:
 When talking about mobile, there are some differences to take into account.
 
 If we consider Appium:
+
 - the ID in Appium is `resource-id` on Android and `name` on iOS.
 - Accessibility ID in Appium is `content-desc` on Android and `accessibility-id` on iOS.
 
@@ -118,7 +119,7 @@ To avoid such issues, ask a developer to add a few as an example to see how it l
 
 ### Plan your work
 
-When requesting new IDs, don't request all at once. You might realise they were put in the wrong place or end up not using them. 
+When requesting new IDs, don't request a bunch from different parts of the app all at once. You might realise they were put in the wrong place or end up not using them. It will also take too much time to add all of them, and some might be left out. 
 
 Plan out your work. You could divide the sections of the app you want to cover per sprint. For example, in Sprint 1 you want to cover feature-1. Then in Sprint 2 you want to focus on feature-2.
 With that figured out, open a few tasks for developers asking for IDs needed in those features. Creating more specific tasks will make the process of adding IDs and verifying they are in the app much faster.
@@ -139,5 +140,6 @@ Of course, it won't be possible to have the same locator values for every elemen
 
 
 ---
+
 
 ![dilbert_automation_locators.png](/img/dilbert_automation_locators.png)
