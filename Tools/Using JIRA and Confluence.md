@@ -2,13 +2,13 @@
 
 ## Atlassian JIRA
 
-Is an issue tracking, project management, and bug tracking tool that allows agile framework for management. 
+Jira is an issue tracking, project management, and bug tracking tool that is compatible with agile methodologies for organizing software development.
 
 ![](/img/Slika_1.png)
 
-The product name is a truncation of Gojira, the Japanese word for Godzilla. The name originated from a nickname Atlassian developers used to refer to Bugzilla, which was previously used internally for bug-tracking. It's pronounced Jira (/ˈdʒiːrə/ JEE-ra). Source - [Wikipedia](https://en.wikipedia.org/wiki/Jira_(software))
+The product name is a truncation of Gojira, the Japanese word for Godzilla. The name originated from a nickname Atlassian developers used to refer to Bugzilla, which was previously used internally for bug tracking. It's pronounced Jira (/ˈdʒiːrə/ JEE-ra). Source - [Wikipedia](https://en.wikipedia.org/wiki/Jira_(software))
 
-JIRA uses different terminology than Productive, let's see some of the terms that are used in JIRA. 
+Jira uses different terminology than Productive, let's have a look at of the terms that are used in Jira. 
 
 ## Issues 
 
@@ -20,14 +20,14 @@ All work items are called Issues in Jira and are segmented into:
 * Subtask 
 * Bug 
 
-> Quick tip: you can quickly start creating an Issue by pressing “c” on your keyboard or “+” in the Jira sidebar menu
+> Quick tip: you can quickly start creating an Issue by pressing “c” on your keyboard or “+” in the Jira sidebar menu.
 
-The main difference that could cause confusion and raised eyebrows when coming from Productive to JIRA is that tasks are now Issues!. All other terminology is the same
+The main difference that could cause confusion and raised eyebrows when switching from Productive to JIRA is that tasks are now Issues! All other terminology is the same.
 
 ### Issue types & priority
 
-* **Epic >** is a big user story that needs to be broken down into smaller stories
-*  **User story >** is the smallest unit of work that needs to be done
+* **Epic >** is usually a collection of user stories
+* **User story >** is the smallest unit of work in an agile framework expressed from the software user's perspective
 * **Task	>** represents work that needs to be done
 * **Sub-task >** is a piece of work that is required for a task
 * **Bug >** is a problem that impairs or prevents the functions of a product
@@ -40,10 +40,9 @@ For every issue, there is a priority that can be set
 * **Low	>** Indicates that this issue has a relatively minor impact
 * **Lowest >** Lowest priority
 
+### Creating a new Issue
 
-### Creating a new ISSUE
-
-To create a new issue (task) you can do it in two ways clicking on the "create" button in the JIRA topbar or directly in the board view by clicking on the + icon.
+You can create a new Issue in two ways - by clicking on the "create" button or directly in the board view by clicking on the + icon.
 
 > **Examples**:
   
@@ -51,11 +50,11 @@ To create a new issue (task) you can do it in two ways clicking on the "create" 
 ![](/img/Slika_3.png)
 
 
-> All issues have the status they can be set to, issue statuses depend on the project and how the main board is configured. For example, let's use this project board: 
+> All Issues have a status they can be set to. Issue statuses can be configured per projects. For example, let's use this project board: 
 
 ![](/img/Slika_4.png)
 
-> Every project board is configured differently, most of the time special fields in the new issue creator will have sprint and fix version fields. 
+> Every project board is configured differently, most of the time special fields in the new Issue creator will have sprint and fix version fields. 
 
 **Sprint** — *also known as an iteration* — is used to determine which current sprint issue is tied to. It is a short period in which the development team implements and delivers a discrete and potentially shippable application increment, e.g. a working milestone version. 
 
@@ -70,7 +69,7 @@ To create a new issue (task) you can do it in two ways clicking on the "create" 
 ![](/img/Slika_5.png)
 
 ## Backlog
-The backlog is the global "to-do-list" for the upcoming releases. A backlog is usually composed of three key hierarchical pieces:
+The backlog is the global "to-do list" for upcoming releases. A backlog is usually composed of three key hierarchical pieces:
 
 * **Initiatives** - Higher-level business priorities or big projects potentially spanning multiple teams
 * **Epics** - Once the higher-level priorities are settled, the initiatives break down into large pieces of work, which consist of multiple stories
@@ -78,7 +77,7 @@ The backlog is the global "to-do-list" for the upcoming releases. A backlog is u
 
 ## Active sprint 
 
-The Active sprints display the issues that the team is currently working on. You can create and update issues, and drag and drop issues to transition them through a workflow in the scrum board.
+The Active sprints display the issues that the team is currently working on. You can create and update Issues, and drag and drop them to transition them through a workflow in the scrum board.
 
 > How the new sprint is created: 
 > 
@@ -88,16 +87,16 @@ The Active sprints display the issues that the team is currently working on. You
 
 ## Your work 
 
-This is the part of JIRA where all you ever worked on is being documented, here you can find things you worked on, things you viewed on the project, everything that is and was assigned to you, and things you have marked with a star.
+This is the part of Jira where all you ever worked on is being documented, here you can find things you worked on, things you viewed on the project, everything that was assigned to you, and things you have marked with a star.
 
 > To access **"your work"** just click on it on the top tray menu of the JIRA. 
 > 
 > ![](/img/Slika_6.png)
 
 ## Reports
-The reports in Portfolio for Jira give you a graphical overview of the different aspects of your plan.
+Reports give you a graphical overview of the different aspects of your plan.
 
-The most important ones for us are **burndown chart** and **velocity chart**.
+The most important ones for us are the **burndown chart** and the **velocity chart**.
 
 ### Burndown chart
 
@@ -113,7 +112,7 @@ A burndown chart shows the amount of work that has been completed in an epic or 
 
 ### Velocity chart
 
-The Velocity Chart shows the amount of value delivered in each sprint, enabling the team to predict the amount of work they can get done in future sprints. It is useful during sprint planning meetings, to help decide how much work can feasibly be committed to.
+The velocity chart shows the amount of value delivered in each sprint, enabling the team to predict the amount of work they can get done in future sprints. It is useful during sprint planning meetings, to help decide how much work can feasibly be committed to.
 
 **Viewing the Velocity Chart**
 
@@ -130,7 +129,7 @@ JIRA board's filter is an issue filter (a JQL query) that specifies which issues
 > JQL stands for Jira Query Language and is the most powerful and flexible way to search for your issues in Jira. JQL is for everyone: developers, testers, project managers, and business users.
 
 
-Since filtering is rather complex in a way that a lot can be done with it, for detailed instructions please refer [to this link](https://support.atlassian.com/jira-software-cloud/docs/configure-filters/) and for JQL explanation on [this link.](https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14)
+Since filtering is rather complex, refer [to this link](https://support.atlassian.com/jira-software-cloud/docs/configure-filters/) for more information on how to configure filtures, and [this link](https://www.atlassian.com/blog/jira-software/jql-the-most-flexible-way-to-search-jira-14) for more details on JQL itself.
 
 ## Releases and versions
 
@@ -138,14 +137,13 @@ Releases represent points in time for the project. They can be used to schedule 
 
 > In Jira Software, each release is called a version! A version is a set of features and fixes released together as a single update to your product. 
 
-Assigning issues to versions help to plan the order in which new features (stories) for the application will be released to users. In JIRA, you can view issues according to which version they belong to. This helps plan upcoming versions of the application, which may span multiple sprints.
+Assigning issues to versions help to plan the order in which new features (stories) for the application will be released to users. In Jira, you can view issues according to which version they belong to. This helps plan upcoming versions of the application, which may span multiple sprints.
 
 ## Boards
 
-* Boards simply display all active work items 
-* The main board: "Your project board" in this case "**TP board**"
+Boards simply display all active work items. 
 
-The board displays: Active sprint, this is the view you’ll use most of the time spent in JIRA
+You'll probably spend most of your time looking at the active sprint: 
 
 ![](/img/Slika_7.png)
 
@@ -155,7 +153,7 @@ The board displays: Active sprint, this is the view you’ll use most of the tim
 
 Confluence is a team workspace in which the team can create, capture, and collaborate on ideas for the project. It helps the team to structure, organize, and share work, so every member has visibility into knowledge and access to the information they need regarding the project.
 
-> **Confluence site is organized into spaces.** Spaces are collections of related pages that the team can work on together. Most organizations use a mix of team spaces and software project spaces:
+> **Confluence is organized into spaces.** Spaces are collections of related pages that the team can work on together. Most organizations use a mix of team spaces and software project spaces:
 > 
 > * Team spaces - team members use it to work together toward large-scale goals and OKRs. 
 > 
@@ -167,22 +165,13 @@ Confluence is a team workspace in which the team can create, capture, and collab
 
 Personal space is mostly used as a sandbox to organize your notes, keep track of personal OKRs and goals.
 
-Confluence complements Jira applications and each other. Confluence is used for storing thoughts, plans, and knowledge of the team, and JIRA to track issues.
+Confluence and Jira complement each other. Confluence is used for storing thoughts, plans, and knowledge of the team, while Jira is used to track issues and organize work.
 
 ## Xray
 
 Xray is a Test Management tool that provides the structure to plan, organize, and report on the progress of testing as well as the readiness to deploy.
 
-It enhances agile boards by tracking the requirement status and test execution progress in real-time. Using Xporter you can generate advanced reports that can be exported to Docx, xlsx, or pdf.
-
-### Test process in JIRA with Xray  
-
-Each testing phase allows you to use the following issues:
-
-* **Plan phase**: Test plan issues
-* **Design phase**: The specification is defined using precondition and test issue types 
-* **Execute phase**: Test execution issues
-* **Report phase**: Test execution 
+It enhances agile boards by tracking the requirement status and test execution progress in real-time. Using Xporter you can generate advanced reports that can be exported to docx, xlsx, or pdf.
 
 ### Basic Xray concepts
 
@@ -192,15 +181,17 @@ Each testing phase allows you to use the following issues:
 
 **TEST REPOSITORY**
 
-* Collection of all Test Cases. There is only one Test Repository
-* Test Cases within it can be grouped into folders
-* Test Cases should be unique
+* Collection of all Test Cases.
+* There is only one Test Repository.
+* Test Cases within it can be grouped into folders.
+* Test Cases should be unique.
 
 **TEST SET**
 
 * A collection of Test Cases.
 * Multiple Test Sets can be created.
 * One Test Case can be in multiple test sets.
+* You will usually use either Test Sets or the Test Repository to organize your Test Cases, not both.
 
 **TEST PLAN**
 
@@ -211,7 +202,7 @@ Each testing phase allows you to use the following issues:
 
 * A collection of Test Cases, Test Sets, or Test Plans.
 * Each Test Case becomes executable.
-* Has a pass/fail/progress status.
+* Each Test Case within it has a pass/fail/progress status.
 
 ## Creating a new test case 
 
@@ -229,11 +220,7 @@ To create a new test issue follow these steps:
 
 **Step 4**: When you are satisfied with the content of your test, click the Create button
 
-> There you have it, your very own first test in Xray. For in-depth information about Xray and JIRA test integration you can [follow this link!](https://www.atlassian.com/devops/testing-tutorials/jira-xray-integration-manage-test-cases)
-
-
-
-
+> There you have it, your very own first test in Xray. For in-depth information about Xray and JIRA test integration you can [follow this link](https://www.atlassian.com/devops/testing-tutorials/jira-xray-integration-manage-test-cases).
 
 ---
 
