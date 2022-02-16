@@ -2,11 +2,12 @@
 
 ## Which locator to use?
 
-It seems pretty straightforward: "simply copy the locator and put it into your code".
-Just in case, you decide to go online to search for some useful information in hope to find the best locator strategy ever.
+It seems pretty straightforward: "copy the locator and paste it into your code".
+Just in case, you decide to go online to search for some useful information in hope to find the best locator strategy ever. 
 First, you come across blog posts and articles naming different locators without saying much about them.
 Then, you read about people having different opinions. For some, ID is the best approach, others prefer Accessibility ID, and then there are those that only use XPath.
 Finally, you hear people arguing about which one is faster, as if difference is measured in days and not milliseconds.
+And then you get confused.
 
 Which one to choose?
 Generally speaking, just go with the most reliable one. 
@@ -29,7 +30,7 @@ In that case, you will have to iterate over the list to find the correct element
 ### Accessibility ID
 
 You might come across information how the Accessibility ID is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
-However, what is often not mentioned is that the Accessibility ID is just a string, susceptible to change. If the UI and accompanied strings change, you will also have to update your locators.
+However, what is often not mentioned is that the Accessibility ID is a string, susceptible to change. If the UI and accompanied strings change, you will also have to update your locators.
 This can especially become cumbersome if the changes often happen and if you only rely on that one locator strategy.
 
 Where the Accessibility ID comes in very handy are lists of elements. If you have a list of movies and how to get the specific one, you can locate it through its title, without having to write loops yourself.
@@ -51,7 +52,7 @@ Accessibility ID is very useful, but it is above all used for [accessibility](ht
 XPath is very useful when you don't have an ID nor Accessibility ID in the app. Or when it would take too long for the developers to add them, and you really want to finish your test.
 There is also nothing wrong with using XPath as your first choice.
 
-What you really want to be careful about is making it difficult to understand, unnecessarily long, and simply unmaintainable. 
+What you want to be careful about is making it difficult to understand, long, and therefore unmaintainable. 
 Another potential problem with XPath is that it might break for even a minor change in the app.
 
 Bad:
@@ -75,7 +76,7 @@ Read [Selenium locators - XPath](https://infinum.com/handbook/qa/automation/sele
 ### CSS selector
 
 For CSS selectors the similar points apply as for the XPath.
-You don't want just to copy-paste them from the DevTools and you don't want to be too specific.
+You don't want just to copy-paste them from the DevTools and you also don't want to be too specific.
 Tweak them a bit to make them more readable and maintainable.
 
 Bad:
