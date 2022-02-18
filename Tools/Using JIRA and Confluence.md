@@ -44,7 +44,7 @@ For every issue, there is a priority that can be set
 
 You can create a new Issue in two ways - by clicking on the "create" button or directly in the board view by clicking on the + icon.
 
-> **Examples**:
+#### Examples
   
 ![](/img/Slika_2.png)
 ![](/img/Slika_3.png)
@@ -224,6 +224,6 @@ To create a new test issue follow these steps:
 
 ---
 
-![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
+![Dilbert image](/img/dilbert-jira-article.gif)
 
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2022-02-01): 01-02-22 by Scott Adams*
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2022-02-01): 02-01-22 by Scott Adams*
