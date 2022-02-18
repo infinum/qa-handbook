@@ -14,7 +14,7 @@ Generally speaking, just go with the most reliable one.
 If it works 100% of the time (always returns the correct element), is less prone to change (you don't need to update it often or at all), and does not break or slow down your tests drastically, that's the one.
 
 However, there is more to think about when choosing the right locator, and it doesn't matter whether you like the looks of it or whether it is slightly faster than the other ones.
-Often you realise the issue when you come across it.
+Often you realize the issue when you come across it.
 
 ## A bit more about locators
 
