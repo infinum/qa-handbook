@@ -37,8 +37,8 @@ Where the Accessibility ID comes in very handy are lists of elements. If you hav
 
     def get_movie_by_title(self, movie_title):
         title_locator = {
-            config.ANDROID: (MobileBy.ACCESSIBILITY_ID, "movie_title"),
-            config.IOS: (MobileBy.ACCESSIBILITY_ID, "movie_title")
+            config.ANDROID: (MobileBy.ACCESSIBILITY_ID, movie_title),
+            config.IOS: (MobileBy.ACCESSIBILITY_ID, movie_title)
         }
 
         return self.get_present_element(title_locator[config.PLATFORM])
