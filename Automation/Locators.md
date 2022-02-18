@@ -1,4 +1,4 @@
-> *Deleted code is debugged code.*
+> Deleted code is debugged code. - Jeff Sickel
 
 ## Which locator to use?
 
@@ -6,7 +6,7 @@ It seems pretty straightforward: "copy the locator and paste it into your code".
 Just in case, you decide to go online to search for some useful information in hope to find the best locator strategy ever. 
 First, you come across blog posts and articles naming different locators without saying much about them.
 Then, you read about people having different opinions. For some, ID is the best approach, others prefer Accessibility ID, and then there are those that only use XPath.
-Finally, you hear people arguing about which one is faster, as if difference is measured in days and not milliseconds.
+Finally, you hear people arguing about which one is faster, as if the difference is measured in days and not milliseconds.
 And then you get confused.
 
 Which one to choose?
@@ -53,7 +53,7 @@ XPath is very useful when you don't have an ID nor Accessibility ID in the app. 
 There is also nothing wrong with using XPath as your first choice.
 
 What you want to be careful about is making it difficult to understand, long, and therefore unmaintainable. 
-Another potential problem with XPath is that it might break for even a minor change in the app.
+Another potential problem with XPath is that it might break even due to a minor change in the app.
 
 Bad:
 
@@ -70,12 +70,12 @@ Better:
 
 `//input[@id='new-todo']`
 
-Read [Selenium locators - XPath](https://infinum.com/handbook/qa/automation/selenium-locators-xpath) for more details.
+Read the [Selenium locators - XPath](https://infinum.com/handbook/qa/automation/selenium-locators-xpath) article for more details.
 
 
 ### CSS selector
 
-For CSS selectors the similar points apply as for the XPath.
+For CSS selectors similar points apply as for the XPath.
 You don't want just to copy-paste them from the DevTools and you also don't want to be too specific.
 Tweak them a bit to make them more readable and maintainable.
 
@@ -94,8 +94,8 @@ When talking about mobile, there are some differences to take into account.
 
 If we consider Appium:
 
-- the ID in Appium is `resource-id` on Android and `name` on iOS.
-- Accessibility ID in Appium is `content-desc` on Android and `accessibility-id` on iOS.
+- the **ID** in Appium is `resource-id` on Android and `name` on iOS.
+- **Accessibility** ID in Appium is `content-desc` on Android and `accessibility-id` on iOS.
 
 If you don't see the ID / Accessibility ID for your iOS app in Appium, consider using the XCode Accessibility Inspector.
 There you will see the Accessibility ID under the **Identifier** property.
@@ -116,7 +116,7 @@ When adding new IDs, there are a few things to consider:
 - What should the ID look like?
 
 It gets tricky, for example, when adding an ID to a LayoutView which holds multiple text elements. The result might not be what you expected.
-To avoid such issues, ask a developer to add a few as an example to see how it looks like.
+To avoid such issues, ask a developer to add a few as an example to see what it looks like.
 
 ### Plan your work
 
@@ -127,7 +127,7 @@ With that figured out, open a few tasks for developers asking for IDs needed in 
 
 Since you are already doing automation on your project, the process can be improved a bit more.
 One of the acceptance criteria for new features could be adding IDs needed for test automation. That doesn't have to be extensive. Simply adding IDs on buttons and input fields that are most likely to be used for test automation is a great start.
-Developer has to add those elements anyway, so a few more lines of code won't be too cumbersome and the feature will be at least partially ready for automation from the start.
+The developer has to add those elements anyway, so a few more lines of code won't be too cumbersome and the feature will be at least partially ready for automation from the start.
 
 ### Platform differences
 
@@ -135,12 +135,14 @@ It would be quite convenient if locators look the same on all the platforms you 
 For example, the ID on both Android and iOS for the submit button could be `Submit`.
 
 What would further make everyone's work easier is having a table, a Figma page or some other document with a list of defined IDs. That way, a developer could just check how the ID should look like for the specific element and add it. 
-That way, you won't have to constantly inspect elements and the IDs would look the same across multiple platforms.
+Thus, you won't have to constantly inspect elements and the IDs would look the same across multiple platforms.
 
-Of course, it won't be possible to have the same locator values for every element, but will probably work for most.
+Of course, it won't be possible to have the same locator values for every element, but it will probably work for most.
 
 
 ---
 
 
 ![dilbert_automation_locators.png](/img/dilbert_automation_locators.png)
+
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2022-02-08): 02-08-22 by Scott Adams*

@@ -224,6 +224,6 @@ To create a new test issue follow these steps:
 
 ---
 
-![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
+![Dilbert image](/img/dilbert-jira-article.gif)
 
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2022-02-01): 01-02-22 by Scott Adams*
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2022-02-01): 02-01-22 by Scott Adams*
