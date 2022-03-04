@@ -211,13 +211,13 @@ To create a new test issue follow these steps:
 
 **Step 1**: Click Create Issue at the top of the screen to open the Create Issue dialog box/page.
 
-<span style="display:block; margin-left:auto; margin-right:auto; width:90%;">![](/img/Slika_8.png)</span>
+<span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_8.png)</span>
 
 **Step 2**: Select the Project. On Issue Type, select Test.
 
 **Step 3**: Type a Summary for the test and fill at least all mandatory fields marked with an asterisk.
 
-<span style="display:block; margin-left:auto; margin-right:auto; width:90%;">![](/img/Slika_9.png)</span>
+<span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_9.png)</span>
 
 **Step 4**: When you are satisfied with the content of your test, click the Create button
 
