@@ -29,14 +29,14 @@ Testim is a testing platform that uses AI for authoring, execution, and maintena
 
 After the test is successfully recorded all the steps will be shown in a grid on a very user-friendly UI.
 
-![test_recorders2](/img/test_recorders2.png)
+<span style="display:block; border: 1px solid #e0e0e0;">![test_recorders2](/img/test_recorders2.png)</span>
 
 ### Some key features of Testim:
 
 - **Element lock-in** - automatically detecting locators without user action
 - **Steps share** - steps or groups of tests can be reused across different tests 
 
-![test_recorders3](/img/test_recorders3.png)
+<span style="display:block; border: 1px solid #e0e0e0;">![test_recorders3](/img/test_recorders3.png)</span>
 
 - **Visual configuration** - reordering, deleting, skipping steps based on the scenario of the test itself
 - **Customizable with code** - insert custom JavaScript code (i.e. for clearing cookies or something different) with a real JS editor
@@ -66,7 +66,7 @@ Selenium IDE is a selenium-powered test recorder. In comparison to Selenium IDE,
 - Integration options are easier accessible and visible at first sight in Testim, whereas on Selenium IDE you need to dig deeper to find some advanced option
 - Better overview of the state of tests, statistics, test suites, and more
 
-![test_recorders5](/img/test_recorders5.png)
+<span style="display:block; border: 1px solid #e0e0e0;">![test_recorders5](/img/test_recorders5.png)</span>
 
 For users that are not familiar at all with web testing and elements that you need to adapt or customize, Testim is a much better option even in the free version because Selenium IDE requires some learning curve. Some features in Selenium IDE are not visible or understandable at first sight.
 
