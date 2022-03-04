@@ -76,4 +76,4 @@ For users that are not familiar at all with web testing and elements that you ne
 
 ![dilbert_test_recorders_article](/img/dilbert_test_recorders_article.gif)
 
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2011-03-24): 03-24-1 by Scott Adams*
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2011-03-24): 03-24-11 by Scott Adams*
