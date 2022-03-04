@@ -4,7 +4,7 @@
 
 Jira is an issue tracking, project management, and bug tracking tool that is compatible with agile methodologies for organizing software development.
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_1.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_1.png)</span>
 
 The product name is a truncation of Gojira, the Japanese word for Godzilla. The name originated from a nickname Atlassian developers used to refer to Bugzilla, which was previously used internally for bug tracking. It's pronounced Jira (/ˈdʒiːrə/ JEE-ra). Source - [Wikipedia](https://en.wikipedia.org/wiki/Jira_(software))
 
@@ -46,14 +46,14 @@ You can create a new Issue in two ways - by clicking on the "create" button or d
 
 #### Examples
   
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_2.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_2.png)</span>
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_3.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_3.png)</span>
 
 
 > All Issues have a status they can be set to. Issue statuses can be configured per projects. For example, let's use this project board: 
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_4.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_4.png)</span>
 
 > Every project board is configured differently, most of the time special fields in the new Issue creator will have sprint and fix version fields. 
 
@@ -67,7 +67,7 @@ You can create a new Issue in two ways - by clicking on the "create" button or d
 * monitoring progress and velocity
 * reporting
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_5.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_5.png)</span>
 
 ## Backlog
 The backlog is the global "to-do list" for upcoming releases. A backlog is usually composed of three key hierarchical pieces:
@@ -92,7 +92,7 @@ This is the part of Jira where all you ever worked on is being documented, here 
 
 > To access **"your work"** just click on it on the top tray menu of the JIRA. 
 > 
-> <span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_6.png)</span>
+> <span style="border: 1px solid #e0e0e0;">![](/img/Slika_6.png)</span>
 
 ## Reports
 Reports give you a graphical overview of the different aspects of your plan.
@@ -146,7 +146,7 @@ Boards simply display all active work items.
 
 You'll probably spend most of your time looking at the active sprint: 
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_7.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_7.png)</span>
 
 
 ## Confluence
@@ -211,13 +211,13 @@ To create a new test issue follow these steps:
 
 **Step 1**: Click Create Issue at the top of the screen to open the Create Issue dialog box/page.
 
-<span style="display:block; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_8.png)</span>
+<span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_8.png)</span>
 
 **Step 2**: Select the Project. On Issue Type, select Test.
 
 **Step 3**: Type a Summary for the test and fill at least all mandatory fields marked with an asterisk.
 
-<span style="display:block; margin-left:auto; margin-right:auto; width:70%;">![](/img/Slika_9.png)</span>
+<span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![](/img/Slika_9.png)</span>
 
 **Step 4**: When you are satisfied with the content of your test, click the Create button
 
