@@ -92,7 +92,7 @@ This is the part of Jira where all you ever worked on is being documented, here 
 
 > To access **"your work"** just click on it on the top tray menu of the JIRA. 
 > 
-> <span style="border: 1px solid #e0e0e0;">![](/img/Slika_6.png)</span>
+> <span style="display:block; border: 1px solid #e0e0e0;">![](/img/Slika_6.png)</span>
 
 ## Reports
 Reports give you a graphical overview of the different aspects of your plan.
