@@ -35,44 +35,120 @@ There are quite a few selectors you can use to get the desired element, some of 
 - Class
 - Attribute
 - Sub-string
-- Inner string
 
 
 #### ID
 
-`#toggle-all`
+`id` in CSS is represented by `#`
+
+HTML:
+
+`<input id="toggle-all" class="toggle-all" type="checkbox">`
+
+
+CSS selector:
 
 `toggle_all_button = driver.find_element_by_css_selector('#toggle-all')`
 
+
 #### Class
 
-`.selected`
+`class` in CSS is represented by `.`
+
+HTML:
+
+`<input class="toggle" type="checkbox">`
+
+CSS selector:
 
 `selected_button = driver.find_element_by_css_selector('.selected')`
 
+
 #### Attribute
 
+When using the attribute selector, there are a few options to play around with.
+Before all, using only the attribute as a locator probably won't result in a unique element since quite a few elements could be using the same attribute.
 
+You can, however, combine the attribute with an  id, tag, class and so on. 
+Furthermore, the exact values, like in the example below, values that start with a specific string, values that contain a specific string, and so on.
+
+HTML:
+
+`<a href="http://todomvc.com">TodoMVC</a>`
+
+Attribute only:
+
+`[type="checkbox"]`
+
+Id and attribute:
 
 `.toggle[type="checkbox"]`
 
+Tag and attribute:
+
 `a[href="http://todomvc.com"]`
+
+CSS selector:
 
 `checkbox_button = driver.find_element_by_css_selector('a[href="http://todomvc.com"]')`
 
-When using the attribute selector, there are quite a few options to play around with.
-You can look for, among others, the exact values, like in the example above, values that start with a specific string, values that contain a specific string, and so on.
 
 Check [Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) for more examples.
 
 #### Sub-string
 
+When working with string you can use various mechanisms to match a sub-string.
+Use the appropriate symbol for the corresponding matching mechanism.
 
-#### Inner string
+Prefix match
+- matches the href attribute that starts with text "_http://todo_"
+
+`[href^="http://todo"]`
+
+Suffix match
+- matches the href attribute that ends with text "_.com_"
+
+`[href$=".com"]`
+
+Sub-string match
+- matches the href attribute that contains text "_todomvc_"
+
+`[href*="todomvc"]`
 
 
-###
+### Combining multiple selectors
 
+You can also combine multiple selectors to further narrow your search for an element.
+There are multiple ways to do it, below are some examples.
+
+Tag and an attribute that starts with specified text:
+
+`a[href^="http://todo"]`
+
+Combining tag navigation with an attribute that ends with specified text:
+`p > a[href*="todomvc.com"]`
+
+
+#### Navigating through elements
+
+Select `a` that are child of `li`:
+
+`li a`
+
+Select direct `a` descendants of `li` 
+
+`li > a`
+
+Select all `a` and `li` elements:
+
+`li, a`
+
+Select `a` element following a `li` element:
+
+`li ~ a`
+
+#### Pseudo selectors
+https://www.freecodecamp.org/news/css-selectors-cheat-sheet/
 
 ## How to use Chrome DevTools to find CSS selector
 
