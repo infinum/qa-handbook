@@ -57,3 +57,10 @@ You can find the template for the testing session [here](https://docs.google.com
 - If the testing session is hybrid, make sure that everyone has at least one device for testing and try to include them in the conversation. Using webcams and sharing your screen can help.   
 - Testing is usually done on a non-production environment which needs to be as similar as possible to the production environment. If there is no production environment, make sure that no changes are being deployed to your chosen environment while the testing session is under way.
 
+
+---
+
+
+![dilbert_testing_session_article](/img/dilbert_testing_session_article.gif)
+
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/1996-09-09): 09-09-96 by Scott Adams*
