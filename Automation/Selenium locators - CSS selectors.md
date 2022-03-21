@@ -8,7 +8,7 @@
 ### CSS syntax
 
 CSS is a rule-based language, meaning that the instructions look like a set of rules or data, as opposed to the languages like Python where the instructions form a list of steps in a sequence.
-A CSS rule consists of a selector (one or more) and a declaration block enclosed by `{}` brackets
+A CSS rule consists of a selector (one or more) and a declaration block enclosed by `{}` brackets.
 
 Example showing how to style level one heading `h1` by specifying the text `color`, and the `font-family`.
 
@@ -34,7 +34,7 @@ There are quite a few selectors you can use to get the desired element, some of 
 - ID
 - Class
 - Attribute
-- Sub-string
+- Substring
 
 
 #### ID
@@ -97,7 +97,7 @@ Check [Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Att
 
 #### Sub-string
 
-When working with string you can use various mechanisms to match a sub-string.
+When working with string you can use various mechanisms to match a substring.
 Use the appropriate symbol for the corresponding matching mechanism.
 
 Prefix match
@@ -158,7 +158,7 @@ Select the last element inside another element (the last _child_):
 
 `:last-child`
 
-Select the nth element inside another element. Passed parameter can be: an integer, _even_, _odd_, or a formula
+Select the _nth_ element inside another element. Passed parameter can be: an integer, _even_, _odd_, or a formula
 
 `:nth-child(parameter)` 
 
