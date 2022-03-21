@@ -46,7 +46,7 @@ HTML:
 `<input id="toggle-all" class="toggle-all" type="checkbox">`
 
 
-CSS selector:
+Selenium CSS selector:
 
 `toggle_all_button = driver.find_element_by_css_selector('#toggle-all')`
 
@@ -59,7 +59,7 @@ HTML:
 
 `<input class="toggle" type="checkbox">`
 
-CSS selector:
+Selenium CSS selector:
 
 `selected_button = driver.find_element_by_css_selector('.selected')`
 
@@ -88,7 +88,7 @@ Tag and attribute:
 
 `a[href="http://todomvc.com"]`
 
-CSS selector:
+Selenium CSS selector:
 
 `checkbox_button = driver.find_element_by_css_selector('a[href="http://todomvc.com"]')`
 
@@ -116,20 +116,10 @@ Sub-string match
 `[href*="todomvc"]`
 
 
-### Combining multiple selectors
+### Navigating through elements
 
-You can also combine multiple selectors to further narrow your search for an element.
-There are multiple ways to do it, below are some examples.
-
-Tag and an attribute that starts with specified text:
-
-`a[href^="http://todo"]`
-
-Combining tag navigation with an attribute that ends with specified text:
-`p > a[href*="todomvc.com"]`
-
-
-#### Navigating through elements
+Using a specific syntax you can specify how to navigate to / look for an element.
+For example, using the `>` symbol between two elements refers to direct descendants, while the `,` refers to all elements.
 
 Select `a` that are child of `li`:
 
@@ -148,7 +138,44 @@ Select `a` element following a `li` element:
 `li ~ a`
 
 #### Pseudo selectors
-https://www.freecodecamp.org/news/css-selectors-cheat-sheet/
+
+In CSS, _pseudo-class_ is a keyword added to an element to define its state. For example, the color of a button can change on hover or when active. 
+Pseudo-classes start with a colon `:`
+
+Select an element that is being clicked:
+
+`:active`
+
+Select a link that has already been clicked:
+
+`:visited`
+
+Select the first element inside another element (the first _child_):
+
+`:first-child`
+
+Select the last element inside another element (the last _child_):
+
+`:last-child`
+
+Select the nth element inside another element. Passed parameter can be: an integer, _even_, _odd_, or a formula
+
+`:nth-child(parameter)` 
+
+
+### Combining multiple selectors
+
+You can also combine multiple selectors to further narrow your search for an element.
+There are multiple ways to do it, below are just some examples.
+
+Tag and an attribute that starts with specified text:
+
+`a[href^="http://todo"]`
+
+Combining tag navigation with an attribute that ends with specified text:
+
+`p > a[href*="todomvc.com"]`
+
 
 ## How to use Chrome DevTools to find CSS selector
 
@@ -185,6 +212,10 @@ For more information and examples take a look at the following resources:
 [MDN CSS selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
 
 [CSS selectors cheatsheet](https://dev.to/dawnind/css3-selectors-cheat-sheet-6dk)
+
+Web game to help you learn about locators:
+
+[CSS Diner](https://flukeout.github.io/)
 
 ---
 
