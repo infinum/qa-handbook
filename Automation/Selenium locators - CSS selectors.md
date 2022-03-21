@@ -67,10 +67,10 @@ Selenium CSS selector:
 #### Attribute
 
 When using the attribute selector, there are a few options to play around with.
-Before all, using only the attribute as a locator probably won't result in a unique element since quite a few elements could be using the same attribute.
+Using only the attribute as a locator probably won't result in a unique element since quite a few elements could be using the same attribute.
 
 You can, however, combine the attribute with an  id, tag, class and so on. 
-Furthermore, the exact values, like in the example below, values that start with a specific string, values that contain a specific string, and so on.
+Furthermore, you can also specify the exact values to match, values that start with a specific string, values that contain a specific string, and so on.
 
 HTML:
 
@@ -213,7 +213,7 @@ For more information and examples take a look at the following resources:
 
 [CSS selectors cheatsheet](https://dev.to/dawnind/css3-selectors-cheat-sheet-6dk)
 
-Web game to help you learn about locators:
+Web game to help you learn how to use CSS selectors:
 
 [CSS Diner](https://flukeout.github.io/)
 
