@@ -198,13 +198,13 @@ Select the _All_ button:
 
 `.selected`
 
-<span style="border: 1px solid #e0e0e0;">![selenium_locators_CSS_devtools_1.png](/img/selenium_locators_css_devtools_1.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0;">![selenium_locators_CSS_devtools_1.png](/img/selenium_locators_css_devtools_1.png)</span>
 
 Select the _second_ todo element: 
 
 `ul > li:nth-child(2) input`
 
-<span style="border: 1px solid #e0e0e0;">![selenium_locators_CSS_devtools_2.png](/img/selenium_locators_css_devtools_2.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0;">![selenium_locators_CSS_devtools_2.png](/img/selenium_locators_css_devtools_2.png)</span>
 
 
 
@@ -224,3 +224,5 @@ Web game to help you learn how to use CSS selectors:
 
 
 ![dilbert_selenium_css.png](/img/dilbert_selenium_css.png)
+
+*Image downloaded from [dilbert.com](https://dilbert.com/strip/2021-09-03): 09-03-21 by Scott Adams*
