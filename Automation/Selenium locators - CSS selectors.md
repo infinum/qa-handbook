@@ -41,27 +41,19 @@ There are quite a few selectors you can use to get the desired element, some of 
 
 `id` in CSS is represented by `#`
 
-HTML: 
-
-`<input id="toggle-all" class="toggle-all" type="checkbox">`
+HTML: `<input id="toggle-all" class="toggle-all" type="checkbox">`
 
 
-Selenium CSS selector: 
-
-`toggle_all_button = driver.find_element_by_css_selector('#toggle-all')`
+Selenium CSS selector: `toggle_all_button = driver.find_element_by_css_selector('#toggle-all')`
 
 
 #### Class
 
 `class` in CSS is represented by `.`
 
-HTML: 
+HTML: `<input class="toggle" type="checkbox">`
 
-`<input class="toggle" type="checkbox">`
-
-Selenium CSS selector: 
-
-`selected_button = driver.find_element_by_css_selector('.selected')`
+Selenium CSS selector: `selected_button = driver.find_element_by_css_selector('.selected')`
 
 
 #### Attribute
@@ -72,25 +64,15 @@ Using only the attribute as a locator probably won't result in a unique element 
 You can, however, combine the attribute with an  id, tag, class and so on. 
 Furthermore, you can also specify the exact values to match, values that start with a specific string, values that contain a specific string, and so on.
 
-HTML: 
+HTML: `<a href="http://todomvc.com">TodoMVC</a>`
 
-`<a href="http://todomvc.com">TodoMVC</a>`
+Attribute only: `[type="checkbox"]`
 
-Attribute only: 
+Id and attribute: `.toggle[type="checkbox"]`
 
-`[type="checkbox"]`
+Tag and attribute: `a[href="http://todomvc.com"]`
 
-Id and attribute: 
-
-`.toggle[type="checkbox"]`
-
-Tag and attribute: 
-
-`a[href="http://todomvc.com"]`
-
-Selenium CSS selector: 
-
-`checkbox_button = driver.find_element_by_css_selector('a[href="http://todomvc.com"]')`
+Selenium CSS selector: `checkbox_button = driver.find_element_by_css_selector('a[href="http://todomvc.com"]')`
 
 
 Check [Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) for more examples.
@@ -101,69 +83,43 @@ When working with string you can use various mechanisms to match a substring.
 Use the appropriate symbol for the corresponding matching mechanism.
 
 Prefix match
-- matches the href attribute that starts with text "_http:_": 
-
-`[href^="http:"]`
+- matches the href attribute that starts with text "_http:_": `[href^="http:"]`
 
 Suffix match
-- matches the href attribute that ends with text "_.com_": 
-
-`[href$=".com"]`
+- matches the href attribute that ends with text "_.com_": `[href$=".com"]`
 
 Sub-string match
-- matches the href attribute that contains text "_todomvc_": 
+- matches the href attribute that contains text "_todomvc_": `[href*="todomvc"]`
 
-`[href*="todomvc"]`
-
-Selenium CSS selector:
-
-`checkbox_button = driver.find_element_by_css_selector('[href^="http://todo"]')`
+Selenium CSS selector: `checkbox_button = driver.find_element_by_css_selector('[href^="http://todo"]')`
 
 ### Navigating through elements
 
 Using a specific syntax you can specify how to navigate to an element.
 For example, using the `>` symbol between two elements refers to direct descendants, while the `,` refers to all elements.
 
-Select `a` that are child of `li`: 
+`li a` - select `a` that are child of `li`
 
-`li a`
+`li > a` - select direct `a` descendants of `li`
 
-Select direct `a` descendants of `li`: 
+`li, a` - select all `a` and `li` elements
 
-`li > a`
-
-Select all `a` and `li` elements: 
-
-`li, a`
-
-Select `a` element following a `li` element: 
-
-`li ~ a`
+`li ~ a` - select `a` element following a `li` element 
 
 #### Pseudo selectors
 
 In CSS, _pseudo-class_ is a keyword added to an element to define its state. For example, the color of a button can change on hover or when active. 
 Pseudo-classes start with a colon `:`
 
-Select an element that is being clicked: 
+Select an element that is being clicked: `:active`
 
-`:active`
+Select a link that has already been clicked: `:visited`
 
-Select a link that has already been clicked: 
+Select the first element inside another element (the first _child_): `:first-child`
 
-`:visited`
+Select the last element inside another element (the last _child_): `:last-child`
 
-Select the first element inside another element (the first _child_): 
-
-`:first-child`
-
-Select the last element inside another element (the last _child_): 
-
-`:last-child`
-
-Select the _nth_ element inside another element. Passed parameter can be: an integer, _even_, _odd_, or a formula 
-
-`:nth-child(parameter)` 
+Select the _nth_ element inside another element. Passed parameter can be: an integer, _even_, _odd_, or a formula `:nth-child(parameter)` 
 
 
 ### Combining multiple selectors
@@ -171,13 +127,9 @@ Select the _nth_ element inside another element. Passed parameter can be: an int
 You can also combine multiple selectors to further narrow your search for an element.
 There are multiple ways to do it, below are just some examples.
 
-Tag and an attribute that starts with specified text: 
+Tag and an attribute that starts with specified text: `a[href^="http://todo"]`
 
-`a[href^="http://todo"]`
-
-Combining tag navigation with an attribute that ends with specified text: 
-
-`p > a[href*="todomvc.com"]`
+Combining tag navigation with an attribute that ends with specified text: `p > a[href*="todomvc.com"]`
 
 
 ## How to use Chrome DevTools to find CSS selector
@@ -194,15 +146,11 @@ Writing CSS is sometimes tricky. It is useful to know your way around DevTools t
 4. Type in a CSS selector 
  - If there is a match, the element(s) will be highlighted in the DOM
  
-Select the _All_ button: 
-
-`.selected`
+Select the _All_ button: `.selected`
 
 ![selenium_locators_CSS_devtools_1.png](/img/selenium_locators_css_devtools_1.png)
 
-Select the _second_ todo element: 
-
-`ul > li:nth-child(2) input`
+Select the _second_ todo element: `ul > li:nth-child(2) input`
 
 ![selenium_locators_CSS_devtools_2.png](/img/selenium_locators_css_devtools_2.png)
 
