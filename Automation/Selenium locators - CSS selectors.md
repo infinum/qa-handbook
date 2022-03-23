@@ -99,8 +99,11 @@ Using a specific syntax you can specify how to navigate to an element.
 For example, using the `>` symbol between two elements refers to direct descendants, while the `,` refers to all elements.
 
 `li a` - select `a` that are child of `li`
+
 `li > a` - select direct `a` descendants of `li`
+
 `li, a` - select all `a` and `li` elements
+
 `li ~ a` - select `a` element following a `li` element 
 
 #### Pseudo selectors
