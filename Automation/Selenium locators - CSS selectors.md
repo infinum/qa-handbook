@@ -98,13 +98,13 @@ Selenium CSS selector: `checkbox_button = driver.find_element_by_css_selector('[
 Using a specific syntax you can specify how to navigate to an element.
 For example, using the `>` symbol between two elements refers to direct descendants, while the `,` refers to all elements.
 
-Select `a` that are child of `li`: `li a`
+`li a`- select `a` that are child of `li`
 
-Select direct `a` descendants of `li`: `li > a`
+`li > a` - select direct `a` descendants of `li`
 
-Select all `a` and `li` elements: `li, a`
+`li, a` - select all `a` and `li` elements
 
-Select `a` element following a `li` element: `li ~ a`
+`li ~ a` - select `a` element following a `li` element 
 
 #### Pseudo selectors
 
