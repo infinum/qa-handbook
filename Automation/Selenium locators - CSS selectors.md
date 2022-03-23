@@ -1,4 +1,4 @@
-> *“Where is the ‘any’ key?” - Homer Simpson*
+> *Where is the 'any' key? - Homer Simpson*
 
 
 ## What is CSS?
