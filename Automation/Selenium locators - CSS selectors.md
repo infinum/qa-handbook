@@ -69,7 +69,7 @@ Selenium CSS selector:
 When using the attribute selector, there are a few options to play around with.
 Using only the attribute as a locator probably won't result in a unique element since quite a few elements could be using the same attribute.
 
-You can, however, combine the attribute with an  id, tag, class and so on. 
+You can, however, combine the attribute with an _id_, _tag_, _class_ and so on. 
 Furthermore, you can also specify the exact values to match, values that start with a specific string, values that contain a specific string, and so on.
 
 HTML: 
@@ -97,7 +97,7 @@ Check [Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Att
 
 #### Substring
 
-When working with string you can use various mechanisms to match a substring.
+When working with strings you can use various mechanisms to match a substring.
 Use the appropriate symbol for the corresponding matching mechanism.
 
 Prefix match
@@ -161,7 +161,7 @@ Select the last element inside another element (the last _child_):
 
 `:last-child`
 
-Select the _nth_ element inside another element. Passed parameter can be: an integer, _even_, _odd_, or a formula 
+Select the _nth_ element inside another element. The passed parameter can be: an integer, _even_, _odd_, or a formula 
 
 `:nth-child(parameter)` 
 
@@ -171,7 +171,7 @@ Select the _nth_ element inside another element. Passed parameter can be: an int
 You can also combine multiple selectors to further narrow your search for an element.
 There are multiple ways to do it, below are just some examples.
 
-Tag and an attribute that starts with specified text: 
+Tag and an attribute that starts with a specified text: 
 
 `a[href^="http://todo"]`
 
@@ -180,7 +180,7 @@ Combining tag navigation with an attribute that ends with specified text:
 `p > a[href*="todomvc.com"]`
 
 
-## How to use Chrome DevTools to find CSS selector
+## How to use Chrome DevTools to find a CSS selector
 
 Writing CSS is sometimes tricky. It is useful to know your way around DevTools to help you with finding the right selector. 
 [TodoMVC](https://todomvc.com/examples/vanillajs/) app was used as an example.
@@ -198,13 +198,13 @@ Select the _All_ button:
 
 `.selected`
 
-![selenium_locators_CSS_devtools_1.png](/img/selenium_locators_css_devtools_1.png)
+<span style="border: 1px solid #e0e0e0;">![selenium_locators_CSS_devtools_1.png](/img/selenium_locators_css_devtools_1.png)</span>
 
 Select the _second_ todo element: 
 
 `ul > li:nth-child(2) input`
 
-![selenium_locators_CSS_devtools_2.png](/img/selenium_locators_css_devtools_2.png)
+<span style="border: 1px solid #e0e0e0;">![selenium_locators_CSS_devtools_2.png](/img/selenium_locators_css_devtools_2.png)</span>
 
 
 
