@@ -83,7 +83,7 @@ When working with string you can use various mechanisms to match a substring.
 Use the appropriate symbol for the corresponding matching mechanism.
 
 Prefix match
-- matches the href attribute that starts with text <div style="display: inline">"_http://todo_"</div>: `[href^="http://todo"]`
+- matches the href attribute that starts with text "_http:_": `[href^="http:"]`
 
 Suffix match
 - matches the href attribute that ends with text "_.com_": `[href$=".com"]`
