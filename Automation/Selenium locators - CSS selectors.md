@@ -1,4 +1,4 @@
-> *“It’s automation, not automagic.” - Jim Hazen*
+> *“Where is the ‘any’ key” - Homer Simpson*
 
 
 ## What is CSS?
@@ -21,7 +21,7 @@ h1 {
 
 ## What are CSS selectors?
 
-A CSS selector is an arrangement of an element selector(s) and value(s) that locate the element on a web page. 
+A CSS selector is an arrangement of an element selector and value that locate the element on a web page. 
 Using the example above, a CSS selector would be the `h1` element. 
 
 `title_locator = driver.find_element_by_css_selector('h1')`
@@ -95,13 +95,13 @@ Selenium CSS selector:
 
 Check [Attribute selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) for more examples.
 
-#### Sub-string
+#### Substring
 
 When working with string you can use various mechanisms to match a substring.
 Use the appropriate symbol for the corresponding matching mechanism.
 
 Prefix match
-- matches the href attribute that starts with text "_http://todo_"
+- matches the href attribute that starts with text <p>"_http://todo_"</p>
 
 `[href^="http://todo"]`
 
@@ -115,10 +115,13 @@ Sub-string match
 
 `[href*="todomvc"]`
 
+Selenium CSS selector:
+
+`checkbox_button = driver.find_element_by_css_selector('[href^="http://todo"]')`
 
 ### Navigating through elements
 
-Using a specific syntax you can specify how to navigate to / look for an element.
+Using a specific syntax you can specify how to navigate to an element.
 For example, using the `>` symbol between two elements refers to direct descendants, while the `,` refers to all elements.
 
 Select `a` that are child of `li`:
