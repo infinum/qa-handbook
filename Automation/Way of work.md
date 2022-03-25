@@ -49,14 +49,31 @@ It should be easy to get around, easy to understand and maintain the framework.
 
 ## Project structure
 
+A design pattern such as Page Object Model (POM) should be used when structuring the project.
+
+With POM implemented:
+
+- it is easier to get around
+
+- the readability is improved
+
+- the overall maintenance of the project is easier
 
 
 ### Page objects
 
+Page objects should only contain locators for that specific page / screen.
+For more details on [locators](https://infinum.com/handbook/qa/automation/locators).
+
+Methods related to those locators should also be located on the same page as the locators they are using.
+The structure can be further split by separating methods into a separate class suffixed by "_actions". That class should only contain methods related to the screen they refer to.
+
+The exception are locators and actions that are shared across multiple pages, such as dialog windows. Those should then be in their own class.
 
 
 ### Tests
 
+WIP
 
 
 ### Asserts
