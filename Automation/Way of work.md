@@ -112,18 +112,16 @@ One difference compared to the hard assert is that you will usually have to coll
 
 Example using [softest](https://pypi.org/project/softest/):
 
+```
 // First assert
-
-`self.soft_assert(self.assertEqual, found_title, expected_title)`
+self.soft_assert(self.assertEqual, found_title, expected_title)
 
 // Second assert
-
-`self.soft_assert(self.assertEqual, found_subtitle, expected_subtitle)`
+self.soft_assert(self.assertEqual, found_subtitle, expected_subtitle)
 
 // Collect all asserts
-
-`self.assert_all()`
-
+self.assert_all()
+```
 
 ---
 
