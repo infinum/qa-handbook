@@ -77,6 +77,40 @@ The exception are locators and actions that are shared across multiple pages, su
 WIP
 
 
+
+NOTE:
+After you are done writing a test, always make sure to check that it passes and fails when expected.
+
+
+#### What to automate
+
+Probably starting from day one, management will ask you: 
+- how many test cases can you write?
+- how many tests do we have?
+
+We should **not** just blindly automate as many tests as possible. Some tests take too much time to automate, some end up being flaky, some are just too difficult to automate.
+Then after a few months / years on the project, you end up having hundreds of tests, if not more. If you just keep adding more tests, they will become harder to maintain.
+If you make a few mistakes along the way, those mistakes might look impossible to fix at some point.
+
+
+- What will we achieve by having 10000000 automated tests?
+- Do they bring us any value?
+- How stable are those tests?
+- Which functionalities to cover with automated tests
+- Which / how many scenarios to add (positive, negative, a few extra ones?)
+
+Focus:
+
+- regression testing
+- smoke / sanity testing
+
+#### Flaky tests
+
+At some point, you will write a test that looks ok, and works ok for a while, but then it starts misbehaving. Sometimes passes, and then sometimes fails.
+If you end up updating and tweaking the test every once in a while and simply cannot get it working properly, consider removing that test. 
+Otherwise, it will only cause you headache, take up your time that could have been spent better, and mess up the report. Maybe it should simply be tested manually.
+
+
 ### Asserts
 
 In test automation, assertion is the validation step that determines whether the automated test case was successful or not.
@@ -122,6 +156,58 @@ self.soft_assert(self.assertEqual, found_subtitle, expected_subtitle)
 // Collect all asserts
 self.assert_all()
 ```
+
+
+## Working on a project
+
+When working on a project with multiple teams, you should agree on a _way of work_ and have it written down. 
+
+This should contain info on automation process in SDLC, such as:
+
+- requesting and verifying the locators needed for test automation
+- when are the tests being run
+- which tests are run and on which build
+- responsibility of checking the test report and reporting bugs
+
+
+
+
+### Requesting IDs
+
+Sometimes multiple people, even teams, might be working on test automation. Having a dedicated person(s) will make the process much faster.
+
+Before preparing the workflow for requesting and maintaining locators, it would be wise to have adding locators a part of the acceptance criteria.
+For starters, while developing new features, the developers should add locators at least on all input fields and buttons. On other elements that might be used in test automation, the locators can be added later on.
+
+It is important to discuss early on who will be responsible for:
+- preparing the locators (how should they look like and on which element to put them on)
+- opening tasks for developers requesting new locators 
+- verifying the locators are put on the correct elements
+
+One thing to consider when opening a new task:
+- task should be short and concise
+- better to open a few smaller ones than one huge one
+- have the tasks logically structured (e.g. per screen or feature)
+- add link to design 
+
+When preparing the locators, you should consider a tool that is already being used for design. In case the design is being done in Figma, you could use that one. 
+Not to mess up the design, you should create a separate document which will contain all the screens to which you want locators to be added.
+Simply copy and paste the screens and using tools like an arrow and a text field, mark the element that needs a locator.
+Then, when opening a task for the developers, insert the link that points to the screen with marked elements.
+
+When working on locators, it would be wise to have a page with a few examples, a "standardization" of sort.
+For example, you with all the buttons to be prefixed with "btn" or suffixed with "_button".
+The same goes for all other elements like input fields, sliders, etc.
+
+Maybe the developers on the project already have an agreed way of working so you could continue with that. The idea is to have a somewhat similar looking locators throughout the app.
+
+**NOTE:**
+A "known issue" is when there are multiple child elements inside a parent element. 
+For example, a LayoutView in Android might have multiple elements. Depending on the functionality, you will probably need a separate locator for each of those child elements.
+Otherwise, if a locator is put on the LayoutView, you will only get a better looking Xpath on the child elements.
+Think twice when considering elements which need a locator.
+
+
 
 ---
 
