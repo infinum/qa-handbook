@@ -9,7 +9,7 @@ Before you ask Google for help, run `appium-doctor` and make sure the necessary 
 
 ![troubleshooting_appium_appium_doctor.png](/img/troubleshooting_appium_appium_doctor.png)
 
-Common fixes:
+Possible fixes:
 
 - Node.js might need an update
 - Make sure you have [Android SDK Platform-Tools package](https://developer.android.com/studio/command-line/adb) installed
@@ -36,11 +36,13 @@ Appium runs tests alphabetically. It will first go through test files by name in
 Then it will again go alphabetically through the tests inside each test file / class.
 
 One way to override that is to name your tests prefixed with numbers, something like:
-    - test_001 (or test_001_001)
-    - test_001_002 
-    - ...
 
-If your tests are independent of each other, then you might not have to worry about the test order. In some cases, you might need to link a few tests and in that case you will have to keep this in mind.
+- test_001 (or test_001_001)
+- test_001_002 
+- ...
+
+If your tests are independent of each other, then you might not have to worry about the test order. 
+In some cases, you might need to link a few tests together and in that case you will have to keep this in mind.
 
 
 ## Errors
@@ -49,7 +51,7 @@ If your tests are independent of each other, then you might not have to worry ab
 
 `urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a4adca0>: Failed to establish a new connection: [Errno 61] Connection refused'))`
 
-Sounds a bit scary, but it might simply be that you did not start the server at all.
+It may simply be that you did not start the server.
 Start the server and the error should be gone :)
 
 
@@ -62,20 +64,20 @@ This error often happens when the device is disconnected. Check the developer op
 If this error happens while you are using Android, check if the SDK is up-to-date.
 
 After you have checked the developers options and made sure the SDK is up-to-date, try restarting Appium.
-If the issue stills persists, try killing the appium process.
+If the issue persists, try killing the appium process.
 
 1. Open Terminal
 
 2. Run command `lsof -Pn -i4` to see all active processes
 
-3. Run command `kill -9 <processNumber>` to kill the specific process, or simply `killall node` to kill all instances of node.js
+3. Run command `kill -9 <processNumber>` to kill the specific appium process, or simply `killall node` to kill all instances of node.js
 
 4. Start Appium server again
 
 
 ### Unable to instantiate AppiumDriver
 
-Happens sometimes if you had multiple Appium instances running. Maybe you had both Appium Server and Appium Desktop, or multiple Appium Inspectors running and some process were not closed properly.
+Happens sometimes if you had multiple Appium instances running. Maybe you had both Appium Server and Appium Desktop, or multiple Appium Inspectors running and some processes were not closed properly.
 Try to kill all those processes and restart Appium.
 
 1. Open Terminal
@@ -85,7 +87,7 @@ Try to kill all those processes and restart Appium.
 3. Start Appium server again
 
 
-### Error 65
+### Error 65 / Unable to launch the test runner
 
 `[WebDriverAgent] xcodebuild exited with code '65' and signal 'null'`
 
@@ -93,8 +95,8 @@ Try to kill all those processes and restart Appium.
 
 Could happen if:
 
-- developer has not been trusted on the device
-- WebDriverAgentRunner in the XCode has not been set up correctly
+- developer is not trusted on the device
+- WebDriverAgentRunner in the XCode is not set up correctly
 - the Appium version and the iOS version are not compatible
 
 
@@ -108,23 +110,23 @@ Fix:
 
 4. Trust the device in the options
 
-If the issues persists, check that you have correctly set up the Xcode configuration.
+If the issues persist, check that you have correctly set up the Xcode configuration.
 
 
 ### SplashActivity' never started
 
 `Original error: 'com.signify.masterconnect.ui.splash.SplashActivity' or 'com.signify.masterconnect.repro.mock.com.signify.masterconnect.ui.splash.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting`
 
-Could be any number of things. Check Appium logs for more details.
+Could be a number of things. Check Appium logs for more details.
 
-One of the issues is when an app opens a webview which stays open even after the tests is done.
+One of the issues could be that the app opens a webview which stays open even after the test is done.
 If the webview stays open when the following test starts, the execution will end in the error.
 
 
 ### WebDriverAgent keeps getting deleted when opening Appium Inspector
 
 There could be various problems occurring. Some might be related to faulty WebDriverAgent configuration.
-But it also could be there are still some Appium processes running or that simply there is another inspector screen already running.
+But it also could be there are still some Appium processes running or that simply there is another Appium Inspector screen already open.
 That will cause Appium to delete the WDA, usually only happens on iOS.
 
 
