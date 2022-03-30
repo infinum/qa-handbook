@@ -113,14 +113,18 @@ Fix:
 If the issues persist, check that you have correctly set up the Xcode configuration.
 
 
-### SplashActivity' never started
+### SplashActivity never started
 
-`Original error: 'com.signify.masterconnect.ui.splash.SplashActivity' or 'com.signify.masterconnect.repro.mock.com.signify.masterconnect.ui.splash.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting`
+`Original error: 'com.infinum.app.ui.splash.SplashActivity' or 'com.infinum.app.repro.mock.com.infinum.app.ui.splash.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting`
+
+`... DriverConfigurationError: Could not instantiate new WebDriver instance of type class io.appium.java_client.AppiumDriver (Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.infinum.app.staging' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.infinum.app.ui.splash.SplashActivity' or 'com.infinum.app.staging.com.infinum.app.ui.splash.SplashActivity' never started.`
 
 Could be a number of things. Check Appium logs for more details.
 
-One of the issues could be that the app opens a webview which stays open even after the test is done.
-If the webview stays open when the following test starts, the execution will end in the error.
+One of the reasons could be that the app opens a webview, or other screen outside the app, which stays open even after the test is done.
+If the screen stays open when the following test starts, the execution ends in the error.
+
+To fix the _SplashActivity never started_ error, rearrange the steps in your test, add a step that returns to the app or closes the screen before the test is done.
 
 
 ### WebDriverAgent keeps getting deleted when opening Appium Inspector
