@@ -398,11 +398,13 @@ Once the app downloads, you can access it from the Launchpad or the Applications
 
 > Some of the apps that you see in the ‌Mac App Store‌ are labeled with a warning that says "Not Verified for macOS," these apps are not optimized for use on a Mac.
 
-Mac App Store availability - by default, apps are published automatically on the Mac App Store. App availability can be managed at any time in App Store Connect.
+**Mac App Store availability**
 
-### Circumventing the App Store or "sideloading" apps
+By default, apps are published automatically on the Mac App Store. App availability can be managed at any time in App Store Connect.
 
-Apps could be downloaded and installed via a third-party app (sideloaded) but Apple has disabled this feature on ‌M1‌ Macs running macOS Big Sur 11.1 or newer. Currently the only way to install the iPhone or iPad app on the M1 machine is to download it through the App Store.
+**Circumventing the App Store or "sideloading" apps**
+
+Apps could be downloaded and installed via a third-party app (sideloaded) but Apple has disabled this feature on M1 Macs running macOS Big Sur 11.1 or newer. Currently, the only way to install the iPhone or iPad app on the M1 machine is to download it through the App Store.
 
 
 ---
