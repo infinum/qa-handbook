@@ -32,6 +32,7 @@ This article is a compendium of useful tips & tricks for testing mobile apps.
 - <a href=#jailbreaking-ios12-with-uncover>Jailbreaking iOS12 with Uncover</a>
 - <a href=#how-to-remove-jailbreak-on-ios>How to remove jailbreak on iOS</a>
 - <a href=#testing-production-builds-on-ios>Testing production builds on iOS</a>
+- <a href=#how-to-install-iphone-or-ipad-apps-on-m1-mac>How to install iPhone or iPad apps on M1 Mac</a>
 
 
 ## General
@@ -375,6 +376,34 @@ The file that actually gets uploaded to iTunes Connect cannot be installed on a 
 This means that "Production" builds on Tryoutapps are not identical to what actually ends up on the App Store, only those that you get via Testflight are. 
 
 That's why you should make sure to always independently verify Testflight builds before they are published to users.
+
+
+### How to install iPhone or iPad apps on M1 Mac
+
+New Apple desktop devices with M1 chips have a neat ability to install any iPhone or iPad apps on the M1 Macs. This is possible due to the common architecture shared by the two operating systems. The only way to install apps that are made for iPhone or iPad is to download them directly through the AppStore!
+
+**No porting required!**
+
+iPhone and iPad apps on the App Store are automatically available on the Mac App Store on Apple silicon Macs, there is no need to modify the app. The same frameworks that your apps use on iPhone and iPad are available and tuned just for Mac, taking advantage of the same shared architecture.
+
+**Here’s how you can download an app to install on an M1 mac:**
+
+1. Open the ‌Mac App Store‌ and click your profile from the bottom-left of the page.
+2. Click ‘iPhone‌ & ‌iPad‌ Apps’ tab situated under Account.
+3. Select the app from the list and click the download button.
+
+Once the app downloads, you can access it from the Launchpad or the Applications folder.
+
+![](/img/M1_iphone_Apps.png)
+
+> Some of the apps that you see in the ‌Mac App Store‌ are labeled with a warning that says "Not Verified for macOS," these apps are not optimized for use on a Mac.
+
+Mac App Store availability - by default, apps are published automatically on the Mac App Store. App availability can be managed at any time in App Store Connect.
+
+### Circumventing the App Store or "sideloading" apps
+
+Apps could be downloaded and installed via a third-party app (sideloaded) but Apple has disabled this feature on ‌M1‌ Macs running macOS Big Sur 11.1 or newer. Currently the only way to install the iPhone or iPad app on the M1 machine is to download it through the App Store.
+
 
 ---
 
