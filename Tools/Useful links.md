@@ -29,6 +29,7 @@
 4. https://apps.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12 - clipboard manager 
 5. https://snark.github.io/jumpcut/ - stores all that you have copied or cut in the past, allowing you to quickly find that snippet of text you've been looking for
 6. Editing text on the web - by using the following steps, the text on the web page becomes editable and you can see how it would look if something else was written in the fields.
+
  	- Right-click and select "Inspect"
  	- Go to "Console"
  	- Write: document.designMode='on'
