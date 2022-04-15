@@ -21,6 +21,7 @@ NOTE:
 Appium Server and Appium Desktop are installed in two different places.
 
 - Appium Server: `/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent`
+
 - Appium Desktop: `/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent`
 
 
