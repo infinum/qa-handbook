@@ -30,9 +30,9 @@
 5. https://snark.github.io/jumpcut/ - stores all that you have copied or cut in the past, allowing you to quickly find that snippet of text you've been looking for
 6. Editing text on the web - by using the following steps, the text on the web page becomes editable and you can see how it would look if something else was written in the fields.
 
- 	- Right-click and select "Inspect"
- 	- Go to "Console"
- 	- Write: document.designMode='on'
+ 	1. Right-click and select "Inspect"
+ 	2. Go to "Console"
+ 	3. Write: document.designMode='on'
 	
 
 ### Miscellaneous
