@@ -103,7 +103,7 @@ If the issues persist, check that you have correctly set up the Xcode configurat
 
 Could be a number of things. Check Appium logs for more details.
 
-One of the reasons could be that the app opens a webview, or other screen outside the app, which stays open even after the test is done. If the screen stays open when the following test starts, the execution ends in an error.
+One of the reasons could be that the app opens a webview, or other screen outside the app, which stays open even after the test is done. If the screen stays open when the following test starts, the execution ends with the SplashActivity error.
 
 To fix the _SplashActivity never started_ error, rearrange the steps in your test, add a step that returns to the app or closes the screen before the test is done.
 
