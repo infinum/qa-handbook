@@ -1,49 +1,8 @@
 > A computer once beat me at chess, but it was no match for me at kickboxing. — Emo Philips
 
-## General
-
-### Basic principles
-
-- Tests should be easy to write
-
-- Tests should be easy to understand
-
-- Tests and test suites should be easy to maintain
-
-- Tests should help testers with quality assurance
-
-
-### What is the benefit of test automation?
-
-- Reduce regression time
-
-- Gives testers more time to focus on more complex scenarios and to do exploratory testing
-
-- Automated test can run more quickly through tedious scenarios using various input
-
-
-### What test automation is not
-
-Test automation is not here to replace testers completely.
-It is to be used primarily to help testers to test the app more thoroughly in shorter amount of time.
-
-However, the idea is not to automate every single scenario but to focus on scenarios that will benefit us.
-
-
-### Philosophy
-
-- You shouldn’t have to recompile your app or modify it in any way in order to automate it
-
-- You shouldn’t be locked into a specific language or framework to write and run your tests
-
-- A mobile automation framework shouldn’t reinvent the wheel
-
-- A mobile automation framework should be open source, in spirit and practice as well as in name
-
-
 ## Frameworks
 
-Keep your framework lightweight. 
+Keep your framework lightweight.
 It should be easy to get around, easy to understand and maintain the framework.
 
 
@@ -53,9 +12,9 @@ A design pattern such as Page Object Model (POM) should be used when structuring
 
 With POM implemented:
 
-- it is easier to get around
-
 - the readability is improved
+
+- it is easier to understand the project structure
 
 - the overall maintenance of the project is easier
 
@@ -67,48 +26,89 @@ Page objects should only contain locators for that specific page / screen.
 Read the [locators article](https://infinum.com/handbook/qa/automation/locators) for more details on using locators.
 
 Methods related to those locators should also be located on the same page as the locators they are using.
-The structure can be further split by separating methods into a separate class suffixed by "_actions". That class should only contain methods related to the screen they refer to.
+The structure can be further split by separating methods into a separate class, e.g. suffixed by _"_actions"_. That class should only contain methods related to the screen (or feature) they refer to.
 
-The exception are locators and actions that are shared across multiple pages, such as dialog windows. Those should then be in their own class.
+The exception are locators and actions that are shared across multiple pages, such as dialog windows. Those can be in their own class.
 
 
 ### Tests
 
-WIP
+Tests should be:
 
+ - easy to understand
+
+ - easy to maintain
+
+ - independent of other tests
 
 
 NOTE:
-After you are done writing a test, always make sure to check that it passes and fails when expected.
+**After you are done writing a test, always check that it passes and fails when expected.**
+
+#### Independent tests
+
+Ideally, you want to write independent tests.
+
+Independent tests:
+
+- do not depend on other tests or test suites
+
+- can be run in any order
+
+- can easily be run in parallel (running tests on multiple devices at the same time)
+
+
+However, you might not be able to follow _best practices_ on every single project.
+
+When considering a difference between a web and a mobile project, it is obvious the way the apps work is different.
+While on a web page you can easily jump between URLs (most of the time), on a mobile app you have to follow a certain flow before getting to the desired screen.
+
+Something worth considering is the time it takes for the tests to run and the cost of test automation.
+By adding more tests, the more time it will take for them to run.
+Also, what if you need real hardware for your tests, and you are limited by the amount of devices you have but there is no budget to get more. Additionally, those devices can only be connected to one mobile device at the time.
+Furthermore, to prepare the initial state for a test might take too much time. If it takes just 10 min to each test to come to a desired state before continuing, and the steps the tests checks even longer, you might not be able to have many tests run in a desirable amount of time.
+
+In that case, think twice before you start with test automation and discuss with the team what the best approach would be.
 
 
 #### What to automate
 
-Probably starting from day one, management will ask you: 
-- how many test cases can you write?
-- how many tests do we have?
+Be careful not to fall into a trap of just adding tests to report back the number of newly added ones. Having a bunch of tests does not mean we are doing it right.
+We should **not** just blindly automate everything.
 
-We should **not** just blindly automate as many tests as possible. Some tests take too much time to automate, some end up being flaky, some are just too difficult to automate.
-Then after a few months / years on the project, you end up having hundreds of tests, if not more. If you just keep adding more tests, they will become harder to maintain.
-If you make a few mistakes along the way, those mistakes might look impossible to fix at some point.
+After a few months / years on the project, you will have hundreds of tests, if not more. If you just keep adding more tests without being careful of their stability, they will become harder to maintain.
+If you make a few mistakes along the way, those mistakes might pile up and be impossible to fix at some point.
+Some tests might just be too difficult to automate and not bring any value. Others might be flaky and ask for more time to maintain them then it was writing them.
 
+Questions worth asking before / during test automation:
 
 - What will we achieve by having 10000000 automated tests?
+
 - Do they bring us any value?
-- How stable are those tests?
-- Which functionalities to cover with automated tests
+
+- How stable are the tests?
+
+- Which functionalities to cover with automated tests?
+
 - Which / how many scenarios to add (positive, negative, a few extra ones?)
 
-Focus:
+
+When starting with automation, the focus should be on the:
 
 - regression testing
+
 - smoke / sanity testing
+
+Afterwards, depending on the project or when you cover all the existing features, you could continue with covering new functionalities.
+
 
 #### Flaky tests
 
 At some point, you will write a test that looks ok, and works ok for a while, but then it starts misbehaving. Sometimes passes, and then sometimes fails.
-If you end up updating and tweaking the test every once in a while and simply cannot get it working properly, consider removing that test. 
-Otherwise, it will only cause you headache, take up your time that could have been spent better, and mess up the report. Maybe it should simply be tested manually.
+If you end up updating and tweaking the test every once in a while and simply cannot get it working properly, consider removing that test.
+Otherwise, it will only cause you headache, take up your time that could have been spent better, and mess up the report.
+
+Maybe it should simply be tested manually.
 
 
 ### Asserts
@@ -120,7 +120,7 @@ Don't reinvent the wheel when it comes to assertions. There are a bunch of asser
 Don’t write your own verification methods unless it's really necessary.
 
 When assert results in failure, the test execution is usually aborted. However, sometimes you do not want to abort the test but let it finish.
-Therefore, it is important to know about difference between types of assertions. 
+Therefore, it is important to know about difference between types of assertions.
 
 #### Hard asserts
 
@@ -134,9 +134,9 @@ For example, you need to have a user created before continuing to the next scree
 #### Soft asserts
 
 Soft asserts refer to asserts that do not stop the test execution in case of an unexpected result.
-This type of asserts are also useful since you can have more than one. 
+This type of asserts are also useful since you can have more than one.
 
-You can hace multiple asserts throughout the test. The test will not fail if any of the asserts fail.
+You can have multiple asserts throughout the test. The test will not fail if any of the asserts fail.
 When the test comes to an end, you will get the result on all asserts that failed.
 
 For example, you have a screen with a list of values that you want to check, but those values are not a precondition to any of the following steps. If any of the values are incorrect, it will not affect the following steps.
@@ -160,16 +160,17 @@ self.assert_all()
 
 ## Working on a project
 
-When working on a project with multiple teams, you should agree on a _way of work_ and have it written down. 
+When working on a project with multiple teams, you should agree on a _way of work_ and have it written down as soon as possible, preferably during your first days on the project.
 
 This should contain info on automation process in SDLC, such as:
 
 - requesting and verifying the locators needed for test automation
+
 - when are the tests being run
+
 - which tests are run and on which build
+
 - responsibility of checking the test report and reporting bugs
-
-
 
 
 ### Requesting IDs
@@ -180,17 +181,24 @@ Before preparing the workflow for requesting and maintaining locators, it would 
 For starters, while developing new features, the developers should add locators at least on all input fields and buttons. On other elements that might be used in test automation, the locators can be added later on.
 
 It is important to discuss early on who will be responsible for:
+
 - preparing the locators (how should they look like and on which element to put them on)
-- opening tasks for developers requesting new locators 
+
+- opening tasks for developers requesting new locators
+
 - verifying the locators are put on the correct elements
 
 One thing to consider when opening a new task:
-- task should be short and concise
-- better to open a few smaller ones than one huge one
-- have the tasks logically structured (e.g. per screen or feature)
-- add link to design 
 
-When preparing the locators, you should consider a tool that is already being used for design. In case the design is being done in Figma, you could use that one. 
+- task should be short and concise
+
+- better to open a few smaller ones than one huge one
+
+- have the tasks logically structured (e.g. per screen or feature)
+
+- add link to design
+
+When preparing the locators, you should consider a tool that is already being used for design. In case the design is being done in Figma, you could use that one.
 Not to mess up the design, you should create a separate document which will contain all the screens to which you want locators to be added.
 Simply copy and paste the screens and using tools like an arrow and a text field, mark the element that needs a locator.
 Then, when opening a task for the developers, insert the link that points to the screen with marked elements.
@@ -202,7 +210,7 @@ The same goes for all other elements like input fields, sliders, etc.
 Maybe the developers on the project already have an agreed way of working so you could continue with that. The idea is to have a somewhat similar looking locators throughout the app.
 
 **NOTE:**
-A "known issue" is when there are multiple child elements inside a parent element. 
+A "known issue" is when there are multiple child elements inside a parent element.
 For example, a LayoutView in Android might have multiple elements. Depending on the functionality, you will probably need a separate locator for each of those child elements.
 Otherwise, if a locator is put on the LayoutView, you will only get a better looking Xpath on the child elements.
 Think twice when considering elements which need a locator.
@@ -215,6 +223,7 @@ Regardless whether you work as the only TAE on the project or with multiple peop
 We can divide them into:
 
 - permanent branches
+
 - temporary branches
 
 
@@ -222,17 +231,22 @@ We can divide them into:
 
 Permanent branches will most likely stay in your repository permanently.
 
-**Main** (_master_) 
+**Main** (_master_)
 
 - it should always be stable
+
 - it should be up-to-date
+
 - new code should only be merged after a code review
+
 - should not be used for experimenting with the new code
 
 **Development**
 
 - used for checking the new code
+
 - used for reviews
+
 - gets merged into _main_ (_master_) after passing a code review
 
 
@@ -250,8 +264,11 @@ Branch names should be short yet meaningful.
 Often used names, or rather prefixes, are:
 
 - Bug fix
+
 - Hot fix
+
 - Feature
+
 - WIP
 
 To further make clear what is being worked on in a specific branch, you can add unique ID in the name, as well as hyphen, underscore and slash.
@@ -273,9 +290,22 @@ Bad branch names:
 
 `bugfix`
 
-`wip_add_test_which_checks_that_the_login_works`
+`wip_add_test_that_checks_that_the_login_works`
 
 `itisdifficulttoreadthenameofthisbranch`
+
+
+#### Pull requests
+
+[How to handle pull requests without making enemies](https://infinum.com/blog/write-good-pull-requests/)
+
+
+### Test reports
+
+One of your tasks is to often check the reports generated by test automation.
+
+If there are tests that ended in error or fail, make sure the issue is not in the framework or a mistake in the tests.
+If the issue is in the app, report it to the QA team for further investigation.
 
 ---
 
