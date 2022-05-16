@@ -1,8 +1,8 @@
-> *Quality is the ally of schedule and cost, not their adversary.*
+> Quality is the ally of schedule and cost, not their adversary. - James A. Ward
 
 ## The benefits of test automation
 
-- Helps testers test the app more thoroughly in shorter amount of time
+- Helps testers test the app more thoroughly in a shorter amount of time
 - Gives testers more time to focus on more complex scenarios and to do exploratory testing
 - Automated tests run more quickly through tedious scenarios using various input
 - Reduces regression testing time
@@ -38,7 +38,7 @@ There are plenty of tools available, but generally there are two approaches:
 
 You can code and run your tests using just a text editor or an actual IDE which will help you organize your tests and test data, connect to bug tracking systems, etc.
 
-One thing to keep in mind is that the UI tests are the slowest kind of tests. You should think twice when considering which UI tests to automated.
+One thing to keep in mind is that the UI tests are the slowest kind of tests. You should think twice when considering which UI tests to automate.
 Start with the most important tests that will help the QA team and reduce the regression time.
 
 **API testing**
@@ -48,13 +48,11 @@ As seen in the testing pyramid, the API is a connecting (integration) layer.
 API tests are fast since there is no UI involved and can quickly verify the communication between software components.
 A tool like Postman would be enough to start with API testing right away.
 
-
 **Unit testing**
 
 Unit tests are the fastest kind of tests, and we should strive to have as many of those as possible.
 
 Since writing them requires being familiar with the codebase, they are written and maintained by developers.
-
 
 ## Tools
 
@@ -62,7 +60,7 @@ Since writing them requires being familiar with the codebase, they are written a
 
 [Selenium](https://www.selenium.dev/) is probably the most popular web automation framework built on top of WebDriver (as many others are). We use it for web UI automation.
 
-Selenium IDE was developed for testers and developers to record their actions as they follow the workflow that they need test.
+Selenium IDE was developed for testers and developers to record their actions as they follow the workflow that they need to test.
 
 There are plenty of competing tools and frameworks out there. To name a few:
 
