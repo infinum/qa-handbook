@@ -1,13 +1,14 @@
 > “It’s hardware that makes a machine fast.  It’s software that makes a fast machine slow.” — Craig Bruce
 
+Jenkins is an open source automation server. It provides a multitude of plugins to support building, deploying and automating a project.
+Therefore, it is quite customizable and could differ from project to project.
+A job configuration will also depend on your project - how the project is set up, which plugins you want / have to use, which framework you are using, and so on.
 
-There are multiple ways to set up a Jenkins job. 
-Jenkins is very customizable but the configuration will also depend on your project - how the project is set up, which plugins you want to use, which framework you are using, and so on.
+Maybe the team is already using Jenkins, and it is configured to match the current way of work. In that case you could probably reuse the current configuration, with minor tweaks.
 
-Maybe the team is already using Jenkins and it is configured to match the current way of work. In that case you could probably reuse the current configuration, with minor tweaks.
+This is just a short primer on creating a new job with a few examples.
 
-There are quite a few things to learn about Jenkins. This is just a short primer on creating a new job with a few examples.
-
+There are multiple ways to set up a Jenkins job.
 For more information on Jenkins, check the [official documentation](https://www.jenkins.io/doc/book/getting-started/).
 
 ## Prerequisites
