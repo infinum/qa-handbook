@@ -119,4 +119,4 @@ For more information on Jenkins Pipeline, check the [official documentation](htt
 
 ---
 
-![dilbert_automation_jenkins_jobs.jpg](/img/dilbert_automation_jenkins_jobs.jpg)
+![dilbert_automation_jenkins_jobs.png](/img/dilbert_automation_jenkins_jobs.png)
