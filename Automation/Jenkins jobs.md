@@ -45,7 +45,7 @@ You need an Admin account to manage Jenkins' configuration.
 - For example: `H 22 * * 1,3,5`
 - This will run the job on Monday, Wednesday and Friday starting at 22 PM 
 
-13. In the _Build Environment_ section, select the Abort the build if it's stuck
+13. In the _Build Environment_ section, select the _Abort the build_ option if it's stuck
 - This is an important step since if the build gets stuck it might go on for days if not handled properly
 
 14. In the _Time-out strategy_, select _Absolute_
