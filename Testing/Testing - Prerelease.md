@@ -46,7 +46,8 @@ Along with the time estimate, you can include some basic info in the task:
 - release version/platform/environment you are going to test on
 - link to the test execution in TestRail, X-Ray, or any other tool that you use
 
-Besides regression tests, you can open tasks for smoke and other types of tests as well. Especially when they take a considerable amount of time to be finished. Also, there is one more practice to use before or after the regression run and that is a testing session that you could do with your project teammates.  
+Besides regression tests, you can open tasks for smoke and other types of tests as well. Especially when they take a considerable amount of time to be finished.
+
 
 ### Testing, testing, and more testing...
 
@@ -111,43 +112,50 @@ Once the app is available for installation on Google Play Beta/TestFlight, you n
 3. Set it up and update it with the new Google Play Beta/Testflight build.
 4. Do a limited regression test on production to check the most important flows and functionalities.
 
-### What’s the difference between an internal, closed, and open test?
+#### What’s the difference between an internal, closed, and open test on Google Play?
 
-You can create releases on three testing tracks before you release your app to production. Each phase of testing helps you gather the feedback you need to make improvements to your app throughout its development.
+Before you release your app to production, you can create releases on three testing tracks: internal, closed and open. Each of them can help you gather the feedback you need to make improvements to your app throughout its development and/or before the release to production. 
 
-#### Internal testing: 
+In order to join a test, users need a Google Account (@gmail.com) or a Google Workspace account.
+
+**Internal testing:**
 
 When you create an internal test, you can immediately release your app to your internal testers (up to 100 testers for initial quality assurance checks). This can help you identify issues and receive feedback earlier in your development process.
 
 It is recommended running an internal test before releasing your app to the closed or open tracks. If needed, you can run internal tests concurrently with closed and open tests for different versions of your app. 
 
-**Tip:** You can also use internal testing to test apps that are not fully configured
+**Tip:** You can also use internal testing to test apps that are not fully configured.
 
-#### Closed testing:
+**Closed testing:**
 
-Create a closed testing release to test pre-release versions of your app with a wider set of testers to gather more targeted feedback. Once you've tested with a smaller group of colleagues or trusted users, you can expand your test to an open release. On your Closed testing page, an alpha track will be available as your initial closed test. If needed, you can also create and name additional closed tracks.
+Create a closed testing release to test prerelease versions of your app with a wider set of testers to gather more targeted feedback. Once you've tested with a smaller group of colleagues or trusted users, you can expand your test to an open release. On your Closed testing page, an alpha track will be available as your initial closed test. If needed, you can also create and name additional closed tracks.
 
 With a closed test, you can create a list of testers by email address. You can create a total of 200 lists, and each list can have up to 2,000 users. You can create up to 50 lists per track.
 
 If you’re testing an existing app that you've published before, only users in your test group will receive an update for your closed version.
 
-#### Open testing: 
+**Open testing:** 
 
-Create an open testing release to run a test with a large group and surface your app's test version on Google Play. If you run an open test, anyone can join your testing program and submit private feedback to you.
+Create an open testing release to run a test with a large group and surface your app's test version on Google Play. If you run an open test, anyone can join your testing program and submit private feedback to you. Make sure your app is ready to be visible on Google Play before choosing this option.
 
-If you set up an open test, users can find your test app on Google Play. Make sure your app is ready to be visible on Google Play before choosing this option.
+If you set up an open test, users can find your test app on Google Play. 
+You can also share a URL link on a website or email. Every user with the link can access the open test.
 
-- For early access apps (new apps that haven't been published to production):
+*The information was retrieved from the [Play Console support page](https://support.google.com/googleplay/android-developer/answer/9845334?hl=en) where you can find out more about Google Play test tracks.*
 
- 
-	Users can find your open test via search on Google Play. Once users find your listing, they can install and use your app.
-	
-- For apps with a live production version: 
+#### TestFlight testing tracks
 
-	Users can opt-in to your open test from your store listing.
+Similar to Google Play test tracks, TestFlight also offers options to internally or externally test your apps.
 
-You can also share a URL link on a website or email. Every user with the link can access the open test
+**Internal testers:**
 
+You can enroll up to 100 members of your team. In order to join the group, they have to hold the Account Holder, Admin, App Manager, Developer, or Marketing role as beta testers.
+
+**External testers and groups:**
+
+By using external testers and groups, you can invite up to 10,000 external testers using their email addresses or by creating and sharing a public link. Anyone with the link will be able to download and test your app. 
+
+If you want to find out more about **TestFlight** testing tracks, check out [this page](https://developer.apple.com/testflight/).
 
 
 ## Web Apps
