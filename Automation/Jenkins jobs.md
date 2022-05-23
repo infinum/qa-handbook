@@ -83,7 +83,7 @@ This way, you can have different `Jenkinsfile` for each branch of the same proje
 
 Prerequisites:
 
-- `Jenkinsfile` should be added in the root of your project
+- `Jenkinsfile` should be added to the root of your project
 
 1. Open Jenkins
 
@@ -125,11 +125,17 @@ For more information on Jenkins Pipeline, check the [official documentation](htt
 
 ### Check console log
 
+Once the job is started, you will have access to the logs for that job. 
+Open the console log to check the logs after the job is done. 
+You can even check the log while the job is running since it's updated in real time.
+
 1. Open Jenkins
 
 2. Open a job
 
-3. Open a build's details by clicking the build number
+3. Open a build's details by clicking the build number in the build history
+
+![jenkins_build_history.png](/img/jenkins_build_history.png)
 
 4. Click _Console Output_ in the left-hand side menu
 
