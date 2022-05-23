@@ -44,7 +44,7 @@ You need an admin account to manage Jenkins system configuration.
 
 9. In the _Repository URL_, enter the link to your GitHub repository 
 
-10. In the _Branches to build_, enter the branch you want to use when running the job (e.g. _*/master_)
+10. In the _Branches to build_, enter the branch you want to use when running the job (e.g. _*/main_)
 
 11. In the _Build Triggers_ section, select the option that will trigger the job 
 
@@ -136,6 +136,7 @@ You can even check the log while the job is running since it's updated in real t
 3. Open a build's details by clicking the build number in the build history
 
 ![jenkins_build_history.png](/img/jenkins_build_history.png)
+
 
 4. Click _Console Output_ in the left-hand side menu
 
