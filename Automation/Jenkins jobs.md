@@ -137,6 +137,7 @@ You can even check the log while the job is running since it's updated in real t
 
 ![jenkins_build_history.png](/img/jenkins_build_history.png)
 
+
 4. Click _Console Output_ in the left-hand side menu
 
 ![jenkins_console_output.png](/img/jenkins_console_output.png)
