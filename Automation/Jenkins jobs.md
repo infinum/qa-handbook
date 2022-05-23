@@ -37,9 +37,9 @@ You need an Admin account to manage Jenkins' configuration.
 7. In the _Description_ text field, type in the jobs description
  - The description will be shown under the job name on the job details page
 
-8. In the _Source Code Management_ section, select the VCS you want to use (e.g., Git)
+8. In the _Source Code Management_ section, select the VCS you want to use (e.g. Git)
 9. In the _Repository URL_, enter the link to your GitHub repository 
-10. In the _Branches to build_, enter the branch you want to use when running the job (e.g., _*/master_)
+10. In the _Branches to build_, enter the branch you want to use when running the job (e.g. _*/master_)
 11. In the _Build Triggers_ section, select the option that will trigger the job 
 12. In the _Schedule_ text field, type in the cron syntax to specify when to run the job
  - For example: `H 22 * * 1,3,5`
@@ -56,10 +56,10 @@ You need an Admin account to manage Jenkins' configuration.
 16. In the _Command_ text field, type in the commands to run when the job starts
  - For example, you can specify the script that should be run and the command to start the tests
 
-```
-./scripts/start_appium_server.sh
-python3 -m pytest
-```
+    ```
+    ./scripts/start_appium_server.sh
+    python3 -m pytest
+    ```
 
 17. In the _Post-build Actions_ section, select an action to do after the job is done
  - You might want to archive artifacts such as logs, zip or jar files
@@ -86,7 +86,7 @@ Prerequisites:
  - A configuration page will open
 6. In the _Description_ text field, type in the jobs description
  - The description will be shown under the job name on the job details page
-7. In the _Branch Sources_ section, select the VCS you want to use (e.g., Git)
+7. In the _Branch Sources_ section, select the VCS you want to use (e.g. Git)
 8. In the _Project Repository_, enter the link to your GitHub repository 
 9. Save the project
  - Jenkins automatically scans the specified repository and creates items for each branch in the repository that contains a Jenkinsfile
