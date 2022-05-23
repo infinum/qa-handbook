@@ -125,8 +125,9 @@ For more information on Jenkins Pipeline, check the [official documentation](htt
 
 ### Check console log
 
-Once the job is started, you will have access to logs that are being updated in real time.
-If you want to check the logs after the job is done, or even while it is being run, open the console log.
+Once the job is started, you will have access to the logs for that job. 
+Open the console log to check the logs after the job is done. 
+You can even check the log while the job is running since it's updated in real time.
 
 1. Open Jenkins
 
