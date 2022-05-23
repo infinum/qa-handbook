@@ -15,7 +15,7 @@ For more information on Jenkins, check the [official documentation](https://www.
 
 Jenkins should be installed and set up (plugins installed, connected to a VCS, etc.) on your machine.
 
-You need an Admin account to manage Jenkins' configuration.
+You need an admin account to manage Jenkins system configuration.
 
 
 ## Creating a job
