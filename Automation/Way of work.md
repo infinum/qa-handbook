@@ -265,6 +265,8 @@ If the issue is in the app, report it to the QA team for further investigation.
 
 ---
 
+
 ![dilbert_automation_wow.png](/img/dilbert_automation_wow.png)
+
 
 *Image downloaded from [dilbert.com](https://dilbert.com/strip/2012-04-09): 04-09-12 by Scott Adams*
