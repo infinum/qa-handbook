@@ -117,7 +117,7 @@ Unfortunately, oftentimes only the status code is being checked. However, especi
 
 A few basic things to check:
 
-- status code (all that apply, not only 200)
+- status codes (all that apply, not only 200)
 - response payload
 - response headers
 
