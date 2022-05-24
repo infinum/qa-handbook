@@ -134,9 +134,7 @@ You can even check the log while the job is running since it's updated in real t
 2. Click the job name to open its details page
 
 3. Open a build's details by clicking the _build number_ in the Build History section
-
 <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![jenkins_build_history.png](/img/jenkins_build_history.png)</span>
-
 4. Click _Console Output_ in the left-hand side menu
 
 ![jenkins_console_output.png](/img/jenkins_console_output.png)
