@@ -102,27 +102,25 @@ Don't write your own verification methods unless it's really necessary.
 When asserting results in failure, the test execution is usually aborted. However, sometimes you do not want to abort the test but let it finish.
 Therefore, it is important to know about the difference between types of assertions.
 
-#### Hard asserts
+#### Hard assert
 
 Hard asserts refer to asserts that stop the test execution in case of an assertion error.
-In case the assert has been put in the middle of the test, this is where the test stops.
+In case assert has been put in the middle of the test, this is where the test stops.
 
 This type of assert should be used when you do not want the test to continue since the condition for further steps might not have been met.
 For example, you need to have a user created before continuing to the next screen/page. If the user is not created, there is no point in continuing with the tests. The test should be marked as _fail_.
 
 
-#### Soft asserts
+#### Soft assert
 
 Soft asserts refer to asserts that do not stop the test execution in case of an unexpected result.
-This type of asserts are also useful since you can have more than one.
-
-You can have multiple asserts throughout the test. The test will not fail if any of the asserts fail.
-When the test comes to an end, you will get the result on all asserts that failed.
+This type of assert is also useful because you can have multiple asserts throughout the test. The test execution will not stop if any of the asserts fail.
+When the test comes to an end, you will get the result on all failed asserts.
 
 For example, you have a screen with a list of values that you want to check, but those values are not a precondition to any of the following steps. If any of the values are incorrect, it will not affect the following steps.
 You can simply add as many soft asserts as there are values on the screen and check that all of them match the expected result.
 
-One difference compared to the hard assert is that you will usually have to collect all the soft asserts at the end of the test. Something which is not needed for the hard assert.
+One difference compared to hard assert is that, in some libraries, you have to collect all soft asserts at the end of the test (see example below). Otherwise, the asserts are not evaluated.
 
 Example using [softest](https://pypi.org/project/softest/):
 
@@ -140,7 +138,7 @@ self.assert_all()
 
 ## Working on a project
 
-When working on a project with multiple teams, you should agree on a _way of work_ and have it written down as soon as possible, preferably during your first days on the project.
+When working on a project with multiple people / teams, you should agree on a _way of work_ and have it written down as soon as possible, preferably during your first days on the project.
 
 This should contain info on the test automation process in SDLC (Software Development Life Cycle), such as:
 
@@ -151,22 +149,20 @@ This should contain info on the test automation process in SDLC (Software Develo
 
 ### Requesting IDs
 
-Sometimes multiple people, even teams, might be working on test automation. Having a dedicated person(s) will make the process much faster.
+Ideally, if test automation is being done on the project, you should have most of the locators ready.
+If not, it is important to discuss early on who will be responsible for:
 
-Before preparing the workflow for requesting and maintaining locators, it would be wise to have adding locators a part of the acceptance criteria.
-For starters, while developing new features, the developers should add locators at least on all input fields and buttons. On other elements that might be used in test automation, the locators can be added later on.
-
-It is important to discuss early on who will be responsible for:
-
-- preparing the locators (how should they look like and on which element to put them on)
+- preparing the locators (how should they look like and which element to put them on)
 - opening tasks for developers requesting new locators
 - verifying the locators are put on the correct elements
 
-One thing to consider when opening a new task:
+It will usually be the responsibility of a TAE. in case there are multiple TAE on the project, a dedicated person should be decided on to make the process faster.
+
+A few things to consider when opening a new task:
 
 - task should be short and concise
-- better to open a few smaller ones than one huge one
-- have the tasks logically structured (e.g., per screen or feature)
+- better to open a few smaller ones than one big one
+- have the tasks logically structured (e.g. per screen or feature)
 - add link to design
 
 When preparing the locators, you should consider a tool that is already being used for design. In case the design is being done in Figma, you could use that one.
@@ -178,7 +174,7 @@ When working on locators, it would be wise to have a page with a few examples, a
 For example, you want all the buttons to be prefixed with "btn\_" or suffixed with "\_button".
 The same goes for all other elements like input fields, sliders, etc.
 
-Maybe the developers on the project already have an agreed way of working so you could continue with that. The idea is to have somewhat similar-looking locators throughout the app.
+Maybe the developers on the project already have an agreed way of working, so you could continue with that. The idea is to have somewhat similar-looking locators throughout the app.
 
 **NOTE:**
 A "known issue" is when there are multiple child elements inside a parent element.
@@ -210,13 +206,13 @@ Permanent branches will most likely stay in your repository permanently.
 
 - used for checking the new code
 - used for reviews
-- gets merged into _main_ (_master_) after passing a code review
+- gets merged into _main_ after passing a code review
 
 #### Temporary branches
 
 Temporary branches, as the name indicates, are meant to live in the repository temporarily.
-Before starting work on a new feature or a test, you should checkout a new branch.
-Once you are done with your work, and you made sure everything works as expected, you can continue with merging the branch to develop/main after passing the code review.
+Before starting work on a new feature or a test, you should check out a new branch.
+Once you are done with your work, and made sure everything works as expected, you can continue with merging the branch to develop/main after passing the code review.
 
 #### Branch naming
 
