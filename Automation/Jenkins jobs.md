@@ -1,4 +1,4 @@
-> "It's hardware that makes a machine fast.  It's software that makes a fast machine slow." — Craig Bruce
+> It's hardware that makes a machine fast.  It's software that makes a fast machine slow. — Craig Bruce
 
 Jenkins is an open source automation server. It provides a multitude of plugins to support building, deploying and automating a project.
 Therefore, it is quite customizable and could differ from project to project.
@@ -15,7 +15,7 @@ For more information on Jenkins, check the [official documentation](https://www.
 
 Jenkins should be installed and set up (plugins installed, connected to a VCS, etc.) on your machine.
 
-You need an admin account to manage Jenkins system configuration.
+You need an admin account to manage Jenkins' system configuration.
 
 
 ## Creating a job
@@ -43,9 +43,9 @@ You need an admin account to manage Jenkins system configuration.
 
 8. In the _Source Code Management_ section, select the VCS you want to use (e.g. Git)
 
-9. In the _Repository URL_, enter the link to your GitHub repository 
+9. In _Repository URL_, enter the link to your GitHub repository 
 
-10. In the _Branches to build_, enter the branch you want to use when running the job (e.g. _*/main_)
+10. In _Branches to build_, enter the branch you want to use when running the job (e.g. _*/main_)
 
 11. In the _Build Triggers_ section, select the trigger option you want to use
 
@@ -103,7 +103,7 @@ Prerequisites:
 
 7. In the _Branch Sources_ section, select the VCS you want to use (e.g. Git)
 
-8. In the _Project Repository_, enter the link to your GitHub repository 
+8. In _Project Repository_, enter the link to your GitHub repository 
 
 9. Save the project
  - Jenkins automatically scans the specified repository and creates items for each branch in the repository that contains a `Jenkinsfile`
@@ -133,7 +133,7 @@ You can even check the log while the job is running since it's updated in real t
 
 2. Click the job name to open its details page
 
-3. Open a build's details by clicking the _build number_ in the Build History section
+3. Open a build's details by clicking the _build number_ in the _Build History_ section
 <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![jenkins_build_history.png](/img/jenkins_build_history.png)</span>
 4. Click _Console Output_ in the left-hand side menu
 

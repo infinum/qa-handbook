@@ -105,7 +105,7 @@ Therefore, it is important to know about the difference between types of asserti
 #### Hard assert
 
 Hard asserts refer to asserts that stop the test execution in case of an assertion error.
-In case assert has been put in the middle of the test, this is where the test stops.
+In case the assert has been put in the middle of the test, this is where the test stops.
 
 This type of assert should be used when you do not want the test to continue since the condition for further steps might not have been met.
 For example, you need to have a user created before continuing to the next screen/page. If the user is not created, there is no point in continuing with the tests. The test should be marked as _fail_.
@@ -120,7 +120,7 @@ When the test comes to an end, you will get the result on all failed asserts.
 For example, you have a screen with a list of values that you want to check, but those values are not a precondition to any of the following steps. If any of the values are incorrect, it will not affect the following steps.
 You can simply add as many soft asserts as there are values on the screen and check that all of them match the expected result.
 
-One difference compared to hard assert is that, in some libraries, you have to collect all soft asserts at the end of the test (see example below). Otherwise, the asserts are not evaluated.
+One difference compared to hard asserts is that, in some libraries, you have to collect all soft asserts at the end of the test (see example below). Otherwise, the asserts are not evaluated.
 
 Example using [softest](https://pypi.org/project/softest/):
 
@@ -138,39 +138,39 @@ self.assert_all()
 
 ## Working on a project
 
-When working on a project with multiple people / teams, you should agree on a _way of work_ and have it written down as soon as possible, preferably during your first days on the project.
+When working on a project with multiple people/teams, you should agree on a _way of work_ and have it written down as soon as possible, preferably during your first days on the project.
 
 This should contain info on the test automation process in SDLC (Software Development Life Cycle), such as:
 
 - requesting and verifying the locators needed for test automation
-- when the test are being run
+- when the tests are being run
 - which tests are run and on which build/environment
-- responsibility of checking the test report and reporting bugs
+- responsibility for checking the test report and reporting bugs
 
 ### Requesting IDs
 
 Ideally, if test automation is being done on the project, you should have most of the locators ready.
 If not, it is important to discuss early on who will be responsible for:
 
-- preparing the locators (how should they look like and which element to put them on)
+- preparing the locators (how they should look like and which element to put them on)
 - opening tasks for developers requesting new locators
 - verifying the locators are put on the correct elements
 
-It will usually be the responsibility of a TAE. in case there are multiple TAE on the project, a dedicated person should be decided on to make the process faster.
+It will usually be the responsibility of a TAE. In case there are multiple TAEs on the project, a dedicated person should be decided on to make the process faster.
 
 A few things to consider when opening a new task:
 
 - task should be short and concise
 - better to open a few smaller ones than one big one
 - have the tasks logically structured (e.g. per screen or feature)
-- add link to design
+- add link to the design
 
 When preparing the locators, you should consider a tool that is already being used for design. In case the design is being done in Figma, you could use that one.
 Not to mess up the design, you should create a separate document which will contain all the screens to which you want locators to be added.
 Simply copy and paste the screens and using tools like an arrow and a text field, mark the element that needs a locator.
 Then, when opening a task for the developers, insert the link that points to the screen with marked elements.
 
-When working on locators, it would be wise to have a page with a few examples, a "standardization" of sort.
+When working on locators, it would be wise to have a page with a few examples, a "standardization" of a sort.
 For example, you want all the buttons to be prefixed with "btn\_" or suffixed with "\_button".
 The same goes for all other elements like input fields, sliders, etc.
 
@@ -261,8 +261,6 @@ If the issue is in the app, report it to the QA team for further investigation.
 
 ---
 
-
 ![dilbert_automation_way_of_work.png](/img/dilbert_automation_way_of_work.png)
-
 
 *Image downloaded from [dilbert.com](https://dilbert.com/strip/2012-04-09): 04-09-12 by Scott Adams*
