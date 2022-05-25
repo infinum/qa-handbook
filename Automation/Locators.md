@@ -94,8 +94,8 @@ When talking about mobile, there are some differences to take into account.
 
 If we consider Appium:
 
-- the **ID** in Appium is `resource-id` on Android and `name` on iOS.
-- **Accessibility** ID in Appium is `content-desc` on Android and `accessibility-id` on iOS.
+- the **ID** in Appium is `resource-id` on Android and `accessibilityIdentifier` on iOS.
+- **Accessibility** ID in Appium is `content-desc` on Android and `accessibilityLabel` on iOS.
 
 If you don't see the ID / Accessibility ID for your iOS app in Appium, consider using the XCode Accessibility Inspector.
 There you will see the Accessibility ID under the **Identifier** property.
@@ -103,8 +103,8 @@ There you will see the Accessibility ID under the **Identifier** property.
 
 | Appium | Android | iOS |
 | :--- | :--- | :--- |
-| Accessibility ID | content-desc | accessibility-id |
-| ID | resource-id | name |
+| Accessibility ID | content-desc | accessibilityLabel |
+| ID | resource-id | accessibilityIdentifier |
 
 
 ## Requesting new / additional IDs
