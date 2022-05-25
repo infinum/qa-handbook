@@ -83,6 +83,8 @@ The app should not go to production before you went through all test cases in yo
 
 Once all blockers are fixed and the app is ready for release, share and discuss the test results with your team. Type down a short report and share it in the project group via Slack (or email) or use your daily meetings to do so.
 
+One more thing that you can do is organize a testing session. More about the event can be read [here](https://infinum.com/handbook/qa/testing/testing-session).
+
 Most of the tools (such as Jira and TestRail) have the option to create test report documents in PDF format. This comes in handy when you need to share a report with a client.
 Here is just an example of how a generated report from TestRail looks like:
 
