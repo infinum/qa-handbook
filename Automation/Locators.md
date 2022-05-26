@@ -117,15 +117,21 @@ While in the Accessibility Inspector select the device you want to inspect in th
 
 When talking about mobile, namely Appium, there are some naming differences that add confusion.
 
-When locating an element by ID with Appium:
+When locating an element by **ID** with Appium:
 
-`el = driver.find_element(AppiumBy.ID,'someID')`
+        title_locator = {
+            config.ANDROID: (MobileBy.ID, "some_resource_id"),
+            config.IOS: (MobileBy.ID, "some_name")
+        }
 
 - Appium looks for `resource-id` value on Android and `name` on iOS
 
-When locating an element by Accessibility ID:
+When locating an element by **Accessibility ID**:
 
-`el = driver.find_element(AppiumBy.ACCESSIBILITY_ID,'SomeAccessibilityID')`
+        title_locator = {
+            config.ANDROID: (MobileBy.ACCESSIBILITY_ID, "some_content_desc"),
+            config.IOS: (MobileBy.ACCESSIBILITY_ID, "some_accessibility_identifier")
+        }
 
 - Appium looks for `content-desc` value on Android and `accessibilityIdentifier` on iOS
 
