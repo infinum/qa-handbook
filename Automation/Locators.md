@@ -139,9 +139,9 @@ When locating an element by **Accessibility ID**, Appium looks for `content-desc
 | ID               | id               | resource-id  | name*                                      |
 
 
-***NOTE:**
+\***NOTE:**
 
-- `name` is mentioned in the Appium documentation as a native element identifier that Appium looks for when finding an element by ID. However, since the main purpose of the [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) is to uniquely identify an element, this is the locator strategy which you should primarily use for locating elements on iOS.
+- `name` is mentioned in the [Appium documentation](https://appium.io/docs/en/commands/element/find-elements/) as a native element identifier that Appium looks for when finding an element by ID. However, since the main purpose of the [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) is to uniquely identify an element, this is the locator strategy which you should primarily use for locating elements on iOS.
 
 - if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as `accessibility id`
   - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
