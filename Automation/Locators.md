@@ -87,24 +87,48 @@ Better:
 
 `#login-form .sign-in-button`
 
+## Inspecting elements
+
+### Web
+
+When working with a web app, use the browser's developer tools to inspect the page.
+All browsers have this kind of tool.
+Check out [Chrome Dev Tools](https://infinum.com/handbook/qa/tools/using-chrome-dev-tools) for more details.
+
+### Mobile
+
+To find the locator and attribute values of an element on mobile, you can use [Appium Inspector](https://github.com/appium/appium-inspector).
+
+While inspecting an iOS app with Appium Inspector, you might come across some issues, like not being able to see the element properly. 
+In that case, try using the XCode Accessibility Inspector.
+There you will see the _Accessibility ID_ under the **Identifier** property.
+
+Open Accessibility Inspector:
+
+1. Open _Xcode_
+2. Select _Xcode_ in the upper left corner
+3. Select _Open Developer Tool_ 
+4. Select _Accessibility Inspector_
+
+While in the Accessibility Inspector select the device you want to inspect in the upper left corner.
+
 
 ## Naming differences
 
-When talking about mobile, there are some differences to take into account.
+When talking about mobile, namely Appium, there are some naming differences compared to Android and iOS.
 
-If we consider Appium:
+When locating an element by ID:
+- Appium looks for `resource-id` value on Android and `name` on iOS
 
-- the **ID** in Appium is `resource-id` on Android and `name` on iOS.
-- **Accessibility** ID in Appium is `content-desc` on Android and `accessibility-id` on iOS.
-
-If you don't see the ID / Accessibility ID for your iOS app in Appium, consider using the XCode Accessibility Inspector.
-There you will see the Accessibility ID under the **Identifier** property.
+When locating an element by Accessibility ID:
+- Appium looks for `content-desc` value on Android and `accessibilityIdentifier` on iOS
+- However, on iOS if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements
 
 
-| Appium | Android | iOS |
-| :--- | :--- | :--- |
-| Accessibility ID | content-desc | accessibility-id |
-| ID | resource-id | name |
+| Appium | Android | iOS                        |
+| :--- | :--- |:---------------------------|
+| Accessibility ID | content-desc | accessibilityIdentifier / accessibilityLabel |
+| ID | resource-id | name                       |
 
 
 ## Requesting new / additional IDs

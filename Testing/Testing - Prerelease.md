@@ -88,6 +88,8 @@ Here is just an example of how a generated report from TestRail looks like:
 
 ![Testing_Prereleases_Report.png](/img/Testing_Prereleases_Report.png)
 
+One more thing that you can do is organize a testing session. More about the event can be read [here](https://infinum.com/handbook/qa/testing/testing-session).
+
 #### 3,2,1 Launch!
 
 The app will be submitted to its respective store and once approved, it will be released to a limited part of the audience (phased/staged release) or it can be released to all users at once. 
