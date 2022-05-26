@@ -20,7 +20,7 @@ Often you realize the issue when you come across it.
 
 ### ID
 
-ID will often be unique which makes it a great choice. It is often used by developers and might already be present on most elements.
+_ID_ will often be unique which makes it a great choice. It is often used by developers and might already be present on most elements.
 
 But it might not always be unique. 
 In a list of items, all elements might have the same ID (that is, `resource-id` in Android, `name` in iOS). 
@@ -29,8 +29,8 @@ In that case, you will have to iterate over the list to find the correct element
 
 ### Accessibility ID
 
-You might come across information how the Accessibility ID is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
-However, what is often not mentioned is that the Accessibility ID is a string, susceptible to change. If the UI and accompanied strings change, you will also have to update your locators.
+You might come across information how the _Accessibility ID_ is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
+However, what is often not mentioned is that the _Accessibility ID_ is a string, susceptible to change. If the UI and accompanied strings change, you will also have to update your locators.
 This can especially become cumbersome if the changes often happen and if you only rely on that one locator strategy.
 
 Where the Accessibility ID comes in very handy are lists of elements. If you have a list of movies and how to get the specific one, you can locate it through its title, without having to write loops yourself.
@@ -42,9 +42,10 @@ Where the Accessibility ID comes in very handy are lists of elements. If you hav
         }
 
         return self.get_present_element(title_locator[config.PLATFORM])
-   
 
-Accessibility ID is very useful, but it is above all used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation.
+_Accessibility ID_ is very useful, but it is above all used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation!
+
+**NOTE:** Check [Naming differences](https://beta.infinum.com/handbook/qa/automation/locators#naming-differences) for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
 
 
 ### XPath
@@ -87,24 +88,64 @@ Better:
 
 `#login-form .sign-in-button`
 
+## Inspecting elements
+
+### Web
+
+When working with a web app, use the browser's developer tools to inspect the page.
+All browsers have this kind of tool.
+Check out [Chrome Dev Tools](https://infinum.com/handbook/qa/tools/using-chrome-dev-tools) for more details.
+
+### Mobile
+
+To find the locator and attribute values of an element on mobile, you can use [Appium Inspector](https://github.com/appium/appium-inspector).
+
+While inspecting an iOS app with Appium Inspector, you might come across some issues, like not being able to see the element properly. 
+In that case, try using the Xcode Accessibility Inspector.
+There you will see the _Accessibility ID_ under the **Identifier** property.
+
+Open Accessibility Inspector:
+
+1. Open _Xcode_
+2. Select _Xcode_ in the upper left corner
+3. Select _Open Developer Tool_ 
+4. Select _Accessibility Inspector_
+
+While in the Accessibility Inspector, select the device you want to inspect in the upper left corner.
+
 
 ## Naming differences
 
-When talking about mobile, there are some differences to take into account.
+When talking about mobile, namely Appium, there are some naming differences that add confusion.
 
-If we consider Appium:
+When locating an element by **ID**, Appium looks for `resource-id` value on Android and `name` on iOS:
 
-- the **ID** in Appium is `resource-id` on Android and `accessibilityIdentifier` on iOS.
-- **Accessibility** ID in Appium is `content-desc` on Android and `accessibilityLabel` on iOS.
+        title_locator = {
+            config.ANDROID: (MobileBy.ID, "some_resource_id"),
+            config.IOS: (MobileBy.ID, "some_name")
+        }
 
-If you don't see the ID / Accessibility ID for your iOS app in Appium, consider using the XCode Accessibility Inspector.
-There you will see the Accessibility ID under the **Identifier** property.
+When locating an element by **Accessibility ID**, Appium looks for `content-desc` value on Android and `accessibilityIdentifier` on iOS:
+
+        title_locator = {
+            config.ANDROID: (MobileBy.ACCESSIBILITY_ID, "some_content_desc"),
+            config.IOS: (MobileBy.ACCESSIBILITY_ID, "some_accessibility_identifier")
+        }
 
 
-| Appium | Android | iOS |
-| :--- | :--- | :--- |
-| Accessibility ID | content-desc | accessibilityLabel |
-| ID | resource-id | accessibilityIdentifier |
+| Locator strategy | Appium           | Android      | iOS                                        |
+|:-----------------|:-----------------|:-------------|:-------------------------------------------|
+| Accessibility ID | accessibility id | content-desc | accessibilityIdentifier*                   |
+| ID               | id               | resource-id  | name*                                      |
+
+
+***NOTE:**
+
+- `name` is mentioned in the Appium documentation as a native element identifier that Appium looks for when finding an element by ID. However, since the main purpose of the [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) is to uniquely identify an element, this is the locator strategy which you should primarily use for locating elements on iOS.
+
+- if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as `accessibility id`
+  - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
+  - `accessibilityIdentifier` should have a different format to avoid finding multiple elements
 
 
 ## Requesting new / additional IDs
