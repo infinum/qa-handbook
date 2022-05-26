@@ -115,22 +115,34 @@ While in the Accessibility Inspector select the device you want to inspect in th
 
 ## Naming differences
 
-When talking about mobile, namely Appium, there are some naming differences compared to Android and iOS.
+When talking about mobile, namely Appium, there are some naming differences that add confusion.
 
-When locating an element by ID:
+When locating an element by ID with Appium:
+
+`el = driver.find_element(AppiumBy.ID,'someID')`
 
 - Appium looks for `resource-id` value on Android and `name` on iOS
 
 When locating an element by Accessibility ID:
 
+`el = driver.find_element(AppiumBy.ACCESSIBILITY_ID,'SomeAccessibilityID')`
+
 - Appium looks for `content-desc` value on Android and `accessibilityIdentifier` on iOS
-- However, on iOS if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements
 
 
-| Appium | Android | iOS                        |
-| :--- | :--- |:---------------------------|
-| Accessibility ID | content-desc | accessibilityIdentifier / accessibilityLabel |
-| ID | resource-id | name                       |
+| Locator strategy | Appium           | Android      | iOS                                        |
+|:-----------------|:-----------------|:-------------|:-------------------------------------------|
+| Accessibility ID | accessibility id | content-desc | accessibilityIdentifier*                   |
+| ID               | id               | resource-id  | name*                                      |
+
+
+**NOTE:**
+
+- `name` is mentioned in the Appium documentation as a native element identifier that Appium looks for when finding element by ID. However, since the main purpose of the [accessibilityIdentified](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) is to uniquely identify an element, this is the locator strategy which you should primarily use for locating elements on iOS
+
+- if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as _Accessibility ID_
+  - [accessibilitylabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
+  - `accessibilityIdentifier` should have a different format to avoid finding multiple elements
 
 
 ## Requesting new / additional IDs
