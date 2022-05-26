@@ -20,7 +20,7 @@ Often you realize the issue when you come across it.
 
 ### ID
 
-ID will often be unique which makes it a great choice. It is often used by developers and might already be present on most elements.
+_ID_ will often be unique which makes it a great choice. It is often used by developers and might already be present on most elements.
 
 But it might not always be unique. 
 In a list of items, all elements might have the same ID (that is, `resource-id` in Android, `name` in iOS). 
@@ -29,8 +29,8 @@ In that case, you will have to iterate over the list to find the correct element
 
 ### Accessibility ID
 
-You might come across information how the Accessibility ID is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
-However, what is often not mentioned is that the Accessibility ID is a string, susceptible to change. If the UI and accompanied strings change, you will also have to update your locators.
+You might come across information how the _Accessibility ID_ is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
+However, what is often not mentioned is that the _Accessibility ID_ is a string, susceptible to change. If the UI and accompanied strings change, you will also have to update your locators.
 This can especially become cumbersome if the changes often happen and if you only rely on that one locator strategy.
 
 Where the Accessibility ID comes in very handy are lists of elements. If you have a list of movies and how to get the specific one, you can locate it through its title, without having to write loops yourself.
@@ -42,9 +42,10 @@ Where the Accessibility ID comes in very handy are lists of elements. If you hav
         }
 
         return self.get_present_element(title_locator[config.PLATFORM])
-   
 
-Accessibility ID is very useful, but it is above all used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation.
+_Accessibility ID_ is very useful, but it is above all used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation!
+
+**NOTE:** Check [Naming differences](https://beta.infinum.com/handbook/qa/automation/locators#naming-differences) for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
 
 
 ### XPath
@@ -124,7 +125,7 @@ When locating an element by **ID**, Appium looks for `resource-id` value on Andr
             config.IOS: (MobileBy.ID, "some_name")
         }
 
-When locating an element by **Accessibility ID**, Appium looks for `content-desc` value on Android and `accessibilityIdentifier` on iOS
+When locating an element by **Accessibility ID**, Appium looks for `content-desc` value on Android and `accessibilityIdentifier` on iOS:
 
         title_locator = {
             config.ANDROID: (MobileBy.ACCESSIBILITY_ID, "some_content_desc"),
