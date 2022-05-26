@@ -118,9 +118,11 @@ While in the Accessibility Inspector select the device you want to inspect in th
 When talking about mobile, namely Appium, there are some naming differences compared to Android and iOS.
 
 When locating an element by ID:
+
 - Appium looks for `resource-id` value on Android and `name` on iOS
 
 When locating an element by Accessibility ID:
+
 - Appium looks for `content-desc` value on Android and `accessibilityIdentifier` on iOS
 - However, on iOS if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements
 
