@@ -133,7 +133,7 @@ There are 13 different axes in the XPath:
 
 **Examples**
 
-Select all children nodes on the current book node: 
+Selects all book nodes that are children of the current node: 
 
 `//child::book`
 
