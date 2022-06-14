@@ -8,7 +8,7 @@ Instead of typing various commands into the Terminal one by one, you can execute
 With a shell script you can automate repetitive tasks to do them easily and more accurately.
 
 
-# bash or zsh
+## bash or zsh
 
 `bash` is the default shell for many Linux distributions and was also the default command-line interpreter for Mac on macOS Mojave and earlier versions.
 
@@ -50,9 +50,9 @@ The first line of a shell script is the so-called _shebang_ character sequence. 
 
 The shebang consists of the following sequence:
 
-`#!` - tells the program to load an interpreter to read the code
+- `#!` - tells the program to load an interpreter to read the code
 
-`/usr/bin/zsh` - the path to the zsh interpreter
+- `/usr/bin/zsh` - the path to the zsh interpreter
 
 
 ### Adding comments
