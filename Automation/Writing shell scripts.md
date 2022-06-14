@@ -111,7 +111,7 @@ To get the value of the variable, add the $ character before the variable name
 `$variable_name`
 
     #!/usr/bin/zsh
-    # Say “Hello” to the world
+    # Say “Hello” to John
     
     greeting=Hello
     name=John
