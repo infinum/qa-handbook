@@ -101,7 +101,7 @@ Check out [Chrome Dev Tools](https://infinum.com/handbook/qa/tools/using-chrome-
 To find the locator and attribute values of an element on mobile, you can use [Appium Inspector](https://github.com/appium/appium-inspector).
 
 While inspecting an iOS app with Appium Inspector, you might come across some issues, like not being able to see the element properly. 
-In that case, try using the XCode Accessibility Inspector.
+In that case, try using the Xcode Accessibility Inspector.
 There you will see the _Accessibility ID_ under the **Identifier** property.
 
 Open Accessibility Inspector:
@@ -111,7 +111,7 @@ Open Accessibility Inspector:
 3. Select _Open Developer Tool_ 
 4. Select _Accessibility Inspector_
 
-While in the Accessibility Inspector select the device you want to inspect in the upper left corner.
+While in the Accessibility Inspector, select the device you want to inspect in the upper left corner.
 
 
 ## Naming differences
@@ -139,11 +139,11 @@ When locating an element by **Accessibility ID**, Appium looks for `content-desc
 | ID               | id               | resource-id  | name*                                      |
 
 
-**NOTE:**
+\***NOTE:**
 
-- `name` is mentioned in the Appium documentation as a native element identifier that Appium looks for when finding element by ID. However, since the main purpose of the [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) is to uniquely identify an element, this is the locator strategy which you should primarily use for locating elements on iOS
+- `name` is mentioned in the [Appium documentation](https://appium.io/docs/en/commands/element/find-elements/) as a native element identifier that Appium looks for when finding an element by ID. However, since the main purpose of the [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) is to uniquely identify an element, this is the locator strategy which you should primarily use for locating elements on iOS.
 
-- if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as _Accessibility ID_
+- if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as `accessibility id`
   - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
   - `accessibilityIdentifier` should have a different format to avoid finding multiple elements
 

@@ -18,7 +18,6 @@ Sometimes it might be rather long and not very pretty. However, you should avoid
 `/html/body/div[2]/div[1]/h4[1]/html[1]/body[1]/div[2]/div[1]/div[1]/h4[1]`
 
 
-
 ## Briefly about nodes
 
 When reading about XPath and XML you will often come across the term *node*.
@@ -133,7 +132,7 @@ There are 13 different axes in the XPath:
 
 **Examples**
 
-Select all children nodes on the current book node: 
+Select all book nodes that are children of the current node: 
 
 `//child::book`
 

@@ -88,7 +88,7 @@ Here is just an example of how a generated report from TestRail looks like:
 
 ![Testing_Prereleases_Report.png](/img/Testing_Prereleases_Report.png)
 
-One more thing that you can do is organize a testing session. More about the event can be read [here](https://infinum.com/handbook/qa/testing/testing-session).
+One more thing that you can do is organize a testing session. More about the event can be read [here](https://infinum.com/handbook/qa/testing/testing-testing-session).
 
 #### 3,2,1 Launch!
 
