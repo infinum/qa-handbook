@@ -46,20 +46,20 @@ The file extension has no effect on the interpreter used for executing the scrip
 
 The first line of a shell script is the so-called _shebang_ character sequence. This line indicates which interpreter to use when running the script.
 
-`#!/usr/bin/zsh`
+`#!/bin/zsh`
 
 The shebang consists of the following sequence:
 
 - `#!` - tells the program to load an interpreter to read the code
 
-- `/usr/bin/zsh` - the path to the zsh interpreter
+- `/bin/zsh` - the path to the zsh interpreter
 
 
 ### Adding comments
 
 You are encouraged to use comments in your scripts. The comments start with the # character and will not be executed. They will, however, help with the code readability.
 
-    #!/usr/bin/zsh
+    #!/bin/zsh
     # Say “Hello” to the world
 
 
@@ -70,7 +70,7 @@ For starters, say “Hello” to the world when the script is executed.
 
 The command used for printing the string: `echo`
 
-    #!/usr/bin/zsh
+    #!/bin/zsh
     # Say “Hello” to the world
     
     echo Hello world!
@@ -100,17 +100,18 @@ To set _execute_ permissions for the shell script, use the `chmod` command:
 
 `$ chmod +x script_name.zsh`
 
+
 ## Adding variables to the script 
 
 Define a variable:
 
 `variable_name=value`
 
-To get the value of the variable, add the $ character before the variable name
+To get the value of the variable, add the $ character before the variable name:
 
 `$variable_name`
 
-    #!/usr/bin/zsh
+    #!/bin/zsh
     # Say “Hello” to John
     
     greeting=Hello
@@ -119,9 +120,57 @@ To get the value of the variable, add the $ character before the variable name
     echo $greeting $name
 
 
+## Adding parameters (flags) to the script 
+
+You can add parameters (flags) to the script to modify its behaviour by passing arguments.
+This is done using the built-in shell command for parsing command-line arguments `getopts`.
+
+The `getopts` command is added inside a while loop so that all options are parsed. 
+Right after the `getopts` keyword, we define the options our script accepts. In this case the options are name (`n`) and age (`a`).
+The `OPTARG` refers to the corresponding value passed to the script.
+
+    #!/bin/zsh
+    # Say “Hello” to the user
+    
+    greeting=Hello
+    
+    while getopts n:a: flag
+    do
+        case "${flag}" in
+            n) name=${OPTARG}
+            echo "Name set to: $name";;
+            a) age=${OPTARG}
+            echo "Age set to: $age";;
+        esac
+    done
+    
+    echo "$greeting $name ($age)"
+
+**Executing the script**
+
+The script is executed by providing the interpreter, path to the script and then the arguments.
+The arguments are provided by firstly specifying the argument starting with a _hyphen_ (e.g. `-n`) and then its value, separated with a single space.
+
+`zsh ./test_input.zsh -n John -a 25`
+
+
+**Output:**
+
+    Name set to: John
+    Age set to: 25
+    Hello John (25)
+
 ## Additional resources
+
 [bash cheatsheet](https://devhints.io/bash)
+
 [zsh cheatsheet](https://devhints.io/zsh)
+
+[Command line arguments in scripts](https://www.baeldung.com/linux/use-command-line-arguments-in-bash-script)
+
+[Positional parameters in scripts](https://linuxcommand.org/lc3_wss0120.php)
+
+[Using flag arguments](https://linuxconfig.org/bash-script-flags-usage-with-arguments-examples)
 
 
 ---
