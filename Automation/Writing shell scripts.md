@@ -1,12 +1,13 @@
 
 ## What are shell scripts
 
-[Shell](https://infinum.com/handbook/qa/tools/using-terminal#shell) scripts are programs consisting of a series of commands in a file. 
+Shell scripts are programs consisting of a series of commands in a file. 
 
 Instead of typing various commands into the Terminal one by one, you can execute them all by running the script.
 
 With a shell script you can automate repetitive tasks to do them easily and more accurately.
 
+Read [Using Terminal](https://infinum.com/handbook/qa/tools/using-terminal#shell) for more details on shell and the Terminal.
 
 ## bash or zsh
 
@@ -149,7 +150,7 @@ The `OPTARG` refers to the corresponding value passed to the script.
 **Executing the script**
 
 The script is executed by providing the interpreter, path to the script and then the arguments.
-The arguments are provided by firstly specifying the argument starting with a _hyphen_ (e.g. `-n`) and then its value, separated with a single space.
+The arguments are provided by specifying the argument starting with a _hyphen_ (e.g. `-n`) and then its value, separated with a single space.
 
 `zsh ./test_input.zsh -n John -a 25`
 
