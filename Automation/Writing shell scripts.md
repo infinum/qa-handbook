@@ -9,6 +9,7 @@ With a shell script you can automate repetitive tasks to do them easily and more
 
 Read [Using Terminal](https://infinum.com/handbook/qa/tools/using-terminal#shell) for more details on shell and the Terminal.
 
+
 ## bash or zsh
 
 `bash` is the default shell for many Linux distributions and was also the default command-line interpreter for Mac on macOS Mojave and earlier versions.
@@ -17,11 +18,13 @@ Newer versions of macOS (Catalina and later) use `zsh` as the default shell.
  
 `zsh` is an extended version of `sh` and includes some `bash` features. Most commands, control structures and syntax from `bash` work in `zsh` as well.
 
+
 ### Install zsh
 
-If your default shell is `bash`, and you wish to switch to `zsh`, install [oh-my-zsh](https://ohmyz.sh/).
+Install `zsh` using Homebrew: `$ brew install zsh`
 
-Or using Homebrew: `$ brew install zsh`
+You can also install [oh-my-zsh](https://ohmyz.sh/), a framework for managing `zsh` configuration. It offers built-in plugins and themes to make your work in the terminal more interesting and easier.
+
 
 #### Check path to the zsh binary
 
@@ -30,6 +33,24 @@ Once you have `zsh` installed, check the path to the binary by running:
 `$ which zsh`
 
 Output: `/usr/bin/zsh`
+
+You will use this path in the first line of your shell script. The first line must set the path to the shell interpreter that you want to run the script with.
+
+**Set up zsh as default**
+
+If you are switching to zsh, you probably also want to set it up as default.
+
+1. Make zsh default: `$ chsh -s $(which zsh)` 
+- You might need to log out then log back in for the changes to take effect
+
+2. Check that the zsh is now the default: `echo $SHELL`
+- Expected output: `/bin/zsh`
+
+3. Check the zsh version: `$SHELL --version`
+- Expected output: `zsh 5.8`
+
+For more information check out the [zsh documentation](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default).
+
 
 ## Writing a zsh script
 
@@ -42,6 +63,7 @@ Or using a command-line interface: `$ touch script_name.zsh`
 The extension for `bash` scripts is `.sh`. The same extension can be used for the `zsh` scripts as well. The extension is not necessary but will help you identify the file more easily. You can also change the file extension for your zsh scripts from `.sh` to `.zsh`.
 
 The file extension has no effect on the interpreter used for executing the script. The interpreter is determined by the _shebang_.
+
 
 ### Shebang
 
