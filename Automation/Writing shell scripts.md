@@ -21,7 +21,7 @@ Newer versions of macOS (Catalina and later) use `zsh` as the default shell.
 
 ### Install zsh
 
-Install `zsh` using Homebrew: `$ brew install zsh`
+Install `zsh` using Homebrew: `brew install zsh`
 
 You can also install [oh-my-zsh](https://ohmyz.sh/), a framework for managing `zsh` configuration. It offers built-in plugins and themes to make your work in the terminal more interesting and easier.
 
@@ -30,7 +30,7 @@ You can also install [oh-my-zsh](https://ohmyz.sh/), a framework for managing `z
 
 Once you have `zsh` installed, check the path to the binary by running:
 
-`$ which zsh`
+`which zsh`
 
 Output: `/usr/bin/zsh`
 
@@ -40,7 +40,7 @@ You will use this path in the first line of your shell script. The first line mu
 
 If you are switching to zsh, you probably also want to set it up as default.
 
-1. Make zsh default: `$ chsh -s $(which zsh)` 
+1. Make zsh default: `chsh -s $(which zsh)` 
 - You might need to log out then log back in for the changes to take effect
 
 2. Check that the zsh is now the default: `echo $SHELL`
@@ -58,7 +58,7 @@ For more information check out the [zsh documentation](https://github.com/ohmyzs
 
 Start working on your script by creating a new file by using a text editor.
 
-Or using a command-line interface: `$ touch script_name.zsh`
+Or using a command-line interface: `touch script_name.zsh`
 
 The extension for `bash` scripts is `.sh`. The same extension can be used for the `zsh` scripts as well. The extension is not necessary but will help you identify the file more easily. You can also change the file extension for your zsh scripts from `.sh` to `.zsh`.
 
@@ -105,15 +105,15 @@ Execute the script by providing the full file path to the script.
 When running the script, the first argument specifies the interpreter you want to use.
 For example, if the file is in the Documents folder, run the following command to execute the script using `zsh`:
 
-`$ zsh Documents/script_name.zsh`
+`zsh Documents/script_name.zsh`
 
 Executing a script that accepts arguments:
 
-`$ zsh Documents/script_name.zsh <arg1> <arg2> <argN>`
+`zsh Documents/script_name.zsh <arg1> <arg2> <argN>`
 
 Execute the script by providing a relative path to the script:
 
-`$ zsh ./script_name.zsh <arg1> <arg2> <argN>`
+`zsh ./script_name.zsh <arg1> <arg2> <argN>`
 
 
 ### Permission denied 
@@ -121,7 +121,7 @@ Execute the script by providing a relative path to the script:
 If you run your script and get the zsh: permission denied error, you will need to modify the file permissions. The permission can be updated for the file or the entire folder.
 To set _execute_ permissions for the shell script, use the `chmod` command:
 
-`$ chmod +x script_name.zsh`
+`chmod +x script_name.zsh`
 
 
 ## Adding variables to the script 
@@ -130,7 +130,7 @@ Define a variable:
 
 `variable_name=value`
 
-To get the value of the variable, add the $ character before the variable name:
+To get the value of the variable, add the `$` character before the variable name:
 
 `$variable_name`
 
