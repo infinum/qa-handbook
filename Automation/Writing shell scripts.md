@@ -40,7 +40,7 @@ You will use this path in the first line of your shell script. The first line mu
 
 If you are switching to zsh, you probably also want to set it up as default.
 
-1. Make zsh default: `chsh -s $(which zsh)` 
+1. Make zsh default: `chsh -s $(which zsh)`
  - You might need to log out then log back in for the changes to take effect
 
 2. Check that the zsh is now the default: `echo $SHELL`
