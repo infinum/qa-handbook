@@ -40,14 +40,14 @@ You will use this path in the first line of your shell script. The first line mu
 
 If you are switching to zsh, you probably also want to set it up as default.
 
-1. Make zsh default: `chsh -s $(which zsh)` 
-- You might need to log out and then log back in for the changes to take effect
+1. Make zsh default: `chsh -s $(which zsh)`
+ - You might need to log out and then log back in for the changes to take effect
 
 2. Check that the zsh is now the default: `echo $SHELL`
-- Expected output: `/bin/zsh`
+ - Expected output: `/bin/zsh`
 
 3. Check the zsh version: `$SHELL --version`
-- Expected output: `zsh 5.8`
+ - Expected output: `zsh 5.8`
 
 For more information check out the [zsh documentation](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH#install-and-set-up-zsh-as-default).
 
