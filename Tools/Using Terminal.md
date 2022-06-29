@@ -95,9 +95,9 @@ Arguments can start with a single dash (-) or a double dash (--).
 A **flag** argument usually refers to a boolean argument that by including it, it changes the behaviour of a program. If you include a flag argument its boolean value is set to true, if not, it is set to false.
 For example,
 
-`~ ls` - lists all visible files and folders in the current folder, but if we add the flag `-a`, making it
+`ls` - lists all visible files and folders in the current folder, but if we add the flag `-a`, making it
 
-`~ ls -a` - it lists all visible and invisible files and folders.
+`ls -a` - it lists all visible and invisible files and folders.
 
 In the following example command, using the `--report` flag we tell the process to include/activate the report option.
 With the `--report` flag included a report is generated, and without the flag it is not.
