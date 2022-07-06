@@ -147,7 +147,7 @@ The trace document includes the following main areas:
 		* *Instruments:* Displays a list of instruments and their corresponding data in the timeline pane. If you select an instrument in the list, you can delete it or configure it in the inspector pane. The instruments list is visible by default when you create a trace document.
 		* *Threads:* Displays a list of threads and their utilization data in the timeline pane. Only available when a trace document contains instruments that record thread data.
 
-![](/img/instruments_trace_document_timeline_pane)
+![](/img/instruments_trace_document_timeline_pane.png)
 	
 * [**Detail pane:**](https://help.apple.com/instruments/mac/current/#/dev9b08bd72) Shows detailed information about the data collected by the instruments in your trace document.
 	* Navigation bar
