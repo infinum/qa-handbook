@@ -19,7 +19,7 @@ With POM implemented:
 
 Page objects should only contain locators for that specific page/screen.
 
-Read the [locators article](https://infinum.com/handbook/qa/automation/locators) for more details on using locators.
+Read the [locators article](https://infinum.com/handbook/qa/automation/locators/locators-general) for more details on using locators.
 
 Methods related to those locators should also be located on the same page as the locators they are using.
 The structure can be further split by separating methods into a separate class, e.g. suffixed by _"\_actions"_. That class should only contain methods related to the screen (or feature) they refer to.

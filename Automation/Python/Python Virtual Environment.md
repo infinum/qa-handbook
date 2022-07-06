@@ -91,7 +91,6 @@ When creating a new project from scratch, the virtual environment named *venv* (
 8. Click *Create* to create the project
 
 ![virtual_environment_create_project.png](/img/virtual_environment_create_project.png)
-Figure 1. New project window (Mac)
 
 
 ## Create & activate virtual environment for an existing project

@@ -15,7 +15,7 @@ Keeping that in mind, you should do the best possible job to drive what the team
 
 This document is a short primer and introduction into all things called software testing. There is no particular order.
 
-You can also use the [Wiki article for software testing](https://en.wikipedia.org/wiki/Software_testing) or the [ISTQB syllabus](https://www.istqb.org/downloads/send/51-ctfl2018/208-ctfl-2018-syllabus.html) as a starting point.
+You can also use the [Wiki article for software testing](https://en.wikipedia.org/wiki/Software_testing) or the [ISTQB syllabus](https://www.istqb.org/certifications/certified-tester-foundation-level) as a starting point.
 
 ## Testing a feature
 
