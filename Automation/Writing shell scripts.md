@@ -1,5 +1,5 @@
 
-## What are shell scripts
+## What are shell scripts?
 
 Shell scripts are programs consisting of a series of commands in a file. 
 
@@ -26,7 +26,7 @@ Install `zsh` using Homebrew: `brew install zsh`
 You can also install [oh-my-zsh](https://ohmyz.sh/), a framework for managing `zsh` configuration. It offers built-in plugins and themes to make your work in the terminal more interesting and easier.
 
 
-#### Check path to the zsh binary
+#### Check the path to the zsh binary
 
 Once you have `zsh` installed, check the path to the binary by running:
 
@@ -41,7 +41,7 @@ You will use this path in the first line of your shell script. The first line mu
 If you are switching to zsh, you probably also want to set it up as default.
 
 1. Make zsh default: `chsh -s $(which zsh)`
- - You might need to log out then log back in for the changes to take effect
+ - You might need to log out and then log back in for the changes to take effect
 
 2. Check that the zsh is now the default: `echo $SHELL`
  - Expected output: `/bin/zsh`
@@ -118,7 +118,7 @@ Execute the script by providing a relative path to the script:
 
 ### Permission denied 
 
-If you run your script and get the zsh: permission denied error, you will need to modify the file permissions. The permission can be updated for the file or the entire folder.
+If you run your script and get the `zsh: permission denied error`, you will need to modify the file permissions. The permission can be updated for the file or the entire folder.
 To set _execute_ permissions for the shell script, use the `chmod` command:
 
 `chmod +x script_name.zsh`
@@ -149,7 +149,7 @@ You can add parameters (flags) to the script to modify its behaviour by passing 
 This is done using the built-in shell command for parsing command-line arguments `getopts`.
 
 The `getopts` command is added inside a while loop so that all options are parsed. 
-Right after the `getopts` keyword, we define the options our script accepts. In this case the options are name (`n`) and age (`a`).
+Right after the `getopts` keyword, we define the options our script accepts. In this case, the options are _name_ (`n`) and _age_ (`a`).
 The `OPTARG` refers to the corresponding value passed to the script.
 
     #!/bin/zsh
