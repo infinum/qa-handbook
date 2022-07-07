@@ -110,7 +110,7 @@ The app uses fingerprint login? Remove all stored fingerprints from the device.
 
 ### Monkey testing
 Behave like a monkey, try tapping that submit button two or three times. Try tapping navigation buttons several times.
-The [Monkey testing] (https://infinum.com/handbook/books/qa/Tools/Automated%20monkey%20testing) chapter might also help.
+The [Monkey testing](https://infinum.com/handbook/qa/automation/mobile/automated-monkey-testing) chapter might also help.
 
 ### No internet connection
 Try going through the app without an internet connection.
@@ -128,7 +128,7 @@ When doing smoke testing, test the major and critical features first because tha
 ### Security smoke test
 Run an automatic security test using MobSF or QARK for mobile or OWASP ZAP for web.
 
-See this [chapter](https://infinum.com/handbook/books/qa/automation/automated-security-testing) for more detail.
+See this [chapter](https://infinum.com/handbook/qa/tools/mobile-security-testing-tools) for more detail.
 
 ### Sessions
 Log in and put the app into the background. Come back after the token expires.
