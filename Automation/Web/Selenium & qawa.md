@@ -13,6 +13,14 @@
 
 Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
 
+## Installing Selenium and webdrivers
+
+1. Install Homebrew (and Python 3 if it is not installed)
+2. Install Selenium: `pip3 install selenium`
+3. Install ChromeDriver (for Chrome): `brew install chromedriver`
+4. Install geckodriver (for Firefox): `brew install geckodriver`
+
+
 ## Example of a page class
 
 	from base_page import BasePage
@@ -72,9 +80,9 @@ Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
 
 ## Writing assertions
 
-You can use either Python's standard `assert` method (hard assert) or soft asserts using the [pytest_check](https://pypi.org/project/pytest_check/) plugin. You can read more about using hard and soft assertions in [this article](https://infinum.com/handbook/qa/automation/general/way-of-working#asserts).
+You can use either Python's standard `assert` (hard assert) or soft asserts using the [pytest_check](https://pypi.org/project/pytest_check/) plugin. You can read more about hard and soft asserts in [this handbook article](https://infinum.com/handbook/qa/automation/general/way-of-working#asserts).
 
-### Python's standard assert
+### Python's standard assert examples
 
 Checking that something exists:
 
@@ -84,9 +92,9 @@ Checking that something is equal:
 
 	assert self.page.button.text == "Logout"
 
-### Soft asserts
+### Soft assert examples
 
-Here are some examples of assertion methods from the [pytest_check](https://pypi.org/project/pytest_check/) plugin. The plugin needs to be imported in the test modules in order to be used. 
+Here are some examples of assertion methods from the [pytest_check](https://pypi.org/project/pytest_check/) plugin. The plugin has to be imported into the test modules in order to be used. 
 
 Checking that something exists:
 
@@ -109,4 +117,4 @@ Checking that something is not equal:
 
 - [Cypress.io best practices](https://docs.cypress.io/guides/references/best-practices.html) (applicable to web UI automation in general)
 - [Arrange Act Assert](http://wiki.c2.com/?ArrangeActAssert)
-- [pytest documentation](https://docs.pytest.org/en/7.1.x/)
+- [pytest documentation](https://docs.pytest.org/)
