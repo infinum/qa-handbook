@@ -71,9 +71,9 @@ If you want to rewrite requests and responses automatically, you can use [Charle
 
 You can multi-select several requests and export them as HAR files, just make sure to select the HTTP Archive (.har) format.
 
-Now you will have a file that is basically a snapshot of the all the requests you’ve made and all the responses received.
+Now you will have a file that is basically a snapshot of all the requests you’ve made and all the responses received.
 
-Why would you that? One possible use case is to convert that HAR file to a k6 script and get a load test for free. :) See [Performance - API](https://infinum.com/handbook/books/qa/tools/performance-api) for more details.
+Why would you that? One possible use case is to convert that HAR file to a k6 script and get a load test for free. :)
 
 ## Repeating requests
 

@@ -45,7 +45,7 @@ Where the Accessibility ID comes in very handy are lists of elements. If you hav
 
 _Accessibility ID_ is very useful, but it is above all used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation!
 
-**NOTE:** Check the [Naming differences](https://infinum.com/handbook/qa/automation/locators/locators-general#naming-differences) section for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
+**NOTE:** Check the [Naming differences](https://infinum.com/handbook/qa/automation/locators/general#naming-differences) section for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
 
 
 ### XPath
@@ -71,7 +71,7 @@ Better:
 
 `//input[@id='new-todo']`
 
-Read the [Selenium locators - XPath](https://infinum.com/handbook/qa/automation/locators/selenium-locators-xpath) article for more details.
+Read the [Selenium locators - XPath](https://infinum.com/handbook/qa/automation/locators/xpath) article for more details.
 
 
 ### CSS selector

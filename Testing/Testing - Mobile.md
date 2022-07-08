@@ -186,7 +186,7 @@ The exact location of the aforementioned build number may differ depending on yo
 
 On Android you can use [Lockito](https://play.google.com/store/apps/details?id=fr.dvilleneuve.lockito&hl=en) or [FakeGPS](https://play.google.com/store/apps/details?id=com.lexa.fakegps&hl=en).
 
-As always, iOS is a bit more complicated and deserves a special [guide](https://infinum.com/handbook/books/qa/tools/using-xcode-location).
+As always, iOS is a bit more complicated and deserves a special [guide](https://infinum.com/handbook/qa/tools/using-xcode-location-mocking).
 
 ### Installing an app from a foreign Google Play
 
