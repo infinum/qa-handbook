@@ -23,11 +23,6 @@ Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
 
 ## Example of a page class
 
-- Each page class inherits from BasePage.
-- Each page class can contain a slug, locators, properties, and helper methods.
-
-
-
     from base_page import BasePage
     from selenium.webdriver.common.by import By
 
@@ -47,16 +42,10 @@ Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
     def wait_for_blog_page_to_load(self):
         self.wait_until_element_visible(self.blog_name_label_locator)
 
+- Each page class inherits from BasePage.
+- Each page class can contain a slug, locators, properties, and helper methods.
 
 ## Example of a test class
-
-- Each test class initializes the pages it will use by using the `set_up` fixture.
-- Each test class has to begin with `Test` (example: TestBlog).
-- Each test `.py` file needs to be prefixed with `test_` (`test_*.py`).
-- Each test method has to begin with `test_`.
-- Each test method should contain at least one assertion.
-
-
 
     import pytest
     from logging import info
@@ -83,6 +72,11 @@ Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
 
         check.is_true(self.blog_page.blog_name_label.text == "Typing as we speak")
 
+- Each test class initializes the pages it will use by using the `set_up` fixture.
+- Each test class has to begin with `Test` (example: TestBlog).
+- Each test `.py` file needs to be prefixed with `test_` (`test_*.py`).
+- Each test method has to begin with `test_`.
+- Each test method should contain at least one assertion.
 
 ## Writing assertions
 
