@@ -23,7 +23,11 @@ Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
 
 ## Example of a page class
 
-	from base_page import BasePage
+- Each page class inherits from BasePage.
+- Each page class can contain a slug, locators, properties, and helper methods.
+
+
+    from base_page import BasePage
     from selenium.webdriver.common.by import By
 
 
@@ -41,13 +45,17 @@ Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
 
     def wait_for_blog_page_to_load(self):
         self.wait_until_element_visible(self.blog_name_label_locator)
-        
-- Each page class inherits from BasePage.
-- Each page class can contain a slug, locators, properties, and helper methods.
 
 ## Example of a test class
 
-	import pytest
+- Each test class initializes the pages it will use by using the `set_up` fixture.
+- Each test class has to begin with `Test` (example: TestBlog).
+- Each test `.py` file needs to be prefixed with `test_` (`test_*.py`).
+- Each test method has to begin with `test_`.
+- Each test method should contain at least one assertion.
+
+
+    import pytest
     from logging import info
     from pages.blog_page import BlogPage
     from pages.home_page import HomePage
@@ -71,12 +79,6 @@ Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
         self.blog_page.save_screenshot(extra)
 
         check.is_true(self.blog_page.blog_name_label.text == "Typing as we speak")
-        
-- Each test class initializes the Pages it will use by using the `set_up` fixture.
-- Each test class has to begin with `Test` (example: TestBlog).
-- Each test `.py` file needs to be prefixed with `test_` (`test_*.py`).
-- Each test method has to begin with `test_`.
-- Each test method should contain at least one assertion.
 
 ## Writing assertions
 
@@ -84,11 +86,11 @@ You can use either Python's standard `assert` (hard assert) or soft asserts usin
 
 ### Python's standard assert examples
 
-Checking that something exists:
+Checking that the button exists:
 
-	assert self.page.button.text
+	assert self.page.button == True
 
-Checking that something is equal:
+Checking that the button text equals the expected value:
 
 	assert self.page.button.text == "Logout"
 
@@ -96,19 +98,19 @@ Checking that something is equal:
 
 Here are some examples of assertion methods from the [pytest_check](https://pypi.org/project/pytest_check/) plugin. The plugin has to be imported into the test modules in order to be used. 
 
-Checking that something exists:
+Checking that the button exists:
 
 	pytest_check.is_true(self.page.button)
 
-Checking that something does not exist:
+Checking that the button does not exist:
 
 	pytest_check.is_false(self.page.button)
 	
-Checking that something is equal:
+Checking that the button text equals the expected value:
 
 	pytest_check.equal(self.page.button.text, "Logout")
 	
-Checking that something is not equal:
+Checking that the button text does not equal the expected value:
 
 	pytest_check.not_equal(self.page.button.text, "Logout")
 
