@@ -23,60 +23,64 @@ Read up on it [here](https://martinfowler.com/bliki/PageObject.html).
 
 ## Example of a page class
 
-    from base_page import BasePage
-    from selenium.webdriver.common.by import By
-
-
-    class BlogPage(BasePage):
-
-    slug = "/blog"
-    blog_name_label_locator = (By.CLASS_NAME, "blog-intro__heading")
-
-    def navigate_to_page(self):
-        self.navigate(self.slug)
-
-    @property
-    def blog_name_label(self):
-        return self.get_present_element(self.blog_name_label_locator)
-
-    def wait_for_blog_page_to_load(self):
-        self.wait_until_element_visible(self.blog_name_label_locator)
-
 - Each page class inherits from BasePage.
 - Each page class can contain a slug, locators, properties, and helper methods.
 
+```
+from base_page import BasePage
+from selenium.webdriver.common.by import By
+
+
+class BlogPage(BasePage):
+
+slug = "/blog"
+blog_name_label_locator = (By.CLASS_NAME, "blog-intro__heading")
+
+def navigate_to_page(self):
+    self.navigate(self.slug)
+
+@property
+def blog_name_label(self):
+    return self.get_present_element(self.blog_name_label_locator)
+
+def wait_for_blog_page_to_load(self):
+    self.wait_until_element_visible(self.blog_name_label_locator)
+```
+
 ## Example of a test class
-
-    import pytest
-    from logging import info
-    from pages.blog_page import BlogPage
-    from pages.home_page import HomePage
-    import pytest_check as check
-
-
-    class TestBlog:
-
-    @pytest.fixture(scope="function")
-    def set_up(self, driver, environment):
-        self.blog_page = BlogPage(driver, environment)
-        self.home_page = HomePage(driver, environment)
-
-        self.home_page.navigate_to_page()
-
-    def test_navigate_to_blog_page(self, set_up, extra):
-        info("Navigates to blog posts and verifies that the blog title is correct.")
-
-        self.home_page.blog_navigation_button.click()
-        self.blog_page.wait_for_blog_page_to_load()
-        self.blog_page.save_screenshot(extra)
-
-        check.is_true(self.blog_page.blog_name_label.text == "Typing as we speak")
 
 - Each test class initializes the pages it will use by using the `set_up` fixture.
 - Each test class has to begin with `Test` (example: TestBlog).
 - Each test `.py` file needs to be prefixed with `test_` (`test_*.py`).
 - Each test method has to begin with `test_`.
 - Each test method should contain at least one assertion.
+
+```
+import pytest
+from logging import info
+from pages.blog_page import BlogPage
+from pages.home_page import HomePage
+import pytest_check as check
+
+
+class TestBlog:
+
+@pytest.fixture(scope="function")
+def set_up(self, driver, environment):
+    self.blog_page = BlogPage(driver, environment)
+    self.home_page = HomePage(driver, environment)
+
+    self.home_page.navigate_to_page()
+
+def test_navigate_to_blog_page(self, set_up, extra):
+    info("Navigates to blog posts and verifies that the blog title is correct.")
+
+    self.home_page.blog_navigation_button.click()
+    self.blog_page.wait_for_blog_page_to_load()
+    self.blog_page.save_screenshot(extra)
+
+    check.is_true(self.blog_page.blog_name_label.text == "Typing as we speak")
+```
 
 ## Writing assertions
 
