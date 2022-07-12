@@ -334,8 +334,6 @@ You can download the latest version of Chimera jailbreak from [here] (https://ch
 
 	 Go to ignition.fun on your iPhone or iPad running iOS 12.4. Use the search bar to find Unc0ver. Tap on Get followed by Install. Wait for the app to download and install on your iOS device.
 	 
-	 <img src="http://cdn.iphonehacks.com/wp-content/uploads/2019/08/unc0ver.jpg" alt="UncOver" style="display: block; margin-left: auto; margin-right: auto; width: 50%;"/>
-	 
 2. Trust Certificate
 
 	 Head over to Settings-> General -> Device Management. Tap the developer name and trust the certificate. You will not be able to launch the Uncover jailbreak app on your iPhone/iPad without this.
