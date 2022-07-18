@@ -223,6 +223,10 @@ To create a new test issue follow these steps:
 
 > There you have it, your very own first test in Xray. For in-depth information about Xray and JIRA test integration you can [follow this link](https://www.atlassian.com/devops/testing-tutorials/jira-xray-integration-manage-test-cases).
 
+## Additional resources
+
+- [Free Xray courses](https://academy.getxray.app/catalog/index)
+
 ---
 
 ![Dilbert image](/img/dilbert_jira_article.gif)
