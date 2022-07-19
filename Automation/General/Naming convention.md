@@ -8,10 +8,15 @@ When following a naming convention:
 * collaboration is easier when everyone follows the same style
 
 Basic principles:
+
 * use only English
+
 * be mindful of grammar
+
 * names should be meaningful and concise
+
 * avoid slang and unclear abbreviations
+
 * be consistent
 
 Code examples are in Python and comply with [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds).
@@ -36,7 +41,7 @@ You should use _nouns_ or _short phrases with adjectives_ to describe what is st
 `user_data`
 
 
-**Boolean**
+### Boolean
 
 When naming a variable that stores a boolean value, think of it as asking a question to which the answer is _Yes_ or _No_.
 
@@ -53,7 +58,7 @@ When naming a variable that stores a boolean value, think of it as asking a ques
 `is_correct`
 
 
-**Constants**
+### Constants
 
 Should be written in all capital letters with underscores separating words.
 Constants should store values that never change.
