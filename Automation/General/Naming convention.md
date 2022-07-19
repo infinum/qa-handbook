@@ -139,3 +139,52 @@ Apply the same rules as for the variables.
 `email_methods`
 
 `settings_page`
+
+
+## Example
+
+Tests are methods so consider the naming convention when writing the test name as well.
+In most frameworks, a test method must have either the prefix `test_` or the suffix `_test`.
+The rest is up to you. Following the basic principles, write meaningful and concise names without too much redundant information.
+
+In case of a page class, you can add `__` before locator name to make it "_private_" and only available to the methods of the page class.
+
+
+### Page class
+     
+    class CreateProjectPage(BasePage):
+    
+        def __init__(self, driver, environment, package_name, platform):
+            super().__init__(driver, environment, package_name, platform)
+    
+            self.__create_project_button_locator = {
+                ANDROID: (MobileBy.ID, f"{self.package_name}:id/btnSubmit"),
+                IOS: (MobileBy.ACCESSIBILITY_ID, "Create")
+            }
+    
+            self.__project_name_input_locator = {
+                ANDROID: (MobileBy.ACCESSIBILITY_ID, "Project name"),
+                IOS: (MobileBy.ACCESSIBILITY_ID, "Project name")
+            }
+    
+        @property
+        def create_project_button(self):
+            return self.get_present_element(self.__create_project_button_locator[self.platform])
+    
+        @property
+        def project_name_input(self):
+            return self.get_present_element(self.__project_name_input_locator[self.platform])
+
+
+### Test class 
+
+    class TestProjectScenarios:
+    
+        def test_create_project(self, initialize_pages):
+
+            project_name = "Project"            
+
+            self.create_project_page.project_input_field.send_keys(project_name)
+            self.create_project_page.create_project_button.click()
+
+            check.is_equal(self.project_page.project_name.text, project_name)
