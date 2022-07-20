@@ -10,8 +10,8 @@
 * collaboration is easier when everyone follows the same style
 
 
-On a small project, or while you are working alone, you can get away with naming inconsistency since you are familiar with your code. 
-As the project grows, or more people join, the work and maintenance become difficult.
+On a small project, or while working alone, you might get away with naming inconsistency.
+As the project grows, or more people join, the code becomes less readable and the work and maintenance more difficult.
 
 
 **Basic principles:**
@@ -27,14 +27,14 @@ As the project grows, or more people join, the work and maintenance become diffi
 * be consistent
 
 
-When it comes to name casing, _snake_case_ (lower case with underscores separating the words) should be used as per Python naming convention.
+When it comes to name casing, you should use _snake_case_ (lower case with underscores separating the words) as per Python naming convention.
 
 Code examples are in Python and comply with [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds).
 
 
 ## Variables
 
-You should use _nouns_ or _short phrases with adjectives_ to describe what is stored in the variable
+You should use _nouns_ or _short phrases with adjectives_ to describe what is stored in the variable.
 
 **Bad:**
 
@@ -68,7 +68,7 @@ When naming a variable that stores a boolean value, think of it as asking a ques
 
 ### Constants
 
-Should be written in all capital letters with underscores separating words.
+For constants, use all capital letters with underscores separating words.
 Constants should store values that never change.
 
 **Bad:**
@@ -83,9 +83,9 @@ Constants should store values that never change.
 ## Methods / Functions
 
 Functions and methods perform an action such as returning a value after a calculation, checking if a value is valid, etc.
-Therefore, you typically want to use _verbs_ or _short phrases with adjectives_ that describe what the function or a method does.
+You typically want to use _verbs_ or _short phrases with adjectives_ that describe what the function or a method does.
 
-For example, when getting a value, always start the name with `get_` and use it consistently throughout the project. Do not switch between synonyms like _fetch_ or _retrieve_.
+For example, when getting a value, always prefix the name with `get_`. Use the prefix consistently throughout the project. Do not switch between synonyms like _fetch_ or _retrieve_.
 
 **Bad:**
 
@@ -98,7 +98,7 @@ For example, when getting a value, always start the name with `get_` and use it 
 
 ### Boolean
 
-When returning a `boolean` value it must be clear from the method name that it returns a boolean value and not some other type.
+When a function returns a `boolean` value, it must be clear from the name that the return type is a boolean value.
 
 **Bad:**
 
@@ -115,7 +115,7 @@ When returning a `boolean` value it must be clear from the method name that it r
 
 Depending on whether you are writing a function that stands on its own, or a method which belongs to an object, you might want to consider the name length.
 If a functions stands on its own, it would be better to write a clearer name, such as `save_user_data`.
-If a method belongs to the `User` object, it could be named `save_data`.
+If a method belongs to the `User` object, you could name it `save_data`.
 
 
 ## Classes
@@ -140,9 +140,9 @@ When it comes to name casing, use _upper camel case_ for class names.
 ## Packages and modules
 
 As defined in [PEP 8](https://peps.python.org/pep-0008/#package-and-module-names), packages and modules should have short, all-lowercase names.
-Even though the use of underscores is discouraged, you can add them to improve readability or to avoid name collision.
+The use of underscores is discouraged, however, you can add them to improve readability or to avoid name collision.
 
-**NOTE:** Careful with short names such as `email` because in might collide with the existing `email` module and break your code. In this case, you could use `email_methods` or similar instead.
+**NOTE:** Be careful with short names such as `email` because it might collide with the existing `email` module and break your code. In this case, you could use `email_methods` or similar instead.
 
 
 **Bad:**
