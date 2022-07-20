@@ -77,15 +77,15 @@ Constants should store values that never change.
 Functions and methods perform an action such as returning a value after a calculation, checking if a value is valid, etc.
 Therefore, you typically want to use _verbs_ or _short phrases with adjectives_ that describe what the function or a method does.
 
-When getting a value, always start the name with `get_` and use it consistently throughout the project. Do not switch between synonyms like _fetch_ or _retrieve_.
+For example, when getting a value, always start the name with `get_` and use it consistently throughout the project. Do not switch between synonyms like _fetch_ or _retrieve_.
 
 **Bad:**
 
-`now()`
+`name()`
 
 **Better:**
 
-`get_current_time()`
+`get_name()`
 
 
 When returning a `boolean` value it must be clear from the method name that it returns a boolean value and not some other type.
@@ -127,30 +127,54 @@ When it comes to name casing, use _upper camel case_ for class names.
 `class DialogWindow`
 
 
-## Files
+## Packages and modules
 
-Apply the same rules as for the variables.
+As defined in [PEP 8](https://peps.python.org/pep-0008/#package-and-module-names), packages and modules should have short, all-lowercase names.
+Even though the use of underscores is discouraged, you can add them to improve readability or to avoid name collision.
 
-**NOTE:** Careful with short names such as `email` because in might clash with the existing `email` module and break your code.
+**NOTE:** Careful with short names such as `email` because in might collide with the existing `email` module and break your code. In this case, you could use `email_methods` or similar instead.
 
 **Bad:**
 
-`email`
+`emailmodule`
 
-`settingsPage`
+`helperMethods`
 
 **Better:**
 
-`email_methods`
+`email_module`
 
-`settings_page`
+`helper_methods`
 
 
-## Example
+## Example: UI elements and methods
+
+### Variables
+
+| UI     | Suffix  | Example            |
+|:-------|:--------|:-------------------|
+| Button | _button | submit_button      |
+| Image  | _image  | profile_image      |
+| Label  | _label  | project_name_label |
+| Slider | _slider | volume_slider      |
+
+
+### Methods / Functions
+
+
+| Action            | Prefix    | Example                |
+|:------------------|:----------|:-----------------------|
+| Get current time  | get_      | get_current_time()     |
+| Generate a name   | generate_ | generate_random_name() |
+| Clear name field  | clear_    | clear_name_field()     |
+| Open user details | open_     | open_user_details()    |
+
+
+## Example: page and test classes
 
 Tests are methods so consider the naming convention when writing the test name as well.
 In most frameworks, a test method must have either the prefix `test_` or the suffix `_test`.
-The rest is up to you. Following the basic principles, write meaningful and concise names without too much redundant information.
+The rest is up to you. Following the basic principles, write meaningful and concise names without redundant information.
 
 In case of a page class, you can add `__` before locator name to make it "_private_" and only available to the methods of the page class.
 
@@ -193,3 +217,4 @@ In case of a page class, you can add `__` before locator name to make it "_priva
             self.create_project_page.create_project_button.click()
 
             check.is_equal(self.project_page.project_name.text, project_name)
+
