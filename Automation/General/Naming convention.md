@@ -160,6 +160,9 @@ The use of underscores is discouraged, however, you can add them to improve read
 
 ## Example: UI elements and methods
 
+The tables below show a couple of examples on how to use suffixes and prefixes in your automation project to make the code clear.
+Use the approach consistently.
+
 ### Variables
 
 | UI     | Suffix  | Example            |
@@ -171,7 +174,6 @@ The use of underscores is discouraged, however, you can add them to improve read
 
 
 ### Methods / Functions
-
 
 | Action            | Prefix    | Example                |
 |:------------------|:----------|:-----------------------|
