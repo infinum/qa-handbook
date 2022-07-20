@@ -3,9 +3,13 @@ On a small project, or while you are working alone, you can get away with naming
 As the project grows, or more people join, the work and maintenance become difficult.
 
 When following a naming convention:
+
 * writing code is easier since you don’t have to ponder over element naming
+
 * good naming makes the code easier to read and understand
+
 * collaboration is easier when everyone follows the same style
+
 
 Basic principles:
 
@@ -88,6 +92,8 @@ For example, when getting a value, always start the name with `get_` and use it 
 `get_name()`
 
 
+### Boolean
+
 When returning a `boolean` value it must be clear from the method name that it returns a boolean value and not some other type.
 
 **Bad:**
@@ -122,9 +128,9 @@ When it comes to name casing, use _upper camel case_ for class names.
 
 **Better:**
 
-`class LoginPage`
+`LoginPage`
 
-`class DialogWindow`
+`DialogWindow`
 
 
 ## Packages and modules
@@ -133,6 +139,7 @@ As defined in [PEP 8](https://peps.python.org/pep-0008/#package-and-module-names
 Even though the use of underscores is discouraged, you can add them to improve readability or to avoid name collision.
 
 **NOTE:** Careful with short names such as `email` because in might collide with the existing `email` module and break your code. In this case, you could use `email_methods` or similar instead.
+
 
 **Bad:**
 
