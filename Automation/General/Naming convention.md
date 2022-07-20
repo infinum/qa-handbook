@@ -1,8 +1,7 @@
+> Talent wins games, but teamwork and intelligence win championships. – Michael Jordan
 
-On a small project, or while you are working alone, you can get away with naming inconsistency since you are familiar with your code. 
-As the project grows, or more people join, the work and maintenance become difficult.
 
-When following a naming convention:
+**Why follow a naming convention:**
 
 * writing code is easier since you don’t have to ponder over element naming
 
@@ -11,7 +10,11 @@ When following a naming convention:
 * collaboration is easier when everyone follows the same style
 
 
-Basic principles:
+On a small project, or while you are working alone, you can get away with naming inconsistency since you are familiar with your code. 
+As the project grows, or more people join, the work and maintenance become difficult.
+
+
+**Basic principles:**
 
 * use only English
 
@@ -23,9 +26,10 @@ Basic principles:
 
 * be consistent
 
-Code examples are in Python and comply with [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds).
 
 When it comes to name casing, _snake_case_ (lower case with underscores separating the words) should be used as per Python naming convention.
+
+Code examples are in Python and comply with [PEP 8 – Style Guide for Python Code](https://peps.python.org/pep-0008/#a-foolish-consistency-is-the-hobgoblin-of-little-minds).
 
 
 ## Variables
@@ -220,8 +224,8 @@ In case of a page class, you can add `__` before locator name to make it "_priva
 
             project_name = "Project"            
 
-            self.create_project_page.project_input_field.send_keys(project_name)
+            self.create_project_page.project_input.send_keys(project_name)
             self.create_project_page.create_project_button.click()
 
-            check.is_equal(self.project_page.project_name.text, project_name)
+            check.is_equal(self.project_page.project_name_label.text, project_name)
 
