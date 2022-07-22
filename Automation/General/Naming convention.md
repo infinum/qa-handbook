@@ -189,7 +189,7 @@ Tests are methods so consider the naming convention when writing the test name a
 In most frameworks, a test method must have either the prefix `test_` or the suffix `_test`.
 The rest is up to you. Following the basic principles, write meaningful and concise names without redundant information.
 
-In case of a page class, you can add `__` before the locator name to make it "_private_" and only available to the methods of the page class.
+In case of a page class, you can add `__` (two underscores) before the locator name to make it "_private_" and only available to the methods of the page class.
 
 
 ### Page class
