@@ -151,7 +151,3 @@ There are plenty of ways to organize a software project. Since your job is to ta
 More on this later, but for now, check out this cute graphic...
 
 ![project-methodologies.jpg](/img/project-methodologies.jpg)
-
----
-
-![working-on-projects.gif](/img/working-on-projects.gif)

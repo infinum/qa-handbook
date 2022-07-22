@@ -59,6 +59,3 @@ Find (and expand if needed) *Deployment Info*, this is what you should see:
 ![](/img/location10.png)
 
 There, make sure correct device type is selected (you can have both selected at the same time), and that iOS version selected is older than or at least matches the one on your test device. Save changes with **command + s** and click *Play* again.
-
----
-![dil-location.jpg](/img/dil-location.jpg)

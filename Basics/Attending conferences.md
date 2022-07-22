@@ -122,9 +122,3 @@ An example of CFP:https://testconf.ru/2019/en/neven-matas/index.html
 7. You'll be traveling around 
 8. Success!
 9. First time is the hardest, now you have everything to rinse and repeat!
-
----
-
-![Dilbert at conference](/img/dilbert_conference.gif)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/1998-04-23): 04-23-98 by Scott Adams*

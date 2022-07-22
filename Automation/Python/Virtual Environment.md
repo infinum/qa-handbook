@@ -152,9 +152,3 @@ Make sure you have the virtual environment active and the requirements.txt file 
 `pip install -r requirements.txt`
 
 You should now have all the dependencies specified in the requirements.txt file installed for the current project.
-
-
----
-
-
-![dilbert-virtual-environment.png](/img/dilbert-virtual-environment.png)

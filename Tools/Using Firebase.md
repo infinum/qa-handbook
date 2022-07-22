@@ -50,7 +50,7 @@ You can ask your favorite Android developer as well, but this one you can make o
 **Tracking events**
 
 After you have set it all up, open the Firebase console, select your project and in the side navigation select DebugView. If you have multiple devices with Debug mode enabled, you can use the Device selector in the upper left corner to choose the specific device on which you will be focused.
- 
+
 Then, just start using your app to see your app’s events being logged in the DebugView report. In the left column on the screen, you will see the Minutes stream that shows a series of archives of Events over the last 30 minutes. The Middle Stream will show you what you came here for - all Events triggered in the last 30 minutes. By tapping on a single Event, you can see the Parameters and User properties of each Event.
 
 Be aware that Firebase automatically tracks some Events and ScreenViews since you’ll only be checking the custom ones. You can feel free to ignore the rest :)
@@ -69,7 +69,3 @@ While testing, please be precise. Here is a list of things that may go wrong (an
 Also, as always, your job is not only to check, but to improve - if you see some important things that are not being tracked (they are not even defined by Data Analyst), or any other illogicality, feel free to discuss it with Data Analyst and define new plan with them. Then ask the developer to implement the new plan.
 
 If you need more info, check [this](https://firebase.google.com/docs/analytics/debugview) link.
-
----
-![dilbert-analytics.jpg](/img/dilbert-analytics.jpg)
-

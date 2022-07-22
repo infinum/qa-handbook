@@ -35,7 +35,3 @@ These can also serve as helpful intros:
 - [Glossary of navigation elements](https://tubikstudio.com/uiux-design-glossary-navigation-elements/)
 
 - [15 basic types of screens](https://tubikstudio.com/mobile-ui-design-15-basic-types-of-screens/)
-
----
-
-![intro-to-ui-and-ux.gif](/img/intro-to-ui-and-ux.gif)

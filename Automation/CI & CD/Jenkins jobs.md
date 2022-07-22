@@ -143,10 +143,3 @@ You can even check the log while the job is running since it's updated in real t
 ## Additional resources
 
 [Jenkins tutorial](https://www.youtube.com/watch?v=89yWXXIOisk&list=PLhW3qG5bs-L_ZCOA4zNPSoGbnVQ-rp_dG&ab_channel=AutomationStepbyStep)
-
-
----
-
-![dilbert_automation_jenkins_jobs.png](/img/dilbert_automation_jenkins_jobs.png)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2018-03-22): 03-22-18 by Scott Adams*

@@ -153,7 +153,3 @@ When you want to quickly change the content on a page (i.e. to check what the pa
 3. hit Enter
 
 The `designMode` should be enabled and you can edit the content.
-
----
-
-![](/img/dilbert_project.gif)

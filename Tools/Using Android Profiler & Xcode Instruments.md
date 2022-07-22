@@ -169,7 +169,3 @@ The trace document includes the following main areas:
 ![](/img/instruments_inspector_pane_navigation_bar.png)
 
 In the [Instruments documentation](https://help.apple.com/instruments/mac/current/#/) you can find additional options this tool can give you like tracking CPU core and thread use, find performance bottlenecks and memory leaks, etc. You can even find [zombies](https://help.apple.com/instruments/mac/current/#/dev612e6956), I kid you not.
-
----
-
-![dil-90.jpg](/img/dil-90.jpg)
