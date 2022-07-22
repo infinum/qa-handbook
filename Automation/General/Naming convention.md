@@ -9,6 +9,7 @@
 
 * collaboration is easier when everyone follows the same style
 
+
 On a small project, or while working alone, you might get away with naming inconsistency.
 As the project grows, or more people join, the code becomes less readable and the work and maintenance more difficult.
 
@@ -24,6 +25,7 @@ As the project grows, or more people join, the code becomes less readable and th
 * avoid slang and unclear abbreviations
 
 * be consistent
+
 
 When it comes to name casing, you should use _snake_case_ (lower case with underscores separating the words) as per Python naming convention.
 
@@ -112,7 +114,7 @@ When a function returns a `boolean` value, it must be clear from the name that t
 
 
 Depending on whether you are writing a function that stands on its own, or a method which belongs to an object, you might want to consider the name length.
-If a functions stands on its own, it would be better to write a clearer name, such as `save_user_data`.
+If a function stands on its own, it would be better to write a clearer name, such as `save_user_data`.
 If a method belongs to the `User` object, you could name it `save_data`.
 
 
@@ -187,34 +189,34 @@ Tests are methods so consider the naming convention when writing the test name a
 In most frameworks, a test method must have either the prefix `test_` or the suffix `_test`.
 The rest is up to you. Following the basic principles, write meaningful and concise names without redundant information.
 
-In case of a page class, you can add `__` before locator name to make it "_private_" and only available to the methods of the page class.
+In case of a page class, you can add `__` before the locator name to make it "_private_" and only available to the methods of the page class.
 
 
 ### Page class
-
-```     
+    
+``` 
 class CreateProjectPage(BasePage):
 
-   def __init__(self, driver, environment, package_name, platform):
-       super().__init__(driver, environment, package_name, platform)
+    def __init__(self, driver, environment, package_name, platform):
+        super().__init__(driver, environment, package_name, platform)
 
-       self.__create_project_button_locator = {
-           ANDROID: (MobileBy.ID, f"{self.package_name}:id/btnSubmit"),
-           IOS: (MobileBy.ACCESSIBILITY_ID, "Create")
-       }
+        self.__create_project_button_locator = {
+            ANDROID: (MobileBy.ID, f"{self.package_name}:id/btnSubmit"),
+            IOS: (MobileBy.ACCESSIBILITY_ID, "Create")
+        }
 
-       self.__project_name_input_locator = {
-           ANDROID: (MobileBy.ACCESSIBILITY_ID, "Project name"),
-           IOS: (MobileBy.ACCESSIBILITY_ID, "Project name")
-       }
+        self.__project_name_input_locator = {
+            ANDROID: (MobileBy.ACCESSIBILITY_ID, "Project name"),
+            IOS: (MobileBy.ACCESSIBILITY_ID, "Project name")
+        }
 
-   @property
-   def create_project_button(self):
-       return self.get_present_element(self.__create_project_button_locator[self.platform])
+    @property
+    def create_project_button(self):
+        return self.get_present_element(self.__create_project_button_locator[self.platform])
 
-   @property
-   def project_name_input(self):
-       return self.get_present_element(self.__project_name_input_locator[self.platform])
+    @property
+    def project_name_input(self):
+        return self.get_present_element(self.__project_name_input_locator[self.platform])
 ```
 
 ### Test class 
@@ -222,12 +224,12 @@ class CreateProjectPage(BasePage):
 ```
 class TestProjectScenarios:
 
-   def test_create_project(self, initialize_pages):
+    def test_create_project(self, initialize_pages):
 
-       project_name = "Project"            
+        project_name = "Project"            
 
-       self.create_project_page.project_input.send_keys(project_name)
-       self.create_project_page.create_project_button.click()
+        self.create_project_page.project_input.send_keys(project_name)
+        self.create_project_page.create_project_button.click()
 
-       check.is_equal(self.project_page.project_name_label.text, project_name)
+        check.is_equal(self.project_page.project_name_label.text, project_name)
 ```
