@@ -98,7 +98,3 @@ You can send report to the developer along with the decompiled build you can fin
 `/Users/"your user name"/build`
 
 More information about QARK can be found by following this [link](https://github.com/linkedin/qark).
-
----
-
-![automated-security-testing.gif](/img/automated-security-testing.gif)

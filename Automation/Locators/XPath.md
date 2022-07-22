@@ -231,9 +231,3 @@ For more details and examples take a look at the following resources:
 [W3Schools](https://www.w3schools.com/xml/xpath_intro.asp)
 
 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/XPath)
-
-
----
-
-
-![dilbert_selenium_xpath.png](/img/dilbert_selenium_xpath.png)

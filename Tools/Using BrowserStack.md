@@ -102,4 +102,3 @@ There are also some alternative ways to install the app:
 A drawback is that it can sometimes be slow because you need to wait for all the data to be loaded (like OS, browsers, app installs, etc.). 
 
 **Real device testing** is not very cheap. You need to buy the devices that you need for testing. Also, it is not very practical to carry all those devices with you. Additionally, you need to buy an OS license.
-

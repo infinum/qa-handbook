@@ -193,6 +193,3 @@ A lot of the users today like having only one account for all the web places the
 - Make sure that, if there are any redirects, they redirect to the correct URL. Don't want your users to get lost once they are logged in :D
 - Always check the API calls the login uses. Stuff could be in plain text in there and you really, and I mean really, do not want that.
 - Check what is saved into the database with a dev. You can usually find a lot of funky stuff in the early stages of a project.
-
----
-![dilbert-god.jpg](/img/dilbert-god.jpg)

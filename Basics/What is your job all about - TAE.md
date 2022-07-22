@@ -25,8 +25,3 @@ The main responsibilities of the TAE role are:
 - Maintaining technical aspects of the QA Handbook
 - Technical management of testing on complex projects
 - Mentoring and education
-
-
----
-
-![tae.gif](/img/tae.gif)

@@ -37,9 +37,3 @@ The reviews sent to Slack contain quick links so that you can reply to user revi
 Here is an example of a review sent to Slack:
  
 <span style="display:block; border: 1px solid #e0e0e0; width:100%;">![Appbot review message in Slack](/img/appbot-slack-review.png)</span>
-
----
-
-![Dilbert image](/img/dilbert-appbot-article.gif)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2007-11-12): 11-12-07 by Scott Adams*

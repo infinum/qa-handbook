@@ -122,8 +122,3 @@ A few basic things to check:
 - response headers
 
 Read the [REST API Testing Strategy](https://www.sisense.com/blog/rest-api-testing-strategy-what-exactly-should-you-test/) article for more ideas on what to check.
-
-
----
-
-![ui-test-automation.gif](/img/ui-test-automation.gif)

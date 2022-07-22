@@ -128,11 +128,3 @@ Fix by installing `ideviceinstaller` manually.
 [Troubleshooting Appium](https://appium.io/docs/en/writing-running-appium/other/troubleshooting/)
 
 [Selenium/Appium Troubleshooting](https://developers.perfectomobile.com/pages/viewpage.action?pageId=19170351)
-
-
----
-
-
-![dilbert_troubleshooting_appium.png](/img/dilbert_troubleshooting_appium.png)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2014-11-26): 11-26-14 by Scott Adams* 

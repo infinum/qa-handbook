@@ -69,11 +69,3 @@ Selenium IDE is a selenium-powered test recorder. In comparison to Selenium IDE,
 <span style="display:block; border: 1px solid #e0e0e0;">![test_recorders5](/img/test_recorders5.png)</span>
 
 For users that are not familiar at all with web testing and elements that you need to adapt or customize, Testim is a much better option even in the free version because Selenium IDE requires some learning curve. Some features in Selenium IDE are not visible or understandable at first sight.
-
-
----
-
-
-![dilbert_test_recorders_article](/img/dilbert_test_recorders_article.gif)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2011-03-24): 03-24-11 by Scott Adams*

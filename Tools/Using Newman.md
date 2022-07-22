@@ -82,8 +82,3 @@ Find more info on the [npmjs page](https://www.npmjs.com/package/newman#using-ne
 ## Docs
 
 For more info on all params and other use cases, check out their [GitHub page](https://github.com/postmanlabs/newman).
-
-
----
-
-![job.jpg](/img/job.jpg)

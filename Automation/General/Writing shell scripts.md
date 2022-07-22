@@ -194,10 +194,3 @@ The arguments are provided by specifying the argument starting with a _hyphen_ (
 [Positional parameters in scripts](https://linuxcommand.org/lc3_wss0120.php)
 
 [Using flag arguments](https://linuxconfig.org/bash-script-flags-usage-with-arguments-examples)
-
-
----
-
-![dilbert_writing_shell_scripts.png](/img/dilbert_writing_shell_scripts.png)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2022-06-05): 05-06-22 by Scott Adams*

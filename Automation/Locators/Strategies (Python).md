@@ -47,8 +47,3 @@ Take another look at your code, there could be simply a character missing :)
 ## Additional resources
 
 For more info read the ["Locating elements" chapter](https://selenium-python.readthedocs.io/locating-elements.html) in the *Selenium with Python* document.
-
----
-
-
-![dilbert_selenium_strategies.png](/img/dilbert_selenium_strategies.png)

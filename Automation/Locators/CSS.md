@@ -219,10 +219,3 @@ For more information and examples take a look at the following resources:
 Web game to help you learn how to use CSS selectors:
 
 [CSS Diner](https://flukeout.github.io/)
-
----
-
-
-![dilbert_selenium_css.png](/img/dilbert_selenium_css.png)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2021-09-03): 09-03-21 by Scott Adams*
