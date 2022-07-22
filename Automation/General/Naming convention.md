@@ -4,7 +4,9 @@
 ### Why follow a naming convention:
 
 * writing code is easier since you don’t have to ponder over element naming
+
 * good naming makes the code easier to read and understand
+
 * collaboration is easier when everyone follows the same style
 
 On a small project, or while working alone, you might get away with naming inconsistency.
@@ -14,9 +16,13 @@ As the project grows, or more people join, the code becomes less readable and th
 ### Basic principles:
 
 * use only English
+
 * be mindful of grammar
+
 * names should be meaningful and concise
+
 * avoid slang and unclear abbreviations
+
 * be consistent
 
 When it comes to name casing, you should use _snake_case_ (lower case with underscores separating the words) as per Python naming convention.
