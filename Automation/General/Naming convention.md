@@ -1,31 +1,23 @@
 > Talent wins games, but teamwork and intelligence win championships. – Michael Jordan
 
 
-**Why follow a naming convention:**
+### Why follow a naming convention:
 
 * writing code is easier since you don’t have to ponder over element naming
-
 * good naming makes the code easier to read and understand
-
 * collaboration is easier when everyone follows the same style
-
 
 On a small project, or while working alone, you might get away with naming inconsistency.
 As the project grows, or more people join, the code becomes less readable and the work and maintenance more difficult.
 
 
-**Basic principles:**
+### Basic principles:
 
 * use only English
-
 * be mindful of grammar
-
 * names should be meaningful and concise
-
 * avoid slang and unclear abbreviations
-
 * be consistent
-
 
 When it comes to name casing, you should use _snake_case_ (lower case with underscores separating the words) as per Python naming convention.
 
@@ -193,41 +185,43 @@ In case of a page class, you can add `__` before locator name to make it "_priva
 
 
 ### Page class
-     
-    class CreateProjectPage(BasePage):
-    
-        def __init__(self, driver, environment, package_name, platform):
-            super().__init__(driver, environment, package_name, platform)
-    
-            self.__create_project_button_locator = {
-                ANDROID: (MobileBy.ID, f"{self.package_name}:id/btnSubmit"),
-                IOS: (MobileBy.ACCESSIBILITY_ID, "Create")
-            }
-    
-            self.__project_name_input_locator = {
-                ANDROID: (MobileBy.ACCESSIBILITY_ID, "Project name"),
-                IOS: (MobileBy.ACCESSIBILITY_ID, "Project name")
-            }
-    
-        @property
-        def create_project_button(self):
-            return self.get_present_element(self.__create_project_button_locator[self.platform])
-    
-        @property
-        def project_name_input(self):
-            return self.get_present_element(self.__project_name_input_locator[self.platform])
 
+```     
+class CreateProjectPage(BasePage):
+
+   def __init__(self, driver, environment, package_name, platform):
+       super().__init__(driver, environment, package_name, platform)
+
+       self.__create_project_button_locator = {
+           ANDROID: (MobileBy.ID, f"{self.package_name}:id/btnSubmit"),
+           IOS: (MobileBy.ACCESSIBILITY_ID, "Create")
+       }
+
+       self.__project_name_input_locator = {
+           ANDROID: (MobileBy.ACCESSIBILITY_ID, "Project name"),
+           IOS: (MobileBy.ACCESSIBILITY_ID, "Project name")
+       }
+
+   @property
+   def create_project_button(self):
+       return self.get_present_element(self.__create_project_button_locator[self.platform])
+
+   @property
+   def project_name_input(self):
+       return self.get_present_element(self.__project_name_input_locator[self.platform])
+```
 
 ### Test class 
 
-    class TestProjectScenarios:
-    
-        def test_create_project(self, initialize_pages):
+```
+class TestProjectScenarios:
 
-            project_name = "Project"            
+   def test_create_project(self, initialize_pages):
 
-            self.create_project_page.project_input.send_keys(project_name)
-            self.create_project_page.create_project_button.click()
+       project_name = "Project"            
 
-            check.is_equal(self.project_page.project_name_label.text, project_name)
+       self.create_project_page.project_input.send_keys(project_name)
+       self.create_project_page.create_project_button.click()
 
+       check.is_equal(self.project_page.project_name_label.text, project_name)
+```
