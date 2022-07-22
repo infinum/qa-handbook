@@ -203,7 +203,3 @@ For managing your own tasks.
 For more on tools and testing and to not make this whole article just another dead list, read up on [agile testing quadrants](https://labs.sogeti.com/guiding-development-agile-testing-quadrants/).
 
 ![agile-quadrant.png](/img/agile-quadrant.png)
-
----
-
-![useful-tools.gif](/img/useful-tools.gif)

@@ -159,7 +159,3 @@ There are few ways on how to clear the cache:
 3. expand cookie folder
 4. right click on content in this folder
 5. click clear and storage will be deleted
-
----
-
-![using-chrome-dev-tools.gif](/img/using-chrome-dev-tools.gif)

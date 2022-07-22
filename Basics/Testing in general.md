@@ -167,7 +167,7 @@ When doing exploratory testing you should:
 
 Sometimes, all of the above is planned via an **exploratory testing charter**. Other people really like using mind maps. In any case, the whole point is in investigating and freely exploring what you have set out to test. You will need to find out which test planning method works best for you.
 
-Read more on exploratory testing from [Cem Kaner](http://www.kaner.com/pdfs/QAIExploring.pdf) or from [James Bach](http://www.satisfice.com/articles/et-article.pdf) or this short primer on [test heuristics and test oracles](https://www.testingexcellence.com/test-oracles-test-heuristics/).
+Read more on exploratory testing from [Cem Kaner](https://secureservercdn.net/198.71.189.51/13j.276.myftpupload.com/pdfs/QAIExploring.pdf) or [James Bach](https://www.satisfice.com/exploratory-testing).
 
 ## Types of testing - A fuller list
 
@@ -176,7 +176,3 @@ Read more on exploratory testing from [Cem Kaner](http://www.kaner.com/pdfs/QAIE
 ## How do other companies do testing?
 
 See the [howtheytest](https://github.com/abhivaikar/howtheytest/blob/master/README.md) GitHub repo.
-
----
-
-![testing-in-general.png](/img/testing-in-general.png)

@@ -42,9 +42,3 @@ Let's try together to find that sweet spot with just enough communication to sta
 
 
 *Read more about it in [this Slack article](https://slack.com/blog/collaboration/etiquette-tips-in-slack) by Matt Haughey*
-
----
-
-![Dilbert image](/img/dilbert_slack_article.gif)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2012-07-25): 07-25-12 by Scott Adams*

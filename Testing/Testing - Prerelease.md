@@ -173,8 +173,4 @@ If there is time, you can do a limited regression test on other supported browse
 ### Not applicable for Web Apps:
 
 - No need for testing [Prince of Versions](https://github.com/infinum/Android-Prince-of-Versions)
-- No need for testing Google Play Beta/TestFlight 
-
----
-
-![dilbert-user.gif](/img/dilbert-user.gif)
+- No need for testing Google Play Beta/TestFlight

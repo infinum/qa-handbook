@@ -30,7 +30,3 @@ Here's how to get it up and running on any Android device:
 10. This will send 5000 random events to the QA Adventure application.
 
 Follow [this link] (https://developer.android.com/studio/test/monkey.html) if you need more information.
-
----
-
-![dil-monkey.jpg](/img/dil-monkey.jpg)

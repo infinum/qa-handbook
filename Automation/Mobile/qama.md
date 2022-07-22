@@ -39,8 +39,3 @@ Other than the boring config files, the difference between our web & mobile boil
     @property
     def pin_input_field(self):
         return self.get_present_element(self.pin_input_field_locator[config.platform])
-
----
-
-![dil-code.jpg](/img/dil-code.jpg)
-

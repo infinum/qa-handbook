@@ -83,7 +83,7 @@ Constants should store values that never change.
 ## Methods / Functions
 
 Functions and methods perform an action such as returning a value after a calculation, checking if a value is valid, etc.
-You typically want to use _verbs_ or _short phrases with adjectives_ that describe what the function or a method does.
+You typically want to use _verbs_ or _short phrases with adjectives_ that describe what the function or method does.
 
 For example, when getting a value, always prefix the name with `get_`. Use the prefix consistently throughout the project. Do not switch between synonyms like _fetch_ or _retrieve_.
 
@@ -189,7 +189,7 @@ Tests are methods so consider the naming convention when writing the test name a
 In most frameworks, a test method must have either the prefix `test_` or the suffix `_test`.
 The rest is up to you. Following the basic principles, write meaningful and concise names without redundant information.
 
-In case of a page class, you can add `__` (two underscores) before the locator name to make it _"private"_ and only available to the methods of the page class.
+In case of a page class, you can add `__` before the locator name to make it "_private_" and only available to the methods of the page class.
 
 
 ### Page class

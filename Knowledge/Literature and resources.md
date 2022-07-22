@@ -40,8 +40,3 @@ If  you will be writing a blog post here is a useful list of blog posts which co
 - [QA Reacts](http://qareacts.tumblr.com/)
 - [Satisfice blog](https://www.satisfice.com/blog/)
 - [State of testing](https://qablog.practitest.com/state-of-testing/)
-
-
----
-
-![literature-and-resources.jpg](/img/literature-and-resources.jpg)
