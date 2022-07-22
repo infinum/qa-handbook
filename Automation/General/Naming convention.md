@@ -1,7 +1,7 @@
 > Talent wins games, but teamwork and intelligence win championships. – Michael Jordan
 
 
-**Why follow a naming convention:**
+### Why follow a naming convention:
 
 * writing code is easier since you don’t have to ponder over element naming
 
@@ -14,7 +14,7 @@ On a small project, or while working alone, you might get away with naming incon
 As the project grows, or more people join, the code becomes less readable and the work and maintenance more difficult.
 
 
-**Basic principles:**
+### Basic principles:
 
 * use only English
 
@@ -83,7 +83,7 @@ Constants should store values that never change.
 ## Methods / Functions
 
 Functions and methods perform an action such as returning a value after a calculation, checking if a value is valid, etc.
-You typically want to use _verbs_ or _short phrases with adjectives_ that describe what the function or a method does.
+You typically want to use _verbs_ or _short phrases with adjectives_ that describe what the function or method does.
 
 For example, when getting a value, always prefix the name with `get_`. Use the prefix consistently throughout the project. Do not switch between synonyms like _fetch_ or _retrieve_.
 
@@ -114,7 +114,7 @@ When a function returns a `boolean` value, it must be clear from the name that t
 
 
 Depending on whether you are writing a function that stands on its own, or a method which belongs to an object, you might want to consider the name length.
-If a functions stands on its own, it would be better to write a clearer name, such as `save_user_data`.
+If a function stands on its own, it would be better to write a clearer name, such as `save_user_data`.
 If a method belongs to the `User` object, you could name it `save_data`.
 
 
@@ -189,45 +189,47 @@ Tests are methods so consider the naming convention when writing the test name a
 In most frameworks, a test method must have either the prefix `test_` or the suffix `_test`.
 The rest is up to you. Following the basic principles, write meaningful and concise names without redundant information.
 
-In case of a page class, you can add `__` before locator name to make it "_private_" and only available to the methods of the page class.
+In case of a page class, you can add `__` before the locator name to make it "_private_" and only available to the methods of the page class.
 
 
 ### Page class
-     
-    class CreateProjectPage(BasePage):
     
-        def __init__(self, driver, environment, package_name, platform):
-            super().__init__(driver, environment, package_name, platform)
-    
-            self.__create_project_button_locator = {
-                ANDROID: (MobileBy.ID, f"{self.package_name}:id/btnSubmit"),
-                IOS: (MobileBy.ACCESSIBILITY_ID, "Create")
-            }
-    
-            self.__project_name_input_locator = {
-                ANDROID: (MobileBy.ACCESSIBILITY_ID, "Project name"),
-                IOS: (MobileBy.ACCESSIBILITY_ID, "Project name")
-            }
-    
-        @property
-        def create_project_button(self):
-            return self.get_present_element(self.__create_project_button_locator[self.platform])
-    
-        @property
-        def project_name_input(self):
-            return self.get_present_element(self.__project_name_input_locator[self.platform])
+``` 
+class CreateProjectPage(BasePage):
 
+    def __init__(self, driver, environment, package_name, platform):
+        super().__init__(driver, environment, package_name, platform)
+
+        self.__create_project_button_locator = {
+            ANDROID: (MobileBy.ID, f"{self.package_name}:id/btnSubmit"),
+            IOS: (MobileBy.ACCESSIBILITY_ID, "Create")
+        }
+
+        self.__project_name_input_locator = {
+            ANDROID: (MobileBy.ACCESSIBILITY_ID, "Project name"),
+            IOS: (MobileBy.ACCESSIBILITY_ID, "Project name")
+        }
+
+    @property
+    def create_project_button(self):
+        return self.get_present_element(self.__create_project_button_locator[self.platform])
+
+    @property
+    def project_name_input(self):
+        return self.get_present_element(self.__project_name_input_locator[self.platform])
+```
 
 ### Test class 
 
-    class TestProjectScenarios:
-    
-        def test_create_project(self, initialize_pages):
+```
+class TestProjectScenarios:
 
-            project_name = "Project"            
+    def test_create_project(self, initialize_pages):
 
-            self.create_project_page.project_input.send_keys(project_name)
-            self.create_project_page.create_project_button.click()
+        project_name = "Project"            
 
-            check.is_equal(self.project_page.project_name_label.text, project_name)
+        self.create_project_page.project_input.send_keys(project_name)
+        self.create_project_page.create_project_button.click()
 
+        check.is_equal(self.project_page.project_name_label.text, project_name)
+```
