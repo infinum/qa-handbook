@@ -155,7 +155,3 @@ This is how a complete workflow would look like:
 
 - [Learn GIT branching](https://learngitbranching.js.org/)
 - [GIT command explorer](https://gitexplorer.com/)
-
----
-
-![dilbert-git-basics.png](/img/dilbert-git-basics.png)

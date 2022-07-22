@@ -28,7 +28,3 @@ In those cases, you could become frustrated and some of these problems might sta
 Your motivation may decrease at times. This is normal, but a prolonged case of demotivation will definitely impact your work and satisfaction.
 
 Please keep in mind that all of the aforementioned problems (and others) can be addressed by your team lead or the HR department. The imporant thing is to **speak up before you burn out**.
-
----
-
-![taking-care-of-yourself.gif](/img/taking-care-of-yourself.gif)

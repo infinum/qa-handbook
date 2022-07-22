@@ -222,7 +222,3 @@ The **velocity chart** is a graphic representation of the amount of value delive
 Scrum and Kanban are both iterative work systems that rely on process flows. However, there are a few main differences between the two:
 
 ![scrum-vs-kanban.png](/img/scrum-vs-kanban.png)
-
----
-
-![dil-software-dev-methodologies.gif](/img/dil-software-dev-methodologies.gif)

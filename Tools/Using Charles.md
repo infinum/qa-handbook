@@ -107,7 +107,3 @@ curl \
 Now just add `repeat 99` in front of your cURL command, execute it in your terminal of choice, and you're off to the races. :)
 
 The nice thing with cURL commands is that you can easily share them with the rest of the team.
-
----
-
-![dil-internet.gif](/img/dil-internet.gif)

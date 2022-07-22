@@ -139,10 +139,3 @@ pipeline {
     }
 }
 ```
-
-
----
-
-![dilbert_jenkins_plugins.png](/img/dilbert_jenkins_plugins.png)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2021-10-18): 10-18-21 by Scott Adams*

@@ -90,7 +90,3 @@ This will return a list of the package names of the apps installed on the device
 With the help of this command the monkey tool is generating 10.000 random events on the real device. Note: Use the parameter -s (seed) to execute the same commands over and over again in order to reproduce any crashes that happen during the monkey run.
 
 If you thirst for more knowledge on ADB, check out this [link](https://www.automatetheplanet.com/adb-cheat-sheet/).
-
----
-
-![dil-android.gif](/img/dil-android.gif)

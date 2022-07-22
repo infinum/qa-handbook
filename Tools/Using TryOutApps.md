@@ -58,9 +58,3 @@ On Android devices, you will need to "trust unknown sources" before installing a
 > Open Settings - Security and check the “Unknown sources” and tap on OK if prompted.
 
 If you are prompted with **“Blocked by Play Protect”** popup tap on “Install anyway” to install the app. 
-
----
-
-![Appbot review message in Slack](/img/dilbert-appbot-article.gif)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2021-12-09): 11-12-07 by Scott Adams*

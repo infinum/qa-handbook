@@ -176,7 +176,3 @@ Read more on exploratory testing from [Cem Kaner](http://www.kaner.com/pdfs/QAIE
 ## How do other companies do testing?
 
 See the [howtheytest](https://github.com/abhivaikar/howtheytest/blob/master/README.md) GitHub repo.
-
----
-
-![testing-in-general.png](/img/testing-in-general.png)

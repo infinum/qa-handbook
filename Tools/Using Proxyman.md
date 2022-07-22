@@ -145,6 +145,3 @@ It differs from device to device but it can go something like this:
  ![Android setup](/img/android_proxy_setup.gif)
  
 Once you are done, you'll "share" the VPN from your Mac on your mobile device.
-
----
-![dil-robot.gif](/img/dil-robot.gif)

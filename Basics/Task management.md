@@ -92,8 +92,3 @@ Here's one possible way of classifying them according to severity and priority:
 - High: It should be fixed immediately.
 - Normal: It should be fixed in the next development iteration (sprint) or in the next version.
 - Low: It should be fixed at a later point.
-
-
----
-
-![task-management.gif](/img/task-management.gif)

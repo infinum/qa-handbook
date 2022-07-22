@@ -179,11 +179,3 @@ What would further make everyone's work easier is having a table, a Figma page o
 Thus, you won't have to constantly inspect elements and the IDs would look the same across multiple platforms.
 
 Of course, it won't be possible to have the same locator values for every element, but it will probably work for most.
-
-
----
-
-
-![dilbert_automation_locators.png](/img/dilbert_automation_locators.png)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2022-02-08): 02-08-22 by Scott Adams*

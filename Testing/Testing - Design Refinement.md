@@ -83,7 +83,3 @@ Illustrations/photos/animations/videos have the same style
 - Navigation placement
 - Design of buttons (specific for platform, for example share button)
 - Native buttons (for example - back button)...
-
----
-
-![dil.gif](/img/dil.gif)

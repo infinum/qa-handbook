@@ -403,8 +403,3 @@ By default, apps are published automatically on the Mac App Store. App availabil
 **Circumventing the App Store or "sideloading" apps**
 
 Apps could be downloaded and installed via a third-party app (sideloaded) but Apple has disabled this feature on M1 Macs running macOS Big Sur 11.1 or newer. Currently, the only way to install the iPhone or iPad app on the M1 machine is to download it through the App Store.
-
-
----
-
-![rodney.png](/img/rodney.png)

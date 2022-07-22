@@ -118,7 +118,3 @@ Additionally, never forget to:
 - Add tags (usually platform-related tags such as "android" or "ios").
 
 Read more on the topic [here](https://infinum.co/the-capsized-eight/how-not-to-suck-at-writing-bug-reports).
-
----
-
-![writing-bug-reports.gif](/img/writing-bug-reports.gif)

@@ -226,9 +226,3 @@ To create a new test issue follow these steps:
 ## Additional resources
 
 - [Free Xray courses](https://academy.getxray.app/catalog/index)
-
----
-
-![Dilbert image](/img/dilbert_jira_article.gif)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2022-02-01): 02-01-22 by Scott Adams*

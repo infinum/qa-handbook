@@ -236,9 +236,3 @@ For more on the `grep` command, see [this article](https://www.cyberciti.biz/faq
 - [Command Line Cheat Sheet](https://www.git-tower.com/blog/command-line-cheat-sheet/)
 - [Z-Shell FAQ](https://zsh.sourceforge.io/FAQ/)
 - [Oh My Zsh](https://ohmyz.sh/)
-
----
-
-![dogbert_terminal.png](/img/dogbert_terminal.png)
-
-*Image downloaded from [dilbert.com](https://dilbert.com/strip/2001-11-28): 11-28-01 by Scott Adams*

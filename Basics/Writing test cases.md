@@ -129,6 +129,3 @@ Read up on how to make your test cases [SMART](https://www.linkedin.com/pulse/sm
 - Adaptable
 - Reusable
 - Tiered 
-
----
-![writing-test-cases.gif](/img/writing-test-cases.gif)

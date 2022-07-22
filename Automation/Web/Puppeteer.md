@@ -71,8 +71,3 @@ Just save the above to a .js file and run it with `node script.js`.
 ## Docs
 
 For more info on all functionalities, check out their [GitHub page](https://github.com/puppeteer/puppeteer).
-
-
----
-
-![puppeteer.jpg](/img/puppeteer.jpg)
