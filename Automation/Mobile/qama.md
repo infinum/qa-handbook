@@ -19,8 +19,13 @@ Check the [Appium setup](https://infinum.com/handbook/qa/automation/mobile/appiu
 
 ## Project structure
 
-`qama` is structured using [page object model](https://martinfowler.com/bliki/PageObject.html).
+`qama` is structured using _page object model_.
 
+In short, that means that: 
+* locators are placed in the appropriate page class
+* tests are placed in the appropriate test class
+
+For more details, read [page object model](https://martinfowler.com/bliki/PageObject.html) article.
 
 ## Example of a page class
 
