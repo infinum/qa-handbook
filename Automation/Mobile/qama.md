@@ -35,14 +35,14 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
 - Every property has to be decorated with the `@property` decorator
 
 
-
+```
     import conftest
     from base_page import BasePage
     from appium.webdriver.common.mobileby import MobileBy
-
+    
     
     class HomePage(BasePage):
-
+    
         def __init__(self, driver, environment, package_name, platform):
             super().__init__(driver, environment, package_name, platform)
     
@@ -63,7 +63,7 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
         @property
         def create_project_button(self):
             return self.get_present_element(self.__create_project_button_locator[self.platform])
-
+```
 
 ## Example of a page class
 
@@ -73,7 +73,7 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
 - Every test method has to be prefixed with `test_` (as in `test_onboarding`)
 
 
-
+```
     import pytest
     from logging import info
     from pages.home_page.home_page import HomePage
@@ -98,7 +98,7 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
             assert self.home_page.create_project_button.is_enabled(), f"Button should be enabled."
     
             self.home_page.save_screenshot(extra)
-
+```
 
 ### Asserts
 
