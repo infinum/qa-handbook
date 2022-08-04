@@ -36,33 +36,33 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
 
 
 ```
-    import conftest
-    from base_page import BasePage
-    from appium.webdriver.common.mobileby import MobileBy
-    
-    
-    class HomePage(BasePage):
-    
-        def __init__(self, driver, environment, package_name, platform):
-            super().__init__(driver, environment, package_name, platform)
-    
-            self.__project_name_input_locator = {
-                conftest.ANDROID: (MobileBy.ACCESSIBILITY_ID, "project_name_edit_text"),
-                conftest.IOS: (MobileBy.ACCESSIBILITY_ID, "enter_project_name_textfield")
-            }
-    
-            self.__create_project_button_locator = {
-                conftest.ANDROID: (MobileBy.ID, f"{self.package_name}:id/createProjectButton"),
-                conftest.IOS: (MobileBy.ACCESSIBILITY_ID, "create_project_button")
-            }
-    
-        @property
-        def project_name_input(self):
-            return self.get_present_element(self.__project_name_input_locator[self.platform])
-    
-        @property
-        def create_project_button(self):
-            return self.get_present_element(self.__create_project_button_locator[self.platform])
+import conftest
+from base_page import BasePage
+from appium.webdriver.common.mobileby import MobileBy
+
+
+class HomePage(BasePage):
+
+    def __init__(self, driver, environment, package_name, platform):
+        super().__init__(driver, environment, package_name, platform)
+
+        self.__project_name_input_locator = {
+            conftest.ANDROID: (MobileBy.ACCESSIBILITY_ID, "project_name_edit_text"),
+            conftest.IOS: (MobileBy.ACCESSIBILITY_ID, "enter_project_name_textfield")
+        }
+
+        self.__create_project_button_locator = {
+            conftest.ANDROID: (MobileBy.ID, f"{self.package_name}:id/createProjectButton"),
+            conftest.IOS: (MobileBy.ACCESSIBILITY_ID, "create_project_button")
+        }
+
+    @property
+    def project_name_input(self):
+        return self.get_present_element(self.__project_name_input_locator[self.platform])
+
+    @property
+    def create_project_button(self):
+        return self.get_present_element(self.__create_project_button_locator[self.platform])
 ```
 
 ## Example of a page class
@@ -74,30 +74,30 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
 
 
 ```
-    import pytest
-    from logging import info
-    from pages.home_page.home_page import HomePage
-    
-    
-    class TestHome:
+import pytest
+from logging import info
+from pages.home_page.home_page import HomePage
 
-        @pytest.fixture(scope="function", autouse=True)
-        def initialize_pages(self, driver, environment, package_name, platform):
-            self.home_page = HomePage(driver, environment, package_name, platform)
-    
-        @pytest.mark.smoke
-        def test_onboarding(self, extra):
-    
-            self.home_page.select_language_english()
-    
-            self.home_page.next_button.click()
-    
-            self.home_page.terms_of_use_checkbox.click()
-            self.home_page.privacy_notice_agree_button.click()
-    
-            assert self.home_page.create_project_button.is_enabled(), f"Button should be enabled."
-    
-            self.home_page.save_screenshot(extra)
+
+class TestHome:
+
+    @pytest.fixture(scope="function", autouse=True)
+    def initialize_pages(self, driver, environment, package_name, platform):
+        self.home_page = HomePage(driver, environment, package_name, platform)
+
+    @pytest.mark.smoke
+    def test_onboarding(self, extra):
+
+        self.home_page.select_language_english()
+
+        self.home_page.next_button.click()
+
+        self.home_page.terms_of_use_checkbox.click()
+        self.home_page.privacy_notice_agree_button.click()
+
+        assert self.home_page.create_project_button.is_enabled(), f"Button should be enabled."
+
+        self.home_page.save_screenshot(extra)
 ```
 
 ### Asserts
