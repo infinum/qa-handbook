@@ -35,6 +35,7 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
 - Every property has to be decorated with the `@property` decorator
 
 
+
     import conftest
     from base_page import BasePage
     from appium.webdriver.common.mobileby import MobileBy
@@ -71,7 +72,8 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
 - Every test class has to be prefixed with `Test` (as in `TestHome`)
 - Every test method has to be prefixed with `test_` (as in `test_onboarding`)
 
-    
+
+
     import pytest
     from logging import info
     from pages.home_page.home_page import HomePage
