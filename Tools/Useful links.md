@@ -39,6 +39,7 @@
 
 1. https://jsonlint.com/ - validator and reformatter for JSON
 2. https://deviceatlas.com/device-data/explorer/webusage/traffic/no-tablet/country/us?search=Apple%20iPhone%20XR - web usage of a device model by country
+3. https://web.airdroid.com/ - manage your Android phone/tablet from a web browser without using a cable
 
 
 ### Creating presentations, documents, videos,...
