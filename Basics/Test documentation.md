@@ -47,9 +47,7 @@ At the end of every test case, there should be an expected result after the test
 
 Example:
 
-```
-Expected result: Account is created and the user is redirected to the app (profile screen is shown).
-```
+> Expected result: Account is created and the user is redirected to the app (profile screen is shown).
 
 Additionally, test case may also contain:
 
@@ -60,9 +58,9 @@ Additionally, test case may also contain:
 
 ### Test case examples
 
-![Testrail_test_case.jpg](/img/Testrail_test_case.jpg)
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:100%;">![Testrail_test_case.jpg](/img/Testrail_test_case.jpg)</span>
 
-![Xray_test_case.jpg](/img/Xray_test_case.jpg)
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:100%;">![Xray_test_case.jpg](/img/Xray_test_case.jpg)</span>
 
 ### Maintaining and writing test cases
 
@@ -114,7 +112,7 @@ Important things that the test plan should have:
 - **Test execution link**
   - Paste the link to your test execution/test run (Jira link or TestRail link)
 
-![JIRA_test_plan.jpg](/img/JIRA_test_plan.jpg)
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:100%;">![JIRA_test_plan.jpg](/img/JIRA_test_plan.jpg)</span>
 
 ### Maintaining the test plan:
 
@@ -131,10 +129,10 @@ A test report is an organized summary of testing objectives, activities, and res
 
 A very basic test report for a small application or organization should include, at least, the following:
 
-- Executive Overview — Summary of key findings
-- Test Objective — Information about test type and purpose
-- Test Summary — Defining passed, failed, and blocked test cases
-- Defects — Described with priority and status
+- Executive Overview - Summary of key findings
+- Test Objective - Information about test type and purpose
+- Test Summary - Defining passed, failed, and blocked test cases
+- Defects - Described with priority and status
    
 Every time when a test run is finished and the whole test plan is fulfilled, a tester should generate a test report that is later shared with the whole development team and the stakeholders (clients).
 
@@ -159,9 +157,9 @@ There are several different test reports you can generate. Here's how you can ge
 3. Select "Details" from the top dropdown
 4. Click on Print and save it as a PDF
 
-![Testrail_test_report.jpg](/img/Testrail_test_report.jpg)
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:65%;">![Testrail_test_report.jpg](/img/Testrail_test_report.jpg)</span>
 
-### How to generate test report from Xray 
+### How to generate a test report from Xray 
 
 1. Navigate to a Test Runs List
 2. In the filters dropdown, specify the test plan from which you want to export the executions 
@@ -171,7 +169,7 @@ There are several different test reports you can generate. Here's how you can ge
 6. Export
 7. Convert exported file to PDF (open with Numbers and export as PDF)
 
-![Xray_test_report.jpg](/img/Xray_test_report.jpg)
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:100%;">![Xray_test_report.jpg](/img/Xray_test_report.jpg)</span>
 
 ## Test strategy
 
@@ -180,8 +178,8 @@ Test strategy is all the above and extra. Basically, a test strategy is all the 
 Test strategy documents can contain some information about:
 
 - Scope and overview of the test runs
-- Test approach - Roles and responsibilities of each team member, type of testing, use of automation tools, etc.
-- Test environment - Information about different testing environments used in the testing process
-- Tools being used on the project - Here, we can define the different tools used for different types of operations - test management tools, tools for automation testing, performance testing, etc.
+- Test approach - roles and responsibilities of each team member, type of testing, use of automation tools, etc.
+- Test environment - information about different testing environments used in the testing process
+- Tools being used on the project - here, we can define the different tools used for different types of operations (test management tools, tools for automation testing, performance testing, etc.)
 - Release plan - how and when the release of the application is tackled
 - Bug lifecycle - a document that explains the flow of the reported bug (tags, assignees, report location, bug report template)
