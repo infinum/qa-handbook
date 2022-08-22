@@ -165,7 +165,7 @@ There are several different test reports you can generate. Here's how you can ge
 2. In the filters dropdown, specify the test plan from which you want to export the executions 
 3. In the "Contains" field, add the name of the execution that you will be exporting (sometimes Xray won't return any results so you can try with a couple of key words from your execution's name) 
 4. Click "Generate report"
-5. On the right side, specify which columns you want to export (This selection should be enough: Key, Summary, Components, Test execution, Test plan, TestRun Status, Test execution fix version, Open, Closed)
+5. On the right side, specify which columns you want to export (this selection should be enough: Key, Summary, Components, Test execution, Test plan, TestRun Status, Test execution fix version, Open, Closed)
 6. Export
 7. Convert exported file to PDF (open with Numbers and export as PDF)
 
