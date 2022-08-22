@@ -42,7 +42,11 @@ When resolving conflicted files, there are multiple approaches. Depending on how
 
 ### Approach 1
 
-Open the conflicted file and make the necessary changes.
+The most straightforward approach.
+
+1. Open the conflicted file and make the necessary changes
+
+Nice and easy if there are a few minor conflicts. In case of multiple conflicted lines in a large file, it might get difficult to fix all the conflicts.
 
 
 ### Approach 2
@@ -52,7 +56,7 @@ Open the conflicted file and make the necessary changes.
 3. Select _Git -> Resolve Conflicts..._
    - Conflicts window opens
 4. Select _Accept Theirs_ to accept the changes from the merging branch
-   - Alternatively, select _Accept Yours_ to accept the changes from the current branch
+   - Alternatively, select _Accept Yours_ to accept the changes from the current branch (the branch you are merging into)
 
 ![git_conflicts_resolve_conflict_1.png](/img/git_conflicts_resolve_conflict_1.png)
 
@@ -82,7 +86,9 @@ Use this approach if there are quite a few changes throughout the entire file, a
 ![git_conflicts_resolve_conflict_4.png](/img/git_conflicts_resolve_conflict_4.png)
 
 
-## Check conflicts are resolved
+## Check if conflicts are resolved
+
+Once tou resolved all the conflicts, first make sure everything is in order and then push the changes.
 
 1. Open the terminal
 2. Run `git status`
