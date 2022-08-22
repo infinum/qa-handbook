@@ -28,7 +28,8 @@ In short, that means that:
 
 To learn more, read [page object model](https://martinfowler.com/bliki/PageObject.html) article.
 
-## Example of a page class
+
+## Page class example
 
 - Every page class has to inherit properties and methods from the `BasePage`
 - Every locator has to be a dictionary to support multiple platforms (currently Android and iOS)
@@ -37,8 +38,10 @@ To learn more, read [page object model](https://martinfowler.com/bliki/PageObjec
 
 ```
 import conftest
-from base_page import BasePage
+
 from appium.webdriver.common.mobileby import MobileBy
+
+from base_page import BasePage
 
 
 class HomePage(BasePage):
@@ -65,7 +68,7 @@ class HomePage(BasePage):
         return self.get_present_element(self.__create_project_button_locator[self.platform])
 ```
 
-## Example of a page class
+## Test class example
 
 - Pages used in tests are initialized in the `initialize_pages` fixture which is called before each test 
 - Every test file has to be prefixed with `test_` (as in `test_welcome.py`)
@@ -74,8 +77,10 @@ class HomePage(BasePage):
 
 
 ```
-import pytest
 from logging import info
+
+import pytest
+
 from pages.home_page.home_page import HomePage
 
 
@@ -89,14 +94,12 @@ class TestHome:
     def test_onboarding(self, extra):
 
         self.home_page.select_language_english()
-
         self.home_page.next_button.click()
 
         self.home_page.terms_of_use_checkbox.click()
         self.home_page.privacy_notice_agree_button.click()
 
         assert self.home_page.create_project_button.is_enabled(), f"Button should be enabled."
-
         self.home_page.save_screenshot(extra)
 ```
 
