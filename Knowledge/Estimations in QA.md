@@ -2,7 +2,7 @@
 
 ## Introduction
 
-As per [Wikipedia](https://en.wikipedia.org/wiki/Estimation): “**Estimation** (or **estimating**) is the process of finding an estimate or approximation, which is a value that is usable for some process even if input data may be incomplete, uncertain or unstable.” 
+As per [Wikipedia](https://en.wikipedia.org/wiki/Estimation): "**Estimation** (or **estimating**) is the process of finding an estimate or approximation, which is a value that is usable for some process even if input data may be incomplete, uncertain or unstable." 
 
 The estimation can be valuable and very useful when answering [two questions](https://www.guru99.com/an-expert-view-on-test-estimation.html) that a client or project member can have:
 
@@ -35,7 +35,7 @@ It is never easy to provide an estimation. With experience, you can learn how to
     - Employees’ short or long leave (sick days, vacations), 
     - The available resources for the project (documentation from the client, people available to do the job).
 - If you need to provide an estimate for a group of people (for example, for your team), consider their knowledge and experience level (seniority). Software testing is one of the most dynamic areas of IT, whether related to manual or automation testing. If you are not sure that anyone from the team has the experience and/or knowledge on the same or similar projects, you can always have a team meeting and discuss so you can provide a more accurate estimation. One final thing here is the change of the people in the team. If someone from the team leaves the team for any reason (starts to work on other projects, sick leave, etc.), a reestimation should occur accordingly. Again their knowledge and experience (the seniority level) should be considered when reestimation occurs.
-- Project scope is probably one of the most important things to know and consider before making your final judgment related to the estimation. For example, suppose you know that this is only the MVP phase of the project, and the client requires only basic testing to be conducted and performed. In that case, you should not insist on adding a considerable number of points/hours in the QA estimation due to some “known and well-established QA practices”.
+- Project scope is probably one of the most important things to know and consider before making your final judgment related to the estimation. For example, suppose you know that this is only the MVP phase of the project, and the client requires only basic testing to be conducted and performed. In that case, you should not insist on adding a considerable number of points/hours in the QA estimation due to some "known and well-established QA practices".
 - Although the estimation process is one of the hardest things to do, please DO NOT waste too much time calculating and planning the estimate. In the next section (Tips & Tricks for better and improved estimation), you can find some valuable tips that can speed up this process.
 
 ## Tips & Tricks for better and improved estimation
