@@ -4,9 +4,10 @@
 
 A conflict arises when git is unable to automatically merge changes between two commits.
 
-This happens when the same line of code is changed. Conflict often happens when multiple people work on the same branch, but it can also happen when working in different branches.
+This happens when the same line of code is changed on multiple sources. Conflict often happens when multiple people work on the same branch, but it can also happen when working on the same lines of code in different branches.
 
 Example:
+
 Developer A and Developer B checkout code from the same remote repository and work on the same file. Developer A then pushes their code to the remote repository. Afterwards, developer B tries to push their changes to the same remote repository. However, he is unable to push the code and is greeted with the _Merge conflict_ message instead.
 
 ## How to recognize conflicted files?
@@ -32,7 +33,7 @@ Everything between `=======` and `>>>>>>> branch_being_merged` is the content in
 
 ## How to resolve conflicts?
 
-There are a few ways to resolve conflicts. Probably the easiest one is to open the conflicted file through a text editor or an IDE and make the necessary changes.
+There are a few ways to resolve conflicts. The easiest one is to open the conflicted file through a text editor or an IDE and make the necessary changes.
 
 When resolving conflicted files, there are multiple approaches. Depending on how complicated the conflict is, you might prefer to use one over the other.
 
@@ -54,7 +55,7 @@ If you only want to keep the changes from one branch and don't care about the ch
 2. Right-click the conflicted file
 3. Select _Git -> Resolve Conflicts..._
    - Conflicts window opens
-   - Note the title and column names in the window, clearly stating what is beinged merged
+   - Note the title and column names in the window, clearly stating what is being merged
 4. Select _Accept Theirs_ to accept the changes from the merging branch
    - Alternatively, select _Accept Yours_ to accept the changes from the current branch (the branch you are merging into)
 
@@ -100,12 +101,12 @@ Once you resolved all the conflicts, you are still not done. First make sure eve
 
 ### Resolving conflicts in a version control system
 
-When using a VCS like GitHub or Bitbucket, you will see a warning after opening a pull request in case of a conflict. If that happens, just fix the code on your machine and push the changes. Once that is done, if everything is ok, the warning should be gone.
+When using a VCS like GitHub or Bitbucket, you will see a warning after opening a pull request in case of a conflict. If that happens, fix the code on your machine and push the changes. Once you are done, if everything is ok, the warning should be gone.
 
 1. Open the branch you were working on in PyCharm
 2. Make the necessary changes to resolve the conflicts
 3. Commit and push the changes
-4. Verify that the conflict warning is no longer shown in the VSC
+4. Verify that the conflict warning is no longer shown in the VCS
 
 
 ## Additional resources
