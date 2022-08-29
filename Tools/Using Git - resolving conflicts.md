@@ -77,10 +77,8 @@ Use this approach if there are quite a few changes throughout the entire file, a
 5. Click the double-arrow (`>>` or `<<`)  next to the lines of code (from the left-hand or the right-hand side) that you want to keep
    - This will add the code to the _Result_ (content in the middle view) which is the content you wish to keep
    - Alternatively, click the `X` button next to the lines you **do not** want to keep
-
-<span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![git_conflicts_resolve_conflict_2.png](/img/git_conflicts_resolve_conflict_2.png)</span>
-
-<span style="display:block; margin-left:auto; margin-right:auto; margin-bottom:15px; width:80%;">![git_conflicts_resolve_conflict_3.png](/img/git_conflicts_resolve_conflict_3.png)</span>
+ <span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![git_conflicts_resolve_conflict_2.png](/img/git_conflicts_resolve_conflict_2.png)</span>
+ <span style="display:block; margin-left:auto; margin-right:auto; margin-bottom:15px; width:80%;">![git_conflicts_resolve_conflict_3.png](/img/git_conflicts_resolve_conflict_3.png)</span>
 6. Click _Apply_ when you resolved all conflicts
    - Noted by _All conflicts resolved_ message in the upper-right corner
 
