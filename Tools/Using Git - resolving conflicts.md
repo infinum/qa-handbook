@@ -80,6 +80,7 @@ Use this approach if there are quite a few changes throughout the entire file, a
  <span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![git_conflicts_resolve_conflict_2.png](/img/git_conflicts_resolve_conflict_2.png)</span>
 
  <span style="display:block; margin-left:auto; margin-right:auto; width:80%;">![git_conflicts_resolve_conflict_3.png](/img/git_conflicts_resolve_conflict_3.png)<span>
+
 6. Click _Apply_ when you resolved all conflicts
    - Noted by _All conflicts resolved_ message in the upper-right corner
 
