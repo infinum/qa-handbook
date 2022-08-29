@@ -12,7 +12,7 @@ Developer A and Developer B checkout code from the same remote repository and wo
 
 ## How to recognize conflicted files?
 
-When a conflict occurs, you will immediately notice conflict message in the terminal.
+When a conflict occurs, you will immediately notice a conflict message in the terminal.
 
 The conflicted file will also be marked red in the project view. When you open the file, you will notice additional lines in the file.
 
@@ -24,9 +24,7 @@ Content from some new branch
 >>>>>>> branch_being_merged
 ```
 
-The `=======` marks the center of the conflict, i.e. divides the content between the two conflicting sources.
-Everything between `<<<<<<< HEAD` and `=======` is the content from the current branch which the HEAD reference points to.
-Everything between `=======` and `>>>>>>> branch_being_merged` is the content in the branch you are trying to merge.
+The `=======` marks the center of the conflict, i.e. divides the content between the two conflicting sources. Everything between `<<<<<<< HEAD` and `=======` is the content from the current branch to which the HEAD reference points. Everything between `=======` and `>>>>>>> branch_being_merged` is the content in the branch you are trying to merge.
 
 ![git_conflicts_conflict.png](/img/git_conflicts_conflict.png)
 
@@ -54,7 +52,7 @@ If you only want to keep the changes from one branch and don't care about the ch
 1. Open the project view 
 2. Right-click the conflicted file
 3. Select _Git -> Resolve Conflicts..._
-   - Conflicts window opens
+   - _Conflicts_ window opens
    - Note the title and column names in the window, clearly stating what is being merged
 4. Select _Accept Theirs_ to accept the changes from the merging branch
    - Alternatively, select _Accept Yours_ to accept the changes from the current branch (the branch you are merging into)
@@ -69,22 +67,19 @@ Use this approach if there are quite a few changes throughout the entire file, a
 1. Open the project view 
 2. Right-click the conflicted file
 3. Select _Git -> Resolve Conflicts..._
-   - Conflicts window opens
+   - _Conflicts_ window opens
 4. Double-click the conflicted file
-   - A window showing the content in file from both branches opens
+   - A window showing the content in the file from both branches opens
    - On the left-hand side is the file from the branch you are merging into
    - On the right-hand side is the file from the merging branch
 5. Click the double-arrow (`>>` or `<<`)  next to the lines of code (from the left-hand or the right-hand side) that you want to keep
    - This will add the code to the _Result_ (content in the middle view) which is the content you wish to keep
    - Alternatively, click the `X` button next to the lines you **do not** want to keep
+ <span style="display:block; margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:15px; width:100%;">![git_conflicts_resolve_conflict_2.png](/img/git_conflicts_resolve_conflict_2.png)</span>
+ <span style="display:block; margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:15px; width:100%;">![git_conflicts_resolve_conflict_3.png](/img/git_conflicts_resolve_conflict_3.png)</span>
 6. Click _Apply_ when you resolved all conflicts
    - Noted by _All conflicts resolved_ message in the upper-right corner
-
-![git_conflicts_resolve_conflict_2.png](/img/git_conflicts_resolve_conflict_2.png)
-
-![git_conflicts_resolve_conflict_3.png](/img/git_conflicts_resolve_conflict_3.png)
-
-![git_conflicts_resolve_conflict_4.png](/img/git_conflicts_resolve_conflict_4.png)
+ <span style="display:block; margin-left:auto; margin-right:auto; margin-top:15px; margin-bottom:15px; width:100%;">![git_conflicts_resolve_conflict_4.png](/img/git_conflicts_resolve_conflict_4.png)</span>
 
 
 ## Saving changes
@@ -93,7 +88,7 @@ Once you resolved all the conflicts, you are still not done. First make sure eve
 
 1. Open the terminal
 2. Run `git status`
-   - You should see message saying all conflicts are fixed
+   - You should see a message saying all conflicts are fixed
 3. Commit and push the changes
 
 ![git_conflicts_resolved.png](/img/git_conflicts_resolved.png)
