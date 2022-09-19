@@ -10,7 +10,7 @@ On this website, you can download and install a script called WordPress. For thi
 
 There are several different roles a user can play. If you get an Administrator approach, you'll have absolute control of everything, the whole CMS system: adjusting settings, adding and changing content, installing plugins, themes, and many more. Of course, that also carries a lot of responsibility. You can seriously screw up something as the Administrator, and it can cost you dearly, so be careful. 
 
-<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:60%;">![wp_login.png](/img/wp_login.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:40%;">![wp_login.png](/img/wp_login.png)</span>
 
 To access the WP admin page, you have to use: *{domain}/wp-login.php* (e.g., *https&#65279;://infinum.com/wp-admin/post.php*). The data entry page will appear, and you need to enter a username and password. 
 After entering the correct data and clicking a Login button, you can access the WordPress system for content management/dashboard.
@@ -23,7 +23,7 @@ The Dashboard is the centerpiece of WordPress. You can add new and edit existing
 
 You can also use one dashboard for multiple WP projects by using multisite. 
 
-<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![wp_multisite.png](/img/wp_multisite.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:70%;">![wp_multisite.png](/img/wp_multisite.png)</span>
 
 * **POSTS** - used to create, publish and edit articles (posts), categories and tags. Each new post is automatically published on the front page as well. By setting categories on articles, you can select all articles of a certain category (on the page itself).
 
@@ -73,7 +73,7 @@ You can add a block by clicking on the icon in the top left corner. You can sear
 When you select a block, you will get the block editor on the right side of the screen to adjust various setups regarding that block. 
 
 
-<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:60%;">![block.png](/img/block.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:40%;">![block.png](/img/block.png)</span>
 
 
 ## Add and edit new content
