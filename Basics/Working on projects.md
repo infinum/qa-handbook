@@ -134,16 +134,6 @@ Whatever phase the project might be in, you can always:
 4. Share some tips and tricks
 5. Overlook (in a helping manner) the work done and help remedy the mistakes
 
-## Being onboarded to a new project
-
-* Ask, ask, ask & - you guessed it - ask! If you feel uncomfortable, make a list of non-urgent questions and send them in bulk once a day
-* It is perfectly normal and desired to have many questions at the beginning 
-* Everyone, especially at Infinum, understands that you are new and it is ok that you don't know everything yet and might not have all the answers
-* Keep an eye on Slack channels
-* Create all necessary accounts as soon as you receive invitations to services in order to be ready when you need them
-* Question *status quo* - fresh blood is good to have
-* Try helping yourself with mental maps
-
 ## Software development methodologies
 
 There are plenty of ways to organize a software project. Since your job is to take care of testing and other quality processes, it is important that you are familiar with different approaches.
