@@ -1,4 +1,4 @@
-## 1. What is WordPress?
+## What is WordPress?
 
 WordPress is an open-source Content Management System (CMS), often used as a blog publishing application, supported by PHP and MySQL. WordPress has many features, including a plugin architecture and a template system.
 
@@ -6,7 +6,7 @@ WordPress is an open-source Content Management System (CMS), often used as a blo
 
 On this website, you can download and install a script called WordPress. For this, you need a web host that supports minimal requirements and little time. WordPress is fully customizable and can be used for almost anything.
 
-## 2. How to use WordPress?
+## How to use WordPress?
 
 There are several different roles a user can play. If you get an Administrator approach, you'll have absolute control of everything, the whole CMS system: adjusting settings, adding and changing content, installing plugins, themes, and many more. Of course, that also carries a lot of responsibility. You can seriously screw up something as the Administrator, and it can cost you dearly, so be careful. 
 
@@ -17,7 +17,7 @@ After entering the correct data and clicking a Login button, you can access the 
 
 ![wp_dashboard.png](/img/wp_dashboard.png)
 
-## 3. WordPress dashboard
+## WordPress dashboard
 
 The Dashboard is the centerpiece of WordPress. You can add new and edit existing content, upgrade your site with plugins, tools, create new users, and more. Depending on what you want to add to your website, you will choose a specific menu item. 
 
@@ -56,7 +56,7 @@ It brings tools that are useful for working inside and outside the system.
 
 Settings allow you to change your system settings. Things that can be set in settings are divided into General, Writing, Reading, Discussion, Media, Privacy, and Permalinks.
 
-## 4. Gutenberg
+## Gutenberg
 
 Since the release of the 5.0 version, WordPress has a new default content editor. Named the WordPress Gutenberg editor during development, "Gutenberg" is now called the "WordPress editor" or "block editor". Gutenberg is the name of the project for the WordPress block editor, which replaced the TinyMCE editor. 
 Gutenberg's main role is to manage the WP blocks. What does that mean? In essence, Gutenberg replaced one field for editing that the TinyMCE editor had with many individual blocks. These blocks allow you to create more complex designs than those in the old classic Editor. 
@@ -76,7 +76,7 @@ When you select a block, you will get the block editor on the right side of the 
 ![block.png](/img/block.png)
 
 
-##  5. Add and edit new content
+## Add and edit new content
 
  WordPress has two main types of content:
 
@@ -100,7 +100,7 @@ To change the content of previously written articles, select Posts, and hoover o
 
 ![editing_content.png](/img/editing_content.png)
 
-## 6. Useful WordPress plugins
+## Useful WordPress plugins
 
 The most common WordPress plugins, which are also used on Infinum web, are:
 
@@ -116,7 +116,7 @@ The most common WordPress plugins, which are also used on Infinum web, are:
 
 * **Redirection** - Redirection plugin is used as a redirect manager for WordPress. It manages 301 redirections and keeps track of 404 errors.
 
-## 7. How to use WordPress for frontend testing?
+## How to use WordPress for frontend testing?
 
 When changing something in WordPress, you could assume the process is simple. You update the intended content and click update. The trickiest part comes after you click that update button. You will need to make sure that the page is still working as it was before you update it. You will have to do this often while testing WordPress. Example of the things you should check, other than the specific thing you added or updated, are: 
 
@@ -130,8 +130,7 @@ Whenever you are testing anything on the frontend, you should make sure no conte
 
 ![bug_example.png](/img/bug_example.png)
 
-## 8. WordPress test cases
-### WordPress - common bugs
+## WordPress - common bugs
 
 The most common bugs you will probably encounter while testing WordPress are:
 
@@ -151,7 +150,7 @@ The most common bugs you will probably encounter while testing WordPress are:
 
 * Although WP plugins can be useful, they are often avoided because the integration can be quite challenging and can slow down the web. Plugins you can find on almost any Infinum wp projects are  Yoast, WP rocket, and Advanced custom fields Pro. There can be a situation where plugins aren't compatible, but this depends on a case-by-case scenario. You can find the list of [incompatible plugins](https://wordpress.com/support/incompatible-plugins/) here. 
 
-## 9. What do you need to know before WordPress testing?
+## What do you need to know before WordPress testing?
 
 * You need to test both WP admin and frontend.
 * Pages are created not by design but by blocks and components.
