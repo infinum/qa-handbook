@@ -126,7 +126,7 @@ Sometimes you'll be in a situation where you need to use a VPN on your mobile de
 5. Tap on "Server" and write down your IP address (the one you remembered)
 6. Tap on "Port" and write down 9090
 
-<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:50%;">![iOS proxy setup](/img/ios_proxy_setup.gif)</span>
+<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:40%;">![iOS proxy setup](/img/ios_proxy_setup.gif)</span>
  
 ### On your Android
 
@@ -142,6 +142,6 @@ It differs from device to device but it can go something like this:
 8. Tap on "Proxy hostname" and write down your Mac's IP address (the one you remembered)
 9. Tap on "Proxy port" and write down 9090
 
-<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:50%;">![Android setup](/img/android_proxy_setup.gif)</span>
+<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:40%;">![Android setup](/img/android_proxy_setup.gif)</span>
  
 Once you are done, you'll "share" the VPN from your Mac on your mobile device.

@@ -125,10 +125,10 @@ When changing something in WordPress, you could assume the process is simple. Yo
 * Is the mobile menu opening on Android?
 * Did the footer disappear?
 
-As QA, you will be testing the visual and functional thing regarding WordPress. You will need to make sure that any content added or changed is looking good on the frontend. It's recommended you always do this on staging first and later do a production re-check. For example, if you are testing buttons, you can edit that button in WordPress in various ways such as its width, height, text, or color.
+As QA, you will be testing the visual and functional things regarding WordPress. You will need to make sure that any content added or changed is looking good on the frontend. It's recommended you always do this on staging first and later do a production re-check. For example, if you are testing buttons, you can edit that button in WordPress in various ways such as its width, height, text, or color.
 Whenever you are testing anything on the frontend, you should make sure no content on any screen is overlaying with each other. Sometimes you will have to test forms on WordPress. You can test a form by checking its visual display on the page in various viewports, and you should also check if that form is working. You can test it by checking which plug is in use for forms, and there you can check if the form was successfully sent, e.g., Hubspot.
 
-<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![bug_example.png](/img/bug_example.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:70%;">![bug_example.png](/img/bug_example.png)</span>
 
 ## WordPress - common bugs
 
