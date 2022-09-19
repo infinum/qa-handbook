@@ -10,12 +10,12 @@ On this website, you can download and install a script called WordPress. For thi
 
 There are several different roles a user can play. If you get an Administrator approach, you'll have absolute control of everything, the whole CMS system: adjusting settings, adding and changing content, installing plugins, themes, and many more. Of course, that also carries a lot of responsibility. You can seriously screw up something as the Administrator, and it can cost you dearly, so be careful. 
 
-![wp_login.png](/img/wp_login.png)
+<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:60%;">![wp_login.png](/img/wp_login.png)</span>
 
-To access the WP admin page, you have to use: *{domain}/wp‐login.php* (e.g., *https&#65279;://infinum.com/wp-admin/post.php*). The data entry page will appear, and you need to enter a username and password. 
+To access the WP admin page, you have to use: *{domain}/wp-login.php* (e.g., *https&#65279;://infinum.com/wp-admin/post.php*). The data entry page will appear, and you need to enter a username and password. 
 After entering the correct data and clicking a Login button, you can access the WordPress system for content management/dashboard.
 
-![wp_dashboard.png](/img/wp_dashboard.png)
+<span style="display:block; border: 1px solid #e0e0e0;">![wp_dashboard.png](/img/wp_dashboard.png)</span>
 
 ## WordPress dashboard
 
@@ -23,7 +23,7 @@ The Dashboard is the centerpiece of WordPress. You can add new and edit existing
 
 You can also use one dashboard for multiple WP projects by using multisite. 
 
-![wp_multisite.png](/img/wp_multisite.png)
+<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![wp_multisite.png](/img/wp_multisite.png)</span>
 
 * **POSTS** - used to create, publish and edit articles (posts), categories and tags. Each new post is automatically published on the front page as well. By setting categories on articles, you can select all articles of a certain category (on the page itself).
 
@@ -61,7 +61,7 @@ Settings allow you to change your system settings. Things that can be set in set
 Since the release of the 5.0 version, WordPress has a new default content editor. Named the WordPress Gutenberg editor during development, "Gutenberg" is now called the "WordPress editor" or "block editor". Gutenberg is the name of the project for the WordPress block editor, which replaced the TinyMCE editor. 
 Gutenberg's main role is to manage the WP blocks. What does that mean? In essence, Gutenberg replaced one field for editing that the TinyMCE editor had with many individual blocks. These blocks allow you to create more complex designs than those in the old classic Editor. 
 
-![gutenberg.png](/img/gutenberg.png)
+<span style="display:block; border: 1px solid #e0e0e0;">![gutenberg.png](/img/gutenberg.png)</span>
 
 What is a block? A block can be almost anything. For example, you can have blocks for text, images, video, buttons, widgets, tables, etc. And most importantly, developers will be able to create their blocks that you can access via plugins. Now you can create WP content just like you use LEGO cubes.
 
@@ -73,7 +73,7 @@ You can add a block by clicking on the icon in the top left corner. You can sear
 When you select a block, you will get the block editor on the right side of the screen to adjust various setups regarding that block. 
 
 
-![block.png](/img/block.png)
+<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:60%;">![block.png](/img/block.png)</span>
 
 
 ## Add and edit new content
@@ -93,12 +93,12 @@ The article or page itself can, of course, have images and videos in various for
 
 To add a new post, select Posts from the menu, then Add new. In front of you, a window as in the picture will open. To save, press the publish button. To add a new page from the menu, select Pages and Add new. 
 
-![adding_new_content.png](/img/adding_new_content.png)
+<span style="display:block; border: 1px solid #e0e0e0;">![adding_new_content.png](/img/adding_new_content.png)</span>
 
 ### Editing content
 To change the content of previously written articles, select Posts, and hoover on the article you want to refine or modify. The Edit option allows you to open the entire article, as when you wrote it. For fast changes, use Quick Edit. Trash deletes your article, while with the View option, you can view the article.
 
-![editing_content.png](/img/editing_content.png)
+<span style="display:block; border: 1px solid #e0e0e0;">![editing_content.png](/img/editing_content.png)</span>
 
 ## Useful WordPress plugins
 
@@ -128,7 +128,7 @@ When changing something in WordPress, you could assume the process is simple. Yo
 As QA, you will be testing the visual and functional thing regarding WordPress. You will need to make sure that any content added or changed is looking good on the frontend. It's recommended you always do this on staging first and later do a production re-check. For example, if you are testing buttons, you can edit that button in WordPress in various ways such as its width, height, text, or color.
 Whenever you are testing anything on the frontend, you should make sure no content on any screen is overlaying with each other. Sometimes you will have to test forms on WordPress. You can test a form by checking its visual display on the page in various viewports, and you should also check if that form is working. You can test it by checking which plug is in use for forms, and there you can check if the form was successfully sent, e.g., Hubspot.
 
-![bug_example.png](/img/bug_example.png)
+<span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![bug_example.png](/img/bug_example.png)</span>
 
 ## WordPress - common bugs
 
