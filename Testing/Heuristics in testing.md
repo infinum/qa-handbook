@@ -11,8 +11,6 @@ In the image below, you can find an expanded overview of the Goldilocks heuristi
 
 ![Heuristics cheatsheet](/img/Heuristics_Cheat_Sheet.png)
 
-The full cheat sheet can be found [here](https://testobsessed.com/wp-content/uploads/2011/04/testheuristicscheatsheetv1.pdf).
-
 
 ## Mnemonics
 
