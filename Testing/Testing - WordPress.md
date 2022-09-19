@@ -15,7 +15,7 @@ There are several different roles a user can play. If you get an Administrator a
 To access the WP admin page, you have to use: *{domain}/wp-login.php* (e.g., *https&#65279;://infinum.com/wp-admin/post.php*). The data entry page will appear, and you need to enter a username and password. 
 After entering the correct data and clicking a Login button, you can access the WordPress system for content management/dashboard.
 
-<span style="display:block; border: 1px solid #e0e0e0;">![wp_dashboard.png](/img/wp_dashboard.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![wp_dashboard.png](/img/wp_dashboard.png)</span>
 
 ## WordPress dashboard
 
@@ -61,7 +61,7 @@ Settings allow you to change your system settings. Things that can be set in set
 Since the release of the 5.0 version, WordPress has a new default content editor. Named the WordPress Gutenberg editor during development, "Gutenberg" is now called the "WordPress editor" or "block editor". Gutenberg is the name of the project for the WordPress block editor, which replaced the TinyMCE editor. 
 Gutenberg's main role is to manage the WP blocks. What does that mean? In essence, Gutenberg replaced one field for editing that the TinyMCE editor had with many individual blocks. These blocks allow you to create more complex designs than those in the old classic Editor. 
 
-<span style="display:block; border: 1px solid #e0e0e0;">![gutenberg.png](/img/gutenberg.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![gutenberg.png](/img/gutenberg.png)</span>
 
 What is a block? A block can be almost anything. For example, you can have blocks for text, images, video, buttons, widgets, tables, etc. And most importantly, developers will be able to create their blocks that you can access via plugins. Now you can create WP content just like you use LEGO cubes.
 
@@ -93,12 +93,12 @@ The article or page itself can, of course, have images and videos in various for
 
 To add a new post, select Posts from the menu, then Add new. In front of you, a window as in the picture will open. To save, press the publish button. To add a new page from the menu, select Pages and Add new. 
 
-<span style="display:block; border: 1px solid #e0e0e0;">![adding_new_content.png](/img/adding_new_content.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![adding_new_content.png](/img/adding_new_content.png)</span>
 
 ### Editing content
 To change the content of previously written articles, select Posts, and hoover on the article you want to refine or modify. The Edit option allows you to open the entire article, as when you wrote it. For fast changes, use Quick Edit. Trash deletes your article, while with the View option, you can view the article.
 
-<span style="display:block; border: 1px solid #e0e0e0;">![editing_content.png](/img/editing_content.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![editing_content.png](/img/editing_content.png)</span>
 
 ## Useful WordPress plugins
 
