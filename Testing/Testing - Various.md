@@ -93,7 +93,7 @@ Don't just follow what the task says. Do whatever you think a user might do. Do 
 Whenever a network request is being executed (which is often indicated with a loader), try navigating away from that screen. If the developer has not handled this case, it might result in a crash because the app will try to select or add data to screen elements that are no longer allocated in memory.
 
 ### Heuristics in general
-A heuristic is any approach to problem solving, learning, or discovery that employs a practical method not guaranteed to be optimal or perfect, but sufficient for the immediate goals. Read more about it [here](https://infinum.com/handbook/books/qa/knowledge/heuristics-in-testing).
+A heuristic is any approach to problem solving, learning, or discovery that employs a practical method not guaranteed to be optimal or perfect, but sufficient for the immediate goals. Read more about it [here](https://infinum.com/handbook/qa/testing/heuristics-in-testing).
 
 ### Light vs Dark mode
 Does the app support light and dark mode? Try switching between the modes while using the app. Everything is displayed correctly? Great! :) 
