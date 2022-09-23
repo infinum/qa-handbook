@@ -266,11 +266,11 @@ Bad branch names:
 
 **Opening a PR:**
 
-    - Before diving into doing huge changes in the repository, discussed them with your team
-    - Keep PRs small and focused
-    - Add a description why the PR is necessary
-    - Split commits into logical sections
-    - Write short and meaningful commit messages
+- Before diving into doing huge changes in the repository, discussed them with your team
+- Keep PRs small and focused
+- Add a description why the PR is necessary
+- Split commits into logical sections
+- Write short and meaningful commit messages
 
 **Reviewing a PR:**
 
