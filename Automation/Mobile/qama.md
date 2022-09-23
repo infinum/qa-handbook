@@ -1,13 +1,11 @@
-> *All code is guilty, until proven innocent.*
+> All code is guilty, until proven innocent.
 
 ## qama
 
 `qama` stands for `QA Mobile Automation.`
 It also happens to be a [sword](https://en.wikipedia.org/wiki/Qama). :)
 
-`qama` is a _template project_ with which you can quickly start writing maintainable UI tests for your mobile projects.
-It is based on [pytest framework](https://docs.pytest.org/en/7.1.x/index.html) and [Appium](https://appium.io/). 
-For more details see the [qama README](https://github.com/infinum/qama/blob/master/README.md).
+`qama` is a _template project_ with which you can quickly start writing maintainable UI tests for your mobile projects. It is based on the [pytest framework](https://docs.pytest.org/en/7.1.x/index.html) and [Appium](https://appium.io/). For more details see the [qama README](https://github.com/infinum/qama/blob/master/README.md).
 
 It is very similar to `qawa` which was described [in this handbook article](https://infinum.com/handbook/qa/automation/web/selenium-and-qawa).
 
@@ -23,17 +21,17 @@ Check the [Appium setup](https://infinum.com/handbook/qa/automation/mobile/appiu
 
 In short, that means that:
 
-- locators are placed in the appropriate page class 
-- tests are placed in the appropriate test class
+- locators are placed in the appropriate page class. 
+- tests are placed in the appropriate test class.
 
-To learn more, read [page object model](https://martinfowler.com/bliki/PageObject.html) article.
+To learn more, read [this page object model](https://martinfowler.com/bliki/PageObject.html) article.
 
 
 ## Page class example
 
-- Every page class has to inherit properties and methods from the `BasePage`
-- Every locator has to be a dictionary to support multiple platforms (currently Android and iOS)
-- Every property has to be decorated with the `@property` decorator
+- Every page class has to inherit properties and methods from the `BasePage` class.
+- Every locator has to be a dictionary to support multiple platforms (currently Android and iOS).
+- Every property has to be decorated with the `@property` decorator.
 
 
 ```
@@ -70,10 +68,10 @@ class HomePage(BasePage):
 
 ## Test class example
 
-- Pages used in tests are initialized in the `initialize_pages` fixture which is called before each test 
-- Every test file has to be prefixed with `test_` (as in `test_welcome.py`)
-- Every test class has to be prefixed with `Test` (as in `TestHome`)
-- Every test method has to be prefixed with `test_` (as in `test_onboarding`)
+- Pages used in tests are initialized in the `initialize_pages` fixture which is called before each test. 
+- Every test file has to be prefixed with `test_` (as in `test_welcome.py`).
+- Every test class has to be prefixed with `Test` (as in `TestHome`).
+- Every test method has to be prefixed with `test_` (as in `test_onboarding`).
 
 
 ```

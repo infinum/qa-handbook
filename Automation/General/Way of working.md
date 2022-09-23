@@ -120,20 +120,34 @@ When the test comes to an end, you will get the result on all failed asserts.
 For example, you have a screen with a list of values that you want to check, but those values are not a precondition to any of the following steps. If any of the values are incorrect, it will not affect the following steps.
 You can simply add as many soft asserts as there are values on the screen and check that all of them match the expected result.
 
-One difference compared to hard asserts is that, in some libraries, you have to collect all soft asserts at the end of the test (see example below). Otherwise, the asserts are not evaluated.
+One difference compared to hard asserts is that, in some libraries, you have to collect all soft asserts at the end of the test. Otherwise, the asserts are not evaluated.
+
+Example using [pytest-check](https://pypi.org/project/pytest-check/):
+
+```python
+import pytest_check as check
+
+def test_example_one():
+    # First assert
+    check.is_in("a", "car")
+
+    # Second assert
+    check.is_equal("username", "username")
+```
 
 Example using [softest](https://pypi.org/project/softest/):
-
-```
-// First assert
-self.soft_assert(self.assertEqual, found_title, expected_title)
-
-// Second assert
-self.soft_assert(self.assertEqual, found_subtitle, expected_subtitle)
-
-// Collect all asserts
-self.assert_all()
-```
+ 
+```python
+def test_example_two():
+    # First assert
+    self.soft_assert(self.assertIn, "a", "car")
+ 
+    # Second assert
+    self.soft_assert(self.assertEqual, "username", "username")
+ 
+    # Collect all asserts
+    self.assert_all()
+ ```
 
 
 ## Working on a project
@@ -248,7 +262,22 @@ Bad branch names:
 
 `itisdifficulttoreadthenameofthisbranch`
 
-#### Pull requests
+#### Pull requests (PR)
+
+**Opening a PR:**
+
+    - Before diving into doing huge changes in the repository, discussed them with your team
+    - Keep PRs small and focused
+    - Add a description why the PR is necessary
+    - Split commits into logical sections
+    - Write short and meaningful commit messages
+
+**Reviewing a PR:**
+
+- Strive to review a PR within 24 hours
+- Carefully review the changes
+- Leave clear questions and comments in the appropriate lines of code / files
+- If you have a lot to discusses, consider jumping into a call instead of writing novels in the PR
 
 [How to handle pull requests without making enemies](https://infinum.com/blog/write-good-pull-requests/)
 

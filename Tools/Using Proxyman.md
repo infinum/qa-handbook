@@ -39,7 +39,7 @@ After installation, you are required to install a certificate on your Mac:
 
 Once it is done, you will see that your certificate is installed & trusted. 
 
-![Proxyman_crtificate.png](/img/Proxyman_crtificate.png)
+<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![Proxyman_crtificate.png](/img/Proxyman_crtificate.png)</span>
 
 ### Breakpoint Tool 
 
@@ -49,7 +49,7 @@ To use breakpoints, first you need to define the breakpoint rule.
 
 1. In toolbar click on **Tools** dropdown menu 
 2. Click **Brakepoint** > **Rules**. Or you can access it by pressing ⌥ +⌘ + B
- <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![Proxyman_brakepoint.png](/img/Proxyman_brakepoint.png)</span>
+ <span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:60%;">![Proxyman_brakepoint.png](/img/Proxyman_brakepoint.png)</span>
 3. Click the "+" button (bottom left corner of the breakpoint rules screen)
 4. Add the name of the rule 
 5. Enter the desired URL to the "Matching Rule" input field 
@@ -115,7 +115,7 @@ Sometimes you'll be in a situation where you need to use a VPN on your mobile de
 3. While holding the Option key (⌥), click the Wi-Fi icon in your Mac's status bar
 4. Remember the IP address
 
- ![IP address](/img/proxyman1.png)
+<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:70%;">![IP address](/img/proxyman1.png)</span>
  
 ### On your iPhone
 
@@ -126,7 +126,7 @@ Sometimes you'll be in a situation where you need to use a VPN on your mobile de
 5. Tap on "Server" and write down your IP address (the one you remembered)
 6. Tap on "Port" and write down 9090
 
- ![iOS proxy setup](/img/ios_proxy_setup.gif)
+<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:40%;">![iOS proxy setup](/img/ios_proxy_setup.gif)</span>
  
 ### On your Android
 
@@ -142,6 +142,6 @@ It differs from device to device but it can go something like this:
 8. Tap on "Proxy hostname" and write down your Mac's IP address (the one you remembered)
 9. Tap on "Proxy port" and write down 9090
 
- ![Android setup](/img/android_proxy_setup.gif)
+<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:40%;">![Android setup](/img/android_proxy_setup.gif)</span>
  
 Once you are done, you'll "share" the VPN from your Mac on your mobile device.
