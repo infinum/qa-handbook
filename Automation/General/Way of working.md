@@ -127,6 +127,7 @@ Example using [pytest-check](https://pypi.org/project/pytest-check/):
 ```python
 import pytest_check as check
 
+
 def test_example_one():
     # First assert
     check.is_in("a", "car")
@@ -138,6 +139,9 @@ def test_example_one():
 Example using [softest](https://pypi.org/project/softest/):
  
 ```python
+import softest
+
+
 def test_example_two():
     # First assert
     self.soft_assert(self.assertIn, "a", "car")
@@ -266,10 +270,14 @@ Bad branch names:
 
 **Opening a PR:**
 
-- Before diving into doing huge changes in the repository, discussed them with your team
+- Before diving into doing potential code-breaking changes in the repository, discuss them with your team
+  - E.g. configuration changes should be discussed beforehand
 - Keep PRs small and focused
+  - Focus on a single feature or test suite
+  - Keep configuration changes in a separate PR
 - Add a description why the PR is necessary
 - Split commits into logical sections
+  - Avoid committing a bunch of unrelated files under a single ambiguous commit 
 - Write short and meaningful commit messages
 
 **Reviewing a PR:**
@@ -277,7 +285,7 @@ Bad branch names:
 - Strive to review a PR within 24 hours
 - Carefully review the changes
 - Leave clear questions and comments in the appropriate lines of code / files
-- If you have a lot to discusses, consider jumping into a call instead of writing novels in the PR
+- If you have a lot to discuss, consider jumping into a call instead of writing novels in the PR
 
 [How to handle pull requests without making enemies](https://infinum.com/blog/write-good-pull-requests/)
 
