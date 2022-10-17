@@ -28,9 +28,6 @@ This article is a compendium of useful tips & tricks for testing mobile apps.
 
 - <a href=#enabling-ios-dev-settings>Enabling iOS dev settings</a>
 - <a href=#installing-an-app-from-a-foreign-app-store>Installing an app from a foreign App store</a>
-- <a href=#jailbreaking-ios11-with-uncover>Jailbreaking iOS11 with Uncover</a>
-- <a href=#jailbreaking-ios12-with-uncover>Jailbreaking iOS12 with Uncover</a>
-- <a href=#how-to-remove-jailbreak-on-ios>How to remove jailbreak on iOS</a>
 - <a href=#testing-production-builds-on-ios>Testing production builds on iOS</a>
 - <a href=#how-to-install-iphone-or-ipad-apps-on-m1-mac>How to install iPhone or iPad apps on M1 Mac</a>
 
@@ -144,7 +141,7 @@ Check out the list of valid [IBAN numbers](https://ssl.ibanrechner.de/sample_acc
 17. While you're on the "Generic Fastboot Rom Flasher" dialog, click the "[...}" button
 18. Find the location where the zip is stored and click select
 19. Click "Flash Rom"
-20. After this step, the desired Androd version will be installed on a device
+20. After this step, the desired Android version will be installed on a device
 21. As a final step, you should lock the bootloader by clicking the "Lock" button in the app
 
 ### Devices supported by Google
@@ -264,109 +261,6 @@ In 1Password we have stored Apple accounts for different countries:
 5. Click on Get & enjoy testing your app
 6. Don't forget to repeat step #1 & sign in with our regulard test account
 
-### Jailbreaking iOS11 with Uncover
-
-iOS jailbreaking is the privilege escalation of an Apple device for the purpose of removing software restrictions imposed by Apple on iOS, tvOS and watchOS operating systems.
-
-It means giving apps admin (root) level access, which in term allows installation of other apps, tweaks and themes not on the App Store.
-
-It supports the following iOS 11 versions: iOS 11, iOS 11.0.1, iOS 11.0.2, iOS 11.0.3, iOS 11.1, iOS 11.1.1, iOS 11.1.2, iOS 11.2, iOS 11.2.1, iOS 11.2.5, iOS 11.2.6, iOS 11.3, iOS 11.3.1 and iOS 11.4 beta 3.
-
-**Requirements:**
-
-- Make sure that you take a complete backup of your iPhone, iPad or iPod touch using iTunes
-- Ensure that your device has enough battery level for the jailbreak process to complete
-- Download the latest version of Uncover jailbreak IPA from Pwn20wnd’s [Github page](https://github.com/pwn20wndstuff/Undecimus) and Cydia Impactor from [here](http://www.cydiaimpactor.com/) on your Mac or PC. Cydia Impactor is available for macOS, Windows, Linux (32-bit and 64-bit)
-
-**Steps:**
-
-1. Install/Sideload Unc0ver IPA using Cydia Impactor
-
-	 Connect your iPhone, iPad or iPod touch to the computer with the Lightning cable. 
-	
-	 Launch Cydia Impactor on your computer. It will detect your iOS device. Drag the Uncover jailbreak IPA file you had downloaded earlier on to its UI. Enter the Apple ID and password for your Apple Developer account when prompted, and wait for Cydia Impactor to sideload the signed app on your iOS device.
-
-2. Trust Developer Profile
-
-	 Once Uncover jailbreak IPA is successfully sideloaded. Launch the Settings app, and navigate to Settings > General > Profile(s) & Device Management (in some iOS versions it may just be General > Device Management).
-	
-	 Tap on the entry with your Apple ID under Developer app, then tap on Trust. Tap on the Trust button. The status will change to Delete app.
-	
-	 _Note_: This step is not required if you’ve used an Apple Developer account.
-
-3. Enable Airplane Mode
-
-4. Disable Siri
-
-5. Reboot iOS device
-
-	 After your device has rebooted, ensure that Airplane mode is still enabled, and also ensure Wi-Fi is disabled if it hasn’t got disabled while enabling Airplane mode.
-
-6. Run Jailbreak Process
-
-	 Launch the Uncover Jailbreak app from the Home screen, and tap the blue Jailbreak button to start the jailbreak process.
-
-7. Wait for Jailbreak to complete
-
-	Cydia should also be installed on your Home screen. You should be able to launch it and install the jailbreak apps and tweaks. If you don’t see Cydia on the Home screen, then reboot your iOS device and launch Uncover Jailbreak and keep trying until it works.
-	
-	You can also disable Airplane mode and re-enable Siri after your iPhone, iPad or iPod touch has been successfully jailbroken.
-	
-	The complete guide can be found [here](http://www.iphonehacks.com/2018/10/how-jailbreak-ios-11-unc0ver-jailbreak.html).
-		
-### Jailbreaking iOS12 with Uncover
-
-There are many reasons to jailbreak iOS 12 such as to install iFile, which gives access to the file system, tweaks like Message Customizer that lets you customize each aspect of the Messages app, ability to lock apps and folders using Touch ID and lots more. You don’t even need access to a computer for the entire process.
-
-You can download the latest version of Uncover jailbreak from [Github] (https://github.com/pwn20wndstuff/Undecimus/releases) hosted by pwn20wnd.
-
-You can download the latest version of Chimera jailbreak from [here] (https://chimera.sh/) hosted by Electra team.
-
-**Requirements**
-
-- Delete any iOS 12 OTA update file from Settings -> Storage and reboot your device before attempting to jailbreak it. If an OTA file is present, your device will end up in a respring or reboot loop.
-- Uncover jailbreak has complete support for Cydia and Substrate.
-- Make sure to create a backup of all important data on your device before proceeding with the jailbreaking steps.
-
-**Steps:**
-
-1. Download Latest Uncover beta
-
-	 Go to ignition.fun on your iPhone or iPad running iOS 12.4. Use the search bar to find Unc0ver. Tap on Get followed by Install. Wait for the app to download and install on your iOS device.
-	 
-2. Trust Certificate
-
-	 Head over to Settings-> General -> Device Management. Tap the developer name and trust the certificate. You will not be able to launch the Uncover jailbreak app on your iPhone/iPad without this.
-
-3. Jailbreak iOS 12.4 using Uncover
-
-	 Open Uncover, tap the Jailbreak button and wait for the app to do its job. Your iPhone or iPad will respring during the process after which you should see the Cydia icon on your home screen.
-
-	 If the app ends up freezing, wait for a few minutes. In case that does not work, reboot your iPhone/iPad and then repeat the above steps.
-	
-Check out the whole guide [here] (http://www.iphonehacks.com/jailbreak-ios-12).
-
-### How to remove jailbreak on iOS
-
-Sometimes you have done your testing on a jailbroken device and you want to return your device to how it was. In this case, factory reset won't help.
-
-You can easily remove jailbreak from your iOS device if jailbreaking was done with Cydia and Uncover.
-
-**Steps:**
-
-1. Open Uncover app on your jailbroken iPhone.
-2. Tap on Settings gear icon in the top-right corner.
-3. Search for Restore RootFS toggle button and enable it.
-4. Return back from settings and tap on Restore RootFS button on Home screen.
-6. If you encounter any message dialogs, just follow the steps from the dialog while the removal of jailbreak is in progress. Also, don't allow your device to lock its screen.
-7. Wait for the removal of jailbreak to complete.
-8. Device will restart and Cydia will no longer be installed on the device - jailbreak is now completed.
-9. You can now also uninstall the Uncover app.
-
-Note: Maybe removing jailbreak won't work from first try and you will get some error dialogs. If this happens, follow the steps from the error dialog (e.g. Reboot device and try again).
-
-For reference, you can take a look at [this Youtube] (https://youtu.be/bLZ6bTDBGgI) video.
-
 ### Testing production builds on iOS
 
 The file that actually gets uploaded to iTunes Connect cannot be installed on a development device since it first has to be signed by Apple. 
@@ -392,7 +286,7 @@ iPhone and iPad apps on the App Store are automatically available on the Mac App
 
 Once the app downloads, you can access it from the Launchpad or the Applications folder.
 
-![](/img/M1_iphone_Apps.png)
+<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![M1_iphone_apps](/img/M1_iphone_Apps.png)</span>
 
 > Some of the apps that you see in the ‌Mac App Store‌ are labeled with a warning that says "Not Verified for macOS," these apps are not optimized for use on a Mac.
 
