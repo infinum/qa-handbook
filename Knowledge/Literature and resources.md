@@ -18,6 +18,7 @@ Some cool books to jumpstart your QA career:
 - [Google Play Console vs. iTunes Connect in 2018](https://infinum.com/the-capsized-eight/google-play-console-vs-itunes-connect-2018)
 - [How to Get Along with Developers without Group Therapy: A QA Guide](https://infinum.com/blog/developer-tester-relationship/)
 - [How Not to Suck at Writing Bug Reports](https://infinum.com/the-capsized-eight/how-not-to-suck-at-writing-bug-reports)
+- [Negative Scenarios in Software Testing: Best Practices](https://infinum.com/blog/negative-scenarios-in-software-testing-best-practices/)
 - [Testing Flutter Apps – A QA Guide](https://infinum.com/blog/testing-flutter-apps-a-qa-guide/)
 - [The Infinum Test Lab: Device Testing](https://infinum.com/the-capsized-eight/the-infinum-test-lab-device-testing)
 - [The QA Fairy Godmother: 10 Practices for Happily Ever After](https://infinum.com/the-capsized-eight/the-qa-fairy-godmother-10-practices-for-happily-ever-after)
