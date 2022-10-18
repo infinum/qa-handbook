@@ -120,7 +120,7 @@ appium --allow-insecure=get_server_logs
 ```
 
 **NOTE**:
-  - Use the `--allow-insecure` option only if you are running the server in a secure environment.
+* Use the `--allow-insecure` option only if you are running the server in a secure environment.
 
 Read [Appium Security](https://appium.io/docs/en/writing-running-appium/security/index.html#insecure-features) for more information.
 
@@ -129,8 +129,7 @@ Read [Appium Security](https://appium.io/docs/en/writing-running-appium/security
 
 The method for saving the logs is already implemented in `QAMA`.
 
-
-There are a few more steps to do take before you can use it. 
+There are a few more steps to take to finish the implementation. 
 
 1. Add `logs` folder to the project root
     - This folder will store the generated logs
