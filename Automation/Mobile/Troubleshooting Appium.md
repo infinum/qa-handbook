@@ -25,19 +25,6 @@ Appium Server: `/usr/local/lib/node_modules/appium/node_modules/appium-webdriver
 Appium Desktop: `/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent`
 
 
-## Running tests
-
-Appium runs tests alphabetically. It will first go through test files by name in alphabetical order. Then it will again go alphabetically through the tests inside each test file/class.
-
-One way to override that is to name your tests prefixed with numbers, something like:
-
-- test_001 (or test_001_001)
-- test_001_002 
-- ...
-
-If your tests are independent of each other, then you might not have to worry about the test order. In some cases, you might need to link a few tests together and in that case, you will have to keep this in mind.
-
-
 ## Errors
 
 ### Errno 61 Connection refused
@@ -98,8 +85,8 @@ Could happen if:
 Fix:
 
 1. Open WebDriverAgent.xcodeproj
-2. Select _WebDriverAgentRunner > `device_serial_number`_ in the toolbar
-3. Select _Product > Run_ or _Product > Test_ to install WebDriverAgentRunner onto the selected device 
+2. Select _WebDriverAgentRunner -> `device_serial_number`_ in the toolbar
+3. Select _Product -> Run_ or _Product -> Test_ to install WebDriverAgentRunner to selected device 
 4. Trust the device in the options
 
 If the issues persist, check that you have correctly set up the Xcode configuration.
