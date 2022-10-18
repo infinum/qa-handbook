@@ -91,7 +91,7 @@ Making a test plan document has many benefits:
 
 - Reminder of a scope that has been covered in the previous test run. The idea is to change the test devices on every test run.
 
-The test plan can be made on Confluence (if you use JIRA for your project) or you can use [this template](https://docs.google.com/spreadsheets/d/1dloUoYvjowlIzo78MvoIg1k5PuOigW9OS_cmHVodPoI/edit#gid=0).
+The test plan can be made on Confluence (if you use JIRA for your project) or you can use [this template](https://docs.google.com/spreadsheets/d/1dloUoYvjowlIzo78MvoIg1k5PuOigW9OS_cmHVodPoI/edit#gid=0). **Make sure to first duplicate the sheet before making any changes!**
 
 
 Important things that the test plan should have:

@@ -6,7 +6,7 @@ Forms are often the hiding place of complicated business logic so we will start 
 
 Since the set of inputs a non-trivial form can take is often infinite, it is literally impossible to test everything. This is why you need to be smart about it by using some basic testing techniques and shortcuts.
 
-### Why do we test forms
+### Why do we test forms?
 
 #### 1. Security
 
