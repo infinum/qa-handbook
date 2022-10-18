@@ -120,7 +120,8 @@ appium --allow-insecure=get_server_logs
 ```
 
 **NOTE**:
-* Use the `--allow-insecure` option only if you are running the server in a secure environment.
+
+- Use the `--allow-insecure` option only if you are running the server in a secure environment.
 
 Read [Appium Security](https://appium.io/docs/en/writing-running-appium/security/index.html#insecure-features) for more information.
 
@@ -131,10 +132,11 @@ The method for saving the logs is already implemented in `QAMA`.
 
 There are a few more steps to take to finish the implementation. 
 
-1. Add `logs` folder to the project root
+- Add `logs` folder to the project root
     - This folder will store the generated logs
 
-2. Call the `__save_logs` method in the `driver` fixture in the `conftest.py`
+
+- Call the `__save_logs` method in the `driver` fixture in the `conftest.py`
 
 ```python
 yield driver
@@ -144,7 +146,7 @@ __save_logs(driver, f"{ROOT_DIR}/logs/appium_server_{system_port}_{device_udid}.
 driver.quit()
 ```
 
-3. Update the `start_appium_server.sh` script in `utilities/scripts` to use the following command:
+- Update the `start_appium_server.sh` script in `utilities/scripts` to use the following command:
 
 ```sh
 osascript -e 'tell app "Terminal" to do script "appium --allow-insecure=get_server_logs"'
