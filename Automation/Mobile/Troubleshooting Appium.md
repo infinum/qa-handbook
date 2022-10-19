@@ -86,7 +86,7 @@ Fix:
 
 1. Open WebDriverAgent.xcodeproj
 2. Select _WebDriverAgentRunner -> `device_serial_number`_ in the toolbar
-3. Select _Product -> Run_ or _Product -> Test_ to install WebDriverAgentRunner to selected device 
+3. Select _Product -> Run_ or _Product -> Test_ to install WebDriverAgentRunner to the selected device 
 4. Trust the device in the options
 
 If the issues persist, check that you have correctly set up the Xcode configuration.
@@ -120,7 +120,7 @@ Read [app activities](https://appium.io/docs/en/writing-running-appium/android/a
 
 Another reason could be that the app opens a webview, or other screen outside the app, which stays open even after the test is done. When the following test starts, the execution could end with the `SplashActivity` error.
 
-To fix the issue, rearrange the steps in your test and / or add a step that navigates back to the app or closes the screen before the test is done.
+To fix the issue, rearrange the steps in your test and/or add a step that navigates back to the app or closes the screen before the test is done.
 
 For example, step to navigate back to the app:
 
