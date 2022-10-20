@@ -21,17 +21,17 @@ Check the [Appium setup](https://infinum.com/handbook/qa/automation/mobile/appiu
 
 In short, that means that:
 
-- locators are placed in the appropriate page class.
-- tests are placed in the appropriate test class
+- Locators are placed in the appropriate page class.
+- Tests are placed in the appropriate test class.
 
-To learn more, read [this page object model](https://martinfowler.com/bliki/PageObject.html) article.
+Read [this page object model](https://martinfowler.com/bliki/PageObject.html) article for more information.
 
 
 ## Page class example
 
-- Every page class has to inherit properties and methods from the `BasePage` class
-- Every locator has to be a dictionary to support multiple platforms (currently Android and iOS)
-- Every property has to be decorated with the `@property` decorator
+- Every page class has to inherit properties and methods from the `BasePage` class.
+- Every locator has to be a dictionary to support multiple platforms (currently Android and iOS).
+- Every property has to be decorated with the `@property` decorator.
 
 
 ```python
@@ -67,10 +67,10 @@ class HomePage(BasePage):
 
 ## Test class example
 
-- Pages used in tests are initialized in the `initialize_pages` fixture which is called before each test
-- Every test file has to be prefixed with `test_` (as in `test_welcome.py`)
-- Every test class has to be prefixed with `Test` (as in `TestHome`)
-- Every test method has to be prefixed with `test_` (as in `test_onboarding`)
+- Pages used in tests are initialized in the `initialize_pages` fixture which is called before each test.
+- Every test file has to be prefixed with `test_` (as in `test_welcome.py`).
+- Every test class has to be prefixed with `Test` (as in `TestHome`).
+- Every test method has to be prefixed with `test_` (as in `test_onboarding`).
 
 
 ```python
@@ -136,7 +136,7 @@ There are a few more steps to take to finish the implementation.
     - This folder will store the generated logs
 
 
-- Call the `__save_logs` method in the `driver` fixture in the `conftest.py`
+- Call the `__save_logs` method in the `driver` fixture in the `conftest.py` file
 
 ```python
 yield driver
