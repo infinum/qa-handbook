@@ -11,8 +11,7 @@ It is very similar to `qawa` which was described [in this handbook article](http
 
 ### Setup
 
-Before you start using `qama`, there are a few things you need to set up.
-Check the [Appium setup](https://infinum.com/handbook/qa/automation/mobile/appium-setup) article for further instructions.
+Before you start using `qama`, there are a few things you need to set up. Check the [Appium setup](https://infinum.com/handbook/qa/automation/mobile/appium-setup) article for further instructions.
 
 
 ## Project structure
@@ -112,8 +111,7 @@ For more info on assertions, read:
 
 ## Appium server logs
 
-Server logs can be helpful when debugging Appium issues. Due to potential security issues, the option is disabled by default. 
-If you want to have server logs available during test runs, start Appium server by running: 
+Server logs can be helpful when debugging Appium issues. Due to potential security issues, the option is disabled by default. If you want to have server logs available during test runs, start Appium server by running: 
 
 ```
 appium --allow-insecure=get_server_logs
@@ -132,11 +130,11 @@ The method for saving the logs is already implemented in `QAMA`.
 
 There are a few more steps to take to finish the implementation. 
 
-- Add `logs` folder to the project root
-    - This folder will store the generated logs
+- Add `logs` folder to the project root.
+    - This folder will store the generated logs.
 
 
-- Call the `__save_logs` method in the `driver` fixture in the `conftest.py` file
+- Call the `__save_logs` method in the `driver` fixture in the `conftest.py` file:
 
 ```python
 yield driver
