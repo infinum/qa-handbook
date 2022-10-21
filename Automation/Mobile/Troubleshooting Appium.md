@@ -20,9 +20,13 @@ NOTE:
 
 Appium Server and Appium Desktop are installed in two different places.
 
-Appium Server: `/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent`
+Appium Server: 
 
-Appium Desktop: `/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent`
+`/usr/local/lib/node_modules/appium/node_modules/appium-webdriveragent`
+
+Appium Desktop: 
+
+`/Applications/Appium.app/Contents/Resources/app/node_modules/appium/node_modules/appium-webdriveragent`
 
 
 ## Errors
@@ -30,7 +34,9 @@ Appium Desktop: `/Applications/Appium.app/Contents/Resources/app/node_modules/ap
 ### Errno 61 Connection refused
 
 ```
-urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a4adca0>: Failed to establish a new connection: [Errno 61] Connection refused'))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): 
+Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x10a4adca0>: 
+Failed to establish a new connection: [Errno 61] Connection refused'))
 ```
 
 It may simply be that you did not start the server. Start the server and the error should be gone :)
@@ -39,7 +45,9 @@ It may simply be that you did not start the server. Start the server and the err
 ### Could not proxy command
 
 ```
-selenium.common.exceptions.WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+selenium.common.exceptions.WebDriverException: 
+Message: An unknown server-side error occurred while processing the command. Original error: 
+Could not proxy command to the remote server. Original error: socket hang up
 ```
 
 This error often happens when the device is disconnected. Check the developer options and make sure that the device does not lose the connection because of screen lock, screen saver, etc.
@@ -72,7 +80,13 @@ Happens sometimes if you had multiple Appium instances running. Maybe you had bo
 ```
 [WebDriverAgent] xcodebuild exited with code '65' and signal 'null'
 
-WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. If you believe this error represents a bug, please attach the result bundle at /Users/user/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu/Logs/Test/Test-WebDriverAgentRunner-2021.12.13_10-50-28-+0100.xcresult. (Underlying Error: Unable to launch com.user.WebDriverAgentRunner.xctrunner. (Underlying Error: Request to launch com.user.WebDriverAgentRunner.xctrunner failed. The operation couldn’t be completed. Unable to launch com.user.WebDriverAgentRunner.xctrunner because it has an invalid code signature, inadequate entitlements or its profile has not been explicitly trusted by the user. : Failed to launch process with bundle identifier 'com.user.WebDriverAgentRunner.xctrunner'. (Underlying Error: The operation couldn’t be completed. Unable to launch com.user.WebDriverAgentRunner.xctrunner because it has an invalid code signature, inadequate entitlements or its profile has not been explicitly trusted by the user.))))
+WebDriverAgentRunner-Runner.app encountered an error (Failed to install or launch the test runner. 
+If you believe this error represents a bug, please attach the result bundle at /Users/user/Library/Developer/Xcode/DerivedData/WebDriverAgent-ciegwgvxzxdrqthilmrmczmqvrgu/Logs/Test/Test-WebDriverAgentRunner-2021.12.13_10-50-28-+0100.xcresult. 
+(Underlying Error: Unable to launch com.user.WebDriverAgentRunner.xctrunner. 
+(Underlying Error: Request to launch com.user.WebDriverAgentRunner.xctrunner failed. The operation couldn’t be completed. 
+Unable to launch com.user.WebDriverAgentRunner.xctrunner because it has an invalid code signature, inadequate entitlements or its profile has not been explicitly trusted by the user. : 
+Failed to launch process with bundle identifier 'com.user.WebDriverAgentRunner.xctrunner'. 
+(Underlying Error: The operation couldn’t be completed. Unable to launch com.user.WebDriverAgentRunner.xctrunner because it has an invalid code signature, inadequate entitlements or its profile has not been explicitly trusted by the user.))))
 ```
 
 Could happen if:
@@ -95,9 +109,13 @@ If the issues persist, check that you have correctly set up the Xcode configurat
 ### SplashActivity never started
 
 ```
-Original error: 'com.infinum.app.ui.splash.SplashActivity' or 'com.infinum.app.repro.mock.com.infinum.app.ui.splash.SplashActivity' never started. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
+Original error: 'com.infinum.app.ui.splash.SplashActivity' or 'com.infinum.app.repro.mock.com.infinum.app.ui.splash.SplashActivity' never started. 
+Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting
 
-... DriverConfigurationError: Could not instantiate new WebDriver instance of type class io.appium.java_client.AppiumDriver (Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Cannot start the 'com.infinum.app.staging' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. Original error: 'com.infinum.app.ui.splash.SplashActivity' or 'com.infinum.app.staging.com.infinum.app.ui.splash.SplashActivity' never started.
+... DriverConfigurationError: Could not instantiate new WebDriver instance of type class io.appium.java_client.AppiumDriver 
+Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. 
+Original error: Cannot start the 'com.infinum.app.staging' application. Visit https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/android/activity-startup.md for troubleshooting. 
+Original error: 'com.infinum.app.ui.splash.SplashActivity' or 'com.infinum.app.staging.com.infinum.app.ui.splash.SplashActivity' never started.
 ```
 
 #### Test execution never starts
