@@ -11,8 +11,7 @@ It is very similar to `qawa` which was described [in this handbook article](http
 
 ### Setup
 
-Before you start using `qama`, there are a few things you need to set up.
-Check the [Appium setup](https://infinum.com/handbook/qa/automation/mobile/appium-setup) article for further instructions.
+Before you start using `qama`, there are a few things you need to set up. Check the [Appium setup](https://infinum.com/handbook/qa/automation/mobile/appium-setup) article for further instructions.
 
 
 ## Project structure
@@ -21,10 +20,10 @@ Check the [Appium setup](https://infinum.com/handbook/qa/automation/mobile/appiu
 
 In short, that means that:
 
-- locators are placed in the appropriate page class. 
-- tests are placed in the appropriate test class.
+- Locators are placed in the appropriate page class.
+- Tests are placed in the appropriate test class.
 
-To learn more, read [this page object model](https://martinfowler.com/bliki/PageObject.html) article.
+Read [this page object model](https://martinfowler.com/bliki/PageObject.html) article for more information.
 
 
 ## Page class example
@@ -34,27 +33,26 @@ To learn more, read [this page object model](https://martinfowler.com/bliki/Page
 - Every property has to be decorated with the `@property` decorator.
 
 
-```
+```python
+from appium.webdriver.common.appiumby import AppiumBy
+
 import conftest
-
-from appium.webdriver.common.mobileby import MobileBy
-
 from base_page import BasePage
 
 
 class HomePage(BasePage):
 
-    def __init__(self, driver, environment, package_name, platform):
-        super().__init__(driver, environment, package_name, platform)
+    def __init__(self, driver, environment, platform):
+        super().__init__(driver, environment, platform)
 
         self.__project_name_input_locator = {
-            conftest.ANDROID: (MobileBy.ACCESSIBILITY_ID, "project_name_edit_text"),
-            conftest.IOS: (MobileBy.ACCESSIBILITY_ID, "enter_project_name_textfield")
+            conftest.ANDROID: (AppiumBy.ACCESSIBILITY_ID, "project_name_edit_text"),
+            conftest.IOS: (AppiumBy.ACCESSIBILITY_ID, "enter_project_name_textfield")
         }
 
         self.__create_project_button_locator = {
-            conftest.ANDROID: (MobileBy.ID, f"{self.package_name}:id/createProjectButton"),
-            conftest.IOS: (MobileBy.ACCESSIBILITY_ID, "create_project_button")
+            conftest.ANDROID: (AppiumBy.ID, "createProjectButton"),
+            conftest.IOS: (AppiumBy.ACCESSIBILITY_ID, "create_project_button")
         }
 
     @property
@@ -68,16 +66,17 @@ class HomePage(BasePage):
 
 ## Test class example
 
-- Pages used in tests are initialized in the `initialize_pages` fixture which is called before each test. 
+- Pages used in tests are initialized in the `initialize_pages` fixture which is called before each test.
 - Every test file has to be prefixed with `test_` (as in `test_welcome.py`).
 - Every test class has to be prefixed with `Test` (as in `TestHome`).
 - Every test method has to be prefixed with `test_` (as in `test_onboarding`).
 
 
-```
+```python
 from logging import info
 
 import pytest
+import pytest_check as check
 
 from pages.home_page.home_page import HomePage
 
@@ -85,19 +84,18 @@ from pages.home_page.home_page import HomePage
 class TestHome:
 
     @pytest.fixture(scope="function", autouse=True)
-    def initialize_pages(self, driver, environment, package_name, platform):
-        self.home_page = HomePage(driver, environment, package_name, platform)
+    def set_up(self, driver, environment, platform):
+        self.home_page = HomePage(driver, environment, platform)
 
     @pytest.mark.smoke
     def test_onboarding(self, extra):
-
         self.home_page.select_language_english()
         self.home_page.next_button.click()
 
         self.home_page.terms_of_use_checkbox.click()
         self.home_page.privacy_notice_agree_button.click()
 
-        assert self.home_page.create_project_button.is_enabled(), f"Button should be enabled."
+        check.is_true(self.home_page.create_project_button.is_enabled())
         self.home_page.save_screenshot(extra)
 ```
 
@@ -109,3 +107,45 @@ For more info on assertions, read:
 
 - [Writing assertions](https://beta.infinum.com/handbook/qa/automation/web/selenium-and-qawa#writing-assertions)
 - [Asserts](https://infinum.com/handbook/qa/automation/general/way-of-working#asserts)
+
+
+## Appium server logs
+
+Server logs can be helpful when debugging Appium issues. Due to potential security issues, the option is disabled by default. If you want to have server logs available during test runs, start Appium server by running: 
+
+```
+appium --allow-insecure=get_server_logs
+```
+
+**NOTE**:
+
+- Use the `--allow-insecure` option only if you are running the server in a secure environment.
+
+Read [Appium Security](https://appium.io/docs/en/writing-running-appium/security/index.html#insecure-features) for more information.
+
+
+### Enable saving server logs in QAMA
+
+The method for saving the logs is already implemented in `QAMA`.
+
+There are a few more steps to take to finish the implementation. 
+
+- Add `logs` folder to the project root.
+    - This folder will store the generated logs.
+
+
+- Call the `__save_logs` method in the `driver` fixture in the `conftest.py` file:
+
+```python
+yield driver
+
+__save_logs(driver, f"{ROOT_DIR}/logs/appium_server_{system_port}_{device_udid}.log", "server")
+
+driver.quit()
+```
+
+- Update the `start_appium_server.sh` script in `utilities/scripts` to use the following command:
+
+```sh
+osascript -e 'tell app "Terminal" to do script "appium --allow-insecure=get_server_logs"'
+```
