@@ -10,10 +10,10 @@ You just installed Appium (Server or Desktop) and you try to run it but nothing 
 
 Possible fixes:
 
-- Node.js might need an update
-- Make sure you have [Android SDK Platform-Tools package](https://developer.android.com/studio/command-line/adb) installed
-- Make sure to install Xcode and Xcode Command Line Tools
-- Set ANDROID_HOME and JAVA_HOME paths
+- Node.js might need an update.
+- Make sure you have [Android SDK Platform-Tools package](https://developer.android.com/studio/command-line/adb) installed.
+- Make sure to install Xcode and Xcode Command Line Tools.
+- Set ANDROID_HOME and JAVA_HOME paths.
 
 
 NOTE:
@@ -39,7 +39,7 @@ Max retries exceeded with url: /wd/hub/session (Caused by NewConnectionError('<u
 Failed to establish a new connection: [Errno 61] Connection refused'))
 ```
 
-It may simply be that you did not start the server. Start the server and the error should be gone :)
+It may simply be that you did not start the server. Start the server and the error should be gone. :)
 
 
 ### Could not proxy command
@@ -57,7 +57,7 @@ If this error happens while you are using Android, check if the SDK is up-to-dat
 After you have checked the developer options and made sure the SDK is up-to-date, try restarting Appium. If the issue persists, try killing the Appium process.
 
 1. Open Terminal
-2. Run command: `lsof -Pn -i4` 
+2. Run command: `lsof -Pn -i4`
     - Lists all active processes
 3. Run command: `kill -9 <processNumber>` 
     - Kills the specific Appium process, 
@@ -91,17 +91,17 @@ Failed to launch process with bundle identifier 'com.user.WebDriverAgentRunner.x
 
 Could happen if:
 
-- the developer is not trusted on the device
-- WebDriverAgentRunner in the Xcode is not set up correctly
-- the Appium version and the iOS version are not compatible
+- The developer is not trusted on the device.
+- WebDriverAgentRunner in the Xcode is not set up correctly.
+- The Appium version and the iOS version are not compatible.
 
 
 Fix:
 
-1. Open WebDriverAgent.xcodeproj
-2. Select _WebDriverAgentRunner -> `device_serial_number`_ in the toolbar
-3. Select _Product -> Run_ or _Product -> Test_ to install WebDriverAgentRunner to selected device 
-4. Trust the device in the options
+1. Open _WebDriverAgent.xcodeproj_.
+2. Select _WebDriverAgentRunner -> `device_serial_number`_ in the toolbar.
+3. Select _Product -> Run_ or _Product -> Test_ to install WebDriverAgentRunner to the selected device.
+4. Trust the device in the options.
 
 If the issues persist, check that you have correctly set up the Xcode configuration.
 
@@ -118,6 +118,7 @@ Unable to create a new remote session.
 Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. 
 Original error: Cannot start the 'com.infinum.app.staging' application. 
 ```
+
 
 #### Test execution never starts
 
@@ -139,7 +140,7 @@ Read [app activities](https://appium.io/docs/en/writing-running-appium/android/a
 
 Another reason could be that the app opens a webview, or other screen outside the app, which stays open even after the test is done. When the following test starts, the execution could end with the `SplashActivity` error.
 
-To fix the issue, rearrange the steps in your test and / or add a step that navigates back to the app or closes the screen before the test is done.
+To fix the issue, rearrange the steps in your test and/or add a step that navigates back to the app or closes the screen before the test is done.
 
 For example, step to navigate back to the app:
 
