@@ -31,7 +31,7 @@ Appium Desktop:
 
 ## Errors
 
-### Errno 61 Connection refused
+### Errno 61 Connection refuseddsdasd
 
 ```
 urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=4723): 
