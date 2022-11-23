@@ -127,7 +127,7 @@ By indicating the user's position in the app, the steps that led him there are k
 
 In some tools (Xray in this case), you can create a pre-condition as an issue type, which increases interconnectivity with other issue types. In other words, you can see all the test cases that have that precondition by clicking on it.
 
-![Pre-conditions](/img/artifact2.png)
+![Pre-conditions](/img/artifact4.png)
 
 ### Steps and expected behavior
 
@@ -166,15 +166,15 @@ If you struggle with UI terminology, [Material design](https://material.io/compo
 
 There is no need to write test cases that check UI. You can add a link to a design page as an expected result of a single step or paste it into the test data field.
 
-![Test case example 1](/img/artifact3.png)
+![Test case example 1](/img/artifact5.png)
 
-![test case example 2](/img/artifact4.png)
+![test case example 2](/img/artifact6.png)
 
 ### Test case details
 
 You can choose priority levels that suit your test cases (if needed), and add labels (e.g., smoke_test, login_feature). Labeling is pretty convenient for adding extra info to our test cases and consequently improving their categorization and classification.
 
-![Test case details](/img/artifact5.png)
+![Test case details](/img/artifact7.png)
 
 
 ### Traceability
@@ -193,7 +193,7 @@ Read up on how to make your test cases [SMART](https://www.linkedin.com/pulse/sm
 
 ## How to maintain test cases
 
-![Maintaining test cases](/img/artifact6.png)
+![Maintaining test cases](/img/artifact2.png)
 
 Each time you approach a new user story or feature task, write test cases for it. Also, if you find a severe bug, cover that scenario with test cases.
 
@@ -204,7 +204,7 @@ User stories that simply adjust an image, color scheme or text can be tested onl
 
 ## Test suite and test repository
 
-![Test repository](/img/artifact7.png)
+![Test repository](/img/artifact3.png)
 
 Both the test suite and test repository are collections of test cases. The difference is that the test repository is a collection of all the test cases, and test suite not necessarily.
 
