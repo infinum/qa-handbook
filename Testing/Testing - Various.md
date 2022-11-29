@@ -193,3 +193,7 @@ A lot of the users today like having only one account for all the web places the
 - Make sure that, if there are any redirects, they redirect to the correct URL. Don't want your users to get lost once they are logged in :D
 - Always check the API calls the login uses. Stuff could be in plain text in there and you really, and I mean really, do not want that.
 - Check what is saved into the database with a dev. You can usually find a lot of funky stuff in the early stages of a project.
+
+### Feature Design Checklist
+
+Sometimes during the process of defining a new feature, the team forgets to cover some important cases like showing the error or success states, loader while API is fetching data, pagination if the fetched data is too long, etc. To never forget these cases, it's good practice to check the [Feature design checklist] (https://docs.google.com/spreadsheets/d/1bOXXw-XzqPNMBGYtIvQ8WW-2fyv3Q85t/edit?usp=share_link&ouid=104678176247313526063&rtpof=true&sd=true) before a discussion about specific feature and mention them if they have been forgotten.
