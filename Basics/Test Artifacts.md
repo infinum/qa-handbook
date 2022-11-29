@@ -139,9 +139,9 @@ If you struggle with UI terminology, [Material design](https://material.io/compo
 
 ❌
 
-| Steps | Expected behaviour |
-| -------- | -------- |
-| 1. Select one photo ~~and tap the delete button~~     | A photo ~~should be~~ deleted.   |
+| Steps                                                    | Expected behaviour                    |
+|----------------------------------------------------------|---------------------------------------|
+| 1. Select one photo <del>and tap the delete button</del> | A photo <del>should be</del> deleted. |
 
 
 ✅
@@ -154,9 +154,9 @@ If you struggle with UI terminology, [Material design](https://material.io/compo
 
 ❌
 
-| Steps | Expected behaviour |
-| -------- | -------- |
-| 1. Select one of the items in the dropdown menu    | ~~If~~ the user selects "Other", a text field appears. F~~or any other answer~~, the user can go to the next question.   |
+| Steps | Expected behaviour                                                                                                                   |
+| -------- |--------------------------------------------------------------------------------------------------------------------------------------|
+| 1. Select one of the items in the dropdown menu    | <del>If</del> the user selects "Other", a text field appears. <del>For any other answer</del>, the user can go to the next question. |
 
 
 ✅
