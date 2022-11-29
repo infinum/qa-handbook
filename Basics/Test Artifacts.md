@@ -82,9 +82,9 @@ You should write both positive and negative test cases.
 
 You can find more info on negative testing [here](https://infinum.com/blog/negative-scenarios-in-software-testing-best-practices/).
 
-## Test cases: best practices
+### Test cases: best practices
 
-### Title
+#### Title
 
 The title should clearly state what you are testing. Possible ways to format your title are the following:
 
@@ -100,15 +100,15 @@ The title should also:
 
 Examples:
 
-❌Title 1: Verify that the new Profile is applied by pressing the Choose from profile button, selecting a Profile from the list, and pressing Choose button
+❌ Title 1: Verify that the new Profile is applied by pressing the Choose from profile button, selecting a Profile from the list, and pressing Choose button
 
-✅Title 2: Verify the new profile can be applied
+✅ Title 2: Verify the new profile can be applied
 
-❌Title 3: Type in 123456 in the password field that has Password hint
+❌ Title 3: Type in 123456 in the password field that has Password hint
 
-✅Title 4: Type in an invalid password
+✅ Title 4: Type in an invalid password
 
-### Pre-conditions
+#### Pre-conditions
 
 Use pre-conditions to avoid repeating steps.
 
@@ -129,7 +129,7 @@ In some tools (Xray in this case), you can create a pre-condition as an issue ty
 
 ![Pre-conditions](/img/artifact4.png)
 
-### Steps and expected behavior
+#### Steps and expected behavior
 
 The test case must specify the expected behavior. There is no need to write the expected result for every step, but the last one should always have it. In the expected result, use a form that highlights what the expected result IS, not what it SHOULD BE.
 
@@ -138,16 +138,19 @@ One step should be an atomic one, meaning there should not be any further sub-st
 If you struggle with UI terminology, [Material design](https://material.io/components?platform=web) might help.
 
 ❌
+
 | Steps | Expected behaviour |
 | -------- | -------- |
 | 1. Select one photo ~~and tap the delete button~~     | A photo ~~should be~~ deleted.   |
 
 
 ✅
+
 | Steps | Expected behaviour |
 | -------- | -------- |
 | 1. Select one photo         |   The delete button is displayed.       |
 | 2. Tap the delete button   | The photo is deleted.|
+
 
 ❌
 
@@ -155,12 +158,14 @@ If you struggle with UI terminology, [Material design](https://material.io/compo
 | -------- | -------- |
 | 1. Select one of the items in the dropdown menu    | ~~If~~ the user selects "Other", a text field appears. F~~or any other answer~~, the user can go to the next question.   |
 
+
 ✅
 
 | Steps | Expected behaviour |
 | -------- | -------- |
 | 1. Select anything but "Other" from the dropdown menu         |       An answer is selected.   |
 | 2. Change the answer to the previous question to "Other"   | A text field is displayed.|
+
 
 ### Test data
 
