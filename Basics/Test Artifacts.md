@@ -6,8 +6,8 @@ Test artifacts are by-products (outcomes in the image above) of testing activiti
 
 ## Test scenario
 
-A test scenario is like a high-level test case, a single statement that answers the question:
-**What to test?**
+A test scenario is like a high-level test case, a single statement that answers the question: **What to test?**
+
 Each requirement can produce many scenarios, and the goal is to identify as many as possible. Testing scenarios don't require details, so they can come in handy as test reminders when the project is very time-limited.
 
 Imagine testing a photo editing app. One of the requirements would certainly be the image upload. Here are a couple of scenarios that can be derived from this requirement.
@@ -154,9 +154,9 @@ If you struggle with UI terminology, [Material design](https://material.io/compo
 
 ❌
 
-| Steps | Expected behaviour                                                                                                                   |
-| -------- |--------------------------------------------------------------------------------------------------------------------------------------|
-| 1. Select one of the items in the dropdown menu    | <del>If</del> the user selects "Other", a text field appears. <del>For any other answer</del>, the user can go to the next question. |
+| Steps                                                 | Expected behaviour                                                                                                                               |
+|-------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1. Select one of the items in <br/> the dropdown menu | <del>If</del> the user selects "Other", a text field <br/> appears. <del>For any other answer</del>, the user <br/> can go to the next question. |
 
 
 ✅
