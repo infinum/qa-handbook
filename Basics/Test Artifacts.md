@@ -43,17 +43,15 @@ Additionally, it may also contain:
 - Prerequisites or pre-conditions (e.g., user role)
 
 Example:
+``` 
+Title:
+Verify that photos can be exported with visible tags
 
-**Title**: Verify that photos can be exported with visible tags
-
-**Pre-conditions**:
-
+Pre-conditions:
 The user is logged into his account.
-
 The user has uploaded photos on his account.
 
-**Steps:**
-
+Steps:
 1. Go to the Photos tab
 2. Click on the "View photo" button
 3. Click on the "Edit tags" button
@@ -63,12 +61,12 @@ The user has uploaded photos on his account.
 7. Click on "Download"
 8. Click on the "Export with VISIBLE tags" button
 
-**Expected result:**
-
+Expected result:
 Verify that all the tags are visible on the exported photo.
 
-**Reference:** (insert link)
-
+Reference:
+(insert link)
+```   
 These are some basic criteria that your test case should fulfill. It should:
 
 - Reflect how the app should actually behave.
@@ -84,7 +82,7 @@ You can find more info on negative testing [here](https://infinum.com/blog/negat
 
 ### Test cases: best practices
 
-#### Title
+**Title**
 
 The title should clearly state what you are testing. Possible ways to format your title are the following:
 
@@ -108,7 +106,7 @@ Examples:
 
 ✅ Title 4: Type in an invalid password
 
-#### Pre-conditions
+**Pre-conditions**
 
 Use pre-conditions to avoid repeating steps.
 
@@ -121,7 +119,10 @@ The user has uploaded photos on his account.
 
 If we don't use pre-conditions, every test case should start with opening the app, registration, login etc.
 
-**Pre-condition:** The user is on the home screen.
+```
+Pre-condition: 
+The user is on the home screen.
+```
 
 By indicating the user's position in the app, the steps that led him there are known from the previous test cases.
 
@@ -129,13 +130,15 @@ In some tools (Xray in this case), you can create a pre-condition as an issue ty
 
 ![Pre-conditions](/img/artifact4.png)
 
-#### Steps and expected behavior
+**Steps and expected behavior**
 
 The test case must specify the expected behavior. There is no need to write the expected result for every step, but the last one should always have it. In the expected result, use a form that highlights what the expected result IS, not what it SHOULD BE.
 
 One step should be an atomic one, meaning there should not be any further sub-steps. Try not to have too many steps in a single test case. There is no limit, but when you come to about 15 steps, think again if maybe this test case could be separated into two or even more.
 
 If you struggle with UI terminology, [Material design](https://material.io/components?platform=web) might help.
+
+Example 1: 
 
 ❌
 
@@ -151,6 +154,7 @@ If you struggle with UI terminology, [Material design](https://material.io/compo
 | 1. Select one photo         |   The delete button is displayed.       |
 | 2. Tap the delete button   | The photo is deleted.|
 
+Example 2: 
 
 ❌
 
