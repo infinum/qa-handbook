@@ -43,6 +43,7 @@ Additionally, it may also contain:
 - Prerequisites or pre-conditions (e.g., user role)
 
 Example:
+
 ``` 
 Title:
 Verify that photos can be exported with visible tags
@@ -52,6 +53,7 @@ The user is logged into his account.
 The user has uploaded photos on his account.
 
 Steps:
+
 1. Go to the Photos tab
 2. Click on the "View photo" button
 3. Click on the "Edit tags" button
@@ -61,12 +63,14 @@ Steps:
 7. Click on "Download"
 8. Click on the "Export with VISIBLE tags" button
 
+
 Expected result:
 Verify that all the tags are visible on the exported photo.
 
 Reference:
 (insert link)
-```   
+```  
+
 These are some basic criteria that your test case should fulfill. It should:
 
 - Reflect how the app should actually behave.
@@ -213,7 +217,8 @@ User stories that simply adjust an image, color scheme or text can be tested onl
 
 ## Test suite and test repository
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![Test repository](/img/artifact3.png)</span>
+
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:50%;">![Test repository](/img/artifact3.png)</span>
 
 Both the test suite and test repository are collections of test cases. The difference is that the test repository is a collection of all the test cases, and test suite not necessarily.
 
