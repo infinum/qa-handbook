@@ -4,75 +4,7 @@
 
 Test case is a group of input values, execution preconditions, expected execution postconditions, and results. We use test cases for creating test executions (smoke test or regression test) and we use those test executions for going through the application (usually before release) and checking if everything is working as expected.
 
-### Writing & structuring test cases:
-
-When writing test cases there is a minimum set of info each test case should have:
-
-- Title
-- Steps
-- Expected
-
-#### Title
-
-The title of a test case should be self-explanatory and easy to read as much as it can. Sure, some test cases are complex as they are, but a person that is doing a test run should be able to know what's it all about.
-
-The title should clearly state what you are testing. Possible ways to format your title are the following:
-
-- Verify that *SOME CONDITION* results in *SOME RESULT* 
-
-> Example: Verify that after clicking the Login button user can log in
-
-- Feature should have *SOME RESULT* when *SOME CONDITION*
-
-> Example: Verify that the profile image is shown when the user taps on his avatar
-
-
-#### Steps
-
-We look at the test steps as a set of instructions on how to perform a test run on a specific test case. That being said, test steps must be clear and accurate as much as they can.
-
-Example:
-
-```
-1. Log in as a guest user to any country
-2. Open the registration screen
-3. After registering a new user, open the email with OTP
-4. Copy/Remember OTP
-5. Paste it/write it to the verification code field
-```
-
-#### Expected
-
-At the end of every test case, there should be an expected result after the test has been completed. There we describe what needs to happen when a test run is finished on that specific test case.
-
-Example:
-
-> Expected result: Account is created and the user is redirected to the app (profile screen is shown).
-
-Additionally, test case may also contain:
-
-- Prerequisites (e.g. user role, specific device)
-- Test data (value range, special input data)
-- Reference (to a requirement, task or user story)
-
-
-### Test case examples
-
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:100%;">![Testrail_test_case.jpg](/img/Testrail_test_case.jpg)</span>
-
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:100%;">![Xray_test_case.jpg](/img/Xray_test_case.jpg)</span>
-
-### Maintaining and writing test cases
-
-- Each time you approach a new task, write test cases for it (Some of the test cases written for the new feature depend on the size of the feature itself. It is important to cover all the flows of the feature, including the happy and unhappy flows.).
-
-- Add a new test case in case some major bug is found and you don't have a test case covering it.
-
-- If some existing behavior changes, update the old test cases as well. In that way, you'll always have a set of test cases that actually reflect the app.
-
-- From time to time, check your test repository (all the test cases written for your project) and do some cleaning - see if there are any deprecated test cases or if they are not up to date anymore (e.g. the feature is significantly changed or removed from the app).
-
-**NOTE**: Try to have a reasonable number of test cases for your project (keep in mind that you need to maintain and execute all test cases (or most of them) from your repository when doing your regression test).
+More about writing and maintaining test cases can be read [here](https://infinum.com/handbook/qa/basics/writing-test-cases).
 
 
 ## Test plan
