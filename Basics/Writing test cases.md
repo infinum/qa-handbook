@@ -53,6 +53,7 @@ The user is logged into his account.
 The user has uploaded photos on his account.
 
 Steps:
+
 1. Go to the Photos tab
 2. Click on the "View photo" button
 3. Click on the "Edit tags" button
@@ -61,6 +62,7 @@ Steps:
 6. Click on the vertical ellipsis (⋮) in the upper right corner
 7. Click on "Download"
 8. Click on the "Export with VISIBLE tags" button
+
 
 Expected result:
 Verify that all the tags are visible on the exported photo.
