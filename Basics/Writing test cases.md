@@ -181,13 +181,13 @@ There is no need to write test cases that check UI. You can add a link to a desi
 
 <span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:100%;">![Test case example 1](/img/artifact5.png)</span>
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:100%;">![test case example 2](/img/artifact6.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:70%;">![test case example 2](/img/artifact6.png)</span>
 
 ### Test case details
 
 You can choose priority levels that suit your test cases (if needed), and add labels (e.g., smoke_test, login_feature). Labeling is pretty convenient for adding extra info to our test cases and consequently improving their categorization and classification.
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:85%;">![Test case details](/img/artifact7.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:65%;">![Test case details](/img/artifact7.png)</span>
 
 
 ### Traceability
@@ -218,7 +218,8 @@ User stories that simply adjust an image, color scheme or text can be tested onl
 ## Test suite and test repository
 
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:50%;">![Test repository](/img/artifact3.png)</span>
+
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:40%;">![Test repository](/img/artifact3.png)</span>
 
 Both the test suite and test repository are collections of test cases. The difference is that the test repository is a collection of all the test cases, and test suite not necessarily.
 

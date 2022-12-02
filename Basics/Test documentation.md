@@ -4,7 +4,7 @@
 
 Test case is a group of input values, execution preconditions, expected execution postconditions, and results. We use test cases for creating test executions (smoke test or regression test) and we use those test executions for going through the application (usually before release) and checking if everything is working as expected.
 
-More about writing and maintaining test cases can be read [here](https://infinum.com/handbook/qa/basics/writing-test-cases)
+More about writing and maintaining test cases can be read [here](https://infinum.com/handbook/qa/basics/writing-test-cases).
 
 
 ## Test plan
