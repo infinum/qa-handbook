@@ -53,6 +53,7 @@ The user is logged into his account.
 The user has uploaded photos on his account.
 
 Steps:
+
 1. Go to the Photos tab
 2. Click on the "View photo" button
 3. Click on the "Edit tags" button
@@ -215,6 +216,7 @@ User stories that simply adjust an image, color scheme or text can be tested onl
 
 
 ## Test suite and test repository
+
 
 
 <span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:40%;">![Test repository](/img/artifact3.png)</span>
