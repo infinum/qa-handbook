@@ -217,6 +217,7 @@ User stories that simply adjust an image, color scheme or text can be tested onl
 
 ## Test suite and test repository
 
+
 <span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:50%;">![Test repository](/img/artifact3.png)</span>
 
 Both the test suite and test repository are collections of test cases. The difference is that the test repository is a collection of all the test cases, and test suite not necessarily.
