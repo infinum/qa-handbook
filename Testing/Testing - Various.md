@@ -11,6 +11,7 @@ This potentially infinite list is just some minor testing tidbits we gathered th
 - <a href=#custom-time-and-date>Custom time and date</a>
 - <a href=#empty-states>Empty states</a>
 - <a href=#error-states>Error states</a>
+- <a href=#error-states>Feature Design Checklist</a>
 - <a href=#get-a-crowd-to-help>Get a crowd to help</a>
 - <a href=#get-a-designer-to-help>Get a designer to help</a>
 - <a href=#get-a-tester-to-help>Get a tester to help</a>
