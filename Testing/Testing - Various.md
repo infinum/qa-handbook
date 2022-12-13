@@ -77,6 +77,10 @@ All screens that display dynamic data (e.g. lists, results, profiles, etc.) shou
 ### Error states
 Do all the errors shown in the app have user-friendly messages? An uninformative message like "Error" without any additional description doesn't tell the user what exactly happened. A short, user-friendly description of the error would boost the user experience.
 
+### Feature Design Checklist
+
+Sometimes during the process of defining a new feature, the team forgets to cover some important cases like showing the error or success states, loader while API is fetching data, pagination if the fetched data is too long, etc. To never forget these cases, it's good practice to check the [Feature design checklist](https://docs.google.com/spreadsheets/d/1bOXXw-XzqPNMBGYtIvQ8WW-2fyv3Q85t/edit?usp=share_link&ouid=104678176247313526063&rtpof=true&sd=true) before a discussion about specific feature and mention them if they have been forgotten.
+
 ### Get a crowd to help
 You've got a lot to test and not enough time? Ask the entire team to test by creating a test plan and organizing a **testing session**. An example of a test plan for such a session can be found [here](https://docs.google.com/spreadsheets/d/1MXcV9V50YlWDtGMYVLwaRZ28-_wQHgqKMbezMpSF6b0/edit?usp=drive_web&ouid=107444839076709052775).
 
@@ -193,7 +197,3 @@ A lot of the users today like having only one account for all the web places the
 - Make sure that, if there are any redirects, they redirect to the correct URL. Don't want your users to get lost once they are logged in :D
 - Always check the API calls the login uses. Stuff could be in plain text in there and you really, and I mean really, do not want that.
 - Check what is saved into the database with a dev. You can usually find a lot of funky stuff in the early stages of a project.
-
-### Feature Design Checklist
-
-Sometimes during the process of defining a new feature, the team forgets to cover some important cases like showing the error or success states, loader while API is fetching data, pagination if the fetched data is too long, etc. To never forget these cases, it's good practice to check the [Feature design checklist](https://docs.google.com/spreadsheets/d/1bOXXw-XzqPNMBGYtIvQ8WW-2fyv3Q85t/edit?usp=share_link&ouid=104678176247313526063&rtpof=true&sd=true) before a discussion about specific feature and mention them if they have been forgotten.
