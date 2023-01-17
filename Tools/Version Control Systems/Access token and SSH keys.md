@@ -108,7 +108,7 @@ To configure your Github account to use your new (or existing) SSH key, you'll a
 
 3. Select *SSH and GPG keys* in the menu on the left-hand side
 
-4. Click the *New SSH ke*y button
+4. Click the *New SSH key* button
 
 5. In the *Title* field type in a descriptive label for the new key. For example, if you're using your work Mac, you could call it "*work-Mac*"
 
