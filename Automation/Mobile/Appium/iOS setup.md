@@ -9,7 +9,7 @@ You can set up the iOS configuration in two ways:
 	* By running the iOS test, the application under test (or so called WebDriverAgentDriver) is signed automatically. This is possible to achieve by setting the correct signing certificate and provisioning profile to a "dummy project" and turning on the "Sign automatically" feature. More on that bellow.
 * Manually
 
-	* More often than not, life doesn't turn out the way we want it to. Meaning, automatic configuration could fail for different reasons. If that's how your beans fell, we got you covered with the [Manual configuration](https://infinum.com/handbook/qa/automation/mobile/appium-setup#manual-configuration).
+	* More often than not, life doesn't turn out the way we want it to. Meaning, automatic configuration could fail for different reasons. If that's how your beans fell, we got you covered with the <a href="#manual-configuration">Manual configuration</a>.
 
 
 #### Where to find the app's [bundle ID](https://developer.apple.com/documentation/appstoreconnectapi/bundle_ids)
@@ -36,7 +36,7 @@ You can set up the iOS configuration in two ways:
 9. Choose the Project location and click **Done**
 10. Close the Xcode project
 11. Open terminal and run `brew install libimobiledevice --HEAD`. 
-    - In case of **Permission denied** error, check step 6 from the [Manual configuration](https://infinum.com/handbook/qa/automation/mobile/appium-setup#manual-configuration) setup.
+    - In case of **Permission denied** error, check step 6 from the <a href="#manual-configuration">Manual configuration</a> setup.
 12. Connect your physical iPhone to your Mac
     - Make sure it's trusted device
 13. Enter `idevice_id --list` in the terminal and hit enter
