@@ -4,7 +4,7 @@
 
 You just installed Appium (Server or Desktop) and you try to run it but nothing happens. Before you ask Google for help, run `appium-doctor` and make sure the necessary dependencies are ok.
 
-[Appium doctor](https://github.com/appium/appium-doctor)
+[Appium doctor](https://github.com/appium/appium/tree/master/packages/doctor)
 
 ![troubleshooting_appium_appium_doctor.png](/img/troubleshooting_appium_appium_doctor.png)
 

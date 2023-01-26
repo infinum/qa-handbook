@@ -43,7 +43,7 @@ Appium 2.x does not include drivers by default. They have to be installed separa
 1. Install Appium
     - `npm install -g appium@next`
 2. Install Appium Doctor
-   - `npm install -g appium-doctor`
+   - `npm install -g @appium/doctor`
 3. Install xcuitest (iOS) driver
    - `appium driver install xcuitest`
 4. Install uiautomator2 (Android) driver
