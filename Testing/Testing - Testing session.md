@@ -49,7 +49,7 @@ A good practice is to divide the application by features or specific parts which
 
 Later on, when the time is up and the bugs you all found are on the list, the moderator should create a task for every bug in the project management tool (Productive, Jira, etc.).
 
-You can find the template for the testing session [here](https://docs.google.com/spreadsheets/u/0/d/1-K0ruKggRnxOOEhLa_vrt8yjDWaxHQZO9QvCtuIlpPo/edit). Feel free to copy it and use it for your project. Also, check out the [test plan](https://docs.google.com/spreadsheets/d/1Z0IfHgVQ0js9DHLPDAzQZR4oHydfqQhPza5Hz-NQju4/edit?usp=sharing) that was used for a testing session on one of Infinum projects.
+You can find the template for the testing session [here](https://docs.google.com/spreadsheets/u/0/d/1-K0ruKggRnxOOEhLa_vrt8yjDWaxHQZO9QvCtuIlpPo/edit). Feel free to copy it and use it for your project.
 
 ## General tips for the testing session
 
