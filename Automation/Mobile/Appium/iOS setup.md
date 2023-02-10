@@ -28,8 +28,8 @@ You can set up the iOS configuration in two ways:
 3. Choose the Application template (e.g. **Single View App**) and click **Next**
 4. Enter product name
    - E.g. _Demo application_
-5. Click **Add account** and use **your personal** iCloud account
-6. Click **Team** dropdown and choose **your personal** account
+5. Click **Add account** and use **your personal Infinum** iCloud account
+6. Click **Team** dropdown and choose **your personal Infinum** account
 7. Make sure the _Automatically manage signing_ option is checked
 8. Enter Organization Identifier and click **Next**
    - E.g. _com.appiumtest.demo-application_
