@@ -61,10 +61,10 @@ In that case, do the following:
 3. Click the _WebDriverAgent_ from the Project navigator
 4. Open **Signing & Capabilities** tab
 5. Choose _WebDriverAgentLib_ from the **Targets** section
-6. Manually choose **your personal account** under _Team_ 
+6. Manually choose **your personal Infinum account** under _Team_ 
    - Wait for the signing process to finish
 7. Next, choose _WebDriverAgentRunner_ from the **Targets** section
-8. Again, manually choose **your personal account** under _Team_ 
+8. Again, manually choose **your personal Infinum account** under _Team_ 
    - Wait for the signing process to finish
    - The signing will probably fail due to the wrong Bundle identifier. Don't worry, we'll fix that
 9. Click the **Build Settings** tab
