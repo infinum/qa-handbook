@@ -16,13 +16,13 @@ It is an iterative approach to project management and software development where
 It works by breaking projects down into little bits of user functionality called user stories, prioritizing them, and then continuously delivering them in short cycles.
 Contrary to betting everything on a big launch (waterfall method).
 - **Alert** - alerts convey important information related to the state of your app or the device, and often request feedback. An alert consists of a title, an optional message, one or more buttons, and optional text fields for gathering input. 
-- **Alfred** - is an app for macOS which boosts your efficiency with hotkeys, keywords, text expansion, and more (An advanced "Spotlight" for quickly executing certain actions).
+- **Alfred** - is an app for macOS that boosts your efficiency with hotkeys, keywords, text expansion, and more (An advanced "Spotlight" for quickly executing certain actions).
 - **ADB (Android Debug Bridge)** - a versatile command-line tool used for communicating with your Android device via the terminal.
 - **Android File Transfer** - used for transferring files between an Android phone and a macOS system.
 - **Android ROM** - a file containing the executable instructions (a system image) of an Android OS and affiliated apps. The "stock ROM" comes installed on the phone or tablet, while a "custom ROM" comes from a third party.
 - **Android Studio** - is the official integrated development environment for Google's Android operating system.
 - **API (Application Programming Interface)** - Application Programming Interface, software that enables 2 different systems to talk to one another (using JSON in most cases), like a power plug - the standardized interface between the power grid and house appliance that hides the complex and, for the user, unnecessary stuff.
-- **App environments** - an environment is the application's mechanism for bringing together components with the agent that deploys them. Environments are typically modelled on some stage of the software project lifecycle, such as development or production.
+- **App environments** - an environment is the application's mechanism for bringing together components with the agent that deploys them. Environments are typically modeled on some stage of the software project lifecycle, such as development or production.
 - **Appbot** - the tool we use for collecting and monitoring user app reviews.
 - **Appium** - Selenium's mobile analogue, used for automating hybrid and native mobile apps. We use it for mobile UI automation.
 
@@ -47,21 +47,21 @@ If you return to that same website in the near future, your browser will retriev
 - **Chuck(er)** - is used for inspecting network traffic in Android apps. You can access it from the notifications drawer when the app is running.
 - **Clear Session** - a Google Chrome extension that will clear all session/cookie data for a particular web page.
 - **CMS (Content Management System)** - a content management system is computer software used to manage the creation and modification of digital content.
-- **Code snippet** - a code snippet is a small block of re-usable code.
+- **Code snippet** - a code snippet is a small block of reusable code.
 - **Cookies** - are files created by websites you visit. They make your online experience easier by saving browsing information. With cookies, sites can keep you signed in, remember your site preferences, and give you locally relevant content.
-- **CopyClip** - simple and efficient clipboard manager for your Mac.
+- **CopyClip** - a simple and efficient clipboard manager for your Mac.
 - **Crashlytics** - a part of Firebase; used for getting crash/error logs from mobile apps.
 - **CTA (Call to Action)** - Usually refers to a button or other UI element which prominently invites the user to take action on a website or in an app
-Examples: “Sign-up for our newsletter”, “Share on social media”, “Sign-up”, “Get started”, “add to cart”, “Buy now” and so on.
+Examples: “Sign-up for our newsletter”, “Share on social media”, “Sign-up”, “Get started”, “Add to cart”, “Buy now” and so on.
 
 ### D
 
 - **Daily Scrum** - also referred to as the daily stand-up, is a (daily) recurring time-boxed meeting (e.g. 15 minutes or less) at which team members are taking turns answering three questions: 1. What did I accomplish since the last daily Scrum?; 2. What do I plan to work on by the next daily Scrum?; 3. What are the obstacles or impediments that are preventing me from making progress?
-- **Debugging** - Process of identifying, dealing with and removing bugs.
-There are different types of bugs: syntax errors, typos or errors in logic.
+- **Debugging** - Process of identifying, dealing with, and removing bugs.
+There are different types of bugs: syntax errors, typos, or errors in logic.
 - **Decision maker** - a person, usually from the client team, responsible for making key decisions that move the project forward.
 - **Deployment** - All activities that are required to make software or updates available to the users or other software.
-- **DevOps** - methodology/a way of working (and also a role - DevOps engineer) where teams cooperate more closely, each team knows what the other one is doing and they are communicating constantly.
+- **DevOps** - methodology/a way of working (and also a role - DevOps engineer) where teams cooperate more closely, each team knows what the other one is doing and they are constantly communicating.
 Small chunks of code are constantly made, tested, put into production, and monitored.
 - **DOD (Definition of Done)** - drives the quality of work and is used to assess when a user story has been completed.
 - **DOR (Definition of Ready)** - means that user stories must be immediately actionable. The team must be able to determine what needs to be done and the amount of work required.
@@ -110,9 +110,9 @@ GitHub provides you with all Git features but also expands it with visually intu
 - **Hotfix** - is a critical bug fix that needs to go live before the next scheduled release date.
 - **Hover** - (or hover state) communicates when a user has placed a cursor above an interactive element. 
 - **HT (Half time)** - four working hours per day.
-- **HTTP vs HTTPS** - HTTP is a protocol or order and syntax for presenting information and is used for transferring data over a network.
+- **HTTP (Hypertext Transfer Protocol)** - a protocol or order and syntax for presenting information and is used for transferring data over a network.
 If the website you are connected to is using HTTP, your requests and responses are not encrypted and someone willing to (and knows how) can see your data.
-HTTPS is using technology for encrypting (making plaintext series of random characters) the data and authenticating both parties (verifying that the person or machine is who they claim to be). 
+- **HTTPS (Hypertext Transfer Protocol Secure)** - is using technology for encrypting (making plaintext series of random characters) the data and authenticating both parties (verifying that the person or machine is who they claim to be). 
 
 ### I
 
@@ -125,7 +125,7 @@ HTTPS is using technology for encrypting (making plaintext series of random char
 - **Infinum TryOutApps** - a platform for releasing mobile apps. This is another Infinum product developed internally.
 - **Instruments (iOS)** - tool for inspecting the performance of your app (and much more). Requires Xcode.
 - **Input field** - text fields that allow user input. Input can be free text, a number stepper, etc.
-- **Introspect (Android)** - an app used find all information about your Android device (similar to Inware).
+- **Introspect (Android)** - an app used to find all information about your Android device (similar to Inware).
 - **Invision** - a web interface for browsing design files and prototypes.
 - **Inware (Android)** - an app that allows you to know your device in detail. You can find information about your device's hardware and software.
 - **IoT (Internet of Things)** - is a system of interrelated computing devices, mechanical and digital machines provided with unique identifiers and the ability to transfer data over a network without requiring human-to-human or human-to-computer interaction. For example, smart home systems and devices.
@@ -136,8 +136,8 @@ HTTPS is using technology for encrypting (making plaintext series of random char
 - **Java vs Javascript** - Java is mostly used for developing desktop and mobile applications and JavaScript for web applications.
 Java also requires developers to use classes (which are reusable templates) for everything and has a more rigid syntax where after you declare a variable as a specific type of data, you can’t later change it by assigning a different type of data.
 JavaScript can be used more loosely and action like this is allowed.
-It is used for frontend development but with the recent appearance of the Nod.js framework, it is possible to use it for the backend also.
-- **Jenkins** - an open source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.
+It is used for frontend development but with the recent appearance of the Node.js framework, it is possible to use it for the backend also.
+- **Jenkins** - an open-source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.
 - **Jira** - a management tool for all kinds of use cases, from requirements and test case management to agile software development. 
 - **JSONView** - a Google Chrome extension that will prettify your JSONs when viewing them in Chrome.
 
@@ -184,13 +184,13 @@ It is used for frontend development but with the recent appearance of the Nod.js
 - **PM (Project Manager)** - a member of the project team who has the responsibility of communicating with the client, following the budget and deadlines, and keeping track of work delivered on the project.
 - **PoC (Proof of Concept)** - realization of a certain idea in order to demonstrate its feasibility or a demonstration with the goal of verifying that some concept or proposal has a great potential in the real world.
 - **POM (Page Object Model)** - a design pattern in Selenium that creates an object repository for storing all web elements.
-- **Postman** - an API platform for building, using and testing APIs
+- **Postman** - an API platform for building, using, and testing APIs
 - **PR (Pull Request)** - pull requests are part of the usual development process. They let you tell others about changes you've pushed to a branch in a repository on GitHub. Once a pull request is opened, you can discuss and review the potential changes with collaborators and add follow-up commits before your changes are merged into the main branch.
 - **Pipeline** - e.g. "something being in the pipeline", the thing to which they are referring is not here yet but should be sometime in the future (feature, project…)
 - **Prince of Versions** - an in-house lib we use on mobile platforms that enables us to easily notify users of optional and mandatory updates to their app.
 - **Product backlog** - The product owner is responsible for managing a prioritized list known as the product backlog. The product backlog might contain new features, changes to existing features, defects, technical improvements, etc. The product owner collaborates with internal and external stakeholders to gather and define the product backlog items.
 - **Product owner** - responsible for deciding which features and functionality to build and the order in which to build them.
-- **Production** - final environment that companies launch to the users.
+- **Production** - a final environment that companies launch to the users.
 - **Productive** - main application for managing all company processes.
 - **Proxy server** - a server application that acts as an intermediary between a client requesting a resource and the server providing that resource.
 - **Proxyman** - it enables you to capture, inspect, and manipulate HTTP(s) requests/responses. It's like Charles, but a bit fancier.
@@ -217,13 +217,13 @@ It is used for frontend development but with the recent appearance of the Nod.js
 - **Scope** - the total amount of web or mobile features included in the project. Each scope has its duration and budget.
 - **Scrcpy (Android)** - a free and open-source screen mirroring application that allows control of an Android device from a Windows, macOS, or Linux desktop computer.
 - **screencastify** - a Chrome extension for easily creating tab screencasts.
-- **Scrum** - A way of working that consists of certain rules, methodologies, roles, metrics, artifacts and a way of doing things to support an “Agile” mindset.
-The software development process is divided into small fixed chunks - Sprints (1 week - 1 month), the whole team is attending Scrum “ceremonies” like Daily stand-up, Sprint Review, Sprint Retrospective, Sprint planning and Backlog refinement.
+- **Scrum** - A way of working that consists of certain rules, methodologies, roles, metrics, artifacts, and a way of doing things to support an “Agile” mindset.
+The software development process is divided into small fixed chunks - Sprints (1 week - 1 month), the whole team is attending Scrum “ceremonies” like Daily stand-up, Sprint Review, Sprint Retrospective, Sprint planning, and Backlog refinement.
 Scrum and agile are often thought to be the same thing. They're not. Agile is a set of principles and scrum is a framework for getting things done.
 - **Scrum master** - ensures the team lives agile values and principles and follows the processes and practices that the team agreed they would use.
-- **SDK (Software development kit)** - a collection of software development tools in one installable package. They ease the creation of applications by having a compiler, debugger, and perhaps a software framework. To create applications with advanced functionalities such as push notifications, photopay, OCR scanning etc.; most application software developers use specific software development kits.
+- **SDK (Software development kit)** - a collection of software development tools in one installable package. They ease the creation of applications by having a compiler, debugger, and perhaps a software framework. To create applications with advanced functionalities such as push notifications, photopay, OCR scanning, etc.; most application software developers use specific software development kits.
 - **Selenium** - probably the most popular web automation framework built on top of WebDriver (as many others are).
-- **Send Anywhere** - app used to send files between mobile and desktop devices.
+- **Send Anywhere** - an app used to send files between mobile and desktop devices.
 - **Shortcuts (iOS)** - is a visual scripting application developed by Apple; use it for creating and executing scripts on your iOS device.
 - **Simplenote** - for taking notes.
 - **Skitch** - for taking screenshots on your Mac.
@@ -266,12 +266,12 @@ Scrum and agile are often thought to be the same thing. They're not. Agile is a 
 
 - **Velocity** - A key metric in the Agile approach that measures the amount of work that the team has done during one sprint.
 - **Velocity chart** - a graphic representation of the amount of value delivered in each sprint.
-- **VPN** - Secure and private way for connecting to the Internet by encrypting the user’s data and IP address.
+- **VPN (Virtual Private Network)** - Secure and private way for connecting to the Internet by encrypting the user’s data and IP address.
 
 ### W
 
 - **White-label apps** - a white label app is a generic application built by a company to resell it to another business that, in turn, can rebrand it as their own.
-- **WiFi throttling** - intentional slowing an internet service speed that was provided by ISP.
+- **WiFi throttling** - intentionally slowing an internet service speed that was provided by ISP.
 - **WordPress** - an open-source Content Management System (CMS), often used as a blog publishing application, supported by PHP and MySQL.
 
 ### X
