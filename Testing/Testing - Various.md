@@ -11,6 +11,7 @@ This potentially infinite list is just some minor testing tidbits we gathered th
 - <a href=#custom-time-and-date>Custom time and date</a>
 - <a href=#empty-states>Empty states</a>
 - <a href=#error-states>Error states</a>
+- <a href=#error-states>Feature Design Checklist</a>
 - <a href=#get-a-crowd-to-help>Get a crowd to help</a>
 - <a href=#get-a-designer-to-help>Get a designer to help</a>
 - <a href=#get-a-tester-to-help>Get a tester to help</a>
@@ -76,6 +77,10 @@ All screens that display dynamic data (e.g. lists, results, profiles, etc.) shou
 
 ### Error states
 Do all the errors shown in the app have user-friendly messages? An uninformative message like "Error" without any additional description doesn't tell the user what exactly happened. A short, user-friendly description of the error would boost the user experience.
+
+### Feature Design Checklist
+
+Sometimes during the process of defining a new feature, the team forgets to cover some important cases like showing the error or success states, loader while API is fetching data, pagination if the fetched data is too long, etc. To never forget these cases, it's good practice to check the [Feature design checklist](https://docs.google.com/spreadsheets/d/1bOXXw-XzqPNMBGYtIvQ8WW-2fyv3Q85t/edit?usp=share_link&ouid=104678176247313526063&rtpof=true&sd=true) before a discussion about specific feature and mention them if they have been forgotten.
 
 ### Get a crowd to help
 You've got a lot to test and not enough time? Ask the entire team to test by creating a test plan and organizing a **testing session**. An example of a test plan for such a session can be found [here](https://docs.google.com/spreadsheets/d/1MXcV9V50YlWDtGMYVLwaRZ28-_wQHgqKMbezMpSF6b0/edit?usp=drive_web&ouid=107444839076709052775).
