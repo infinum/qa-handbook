@@ -1,7 +1,4 @@
 ﻿
-
-Using Android Vitals
-
 *“Never allow the same bug to bite you twice.” Steve Maguire*
 
 Android Vitals is a part of the Google Play Console that allows you to have a deeper insight
