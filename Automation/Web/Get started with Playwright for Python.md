@@ -26,7 +26,7 @@ This is a short and simple guide to quickly get started with Playwright for Pyth
 5. Run the test
    * On default (headless) browser:
      * `python3 -m pytest test_homepage.py`
-   * On specific (headed) browser
+   * On specific (headed) browser:
      * `python3 -m pytest test_home_page.py --browser firefox –headed`
 
 
