@@ -66,4 +66,4 @@ def test_homepage(page: Page):
 * [Playwright for Python](https://playwright.dev/python/docs/intro)
 * [Playwright GitHub](https://github.com/microsoft/playwright)
 * [pytest-playwright plugin](https://pypi.org/project/pytest-playwright)
-* [pytest](https://docs.pytest.org/en/7.2.x/) 
+* [pytest](https://docs.pytest.org/en/7.2.x) 
