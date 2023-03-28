@@ -1,7 +1,7 @@
 ## What is Playwright?
 
 Playwright is a test automation tool for Web testing. It supports testing on various browsers in both headed and headless mode. 
-You can write tests in JavaScript / TypeScript, C#, Java and Python. Depending on your language of choice, the setup slightly differs.
+You can write tests in JavaScript/TypeScript, C#, Java and Python. Depending on your language of choice, the setup slightly differs.
 
 This is a short and simple guide to quickly get started with Playwright for Python.
 
@@ -39,7 +39,7 @@ from playwright.sync_api import Page, expect
 
 
 def test_homepage(page: Page):
-   page.goto("https://infinum.com/")
+   page.goto("https://infinum.com")
 
    # Expect a title "to contain" a substring
    expect(page).to_have_title(re.compile("Infinum"))
