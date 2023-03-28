@@ -16,18 +16,18 @@ This is a short and simple guide to quickly get started with Playwright for Pyth
 
 1. Create a new PyCharm project 
    * Create and activate a [virtual environment](https://infinum.com/handbook/qa/automation/python/virtual-environment)
-2. Install [pytest-playwright](https://pypi.org/project/pytest-playwright/) plugin 
+2. Install [pytest-playwright](https://pypi.org/project/pytest-playwright) plugin 
    * `pip install pytest-playwright`
 3. Install browsers 
    * `playwright install`
 4. Create a test file within the current working directory or a sub-directory
-   * File name e.g.: `test_homepage.py `
+   * File name e.g.: `test_homepage.py`
    * See example test below
 5. Run the test
    * On default (headless) browser:
      * `python3 -m pytest test_homepage.py`
    * On specific (headed) browser:
-     * `python3 -m pytest test_home_page.py --browser firefox –headed`
+     * `python3 -m pytest test_homepage.py --browser firefox --headed`
 
 
 ## Example
@@ -65,5 +65,5 @@ def test_homepage(page: Page):
 * [Infinum QA handbook - Virtual environment](https://infinum.com/handbook/qa/automation/python/virtual-environment)
 * [Playwright for Python](https://playwright.dev/python/docs/intro)
 * [Playwright GitHub](https://github.com/microsoft/playwright)
-* [pytest-playwright plugin](https://pypi.org/project/pytest-playwright/)
+* [pytest-playwright plugin](https://pypi.org/project/pytest-playwright)
 * [pytest](https://docs.pytest.org/en/7.2.x/) 
