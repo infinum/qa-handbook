@@ -55,7 +55,7 @@ The names *main* and *origin* are a standard convention and don't have a special
 ## How to stage, commit and push changes
 
 Once you have a local copy of the remote repository on your machine, you can start working on it.
-The first thing you want to do is create a new line of development, that is, create a _new branch_ on which you will work (for more information on branches, check [Using Git - Advanced](https://beta.infinum.com/handbook/qa/tools/version-control-systems/using-git-advanced)). 
+The first thing you want to do is create a new line of development, that is, create a _new branch_ on which you will work (for more information on branches, check [Using Git - Advanced](https://infinum.com/handbook/qa/tools/version-control-systems/using-git-advanced)). 
 Afterwards, you can make the changes to your files, stage them, commit and push to the remote repository.
 
 1. Create a **new branch** that will store your changes

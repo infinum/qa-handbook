@@ -1,5 +1,5 @@
 
-A version controls system is used for managing your source code. One of those systems is `git`. 
+A version control system is used for managing your source code. One of those systems is `git`. 
 
 When working on a project, you most likely won't work alone but with a team. In that case, you want to make the collaboration as effortless as possible.
 This is where a repository hosting service comes in handy. 
