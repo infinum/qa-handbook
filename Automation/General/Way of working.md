@@ -92,7 +92,7 @@ When asserting results in failure, the test execution is usually aborted. Howeve
 
 #### Hard assert
 
-Hard asserts refer to asserts that stop the test execution in case of an assertion error. In case the assert has been put in the middle of the test, this is where the test stops.
+Hard asserts refer to asserts that stop the test execution in case of an assertion error. In case you put an assertion in the middle of the test, this is where the test stops.
 
 This type of assert should be used when you do not want the test to continue since the condition for further steps might not have been met. For example, you need to have a user created before continuing to the next screen/page. If the user is not created, there is no point in continuing with the tests. The test should be marked as _fail_.
 
