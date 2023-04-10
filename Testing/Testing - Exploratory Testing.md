@@ -1,28 +1,28 @@
 # Exploratory testing
 
-### Introduction:
+### Introduction
 
-Hey there! Have you heard of exploratory testing before? It's a type of software testing where the tester actively explores the application to discover defects, rather than following a strict plan or script. This approach allows for more flexibility and creativity in the testing process. As a tester, you can discover and test new areas of the application as they come up. It's a great way to find defects quickly and efficiently. It is especially useful for finding defects in new or untested areas of the application.
+Exploratory testing is a type of software testing where the tester actively explores the application to discover defects, rather than following a strict plan or script. This approach allows for more flexibility and creativity in the testing process. As a tester, you can discover and test new areas of the application as they come up. It's a great way to find defects quickly and efficiently. It is especially useful for finding defects in new or untested areas of the application.
 
-### Web and Mobile App Testing:
+### Web and Mobile App Testing
 
-When it comes to exploratory testing on web and mobile apps is similar, but there are some differences in the testing process due to the different characteristics of web and mobile apps. It's important to understand the different characteristics of each platform. 
+Exploratory testing on web and mobile apps is similar, but there are some differences in the testing process due to the different characteristics of web and mobile apps. It's important to understand the different characteristics of each platform. 
 
-- For example, when testing web apps, you need to check that it works correctly on different browsers, operating systems, screen sizes, and resolutions to ensure it looks and behaves correctly on different devices. 
-- On the other hand, mobile apps need to be tested on different devices, operating systems, screen sizes and resolutions and also in different orientations (portrait and landscape) to ensure that it works correctly on different devices. Additionally, mobile apps needs to be tested on different network conditions to ensure that it can handle different network speeds and connection types. Also, mobile apps have different interaction patterns such as gestures, touch, and different navigation patterns which need to be tested on different platforms (iOS, Android, etc.)
+- For example, when testing web apps, you need to check that it works correctly on different browsers, operating systems, screen sizes and resolutions to ensure it looks and behaves correctly on different devices. 
+- On the other hand, mobile app need to be tested on different devices, operating systems, screen sizes and resolutions and also in different orientations (portrait and landscape) to ensure that it works correctly on different devices. Additionally, mobile apps needs to be tested on different network conditions to ensure that they can handle different network speeds and connection types. Also, mobile apps have different interaction patterns such as gestures, touch, and different navigation patterns which need to be tested on different platforms (iOS, Android, etc.)
 
-### Heuristics in Exploratory Testing:
+### Heuristics in Exploratory Testing
 
-Heuristics are general principles or rules of thumb that can be used to guide the testing process. In exploratory testing, heuristics can be used to guide the tester in discovering defects and testing new areas of the application. Some common heuristics that can be used in exploratory testing include error guessing, boundary testing, cause-and-effect graphing, checklists, pair testing, exploring the application with different perspectives and mind mapping. If you want to learn more about heuristics, check out the [Heuristics in testing](https://infinum.com/handbook/qa/testing/heuristics-in-testing) section of our QA handbook.
+Heuristics are general principles or rules of thumb that can be used to guide the testing process. In exploratory testing, heuristics can be used to guide the tester in discovering defects and testing new areas of the application. Some common heuristics that can be used in exploratory testing include error guessing, boundary testing, cause-and-effect graphing, checklists, pair testing, exploring the application with different perspectives and mind mapping. If you want to learn more about heuristics, check out the [Heuristics in the testing](https://infinum.com/handbook/qa/testing/heuristics-in-testing) section of our QA handbook.
 
-### Creativity and Research in Exploratory Testing:
+### Creativity and Research in Exploratory Testing
 
 Creativity and research are essential elements in exploratory testing, as they allow you to think outside the box and discover new areas of the application that may not have been considered in the test plan.
 Creativity in testing allows you to come up with new and unexpected ways of testing the application, which can lead to the discovery of defects that more traditional testing methods may have missed. For example, a creative tester may come up with a new test scenario or test case that is not included in the test plan, but that uncovers a defect in the application.
 Research is also important in exploratory testing, as it allows you to gain a deeper understanding of the application and its functional requirements, including its intended use, limitations, and potential problem areas, as well as any known issues or defects. This knowledge can be used to focus the testing on the most important areas of the application and identify defects more quickly and efficiently.
 By combining creativity and research in testing, you can ensure that they are performing efficient and effective exploratory testing, and that you are discovering and reporting on defects in the application in a timely manner. 
 
-### Testing:
+### Testing
 Before you start exploratory testing, it's important for you to have a good understanding of the application's functional requirements and any known issues or defects.
 During exploratory testing, it's important for you to document the areas of the application that have been tested, any defects that have been identified, and any testing observations or questions that arise. This information can be used to improve the testing process and to create a more comprehensive test plan for future testing.
 Exploratory testing can be done using different techniques such as ad-hoc testing, risk-based testing, and not to forget "Rapid Testing" and "Session-based Test Management" (SBTM) which were developed by James Bach. Rapid Testing is a process that emphasizes on fast testing, and SBTM is a technique that involves setting a time-box for testing and recording the areas explored and defects found during that session. It's important for you to understand the different techniques and choose the one that fits the specific testing situation.
@@ -30,21 +30,21 @@ Exploratory testing is a continuous process, and it's important for you to revie
 
 When doing exploratory testing you should:
 
-- Determine the time you will spend, e.g. 2 hours
-- Determine how many sessions you will have
-- Determine whether you will test alone or with someone else
-- Determine a goal of your testing
-- Determine an approach you will take
-- Write down all the questions you had
-- Write down the steps you have taken
-- Write down the issues you have found
+- Determine the time you will spend, e.g. 2 hours.
+- Determine how many sessions you will have.
+- Determine whether you will test alone or with someone else.
+- Determine a goal of your testing.
+- Determine an approach you will take.
+- Write down all the questions you had.
+- Write down the steps you have taken.
+- Write down the issues you have found.
 
 Sometimes, all of the above is planned via an exploratory testing charter. Other people really like using mind maps. In any case, the whole point is in investigating and freely exploring what you have set out to test. You will need to find out which test planning method works best for you.
 
 Read more on exploratory testing from [Cem Kaner](https://secureservercdn.net/198.71.189.51/13j.276.myftpupload.com/pdfs/QAIExploring.pdf) or [James Bach](https://www.satisfice.com/exploratory-testing).
 
 
-#### Examples:
+#### Examples
 
 An example of a feature in an application could be a "QR code scanner" feature similar to the one offered by Google. Some steps that could be taken during an exploratory testing session for this feature include:
 
@@ -62,11 +62,7 @@ An example of a feature in an application could be a "QR code scanner" feature s
 - Test the feature in different orientations (portrait and landscape) to ensure that it works correctly on different devices.
 - Test the feature in different scenarios, such as scanning a barcode on a real product 
 
-![Design review figma](/img/Exploratory testign_1.png)
-
-![Design review figma 2](/img/Exploratory testign_2.png)
-
-![Design review figma 3](/img/Exploratory testign_3.png)
+![Exploratory testing QR snanner steps](/img/Exploratory_Testing_QR_code_scanner_steps.png)
 
 This is one example of an exploratory testing session, but the specific steps taken may vary depending on the application and the feature being tested.
 
