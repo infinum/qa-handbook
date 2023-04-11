@@ -15,7 +15,9 @@ In short, that means that:
 - Locators are placed in a page class.
 - Tests are placed in a test class.
 
-Read [this page object model article](https://martinfowler.com/bliki/PageObject.html) for more information.
+More on page object model:
+- [Martin Fowler - PageObject](https://martinfowler.com/bliki/PageObject.html)
+- [Selenium docs - Page object Models](https://www.selenium.dev/documentation/test_practices/encouraged/page_object_models)
 
 
 ## qama
@@ -23,7 +25,7 @@ Read [this page object model article](https://martinfowler.com/bliki/PageObject.
 `qama` stands for `QA Mobile Automation.`
 It also happens to be a [sword](https://en.wikipedia.org/wiki/Qama). :)
 
-It is based on the [pytest framework](https://docs.pytest.org/en/7.1.x/index.html) and [Appium](https://appium.io). 
+It is based on the [pytest framework](https://docs.pytest.org) and [Appium](https://appium.io).
 See [README](https://github.com/infinum/qama#readme) for more details and setup instructions.
 
 
@@ -31,5 +33,5 @@ See [README](https://github.com/infinum/qama#readme) for more details and setup 
 
 `qawa` stands for `QA Web Automation.`
 
-It is based on the [pytest framework](https://docs.pytest.org/en/7.1.x/index.html) and [Selenium](https://www.selenium.dev). 
+It is based on the [pytest framework](https://docs.pytest.org) and [Selenium](https://www.selenium.dev).
 See [README](https://github.com/infinum/qawa#readme) for more details and setup instructions.
