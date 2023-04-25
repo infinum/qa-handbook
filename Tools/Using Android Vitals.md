@@ -1,5 +1,4 @@
-﻿
-*“Never allow the same bug to bite you twice.” Steve Maguire*
+﻿>*“Never allow the same bug to bite you twice.” Steve Maguire*
 
 Android Vitals is a part of the Google Play Console that allows you to have a deeper insight
 into the stability of your app on Android devices up to the last 3 months.
@@ -33,7 +32,7 @@ app version (“Artifact”), Android OS version, device, and location of the us
 “View details” under one of the graphs, you will be navigated to the “Android vitals details”
 page with detailed information about the performance of the app split into five tabs.
 
-###Stability
+### Stability
 
 Under the stability tab, you can go into details about crashes and “App not responding”
 rates.
@@ -44,7 +43,7 @@ noticed an ANR or crash
 * Multiple ANR/Crash rate - the percentage of daily sessions with at least two
 ANRs/Crashes
 
-###Loading
+### Loading
 
 The Loading tab gives you insight into the startup times of your app.
 
@@ -60,7 +59,7 @@ time of more than two seconds
 * Slow hot start - the percentage of daily sessions with at least one hot startup time of
 more than 1.5 seconds
 
-###Rendering
+### Rendering
 
 The Rendering tab examines how fast your app displays frames on the screen
 
@@ -69,7 +68,7 @@ slow frames
 * Excessive frozen frames - the percentage of daily sessions with more than 0.1% of
 frames with a time longer than 700 ms
 
-###Battery
+### Battery
 
 Under the battery tab, you are given a better insight into the excessive usage of the users’
 battery
@@ -83,7 +82,7 @@ averaged more than four WiFi scans per hour while in the background
 * Excessive background network usage - the percentage of sessions in which the app
 used more than 50 MB of network data per day while in the background
 
-###Permissions
+### Permissions
 
 Here you can see the percentage of users who have denied permissions to your app
 
@@ -92,4 +91,3 @@ requested permission
 * You are able to see the percentage of permissions denied per app version, android
 version, permission group, device, and country/region
 * Unlike other data, permission denials are not compared to the peers’ median
-
