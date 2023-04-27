@@ -30,14 +30,17 @@ Use the `git remote set-url` command to change your remote’s URL.
 
 
 ## Working with branches
-Every project starts with the main branch, i.e. a main line of development. Sometimes you may want to try something out, have another version of your work or start working on a new feature and have it separate from the main. This is where branching comes in handy. By creating a branch you are creating an independent line of development in which you can continue your work without having to fear messing something up in the main branch.
-Branching is a common practice among developers when introducing a new feature.
+Every project starts with the main branch, i.e. a main line of development. Sometimes you may want to try something out, have another version of your work or start working on a new feature and have it separate from the main. This is where branching comes in handy. 
+
+By creating a branch you are creating an independent line of development in which you can continue your work without having to fear messing something up in the main branch.
+Branching is a common practice among developers when introducing a new feature or updating the existing ones.
 
 <span style="display:block; margin-left:auto; margin-right:auto; width:90%;">![git_branches.jpg](/img/git_branches.jpg)</span>
 
 
 ### How to switch branches
-Let’s say a project already exists and you want to pull the updates and continue working on one of the branches.
+
+Let’s say a project already exists, and you want to pull the updates and continue working on one of the branches.
 
 1. Open the terminal and position to your project
 	
@@ -102,7 +105,8 @@ Note that `git merge` merges the specified branch into the currently active one.
 	`git merge feature-abc`
  
 
-## How to create a pull request
+## How to create a pull request (GitHub)
+
 A pull request is a way of notifying the collaborators on the project about the changes. Those changes can then be reviewed before being integrated into the main branch. 
 
 1. Go to GitHub and open the repository’s main page
@@ -113,9 +117,9 @@ A pull request is a way of notifying the collaborators on the project about the 
 
 3. Click *Pull request* (on the right-hand side of the greyed-out box)
 
-4. In the *base: [branch-name]* dropdown menu select the branch you'd like to merge your changes into 
+4. In the *base: [branch-name]* dropdown menu select the branch into which you'd like to merge your changes 
 
-5. In the *compare: [branch-name]* dropdown menu choose the branch you made your changes in
+5. In the *compare: [branch-name]* dropdown menu choose the branch containing your changes
 
 	<span style="display:block; margin-left:auto; margin-right:auto; width:100%;">![git_choose_branches_PR.png](/img/git_choose_branches_PR.png)</span>
 
