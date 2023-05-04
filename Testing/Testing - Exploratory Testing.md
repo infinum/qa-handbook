@@ -9,11 +9,11 @@ Exploratory testing is a type of software testing where the tester actively expl
 Exploratory testing on web and mobile apps is similar, but there are some differences in the testing process due to the different characteristics of web and mobile apps. It's important to understand the different characteristics of each platform. 
 
 - For example, when testing web apps, you need to check that it works correctly on different browsers, operating systems, screen sizes and resolutions to ensure it looks and behaves correctly on different devices. 
-- On the other hand, mobile app need to be tested on different devices, operating systems, screen sizes and resolutions and also in different orientations (portrait and landscape) to ensure that it works correctly on different devices. Additionally, mobile apps needs to be tested on different network conditions to ensure that they can handle different network speeds and connection types. Also, mobile apps have different interaction patterns such as gestures, touch, and different navigation patterns which need to be tested on different platforms (iOS, Android, etc.)
+- On the other hand, mobile apps need to be tested on different devices, operating systems, screen sizes and resolutions, and also in different orientations (portrait and landscape) to ensure that it works correctly on different devices. Additionally, mobile apps need to be tested on different network conditions to ensure that they can handle different network speeds and connection types. Also, mobile apps have different interaction patterns such as gestures, touch, and different navigation patterns which need to be tested on different platforms (iOS, Android, etc.)
 
 ### Heuristics in Exploratory Testing
 
-Heuristics are general principles or rules of thumb that can be used to guide the testing process. In exploratory testing, heuristics can be used to guide the tester in discovering defects and testing new areas of the application. Some common heuristics that can be used in exploratory testing include error guessing, boundary testing, cause-and-effect graphing, checklists, pair testing, exploring the application with different perspectives and mind mapping. If you want to learn more about heuristics, check out the [Heuristics in the testing](https://infinum.com/handbook/qa/testing/heuristics-in-testing) section of our QA handbook.
+Heuristics are general principles or rules of thumb that can be used to guide the testing process. In exploratory testing, heuristics can be used to guide the tester in discovering defects and testing new areas of the application. Some common heuristics that can be used in exploratory testing include error guessing, boundary testing, cause-and-effect graphing, checklists, pair testing, exploring the application with different perspectives, and mind mapping. If you want to learn more about heuristics, check out the [Heuristics in the testing](https://infinum.com/handbook/qa/testing/heuristics-in-testing) section of our QA handbook.
 
 ### Creativity and Research in Exploratory Testing
 
@@ -25,7 +25,7 @@ By combining creativity and research in testing, you can ensure that they are pe
 ### Testing
 Before you start exploratory testing, it's important for you to have a good understanding of the application's functional requirements and any known issues or defects.
 During exploratory testing, it's important for you to document the areas of the application that have been tested, any defects that have been identified, and any testing observations or questions that arise. This information can be used to improve the testing process and to create a more comprehensive test plan for future testing.
-Exploratory testing can be done using different techniques such as ad-hoc testing, risk-based testing, and not to forget "Rapid Testing" and "Session-based Test Management" (SBTM) which were developed by James Bach. Rapid Testing is a process that emphasizes on fast testing, and SBTM is a technique that involves setting a time-box for testing and recording the areas explored and defects found during that session. It's important for you to understand the different techniques and choose the one that fits the specific testing situation.
+Exploratory testing can be done using different techniques such as ad-hoc testing, risk-based testing, and not to forget "Rapid Testing" and "Session-based Test Management" (SBTM) which were developed by James Bach. Rapid Testing is a process that emphasizes fast testing, and SBTM is a technique that involves setting a time-box for testing and recording the areas explored and defects found during that session. It's important for you to understand the different techniques and choose the one that fits the specific testing situation.
 Exploratory testing is a continuous process, and it's important for you to review and improve the testing process after each testing session to ensure that the most important areas of the application are being tested and that any defects found are being addressed.
 
 When doing exploratory testing you should:
@@ -49,14 +49,14 @@ Read more on exploratory testing from [Cem Kaner](https://secureservercdn.net/19
 An example of a feature in an application could be a "QR code scanner" feature similar to the one offered by Google. Some steps that could be taken during an exploratory testing session for this feature include:
 
 - Verify that the QR code scanner page loads correctly and all elements are displayed correctly, including the camera preview and the scan button.
-- Test the functionality of the QR code scanner, including scanning a variety of QR codes and ensure that it can read and decode them correctly and show the appropriate action.
+- Test the functionality of the QR code scanner, including scanning a variety of QR codes, and ensure that it can read and decode them correctly and show the appropriate action.
 - Test the functionality of the "back" button, including verify that it takes the user back to the previous page.
 - Test the functionality of the flash button, including verify that it turns on and off the flash when needed.
 - Test the functionality of the "share" button, including verify that it can share the scanned QR code data to other apps.
 - Test the functionality of the QR code scanner in different network conditions, such as different connection types (Wi-Fi, cellular) and speeds, to ensure that it can handle different network conditions.
 - Test the QR code scanner feature with different mobile devices to ensure compatibility and verify that it works on both iOS and Android.
 - Test the QR code scanner feature in different lighting conditions and verify that it can read the QR codes in low light conditions.
-- Test the QR code scanner feature with different size of QR codes and verify that it can read and decode them correctly.
+- Test the QR code scanner feature with different sizes of QR codes and verify that it can read and decode them correctly.
 - Test the QR code scanner feature with different types of QR codes like url, contact, text, and event etc.
 - Test the QR code scanner feature with different barcode data, such as invalid barcodes, to ensure that it can handle different types of barcode data.
 - Test the feature in different orientations (portrait and landscape) to ensure that it works correctly on different devices.
@@ -68,7 +68,7 @@ This is one example of an exploratory testing session, but the specific steps ta
 
 Here is an example of something that you may not discover while testing with the test cases, but you can discover while doing exploratory tests.
 
-An example of a feature in an application could be a "search" feature for an e-commerce website. While testing the feature with test cases, a you might only test the feature with a set of predefined search queries, such as searching for a specific product by name or category. However, during exploratory testing, you might discover a problem with the search feature when searching for a product using a misspelled or a non-standard (synonyms) word.
+An example of a feature in an application could be a "search" feature for an e-commerce website. While testing the feature with test cases, you might only test the feature with a set of predefined search queries, such as searching for a specific product by name or category. However, during exploratory testing, you might discover a problem with the search feature when searching for a product using a misspelled or a non-standard (synonyms) word.
 
 For example, while doing exploratory testing, a tester might accidentally type "sneakers" instead of "shoes" in the search bar. Upon submitting the search, the tester might notice that the website returns no results, even though there are products that would match the search query. This could indicate that the website's search algorithm does not account for misspellings or alternative spellings of words, and that it is not able to suggest a correct spelling. This is an issue that might not be discovered while testing with predefined test cases, but it could be found while doing exploratory testing.
 
