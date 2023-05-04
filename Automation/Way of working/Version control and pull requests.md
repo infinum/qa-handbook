@@ -42,9 +42,9 @@ Often used names, or rather prefixes, are:
 - Feature
 - WIP
 
-To further make clear what is being worked on in a specific branch, you can add a unique ID to the name, as well as a hyphen, underscore and slash. You can even add the author's name in the branch name to further distinguish who is working on which branch.
+To further make clear what is being worked on in a specific branch, you can add a unique ID to the name, as well as a hyphen, underscore, and slash. You can even add the author's name in the branch name to further distinguish who is working on which branch.
 
-On whichever method you decide on, make sure to keep using it consistently.
+Whichever method you decide on, make sure to keep using it consistently.
 
 Good branch names:
 
@@ -76,7 +76,7 @@ Bad branch names:
 - Split commits into logical sections.
   - Avoid committing a bunch of unrelated files under a single ambiguous commit.
 - Write short and meaningful commit messages.
-- Add a description why the PR is necessary.
+- Add a description of why the PR is necessary.
 
 
 **Reviewing a PR:**
