@@ -2,9 +2,7 @@
 
 # Common design implementation mistakes
 
-Over the years, the design department noticed the same mistakes keep popping up in implementation... so they decided to make them into a checklist;
-
-https://infinum.com/handbook/devproc/day-to-day-work/design-implementation-checklist
+Over the years, the design department noticed the same mistakes keep popping up in implementation... so they decided to make them into a [checklist](https://infinum.com/handbook/devproc/day-to-day-work/design-implementation-checklist).
 
 Here are some general tips on what to check when testing:
 
@@ -15,7 +13,7 @@ Check the components page or library file;
 * All states of components
 
 
-###Text states 
+### Text states 
 
 ![states](/img/common_1.png)
 
@@ -35,7 +33,7 @@ Example of font spacing in a button:
 ### Keyboard types on mobile
 
 > 💡Check if we have the right keyboard type
-• Keep in mind that different input data require different keyboard types e.g.; Numeric, Text, E-mail, Date, etc… Talk to the designer about it if it’s not already specified in the app or web you are testing!
+* Keep in mind that different input data require different keyboard types e.g.; Numeric, Text, E-mail, Date, etc… Talk to the designer about it if it’s not already specified in the app or web you are testing!
 
 
 ### Spaces and alignment 
@@ -121,15 +119,15 @@ Check if the correct placeholder appears if an image is not loading. Examples:
 
 **Always check implementation on the web page for**: 
 
-• Website favicon
-• OG graphics for social media
-• Anchor links on single pages
-• Forms - success message or page after submitting
-• Terms, Privacy policy pages (static pages)
-• Avatar and image placeholders
-• Cookie pop-up with manage cookies pop-up/page
-• Loaders and spinners
-• Back to top button for long 400 and 500 error pages
+* Website favicon
+* OG graphics for social media
+* Anchor links on single pages
+* Forms - success message or page after submitting
+* Terms, Privacy policy pages (static pages)
+* Avatar and image placeholders
+* Cookie pop-up with manage cookies pop-up/page
+* Loaders and spinners
+* Back to top button for long 400 and 500 error pages
 
 ![pointers](/img/common_7.png)
 
