@@ -16,7 +16,7 @@ This is the easiest way and will provide automatic updates:
 
 **1.** Install [Homebrew](https://brew.sh/)
 
-**2.** Open terminal and run: `adb brew cask install android-platform-tools`
+**2.** Open terminal and run: `brew install --cask android-platform-tools`
 
 **3.** Start using adb: `adb devices`
 
