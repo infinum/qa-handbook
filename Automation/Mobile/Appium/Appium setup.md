@@ -23,16 +23,16 @@ Set JAVA_HOME and ANDROID_HOME environment variables in your `~/.profile` file.
    - If using zsh: `open ~/.zshrc` 
 2. Type in the following:
 
-
-    export ANDROID_HOME=/Users/<username>/Library/Android/sdk
-    export PATH=$PATH:$ANDROID_HOME/platform-tools/
-    export PATH=$PATH:$ANDROID_HOME/build-tools/<version>
-    export PATH=$PATH:$ANDROID_HOME/tools/bin
+```
+export ANDROID_HOME=/Users/<username>/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/platform-tools/
+export PATH=$PATH:$ANDROID_HOME/build-tools/<version>
+export PATH=$PATH:$ANDROID_HOME/tools/bin
     
-    export JAVA_HOME=`/usr/libexec/java_home`
-    export PATH=${JAVA_HOME}/bin:$PATH
-    export PATH=${PATH}:${JAVA_HOME}
-
+export JAVA_HOME=`/usr/libexec/java_home`
+export PATH=${JAVA_HOME}/bin:$PATH
+export PATH=${PATH}:${JAVA_HOME}
+```
 
 ### Install Appium
 
@@ -57,19 +57,21 @@ See [Appium Pro post](https://appiumpro.com/editions/122-installing-appium-20-an
 
 #### Desired capabilities (options) explained
 
-    capabilities = {
-        "appium:platformName": "iOS",
-        "appium:platformVersion": platform_version,
-        "appium:udid": device_udid,
-        "appium:app": app_path,
-        "appium:deviceName": "iPhone",
-        "appium:xcodeOrgId": your_personal_xcodeOrgId,
-        "appium:xcodeSigningId": "iPhone Developer",
-        "appium:automationName": "XCUITest",
-        "appium:useNewWDA": False,
-        "appium:autoAcceptAlerts": True,
-        "appium:noReset": True
-    }
+```
+ capabilities = {
+     "appium:platformName": "iOS",
+     "appium:platformVersion": platform_version,
+     "appium:udid": device_udid,
+     "appium:app": app_path,
+     "appium:deviceName": "iPhone",
+     "appium:xcodeOrgId": your_personal_xcodeOrgId,
+     "appium:xcodeSigningId": "iPhone Developer",
+     "appium:automationName": "XCUITest",
+     "appium:useNewWDA": False,
+     "appium:autoAcceptAlerts": True,
+     "appium:noReset": True
+ }
+ ```
 
 
 | Capability       | Purpose                                                                                                                                                                                                                                                                                                                                                      | Example                                   |
