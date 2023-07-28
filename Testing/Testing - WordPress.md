@@ -185,7 +185,7 @@ The most common bugs you will probably encounter while testing WordPress are:
 
 Testing WordPress forms and integrations is essential to ensure that these components function seamlessly and provide a smooth user experience on your website. Integrating popular services like HubSpot, MailerLite, Workable, Mailchimp, Goodbits, Moments, and Jira can enhance your website's functionality and streamline various processes. Everything regarding forms can be found in admin's menu under eightshift forms.
 
-![eightshift_forms.png](/img/eightshift_forms.png)
+![eightshift_forms.png](/img/eightshift_form.png)
 
 Here are some guidelines for testing WordPress forms and these integrations:
 
