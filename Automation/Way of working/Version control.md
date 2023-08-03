@@ -14,15 +14,17 @@ Permanent branches will most likely stay in your repository permanently.
 
 **Main** (_master_)
 
-- it should always be stable
-- it should be up-to-date
+- must always be stable
+- should be up-to-date
 - new code should only be merged after a code review
-- should not be used for experimenting with the new code
+  - merge without PR should be disabled in repository settings
+  - branch deletion should also be disabled, just in case :) 
+- should not be used for experimenting with new code
 
 **Development**
 
-- used for checking the new code
-- used for reviews
+- can be used for checking new code
+- should be used for reviews
 - gets merged into _main_ after passing a code review
 
 
@@ -62,28 +64,3 @@ Bad branch names:
 `wip_add_test_that_checks_that_the_login_works`
 
 `itisdifficulttoreadthenameofthisbranch`
-
-
-### Pull requests (PR)
-
-**Opening a PR:**
-
-- Before diving into doing potential code-breaking changes in the repository, discuss them with your team.
-  - E.g., configuration changes should be discussed beforehand.
-- Keep PRs small and focused.
-  - Focus on a single feature or test suite.
-  - Keep configuration changes in a separate PR.
-- Split commits into logical sections.
-  - Avoid committing a bunch of unrelated files under a single ambiguous commit.
-- Write short and meaningful commit messages.
-- Add a description of why the PR is necessary.
-
-
-**Reviewing a PR:**
-
-- Strive to review a PR within 24 hours.
-- Carefully review the changes.
-- Leave clear questions and comments in the appropriate lines of code/files.
-- If you have a lot to discuss, consider jumping into a call instead of writing novels in the PR.
-
-[How to handle pull requests without making enemies](https://infinum.com/blog/write-good-pull-requests/)
