@@ -8,7 +8,7 @@ Pytest is a testing framework for Python. For more info, check the [documentatio
 `conftest.py` is a file in which you can set up your test configuration. The file should primarily consist of fixtures which are automatically detected and executed.
 
 
-You can have multiple `conftest` files in your project. For example, you can have one `conftest` in the project root where you want to set up logic for the entire project. This one might be useful for the overall configuration, like setting up driver(s). And then you can also add additional `conftest` file into your tests directory. In `tests/conftest.py` you could have fixtures that are used only on tests. Note that all tests will use those fixtures.
+You can have multiple `conftest` files in your project. For example, you can have one `conftest` in the project root where you want to set up logic for the entire project. This one might be useful for the overall configuration, like setting up driver(s). And then you can also add an additional `conftest` file into your tests directory. In `tests/conftest.py` you could have fixtures that are used only on tests. Note that all tests will use those fixtures.
 
 
 You can even add another `conftest` in other test subdirectories. For example, directory `test_a` could have its own conftest `tests/test_a/conftest.py`.
