@@ -41,13 +41,16 @@ Let's say there is some code that you want to run before or after every test, bu
 
 
 ```python
+import pytest
+
 @pytest.fixture(scope="function", autouse=True)
+def fixture_a():
     """Executed automatically before every test."""
     # Some code
-```
-    
-```python
+
+
 @pytest.fixture(scope="class", autouse=True)
+def fixture_b(driver):
     """Executed automatically after every class."""
     yield driver
     # Some code
