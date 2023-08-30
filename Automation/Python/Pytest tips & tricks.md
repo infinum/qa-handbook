@@ -58,9 +58,7 @@ Check the docs on [autouse](https://docs.pytest.org/fixture.html#autouse-fixture
 
 ### Soft asserts
 
-If you need soft asserts in your tests, [pytest-check](https://pypi.org/project/pytest-check/) is a very useful plugin for pytest.
-
-It is easy to use and understand.
+If you need soft asserts in your tests, [pytest-check](https://pypi.org/project/pytest-check/) is a very useful plugin for pytest. It is easy to use and understand.
 
 Example:
 
