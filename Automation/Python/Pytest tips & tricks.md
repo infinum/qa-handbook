@@ -11,16 +11,15 @@ The file should primarily consist of fixtures which are automatically detected a
 
 You can have multiple `conftest` files in your project. 
 For example, you can have one `conftest` in the project root where you want to set up logic for the entire project. This one might be useful for the overall configuration, like setting up driver(s).
-
-And then you can add additional `conftest` file into your tests directory.
+And then you can also add additional `conftest` file into your tests directory.
 In `tests/conftest.py` you could have fixtures that are used only on tests. Note that all tests will use those fixtures.
 
-You can even add another `conftest` in other test sub-directories.
+You can even add another `conftest` in other test subdirectories.
 E.g. directory `test_a` could have its own conftest `tests/test_a/conftest.py`.
 
 The structure might look something like this:
 
-```python
+```
 ROOT
 conftest.py
 └── tests
@@ -30,26 +29,25 @@ conftest.py
         └── test_file_a.py
     └── test_b
         └── test_file_b.py
-
 ```
 
 
 ### Autouse
 
-Let's say there is some code that you want to run before or after every test but you do not want to call it every time. `autouse` option comes in handy. By setting the `autouse` parameter in a fixture to `True`, it is called automatically.
+Let's say there is some code that you want to run before or after every test, but you do not want to call it every time. `autouse` option comes in handy. By setting the `autouse` parameter in a fixture to `True`, it is called automatically.
 
 
 ```python
 @pytest.fixture(scope="function", autouse=True)
-"""Called automatically before every test."""
+    """Executed automatically before every test."""
     # Some code
-
+```
+    
+```python
 @pytest.fixture(scope="class", autouse=True)
-"""Called automatically after every class."""
-    # Some code
+    """Executed automatically after every class."""
     yield driver
-    # Some more code
-
+    # Some code
 ```
 
 Check the docs on [autouse](https://docs.pytest.org/fixture.html#autouse-fixtures-fixtures-you-don-t-have-to-request) for more details.
@@ -57,7 +55,7 @@ Check the docs on [autouse](https://docs.pytest.org/fixture.html#autouse-fixture
 
 ### Soft asserts
 
-If you need soft asserts in your tests, [pytest-check](https://pypi.org/project/pytest-check/) is very useful plugin for pytest.
+If you need soft asserts in your tests, [pytest-check](https://pypi.org/project/pytest-check/) is a very useful plugin for pytest.
 
 It is easy to use and understand.
 
@@ -76,7 +74,7 @@ def test_example():
 
 ### Importing custom plugins
 
-On occassion you will have to, or want to, create a custom plugin. Or just extract some of the code from `conftest`. For pytest to discover the plugin, it has to be somehow specified in a `conftest` file.
+On occasion you will have to, or want to, create a custom plugin. Or just extract some of the code from `conftest`. For pytest to discover the plugin, it has to be somehow specified in a `conftest` file.
 
 For example, you decided to add custom `html_report` and `slack` plugins.
 
