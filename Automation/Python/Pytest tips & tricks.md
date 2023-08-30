@@ -1,23 +1,17 @@
 ## What is pytest?
 
-Pytest is a testing framework for Python.
-For more info, check the [documentation](https://pytest.org).
+Pytest is a testing framework for Python. For more info, check the [documentation](https://pytest.org).
 
 
 ### Conftest
 
-`conftest.py` is a file in which you can set up your test configuration. 
-The file should primarily consist of fixtures which are automatically detected and executed.
+`conftest.py` is a file in which you can set up your test configuration. The file should primarily consist of fixtures which are automatically detected and executed.
 
 
-You can have multiple `conftest` files in your project. 
-For example, you can have one `conftest` in the project root where you want to set up logic for the entire project. This one might be useful for the overall configuration, like setting up driver(s).
-And then you can also add additional `conftest` file into your tests directory.
-In `tests/conftest.py` you could have fixtures that are used only on tests. Note that all tests will use those fixtures.
+You can have multiple `conftest` files in your project. For example, you can have one `conftest` in the project root where you want to set up logic for the entire project. This one might be useful for the overall configuration, like setting up driver(s). And then you can also add additional `conftest` file into your tests directory. In `tests/conftest.py` you could have fixtures that are used only on tests. Note that all tests will use those fixtures.
 
 
-You can even add another `conftest` in other test subdirectories.
-E.g. directory `test_a` could have its own conftest `tests/test_a/conftest.py`.
+You can even add another `conftest` in other test subdirectories. For example, directory `test_a` could have its own conftest `tests/test_a/conftest.py`.
 
 
 The structure might look something like this:
@@ -80,9 +74,7 @@ def test_example():
 
 On occasion you will have to, or want to, create a custom plugin. Or just extract some of the code from `conftest`. For pytest to discover the plugin, it has to be somehow specified in a `conftest` file.
 
-For example, you decided to add custom `html_report` and `slack` plugins.
-
-One way to do it is like this:
+For example, you decided to add custom `html_report` and `slack` plugins. One way to do it is like this:
 
 ```python
 # conftest.py
