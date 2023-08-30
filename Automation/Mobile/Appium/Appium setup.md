@@ -17,10 +17,11 @@ See [Appium requirements](https://github.com/appium/appium#requirements) for mor
 
 #### Environment variables
 
-Set JAVA_HOME and ANDROID_HOME environment variables in your `~/.profile` file.
+Set JAVA_HOME and ANDROID_HOME environment variables.
 
-1. Open the profile file
-   - If using zsh: `open ~/.zshrc` 
+1. Open the profile file:
+   - zsh: `open ~/.zshrc`
+   - bash: `open ~/.bashrc`
 2. Type in the following:
 
 ```
@@ -33,6 +34,7 @@ export JAVA_HOME=`/usr/libexec/java_home`
 export PATH=${JAVA_HOME}/bin:$PATH
 export PATH=${PATH}:${JAVA_HOME}
 ```
+
 
 ### Install Appium
 
@@ -58,20 +60,20 @@ See [Appium Pro post](https://appiumpro.com/editions/122-installing-appium-20-an
 #### Desired capabilities (options) explained
 
 ```
- capabilities = {
-     "appium:platformName": "iOS",
-     "appium:platformVersion": platform_version,
-     "appium:udid": device_udid,
-     "appium:app": app_path,
-     "appium:deviceName": "iPhone",
-     "appium:xcodeOrgId": your_personal_xcodeOrgId,
-     "appium:xcodeSigningId": "iPhone Developer",
-     "appium:automationName": "XCUITest",
-     "appium:useNewWDA": False,
-     "appium:autoAcceptAlerts": True,
-     "appium:noReset": True
- }
- ```
+capabilities = {
+   "appium:platformName": "iOS",
+   "appium:platformVersion": platform_version,
+   "appium:udid": device_udid,
+   "appium:app": app_path,
+   "appium:deviceName": "iPhone",
+   "appium:xcodeOrgId": your_personal_xcodeOrgId,
+   "appium:xcodeSigningId": "iPhone Developer",
+   "appium:automationName": "XCUITest",
+   "appium:useNewWDA": False,
+   "appium:autoAcceptAlerts": True,
+   "appium:noReset": True
+}
+```
 
 
 | Capability       | Purpose                                                                                                                                                                                                                                                                                                                                                      | Example                                   |
