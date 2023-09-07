@@ -118,7 +118,6 @@ The most common WordPress plugins, which are also used on Infinum web, are:
 
 ## How to use WordPress for frontend testing?
 
-## 7. How to use WordPress for frontend testing?
 
 Frontend testing in WordPress is crucial to ensure that changes made to the website work correctly for users and maintain a smooth user experience. As a QA tester, your focus should be on verifying both the visual appearance and functionality of the content you've added or modified. Here are some essential steps to perform frontend testing effectively:
 
