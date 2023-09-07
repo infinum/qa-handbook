@@ -118,15 +118,40 @@ The most common WordPress plugins, which are also used on Infinum web, are:
 
 ## How to use WordPress for frontend testing?
 
-When changing something in WordPress, you could assume the process is simple. You update the intended content and click update. The trickiest part comes after you click that update button. You will need to make sure that the page is still working as it was before you update it. You will have to do this often while testing WordPress. Example of the things you should check, other than the specific thing you added or updated, are: 
+## 7. How to use WordPress for frontend testing?
 
-* Is the page working on both Android and iPhone?
-* Is the contact form on the page still working in Safari?
-* Is the mobile menu opening on Android?
-* Did the footer disappear?
+Frontend testing in WordPress is crucial to ensure that changes made to the website work correctly for users and maintain a smooth user experience. As a QA tester, your focus should be on verifying both the visual appearance and functionality of the content you've added or modified. Here are some essential steps to perform frontend testing effectively:
+
+1. **Staging Environment Testing:** Before applying any changes to the live site, it is highly recommended to conduct frontend testing on a staging environment. Staging environments are replicas of the live site where you can test changes without affecting the actual users. This allows you to catch any issues before deploying updates to the production site.
+
+2. **Responsiveness and Cross-Browser Testing:** WordPress websites need to work flawlessly across various devices and browsers. Test your website on different screen sizes, including desktops, laptops, tablets, and smartphones. Check compatibility with major browsers like Chrome, Firefox, Safari, and Edge to ensure a consistent user experience.
+
+3. **Functional Testing:** Verify that all website functionalities are working as intended. This includes checking navigation menus, buttons, links, forms, and interactive elements. Test form submissions to ensure they reach the correct destination or database.
+
+4. **Images and Media Testing:** Confirm that images and media files load correctly on all devices and that there are no issues with broken images or slow loading times. Optimize image sizes to improve website performance.
+
+5. **Content Layout and Styling:** Ensure that content is displayed correctly, with appropriate fonts, colors, and spacing. Check for consistency in design elements across different pages.
+
+6. **Mobile Testing:** Given the increasing use of mobile devices, it's essential to test your website thoroughly on various mobile platforms. Check for mobile-specific issues such as touch functionality and mobile menu behavior.
+
+7. **Accessibility Testing:** WordPress websites should be accessible to all users, including those with disabilities. Use tools like screen readers to test the website's accessibility and compliance with accessibility standards (e.g., WCAG).
+
+8. **Performance Testing:** Assess the website's performance and loading speed. Use tools like Google PageSpeed Insights or GTmetrix to identify performance bottlenecks and optimize the website accordingly.
+
+9. **Cross-Platform Testing:** If your website includes additional platforms, such as mobile apps or integrations with third-party services, perform cross-platform testing to ensure seamless integration and functionality.
+
+10. **Version Compatibility:** After updating WordPress or plugins, retest the frontend to ensure that everything is still working correctly. Sometimes, updates can cause compatibility issues that affect the frontend.
+
+11. **Regression Testing:** Whenever new features or updates are introduced to the website, conduct regression testing to ensure that existing functionalities are not adversely affected.
+
+12. **Bug Reporting:** If you encounter any issues during testing, document them thoroughly and report them to the development team. Include steps to reproduce the problem, screenshots, and any other relevant information to aid in debugging and fixing the issues.
+
+By following these frontend testing practices, you can ensure that your WordPress website functions smoothly, looks appealing, and provides an excellent user experience to your visitors.
+
 
 As QA, you will be testing the visual and functional things regarding WordPress. You will need to make sure that any content added or changed is looking good on the frontend. It's recommended you always do this on staging first and later do a production re-check. For example, if you are testing buttons, you can edit that button in WordPress in various ways such as its width, height, text, or color.
 Whenever you are testing anything on the frontend, you should make sure no content on any screen is overlaying with each other. Sometimes you will have to test forms on WordPress. You can test a form by checking its visual display on the page in various viewports, and you should also check if that form is working. You can test it by checking which plug is in use for forms, and there you can check if the form was successfully sent, e.g., Hubspot.
+
 
 <span style="display:block; border: 1px solid #e0e0e0;margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:70%;">![bug_example.png](/img/bug_example.png)</span>
 
@@ -157,4 +182,90 @@ The most common bugs you will probably encounter while testing WordPress are:
 * Every block is adjustable.
 * Some values are hardcoded.
 * Test every block independently.
-* Create a new page for QA only.
+* Create new page for QA only.
+
+## 10. Testing WordPress Forms and Integrations
+
+Testing WordPress forms and integrations is essential to ensure that these components function seamlessly and provide a smooth user experience on your website. Integrating popular services like HubSpot, MailerLite, Workable, Mailchimp, Goodbits, Moments, and Jira can enhance your website's functionality and streamline various processes. Everything regarding forms can be found in admin's menu under eightshift forms.
+
+![eightshift_forms.png](/img/eightshift_form.png)
+
+Here are some guidelines for testing WordPress forms and these integrations:
+
+### 1. WordPress Forms Testing
+
+**Form Functionality:** Test all types of forms used on your WordPress site, such as contact forms, subscription forms, feedback forms, and registration forms. Verify that all form elements, including text fields, checkboxes, radio buttons, dropdowns, and submit buttons, work as expected.
+
+**Form Validation:** Check form validation for required fields, email addresses, phone numbers, and other input formats. Ensure that users receive appropriate error messages for invalid submissions.
+
+**Form Submissions:** Verify that form submissions are correctly processed and saved to the database or sent to the designated email addresses. Check that confirmation messages or redirect pages appear after successful form submissions.
+
+**Confirmation Emails:** For forms that trigger confirmation emails, test whether the emails are sent promptly and contain the correct information.
+
+**Form Security:** Test the forms for security vulnerabilities, such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF). Implement security measures to protect user data.
+
+**File Uploads:** If your forms allow file uploads, ensure that the uploaded files are processed correctly and securely.
+
+**Spam Protection:** Implement anti-spam measures, such as CAPTCHA or honeypots, to prevent spam submissions.
+
+### 2. Integrations Testing
+
+**HubSpot Integration:**
+HubSpot integration in WordPress allows seamless lead capture and customer relationship management. It is used to collect and manage user data, enabling personalized marketing efforts.
+
+* Standard Testing Steps:
+- Verify that lead capture forms are displayed correctly on the website.
+- Submit test leads and check if they are successfully synchronized with HubSpot's CRM.
+- Test automated email marketing campaigns triggered by form submissions.
+- Ensure that data is accurately synced between WordPress and HubSpot.
+
+**MailerLite Integration:**
+MailerLite integration facilitates email marketing automation and subscriber management for newsletters and campaigns. It streamlines the process of reaching out to users with targeted content.
+
+* Standard Testing Steps:
+- Confirm that user subscriptions through WordPress forms are accurately added to the designated MailerLite lists.
+- Test automated email campaigns to ensure they are triggered and delivered correctly.
+- Check for any data syncing issues between WordPress and MailerLite.
+
+**Workable Integration:**
+Workable integration in WordPress simplifies the job posting process and candidate application tracking. It helps manage the hiring process more efficiently.
+
+* Standard Testing Steps:
+- Verify that job postings are displayed accurately on the website.
+- Test the application process by submitting test job applications.
+- Ensure that candidate data is seamlessly processed and organized within Workable.
+
+**Mailchimp Integration:**
+Mailchimp integration allows WordPress websites to manage newsletter subscriptions and automate email marketing campaigns for targeted audiences.
+
+* Standard Testing Steps:
+- Confirm that newsletter subscription forms work correctly on the website.
+- Check for successful synchronization of subscriber data between WordPress and Mailchimp lists.
+- Test automated email campaigns triggered by specific actions.
+
+**Goodbits Integration:**
+Goodbits integration in WordPress simplifies the creation of newsletters using curated content from WordPress, making it easier to engage subscribers with quality content.
+
+* Standard Testing Steps:
+- Verify that content from WordPress is accurately pulled into Goodbits for newsletter creation.
+- Test newsletter customization options, such as layout and styling.
+- Check for successful delivery of newsletters to subscribers.
+
+**Moments Integration:**
+Moments integration enables automatic sharing of WordPress content on various social media platforms, streamlining content promotion efforts.
+
+* Standard Testing Steps:
+- Test the integration's connection with social media accounts for content sharing.
+- Ensure that WordPress posts are shared correctly on social media channels.
+- Check for any issues with post formatting or link sharing.
+
+**Jira Integration:**
+Jira integration in WordPress facilitates seamless issue tracking and project management, making it easier for teams to collaborate on development tasks.
+
+* Standard Testing Steps:
+- Test the integration's ability to create and sync issues from WordPress to Jira.
+- Verify that updates made in Jira are correctly reflected in WordPress.
+- Ensure smooth communication between WordPress and Jira platforms.
+
+
+
