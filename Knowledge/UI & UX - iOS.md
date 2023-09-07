@@ -14,7 +14,7 @@ Element name | Definiton / Picture / GIF
 -----|-----------
 Navigation Bar| ![](/img/Navigation_Bar.png) A navigation bar appears at the top of an app screen, below the status bar, and enables navigation through a series of hierarchical screens.
 Navigation Bar Title| ![](/img/Navigation_Bar_Title.png) A navigation bar title helps people understand what they’re looking at.
-Search Bar| ![](/img/Search_Bar.png) A search bar allows people to search through a large collection of values by typing text into a field.
+Search Bar| ![](/img/Search_Bar_iOS.png) A search bar allows people to search through a large collection of values by typing text into a field.
 Status Bar| ![](/img/Status_Bar.png) The status bar appears along the upper edge of the screen and displays useful information about the device’s current state, like the time, cellular carrier, network status, and battery level.
 Tab Bar| ![](/img/Tab_Bar.png) A tab bar appears at the bottom of an app screen and provides the ability to quickly switch between different sections of an app.
 Toolbar| ![](/img/Toolbar.png) A toolbar appears at the bottom of an app screen and contains buttons for performing actions relevant to the current view or content within it. 

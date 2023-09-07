@@ -131,7 +131,7 @@ Pre-request scripts are snippets of code that can be added to a collection, a fo
 1. Open the "GET Pokemons" request 
 2. Switch to the **Pre-request Script** tab
 
-Let's take a loot at example of pre-request script for token creation:
+Let's take a look at example of pre-request script for token creation:
 
 ```
  const loginRequest = {
@@ -237,7 +237,3 @@ Great, now your collection will be run at the set time and you will be notified 
 Check out one of our blog posts: [Writing API Tests? Postman Delivers](https://infinum.com/the-capsized-eight/postman-API-testing)
 
 Also see this interesting article: [Testing APIs with Postman: 10 common challenges & solutions](https://medium.com/distant-horizons/testing-apis-with-postman-10-common-challenges-solutions-c4674c78528d).
-
----
-![using-postman.gif](/img/using-postman.gif)
-

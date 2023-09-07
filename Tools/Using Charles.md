@@ -67,6 +67,43 @@ Now you will be able to change the request before executing it if you wish to do
 
 If you want to rewrite requests and responses automatically, you can use [Charles' Rewrite tool](https://www.charlesproxy.com/documentation/tools/rewrite/).
 
----
+## Exporting traffic to a HAR file
 
-![dil-internet.gif](/img/dil-internet.gif)
+You can multi-select several requests and export them as HAR files, just make sure to select the HTTP Archive (.har) format.
+
+Now you will have a file that is basically a snapshot of all the requests you’ve made and all the responses received.
+
+Why would you that? One possible use case is to convert that HAR file to a k6 script and get a load test for free. :)
+
+## Repeating requests
+
+Let's say you have to create 100 articles in the mobile app you are testing to satisfy the preconditions for a certain test case. Let's also assume you don't have access to API docs or a Postman collection that could come in handy.
+
+These are some of your options:
+
+- You could create them manually in the mobile app, but that's boring and surely not the optimal way to do it.
+- You could ask a developer to add them to the database directly, but now you're just delegating work.
+- Finally, you could create one article and use that request to create 99 more of them.
+
+Charles can help you achieve the 3rd option. Just isolate the request you want to repeat, right-click on it, and select "Repeat Advanced".
+
+Once you enter the amount of iterations, click on "Ok" and watch Charles do his magic.
+
+![repeat.png](/img/repeat.png)
+
+If you want even more flexibility, you can right-click on the request, select "Copy cURL request" and get a nice cURL command that's good to go:
+
+```
+curl \
+'https://api.foo/api/v1/resource' \
+-H 'accept: application/vnd.api+json' \
+-H 'authorization: mytoken' \
+-H 'content-type: application/vnd.api+json' \
+-H 'accept-language: en-GB' \
+--data-raw '{"data": "mydata"}' \
+--compressed
+```
+
+Now just add `repeat 99` in front of your cURL command, execute it in your terminal of choice, and you're off to the races. :)
+
+The nice thing with cURL commands is that you can easily share them with the rest of the team.

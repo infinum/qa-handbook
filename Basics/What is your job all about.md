@@ -15,7 +15,7 @@ Your role is twofold:
 
 ![st-qc-qa.jpg](/img/st-qc-qa.jpg)
 
-Your ultimate goal is to help the company develop and deploy the best possible products within the usual constraints of time, budget, complexity, and client stubborness.
+Your ultimate goal is to help the company develop and deploy the best possible products within the usual constraints of time, budget, complexity, and client stubbornness.
 
 ## What are the challenges?
 
@@ -38,7 +38,3 @@ Your ultimate goal is to help the company develop and deploy the best possible p
  - More often than not, you are the bringer of bad news, so don't make them any worse than they already are.
 - **Investigative**
  - Think of yourself as a QA analogue of Sherlock Holmes. Your job is to investigate both projects and products by constantly asking questions and getting to the bottom of things instead. "This is not my job" is not a part of the QA vernacular.
-
----
-
-![what-is-your-job-all-about.jpg](/img/what-is-your-job-all-about.jpg)

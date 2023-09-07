@@ -17,7 +17,7 @@ Now let's just exchange the roles and say:
 - Customer - any client (e.g., a mobile app or web app)
 - Order - making an HTTP request
 - Pizza - data
-- Kitchen - a place where the magic happens (we don't care in this article)
+- Kitchen - a place where the magic happens (we don't care about it in this article)
 - 10 minutes - response time
 
 Those are all the ingredients you need to describe a slow, albeit functional web API. :)
@@ -215,12 +215,3 @@ You can interact with APIs or even test them with a variety of tools:
 - One of the most popular CLI tools is [cURL](https://curl.se/).
 - If you prefer a GUI, we have a [nice tutorial on Postman](https://infinum.com/handbook/books/qa/tools/using-postman).
 - Also, most programming languages come with tools that make interacting with APIs a breeze. The [requests](https://docs.python-requests.org/en/master/) lib for Python is one example.
-
-
----
-
-![api.png](/img/api.png)
-
-
-
-

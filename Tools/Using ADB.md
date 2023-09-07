@@ -8,7 +8,7 @@ Android Debug Bridge (ADB) is a versatile command-line tool that lets you commun
 
 **- A daemon (adbd),** which runs commands on a device. The daemon runs as a background process on each device.
 
-**- A server,** Swhich manages communication between the client and the daemon. The server runs as a background process on your development machine.
+**- A server,** which manages communication between the client and the daemon. The server runs as a background process on your development machine.
 
 ## Install ADB using Homebrew
 
@@ -16,7 +16,7 @@ This is the easiest way and will provide automatic updates:
 
 **1.** Install [Homebrew](https://brew.sh/)
 
-**2.** Open terminal and run: `adb brew cask install android-platform-tools`
+**2.** Open terminal and run: `brew install --cask android-platform-tools`
 
 **3.** Start using adb: `adb devices`
 
@@ -28,7 +28,7 @@ This is the easiest way and will provide automatic updates:
 
 2. Mark the option “Enabling USB Debugging”.
 
-3. Alow USB Debugging to be performed in the security panel.
+3. Allow USB Debugging to be performed in the security panel.
 
 4. Make sure that the device is successfully connected by running: `adb devices`
 
@@ -90,7 +90,3 @@ This will return a list of the package names of the apps installed on the device
 With the help of this command the monkey tool is generating 10.000 random events on the real device. Note: Use the parameter -s (seed) to execute the same commands over and over again in order to reproduce any crashes that happen during the monkey run.
 
 If you thirst for more knowledge on ADB, check out this [link](https://www.automatetheplanet.com/adb-cheat-sheet/).
-
----
-
-![dil-android.gif](/img/dil-android.gif)

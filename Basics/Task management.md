@@ -52,7 +52,43 @@ In general, there are two types of tasks you will deal with:
 
 Each task should only be opened for one person and one platform. E.g., if both Android and iOS are implementing the same feature, they should have separate tasks.
 
+### Closing QA tasks
 
----
+If the client is not doing testing, and no bugs were found while testing a feature task or the task had only minor issues associated with it, you can close it and open new tasks in the Backlog. The same applies to bugfix tasks. 
 
-![task-management.gif](/img/task-management.gif)
+When closing a QA task, you should always add the following information:
+
+- all devices/browsers on which you tested it
+- build/platform/environment that you used while testing
+- how and what you tested (you don't need to go into every single detail; a brief description with the most important information will be fine)
+- any other information that might be of importance (e.g. what issues you found).
+
+This way, if you or someone else ever needs to go back to that task, you will have the information about what was done and what the status of the feature/bugfix was when closing the task.
+
+
+## Bug tasks - severity and priority
+
+Not all bugs are the same. You can attribute severity and priority to a bug in order to communicate to the team how important it really is and triage it appropriately.
+
+**Severity** is related to how damaging it is to the product.
+
+**Priority** is related to how soon should a fix mitigating it be deployed to production.
+
+Sometimes a bug can have low severity, but high priority. E.g. imagine uploading a wrong logo on the website.
+
+Here's one possible way of classifying them according to severity and priority:
+
+**Severity:**
+
+- Safety: Safety issue. The product creates a dangerous situation.
+- Blocker: Prevents function from being used, no work-around, and blocking progress in multiple screens or components.
+- Critical: Prevents a function from being used, no work-around being available.
+- Major: Prevents a function from being used, but a work-around is possible.
+- Normal: A problem making a function difficult to use and no special work-around is required.
+- Cosmetic: Small issue that does not significantly impact the product.
+
+**Priority:**
+
+- High: It should be fixed immediately.
+- Normal: It should be fixed in the next development iteration (sprint) or in the next version.
+- Low: It should be fixed at a later point.

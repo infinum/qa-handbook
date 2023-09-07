@@ -6,7 +6,7 @@ Forms are often the hiding place of complicated business logic so we will start 
 
 Since the set of inputs a non-trivial form can take is often infinite, it is literally impossible to test everything. This is why you need to be smart about it by using some basic testing techniques and shortcuts.
 
-### Why do we test forms
+### Why do we test forms?
 
 #### 1. Security
 
@@ -90,7 +90,3 @@ You'll rarely find capitalization principles and keyboard type suggestions in yo
 ### BugMagnet 
 
 There is an awesome plugin for Chrome and Firefox that can be used for testing forms. You can pick it up right [here](https://bugmagnet.org/) on this link and after it is installed, just click right-click on any form and input any kind of data that can break the input form. 
-
----
-
-![testing-prince-of-versions.gif](/img/testing-prince-of-versions.gif)

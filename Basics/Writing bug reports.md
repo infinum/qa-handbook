@@ -23,7 +23,7 @@ The title can either be:
 
 In the "Device" field - name those devices on which you managed to reproduce the issue.
 
-In the "Build" field - name the build on which you managed to repoduce the issue. Add the environment when needed.
+In the "Build" field - name the build on which you managed to reproduce the issue. Add the environment when needed.
 
 > Device: Nexus 5X (Android 7.0), HTC M9 (Android 6.0)   
 > Build: 1.1.0-b4422 (Development)
@@ -44,7 +44,7 @@ or
 
 ### Prerequisites
 
-In the "Prerequisties" section, state any info that is needed in order to start reproducing the issue. This might be the account you used, the role of the user, time of day, etc. 
+In the "Prerequisites" section, state any info that is needed in order to start reproducing the issue. This might be the account you used, the role of the user, time of day, etc. 
 
 This part is optional.
 
@@ -118,7 +118,3 @@ Additionally, never forget to:
 - Add tags (usually platform-related tags such as "android" or "ios").
 
 Read more on the topic [here](https://infinum.co/the-capsized-eight/how-not-to-suck-at-writing-bug-reports).
-
----
-
-![writing-bug-reports.gif](/img/writing-bug-reports.gif)
