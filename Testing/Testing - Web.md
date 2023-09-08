@@ -142,7 +142,7 @@ These are some of the test cases to be considered while testing website Cookies.
 
 ### Testing web apps on several devices simultaneously
 
-Check out [Responsively App](https://responsively.app/).
+Check out [ResponsivelyApp](https://responsively.app/).
 
 ### Testing web app UI behaviour with content amount variations
 

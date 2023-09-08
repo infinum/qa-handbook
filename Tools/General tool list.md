@@ -165,7 +165,7 @@ A proxy app used for examining network traffic between your device and a server 
 ### Copyclip
 For accessing your clipboard history.
 
-### Responsively App
+### ResponsivelyApp
 For parallel testing on several physical devices.
 
 ### Google Keep / Simplenote
