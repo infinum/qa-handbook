@@ -165,8 +165,8 @@ A proxy app used for examining network traffic between your device and a server 
 ### Copyclip
 For accessing your clipboard history.
 
-### Ghostlab
-For parallel crossbrowser testing on several physical devices.
+### Responsively App
+For parallel testing on several physical devices.
 
 ### Google Keep / Simplenote
 For taking notes.

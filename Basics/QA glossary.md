@@ -87,7 +87,6 @@ It is like a skeleton (or template) with empty spots which you fill out with you
 
 ### G
 
-- **Ghostlab** - a tool for parallel cross-browser testing on several physical devices.
 - **Git** -  the most popular Version Control System. Developers can make an initial version of an app and each time it is needed, they can make a new version.
 It is like a super-charged Save button in Word - you can save the document each time you want, but you can see each iteration, changes made, comments and restore each iteration when needed.
 - **GitHub** - cloud-based Git repository hosting service.
@@ -210,6 +209,7 @@ It is used for frontend development but with the recent appearance of the Node.j
 - **Regression Testing** - is much more thorough than smoke testing. Regression testing involves checking every possible aspect of the pre-existing app features after a new feature or bug fix is deployed. This is to make sure that the code updates didn't break any other area of the software. Or in other words - a full test of the app.
 - **Release** - A release is the distribution of the final version of an application. A software release may be either public or private and generally constitutes the initial generation of a new or upgraded application. 
 - **Release candidate** - is a version that is ready to be released to the public, assuming no major bugs are found during testing.
+- **Responsively App** - a tool for parallel browser testing on several physical devices.
 - **Rollout** - an informal business term for the introduction and integration of a new product or service to the market. A rollout often refers to a significant product release, which is frequently accompanied by a strong marketing campaign, to generate consumer interest.
 
 ### S
