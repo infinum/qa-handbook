@@ -142,7 +142,7 @@ These are some of the test cases to be considered while testing website Cookies.
 
 ### Testing web apps on several devices simultaneously
 
-Check out [Ghostlab](https://www.vanamco.com/).
+Check out [ResponsivelyApp](https://responsively.app/).
 
 ### Testing web app UI behaviour with content amount variations
 
