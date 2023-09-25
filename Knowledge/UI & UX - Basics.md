@@ -35,3 +35,18 @@ These can also serve as helpful intros:
 - [Glossary of navigation elements](https://tubikstudio.com/uiux-design-glossary-navigation-elements/)
 
 - [15 basic types of screens](https://tubikstudio.com/mobile-ui-design-15-basic-types-of-screens/)
+
+### UI elements Understanding the User's Perspective in UX Design
+At the core of UX design lies the imperative to understand the user's perspective thoroughly. UX designers are tasked with ensuring that the application aligns with user needs, goals, and expectations. To achieve this, they delve deep into user psychology, studying behaviors, preferences, and pain points to craft a seamless and intuitive experience.
+
+### Key Steps in UX Design
+
+* **User Research**: UX designers use surveys, interviews, usability testing, and analytics to gather insights into user behaviors and preferences.
+
+* **Information Architecture**: They organize content and features logically for easy user navigation and task completion.
+
+* **Prototyping and Testinge**: UX designers create prototypes, test with users, and iteratively improve product layout and functionality.
+
+* **Usability and Accessibility**: They ensure inclusivity by designing for various abilities, screen sizes, and adhering to accessibility standards like WCAG.
+
+While UX and UI design are distinct disciplines, they are closely intertwined. UX designers provide the foundational user-centric research and structure upon which UI designers build. The UI elements and visual aesthetics created by UI designers should align with the user experience principles established by UX designers to create a cohesive and enjoyable product.
