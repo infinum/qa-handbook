@@ -53,6 +53,20 @@ def fixture_b(driver):
 Check the docs on [autouse](https://docs.pytest.org/fixture.html#autouse-fixtures-fixtures-you-don-t-have-to-request) for more details.
 
 
+### Fixtures and Hooks
+
+Fixtures are defined using the `@pytest.fixture` decorator. They ensure the setup and teardown of resources before and after tests, providing a clean and consistent testing environment. 
+Hooks are used for customizing the behavior of the testing framework itself and they are triggered at specific points during the test execution process. 
+
+Few things to have in mind when working with Fixtures and Hooks:
+
+- Fixtures are created when first requested by a test, and are destroyed based on their scope. Possible values for scope are `function` (default), `class`, `module`, `package` or `session`.
+- Hooks do not have scope.
+- Hook functions can be grouped into plugins. 
+- You can use hooks to customize test reporting.
+- Fixtures cannot be called from a Hook function.
+
+
 ### Soft asserts
 
 If you need soft asserts in your tests, [pytest-check](https://pypi.org/project/pytest-check/) is a very useful plugin for pytest. It is easy to use and understand.
