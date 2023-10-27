@@ -149,6 +149,12 @@ For connecting to VPNs in various countries. Our account password for Tunnelbear
 ### 1Password
 A password manager where we keep credentials for all shared accounts.
 
+### Adobe color wheel
+Complementary color [palettes](https://color.adobe.com/create/color-wheel).
+
+### AirDroid
+Manage your Android phone/tablet from a web browser without using a cable [here](https://web.airdroid.com/). 
+
 ### Alfred
 An advanced "Spotlight" for quickly executing certain actions.
 
@@ -156,17 +162,51 @@ An advanced "Spotlight" for quickly executing certain actions.
 Command language and shell. See this
 [dev.to tutorial](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je).
 
+### Bensound
+Free stock music [here](https://www.bensound.com/).
+
+### Blind text generator
+Dummy text generator [here](https://www.blindtextgenerator.com/lorem-ipsum).
+
 ### Broken Link Checker
 [Dr. Link Check](https://www.drlinkcheck.com/) is a tool that finds links in HTML documents and CSS files. For finding broken and malicious links.
+
+### Canva
+Designing photo/video/presentation [editor](https://www.canva.com/).
 
 ### Charles
 A proxy app used for examining network traffic between your device and a server by staging a man-in-the-middle attack.
 
-### Copyclip
-For accessing your clipboard history.
+### Color picker
+Just write "color picker" in Google, and the modal will pop up in the search results. It is used for picking colors and getting color codes.
 
-### ResponsivelyApp
-For parallel testing on several physical devices.
+### Coolors
+Create the perfect palette or get inspired by thousands of beautiful [color schemes](https://coolors.co/).
+
+### Copyclip
+For accessing your clipboard [history](https://apps.apple.com/us/app/copyclip-clipboard-history/id595191960?mt=12). 
+
+### DaVinci Resolve
+Free video [editor](https://www.blackmagicdesign.com/products/davinciresolve/)
+
+### DeviceAtlas
+Web usage of a device model by country [here](https://deviceatlas.com/device-data/explorer/webusage/traffic/no-tablet/country/us?search=Apple%20iPhone%20XR).
+
+### Diffchecker
+Compare text to find the difference between two text files [here](https://www.diffchecker.com/text-compare/).
+
+### Editing text on the web 
+By using the following steps, the text on the web page becomes editable and you can see how it would look if something else was written in the fields:
+
+ 	- Right-click and select "Inspect"
+ 	- Go to "Console"
+ 	- Write: document.designMode='on'
+
+### File examples
+Different file samples (music, videos, pdfs, images,...) [here](https://file-examples.com/).
+
+### Google fonts
+Free font [download](https://fonts.google.com/).
 
 ### Google Keep / Simplenote
 For taking notes.
@@ -176,15 +216,52 @@ For taking notes.
 - Sublime Text
 - Visual Studio Code
 
+### IconSVG
+Quick [customizable icons](https://iconsvg.xyz/) for your projects.
+
+### I love img 
+Every tool you could want to [edit images](https://www.iloveimg.com/) in bulk. 
+
+### Image colour picker
+Similar to colour picker, but you can upload your image and find out the cooler used in it [here](https://imagecolorpicker.com/).
+
+### JSONLint
+Validator and reformatter for JSON [here](https://jsonlint.com/).
+
+### Jumpcut
+Stores all that you have copied or cut in the past, allowing you to quickly find that snippet of text you've been looking for [here](https://snark.github.io/jumpcut/).
+
 ### MacDown
 For quickly viewing and editing Markdown files.
+
+### OIB generator
+OIB (Croatian personal identification number) [generator](https://oib.itcentrala.com/oib-generator/).
+
+### Phrase express
+Text expander [software](https://www.phraseexpress.com/), that manages frequently used text templates for insertion into any program.
+
+### Pexel
+Free stock photos and videos [here](https://www.pexels.com/).
 
 ### PhraseExpress
 For pasting templates by entering a simple piece of text.
 E.g. enter "bugtemplate" and get an entire bug report template that will replace that entered string so you never have to type out the entire thing again.
 
+### Pixlr
+Online [photoshop](https://pixlr.com/). 
+
 ### Proxyman
 It's like Charles, but a bit more fancy.
+
+### RemoveBG
+Remove image background [here](https://www.remove.bg/).
+
+### ResponsivelyApp
+For parallel testing on several physical devices.
+
+### Screen to gif
+Screen, webcam, and sketchboard recorder with an integrated 
+[editor](https://www.screentogif.com/). 
 
 ### Send Anywhere
 For sending files between mobile and desktop devices.
@@ -195,11 +272,21 @@ For taking screenshots.
 ### Spectacle
 For managing your windows.
 
+### Temp mail
+Temporary email [generator](https://temp-mail.org/en/).
+
 ### Todoist
 For managing your own tasks.
 
+### Unsplash
+Free stock photos [here](https://unsplash.com/).
+
+
 ## Testing quadrant
+
 
 For more on tools and testing and to not make this whole article just another dead list, read up on [agile testing quadrants](https://labs.sogeti.com/guiding-development-agile-testing-quadrants/).
 
 ![agile-quadrant.png](/img/agile-quadrant.png)
+
+
