@@ -1,21 +1,12 @@
-> *You can be a great tester if you have programming skills. You can also be a great tester if you have no programming skills at all. And, you can be a lousy tester with or without programming skills. A great tester will learn what skills she needs to continue to be great, in her own style.*
+> *Great testing doesn't require programming skills. A great tester adapts and learns, regardless of their initial skillset.*
 
 ## Testing is...
 
-...difficult. :-)
+... challenging. :-)
 
-- There is no way to ensure all bugs have been found or fixed.
-- It is hard to determine which bugs are important and which are not.
-- It is impossible to be completely sure something works.
-- You cannot test on all possible combinations of software and hardware.
-- There are multiple ways in which something can fail.
-- Even if something doesn't fail, the app can still be bad.
+It's impossible to guarantee the discovery and resolution of all bugs, assess the significance of each issue, or ensure flawless functionality. The vast array of software and hardware combinations makes comprehensive testing unattainable. Failures can manifest in numerous ways, and even without apparent issues, an application may still fall short of expectations. Despite these difficulties, the aim is to guide the team towards the highest quality possible, considering the product and project context. This document serves as a concise introduction to the world of software testing, without any specific sequence. For additional resources, you can refer to the Wikipedia article on software testing or the ISTQB syllabus.
 
-Keeping that in mind, you should do the best possible job to drive what the team is working on forwards to the best possible quality, keeping in mind the context of the product and the project.
-
-This document is a short primer and introduction into all things called software testing. There is no particular order.
-
-You can also use the [Wiki article for software testing](https://en.wikipedia.org/wiki/Software_testing) or the [ISTQB syllabus](https://www.istqb.org/certifications/certified-tester-foundation-level) as a starting point.
+You can use the [Wiki article for software testing](https://en.wikipedia.org/wiki/Software_testing) or the [ISTQB syllabus](https://www.istqb.org/certifications/certified-tester-foundation-level) as a starting point.
 
 ## Testing a feature
 
@@ -72,7 +63,7 @@ A small number of modules usually contains most of the defects discovered during
 
 - **Beware of the pesticide paradox**
 
-If the same tests are repeated over and over again, eventually these tests no longer find any new defects. To detect new defects, existing tests and test data may need changing, and new tests may need to be written. (Tests are no longer effective at finding defects, just as pesticides are no longer effective at killing insects after a while.) In some cases, such as automated regression testing, the pesticide paradox has a beneficial outcome, which is the relatively low number of regression defects.
+Repeated tests become less effective at finding new defects, like pesticides losing their potency over time. To uncover new issues, modify existing tests and data, or create new ones. This paradox can have a beneficial outcome in cases like automated regression testing, resulting in fewer regression defects.
 
 - **Testing is context dependent**
 
@@ -80,7 +71,8 @@ Testing is done differently in different contexts. For example, safety-critical 
 
 - **Absence-of-errors is a fallacy**
 
-Some organizations expect that testers can run all possible tests and find all possible defects, but principles 2 and 1, respectively, tell us that this is impossible. Further, it is a fallacy (i.e., a mistaken belief) to expect that just finding and fixing a large number of defects will ensure the success of a system. For example, thoroughly testing all specified requirements and fixing all defects found could still produce a system that is difficult to use, that does not fulfill the users’ needs and expectations, or that is inferior compared to other competing systems.
+
+Some organizations wrongly expect testers to run all tests and find all defects, which is impossible (principle 2). Simply fixing numerous defects doesn't guarantee system success; the system could still be user-unfriendly or inferior to competitors (principle 1).
 
 ## Rapid Software Testing
 
@@ -88,13 +80,16 @@ Rapid Software Testing is a methodology and a class about it, authored by James 
 
 ## Types of testing
 
-It is hard to enumerate all ways in which you can test software.
+Enumerating all possible software testing methods is challenging.
 
-What is a test anyway? One way to look at it is that a test is anything you do with software that will give you insight into how it behaves under certain conditions. But we could debate that until we're in a drunken stupor. Have a look at [Michael Bolton's opinion on the topic](http://www.developsense.com/blog/2014/10/testing-is/) as well.
+Defining a test can be nuanced. One perspective is that it's any interaction with software shedding light on its behavior under specific conditions. While this can spark endless debates, Michael Bolton's views on the topic are enlightening.
 
-Let's be a bit more pragmatic and look at one possible categorization of the types of test you can conduct. 
+Have a look at [Michael Bolton's opinion on the topic](http://www.developsense.com/blog/2014/10/testing-is/) here.
 
-N.b., this categorization does not cover every single test type you can execute.
+
+For a pragmatic approach, let's consider categorizing the various types of tests available.
+
+Note that this categorization may not encompass every conceivable test type.
 
 ### According to approach:
 
@@ -109,19 +104,11 @@ The way you test ranges from fully formal/algorithmic/scripted to fully random.
 
 ### According to focus:
 
-You have to determine what will you focus on when you do testing. It is good to focus on one thing to keep your mental capacities sharp.
+Decide on your testing focus to maintain mental acuity, ideally honing in on one area. Broadly, this focus can be categorized into two groups: **functional** and **non-functional** testing.
 
-We can crudely divide the focus into two categories: **functional** and **non-functional** testing.
+**Functional Testing**: This aims to confirm that the application aligns with its intended behavior. When conducting functional testing, it's vital to adhere to task-specific requirements while also exploring potential shortcomings in these requirements.
 
-**Functional testing**
-
-The goal of functional testing is to verify that the application is behaving the way it was envisioned to.
-
-When doing functional testing, you should both rely on the requirements set out in a particular task, and think outside the box to find ways in which these requirements might be wrong or insufficient.
-
-**Non-functional testing:**
-
-Non-functional testing is used for testing those areas of a certain software product that is less concerned with "what it does" which doesn't make it any less important.
+**Non-functional Testing**: This type delves into aspects beyond the application's core functionality, which doesn't diminish its importance. This includes:
 
 - UI testing
 - Localization testing
@@ -131,6 +118,8 @@ Non-functional testing is used for testing those areas of a certain software pro
 - Security testing
 - etc.
 
+Bear in mind, these categories may not cover every aspect of testing but serve as a foundational guide.
+
 ### According to scope:
 
 Sometimes you don't want to test the entire app.
@@ -139,33 +128,28 @@ Sometimes you don't want to test the entire app.
 - Confirmation testing
 - Regression testing
 
-We use smoke testing to verify that a certain build of the product is stable enough to be further tested and that all major, obvious features are not heavily broken.
+We use smoke testing to ensure the stability of a product build before proceeding with extensive testing. It serves to confirm that major, evident features are not severely malfunctioning.
 
-Confirmation testing is done to check that a certain bugfix resolved a previous issue.
+Confirmation testing, on the other hand, validates whether a bugfix effectively resolves a known issue.
 
-Regression testing is used at certain milestone points in the app lifecycle (e.g. before the release) to catch some specific failing cases that might not have been tested often during development.
+Regression testing is strategically applied at specific milestones in the app's lifecycle, such as before release, to detect overlooked edge cases that may not have been thoroughly tested during development.
 
 
 ## What is exploratory testing?
 
 ![exp-vs-for.png](/img/exp-vs-for.png)
 
-**Exploratory testing** is probably the fastest and most efficient way of finding issues in software products, but it's not the only way nor just doing whatever you want.
+**Exploratory testing** is a swift and effective approach for uncovering software issues, but it isn't a free-for-all. It's akin to agile in contrast to the traditional waterfall method, as it drastically reduces preparation time by simultaneously designing and executing tests.
 
-Exploratory testing is to traditional testing what agile is to waterfall, it cuts the time taken to prepare yourself for testing to almost zero since in exploratory testing you **simultaneously design and execute the tests**.
+When engaging in exploratory testing, consider these steps:
 
-When doing exploratory testing you should:
+- Allocate a specific time frame (e.g., 2 hours).
+- Decide on the number of sessions and whether you'll test alone or with a partner.
+- Define a clear testing goal.
+- Choose an approach for testing.
+- Keep a record of your questions, steps, and identified issues.
 
-- Determine a time you will spend, e.g. 2 hours
-- Determine how many sessions you will have
-- Determine whether you will test alone or with someone else
-- Determine a goal of your testing
-- Determine an approach you will take
-- Write down all the questions you had
-- Write down the steps you have taken
-- Write down the issues you have found
-
-Sometimes, all of the above is planned via an **exploratory testing charter**. Other people really like using mind maps. In any case, the whole point is in investigating and freely exploring what you have set out to test. You will need to find out which test planning method works best for you.
+Sometimes, this planning is structured through an exploratory testing charter or visual aids like mind maps. The key is to investigate and freely explore your test objectives, adapting your planning method to suit your preferences.
 
 Read more on exploratory testing from [Cem Kaner](https://secureservercdn.net/198.71.189.51/13j.276.myftpupload.com/pdfs/QAIExploring.pdf) or [James Bach](https://www.satisfice.com/exploratory-testing).
 
