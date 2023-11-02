@@ -65,60 +65,58 @@ This will all be elaborated below, but here's a short **tl;dr** on what a projec
 
 ## A project's rhythm
 
-A project has its motions and paces. For you as a QA engineer, it will predictably speed up and slow down several times in its lifetime.
-
-This is how we can break down a typical software project in time.
+A project has its ebbs and flows. As a QA engineer, you can expect it to fluctuate in speed and intensity at various stages throughout its lifecycle. Let's dive into the breakdown of a typical software project timeline:
 
 ### Bizdev phase
 
-- **Description:** People doing business do some correspondence and sign some papers. Their job is very challenging, but it's not the focus of this Handbook.
+- **Description:** During this phase, business-related activities, correspondence, and paperwork take precedence. While essential, this phase is not the primary focus of this Handbook.
 
-- **Your obligations:** Basically none, you can have a cup of coffee.
+- **Your obligations:** Your involvement in this phase is minimal, giving you time to enjoy a cup of coffee.
 
 ### Research phase
 
-- **Description:** The design team works on brand/domain research and create a reference for the app's look and feel.
+- **Description:** The design team engages in brand and domain research, creating a reference for the app's aesthetics and user experience.
 
-- **Your obligations:** If you are versed in these matters, you can help out with interviews, brainstorming the flow, and giving input on the eventual look-and-feel. Sometimes we get involved, sometimes we won't.
+- **Your obligations:** If you have expertise in these areas, your assistance may be sought for interviews, brainstorming sessions, and input on the app's eventual look and feel. Your level of involvement may vary depending on the project.
 
 ### Design phase
 
-- **Description:** The design team works on UI elements, screens, microinteractions, and UX in general.
+- **Description:** The design team concentrates on UI elements, screens, microinteractions, and overall user experience.
 
-- **Your obligations:** You can help out by commenting on their solutions in person, on refinement meetings, or via Invision / Zeplin. If any usability testing is being conducted, you can certainly help out devise tests and execute them. Read more on how to collaborate with designers in this [blog post by Nikolina](https://infinum.co/the-capsized-eight/the-qa-fairy-godmother-10-practices-for-happily-ever-after).
+- **Your obligations:** You can contribute by offering feedback on their solutions during in-person discussions, refinement meetings, or through tools like Invision or Zeplin. If usability testing is conducted, you can assist in devising and executing tests. For more insights on collaborating with designers, refer to [Nikolina's blog post](https://infinum.co/the-capsized-eight/the-qa-fairy-godmother-10-practices-for-happily-ever-after).
 
 ### Pre-development phase
 
-- **Description:** On most projects, this is not a relevant phase for us, but we are mentioning it for the sake of completeness.
+- **Description:** While not applicable to most projects, this phase is mentioned for completeness.
 
-- **Your obligations:** Create a test strategy document which defines what will be tested, how it will be tested, who and when will test it, how testing will be documented, which criteria and KPIs will be used for assessing quality, etc. More on this later.
+- **Your obligations:** Your role is to create a comprehensive test strategy document outlining what will be tested, how, by whom, when, and how testing will be documented. It should also specify the criteria and KPIs for assessing quality.
 
 ### Development phase
 
-- **Description:** This is when the development team works on defining and coding the app.
+- **Description:** This is when the development team defines and codes the app.
 
-- **Your obligations:** Your job is to help define features, continously test new features, write test cases, automate testing, and report issues. The bulk of your work lives here.
+- **Your obligations:** Your primary responsibilities include feature definition, continuous testing of new features, test case creation, test automation, and issue reporting. The majority of your work occurs during this phase.
 
 ### Pre-release phase
 
-- **Description:** When the entire team prepares to release new code into production.
+- **Description:** This phase involves the entire team preparing to release new code into production.
 
-- **Your obligations:** Doing a regression test by using test documentation, doing update tests, singling out critical bugs and green-lighting the release. Additionally, sanity checking the app on Testflight and Google Play Beta and letting it out into the wilderness. This is the *make-it-or-break-it* phase.
+- **Your obligations:** You will conduct regression testing using test documentation, perform update tests, identify critical bugs, and give the green light for release. Additionally, you will sanity check the app on platforms like Testflight and Google Play Beta before releasing it to the public. This phase can make or break the project's success.
 
 ### Post-release phase
 
-- **Description:** When the team monitors the app's performance in order to find any unforeseen issues.
+- **Description:** In this phase, the team monitors the app's performance to detect any unforeseen issues.
 
-- **Your obligations:** Use Fabric, Firebase Crashlytics, Appbot, and other tools at your disposal to catch any major issues and report them back to the team.
+- **Your obligations:** Utilize tools such as Fabric, Firebase Crashlytics, Appbot, and others at your disposal to identify and report major issues back to the team.
 
 ### Always
 
-Whatever phase the project might be in, you can always:
+Irrespective of the project phase, you can always:
 
-- Help project managers with task management and definition
-- Help organize the team (scrums, design reviews, testing sessions, ad hoc meetings to reach consensus on issues...)
-- Help the client test and understand the app
-- Help maintain the team spirit
+- Assist project managers with task management and definition.
+- Play a role in organizing the team through activities like scrum meetings, design reviews, testing sessions, and ad hoc meetings to reach consensus on issues.
+- Help the client understand and test the app.
+- Contribute to maintaining a positive team spirit.
 
 ## Onboarding someone new to a project
 
