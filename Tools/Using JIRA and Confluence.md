@@ -226,3 +226,57 @@ To create a new test issue follow these steps:
 ## Additional resources
 
 - [Free Xray courses](https://academy.getxray.app/catalog/index)
+
+
+
+## Zephyr Scale
+
+Zephyr Scale is a versatile test management tool that can adapt to different development and testing methodologies, including both traditional (Waterfall) and Agile approaches. Its integration with Jira makes it particularly suitable for Agile teams, while its comprehensive test case management features benefit projects following Waterfall or other structured methodologies.
+
+
+### Core features and concepts
+
+**Test library**
+The Test Library is where you create, store, and organize your testing artifacts, including test cases, test cycles, and test plans. It serves as the central repository for all your testing needs, ensuring that your testing assets are well-structured and accessible. 
+
+**Test cases**
+Test cases are created in Test library, in the Test cases view.
+![Test library: Test cases view](/img/zephyr_test_library.png)
+
+They can be assigned to individual tester.
+![Create Test Case : Details tab](/img/zephyr_test_case_details.png)
+
+You can create detailed test scripts with step-by-step instructions, making it suitable for both traditional and Behavior-Driven Development (BDD) approaches. Additionally, plain text scripts are supported for simplicity.
+
+![Create Test Case: Test Script tab](/img/zephyr_test_script.png)
+
+
+**Call to test**
+When crafting test cases, Zephyr Scale allows you to import another test case as a step. This feature, known as 'Call to Test', streamlines your test case creation process by embedding all the steps from the referenced test case into the new one. It promotes reusability and reduces duplication of steps.
+
+![Call to test](/img/zephyr_call_to_test.jpeg)
+
+**Version control**
+Version control is another essential feature in Zephyr Scale. You can create multiple versions of a test case, each representing a distinct instance of that test. This versioning capability aids in tracking changes and ensures that historical test cases remain accessible. When running a test case, you have the flexibility to select the specific version you want to execute, enhancing test case management.
+
+![Version control](/img/zephyr_version control.png)
+
+**Traceability**
+Linking test artifacts to Requirements. When you create or edit any test artifact (test plan, test cycle, test case) in Zephyr Scale, you can associate it with specific requirements or user stories. 
+![Test case: Traceability](/img/zephyr_traceability.png)
+
+**Test cycles**
+Test cycles are collections of test cases organized to achieve specific testing objectives. They can be assigned to individual testers and associated with particular testing environments. Additionally, test cycles provide real-time insights by comparing estimated progress with actual results. This feature enhances test planning and execution efficiency.
+
+![Test library: Test Cycles view](/img/zephyr_test_cycles.jpeg)
+
+**Reports**
+Verious test report are easily generated and customizable. They can be tailored to meet specific project requirements. These reports offer valuable insights, aiding in the identification of key metrics, tracking testing progress, identifying defects, and supporting informed decision-making.
+![Reports](/img/zephyr_test_reports.png)
+
+
+**Additional resources**
+* [Zephyr Scale documentation](https://support.smartbear.com/zephyr-scale-server/docs/welcome.html)
+
+
+
