@@ -15,7 +15,7 @@ Here's how to get it up and running:
 
 5. Start your web browser and navigate to `localhost:8000` (`0.0.0.0:8000`). If the MobSF app starts, you are good to go.
 
-6. Drag and drop your .IPA or .APK file into MobSF and wait for the pen test to run.
+6. Drag and drop your .IPA or .APK file into MobSF and wait for the pen test to run!
 
 ## OWASP ZAP
 
