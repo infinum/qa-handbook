@@ -33,7 +33,7 @@ When you've gone through the app/feature, found bugs and opened tasks for them -
 
 Here are two examples of design reviews, one done in Figma, and one done in Sheets. Documentation is optional, but task opening is always mandatory.
 
-*A1, Figma file:*
+*Example of a design review in Figma:*
 
 ![Design review figma](/img/designreview_15.png)
 
