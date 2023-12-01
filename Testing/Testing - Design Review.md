@@ -43,7 +43,7 @@ Here are two examples of design reviews, one done in Figma, and one done in Shee
 
 
 
-*Edmond, Sheets:*
+*Example of a design review in Excel sheet:*
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto;">![Design review google sheets](/img/designreview_edmond.png)</span>
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto;">![design_review_in_excel.png](/img/design_review_in_excel.png)]</span>
 
