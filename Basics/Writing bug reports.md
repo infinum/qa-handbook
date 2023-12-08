@@ -16,24 +16,30 @@ The title can either be:
 - Or a description of the error.
 	- E.g. "The app crashes when I take a photo of myself"
 
+## Description
+
+Here user should describe short introduction to the bug where developers already could assume what is the main issue.
+
 ## Device/OS/App version info:
 
 The device could be any type of machine that is used during testing.
 E.g. “mobile device, computer, car display, home appliance”
 
-OS could be any piece of software the user is operating at times
+OS could be any piece of software the user is operating at times  
 E.g. “some car OS, tv OS, Firmware of appliances if needed, mobile OS, etc.”
 
-App version where bug occurred
+In the App Version/Build field - name the build on which you managed to reproduce the issue. Add the environment when needed same as URL or File of request/cURL.  
 E.g. “development environment, production environment, release candidate version of the app and their version”
 
 > Device: Pixel 8 (Android 14)
+> Version/Build: 2.0.1
 > Environment: Development
 
 or
 
 > Device: MacBook Air (macOS 14.1.2)  
-> Browser: Safari 17.1.2
+> Version/Build: 3.2.2  
+> Browser: Safari 17.1.2  
 > Environment: Production
 
 ### Prerequisites
@@ -108,9 +114,9 @@ One account could be connected to some appliance or some special configuration o
 It is helpful to address what is attached in the bug report in order to reproduce the bug more quickly like: app logs, crash logs, screen recording, and screenshots. Strive to attach screenshots and screen recordings every time.
 
 > Note:  
-> Screen recording; screenshot attached; Crashlytics, logs file attached
+> Screen recording; screenshot attached; Crashlytics; Logs file; Request file attached
 
-A full bug report would look like this:
+A full bug report for mobile app would look like this:
 
 >Title
 > User added Recipe to Favorites but tab is not refreshed right away
