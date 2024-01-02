@@ -214,11 +214,11 @@ To get more falimiar with testing WP forms, check out this video tutorial from E
 
 **Getting familiar with Eightshift forms**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=4BnTXHviZkI" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4BnTXHviZkI" frameborder="0" allowfullscreen></iframe>
 
 **Step-by-step guide to creating your first form**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=qcsr7QGFmV4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qcsr7QGFmV4" frameborder="0" allowfullscreen></iframe>
 
 
 ### 2. Integrations Testing
@@ -285,7 +285,7 @@ To get more falimiar with testing WP integrations, check out this video tutorial
 
 **Integrating third-party services**
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=r2KEVIkNt04" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r2KEVIkNt04" frameborder="0" allowfullscreen></iframe>
 
 **Syncing your forms with third-party integrations**
 
