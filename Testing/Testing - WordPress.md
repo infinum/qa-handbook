@@ -212,11 +212,11 @@ Here are some guidelines for testing WordPress forms and these integrations:
 
 To get more falimiar with testing WP forms, check out this video tutorial from Eightshift Development kit.
 
-Getting familiar with Eightshift forms
+**Getting familiar with Eightshift forms**
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=4BnTXHviZkI" frameborder="0" allowfullscreen></iframe>
 
-Step-by-step guide to creating your first form
+**Step-by-step guide to creating your first form**
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qcsr7QGFmV4" frameborder="0" allowfullscreen></iframe>
 
@@ -283,10 +283,10 @@ Jira integration in WordPress facilitates seamless issue tracking and project ma
 
 To get more falimiar with testing WP integrations, check out this video tutorial from Eightshift Development kit.
 
-Integrating third-party services
+**Integrating third-party services**
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=r2KEVIkNt04" frameborder="0" allowfullscreen></iframe>
 
-Syncing your forms with third-party integrations
+**Syncing your forms with third-party integrations**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JyfO328bq08" frameborder="0" allowfullscreen></iframe>
