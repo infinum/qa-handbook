@@ -6,6 +6,8 @@ WordPress is an open-source Content Management System (CMS), often used as a blo
 
 On this website, you can download and install a script called WordPress. For this, you need a web host that supports minimal requirements and little time. WordPress is fully customizable and can be used for almost anything.
 
+For additional information and tools mentioned in this article, check out the [Eightsgift DevKit.](https://eightshift.com/forms/welcome "Eightsgift DevKit.")
+
 ## How to use WordPress?
 
 There are several different roles a user can play. If you get an Administrator approach, you'll have absolute control of everything, the whole CMS system: adjusting settings, adding and changing content, installing plugins, themes, and many more. Of course, that also carries a lot of responsibility. You can seriously screw up something as the Administrator, and it can cost you dearly, so be careful. 
@@ -16,6 +18,7 @@ To access the WP admin page, you have to use: *{domain}/wp-login.php* (e.g., *ht
 After entering the correct data and clicking a Login button, you can access the WordPress system for content management/dashboard.
 
 <span style="display:block; border: 1px solid #e0e0e0; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:100%;">![wp_dashboard.png](/img/wp_dashboard.png)</span>
+
 
 ## WordPress dashboard
 
@@ -207,6 +210,12 @@ Here are some guidelines for testing WordPress forms and these integrations:
 
 **Spam Protection:** Implement anti-spam measures, such as CAPTCHA or honeypots, to prevent spam submissions.
 
+To get more falimiar with testing WP forms, check out this video tutorial from Eightshift Development kit.
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=4BnTXHviZkI" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=qcsr7QGFmV4" frameborder="0" allowfullscreen></iframe>
+
 ### 2. Integrations Testing
 
 **HubSpot Integration:**
@@ -267,4 +276,8 @@ Jira integration in WordPress facilitates seamless issue tracking and project ma
 - Ensure smooth communication between WordPress and Jira platforms.
 
 
+To get more falimiar with testing WP integrations, check out this video tutorial from Eightshift Development kit.
 
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=r2KEVIkNt04" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=JyfO328bq08" frameborder="0" allowfullscreen></iframe>
