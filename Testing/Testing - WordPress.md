@@ -280,4 +280,4 @@ To get more falimiar with testing WP integrations, check out this video tutorial
 
 <iframe width="560" height="315" src="https://www.youtube.com/watch?v=r2KEVIkNt04" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=JyfO328bq08" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/JyfO328bq08" frameborder="0" allowfullscreen></iframe>
