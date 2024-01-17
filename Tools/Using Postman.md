@@ -236,7 +236,8 @@ Great, now your collection will be run at the set time and you will be notified 
 
 Postman Flows is an excellent built in feature that can help QA in day-to-day work!
 
-Here is why: 
+Here is why:  
+
 - You can avoid scripting - This is a big plus for QA engineers without JS knowledge  
 
 - It is easy to connect data from a response to a new request (Add a block and choose desired data - no need for coding)  
