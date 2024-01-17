@@ -182,6 +182,4 @@ Fix by installing `ideviceinstaller` manually:
 
 ## Additional resources
 
-[Troubleshooting Appium](https://appium.io/docs/en/writing-running-appium/other/troubleshooting/)
-
-[Selenium/Appium Troubleshooting](https://developers.perfectomobile.com/pages/viewpage.action?pageId=19170351)
+[Appium docs: Troubleshooting Appium](https://appium.readthedocs.io/en/latest/en/writing-running-appium/other/troubleshooting/)
