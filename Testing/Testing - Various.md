@@ -45,7 +45,7 @@ Comparative testing is always a good thing to do, it could illuminate a lot of i
 The app uses cert pinning? Try a _man-in-the-middle attack_ with Charles and its root cert. No responses coming through? Good, the devs did their job.
 
 ### Compare to design
-Whenever testing a new feature, make sure to compare it to the agreed upon design (most often found on Zeplin or on Invision).
+Whenever testing a new feature, make sure to compare it to the agreed upon design (most often found in Figma).
 
 Pay close attention to:
 

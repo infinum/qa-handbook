@@ -25,7 +25,14 @@ Some cool books to jumpstart your QA career:
 - [Want Better Collaboration on Development Projects? Try BDD](https://infinum.com/the-capsized-eight/want-better-collaboration-on-development-projects-try-bdd)
 - [Writing API Tests? Postman Delivers](https://infinum.com/the-capsized-eight/postman-API-testing)
 - [You Think Your App Is Ready for Publishing? Well, Think Again.](https://infinum.com/the-capsized-eight/you-think-your-app-is-ready-for-publishing-well-think-again)
+- [How to Successfully Improve QA Testing Processes](https://infinum.com/blog/improve-qa-testing-process/)
+- [Can You Hear the Bug? – An Intro to Audio Software Testing](https://infinum.com/blog/audio-software-testing/)
+- [How to Get Started with Accessibility Testing](https://infinum.com/blog/how-to-get-started-with-accessibility-testing/)
+- [Don’t Think Twice, Take the ISTQB Foundation Level Exam](https://infinum.com/blog/istqb-foundation-level-exam/)
+- [Testing Flutter Apps – A QA Guide](https://infinum.com/blog/testing-flutter-apps-a-qa-guide/)
+- [How to Get Along with Developers without Group Therapy: A QA Guide](https://infinum.com/blog/developer-tester-relationship/)
 
+  
 ## Blog posts about writing blog posts 
 
 If  you will be writing a blog post here is a useful list of blog posts which contain good tips and tricks about writing blog posts:

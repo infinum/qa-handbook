@@ -33,7 +33,8 @@ When working on locators, it would be wise to have a page with a few examples, a
 
 Maybe the developers on the project already have an agreed way of working, so you could continue with that. The idea is to have somewhat similar-looking locators throughout the app.
 
-**NOTE:** 
+**NOTE:**
+ 
 - A "known issue" is when there are multiple child elements inside a parent element. For example, a LayoutView in Android might have multiple elements. Depending on the functionality, you will probably need a separate locator for each of those child elements. Otherwise, if a locator is put on the LayoutView, you will only get a better-looking XPath on the child elements. Think twice when considering elements that need a locator.
 
 

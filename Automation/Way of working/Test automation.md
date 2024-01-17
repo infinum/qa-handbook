@@ -34,8 +34,9 @@ Tests should be:
  - independent of other tests
 
 
-NOTE:
-- **After you are done writing a test, always check that it passes and fails when expected.**
+**NOTE:**
+
+- After you are done writing a test, always check that it passes and fails when expected.
 
 
 #### Independent tests
