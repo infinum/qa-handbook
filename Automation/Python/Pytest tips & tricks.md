@@ -45,7 +45,7 @@ Few things to have in mind when working with Fixtures and Hooks:
 
 ### How to use fixtures
 
-Pytest fixtures are sometime confusing. They cannot be called directly, as you would call a function. However, they can be called in various other ways.
+Pytest fixtures are sometimes confusing. They cannot be called directly, as you would call a function. However, they can be called in various other ways.
 
 Let's say we have a fixture named fixture_a.
 
