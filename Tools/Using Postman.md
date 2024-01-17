@@ -232,6 +232,22 @@ The collection monitor is a scheduled collection runner. Setting up the monitor,
 
 Great, now your collection will be run at the set time and you will be notified if one of your requests failed. 
 
+## Postman Flows 
+
+Postman Flows is an excellent built in feature that can help QA in day-to-day work!
+
+Here is why: 
+* You can avoid scripting - This is a big plus for QA engineers without JS knowledge
+* It is easy to connect data from a response to a new request (Add a block and choose desired data - no need for coding)
+* The “Output” block gives visual confirmation if for example test passed or failed
+* Storing data to a variable can be done without using an environment
+* Everything can be logged to the console - and from there, debugging is easy
+* Sensitive data stored in an environment variable can be used in a flow without exposing them
+* And the best thing is that Flows looks nice and clean
+
+Take a look at [flows](https://learning.postman.com/docs/postman-flows/gs/flows-overview/), they look cool! Right?
+ 
+
 ## Additional resources:
 
 Check out one of our blog posts: [Writing API Tests? Postman Delivers](https://infinum.com/the-capsized-eight/postman-API-testing)
