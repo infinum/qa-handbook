@@ -30,10 +30,17 @@ In that case, you will have to iterate over the list to find the correct element
 ### Accessibility ID
 
 You might come across information how the _Accessibility ID_ is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
-However, what is often not mentioned is that the _Accessibility ID_ is a string, susceptible to change. If the UI and accompanied strings change, you will also have to update your locators.
-This can especially become cumbersome if the changes often happen and if you only rely on that one locator strategy.
 
-Where the Accessibility ID comes in very handy are lists of elements. If you have a list of movies and how to get the specific one, you can locate it through its title, without having to write loops yourself.
+However, make sure you understand what is being used. Appium, for example, when using _Accessibility ID_ strategy recognizes `content-desc` on Android, and both `AccessibilityLabel` and `AccessibilityIdentifier` on iOS. Labels are susceptible to change. If the label changes, you will also have to update your locators. This can especially become cumbersome if the changes happen regularly and if you only rely on that one locator strategy.
+
+**NOTE:** 
+
+- Check the [Naming differences](https://infinum.com/handbook/qa/automation/locators/general#naming-differences) section for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
+- Make sure you are not abusing `content-desc` and `AccessibilityLabel` since it is primarily used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation.
+
+
+The _Accessibility ID_ comes in very handy when there are lists of elements without unique ID on each element. 
+For example, if you have a list of movies and want to get the specific one, you can locate it through its title, without having to write loops.
 
     def get_movie_by_title(self, movie_title):
         title_locator = {
@@ -41,11 +48,7 @@ Where the Accessibility ID comes in very handy are lists of elements. If you hav
             IOS: (AppiumBy.ACCESSIBILITY_ID, movie_title)
         }
 
-        return self.get_present_element(title_locator[config.PLATFORM])
-
-_Accessibility ID_ is very useful, but it is above all used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation!
-
-**NOTE:** Check the [Naming differences](https://infinum.com/handbook/qa/automation/locators/general#naming-differences) section for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
+        return self.get_visible_element(title_locator[config.PLATFORM])
 
 
 ### XPath
