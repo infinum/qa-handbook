@@ -239,26 +239,13 @@ Postman Flows is an excellent built in feature that can help QA in day-to-day wo
 Here is why:  
 
 
-* testWhen you want to verify the API abides by the spec
-* When you want to check if the API is returning the appropriate data
-* To write API tests
-* When something is not testable via the frontend app
-* When you want to set up your test environment quicklytest
-
-
-- You can avoid scripting - This is a big plus for QA engineers without JS knowledge  
-
-- It is easy to connect data from a response to a new request (Add a block and choose desired data - no need for coding)  
-
-- The “Output” block gives visual confirmation if, for example, the test passed or failed  
-
-- Storing data to a variable can be done without using an environment  
-
-- Everything can be logged to the console - and from there, debugging is easy  
-
-- Sensitive data stored in an environment variable can be used in a flow without exposing them  
-
-- And the best thing is that Flows look nice and clean  
+* You can avoid scripting - This is a big plus for QA engineers without JS knowledge
+* It is easy to connect data from a response to a new request (Add a block and choose desired data - no need for coding)
+* The “Output” block gives visual confirmation if, for example, the test passed or failed
+* Storing data to a variable can be done without using an environment
+* Everything can be logged to the console - and from there, debugging is easy
+* Sensitive data stored in an environment variable can be used in a flow without exposing them
+* And the best thing is that Flows look nice and clean
 
 
 Take a look at [flows](https://learning.postman.com/docs/postman-flows/gs/flows-overview/), they look cool! Right?
