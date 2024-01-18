@@ -238,6 +238,14 @@ Postman Flows is an excellent built in feature that can help QA in day-to-day wo
 
 Here is why:  
 
+
+* testWhen you want to verify the API abides by the spec
+* When you want to check if the API is returning the appropriate data
+* To write API tests
+* When something is not testable via the frontend app
+* When you want to set up your test environment quicklytest
+
+
 - You can avoid scripting - This is a big plus for QA engineers without JS knowledge  
 
 - It is easy to connect data from a response to a new request (Add a block and choose desired data - no need for coding)  
