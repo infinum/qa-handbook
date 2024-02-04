@@ -29,6 +29,48 @@ conftest.py
 ```
 
 
+### Fixtures and Hooks
+
+Fixtures are defined using the `@pytest.fixture` decorator. They ensure the setup and teardown of resources before and after tests, providing a clean and consistent testing environment. 
+Hooks are used for customizing the behavior of the testing framework itself and they are triggered at specific points during the test execution process. 
+
+Few things to have in mind when working with Fixtures and Hooks:
+
+- Fixtures are created when first requested by a test, and are destroyed based on their scope. Possible values for scope are `function` (default), `class`, `module`, `package` or `session`.
+- Hooks do not have scope.
+- Hook functions can be grouped into plugins. 
+- You can use hooks to customize test reporting.
+- Fixtures cannot be called from a Hook function.
+
+
+### How to use fixtures
+
+Pytest fixtures are sometimes confusing. They cannot be called directly, as you would call a function. However, they can be called in various other ways.
+
+Let's say we have a fixture named fixture_a.
+
+```python
+@pytest.fixture
+def fixture_a():
+    ...
+```
+
+To call `fixture_a` on a class, we have to use the `@pytest.mark.usefixtures` marker.
+
+```python
+@pytest.mark.usefixtures("fixture_a")
+class SomeClass:
+    ...
+```
+
+To call `fixture_a` on a function, you have to pass it as an argument.
+
+```python
+def test_one(fixture_a):
+    ...
+```
+
+
 ### Autouse
 
 Let's say there is some code that you want to run before or after every test, but you do not want to call it every time. `autouse` option comes in handy. By setting the `autouse` parameter in a fixture to `True`, it is called automatically.
@@ -51,20 +93,6 @@ def fixture_b(driver):
 ```
 
 Check the docs on [autouse](https://docs.pytest.org/fixture.html#autouse-fixtures-fixtures-you-don-t-have-to-request) for more details.
-
-
-### Fixtures and Hooks
-
-Fixtures are defined using the `@pytest.fixture` decorator. They ensure the setup and teardown of resources before and after tests, providing a clean and consistent testing environment. 
-Hooks are used for customizing the behavior of the testing framework itself and they are triggered at specific points during the test execution process. 
-
-Few things to have in mind when working with Fixtures and Hooks:
-
-- Fixtures are created when first requested by a test, and are destroyed based on their scope. Possible values for scope are `function` (default), `class`, `module`, `package` or `session`.
-- Hooks do not have scope.
-- Hook functions can be grouped into plugins. 
-- You can use hooks to customize test reporting.
-- Fixtures cannot be called from a Hook function.
 
 
 ### Soft asserts
