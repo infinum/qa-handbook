@@ -126,11 +126,12 @@ capabilities = {
 
 
 **NOTE:**
-- Some capabilities should be combined since they might interfere with each other.
-  - See [Reset Strategies](https://appium.readthedocs.io/en/stable/en/writing-running-appium/other/reset-strategies/) for more details.
-- If you use `autoAcceptAlerts` (iOS only), it could happen that some of the native app dialogs get accepted / declined when you don't expect it.
-  - You might want to avoid this capability and handle the dialogs within the test.
-- If using `useNewWDA`, it might not work as expected due to Apple restrictions.
-  - Set it to true if you want to apply different startup options for WebDriverAgent for each session.
-  - It should be stable on Simulator. However, it gets tricky with real devices. 
-  - For real devices it is better to have WebDriverAgent client installed manually, without having it reinstalled during each session.
+
+* Some capabilities should be combined since they might interfere with each other.
+  * See [Reset Strategies](https://appium.readthedocs.io/en/stable/en/writing-running-appium/other/reset-strategies/) for more details.
+* If you use `autoAcceptAlerts` (iOS only), it could happen that some of the native app dialogs get accepted / declined when you don't expect it.
+  * You might want to avoid this capability and handle the dialogs within the test.
+* If using `useNewWDA`, it might not work as expected due to Apple restrictions.
+  * Set it to true if you want to apply different startup options for WebDriverAgent for each session.
+  * It should be stable on Simulator. However, it gets tricky with real devices. 
+  * For real devices it is better to have WebDriverAgent client installed manually, without having it reinstalled during each session.
