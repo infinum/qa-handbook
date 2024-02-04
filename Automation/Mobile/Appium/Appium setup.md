@@ -36,7 +36,7 @@ The easiest way to install Android SDK tools is through Android Studio.
 8. Click _Apply_ and wait for the packages to install
 
 
-![android_studio_sdk.png](..%2F..%2F..%2Fimg%2Fandroid_studio_sdk.png)
+![android_studio_sdk.png](/img/android_studio_sdk.png)
 
 #### Environment variables
 
@@ -79,7 +79,7 @@ See [Installing Appium 2.0](https://appiumpro.com/editions/122-installing-appium
    - Run the `appium-doctor` command in the terminal
    - The necessary dependencies should have a green check mark
 
-![troubleshooting_appium_appium_doctor.png](..%2F..%2F..%2Fimg%2Ftroubleshooting_appium_appium_doctor.png)
+![troubleshooting_appium_appium_doctor.png](/img/troubleshooting_appium_appium_doctor.png)
 
 
 #### Capabilities
