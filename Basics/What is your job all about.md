@@ -13,7 +13,7 @@ Your role is twofold:
 - As a **software tester**, your job is to take a good, hard, intelligent look at whatever software product you're currently working on in order to tease out the bugs, inconsistencies, ugliness and general sloppiness which is part and parcel of software development.
 - As a **quality assurance engineer**, your job is to look above and beyond any particular implementation in order to improve the quality of both the project at hand and the processes leading to it. This is also known as the [shift left](https://en.wikipedia.org/wiki/Shift_left_testing) approach.
 
-![st-qc-qa.jpg](/img/st-qc-qa.jpg)
+<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:65%;">![st-qc-qa.png](/img/st-qc-qa.png)</span>
 
 Your ultimate goal is to help the company develop and deploy the best possible products within the usual constraints of time, budget, complexity, and client stubbornness.
 
