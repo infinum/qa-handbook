@@ -9,7 +9,7 @@ Each software project in active development will usually have one or more member
 - **Development team** (backend, frontend, iOS, Android, Flutter, Wordpress...)
 - **Design team**
 - **Project management team**
-- **Product Data Analytics**
+- **Product data analytics team**
 - **QA team**
 
 These people make up a project team. The role of the project team is to:
