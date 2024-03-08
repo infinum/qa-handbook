@@ -57,6 +57,7 @@ When creating a PR, make sure:
 You, the developer that opened the PR, are responsible for merging it to the target branch.
 
 You can merge the pull request when: 
+
 * The agreed number of reviewers have checked and approved it
 * All comments and tasks have been resolved
     * The developer that opened a comment or a task is the one that closes it after the updates have been implemented and checked
