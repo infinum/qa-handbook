@@ -125,6 +125,25 @@ You can also see the request content and preview it in one of the following opti
 
 ![MacDown Screenshot](/img/network-headers.png )
 
+### Lighthouse
+
+Lighthouse is a tool used for analyzing web apps and web pages. It collects performance, accessibility, SEO metrics, and more. It's integrated directly into the Chrome DevTools, under the "Lighthouse" panel.
+
+![MacDown Screenshot](/img/lighthouse.png )
+
+To generate a Lighthouse report, go to the web page you want to test, open Lighthouse from Dev Tools, select Mode, Device, and categories, and click the Analyze page load button. Once the report is generated, it will give you 4 core aspects about Performance, Accessibility, Best Practices, and SEO. On the right side there is a menu with options to print, copy, or download report.
+
+![MacDown Screenshot](/img/lighthouse-report.png )
+
+For each aspect you will get a diagnostics report with a score and some insights on how to improve your web app. Scores are calculated from metrics and can be in the range 0-100. 
+Looking at the Diagnostics you can identify things that can be changed to improve specific aspects of the tested web app. 
+When it comes to Performance, you can see if some heavy-loading images are causing the web app to load slowly (Largest Contentful Paint element) or some other suggestions that can lead to potential savings in timing. 
+Similarly, you can detect potential accessibility issues and address them to improve web apps and make them usable by people with disabilities.
+
+![MacDown Screenshot](/img/lighthouse-diagnostics.png )
+
+Metrics from Lighthouse reports are used in Google rankings as well, so having a good Lighthouse score can be helpful to rank your web page higher.
+
 ### How to clear cache, cookies, session and local storage
 
 Pages are cached in every browser. The main reason for that is that the operating system keeps a page cache in order to save the memory(RAM) and improve device and page performance.
