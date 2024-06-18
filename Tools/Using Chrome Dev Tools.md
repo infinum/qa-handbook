@@ -144,6 +144,12 @@ Similarly, you can detect potential accessibility issues and address them to imp
 
 Metrics from Lighthouse reports are used in Google rankings as well, so having a good Lighthouse score can be helpful to rank your web page higher.
 
+Consider taking further actions if needed when you get the report. For example:
+
+* open a bug report
+* open an improvement task
+* reach out to project team members and discuss your findings and potential concerns
+
 ### How to clear cache, cookies, session and local storage
 
 Pages are cached in every browser. The main reason for that is that the operating system keeps a page cache in order to save the memory(RAM) and improve device and page performance.
