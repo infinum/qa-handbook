@@ -249,7 +249,6 @@ Here is why:
 
 
 Take a look at [flows](https://learning.postman.com/docs/postman-flows/gs/flows-overview/), they look cool! Right?
- 
 
 ## Additional resources:
 
