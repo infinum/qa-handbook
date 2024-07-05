@@ -1,0 +1,5 @@
+In order to effectively test any software, we need to have a solid understanding of not only the application itself, but also the underlying infrastructure that supports it. These days, applications are rarely standalone - they interact with databases, depend on various services, utilize different environments, and run on complex platforms. Understanding the underlying factor greatly enhances our ability to test effectively and precisely, write comprehensive and accurate test cases, and generate meaningful bug reports.
+
+In this section we provide an overview of key infrastructure concepts that play vital roles in a software development lifecycle. From understanding various environments, differentiating between frontend and backend, to demystifying terms like Docker, Kubernetes, CI/CD, we talk about these topics in a concise and simplified way.
+
+Remember, a tester with a good grasp of infrastructure can better understand how applications function, how they interact with various components, and where potential weaknesses may lie. The broadened perspective enhances your testing strategies and ultimately contributes to building better software.
