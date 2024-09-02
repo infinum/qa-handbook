@@ -7,48 +7,47 @@ Just in case, you decide to go online to search for some useful information in h
 First, you come across blog posts and articles naming different locators without saying much about them.
 Then, you read about people having different opinions. For some, ID is the best approach, others prefer Accessibility ID, and then there are those that only use XPath.
 Finally, you hear people arguing about which one is faster, as if the difference is measured in days and not milliseconds.
-And then you get confused.
+And now you are confused.
 
 Which one to choose?
-Generally speaking, just go with the most reliable one. 
-If it works 100% of the time (always returns the correct element), is less prone to change (you don't need to update it often or at all), and does not break or slow down your tests drastically, that's the one.
+You want the most reliable one, pretty much regardless of the strategy. If it works 100% of the time (always returns the correct element) that is it. 
+Generally, the most reliable one is less prone to change (you don't need to update it often, or at all), and does not slow down your tests execution time too much compared to other strategies.
 
-However, there is more to think about when choosing the right locator, and it doesn't matter whether you like the looks of it or whether it is slightly faster than the other ones.
-Often you realize the issue when you come across it.
 
 ## A bit more about locators
 
 ### ID
 
-_ID_ will often be unique which makes it a great choice. It is often used by developers and might already be present on most elements.
+_ID_ is mostly unique which makes it a great choice. It is used by developers and might already be present on most elements.
 
-But it might not always be unique. 
-In a list of items, all elements might have the same ID (that is, `resource-id` on Android, `AccessibilityIdentifier` on iOS).
-In that case, you will have to iterate over the list to find the correct element. Or try using another locator which won't require additional code, such as Accessibility ID.
+It might not always be unique. 
+In a list of items, all elements might have the same ID (that is, `resource-id` (Android), `accessibility id` / `name` (iOS)).
+In that case, you have to iterate over the list to find the correct element. Or try using another strategy which won't require additional code, such as finding the element by Accessibility ID.
 
 
 ### Accessibility ID
 
 You might come across information how the _Accessibility ID_ is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
 
-However, make sure you understand what is being used. Appium, for example, when using _Accessibility ID_ strategy recognizes `content-desc` on Android, and both `AccessibilityLabel` and `AccessibilityIdentifier` on iOS. Labels are susceptible to change. If the label changes, you will also have to update your locators. This can especially become cumbersome if the changes happen regularly and if you only rely on that one locator strategy.
-
-**NOTE:** 
-
-- Check the [Naming differences](https://infinum.com/handbook/qa/automation/locators/general#naming-differences) section for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
-- Make sure you are not abusing `content-desc` and `AccessibilityLabel` since it is primarily used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation.
-
+However, make sure you understand what is being used. When using _Accessibility ID_ strategy, Appium looks for `ContentDescription` on Android, and both `AccessibilityLabel` and `AccessibilityIdentifier` on iOS. `ContentDescription` and `AccessibilityLabel` define labels (text) that is shown in the UI. Labels are susceptible to change. If the label changes, you also have to update your locators. This can especially become cumbersome if the changes happen regularly and if you only rely on this locator strategy.
 
 The _Accessibility ID_ comes in very handy when there are lists of elements without unique ID on each element. 
 For example, if you have a list of movies and want to get the specific one, you can locate it through its title, without having to write loops.
 
-    def get_movie_by_title(self, movie_title):
-        title_locator = {
-            ANDROID: (AppiumBy.ACCESSIBILITY_ID, movie_title),
-            IOS: (AppiumBy.ACCESSIBILITY_ID, movie_title)
-        }
+```python
+def get_movie_by_title(self, movie_title: str):
+    title_locator = {
+        ANDROID: (AppiumBy.ACCESSIBILITY_ID, movie_title),
+        IOS: (AppiumBy.ACCESSIBILITY_ID, movie_title)
+    }
 
-        return self.get_visible_element(title_locator[config.PLATFORM])
+    return self.get_visible_element(title_locator[config.PLATFORM])
+```
+
+**NOTE:** 
+
+- Check the [Naming differences](https://infinum.com/handbook/qa/automation/locators/general#naming-differences) section for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
+- Make sure you are not abusing `accessibility id` since it is primarily used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation.
 
 
 ### XPath
@@ -91,6 +90,7 @@ Better:
 
 `#login-form .sign-in-button`
 
+
 ## Inspecting elements
 
 ### Web
@@ -105,7 +105,7 @@ To find the locator and attribute values of an element on mobile, you can use [A
 
 While inspecting an iOS app with Appium Inspector, you might come across some issues, like not being able to see the element properly. 
 In that case, try using the Xcode Accessibility Inspector.
-There you will see the _Accessibility ID_ under the **Identifier** property.
+Accessibility Inspector shows the _Accessibility ID_ under the **Identifier** property.
 
 Open Accessibility Inspector:
 
@@ -119,36 +119,48 @@ While in the Accessibility Inspector, select the device you want to inspect in t
 
 ## Naming differences
 
-When talking about mobile, namely Appium, there are some naming differences that add confusion.
+There are some naming differences that add to the confusion when comparing Appium, Android and iOS terminology.
 
-When locating an element by **ID**, Appium looks for `resource-id` value on Android and `name` on iOS:
+### AppiumBy.ID
 
-        title_locator = {
-            ANDROID: (AppiumBy.ID, "some_resource_id"),
-            IOS: (AppiumBy.ID, "some_name")
-        }
+When locating an element using **AppiumBy.ID**, Appium looks for `Resource ID` value on Android, and `AccessibilityIdentifier` on iOS.
 
-When locating an element by **Accessibility ID**, Appium looks for `content-desc` value on Android and `accessibilityIdentifier` on iOS:
-
-        title_locator = {
-            ANDROID: (AppiumBy.ACCESSIBILITY_ID, "some_content_desc"),
-            IOS: (AppiumBy.ACCESSIBILITY_ID, "some_accessibility_identifier")
-        }
+When inspecting the app using Appium Inspector you will see attributes:
+- `id` and `resource-id` showing the value of `Resource ID` (Android)
+- `accessibility id` and `name` showing the value of `AccessibilityIdentifier` (iOS)
 
 
-| Locator strategy | Appium           | Android      | iOS                            |
-|:-----------------|:-----------------|:-------------|:-------------------------------|
-| ACCESSIBILITY_ID | accessibility id | content-desc | accessibilityLabel*            |
-| ID               | id / name        | resource-id  | accessibilityIdentifier*       |
+### AppiumBy.ACCESSIBILITY_ID
+
+When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android and both `AccessibilityLabel` and `AccessibilityIdentifier` on iOS. 
+
+When inspecting the app using Appium Inspector you will see attributes:
+- `accessibility id` and `content-desc` showing the value of `ContentDescription` (Android)
+- `accessibility id` showing the value of `AccessibilityLabel` or `AccessibilityIdentifier`, `name` showing the value of `AccessibilityIdentifier`, and  `label` showing the value of `AccessibilityLabel` (iOS)
+
+Using `AppiumBy.ACCESSIBILITY_ID` might seem a bit confusing, especially for iOS. Just think of it as using a visible text to get an element.
 
 
-\***NOTE:**
+Hopefully the table makes things a bit clearer. It shows the values that you get depending on the locator strategy that you use. Android and iOS columns show the values implemented in the app.
 
-- `name` is mentioned in the Appium documentation as a native element identifier that Appium looks for when finding an element by ID on iOS. However, iOS developers don't have the option to set the `name`, which might get a bit confusing. To identify an element, the iOS developers should use [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier). When `accessibilityIdentifier` is set on an element, Appium recognizes that value as ID, and in Appium Inspector it is shown under the `name` attribute. In your code you can get it by using `AppiumBy.ID` locator stragety.
+| Locator strategy | Appium Inspector   | Android            | iOS                                          |
+|:-----------------|:-------------------|:-------------------|:---------------------------------------------|
+| ID               | id                 | Resource ID        |                                              |
+| ID               | resource-id        | Resource ID        |                                              |
+| ID               | name               |                    | AccessibilityIdentifier                      |
+| ID               | accessibility id   |                    | AccessibilityIdentifier                      |
+| ACCESSIBILITY_ID | accessibility id   | ContentDescription | AccessibilityLabel / AccessibilityIdentifier |
+| ACCESSIBILITY_ID | content-desc       | ContentDescription | AccessibilityLabel                           |
+| ACCESSIBILITY_ID | label              |                    | AccessibilityLabel                           |
 
-- if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as `accessibility id`
-  - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
-  - `accessibilityIdentifier` should have a different format to avoid finding multiple elements
+
+**NOTE:**
+
+- Appium documentation mentions `name` as a native element identifier that Appium looks for when finding an element by ID on iOS. However, iOS does not have the `name` attribute. To set the ID, the iOS uses [AccessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier)
+
+- if `AccessibilityLabel` has the same value as `AccessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as `accessibility id`
+  - [AccessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
+  - `AccessibilityIdentifier` should use a different format to avoid confusion and retain uniqueness
 
 
 ## Requesting new / additional IDs
@@ -156,7 +168,7 @@ When locating an element by **Accessibility ID**, Appium looks for `content-desc
 When adding new IDs, there are a few things to consider:
 
 - On which element do you want to have the ID added?
-- Will the developer be able to add the ID to the desired element?
+- Is developer able to add the ID to the desired element?
 - What should the ID look like?
 
 It gets tricky, for example, when adding an ID to a LayoutView which holds multiple text elements. The result might not be what you expected.
