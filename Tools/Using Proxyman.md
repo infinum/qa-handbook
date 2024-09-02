@@ -8,7 +8,7 @@
 
 * It is relatively easy to use even for newbies 
 * For quick testing whether you are a tester or developer 
-* It's basically the same tool as [Charles](https://infinum.com/handbook/books/qa/tools/using-charles) but it has a few more features 
+* It's basically the same tool as Charles but it has a few more features 
 * It can be used to share VPN from Mac to your mobile device 
 
 ### When to use Proxyman?
