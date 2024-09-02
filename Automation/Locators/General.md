@@ -29,7 +29,7 @@ In that case, you have to iterate over the list to find the correct element. Or 
 
 You might come across information how the _Accessibility ID_ is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
 
-However, make sure you understand what is being used. When using _Accessibility ID_ strategy, Appium looks for `ContentDescription` on Android, and both `AccessibilityLabel` and `AccessibilityIdentifier` on iOS. `ContentDescription` and `AccessibilityLabel` define labels (text) that is shown in the UI. Labels are susceptible to change. If the label changes, you also have to update your locators. This can especially become cumbersome if the changes happen regularly and if you only rely on this locator strategy.
+However, make sure you understand what is being used. When using _Accessibility ID_ strategy, Appium looks for `ContentDescription` on Android, and both `accessibilityLabel` and `accessibilityIdentifier` on iOS. `ContentDescription` and `accessibilityLabel` define labels (text) that is shown in the UI. Labels are susceptible to change. If the label changes, you also have to update your locators. This can especially become cumbersome if the changes happen regularly and if you only rely on this locator strategy.
 
 The _Accessibility ID_ comes in very handy when there are lists of elements without unique ID on each element. 
 For example, if you have a list of movies and want to get the specific one, you can locate it through its title, without having to write loops.
@@ -123,22 +123,22 @@ There are some naming differences that add to the confusion when comparing Appiu
 
 ### AppiumBy.ID
 
-When locating an element using **AppiumBy.ID**, Appium looks for `Resource ID` value on Android, and `AccessibilityIdentifier` on iOS.
+When locating an element using **AppiumBy.ID**, Appium looks for `Resource ID` value on Android, and `accessibilityIdentifier` on iOS.
 
 When inspecting the app using Appium Inspector you will see attributes:
 
 - `id` and `resource-id` showing the value of `Resource ID` (Android)
-- `accessibility id` and `name` showing the value of `AccessibilityIdentifier` (iOS)
+- `accessibility id` and `name` showing the value of `accessibilityIdentifier` (iOS)
 
 
 ### AppiumBy.ACCESSIBILITY_ID
 
-When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android and both `AccessibilityLabel` and `AccessibilityIdentifier` on iOS. 
+When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android and both `accessibilityLabel` and `accessibilityIdentifier` on iOS. 
 
 When inspecting the app using Appium Inspector you will see attributes:
 
 - `accessibility id` and `content-desc` showing the value of `ContentDescription` (Android)
-- `accessibility id` showing the value of `AccessibilityLabel` or `AccessibilityIdentifier`, `name` showing the value of `AccessibilityIdentifier`, and  `label` showing the value of `AccessibilityLabel` (iOS)
+- `accessibility id` showing the value of `accessibilityLabel` or `accessibilityIdentifier`, `name` showing the value of `accessibilityIdentifier`, and  `label` showing the value of `accessibilityLabel` (iOS)
 
 Using `AppiumBy.ACCESSIBILITY_ID` might seem a bit confusing, especially for iOS. Just think of it as using a visible text to get an element.
 
@@ -149,20 +149,20 @@ Hopefully the table makes things a bit clearer. It shows the values that you get
 |:-----------------|:-------------------|:-------------------|:---------------------------------------------|
 | ID               | id                 | Resource ID        |                                              |
 | ID               | resource-id        | Resource ID        |                                              |
-| ID               | name               |                    | AccessibilityIdentifier                      |
-| ID               | accessibility id   |                    | AccessibilityIdentifier                      |
-| ACCESSIBILITY_ID | accessibility id   | ContentDescription | AccessibilityLabel / AccessibilityIdentifier |
-| ACCESSIBILITY_ID | content-desc       | ContentDescription | AccessibilityLabel                           |
-| ACCESSIBILITY_ID | label              |                    | AccessibilityLabel                           |
+| ID               | name               |                    | accessibilityIdentifier                      |
+| ID               | accessibility id   |                    | accessibilityIdentifier                      |
+| ACCESSIBILITY_ID | accessibility id   | ContentDescription | accessibilityLabel / accessibilityIdentifier |
+| ACCESSIBILITY_ID | content-desc       | ContentDescription | accessibilityLabel                           |
+| ACCESSIBILITY_ID | label              |                    | accessibilityLabel                           |
 
 
 **NOTE:**
 
-- Appium documentation mentions `name` as a native element identifier that Appium looks for when finding an element by ID on iOS. However, iOS does not have the `name` attribute. To set the ID, the iOS uses [AccessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier)
+- Appium documentation mentions `name` as a native element identifier that Appium looks for when finding an element by ID on iOS. However, iOS does not have the `name` attribute. To set the ID, the iOS uses [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier)
 
-- if `AccessibilityLabel` has the same value as `AccessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as `accessibility id`
-  - [AccessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
-  - `AccessibilityIdentifier` should use a different format to avoid confusion and retain uniqueness
+- if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as `accessibility id`
+  - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
+  - `accessibilityIdentifier` should use a different format to avoid confusion and retain uniqueness
 
 
 ## Requesting new / additional IDs
