@@ -126,6 +126,7 @@ There are some naming differences that add to the confusion when comparing Appiu
 When locating an element using **AppiumBy.ID**, Appium looks for `Resource ID` value on Android, and `AccessibilityIdentifier` on iOS.
 
 When inspecting the app using Appium Inspector you will see attributes:
+
 - `id` and `resource-id` showing the value of `Resource ID` (Android)
 - `accessibility id` and `name` showing the value of `AccessibilityIdentifier` (iOS)
 
@@ -135,6 +136,7 @@ When inspecting the app using Appium Inspector you will see attributes:
 When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android and both `AccessibilityLabel` and `AccessibilityIdentifier` on iOS. 
 
 When inspecting the app using Appium Inspector you will see attributes:
+
 - `accessibility id` and `content-desc` showing the value of `ContentDescription` (Android)
 - `accessibility id` showing the value of `AccessibilityLabel` or `AccessibilityIdentifier`, `name` showing the value of `AccessibilityIdentifier`, and  `label` showing the value of `AccessibilityLabel` (iOS)
 
