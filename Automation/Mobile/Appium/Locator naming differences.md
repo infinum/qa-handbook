@@ -2,7 +2,7 @@
 
 There are some naming differences that add to the confusion when comparing Appium, Android and iOS terminology. Namely, when using `AppiumBy.ID` and `AppiumBy.ACCESSIBILITY_ID`.
 
-To help with understanding, it is best to use Appium Inspector to visualize the differences.
+To help with understanding, it is useful to use Appium Inspector to visualize the differences.
 
 Appium Inspector displays two useful sections on the right-hand side, Find By and Attribute.
 - **Find By** shows (some) locator strategies you could use to find the selected element, and the value it returns
@@ -17,56 +17,64 @@ By using both the Find By and Attribute sections in Appium Inspector, you can ef
 
 When locating an element using **AppiumBy.ID**, Appium looks for the `Resource ID` value on Android and the `accessibilityIdentifier` on iOS.
 
-When inspecting the app using Appium Inspector you see:
-
-**Available strategies**
-
-- `id`showing the value of `Resource ID` (Android)
-- `accessibility id` showing the value of `accessibilityIdentifier` (iOS)
-
-**Available attributes**
-
-- `resource-id` showing the value of `Resource ID` (Android)
-- `name` showing the value of `accessibilityIdentifier` (iOS)
-
 
 ### AppiumBy.ACCESSIBILITY_ID
 
-When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android and both `accessibilityLabel` and `accessibilityIdentifier` on iOS. 
-
-When inspecting the app using Appium Inspector you see:
-
-**Available strategies**
-
-- `accessibility id` showing the value of `ContentDescription` (Android)
-- `accessibility id` showing the value of `accessibilityLabel` or `accessibilityIdentifier` (iOS)
-
-**Available attributes**
-
-- `content-desc` showing the value of `ContentDescription` (Android)
-- `name` showing the value of `accessibilityIdentifier`, and  `label` showing the value of `accessibilityLabel` (iOS)
+When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android, and both `accessibilityLabel` and `accessibilityIdentifier` on iOS. 
 
 Using `AppiumBy.ACCESSIBILITY_ID` might seem a bit confusing, especially for iOS. Just think of it as using a visible text to get an element.
 
+
+### Appium Inspector
+
+When inspecting the app with Appium Inspector you see the available strategies shown in the **Find By** section, and element attributes in the **Attribute** section.
+
+**Find By**
+
+For Android
+
+- `id`shows the value of `Resource ID`
+- `accessibility id` shows the value of `ContentDescription`
+
+For iOS
+
+- `accessibility id` shows the value of `accessibilityLabel` or `accessibilityIdentifier`
+
+
+**Attribute**
+
+For Android
+
+- `resource-id` shows the value of `Resource ID`
+- `content-desc` shows the value of `ContentDescription`
+
+For iOS
+
+- `name` shows the value of `accessibilityIdentifier`
+- `label` shows the value of `accessibilityLabel`
+
+
 ### Table: Locator strategies in Appium Inspector
+
 The table shows different locator strategies used in Appium, and corresponding strategy shown in Appium Inspector, and properties that are set on mobile platforms.
 
-| Locator strategy | Appium Inspector   | Android            | iOS                                          |
-|:-----------------|:-------------------|:-------------------|:---------------------------------------------|
-| ID               | id                 | Resource ID        |                                              |
-| ID               | accessibility id   |                    | accessibilityIdentifier                      |
-| ACCESSIBILITY_ID | accessibility id   | ContentDescription | accessibilityLabel / accessibilityIdentifier |
+| Appium Inspector   | Android            | iOS                                          |
+|:-------------------|:-------------------|:---------------------------------------------|
+| id                 | Resource ID        |                                              |
+| accessibility id   |                    | accessibilityIdentifier                      |
+| accessibility id   | ContentDescription | accessibilityLabel / accessibilityIdentifier |
 
 
 ### Table: Element attributes in Appium Inspector
+
 The table shows different element attributes found by Appium, and corresponding values shown in Appium Inspector, as well as properties that are set on mobile platforms.
 
-| Locator strategy | Appium Inspector   | Android            | iOS                                          |
-|:-----------------|:-------------------|:-------------------|:---------------------------------------------|
-| ID               | resource-id        | Resource ID        |                                              |
-| ID               | name               |                    | accessibilityIdentifier                      |
-| ACCESSIBILITY_ID | content-desc       | ContentDescription | accessibilityLabel                           |
-| ACCESSIBILITY_ID | label              |                    | accessibilityLabel                           |
+| Appium Inspector   | Android            | iOS                                          |
+|:-------------------|:-------------------|:---------------------------------------------|
+| resource-id        | Resource ID        |                                              |
+| name               |                    | accessibilityIdentifier                      |
+| content-desc       | ContentDescription | accessibilityLabel                           |
+| label              |                    | accessibilityLabel                           |
 
 
 ### How to set specific locator in the app
