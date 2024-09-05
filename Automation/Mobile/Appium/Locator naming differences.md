@@ -61,7 +61,6 @@ The table shows different locator strategies used in Appium, and corresponding s
 | Appium Inspector   | Android            | iOS                                          |
 |:-------------------|:-------------------|:---------------------------------------------|
 | id                 | Resource ID        |                                              |
-| accessibility id   |                    | accessibilityIdentifier                      |
 | accessibility id   | ContentDescription | accessibilityLabel / accessibilityIdentifier |
 
 
@@ -69,12 +68,12 @@ The table shows different locator strategies used in Appium, and corresponding s
 
 The table shows different element attributes found by Appium, and corresponding values shown in Appium Inspector, as well as properties that are set on mobile platforms.
 
-| Appium Inspector   | Android            | iOS                                          |
-|:-------------------|:-------------------|:---------------------------------------------|
-| resource-id        | Resource ID        |                                              |
-| name               |                    | accessibilityIdentifier                      |
-| content-desc       | ContentDescription | accessibilityLabel                           |
-| label              |                    | accessibilityLabel                           |
+| Appium Inspector   | Android            | iOS                       |
+|:-------------------|:-------------------|:--------------------------|
+| resource-id        | Resource ID        |                           |
+| content-desc       | ContentDescription |                           |
+| name               |                    | accessibilityIdentifier   |
+| label              |                    | accessibilityLabel        |
 
 
 ### How to set specific locator in the app
