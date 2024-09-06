@@ -46,7 +46,7 @@ def get_movie_by_title(self, movie_title: str):
 **NOTE:** 
 
 - Make sure not to abude `accessibility id` since it is primarily used for [accessibility](https://www.w3.org/standards/webdesign/accessibility), and not for test automation.
-- Check the [Locator naming differences](// TODO) article for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
+- Check the [Locator naming differences](https://infinum.com/handbook/qa/automation/mobile/appium/locator-naming-differences) article for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
 
 
 ### XPath
