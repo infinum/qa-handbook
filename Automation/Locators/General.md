@@ -20,14 +20,13 @@ Generally, the most reliable one is less prone to change (you don't need to upda
 
 _ID_ is mostly unique which makes it a great choice. It is used by developers and might already be present on most elements.
 
-It might not always be unique. 
-In a list of items, all elements might have the same ID (that is, `resource-id` (Android), `accessibility id` / `name` (iOS)).
-In that case, you have to iterate over the list to find the correct element. Or try using another strategy which won't require additional code, such as finding the element by Accessibility ID.
+It might not always be unique. In a list of items, all elements might have the same ID.
+In that case, you have to iterate over the list to find the correct element. Or try using another strategy which won't require additional code, such as finding the element by text.
 
 
 ### Accessibility ID
 
-You might come across information how the _Accessibility ID_ is a preferred locator strategy because it can be used for cross-platform automation making the code reusable.
+You might come across information how the _Accessibility ID_ is a preferred locator strategy on mobile because it can be used for cross-platform automation making the code reusable.
 
 However, make sure you understand what is being used. When using _Accessibility ID_ strategy, Appium looks for `ContentDescription` on Android, and both `accessibilityLabel` and `accessibilityIdentifier` on iOS. `ContentDescription` and `accessibilityLabel` define labels (text) that is shown in the UI. Labels are susceptible to change. If the label changes, you also have to update your locators. This can especially become cumbersome if the changes happen regularly and if you only rely on this locator strategy.
 
@@ -46,8 +45,8 @@ def get_movie_by_title(self, movie_title: str):
 
 **NOTE:** 
 
-- Check the [Naming differences](https://infinum.com/handbook/qa/automation/locators/general#naming-differences) section for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
-- Make sure you are not abusing `accessibility id` since it is primarily used for [accessibility](https://www.w3.org/standards/webdesign/accessibility) and not for test automation.
+- Make sure not to abude `accessibility id` since it is primarily used for [accessibility](https://www.w3.org/standards/webdesign/accessibility), and not for test automation.
+- Check the [Locator naming differences](https://infinum.com/handbook/qa/automation/mobile/appium/locator-naming-differences) article for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
 
 
 ### XPath
@@ -115,54 +114,6 @@ Open Accessibility Inspector:
 4. Select _Accessibility Inspector_
 
 While in the Accessibility Inspector, select the device you want to inspect in the upper left corner.
-
-
-## Naming differences
-
-There are some naming differences that add to the confusion when comparing Appium, Android and iOS terminology.
-
-### AppiumBy.ID
-
-When locating an element using **AppiumBy.ID**, Appium looks for `Resource ID` value on Android, and `accessibilityIdentifier` on iOS.
-
-When inspecting the app using Appium Inspector you will see attributes:
-
-- `id` and `resource-id` showing the value of `Resource ID` (Android)
-- `accessibility id` and `name` showing the value of `accessibilityIdentifier` (iOS)
-
-
-### AppiumBy.ACCESSIBILITY_ID
-
-When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android and both `accessibilityLabel` and `accessibilityIdentifier` on iOS. 
-
-When inspecting the app using Appium Inspector you will see attributes:
-
-- `accessibility id` and `content-desc` showing the value of `ContentDescription` (Android)
-- `accessibility id` showing the value of `accessibilityLabel` or `accessibilityIdentifier`, `name` showing the value of `accessibilityIdentifier`, and  `label` showing the value of `accessibilityLabel` (iOS)
-
-Using `AppiumBy.ACCESSIBILITY_ID` might seem a bit confusing, especially for iOS. Just think of it as using a visible text to get an element.
-
-
-Hopefully the table makes things a bit clearer. It shows the values that you get depending on the locator strategy that you use. Android and iOS columns show the values implemented in the app.
-
-| Locator strategy | Appium Inspector   | Android            | iOS                                          |
-|:-----------------|:-------------------|:-------------------|:---------------------------------------------|
-| ID               | id                 | Resource ID        |                                              |
-| ID               | resource-id        | Resource ID        |                                              |
-| ID               | name               |                    | accessibilityIdentifier                      |
-| ID               | accessibility id   |                    | accessibilityIdentifier                      |
-| ACCESSIBILITY_ID | accessibility id   | ContentDescription | accessibilityLabel / accessibilityIdentifier |
-| ACCESSIBILITY_ID | content-desc       | ContentDescription | accessibilityLabel                           |
-| ACCESSIBILITY_ID | label              |                    | accessibilityLabel                           |
-
-
-**NOTE:**
-
-- Appium documentation mentions `name` as a native element identifier that Appium looks for when finding an element by ID on iOS. However, iOS does not have the `name` attribute. To set the ID, the iOS uses [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier)
-
-- if `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will match two elements since both are recognised by Appium as `accessibility id`
-  - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
-  - `accessibilityIdentifier` should use a different format to avoid confusion and retain uniqueness
 
 
 ## Requesting new / additional IDs
