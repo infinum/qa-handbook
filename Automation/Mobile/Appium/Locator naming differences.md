@@ -1,12 +1,12 @@
 ## Naming differences
 
-There are some naming differences that add to the confusion when comparing Appium, Android and iOS terminology. Specifically, when using `AppiumBy.ID` and `AppiumBy.ACCESSIBILITY_ID`.
+There are some naming differences that add to the confusion when comparing Appium, Android, and iOS terminology. Specifically, when using `AppiumBy.ID` and `AppiumBy.ACCESSIBILITY_ID`.
 
 To help with understanding, it is useful to use Appium Inspector to visualize the differences.
 
 Appium Inspector displays two useful sections on the right-hand side, Find By and Attribute.
 - **Find By** shows (some) locator strategies you could use to find the selected element, and the value it returns
-- **Attribute** provides information on element's properties, and their corresponding values
+- **Attribute** provides information on the element's properties, and their corresponding values
 
 ![inspecting_android_app](/img/locators_android.png)
 
@@ -20,7 +20,7 @@ When locating an element using **AppiumBy.ID**, Appium looks for the `Resource I
 
 When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android, and both `accessibilityLabel` and `accessibilityIdentifier` on iOS. 
 
-Using `AppiumBy.ACCESSIBILITY_ID` may seem confusing, especially for iOS. Just think of it as using a visible text to get an element.
+Using `AppiumBy.ACCESSIBILITY_ID` may seem confusing, especially for iOS. Just think of it as using visible text to get an element.
 
 
 ### Appium Inspector

@@ -11,7 +11,7 @@ And now you are confused.
 
 Which one to choose?
 You want the most reliable one, pretty much regardless of the strategy. If it works 100% of the time (always returns the correct element) that is it. 
-Generally, the most reliable one is less prone to change (you don't need to update it often, or at all), and does not slow down your tests execution time too much compared to other strategies.
+Generally, the most reliable one is less prone to change (you don't need to update it often or at all), and does not slow down your test execution time too much compared to other strategies.
 
 
 ## A bit more about locators
@@ -21,7 +21,7 @@ Generally, the most reliable one is less prone to change (you don't need to upda
 _ID_ is mostly unique which makes it a great choice. It is used by developers and might already be present on most elements.
 
 It might not always be unique. In a list of items, all elements might have the same ID.
-In that case, you have to iterate over the list to find the correct element. Or try using another strategy which won't require additional code, such as finding the element by text.
+In that case, you have to iterate over the list to find the correct element. Or try using another strategy that won't require additional code, such as finding the element by text.
 
 
 ### Accessibility ID
@@ -45,7 +45,7 @@ def get_movie_by_title(self, movie_title: str):
 
 **NOTE:** 
 
-- Make sure not to abude `accessibility id` since it is primarily used for [accessibility](https://www.w3.org/standards/webdesign/accessibility), and not for test automation.
+- Make sure not to abuse `accessibility id` since it is primarily used for [accessibility](https://www.w3.org/standards/webdesign/accessibility), and not for test automation.
 - Check the [Locator naming differences](https://infinum.com/handbook/qa/automation/mobile/appium/locator-naming-differences) article for more info on Accessibility ID and terminology differences between Appium and mobile platforms.
 
 
