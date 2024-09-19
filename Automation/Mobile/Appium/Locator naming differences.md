@@ -81,7 +81,7 @@ The table below shows different element attributes found by Appium, and correspo
 **Note**:
 
 - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
-- `accessibilityIdentifier` should use a different format to avoid confusion and retain uniqueness
+- [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) should use a different format to avoid confusion and retain uniqueness
 
 
 ### Additional resources
