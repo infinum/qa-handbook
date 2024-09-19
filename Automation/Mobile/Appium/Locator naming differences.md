@@ -13,14 +13,18 @@ Appium Inspector displays two useful sections on the right-hand side, Find By an
 
 ### AppiumBy.ID
 
-When locating an element using **AppiumBy.ID**, Appium looks for the `Resource ID` value on Android and the `accessibilityIdentifier` on iOS.
+When locating an element using **AppiumBy.ID**, Appium looks for the following atributes:
+
+- `resource-id` (Android)
+- `name` (iOS)
 
 
 ### AppiumBy.ACCESSIBILITY_ID
 
-When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for `ContentDescription` value on Android, and both `accessibilityLabel` and `accessibilityIdentifier` on iOS. 
+When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for the following attributes:
 
-Using `AppiumBy.ACCESSIBILITY_ID` may seem confusing, especially for iOS. Just think of it as using visible text to get an element.
+- `content-desc` (Android)
+- `label` and `name` (iOS)
 
 
 ### Appium Inspector
@@ -31,7 +35,7 @@ When inspecting the app with Appium Inspector you see the available strategies s
 
 For Android
 
-- `id`shows the value of `Resource ID`
+- `id` shows the value of `Resource ID`
 - `accessibility id` shows the value of `ContentDescription`
 
 For iOS
@@ -48,7 +52,7 @@ For Android
 
 For iOS
 
-- `name` shows the value of `accessibilityIdentifier`
+- `name` shows the value of `accessibilityIdentifier` (or `accessibilityLabel` if `accessibilityIdentifier` is not set)
 - `label` shows the value of `accessibilityLabel`
 
 
@@ -66,22 +70,20 @@ The table below shows different locator strategies used in Appium, and correspon
 
 The table below shows different element attributes found by Appium, and corresponding values shown in Appium Inspector, as well as properties that are set on mobile platforms.
 
-| Appium Inspector   | Android            | iOS                       |
-|:-------------------|:-------------------|:--------------------------|
-| resource-id        | Resource ID        |                           |
-| content-desc       | ContentDescription |                           |
-| name               |                    | accessibilityIdentifier   |
-| label              |                    | accessibilityLabel        |
+| Appium Inspector   | Android            | iOS                                          |
+|:-------------------|:-------------------|:---------------------------------------------|
+| resource-id        | Resource ID        |                                              |
+| content-desc       | ContentDescription |                                              |
+| name               |                    | accessibilityLabel / accessibilityIdentifier |
+| label              |                    | accessibilityLabel                           |
 
 
-### How to set specific locator in the app
+**Note**:
 
-To set the `Resource ID` on Android, developers can assign a unique identifier to an element using the `android:id` attribute in the XML layout file. This identifier can then be used to locate the element using `AppiumBy.ID` in your test scripts.
+- [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
+- `accessibilityIdentifier` should use a different format to avoid confusion and retain uniqueness
 
-Appium documentation mentions `name` as a native element identifier that Appium looks for when finding an element by ID on iOS. However, iOS does not have the `name` attribute. To set the ID, the iOS uses [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) property.
 
-**NOTE:**
+### Additional resources
 
-- If `accessibilityLabel` has the same value as `accessibilityIdentifier`, Appium will find two elements since both are recognised as `accessibility id`
-  - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
-  - `accessibilityIdentifier` should use a different format to avoid confusion and retain uniqueness
+Check [Mobile - element IDs](https://infinum.com/handbook/devproc/test-automation/mobile-element-ids) for info on how to set the element ID.
