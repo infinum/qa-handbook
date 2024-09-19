@@ -288,7 +288,7 @@ Verious test report are easily generated and customizable. They can be tailored 
 
 **Additional resources**
 
-* [Zephyr Scale documentation](https://support.smartbear.com/zephyr-scale-server/docs/welcome.html)
+* [Zephyr Scale documentation](https://support.smartbear.com/zephyr-scale-cloud/docs/?lang=en)
 
 
 
