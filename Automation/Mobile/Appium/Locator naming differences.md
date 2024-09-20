@@ -24,7 +24,7 @@ When locating an element using **AppiumBy.ID**, Appium looks for the following a
 When locating an element using **AppiumBy.ACCESSIBILITY_ID**, Appium looks for the following attributes:
 
 - `content-desc` (Android)
-- `label` and `name` (iOS)
+- `name` (iOS)
 
 
 ### Appium Inspector
@@ -35,12 +35,12 @@ When inspecting the app with Appium Inspector you see the available strategies s
 
 For Android
 
-- `id` shows the value of `Resource ID`
-- `accessibility id` shows the value of `ContentDescription`
+- `id` shows the value of `resource-id`
+- `accessibility id` shows the value of `content-desc`
 
 For iOS
 
-- `accessibility id` shows the value of `accessibilityLabel` or `accessibilityIdentifier`
+- `accessibility id` shows the value of `name`
 
 
 **Attribute**
@@ -58,17 +58,17 @@ For iOS
 
 ### Table: Locator strategies in Appium Inspector
 
-The table below shows different locator strategies used in Appium, and corresponding strategy shown in Appium Inspector, and properties that are set on mobile platforms.
+The table below shows different locator strategies used in Appium, and corresponding attributes shown in Appium Inspector.
 
-| Appium Inspector   | Android            | iOS                                          |
-|:-------------------|:-------------------|:---------------------------------------------|
-| id                 | Resource ID        |                                              |
-| accessibility id   | ContentDescription | accessibilityLabel / accessibilityIdentifier |
+| Appium Inspector   | Android        | iOS  |
+|:-------------------|:---------------|:-----|
+| id                 | resource-id    | name |
+| accessibility id   | content-desc   | name |
 
 
 ### Table: Element attributes in Appium Inspector
 
-The table below shows different element attributes found by Appium, and corresponding values shown in Appium Inspector, as well as properties that are set on mobile platforms.
+The table below shows different element attributes used by Appium, and corresponding properties that are set on mobile platforms.
 
 | Appium Inspector   | Android            | iOS                                          |
 |:-------------------|:-------------------|:---------------------------------------------|
@@ -81,7 +81,7 @@ The table below shows different element attributes found by Appium, and correspo
 **Note**:
 
 - [accessibilityLabel](https://developer.apple.com/documentation/objectivec/nsobject/1615181-accessibilitylabel) is used by screen readers and should be written in a user-friendly manner
-- `accessibilityIdentifier` should use a different format to avoid confusion and retain uniqueness
+- [accessibilityIdentifier](https://developer.apple.com/documentation/uikit/uiaccessibilityidentification/1623132-accessibilityidentifier) should use a different format to avoid confusion and retain uniqueness
 
 
 ### Additional resources
