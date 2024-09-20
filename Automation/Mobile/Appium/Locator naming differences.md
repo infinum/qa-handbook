@@ -5,6 +5,7 @@ There are some naming differences that add to the confusion when comparing Appiu
 To help with understanding, it is useful to use Appium Inspector to visualize the differences.
 
 Appium Inspector displays two useful sections on the right-hand side, Find By and Attribute.
+
 - **Find By** shows (some) locator strategies you could use to find the selected element, and the value it returns
 - **Attribute** provides information on the element's properties, and their corresponding values
 
