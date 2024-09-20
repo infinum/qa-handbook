@@ -68,7 +68,7 @@ The table below shows different locator strategies used in Appium, and correspon
 
 ### Table: Element attributes in Appium Inspector
 
-The table below shows different element attributes found by Appium, and corresponding values shown in Appium Inspector, as well as properties that are set on mobile platforms.
+The table below shows different element attributes used by Appium, and corresponding properties that are set on mobile platforms.
 
 | Appium Inspector   | Android            | iOS                                          |
 |:-------------------|:-------------------|:---------------------------------------------|
