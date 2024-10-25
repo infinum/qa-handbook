@@ -128,13 +128,13 @@ A full bug report for mobile app would look like this:
 > Prerequisite:  
 > There are already Recipes in the Favorites tab
 
-> Steps to reproduce:
+> Steps to reproduce:  
 > 1. Start the app and log in  
 > 2. Browse Recipe  
-> 3. Choose one
-> 4. Tap on Favorite button
-> 5. Go back to the Recipe tab
-> 6. Observe
+> 3. Choose one  
+> 4. Tap on Favorite button  
+> 5. Go back to the Recipe tab  
+> 6. Observe  
 
 > Actual results:  
 > Recipe is not added to the Favorites tab right away
