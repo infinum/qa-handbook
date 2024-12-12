@@ -27,13 +27,20 @@ If your output is `/usr/local`, you should re-install Homebrew.
 ## How to install pyenv
 
 1. Install dependencies
-    * `brew install openssl readline sqlite3 xz zlib tcl-tk@8` 
+
+    ```sh
+    ➜  ~ brew install openssl readline sqlite3 xz zlib tcl-tk@8
+    ```
 
 2. Install pyenv using [pyenv-installer](https://github.com/pyenv/pyenv-installer)
-    * `curl https://pyenv.run | zsh`
-        * This should install `pyenv` and a few useful plugins like `pyenv-virtualenv`
+    * This should install `pyenv` and a few useful plugins like `pyenv-virtualenv`
+
+    ```sh
+    ➜  ~ curl https://pyenv.run | zsh
+    ```
 
 3. Update PATH in `/.zprofile`. Add the following:
+
     ```
         export PYENV_ROOT="$HOME/.pyenv"
         [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
@@ -42,21 +49,30 @@ If your output is `/usr/local`, you should re-install Homebrew.
         eval "$(pyenv virtualenv-init -)"
     ```
 
-4. Reload the shell
-    * Run: `exec "$SHELL"`
-    * Or just restart the terminal
+4. Restart the terminal
 
 
 ## How to install Python using `pyenv`
 
 1. Run the following to check available CPython versions:
-    * `pyenv install --list`
-        * This returns quite a few, including Python 2
-    * `pyenv install --list | grep -E '^  3\.[0-9]+'`
-        *  This returns a list of available CPython 3 versions
+
+    ```sh
+    ➜  ~ pyenv install --list
+    ```
+
+    * This returns quite a few, including Python 2
+
+    ```sh
+    ➜  ~ pyenv install --list | grep -E '^  3\.[0-9]+'
+    ```
+        
+    *  This returns a list of available CPython 3 versions
 
 2. Install a specific Python version, e.g. 3.11.11:
-    * `pyenv install -v 3.11.11`
+
+    ```sh
+    ➜  ~ pyenv install -v 3.11.11
+    ```
 
 
 ### Where is Python installed
