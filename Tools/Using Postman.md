@@ -254,4 +254,6 @@ Take a look at [flows](https://learning.postman.com/docs/postman-flows/gs/flows-
 
 Check out one of our blog posts: [Writing API Tests? Postman Delivers](https://infinum.com/the-capsized-eight/postman-API-testing)
 
-Also see this interesting article: [Testing APIs with Postman: 10 common challenges & solutions](https://medium.com/distant-horizons/testing-apis-with-postman-10-common-challenges-solutions-c4674c78528d).
+Read this interesting article: [Testing APIs with Postman: 10 common challenges & solutions](https://medium.com/distant-horizons/testing-apis-with-postman-10-common-challenges-solutions-c4674c78528d)
+
+For further insights, don't forget to revisit the Postman workshop, which covered advanced testing strategies and real-life API testing challenges.
