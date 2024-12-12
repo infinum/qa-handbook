@@ -58,15 +58,13 @@ If your output is `/usr/local`, you should re-install Homebrew.
 
     ```sh
     ➜  ~ pyenv install --list
+    // Returns quite a few, including Python 2
     ```
-
-    * This returns quite a few, including Python 2
 
     ```sh
     ➜  ~ pyenv install --list | grep -E '^  3\.[0-9]+'
+    // Returns a list of available CPython 3 versions
     ```
-        
-    *  This returns a list of available CPython 3 versions
 
 2. Install a specific Python version, e.g. 3.11.11:
 
