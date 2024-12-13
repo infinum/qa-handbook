@@ -58,7 +58,7 @@ If your output is `/usr/local`, you should re-install Homebrew.
 
     ```sh
     ➜  ~ pyenv install --list
-    // Returns quite a few, including Python 2
+    // Returns quite a few, including CPython 2
     ```
 
     ```sh
@@ -66,7 +66,7 @@ If your output is `/usr/local`, you should re-install Homebrew.
     // Returns a list of available CPython 3 versions
     ```
 
-2. Install a specific Python version, e.g. 3.11.11:
+2. Install a specific CPython version, e.g. 3.11.11:
 
     ```sh
     ➜  ~ pyenv install -v 3.11.11
