@@ -89,7 +89,7 @@ The `*` indicates which version is currently active. By default it is the system
 
 ```sh
 ➜  ~ pyenv versions
-    * system (set by /Users/username/.pyenv/version)
+  * system (set by /Users/username/.pyenv/version)
     3.9.7
     3.11.11
 ```
@@ -102,7 +102,7 @@ To switch the version you want to use for the system, use the `global` command.
 ➜  ~ pyenv global 3.11.11
     system
     3.9.7
-    * 3.11.11 (set by /Users/username/.pyenv/version)
+  * 3.11.11 (set by /Users/username/.pyenv/version)
 ```
 
 Run `python -V` to check if the correct version is applied.
