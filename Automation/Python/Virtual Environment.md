@@ -10,6 +10,10 @@ Each of those projects can also have different packages installed, different ver
 
 If you ever decide to change the Python version or dependencies in one of your projects, you don’t have to worry about those changes affecting other projects.
 
+NOTE:
+
+* The article explains how to manage virtual environments using the **venv** module from the standard Python library, and PyCharm.
+* For info on how to manage Python versions and virtual environments with `pyenv`, check the [Using pyenv](https://infinum.com/handbook/qa/automation/python/using-pyenv) article.
 
 ### How to install
 
@@ -20,12 +24,16 @@ If you are using Python 3, then you should already have the **venv** module from
 
 From Python 3.6 and above, the recommended way to create a virtual environment is using the following command:
 
-`python3 -m venv`
+```sh
+➜  ~ python3 -m venv
+```
 
 To the command above, simply add the name you want your virtual environment to have. Let’s say *env*. 
 Running the following command creates a virtual environment called *env*:
 
-`python3 -m venv env`
+```sh
+➜  ~ python3 -m venv env
+```
 
 When created, the virtual environment shows up as a directory in your project. The directory contains Python executable files and other installed libraries.
 
@@ -34,9 +42,11 @@ When created, the virtual environment shows up as a directory in your project. T
 
 ### How to activate Virtual Environment?
 
-To use the virtual environment, you have to activate it. The virtual environment is activated by running the following command: 
+To use the virtual environment, you have to activate it. The virtual environment is activated by running the `activate` command: 
 
-`source env/bin/activate`
+```sh
+➜  ~ source env/bin/activate
+```
 
 Once activated, you’ll notice the (env) prefix in the terminal, indicating that the env is active. Now you can add dependencies that will be used for this project only.
 
@@ -45,9 +55,11 @@ Once activated, you’ll notice the (env) prefix in the terminal, indicating tha
 
 ### How to deactivate Virtual Environment?
 
-To deactivate the virtual environment and use the system / global settings, run the following command: 
+To deactivate the virtual environment and use the system / global settings, run the `deactivate` command: 
 
-`deactivate`
+```sh
+➜  ~ deactivate
+```
 
 Now the (env) prefix is no longer displayed in the terminal. Any Python command you’d now run would refer to the global Python.
 
@@ -58,8 +70,8 @@ The interpreter translates your code into the language the computer hardware und
 You can either use a system interpreter that comes with Python installation or you can configure a virtual environment that takes a system interpreter but can be further modified for your project.
 
 NOTE:
-Make sure you have the desired Python version installed.
-When configuring a Python interpreter, you have to specify the path to the Python executable in your system. 
+
+* Make sure you have the desired Python version installed. When configuring a Python interpreter, you have to specify the path to the Python executable in your system. 
 
 
 ----
@@ -75,14 +87,14 @@ When creating a new project from scratch, the virtual environment named *venv* (
  - If an existing project opens, select *File -> New project…*
 
 3. In the *Location* field type in the path to the project with the project folder name at the end, e.g.:
- - Mac: /Users/username/Documents/Code/myPythonProject
- - Windows: D:\Code\myPythonProject
+ - Mac: `/Users/username/Documents/Code/myPythonProject`
+ - Windows: `D:\Code\myPythonProject`
 
 4. If not selected by default, select the *New environment using* button. Next to it, the option *Virtualenv* should be selected
 
 5. The Location field in the Python Interpreter section should look like this:
- - Mac: /Users/username/Documents/Code/myPythonProject/venv
- - Windows: D:\Code\myPythonProject\venv
+ - Mac: `/Users/username/Documents/Code/myPythonProject/venv`
+ - Windows: `D:\Code\myPythonProject\venv`
 
 6. In the *Base interpreter* field select a path to a Python executable in your system. As shown in the image below, Python 3.9 was selected as the base interpreter for the project.
 
@@ -95,8 +107,8 @@ When creating a new project from scratch, the virtual environment named *venv* (
 
 ## Create & activate virtual environment for an existing project
 
-When starting your work on an existing project, you have to activate the virtual environment through the terminal. You will also have to select the desired interpreter in the settings.
-For Windows, let’s imagine we have cloned a project named *myPythonProject* to *D:\Code*
+When starting your work on an existing project, you have to activate the virtual environment through the terminal. You also have to select the desired interpreter in the settings.
+For Windows, let’s imagine we have cloned a project named `myPythonProject` to `D:\Code`.
 
 1. Open the project and position to the project root folder
 
@@ -143,12 +155,14 @@ Or you can omit the sign completely which will install the latest stable version
 
 #### How to install the required dependencies
 
-Make sure you have the virtual environment active and the requirements.txt file ready.
+Make sure you have the virtual environment active and the `requirements.txt` file ready.
 
-1. Open the terminal and position to the folder where the *requirements.txt* file is
+1. Open the terminal and position to the folder where the `requirements.txt` file is
 
 2. Run the following command:
 
-`pip install -r requirements.txt`
+```sh
+➜  ~ pip install -r requirements.txt
+```
 
 You should now have all the dependencies specified in the requirements.txt file installed for the current project.
