@@ -17,9 +17,10 @@
 Make sure [Homebrew](https://brew.sh/) is installed in the correct location. 
 If you have migrated from Mac using Intel architecture to one with ARM, you might have Homebrew still installed in the old location.
 
-Run: `which brew`
-
-Expected output: `/opt/homebrew`
+```sh
+➜  ~ which brew
+/opt/homebrew/bin/brew
+```
 
 If your output is `/usr/local`, you should re-install Homebrew.
 
