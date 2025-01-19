@@ -17,9 +17,10 @@
 Make sure [Homebrew](https://brew.sh/) is installed in the correct location. 
 If you have migrated from Mac using Intel architecture to one with ARM, you might have Homebrew still installed in the old location.
 
-Run: `which brew`
-
-Expected output: `/opt/homebrew`
+```sh
+➜  ~ which brew
+/opt/homebrew/bin/brew
+```
 
 If your output is `/usr/local`, you should re-install Homebrew.
 
@@ -182,5 +183,5 @@ Once the `.python-version` file is removed or reset, the system will use the glo
 
 ### Additional resources
 
-[pyenv] https://github.com/pyenv/pyenv
+[pyenv](https://github.com/pyenv/pyenv)
 [Managing Multiple Python Versions With pyenv](https://realpython.com/intro-to-pyenv/)
