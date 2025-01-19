@@ -183,5 +183,6 @@ Once the `.python-version` file is removed or reset, the system will use the glo
 
 ### Additional resources
 
-[pyenv](https://github.com/pyenv/pyenv)
-[Managing Multiple Python Versions With pyenv](https://realpython.com/intro-to-pyenv/)
+- [pyenv](https://github.com/pyenv/pyenv)
+
+- [Managing Multiple Python Versions With pyenv](https://realpython.com/intro-to-pyenv/)
