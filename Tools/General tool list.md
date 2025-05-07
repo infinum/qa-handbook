@@ -205,6 +205,7 @@ By using the following steps, the text on the web page becomes editable and you 
 ### File examples
 Different file samples (music, videos, pdfs, images,...) [here](https://file-examples.com/).
 
+
 ### Google fonts
 Free font [download](https://fonts.google.com/).
 
@@ -280,6 +281,11 @@ For managing your own tasks.
 
 ### Unsplash
 Free stock photos [here](https://unsplash.com/).
+
+### Youtube videos
+Download different YT videos or playlists by using [YT-DLP tool](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file).
+
+This can come in handy when you need to quickly get videos with e.g. specific size, lenght or a format.
 
 
 ## Testing quadrant
