@@ -259,15 +259,8 @@ In 1Password we have stored Apple accounts for different countries:
 3. Open the App store & once again click on your avatar in the top right corner & sign in with the aprropriate Apple ID account
 4. Type in the app you are looking for
 5. Click on Get & enjoy testing your app
-6. Don't forget to repeat step #1 & sign in with our regulard test account
+6. Don't forget to repeat step #1 & sign in with our regular test account
 
-### Testing production builds on iOS
-
-The file that actually gets uploaded to iTunes Connect cannot be installed on a development device since it first has to be signed by Apple. 
-
-This means that "Production" builds on Tryoutapps are not identical to what actually ends up on the App Store, only those that you get via Testflight are. 
-
-That's why you should make sure to always independently verify Testflight builds before they are published to users.
 
 
 ### How to install iPhone or iPad apps on M1 Mac
