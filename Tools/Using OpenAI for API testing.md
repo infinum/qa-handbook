@@ -1,4 +1,3 @@
-# API Testing with OpenAI 
 ### Purpose
 This guide explains how to create functional API tests using OpenAPI, OpenAI (ChatGPT), and [Postman](https://infinum.com/handbook/qa/tools/using-postman), with
 no prior experience needed.
