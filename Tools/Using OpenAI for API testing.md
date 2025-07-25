@@ -30,14 +30,18 @@ Use placeholder tokens where needed. Output raw JSON for Postman import.
 - Check that the base URL is correct (not localhost).
 - Ensure the HTTP method and endpoint path match.
 - If authentication is needed, include headers like access-token, client, and uid.
+
 ### Tip for Edge Cases
 Duplicate a request, rename it, and modify input data to simulate errors like 422 or 401.
+
 ### Summary
 - Use ChatGPT to generate everything in one step.
 - Import and run requests in Postman.
 - Review test results under the Test Results tab.
+
 ### Small Tweaks, Big Difference
 ChatGPT may not provide perfect results on the first try, but with a bit of experimentation and prompt refinement, it can produce highly effective and accurate outputs.
+
 ### How Reliable is the Output from ChatGPT?
 ChatGPT is quite effective for generating functional Postman collections from clean OpenAPI documentation, especially when:
 - The OpenAPI spec uses version 3.0 or newer.
