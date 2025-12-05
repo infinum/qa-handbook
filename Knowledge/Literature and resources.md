@@ -30,7 +30,6 @@ Some cool books to jumpstart your QA career:
 - [How to Get Started with Accessibility Testing](https://infinum.com/blog/how-to-get-started-with-accessibility-testing/)
 - [Don’t Think Twice, Take the ISTQB Foundation Level Exam](https://infinum.com/blog/istqb-foundation-level-exam/)
 - [Testing Flutter Apps – A QA Guide](https://infinum.com/blog/testing-flutter-apps-a-qa-guide/)
-- [How to Get Along with Developers without Group Therapy: A QA Guide](https://infinum.com/blog/developer-tester-relationship/)
 
   
 ## Blog posts about writing blog posts 

@@ -121,7 +121,7 @@ If the website you are connected to is using HTTP, your requests and responses a
 - **Infinum Inventory** - a place where you can check all equipment that you have claimed, replaced, or returned.
 - **Infinum Polyglot** - an in-house platform for managing translations.
 - **Infinum Secret** - use to send sensitive information to others.
-- **Infinum TryOutApps** - a platform for releasing mobile apps. This is another Infinum product developed internally.
+- **Infinum TryOutApps** - a platform for releasing **Android mobile apps**. This is another Infinum product developed internally.
 - **Instruments (iOS)** - tool for inspecting the performance of your app (and much more). Requires Xcode.
 - **Input field** - text fields that allow user input. Input can be free text, a number stepper, etc.
 - **Introspect (Android)** - an app used to find all information about your Android device (similar to Inware).
