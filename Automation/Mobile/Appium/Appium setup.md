@@ -72,11 +72,11 @@ To install latest Appium version simply run:
 
 However, Appium does not include drivers by default and you need to install them using Appium. They have to be installed separately for each platform on which you intend to run the tests. You can learn more about Appium drivers ecosystem [here](https://appium.io/docs/en/latest/ecosystem/drivers/).
 
-To run tests on iOS you need to install XCUITest driver: 
+iOS driver: 
 
 * `appium driver install xcuitest`
 
-To run tests on Android you need to install UiAutomator2 driver:
+Android driver:
 
 * `appium driver install uiautomator2`
 
@@ -123,7 +123,7 @@ capabilities = {
 
 **NOTE:**
 
-* Some capabilities should be combined since they might interfere with each other. See [Reset Strategies](https://appium.readthedocs.io/en/stable/en/writing-running-appium/other/reset-strategies/) for more details.
+* Some capabilities should not be combined since they might interfere with each other. See [Reset Strategies](https://appium.readthedocs.io/en/stable/en/writing-running-appium/other/reset-strategies/) for more details.
 
 * If you use `autoAcceptAlerts` (iOS only), it could happen that some of the native app dialogs get accepted / declined when you don't expect it. You might want to avoid this capability and handle the dialogs within the test.
 
