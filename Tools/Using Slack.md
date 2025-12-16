@@ -1,4 +1,4 @@
-> Slack works best when everyone in a company uses it to have transparent, informative discussions in channels, which are organized around projects, teams, and disciplines. - [Matt Haughey](https://slack.com/blog/collaboration/etiquette-tips-in-slack)
+> Slack works best when everyone in a company uses it to have transparent, informative discussions in channels, which are organized around projects, teams, and disciplines. - Matt Haughey
 
 ## What's Slack?
 

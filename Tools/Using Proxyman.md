@@ -2,7 +2,7 @@
 
 ## About Proxyman
 
-[Proxyman](https://proxyman.io/) is an HTTP proxy / HTTP monitor / Reverse Proxy that helps you to view, inspect, and manipulate all of the HTTP and HTTPS traffic between the app you are testing and the Internet.
+Proxyman is an HTTP proxy / HTTP monitor / Reverse Proxy that helps you to view, inspect, and manipulate all of the HTTP and HTTPS traffic between the app you are testing and the Internet.
 
 ### Why Proxyman?
 
