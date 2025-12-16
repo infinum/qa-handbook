@@ -6,8 +6,7 @@ First thing you should do after installing Xcode is to go to Xcode -> Preference
 
 ![](/img/location15.png)
 
-After that’s taken care of, you’ll need to download this project on GitHub: https://github.com/andrejivanovic-git/QA_Location_Simulation. 
-Download the ZIP file and unpack it where it suits you best.
+After that’s taken care of, you’ll need to download this project on [GitHub](https://github.com/andrejivanovic-git/QA_Location_Simulation). Download the ZIP file and unpack it where it suits you best.
 
 You should see something like this:
 
@@ -20,7 +19,7 @@ There, make sure the *Allow Location Simulation* checkmark is checked.
 ![](/img/location2.png)
 
 There are several locations you can already choose from, but if you need to import custom locations you’ll need to generate GPX file first. 
-You can do it on many sites, this one does the trick well enough: http://www.elsewhere.org/journal/gmaptogpx/. 
+You can do it on many sites, [this one](http://www.elsewhere.org/journal/gmaptogpx/) does the trick well enough. 
 Pick your location on the map in upper left corner, click “Update”, and in the lower right corner name your file and download it in desired format.
 
 There are two ways to import GPX files to project. 
