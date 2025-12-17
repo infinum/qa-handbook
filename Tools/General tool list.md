@@ -55,9 +55,6 @@ The best thing since sliced bread. Read a short tutorial [in our own Handbook](h
 
 You can use it to catch errors, measure response times, inspect elements, simulate a mobile device, and much more.
 
-### JSONView
-A Google Chrome extension that will prettify your JSONs when viewing them in Chrome.
-
 ### Screencastify
 An extension for easily creating tab screencasts in Google Chrome.
 
@@ -77,6 +74,18 @@ Tools for inspecting the performance of your app (and much more). Requires XCode
 
 ### Inware and Introspect (Android)
 Find all information about your Android device.
+
+### Logcat and pidcat (Android)
+Both are used for examining Android's device log. Pidcat is just a fancier logcat developed by Saint Jake Wharton.
+
+In order to use it, you will have to install the Android SDK.
+
+You can get pidcat [here](https://github.com/JakeWharton/pidcat). Find more info on using pidcat [in our own Handbook](https://infinum.com/handbook/books/qa/testing/testing-mobile#getting-nice-device-logs).
+
+Use pidcat on debug builds in order to get fetch stack traces and network traffic, among other things.
+
+### Scrcpy
+Use [scrcpy](https://github.com/Genymobile/scrcpy) for easy Android screencasting.
 
 ### Tunnelbear or UrbanVPN
 For connecting to VPNs in various countries. Our account password for Tunnelbear is in 1password. UrbanVPN is free so feel free to sign up (follow [this link](https://www.urban-vpn.com/) for more info about this awesome VPN).
@@ -118,6 +127,9 @@ Different file samples (music, videos, pdfs, images,...) [here](https://file-exa
 - PyCharm - Python
 - Sublime Text
 - Visual Studio Code
+
+### JSONLint
+Validator and reformatter for JSON [here](https://jsonlint.com/).
 
 ### Pexel
 Free stock photos and videos [here](https://www.pexels.com/).
