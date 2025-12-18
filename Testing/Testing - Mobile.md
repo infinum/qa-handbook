@@ -220,23 +220,16 @@ We usually do not test apps on emulators, but sometimes they can come in handy.
 
 To get an Android emulator, do the following:
 
-- Download Android Studio: https://developer.android.com/studio/index.html
-- Install it and during installation make sure "Android Virtual Device" is selected
-- Run Android Studio and do not import any settings
-- Choose the Standard setup - the Emulator and SDK Tools will be downloaded automatically
-- Start a new Android Studio project and use the default names if you wish
-- Use the default form factors and minimum SDK settings (you won't be needing that)
-- Use the default activity and activity name (you won't be needing that)
-- Once Android Studio finishes loading the project, click on "Install missing platform and sync project" or "Install Build Tools" until Android Studio stops reporting error message at the bottom
-- Go to View > Toolbar to get the toolbar
-- On the toolbar click on the AVD Manager icon
-- Click on Create Virtual Device...
-- Select a device, e.g. Nexus 5X
-- Click on Next
-- Download a system image, e.g. API level 25
-- Select a system image you just downloaded and click on Finish
-- Click on the play icon to start the emulator
-- Drag and drop the APK to the emulator
+- Make sure you have [Android Studio](https://developer.android.com/studio) installed (Ensure "Android Emulator" and "Android SDK" are checked during installation process).
+- Open Android Studio and on the Welcome screen select More Actions > Virtual Device Manager:
+<span style="display:block; margin-top:15px; margin-bottom:15px; margin-left:auto; margin-right:auto; width:80%;">![M1_iphone_apps](/img/Android_Studio_virtual_device_manager.png) 
+(If you already have a project open, go to Tools > Device Manager)
+</span>
+
+- Click the + (Create Virtual Device) button.
+- Select a device category (e.g., Phone) and pick a model (Pixel 8 for example). Then click Next.
+- Select System Image - the version of Android the phone will run. If you see a Download icon next to it, click it and wait for the files to download. Click Next and then Finish.
+- Once you added virtual device, you can start using it. In the Device Manager, click the Play icon next to your new device. Note that the first launch can take several minutes as it "boots up" for the first time.
 
 ## iOS
 
