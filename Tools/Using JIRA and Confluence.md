@@ -228,10 +228,9 @@ To create a new test issue follow these steps:
 - [Free Xray courses](https://academy.getxray.app/catalog/index)
 
 
+## Zephyr
 
-## Zephyr Scale
-
-Zephyr Scale is a versatile test management tool that can adapt to different development and testing methodologies, including both traditional (Waterfall) and Agile approaches. Its integration with Jira makes it particularly suitable for Agile teams, while its comprehensive test case management features benefit projects following Waterfall or other structured methodologies.
+[Zephyr](https://support.smartbear.com/zephyr/docs/?lang=en) is a versatile test management tool that can adapt to different development and testing methodologies, including both traditional (Waterfall) and Agile approaches. Its integration with Jira makes it particularly suitable for Agile teams, while its comprehensive test case management features benefit projects following Waterfall or other structured methodologies.
 
 
 ### Core features and concepts
@@ -284,11 +283,3 @@ Test cycles are collections of test cases organized to achieve specific testing 
 Verious test report are easily generated and customizable. They can be tailored to meet specific project requirements. These reports offer valuable insights, aiding in the identification of key metrics, tracking testing progress, identifying defects, and supporting informed decision-making.
 
 ![Reports](/img/zephyr_test_reports.png)
-
-
-**Additional resources**
-
-* [Zephyr Scale documentation](https://support.smartbear.com/zephyr-scale-cloud/docs/?lang=en)
-
-
-

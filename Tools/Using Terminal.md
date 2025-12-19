@@ -52,7 +52,7 @@ Another interesting option is to close the Terminal window when the shell exits.
 
 ## Terminal alternatives
 
-The Terminal is not the only app for using the command line on the Mac. There are various alternatives such as [iTerm2](https://iterm2.com/), [Hyper](https://hyper.is/), [Upterm](https://upterm.dev/) and [Alacritty](https://github.com/alacritty/alacritty), to name a few.
+The Terminal is not the only app for using the command line on the Mac. There are various alternatives such as [iTerm2](https://iterm2.com/), [Hyper](https://hyper.is/), [Upterm](https://upterm.dev/), [Alacritty](https://github.com/alacritty/alacritty) and [Warp](https://www.warp.dev/) (terminal with AI agents build in) to name a few.
 Each of these comes with some differences when compared to the Terminal, often adding additional features.
 
 ## Shell

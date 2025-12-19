@@ -14,9 +14,12 @@ The Android Profiler tools provide real-time data to help you to understand how 
 
 Profiling ("program profiling", "software profiling") is a form of dynamic program analysis that measures, for example, the space (memory) or time complexity of a program, the usage of particular instructions, or the frequency and duration of function calls.
 
-You will need Android Studio for this, go ahead and download it from this [link](https://developer.android.com/studio) and install it.
+You will need [Android Studio](https://developer.android.com/studio) for this, so make sure to download and install it.
 
-The Android Profiler is compatible with Android 5.0 (API level 21) and higher.
+To profile your app, it's recommended to have:
+- An app with a release build variant that has the profileable manifest configuration enabled, also known as a profileable app
+- A virtual or physical test device that runs API level 29 or higher and has Google Play
+- Android Gradle Plugin 7.3 or higher
 
 There are two ways to start profiling:
 
@@ -29,20 +32,18 @@ You want to have debug APK because it is much easier and faster solution. If the
 
 1. Open Android Studio.
 
-2. Select "Start a new Android Studio project".
+2. Select "New Project".
 	
 	![](/img/Android_Studio-start_new_project.png)
 
-3. Select "Add no activity" and click on Next button.
+3. Select "No activity" and click Next.
 
 	![](/img/Android_Studio-add_no_activity.png)
 
-4. On "Configure your project" step, you can change project name, where to save the project, etc. You can only change Minimum API level to API level 21. Click on Finish button.
+4. Update the Minimum API level and click Finish to create an empty project.
 
 	![](/img/Android_Studio-configure_your_project.png)
-	
-	You just created an empty project.
-	
+		
 5. Connect Android device with USB cable to Macbook and make sure USB debugging is enabled.
 
 6. In Android Studio, the connected device will be shown.
@@ -75,15 +76,15 @@ You want to have debug APK because it is much easier and faster solution. If the
 
 [**Network Profiler**](https://developer.android.com/studio/profile/network-profiler) - The Network Profiler displays realtime network activity on a timeline, showing data sent and received, as well as the current number of connections.
 
-[**Energy Profiler**](https://developer.android.com/studio/profile/energy-profiler) - The Energy Profiler monitors the use of the CPU, network radio, and GPS sensor, and it displays a visualization of how much energy each of these components uses.
+[**Power Profiler**](https://developer.android.com/studio/profile/power-profiler) - The Power Profiler monitors the use of the CPU, network radio, and GPS sensor, and it displays a visualization of how much energy each of these components uses.
 
-[**Memory Profiler**](https://developer.android.com/studio/profile/memory-profiler) -  The Memory Profiler can help you identify memory leaks and memory churn that can lead to stutter, freezes, and even app crashes.
+[**Capture a Heap Dump**](https://developer.android.com/studio/profile/capture-heap-dump) -  Capture a heap dump to identify memory leaks and memory churn that can lead to stutter, freezes, and even app crashes.
 
 [**CPU Profiler**](https://developer.android.com/studio/profile/cpu-profiler) - The CPU Profiler is used to inspect your app's CPU usage and thread activity in real time while interacting with your app, or you can inspect the details in recorded method traces, function traces, and system traces.
 
 ## Testing battery usage
 
-The [Energy Profiler](https://developer.android.com/studio/profile/energy-profiler) helps you find where your app uses more energy than necessary. It consists of three timelines: Event timeline, Energy timeline and System timeline. The Profiler monitors the use of CPU, network, GPS and system events and presents them in form of bars and horizontal lines (system events). The higher/longer the bar is, the more energy is being used. You can place a mouse over any part of the timeline for more info.
+The [Power Profiler](https://developer.android.com/studio/profile/power-profiler) helps you find where your app uses more energy than necessary. It consists of three timelines: Event timeline, Energy timeline and System timeline. The Profiler monitors the use of CPU, network, GPS and system events and presents them in form of bars and horizontal lines (system events). The higher/longer the bar is, the more energy is being used. You can place a mouse over any part of the timeline for more info.
 
  ![1_battery.png](/img/1_battery.png)
 
@@ -103,7 +104,7 @@ The [Energy Profiler](https://developer.android.com/studio/profile/energy-profil
 
 ### Steps:
 
-1. [Download](https://developer.android.com/studio), install and run Android Studio.
+1. Make sure you have [Android Studio](https://developer.android.com/studio) installed.
 2. Click on "New Project".
 3. Select "No Activity" and click Next.
 4. Set the "Name" and "Android version" that isn't above the one you are running on your test device (otherwise Android Studio will notify you with a warning).
@@ -119,15 +120,13 @@ In case your app isn't present, try to run it on your device first to trigger a 
  ![4_battery.png](/img/4_battery.png)
 
  ![5_battery.png](/img/5_battery.png)
-  
 
-The Energy Profiler provides the user with insight into the usage of these events and processes to check if there are any excessive impacts on the battery.  
-For more info about "wake locks", "alarms" and "jobs" check [this](https://developer.android.com/studio/profile/energy-profiler#inspect_system_events_wake_locks_jobs_and_alarms).
+The Power Profiler provides the user with insight into the usage of these events and processes to check if there are any excessive impacts on the battery.
 
  
 ### Troubleshooting - what to do if it doesn't work 
 
-1. Check if you have ADB installed on your computer (if your are not sure or ask yourself "What is ADB?" check [this](https://infinum.com/handbook/books/qa/tools/using-adb)).
+1. Check if you have ADB installed on your computer (if your are not sure or ask yourself "What is ADB?" check [our handbook](https://infinum.com/handbook/books/qa/tools/using-adb)).
 2. Check if you set "USB debugging" to "ON".  
 3. Try the "Revoke USB debugging authorizations" option, disconnect the phone, connect it again and allow the connection via the prompt that shows up.
 4. Try other USB cables.  
