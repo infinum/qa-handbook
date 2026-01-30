@@ -2,7 +2,6 @@
 
 Keep your framework lightweight. It should be easy to get around, easy to understand and maintain the framework.
 
-
 ## Project structure
 
 A design pattern such as Page Object Model (POM) should be used when structuring the project.
@@ -12,7 +11,6 @@ With POM implemented:
 - the readability is improved
 - it is easier to understand the project structure
 - the overall maintenance of the project is easier
-
 
 ### Page objects
 
@@ -24,20 +22,17 @@ Methods related to those locators should also be located on the same page as the
 
 The exception are locators and actions that are shared across multiple pages, such as dialog windows. Those can be in their own class.
 
-
 ### Tests
 
 Tests should be:
 
- - easy to understand
- - easy to maintain
- - independent of other tests
-
+- easy to understand
+- easy to maintain
+- independent of other tests
 
 **NOTE:**
 
 - After you are done writing a test, always check that it passes and fails when expected.
-
 
 #### Independent tests
 
@@ -46,8 +41,8 @@ Ideally, you want to write independent tests.
 Independent tests:
 
 - do not depend on other tests or test suites
-- can be run in any order
-- can easily be run in parallel (running tests on multiple devices at the same time)
+- can run in any order
+- can easily run in parallel
 
 However, you might not be able to follow _best practices_ on every single project.
 
@@ -56,7 +51,6 @@ When considering the difference between a web and a mobile project, it is obviou
 Something worth considering is the time it takes for the tests to run and the cost of test automation. By adding more tests, the more time it will take for them to run. Also, what if you need real hardware for your tests, and you are limited by the amount of devices you have but there is no budget to get more? Additionally, those devices can only be connected to one mobile device at the time. Furthermore, to prepare the initial state for a test might take too much time. If it takes just 10 min for each test to come to a desired state before continuing, and the steps the tests checks even longer, you might not be able to have many tests run in a desirable amount of time.
 
 In that case, think twice before you start with test automation and discuss with the team what the best approach would be.
-
 
 #### What to automate?
 
@@ -79,7 +73,6 @@ When starting with test automation, the focus should be on:
 
 Afterwards, depending on the project or when you cover all the existing features, you could continue with covering new functionalities.
 
-
 #### Flaky tests
 
 At some point, you will write a test that looks okay and works okay for a while, but then it starts misbehaving - sometimes passes, and then sometimes fails.
@@ -87,7 +80,6 @@ If you end up updating and tweaking the test every once in a while and simply ca
 Otherwise, it will only cause you headaches, take up your time that could have been spent better, and mess up the report.
 
 Maybe it should simply be tested manually.
-
 
 ### Asserts
 
@@ -97,13 +89,11 @@ Don't reinvent the wheel when it comes to assertions. There are a bunch of asser
 
 When asserting results in failure, the test execution is usually aborted. However, sometimes you do not want to abort the test but let it finish. Therefore, it is important to know about the difference between types of assertions.
 
-
 #### Hard assert
 
 Hard asserts refer to asserts that stop the test execution in case of an assertion error. In case you put an assertion in the middle of the test, this is where the test stops.
 
 This type of assert should be used when you do not want the test to continue since the condition for further steps might not have been met. For example, you need to have a user created before continuing to the next screen/page. If the user is not created, there is no point in continuing with the tests. The test should be marked as _fail_.
-
 
 #### Soft assert
 
@@ -128,7 +118,7 @@ def test_example_one():
 ```
 
 Example using [softest](https://pypi.org/project/softest/):
- 
+
 ```python
 import softest
 
@@ -136,10 +126,10 @@ import softest
 def test_example_two():
     # First assert
     self.soft_assert(self.assertIn, "a", "car")
- 
+
     # Second assert
     self.soft_assert(self.assertEqual, "username", "username")
- 
+
     # Collect all asserts
     self.assert_all()
- ```
+```
