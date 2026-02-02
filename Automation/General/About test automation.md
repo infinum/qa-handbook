@@ -1,5 +1,3 @@
-# About test automation
-
 > Quality is the ally of schedule and cost, not their adversary. — James A. Ward
 
 This article explains what test automation is for, when it helps, and how to think about it so you can make good decisions and avoid common pitfalls. Understanding the trade-offs helps you choose what to automate and how much to invest in maintenance.

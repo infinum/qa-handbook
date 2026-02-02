@@ -1,6 +1,4 @@
-## Tools
-
-### Web frameworks
+## Web frameworks
 
 [Playwright](https://playwright.dev/) is a modern web automation framework that is becoming increasingly popular. It supports multiple browsers (Chromium, Firefox, WebKit), runs in headed or headless mode, and lets you write tests in JavaScript/TypeScript, Python, C#, or Java.
 
@@ -20,7 +18,7 @@ Other tools in this space include:
 - [WebdriverIO](https://webdriver.io/)
 - [Puppeteer](https://github.com/puppeteer/puppeteer)
 
-### Mobile frameworks - Appium
+## Mobile frameworks - Appium
 
 [Appium](https://appium.io/) extends Selenium’s WebDriver model to mobile: it automates hybrid and native apps on Android and iOS.
 
@@ -47,7 +45,7 @@ Other tools in this space include:
 - Use any testing or execution framework; Appium is an automation library, not a framework
 - Includes an inspector for viewing UI elements
 
-### Testing API
+## Testing API
 
 A great tool to start with API testing is Postman. You can easily pick up the basics and start testing the API right away.
 Postman can be used in manual testing, but also offers a few options for automation.
