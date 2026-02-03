@@ -4,7 +4,7 @@
 
 Jira is an issue tracking, project management, and bug tracking tool that is compatible with agile methodologies for organizing software development.
 
-<span style="display:block; border: 1px solid #e0e0e0; margin-left:auto; margin-right:auto; width:90%;">![ira_article_1](/img/jira_article_1.png)</span>
+![ira_article_1](/img/jira_article_1.png)
 
 The product name is a truncation of Gojira, the Japanese word for Godzilla. The name originated from a nickname Atlassian developers used to refer to Bugzilla, which was previously used internally for bug tracking. It's pronounced Jira (/ˈdʒiːrə/ JEE-ra). Source - [Wikipedia](https://en.wikipedia.org/wiki/Jira_(software))
 
