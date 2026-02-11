@@ -58,13 +58,13 @@ The pyramid is a **heuristic**, not a rule. It reminds you that:
 
 - **What** — Tests that call APIs (HTTP, gRPC, etc.) and assert on responses, status codes, and payloads. No browser or app UI.
 - **Why** — They are much faster and more stable than UI tests and exercise the integration layer where many bugs appear. They are ideal for contract and business-rule validation.
-- **How** — Start with a tool like [Postman](../../Tools/Using%20Postman.md); add scripts or CI runs for regression. Check status codes, response body, and headers — not only “200 OK.” See [API - Basics](../../Knowledge/API%20-%20Basics.md) and the API section in [Tools in test automation](Tools%20in%20test%20automation.md).
+- **How** — Start with a tool like [Postman](https://infinum.com/handbook/qa/tools/using-postman); add scripts or CI runs for regression. Check status codes, response body, and headers — not only “200 OK.” See [API - Basics](https://infinum.com/handbook/qa/knowledge/api-basics) and the API section in [Tools in test automation](https://infinum.com/handbook/qa/automation/general/tools-in-test-automation).
 
 ### UI tests
 
 - **What** — Scripts that drive the application through its UI (web or mobile) as a user would.
 - **Why** — To verify critical end-to-end flows and that the UI and backend work together. They catch integration and navigation issues that unit and API tests can miss.
-- **Trade-off** — They are the slowest and most fragile. Use them sparingly: smoke/sanity and a limited set of high-value user journeys. Prefer [coding tests in a framework](Tools%20in%20test%20automation.md) over long-term reliance on record-and-playback for maintainability.
+- **Trade-off** — They are the slowest and most fragile. Use them sparingly: smoke/sanity and a limited set of high-value user journeys. Prefer [coding tests in a framework](https://infinum.com/handbook/qa/automation/general/tools-in-test-automation) over long-term reliance on record-and-playback for maintainability.
 
 When choosing _what_ to automate at the UI layer, focus on regression and smoke first; then add scenarios that would be painful or risky to run manually. Avoid automating everything “because we can.”
 
@@ -93,7 +93,7 @@ More automation is not always better. Poor or unnecessary automation wastes time
 - How often will we run it, and how often will the product change in ways that break it?
 - Can we cover the same risk with a faster, more stable test (e.g. API instead of UI)?
 
-If a test is flaky and you repeatedly “fix” it without addressing the root cause, consider removing it or converting it to a manual check. Flaky tests drain trust and time. See the section on flaky tests in [Test automation conventions](../Way%20of%20working/Test%20automation%20conventions.md).
+If a test is flaky and you repeatedly “fix” it without addressing the root cause, consider removing it or converting it to a manual check. Flaky tests drain trust and time. See the section on flaky tests in [Test automation conventions](https://infinum.com/handbook/qa/automation/way-of-working/test-automation-conventions).
 
 ---
 
@@ -104,4 +104,4 @@ If a test is flaky and you repeatedly “fix” it without addressing the root c
 - **Follow the pyramid** — Prefer many fast unit and API tests; use UI tests for a small set of critical flows.
 - **Be selective** — Automate what gives clear value; avoid or remove tests that are flaky, redundant, or too expensive to maintain.
 
-For concrete tooling and patterns, see [Tools in test automation](Tools%20in%20test%20automation.md) and [Test automation conventions](../Way%20of%20working/Test%20automation%20conventions.md).
+For concrete tooling and patterns, see [Tools in test automation](https://infinum.com/handbook/qa/automation/general/tools-in-test-automation) and [Test automation conventions](https://infinum.com/handbook/qa/automation/way-of-working/test-automation-conventions).
