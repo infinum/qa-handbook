@@ -1,21 +1,17 @@
-> *Here you can find terms that you encounter every day when working with your colleagues, PMs, developers, designers, basically with your new project team*
+> _Here you can find terms that you encounter every day when working with your colleagues, PMs, developers, designers, basically with your new project team_
 
-
-
-Welcome to the QA team glossary! 
+Welcome to the QA team glossary!
 
 The glossary is meant to help you get familiar with words and phrases commonly used in everyday work. If you ever get confused or lost with the word used on your project weekly, the first thing you can do is check out our glossary!
-
-
 
 ### A
 
 - **Accessibility** - is the practice of making websites or apps usable by as many people as possible. We traditionally think of this as being about people with disabilities, but the practice of making sites accessible also benefits other groups such as those using smaller mobile devices, or those with slow network connections
 - **Agile** - A particular way of working, a set of values and principles.
-It is an iterative approach to project management and software development where the focus is delivering work (builds with features) in small increments.
-It works by breaking projects down into little bits of user functionality called user stories, prioritizing them, and then continuously delivering them in short cycles.
-Contrary to betting everything on a big launch (waterfall method).
-- **Alert** - alerts convey important information related to the state of your app or the device, and often request feedback. An alert consists of a title, an optional message, one or more buttons, and optional text fields for gathering input. 
+  It is an iterative approach to project management and software development where the focus is delivering work (builds with features) in small increments.
+  It works by breaking projects down into little bits of user functionality called user stories, prioritizing them, and then continuously delivering them in short cycles.
+  Contrary to betting everything on a big launch (waterfall method).
+- **Alert** - alerts convey important information related to the state of your app or the device, and often request feedback. An alert consists of a title, an optional message, one or more buttons, and optional text fields for gathering input.
 - **Alfred** - is an app for macOS that boosts your efficiency with hotkeys, keywords, text expansion, and more (An advanced "Spotlight" for quickly executing certain actions).
 - **ADB (Android Debug Bridge)** - a versatile command-line tool used for communicating with your Android device via the terminal.
 - **Android File Transfer** - used for transferring files between an Android phone and a macOS system.
@@ -39,8 +35,8 @@ Contrary to betting everything on a big launch (waterfall method).
 
 ### C
 
-- **Cache** - Temporary storage space for data. When you visit a website, the files that you request are automatically stored in the cache. 
-If you return to that same website in the near future, your browser will retrieve the necessary files from your cache rather than from the original server—so the webpage will load quicker.
+- **Cache** - Temporary storage space for data. When you visit a website, the files that you request are automatically stored in the cache.
+  If you return to that same website in the near future, your browser will retrieve the necessary files from your cache rather than from the original server—so the webpage will load quicker.
 - **Charles** - a proxy app used for examining network traffic between your device and a server by staging a man-in-the-middle attack.
 - **Chrome DevTools** - a set of web developer tools built directly into the Google Chrome browser.
 - **ChroPath** - a Google Chrome extension that will help you locate web elements when doing UI automation.
@@ -52,26 +48,26 @@ If you return to that same website in the near future, your browser will retriev
 - **CopyClip** - a simple and efficient clipboard manager for your Mac.
 - **Crashlytics** - a part of Firebase; used for getting crash/error logs from mobile apps.
 - **CTA (Call to Action)** - Usually refers to a button or other UI element which prominently invites the user to take action on a website or in an app
-Examples: “Sign-up for our newsletter”, “Share on social media”, “Sign-up”, “Get started”, “Add to cart”, “Buy now” and so on.
+  Examples: “Sign-up for our newsletter”, “Share on social media”, “Sign-up”, “Get started”, “Add to cart”, “Buy now” and so on.
 
 ### D
 
 - **Daily Scrum** - also referred to as the daily stand-up, is a (daily) recurring time-boxed meeting (e.g. 15 minutes or less) at which team members are taking turns answering three questions: 1. What did I accomplish since the last daily Scrum?; 2. What do I plan to work on by the next daily Scrum?; 3. What are the obstacles or impediments that are preventing me from making progress?
 - **Debugging** - Process of identifying, dealing with, and removing bugs.
-There are different types of bugs: syntax errors, typos, or errors in logic.
+  There are different types of bugs: syntax errors, typos, or errors in logic.
 - **Decision maker** - a person, usually from the client team, responsible for making key decisions that move the project forward.
 - **Deployment** - All activities that are required to make software or updates available to the users or other software.
 - **DevOps** - methodology/a way of working (and also a role - DevOps engineer) where teams cooperate more closely, each team knows what the other one is doing and they are constantly communicating.
-Small chunks of code are constantly made, tested, put into production, and monitored.
+  Small chunks of code are constantly made, tested, put into production, and monitored.
 - **DOD (Definition of Done)** - drives the quality of work and is used to assess when a user story has been completed.
 - **DOR (Definition of Ready)** - means that user stories must be immediately actionable. The team must be able to determine what needs to be done and the amount of work required.
 
 ### E
 
-- **Edge case** - a use case or a situation that can rarely happen, and is often unexpected or overlooked while designing or programming. 
+- **Edge case** - a use case or a situation that can rarely happen, and is often unexpected or overlooked while designing or programming.
 - **EOD (End of the Day)** - usually refers to a deadline set by yourself or your project manager.
 - **EOY (End of the Year)** - usually refers to a project deadline or quarterly goal deadline.
-- **Exploratory testing** - means testing with existing experience and knowledge of the mobile app or website. This insight gives the QA tester the ability to have a focused engagement without following formal test cases. Or in other words, testing the whole app without any specific plan or without using test cases. 
+- **Exploratory testing** - means testing with existing experience and knowledge of the mobile app or website. This insight gives the QA tester the ability to have a focused engagement without following formal test cases. Or in other words, testing the whole app without any specific plan or without using test cases.
 
 ### F
 
@@ -81,17 +77,17 @@ Small chunks of code are constantly made, tested, put into production, and monit
 - **FT (Full time)** - eight working hours per day.
 - **Form validation** - mechanism of checking if something is done by certain requirements, mostly used for content found inside the fields like Amount, Name, Address...
 - **Framework** - reverse usage of code you are writing (in contrast to libraries).
-Libraries are there to be called into your code when needed and Frameworks are there to be the ones who are calling.
-It is like a skeleton (or template) with empty spots which you fill out with your code.
+  Libraries are there to be called into your code when needed and Frameworks are there to be the ones who are calling.
+  It is like a skeleton (or template) with empty spots which you fill out with your code.
 - **Full-stack developer** - Type of developer who works (and is proficient) across all three layers: the frontend, the backend, and the database layer, understanding all three layers enable him to develop and maintain complete applications.
 
 ### G
 
-- **Git** -  the most popular Version Control System. Developers can make an initial version of an app and each time it is needed, they can make a new version.
-It is like a super-charged Save button in Word - you can save the document each time you want, but you can see each iteration, changes made, comments and restore each iteration when needed.
+- **Git** - the most popular Version Control System. Developers can make an initial version of an app and each time it is needed, they can make a new version.
+  It is like a super-charged Save button in Word - you can save the document each time you want, but you can see each iteration, changes made, comments and restore each iteration when needed.
 - **GitHub** - cloud-based Git repository hosting service.
-A place where you can store your version control projects.
-GitHub provides you with all Git features but also expands it with visually intuitive UI and additional tools.
+  A place where you can store your version control projects.
+  GitHub provides you with all Git features but also expands it with visually intuitive UI and additional tools.
 - **GMS** - Google Mobile Services.
 - **Google Analytics** - a web analytics service offered by Google that tracks and reports website traffic.
 - **Google Authenticator** - for keeping your 2FA credentials.
@@ -107,11 +103,11 @@ GitHub provides you with all Git features but also expands it with visually intu
 - **HMS** - Huawei Mobile Services.
 - **Homebrew** - is a free and open-source software package management system that simplifies the installation of software on Apple's operating system (macOS).
 - **Hotfix** - is a critical bug fix that needs to go live before the next scheduled release date.
-- **Hover** - (or hover state) communicates when a user has placed a cursor above an interactive element. 
+- **Hover** - (or hover state) communicates when a user has placed a cursor above an interactive element.
 - **HT (Half time)** - four working hours per day.
 - **HTTP (Hypertext Transfer Protocol)** - a protocol or order and syntax for presenting information and is used for transferring data over a network.
-If the website you are connected to is using HTTP, your requests and responses are not encrypted and someone willing to (and knows how) can see your data.
-- **HTTPS (Hypertext Transfer Protocol Secure)** - is using technology for encrypting (making plaintext series of random characters) the data and authenticating both parties (verifying that the person or machine is who they claim to be). 
+  If the website you are connected to is using HTTP, your requests and responses are not encrypted and someone willing to (and knows how) can see your data.
+- **HTTPS (Hypertext Transfer Protocol Secure)** - is using technology for encrypting (making plaintext series of random characters) the data and authenticating both parties (verifying that the person or machine is who they claim to be).
 
 ### I
 
@@ -133,11 +129,11 @@ If the website you are connected to is using HTTP, your requests and responses a
 ### J
 
 - **Java vs Javascript** - Java is mostly used for developing desktop and mobile applications and JavaScript for web applications.
-Java also requires developers to use classes (which are reusable templates) for everything and has a more rigid syntax where after you declare a variable as a specific type of data, you can’t later change it by assigning a different type of data.
-JavaScript can be used more loosely and action like this is allowed.
-It is used for frontend development but with the recent appearance of the Node.js framework, it is possible to use it for the backend also.
+  Java also requires developers to use classes (which are reusable templates) for everything and has a more rigid syntax where after you declare a variable as a specific type of data, you can’t later change it by assigning a different type of data.
+  JavaScript can be used more loosely and action like this is allowed.
+  It is used for frontend development but with the recent appearance of the Node.js framework, it is possible to use it for the backend also.
 - **Jenkins** - an open-source automation server. It helps automate the parts of software development related to building, testing, and deploying, facilitating continuous integration and continuous delivery.
-- **Jira** - a management tool for all kinds of use cases, from requirements and test case management to agile software development. 
+- **Jira** - a management tool for all kinds of use cases, from requirements and test case management to agile software development.
 - **JSONView** - a Google Chrome extension that will prettify your JSONs when viewing them in Chrome.
 
 ### K
@@ -199,15 +195,14 @@ It is used for frontend development but with the recent appearance of the Node.j
 
 ### Q
 
-- **QA** - quality assurance :) 
+- **QA** - quality assurance :)
 - **QAMA** - our in-house QA Mobile Automation framework.
-- **QAWA** - our in-house QA Web Automation framework.
 
 ### R
 
 - **Refactoring** - in computer programming and software design, code refactoring is the process of restructuring existing computer code — changing the factoring — without changing its external behavior. Refactoring is intended to improve the design, structure, and/or implementation of the software (its non-functional attributes), while preserving its functionality. Usually, older projects need code refactoring.
 - **Regression Testing** - is much more thorough than smoke testing. Regression testing involves checking every possible aspect of the pre-existing app features after a new feature or bug fix is deployed. This is to make sure that the code updates didn't break any other area of the software. Or in other words - a full test of the app.
-- **Release** - A release is the distribution of the final version of an application. A software release may be either public or private and generally constitutes the initial generation of a new or upgraded application. 
+- **Release** - A release is the distribution of the final version of an application. A software release may be either public or private and generally constitutes the initial generation of a new or upgraded application.
 - **Release candidate** - is a version that is ready to be released to the public, assuming no major bugs are found during testing.
 - **ResponsivelyApp** - a tool for parallel browser testing on several physical devices.
 - **Rollout** - an informal business term for the introduction and integration of a new product or service to the market. A rollout often refers to a significant product release, which is frequently accompanied by a strong marketing campaign, to generate consumer interest.
@@ -218,8 +213,8 @@ It is used for frontend development but with the recent appearance of the Node.j
 - **Scrcpy (Android)** - a free and open-source screen mirroring application that allows control of an Android device from a Windows, macOS, or Linux desktop computer.
 - **screencastify** - a Chrome extension for easily creating tab screencasts.
 - **Scrum** - A way of working that consists of certain rules, methodologies, roles, metrics, artifacts, and a way of doing things to support an “Agile” mindset.
-The software development process is divided into small fixed chunks - Sprints (1 week - 1 month), the whole team is attending Scrum “ceremonies” like Daily stand-up, Sprint Review, Sprint Retrospective, Sprint planning, and Backlog refinement.
-Scrum and agile are often thought to be the same thing. They're not. Agile is a set of principles and scrum is a framework for getting things done.
+  The software development process is divided into small fixed chunks - Sprints (1 week - 1 month), the whole team is attending Scrum “ceremonies” like Daily stand-up, Sprint Review, Sprint Retrospective, Sprint planning, and Backlog refinement.
+  Scrum and agile are often thought to be the same thing. They're not. Agile is a set of principles and scrum is a framework for getting things done.
 - **Scrum master** - ensures the team lives agile values and principles and follows the processes and practices that the team agreed they would use.
 - **SDK (Software development kit)** - a collection of software development tools in one installable package. They ease the creation of applications by having a compiler, debugger, and perhaps a software framework. To create applications with advanced functionalities such as push notifications, photopay, OCR scanning, etc.; most application software developers use specific software development kits.
 - **Selenium** - probably the most popular web automation framework built on top of WebDriver (as many others are).
