@@ -1,8 +1,10 @@
 > *If I was meant to be controlled, I would have come with a remote control.*
 
-## How to generate personal access token
+## How to generate a personal access token
 
-To make the git commands *pull* / *push* / *clone* work with two-factor authentication (2FA), you need a personal access token which you will then use for authentication when performing *clone* / *pull* / *push* operations, instead of the user password.
+If your GitHub account uses two-factor authentication (2FA), Git commands such as *clone*, *pull*, and *push* cannot use your GitHub password.
+
+Instead, generate a personal access token and use it as your password when Git asks you to authenticate.
 
 1. Go to *GitHub*.
 
@@ -16,14 +18,14 @@ To make the git commands *pull* / *push* / *clone* work with two-factor authenti
 
 6. Confirm your GitHub password, if prompted.
 
-7. In the 'Note' field, type in the token name.
+7. In the 'Note' field, enter a name for the token.
 
 8. Select the *scopes* (permissions) for the access token.
- - Select *repo* to have full control of private repositories.
+	- Select *repo* to have full control of private repositories.
 
 9. Click the *Generate token* button.
 
-10. Make sure to copy the token because you won’t be able to see it again.
+10. Copy the token immediately. You won’t be able to see it again after you leave the page.
 
 Source: [https://webkul.com/blog/github-push-with-two-factor-authentication/]()
 
@@ -31,7 +33,7 @@ Source: [https://webkul.com/blog/github-push-with-two-factor-authentication/]()
 
 ## How to use the access token
 
-1. Open the terminal and position to a folder in which you want to put your new project (e.g., Documents folder).
+1. Open the terminal and go to the folder where you want to put the project. For example:
 
 	`cd ~/Documents`
 
@@ -41,39 +43,41 @@ Source: [https://webkul.com/blog/github-push-with-two-factor-authentication/]()
 
 3. Enter your GitHub *username* when prompted.
 
-4. Don't use your GitHub password when prompted, instead enter the generated access token.
+4. When Git asks for a password, enter the generated access token instead of your GitHub password.
 
 5. Wait for the cloning to finish and continue to work on the project locally.
 
 
 ## How to connect to GitHub using the SSH protocol and ssh-agent
 
-By default, Git connects to remotes using the HTTPS protocol which requires you to enter your username and password every time you run a command such as *git pull* or *git push*.
+By default, Git connects to remote repositories using HTTPS. With HTTPS, Git may ask for your username and password when you run commands such as *git pull* or *git push*.
 
-Using the SSH protocol, you can connect and authenticate to remote servers and services. With SSH keys, you can connect to GitHub without supplying your username or password with each visit.
+SSH lets you authenticate with a key instead. After you set up SSH keys, you can connect to GitHub without entering your username or password each time.
 
-First, check whether you have any existing SSH keys. To do this, open the terminal and enter 
+First, check whether you already have SSH keys. Open the terminal and run:
 
 `ls -al ~/.ssh`
 
-If you don't have an existing public and private key pair, then generate a new SSH key.
+If you don't have an existing public and private key pair, generate a new SSH key.
  
 1. Open the terminal.
  
-2. Create a new SSH key with the provided email as a label by running the following command (substituting in your GitHub email address):
+2. Create a new SSH key with your GitHub email address:
 
 	`ssh-keygen -t ed25519 -C "your_email@example.com"`
  
-3. Press Enter when prompted to "*Enter a file in which to save the key*" to accept the default file location.
+3. When prompted to "*Enter a file in which to save the key*", press Enter to accept the default file location.
  
 4. Enter a secure passphrase when prompted.
  
 
 ### How to add SSH key to ssh-agent
 
-If you don't want to re-enter your passphrase every time you use your SSH key, you can add your key to the ssh-agent (a helper program that runs in the background while you are logged in to the system and manages your SSH keys and their passphrases).
+If you don't want to enter your passphrase every time you use your SSH key, add the key to ssh-agent.
+
+ssh-agent is a helper program that runs in the background and manages your SSH keys and passphrases.
  
-1. Start the ssh-agent in the background
+1. Start ssh-agent in the background:
 
 	`eval "$(ssh-agent -s)"`
 	
@@ -81,7 +85,13 @@ If you don't want to re-enter your passphrase every time you use your SSH key, y
 
 	`> Agent pid 59566`
 
-2. If you're using macOS Sierra 10.12.2 or later, you will need to modify your `~/.ssh/config` file to automatically load keys into the ssh-agent and store passphrases in your keychain:
+2. Update your `~/.ssh/config` file so your key loads automatically and the passphrase is stored in your keychain.
+
+	Open the config file:
+
+	`open ~/.ssh/config`
+
+	Add this content to the file:
 
 	```
 	Host *
@@ -90,20 +100,20 @@ If you don't want to re-enter your passphrase every time you use your SSH key, y
   	IdentityFile ~/.ssh/id_ed25519
   	```
 
-3. Add your SSH private key to the ssh-agent and store your passphrase in the keychain. If you created your key with a different name, or if you are adding an existing key that has a different name, replace `id_ed25519` in the command with the name of your private key file:
+3. Add your SSH private key to ssh-agent and store the passphrase in the keychain. If your key has a different name, replace `id_ed25519` with your private key file name:
 
 	`ssh-add --apple-use-keychain ~/.ssh/id_ed25519`
 
 4. Enter the passphrase to add your identity.
 
-5. Add the SSH key to your GitHub account (see "How to add SSH key to your GitHub account").
+5. Add the SSH key to your GitHub account. See "How to add SSH key to your GitHub account".
 
 
 ### How to add SSH key to your GitHub account
 
-To configure your GitHub account to use your new (or existing) SSH key, you'll also need to add it to your GitHub account (after adding a new SSH key to your GitHub account, you can reconfigure any local repositories to use SSH).
+Add the SSH key to your GitHub account settings to authorize your machine. After that, update your local repository remotes to use SSH.
  
-1. Open the terminal and run the following command to copy the SSH key to your clipboard (make sure that you don’t copy any whitespace while copying the public key’s content):
+1. Open the terminal and copy the SSH key to your clipboard:
 
 	`pbcopy < ~/.ssh/id_ed25519.pub`
 
@@ -113,7 +123,7 @@ To configure your GitHub account to use your new (or existing) SSH key, you'll a
 
 4. Click the *New SSH key* button.
 
-5. In the 'Title' field type in a descriptive label for the new key. For example, if you're using your work Mac, you could call it "*work-Mac*".
+5. In the 'Title' field, enter a descriptive label for the new key. For example, if you're using your work Mac, you could call it "*work-Mac*".
 
 6. In the 'Key' field, paste your SSH key.
 
