@@ -132,10 +132,3 @@ Irrespective of the project phase, you can always:
 4. Share some tips and tricks
 5. Overlook (in a helping manner) the work done and help remedy the mistakes
 
-## Software development methodologies
-
-There are plenty of ways to organize a software project. Since your job is to take care of testing and other quality processes, it is important that you are familiar with different approaches.
-
-More on this later, but for now, check out this cute graphic...
-
-![project-methodologies.jpg](/img/project-methodologies.jpg)
